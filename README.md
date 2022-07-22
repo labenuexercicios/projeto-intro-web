@@ -46,11 +46,11 @@ A página consiste em um HTML, ligado a um ou mais arquivos CSS, e um ou mais ar
 ### Instruções de entrega
 
 - Faça o fork desse repositório e realize o clone da sua cópia `seu-nome-de-usuario/projeto-intro-web`.
-- Adicione o arquivo baixado a uma pasta na raiz do seu repositório local
    <details>
    <summary>Quer uma dica?</summary>
    <img src="https://firebasestorage.googleapis.com/v0/b/assets-conteudo.appspot.com/o/gerais%2Ffork.png?alt=media&token=7030e997-246a-41fe-a75f-2a2ced61e54d" alt="Como adicionar o projeto no repositório"/>
    </details>
+- Crie os arquivos do projeto dentro deste repo;
 - Execute o fluxo de entrega do git. **Lembre-se de abrir o PR para seu próprio repositório.**
     <details>
        <summary>Dúvidas sobre o Git & Github?</summary>
