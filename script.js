@@ -40,13 +40,14 @@ const altura8 = 1.88;
 const casa8 = "Lufa-Lufa";
 const bruxo8 = true;
 
-//Faça um cálculo de média, entre os valores numéricos respectivos de cada item. Imprima o valor da média utilizando um console.log.
-// Guarde este valor em uma const
+/*Faça um cálculo de média, entre os valores numéricos respectivos de cada item. Imprima o valor da média utilizando um console.log.
+Guarde este valor em uma const*/
 const somaAltura = (altura1+altura2+altura3+altura4+altura5+altura6+altura7+altura8)/8;
 console.log(somaAltura)
 
-//Com um console.log, imprima o resultado de uma operação lógica que checa se todos os valores de variáveis booleanas
-//criadas até aqui são verdadeiras.
+/*Com um console.log, imprima o resultado de uma operação lógica que checa se todos os valores de variáveis booleanas
+criadas até aqui são verdadeiras.*/
 
 const veriBruxo = bruxo1 && bruxo2 && bruxo3 && bruxo4 && bruxo5 && bruxo6 && bruxo7 && bruxo8;
 console.log(veriBruxo); //true pq todas as const são verdadeiras.
+
