@@ -10,7 +10,7 @@
 /* Função estilização dentro de toda Body */
 body {
   text-align: center;
-  background: linear-gradient(to bottom, #6ab7f5, #fff);
+  background: linear-gradient(to bottom, #eb2a08, rgb(10, 10, 10));
   min-height: 100vh;
 }
 
