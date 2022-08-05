@@ -1,53 +1,52 @@
-// // Exercicio 1
-// let nomeSerie;
-// let anoLancamentoSerie;
-// let isBrasileira;
+// Semana 1
 
-// // Exercicio 2
-// const nomeSerie1 = "Lá Casa de Papel";
-// const anoLancamentoSerie1 = 2017;
-// const isBrasileira1 = false;
-// const atoresParticipantes1 = ["Pedro Alonso", "Alba Flores", "Esther Acebo",];
+// Exercicio 1
+let nome
+let anoLancamento = 0
+let isSerie
+let totTemporadas = 0
+let genero = []
+let elencoPrincipal = [{
+    nomeAtor: '',
+    personagem: '',
+}]
 
-// const nomeSerie2 = "Sob Pressão";
-// const anoLancamentoSerie2 = 2017;
-// const isBrasileira2 = true;
-// const atoresParticipantes2 = ["Julio Andrade", "Marjorie Estiano", "Bruno Garcia"];
+// Exercicio 2
+let nome1 = 'greys anatomy'
+let anoLancamento1 = Number(2005)
+let isSerie1 = true
+let totTemporadas1 = Number(19)
+let genero1 = ['drama', 'ficção medica', 'romance', 'comedia dramatica']
+let elencoPrincipal1 = [{ nomeAtor: 'ellen pompeo', personagem: 'meridith grey' },
+{ nomeAtor: 'patrick dempsey', personagem: 'derek sherperd' },
+{ nomeAtor: 'sandra oh', personagem: 'cristina yang' }]
 
-// const nomeSerie3 = "Greys Anatomy";
-// const anoLancamentoSerie3 = 2005;
-// const isBrasileira3 = false;
-// const atoresParticipantes3 = ["Ellen Pompeo", "Sandra Oh", "Justin Chambers"];
+let nome2 = 'lá casa de papel'
+let anoLancamento2 = Number (2017)
+let isSerie2 = true
+let totTemporadas2 = Number(4)
+let genero2 = ['assalto', 'drama', 'suspense', 'crime']
+let elencoPrincipal2 = [{nomeAtor:'alvaro morte' ,personagem:'professor'},
+{nomeAtor:'alba flores', personagem:'nairobi'},
+{nomeAtor: 'miguel herran', personagem: 'rio'}]
 
-// // Exercicio 3
-// const media = (anoLancamentoSerie1 + anoLancamentoSerie2 + anoLancamentoSerie3) / 3;
+let nome3 = 'vikings'
+let anoLancamento3 = Number (2013)
+let isSerie3 = true
+let totTemporadas3 = Number(6)
+let genero3 = ['guerra', 'drama', 'ação', 'aventura']
+let elencoPrincipal3 = [{nomeAtor:'travis fimmel' ,personagem:'ragnar lothbrok'},
+{nomeAtor:'clive standen', personagem:'rollo'},
+{nomeAtor: 'gustaf skarsgard', personagem: 'floki'}]
 
-// console.log("A media e igual a",media);
+// Exercicio 3
+const mediaGa = (anoLancamento1 + totTemporadas1)/2 
+const mediaLCP = (anoLancamento2 + totTemporadas2)/2 
+const mediaVk = (anoLancamento3 + totTemporadas3)/2 
 
-// // Exercicio 4
-// console.log(isBrasileira1);
-// console.log(isBrasileira2);
-// console.log(isBrasileira3);
-// console.log("Relatorio: \nNome da Serie: "+nomeSerie1.toUpperCase()+"\nAno de lançamento: "+anoLancamentoSerie1+"\nA serie é uma produção brasileira: "+isBrasileira1+"\nFazem parte do elenco: "+atoresParticipantes1[0]+", "+atoresParticipantes1[1]+" e "+atoresParticipantes1[2]+".");
-
-// console.log("Relatorio: \nNome da Serie: "+nomeSerie2.toUpperCase()+"\nAno de lançamento: "+anoLancamentoSerie2+"\nA serie é uma produção brasileira: "+isBrasileira2+"\nFazem parte do elenco: "+atoresParticipantes2[0]+", "+atoresParticipantes2[1]+" e "+atoresParticipantes2[2]+".");
-
-// console.log("Relatorio: \nNome da Serie: "+nomeSerie3.toUpperCase()+"\nAno de lançamento: "+anoLancamentoSerie3+"\nA serie é uma produção brasileira: "+isBrasileira3+"\nFazem parte do elenco: "+atoresParticipantes3[0]+", "+atoresParticipantes3[1]+" e "+atoresParticipantes3[2]+".");
-
-const series ={
-    nome: [],
-    anoDelancamento: 0.0,
-    elencoPrincipal: []
-};
-
-const bancoDeSeries = []
-
-const laCasaDePapel = {...series, nome: 'lá casa de papel', anoDelancamento: 2017, elencoPrincipal: ['Álvaro Morte', 'Úrsula Corberó', 'Pedro Alonso']}
-
-const sobPressao = {...series, nome: 'Sob Pressão', anoDelancamento: 2017, elencoPrincipal: ['Ellen Pompeo", "Sandra Oh", "Justin Chambers']}
-
-const greysAnatomy = {...series, nome: 'Greys Anatomy', anoDelancamento: 2005, elencoPrincipal: ['Ellen Pompeo", "Sandra Oh", "Justin Chambers']}
-
-
-bancoDeSeries.push(laCasaDePapel, sobPressao, greysAnatomy)
-
+// Exercicio 4
+if (isSerie1 === true && isSerie2 === true && isSerie3 === true) {
+    console.log('Os valores são verdadeiros')
+} else {
+    console.log('Os valores são falsos')
+}
