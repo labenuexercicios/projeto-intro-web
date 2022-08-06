@@ -29,6 +29,12 @@ console.log(media)
 const verificarValeAPena = objeto1.valeAPena1 && objeto2.valeAPena2 && objeto3.valeAPena3
 console.log(verificarValeAPena)
 
+console.log(`${objeto1.nome1} \nMinutos: ${objeto1.duracaoMinutos1}\nRemake: ${objeto1.valeAPena1} \nDiretor: ${objeto1.diretor1} \nRoteiristas: ${objeto1.roteiro1}`)
+
+console.log(`${objeto2.nome2} \nMinutos: ${objeto2.duracaoMinutos2} \nRemake: ${objeto2.valeAPena2} \nDiretor: ${objeto2.diretor2} \nRoteiristas: ${objeto2.roteiro2}`)
+
+console.log(`${objeto3.nome3} \nMinutos: ${objeto3.duracaoMinutos3} \nRemake: ${objeto3.valeAPena3} \nDiretor: ${objeto3.diretor3} \nRoteiristas: ${objeto3.roteiro3}`)
+
 let array = []
 
 if(objeto1.valeAPena1){
