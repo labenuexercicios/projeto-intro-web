@@ -9,7 +9,7 @@ html,body{
   display: grid;
   height: 100%;
   place-items: center;
-  background: #664AFF;
+  background-image: url(./img/fundonaruto.webp)  ;
 }
 ::selection{
   color: #fff;
@@ -100,7 +100,7 @@ html,body{
 
 h2 {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: rgb(235, 225, 225);
+  color: rgb(2, 2, 2);
   margin: 20px;
   opacity: 0;
   transition: opacity 1s;

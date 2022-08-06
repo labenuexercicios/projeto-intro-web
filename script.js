@@ -1,4 +1,5 @@
-const searchBox = document.querySelector(".search-box");
+        
+        const searchBox = document.querySelector(".search-box");
         const searchBtn = document.querySelector(".search-icon");
         const cancelBtn = document.querySelector(".cancel-icon");
         const searchInput = document.querySelector("input");
@@ -27,7 +28,9 @@ const searchBox = document.querySelector(".search-box");
         }
 /*
      
-  */     
+  */
+
+
  const nome = 'naruto';
  const clan = 'uzumaki';
  const idade = 17;
@@ -35,13 +38,13 @@ const searchBox = document.querySelector(".search-box");
  const ninjutsu = ["clones da sombras","jutsu sexy"];
 
  const nome1 = 'kakashi';
- const clan1 = 'hataki';
+ const clan1 = 'Hatake';
  const idade1 = 28;
  const isninja1 = true;
  const ninjutsu1 = ["copiar habilidades","chidori"];
 
  const nome2 = 'jiraiya';
- const clan2 = 'sem clan';
+ const clan2 = 'Hatake';
  const idade2 = 51;
  const isninja2 = true;
  const ninjutsu2 = ["rasengan","odama rasengan"];
@@ -76,7 +79,74 @@ const searchBox = document.querySelector(".search-box");
  const isninja7 = true;
  const ninjutsu7 = ["Jutsus absorção da alma", "Técnica da vida celestial."];
 
-const ninja0 = `Nome: ${nome7}\nClan: ${clan7}\nIdade: ${idade7}\nÉ Ninja: ${isninja7}\nSuas Habilidades: ${ninjutsu7}`;
+const ninj = `Nome: ${nome7}\nClan: ${clan7}\nIdade: ${idade7}\nÉ Ninja: ${isninja7}\nSuas Habilidades: ${ninjutsu7}`;
 
 
- console.log(ninja0);
+const ninja0 = {
+    nome:'Naruto',
+    clan:'Uzumaki',
+    idade:17,
+    isninja:true,
+    ninjutsus:['Clones das Sombras', 'Jutsu Sexy'],
+ }
+
+ const ninja1 = {
+    nome:'kakashi',
+    clan:'Hatake',
+    idade: 28,
+    isninja: true,
+    ninjutsus:['copiar habilidades', 'chidori']
+ }
+
+ const ninja2 = {
+    nome:'jiraiya',
+    clan:'Hatake',
+    idade: 51,
+    isninja: true,
+    ninjutsus:["rasengan", "odama rasengan"]
+ }
+
+ const ninja3 = {
+    nome:'Maito Gai',
+    clan:'Sem Clan',
+    idade: 28,
+    isninja: true,
+    ninjutsus:["não tem"]
+ }
+
+ const ninja4 = {
+    nome:'Rock Lee',
+    clan:'Sem Clan',
+    idade: 27,
+    isninja: true,
+    ninjutsus:["não tem"]
+ }
+
+ const ninja5 = {
+    nome:'Neji Hyuga',
+    clan:'Hyuga',
+    idade: 17,
+    isninja: true,
+    ninjutsus:["oito trigamas", "Emissão de chakara"]
+ }
+
+ const ninja6 = {
+    nome:'Shikamaru',
+    clan:'Nara',
+    idade: 26,
+    isninja: true,
+    ninjutsus:["técnica de Imitação pela Sombra", "técnica da Captura pela Sombra"]
+ }
+
+ const ninja7 = {
+    nome:'Nagato Pain',
+    clan:'Uzumaki',
+    idade: 32,
+    isninja: true,
+    ninjutsus:["Jutsus absorção da alma", "Técnica da vida celestial."]
+ }
+
+ const ninjasarray = [];
+ ninjasarray.push(ninja0,ninja1,ninja2,ninja3,ninja4,ninja5,ninja6,ninja7)
+
+ console.log(ninjasarray)
