@@ -1,33 +1,49 @@
-//Filmes
+//Filmes para ver antes de morrer
+let objeto1 = {
+    nome1: "TENET",
+    anoLancamento1: 2020,
+    valeAPena1: true,
+    diretor1: "Christopher Nolan",
+    roteiro1: ["Chistopher Nolan"],
+}
 
-const nome1 = "Tenet"
-const duracaoMinutos1 = 148
-const remake1 = false
-const diretor1 = "Christopher Nolan"
-const roteiro1 = ["Chistopher Nolan"]
+let objeto2 = {
+    nome2: "THE SUN SHINES BRIGHT",
+    anoLancamento2: 1953,
+    valeAPena2: true,
+    diretor2: "John Ford",
+    roteiro2: ["Frank Hotaling"],
+}
 
-const nome2 = "The Sun Shines Bright"
-const duracaoMinutos2 = 90
-const remake2 = false
-const diretor2 = "John Ford"
-const roteiro2 = ["Frank Hotaling"]
+let objeto3 = {
+    nome3: "GREEN BOOK",
+    anoLancamento3: 2018,
+    valeAPena3: true,
+    diretor3: "Peter Farrely",
+    roteiro3: ["Peter Farrely", "Nick Vallelonga", "Bryan Hayes Currie"],
+}
 
-const nome3 = "Green Book"
-const duracaoMinutos3 = 130
-const remake3 = false
-const diretor3 = "Peter Farrelly"
-const roteiro3 = ["Peter Farrely", "Nick Vallelonga", "Bryan Hayes Currie"]
-
-const media = (duracaoMinutos1 + duracaoMinutos2 + duracaoMinutos3)/3
+const media = (objeto1.anoLancamento1 + objeto2.anoLancamento2 + objeto3.anoLancamento3)/3
 console.log(media)
 
-const verificarRemake = remake1 && remake2 && remake3
-console.log(verificarRemake)
+const verificarValeAPena = objeto1.valeAPena1 && objeto2.valeAPena2 && objeto3.valeAPena3
+console.log(verificarValeAPena)
 
-//console.log(`Nome: ${pessoa}  \nCor favorita: ${cor}`)
+let array = []
 
-console.log(`${nome1.toUpperCase()} \nMinutos: ${duracaoMinutos1}\nRemake: ${remake1} \nDiretor: ${diretor1} \nRoteiristas: ${roteiro1}`)
-
-console.log(`${nome2.toUpperCase()} \nMinutos: ${duracaoMinutos2} \nRemake: ${remake2} \nDiretor: ${diretor2} \nRoteiristas: ${roteiro2}`)
-
-console.log(`${nome3.toUpperCase()} \nMinutos: ${duracaoMinutos3} \nRemake: ${remake3} \nDiretor: ${diretor3} \nRoteiristas: ${roteiro3}`)
+if(objeto1.valeAPena1){
+    array.push(objeto1)
+}else{
+    alert(`O Tenet não foi adicionado`)
+}
+if(objeto2.valeAPena2){
+    array.push(objeto2)
+}else{
+    alert(`O The Sun Shines Bright não foi adicionado`)
+}
+if(objeto3.valeAPena3){
+    array.push(objeto3)
+}else{
+    alert(`O Green Book não foi adicionado`)
+}
+console.log(array)
