@@ -1,20 +1,33 @@
-const nome1 = "Aranha-marrom";
-const tempoMedioDeVida1 = 2;
-const arrayCor1 = [ "Marrom" ];
-const extinto1 = false;
 
-const nome2 = "Viuva-negra";
-const tempoMedioDeVida2 = 3;
-const arrayCor2 = [ "preta" ];
-const extinto2 = false;
+const animal1 = {
+    nome1: "Aranha-marrom",
+    tempoMedioDeVida1: 2,
+    arrayCor1: [ "Marrom" ],
+    extinto1: false
+}
+
+const animal2 = {
+    nome2: "Viuva-negra",
+    tempoMedioDeVida2: 3,
+    arrayCor2: [ "preta" ],
+   extinto2: false
+}
 
 
-const nome3 = "Aranha-armadeira";
-const tempoMedioDeVida3 = 2;
-const arrayCor3 = [ "marrom" ];
-const extinto3 = false;
+const animal3 = {
+    nome3: "Aranha-armadeira",
+    tempoMedioDeVida3: 2 ,
+    arrayCor3: [ "marrom" ],
+    extinto3: false
+}
 
-let mediaDeTempoDeVida = tempoMedioDeVida1 + tempoMedioDeVida2 + tempoMedioDeVida3
+
+ 
+
+
+
+
+let mediaDeTempoDeVida = animal1.tempoMedioDeVida1 + animal2.tempoMedioDeVida2 + animal3.tempoMedioDeVida3
 let mediaDeTempoDeVidaFinal =  mediaDeTempoDeVida / 3
 
 let media = mediaDeTempoDeVidaFinal
@@ -28,7 +41,7 @@ console.log("A media de vida é:",media)
 
 
 
-const verificarExtinto = extinto1 && extinto2 && extinto3;
+const verificarExtinto = animal1.extinto1 && animal2.extinto2 && animal3.extinto3;
 
 console.log(verificarExtinto)
 
@@ -36,37 +49,57 @@ console.log(verificarExtinto)
 
 console.log(
 
-`${nome1.toLocaleUpperCase()} 
-Tempo de vida media: ${tempoMedioDeVida1}
-Qual a cor da aranha: ${arrayCor1}
-Ela esté extinta? ${extinto1}`
+`${animal1.nome1.toLocaleUpperCase()} 
+Tempo de vida media: ${animal1.tempoMedioDeVida1}
+Qual a cor da aranha: ${animal1.arrayCor1}
+Ela esté extinta? ${animal1.extinto1}`
     
            )
 console.log(
 
-`${nome2.toLocaleUpperCase()} 
-Tempo de vida media: ${tempoMedioDeVida2}
-Qual a cor da aranha: ${arrayCor2}
-Ela esté extinta? ${extinto2}`
+`${animal2.nome2.toLocaleUpperCase()} 
+Tempo de vida media: ${animal2.tempoMedioDeVida2}
+Qual a cor da aranha: ${animal2.arrayCor2}
+Ela esté extinta? ${animal2.extinto2}`
     
            )
 console.log(
 
-`${nome3.toLocaleUpperCase()} 
-Tempo de vida media: ${tempoMedioDeVida3}
-Qual a cor da aranha: ${arrayCor3}
-Ela esté extinta? ${extinto3}`
+`${animal3.nome3.toLocaleUpperCase()} 
+Tempo de vida media: ${animal3.tempoMedioDeVida3}
+Qual a cor da aranha: ${animal3.arrayCor3}
+Ela esté extinta? ${animal3.extinto3}`
     
            )
 
-
-           c
-   
+const arrayAnimais = []
 
 
+arrayAnimais.push(animal1 , animal2 , animal3)
+
+console.log(arrayAnimais)
 
 
-//FULANO
-// idade: 33
-// verificou email?: false
-// projetos: ["Projeto de HTML", "Projeto de CSS", "Projeto React"] 
+
+arrayAnimais.push({nome4: "Aranha de Jardim" , 
+tempoMedioDeVida4: 2,
+arrayCor4: [ "Marrom" ],
+extinto4: false})
+
+
+const aranha4 = {
+    nome4: "Aranha de Jardim" , 
+    tempoMedioDeVida4: 2,
+    arrayCor4: [ "Marrom" ],
+    extinto4: false}
+
+if(aranha4.extinto4){
+    arrayAnimais.push(aranha4)
+}else{
+    console.log("o item não foi adicionado")
+    alert("o item não foi adicionado")
+}
+
+
+
+ 
