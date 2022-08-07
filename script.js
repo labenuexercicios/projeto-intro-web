@@ -28,7 +28,12 @@ const objeto3 = {
     }
 
 const arrayDeObjetos = []
-arrayDeObjetos.push(objeto1, objeto2, objeto3)
+if (objeto1.gelado === objeto2.gelado) {
+    arrayDeObjetos.push(objeto1, objeto2, objeto3)
+} else {
+    alert("ITENS NÃO ADICIONADOS")
+}
+
 console.log(arrayDeObjetos);
 
 // console.log("\n",nome1.toUpperCase());
