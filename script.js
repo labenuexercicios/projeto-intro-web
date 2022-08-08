@@ -43,3 +43,43 @@ Acompanhamentos:
 - ${acompanhamentos3[0]},
 - ${acompanhamentos3[1]},
 - ${acompanhamentos3[2]}`)
+
+//ENTREGAS DA SEMANA 3
+item1 = {
+  nome: 'Bife de Ancho',
+  preco: 88,
+  contemGlutem: true,
+  acompanhamento: ['Arroz Branco', 'Batata Rústica', 'Farofa']
+}
+item2 = {
+  nome: 'Bife de Chorizo',
+  preco: 80,
+  contemGlutem: true,
+  acompanhamento: ['Arroz Branco', 'Batata Rústica', 'Farofa']
+}
+item3 = {
+  nome: 'Assado de Tira',
+  preco: 88,
+  contemGlutem: false,
+  acompanhamento: ['Arroz Branco', 'Batata Rústica', 'Farofa']
+}
+
+const cardapio = [] //CRIAÇÃO DO CARDAPIO
+
+if (item1.contemGlutem === true) {
+  cardapio.push(item1)
+} else {
+  alert(`O item ${item1.nome} não foi adicionado`)
+}
+if (item2.contemGlutem === true) {
+  cardapio.push(item2)
+} else {
+  alert(`O item ${item2.nome} não foi adicionado`)
+}
+if (item3.contemGlutem === true) {
+  cardapio.push(item3)
+} else {
+  alert(`O item ${item3.nome} não foi adicionado`)
+}
+
+console.log(cardapio)
