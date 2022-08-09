@@ -1,3 +1,0 @@
-const mediaMaxVida = ((maxVida1 + maxVida2 + maxVida3)/3)
-console.log(mediaMaxVida)
-
