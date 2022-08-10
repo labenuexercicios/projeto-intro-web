@@ -37,19 +37,8 @@ console.log(`${objeto3.nome3} \nMinutos: ${objeto3.duracaoMinutos3} \nRemake: ${
 
 let array = []
 
-if(objeto1.valeAPena1){
-    array.push(objeto1)
-}else{
-    alert(`O Tenet não foi adicionado`)
-}
-if(objeto2.valeAPena2){
-    array.push(objeto2)
-}else{
-    alert(`O The Sun Shines Bright não foi adicionado`)
-}
-if(objeto3.valeAPena3){
-    array.push(objeto3)
-}else{
-    alert(`O Green Book não foi adicionado`)
-}
+objeto1.valeAPena1 ? array.push(objeto1) : alert(`Tenet não foi adicionado`)
+objeto2.valeAPena2 ? array.push(objeto2) : alert(`The Sun Shines Bright não foi adicionado`)
+objeto3.valeAPena3 ? array.push(objeto3) : alert(`Green Book não foi adicionado`)
+
 console.log(array)
