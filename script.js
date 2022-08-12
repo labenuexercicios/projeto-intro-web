@@ -1,4 +1,4 @@
-const personagen1 = {
+const personagem1 = {
   nome: "Harry Potter",
   altura: 1.82,
   casa: " Grifinória",
@@ -95,5 +95,48 @@ const relatorio8 = `${perso8.toUpperCase()},\n${altura8},\n${casa8},\n${bruxo8},
 console.log(relatorio8);*/
 
 //semana 3 transformar as constantes em objetos, crir um array e colocar os objetos por push:
-const personagensHP = [];
-personagensHP.push(personagen1,personagem2,personagem3,personagem4,personagem5,personagem6,personagem7,personagem8);
+
+const bruxosHP = [];
+if(personagem1.bruxo){
+  bruxosHP.push(personagem1);
+}else{
+  alert("Personagem não adicionado pois não é bruxo")
+}
+
+if(personagem2.bruxo){
+  bruxosHP.push(personagem2);
+}else{
+  alert("Personagem não adicionado pois não é bruxo")
+};
+
+if(personagem3.bruxo){
+  bruxosHP.push(personagem3);
+}else{
+  alert("Personagem não adicionado pois não é bruxo")
+};
+if(personagem4.bruxo){
+  bruxosHP.push(personagem4);
+}else{
+  alert("Personagem não adicionado pois não é bruxo")
+};
+if(personagem5.bruxo){
+  bruxosHP.push(personagem5);
+}else{
+  alert("Personagem não adicionado pois não é bruxo")
+};
+if(personagem6.bruxo){
+  bruxosHP.push(personagem6);
+}else{
+  alert("Personagem não adicionado pois não é bruxo")
+};
+if(personagem7.bruxo){
+  bruxosHP.push(personagem7);
+}else{
+  alert("Personagem não adicionado pois não é bruxo")
+};
+if(personagem8.bruxo){
+  bruxosHP.push(personagem8);
+}else{
+  alert("Personagem não adicionado pois não é bruxo")
+};
+console.log(bruxosHP)
