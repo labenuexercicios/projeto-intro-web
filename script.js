@@ -20,16 +20,31 @@ const kakashi = {
 }
 
 const arrayPersonagens = [];
-arrayPersonagens.push(naruto,minato,kakashi);
 
-const mediaIdade = (arrayPersonagens[0].idade + arrayPersonagens[1].idade + arrayPersonagens[2].idade) / 3;
+if(naruto.aindaVivo){
+    arrayPersonagens.push(naruto);
+}else{
+    alert("O Objeto Naruto não foi adicionado ao array")
+}
+if(minato.aindaVivo){
+    arrayPersonagens.push(minato);
+}else{
+    alert("O Objeto Minato não foi adicionado ao array")
+}
+if(kakashi.aindaVivo){
+    arrayPersonagens.push(kakashi);
+}else{
+    alert("O Objeto Kakashi não foi adicionado ao array")
+}
+
+const mediaIdade = (naruto.idade + minato.idade + kakashi.idade) / 3;
 console.log("A média das idades dos personagens é: ", mediaIdade);
 
-const todosVivos = arrayPersonagens[0].aindaVivo && arrayPersonagens[1].aindaVivo && arrayPersonagens[2].aindaVivo;
+const todosVivos = naruto.aindaVivo && minato.aindaVivo && kakashi.aindaVivo;
 console.log("Todos personagens ainda estão vivos? ", todosVivos);
 
-console.log(" Nome:",arrayPersonagens[0].nome.toUpperCase(),'\n','Idade:',arrayPersonagens[0].idade,'anos','\n','Ainda está vivo?',arrayPersonagens[0].aindaVivo,'\n','Transformações de Natureza:',arrayPersonagens[0].transformcaoDeNatureza);
+console.log(" Nome:",naruto.nome.toUpperCase(),'\n','Idade:',naruto.idade,'anos','\n','Ainda está vivo?',naruto.aindaVivo,'\n','Transformações de Natureza:',naruto.transformcaoDeNatureza);
 
-console.log(" Nome:",arrayPersonagens[1].nome.toUpperCase(),'\n','Idade:',arrayPersonagens[1].idade,'anos','\n','Ainda está vivo?',arrayPersonagens[1].aindaVivo,'\n','Transformações de Natureza:',arrayPersonagens[1].transformcaoDeNatureza);
+console.log(" Nome:",minato.nome.toUpperCase(),'\n','Idade:',minato.idade,'anos','\n','Ainda está vivo?',minato.aindaVivo,'\n','Transformações de Natureza:',minato.transformcaoDeNatureza);
 
-console.log(" Nome:",arrayPersonagens[2].nome.toUpperCase(),'\n','Idade:',arrayPersonagens[2].idade,'anos','\n','Ainda está vivo?',arrayPersonagens[2].aindaVivo,'\n','Transformações de Natureza:',arrayPersonagens[2].transformcaoDeNatureza);
+console.log(" Nome:",kakashi.nome.toUpperCase(),'\n','Idade:',kakashi.idade,'anos','\n','Ainda está vivo?',kakashi.aindaVivo,'\n','Transformações de Natureza:',kakashi.transformcaoDeNatureza);
