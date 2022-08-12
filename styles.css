@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  
+  .container {
+    width: 50%; /* define a largura do campo */ 
+    position: relative;  /* cria o contexto de posicionamento do botão */ 
+  }
+  label {display:block;}
+  input {width: 100%;} /* define a largura do campo igual a largura do container */
+  input,  button {padding: 10px;}
+  button {
+    position: absolute;   
+    top: 0; 
+    right: 0;
+  }
