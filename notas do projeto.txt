@@ -1,0 +1,64 @@
+assunto do projeto.
+
+Nome: Naruto
+Clã: Uzumaki
+Idade: 32 anos
+Ocupação: Hokage
+Aldeia: Konohagakure
+Mais conhecido como: Hokage Laranja de Konoha;
+Ainda está vivo? true
+
+Nome: Minato
+Clã: Namikaze
+Idade: 24 anos
+Ocupação: Hokage
+Aldeia: Konohagakure
+Mais conhecido como: Relâmpago Dourado de Konoha
+Ainda está vivo? false
+
+Nome: Kakashi
+Clã: Hatake
+Idade: 47 anos
+Ocupação: Hokage
+Aldeia: Konohagakure
+Mais conhecido como: O Ninja Copiador 
+Ainda está vivo? true
+
+Nome: Itachi
+Clã: Uchiha
+Idade: 21 anos
+Ocupação: Capitão da Anbu
+Aldeia: Konohagakure
+Mais conhecido como: O Deus do Genjutsu
+Ainda está vivo? false
+
+Nome: Jiraia
+Clã: Desconhecido
+Idade: 54 anos
+Ocupação: Escritor
+Aldeia: Konohagakure
+Mais conhecido como: Sábio Tarado
+Ainda está vivo? false
+
+Nome: Sasuke
+Clã: Uchiha
+Idade: 32 anos
+Ocupação: Líder do Clã Uchiha
+Aldeia: Konohagakure
+Mais conhecido como: Sombra de Apoio
+Ainda está vivo? true
+
+CONTINUAÇÃO DO PROJETO
+
+const nome4 = "Itachi";
+const idade4 = 21;
+const aindaVivo4 = false;
+
+const nome5 = "Jiraia";
+const idade5 = 54;
+const aindaVivo5 = false;
+
+const nome6 = "Sasuke";
+const idade6 = 32;
+const aindaVivo6 = true;
+
