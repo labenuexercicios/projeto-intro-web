@@ -178,6 +178,87 @@ const linguagem10 = {
 
 let linguagens = [];
 
-linguagens.push(linguagem1, linguagem2, linguagem3, linguagem4, linguagem5, linguagem6, linguagem7, linguagem8, linguagem9, linguagem10);
+// linguagens.push(linguagem1, linguagem2, linguagem3, linguagem4, linguagem5, linguagem6, linguagem7, linguagem8, linguagem9, linguagem10);
+
+// ITEM 1
+if (linguagem1.facilDeAprender === true) {
+    linguagens.push(linguagem1);
+} else {
+    alert("Linguagem 1: " + linguagem1.nome + " não adicionada!");
+}
+
+// ITEM 2
+if (linguagem2.facilDeAprender === true) {
+    linguagens.push(linguagem2);
+} else {
+    alert("Linguagem 2: " + linguagem2.nome + " não adicionada!");
+}
+
+// ITEM 3
+if (linguagem3.facilDeAprender === true) {
+    linguagens.push(linguagem3);
+} else {
+    alert("Linguagem 3: " + linguagem3.nome + " não adicionada!");
+}
+
+// ITEM 4
+if (linguagem4.facilDeAprender === true) {
+    linguagens.push(linguagem4);
+} else {
+    alert("Linguagem 4: " + linguagem4.nome + " não adicionada!");
+}
+
+// ITEM 5
+if (linguagem5.facilDeAprender === true) {
+    linguagens.push(linguagem5);
+} else {
+    alert("Linguagem 5: " + linguagem5.nome + " não adicionada!");
+}
+
+// ITEM 6
+if (linguagem6.facilDeAprender === true) {
+    linguagens.push(linguagem6);
+} else {
+    alert("Linguagem 6: " + linguagem6.nome + " não adicionada!");
+}
+
+// ITEM 7
+if (linguagem7.facilDeAprender === true) {
+    linguagens.push(linguagem7);
+} else {
+    alert("Linguagem 7: " + linguagem7.nome + " não adicionada!");
+}
+
+// ITEM 8
+if (linguagem8.facilDeAprender === true) {
+    linguagens.push(linguagem8);
+} else {
+    alert("Linguagem 8: " + linguagem8.nome + " não adicionada!");
+}
+
+// ITEM 9
+if (linguagem9.facilDeAprender === true) {
+    linguagens.push(linguagem9);
+} else {
+    alert("Linguagem 9: " + linguagem9.nome + " não adicionada!");
+}
+
+// ITEM 10
+if (linguagem10.facilDeAprender === true) {
+    linguagens.push(linguagem10);
+} else {
+    alert("Linguagem 10: " + linguagem10.nome + " não adicionada!");
+}
+
+console.log(`Linguagem 1: ${linguagem1.facilDeAprender} (${linguagem1.nome})`);
+console.log(`Linguagem 2: ${linguagem2.facilDeAprender} (${linguagem2.nome})`);
+console.log(`Linguagem 3: ${linguagem3.facilDeAprender} (${linguagem3.nome})`);
+console.log(`Linguagem 4: ${linguagem4.facilDeAprender} (${linguagem4.nome})`);
+console.log(`Linguagem 5: ${linguagem5.facilDeAprender} (${linguagem5.nome})`);
+console.log(`Linguagem 6: ${linguagem6.facilDeAprender} (${linguagem6.nome})`);
+console.log(`Linguagem 7: ${linguagem7.facilDeAprender} (${linguagem7.nome})`);
+console.log(`Linguagem 8: ${linguagem8.facilDeAprender} (${linguagem8.nome})`);
+console.log(`Linguagem 9: ${linguagem9.facilDeAprender} (${linguagem9.nome})`);
+console.log(`Linguagem 10: ${linguagem10.facilDeAprender} (${linguagem10.nome})`);
 
 console.log(linguagens);
