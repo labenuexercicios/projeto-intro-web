@@ -1,5 +1,7 @@
+const planetas = []
 
-const planetas =[ {
+
+const planeta =[ {
 
     nome: "mercurio".toUpperCase(),
     peridoDeOrbital:88,
@@ -27,4 +29,20 @@ const planetas =[ {
     luas: true,
     composicaoQuimica :["Nitrogênio" ,"Oxigênio", "DióxidoDeCarbo"] },
     ]
-console.log(planetas)
+  
+  planetas.push(planeta)
+  console.log(planetas)
+
+let nomeDoPlaneta =confirm ("o planeta é mercurio ou terra?")
+
+ if (nomeDoPlaneta) {
+    alert ("planeta adicionado")
+ }
+
+  else {
+      alert ("planeta não pode ser adicionado")
+ }
+
+
+     
+ 
