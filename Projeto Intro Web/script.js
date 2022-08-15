@@ -75,36 +75,67 @@ const jogo1 = {
     Título: "Mortal Kombat 11",
     Gênero: "Ação",
     Preço: 159.99,
-    multiplayer: true,
-    marcadores: ["Luta", "Violência detalhada", "Violento", "Multiplayer"]
+    Multiplayer: true,
+    Marcadores: ["Luta", "Violência detalhada", "Violento", "Multiplayer"]
 }
 
 const jogo2 = {
     Título: "Resident Evil Village",
     Gênero: "Ação",
     Preço: 139.90,
-    multiplayer: false,
-    marcadores: ["Terror de Sobrevivência", "Terror", "Primeira Pessoa", "Zumbis"]
+    Multiplayer: false,
+    Marcadores: ["Terror de Sobrevivência", "Terror", "Primeira Pessoa", "Zumbis"]
 }
 
 const jogo3 = {
     Título: "F1 2022",
     Gênero: "Corrida",
     Preço: 249.00,
-    multiplayer: true,
-    marcadores: ["Corrida", "Esportes", "Simulação", "Cooperativo"]
+    Multiplayer: true,
+    Marcadores: ["Corrida", "Esportes", "Simulação", "Cooperativo"]
 }
 
 const jogo4 = {
     Título: "God Of War",
     Gênero: "Ação",
     Preço: 199.90,
-    multiplayer: false,
-    marcadores: ["Aventura", "Um Jogador", "Boa Trama", "RPG"]
+    Multiplayer: false,
+    Marcadores: ["Aventura", "Um Jogador", "Boa Trama", "RPG"]
 }
 
 
 const jogos = []
+
+// jogos.push(jogo1, jogo2, jogo3, jogo4)
+
+
+
+// SEMANA 4:
+
+
+if (jogo1.Multiplayer === true){
+    jogos.push(jogo1)
+}else{
+    alert("O jogo 1 não foi adicionado")
+}
+
+if (jogo2.Multiplayer === true){
+    jogos.push(jogo2)
+}else{
+    alert("O jogo 2 não foi adicionado")
+}
+
+if (jogo3.Multiplayer === true){
+    jogos.push(jogo3)
+}else{
+    alert("O jogo 3 não foi adicionado")
+}
+
+if (jogo4.Multiplayer === true){
+    jogos.push(jogo4)
+}else{
+    alert("O jogo 4 não foi adicionado")
+}
 
 
 
