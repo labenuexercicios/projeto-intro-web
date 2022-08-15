@@ -1,32 +1,74 @@
 // SEMANA 1:
 
-const  dino = "Tiranossauro rex"
-const alimentacao = "Carnívoro"
-const tamanhoEmMetros = 5.60
-const eBipede = true
+// const jogo = "Mortal kombat 11"
+// const genero = "Ação"
+// const preco = 159.99
+// const multiplayer = true
 
-const dino2 = "Triceratops"
-const alimentacao2 = "Herbívoro"
-const tamanhoEmMetros2 = 3.00
-const eBipede2 = false
+// const jogo2 = "Resident Evil Village"
+// const genero2 = "Ação"
+// const preco2 = 139.90
+// const multiplayer2 = false
 
-const dino3 = "Velociraptor"
-const alimentacao3 = "Carnívoro"
-const tamanhoEmMetros3 = 1.00
-const eBipede3 = true
+// const jogo3 = "F1 2022"
+// const genero3 = "Corrida"
+// const preco3 = 249.00
+// const multiplayer3 = true
 
-const dino4 = "Stegosaurus"
-const alimentacao4 = "Herbívoro"
-const tamanhoEmMetros4 = 4.00
-const eBipede4 = false
+// const jogo4 = "God Of War"
+// const genero4 = "Ação"
+// const preco4 = 199.90
+// const multiplayer4 = false
 
-const mediaDeAltura = ((tamanhoEmMetros+tamanhoEmMetros2+tamanhoEmMetros3+tamanhoEmMetros4)/4)
+// const mediaDePreco = ((preco+preco2+preco3+preco4)/4)
 
-console.log(mediaDeAltura)
+// console.log(mediaDePreco)
 
-const todosSaobipedes = eBipede && eBipede2 && eBipede3 && eBipede4
+// const todosSaoMultiplayer = multiplayer && multiplayer2 && multiplayer3 && multiplayer4
 
-console.log(todosSaobipedes)
+// console.log(todosSaoMultiplayer)
+
+
+
+// SEMANA 2:
+
+
+const jogo = "Mortal kombat 11"
+const genero = "Ação"
+const preco = 159.99
+const multiplayer = true
+const marcadores =["Luta", "Violência detalhada", "Violento", "Multiplayer"]
+
+const jogo2 = "Resident Evil Village"
+const genero2 = "Ação"
+const preco2 = 139.90
+const multiplayer2 = false
+const marcadores2 = ["Terro de Sobrevivência", "Terror", "Primeira Pessoa", "Zumbis" ]
+
+const jogo3 = "F1 2022"
+const genero3 = "Corrida"
+const preco3 = 249.00
+const multiplayer3 = true
+const marcadores3 = ["Corrida", "Esportes", "Simulação", "Cooperativo"]
+
+const jogo4 = "God Of War"
+const genero4 = "Ação"
+const preco4 = 199.90
+const multiplayer4 = false
+const marcadores4 = ["Aventura", "Um Jogador", "Boa Trama", "RPG"]
+
+console.log(jogo.toUpperCase(), "\nGênero:"+genero, "\nPreço:"+ preco, "\nMultiplayer:"+multiplayer, "\nMarcadores:"+marcadores)
+
+console.log(jogo2.toUpperCase(), "\nGênero:"+genero2, "\nPreço:"+ preco2, "\nMultiplayer:"+multiplayer2, "\nMarcadores:"+marcadores2)
+
+console.log(jogo3.toUpperCase(), "\nGênero:"+genero3, "\nPreço:"+ preco3, "\nMultiplayer:"+multiplayer3, "\nMarcadores:"+marcadores3)
+
+console.log(jogo4.toUpperCase(), "\nGênero:"+genero4, "\nPreço:"+ preco4, "\nMultiplayer:"+multiplayer4, "\nMarcadores:"+marcadores4)
+
+
+
+
+
 
 
 
