@@ -1,5 +1,6 @@
 // SEMANA 1:
 
+
 // const jogo = "Mortal kombat 11"
 // const genero = "Ação"
 // const preco = 159.99
@@ -33,37 +34,81 @@
 // SEMANA 2:
 
 
-const jogo = "Mortal kombat 11"
-const genero = "Ação"
-const preco = 159.99
-const multiplayer = true
-const marcadores =["Luta", "Violência detalhada", "Violento", "Multiplayer"]
+// const jogo = "Mortal kombat 11"
+// const genero = "Ação"
+// const preco = 159.99
+// const multiplayer = true
+// const marcadores =["Luta", "Violência detalhada", "Violento", "Multiplayer"]
 
-const jogo2 = "Resident Evil Village"
-const genero2 = "Ação"
-const preco2 = 139.90
-const multiplayer2 = false
-const marcadores2 = ["Terro de Sobrevivência", "Terror", "Primeira Pessoa", "Zumbis" ]
+// const jogo2 = "Resident Evil Village"
+// const genero2 = "Ação"
+// const preco2 = 139.90
+// const multiplayer2 = false
+// const marcadores2 = ["Terro de Sobrevivência", "Terror", "Primeira Pessoa", "Zumbis" ]
 
-const jogo3 = "F1 2022"
-const genero3 = "Corrida"
-const preco3 = 249.00
-const multiplayer3 = true
-const marcadores3 = ["Corrida", "Esportes", "Simulação", "Cooperativo"]
+// const jogo3 = "F1 2022"
+// const genero3 = "Corrida"
+// const preco3 = 249.00
+// const multiplayer3 = true
+// const marcadores3 = ["Corrida", "Esportes", "Simulação", "Cooperativo"]
 
-const jogo4 = "God Of War"
-const genero4 = "Ação"
-const preco4 = 199.90
-const multiplayer4 = false
-const marcadores4 = ["Aventura", "Um Jogador", "Boa Trama", "RPG"]
+// const jogo4 = "God Of War"
+// const genero4 = "Ação"
+// const preco4 = 199.90
+// const multiplayer4 = false
+// const marcadores4 = ["Aventura", "Um Jogador", "Boa Trama", "RPG"]
 
-console.log(jogo.toUpperCase(), "\nGênero:"+genero, "\nPreço:"+ preco, "\nMultiplayer:"+multiplayer, "\nMarcadores:"+marcadores)
+// console.log(jogo.toUpperCase(), "\nGênero:"+genero, "\nPreço:"+ preco, "\nMultiplayer:"+multiplayer, "\nMarcadores:"+marcadores)
 
-console.log(jogo2.toUpperCase(), "\nGênero:"+genero2, "\nPreço:"+ preco2, "\nMultiplayer:"+multiplayer2, "\nMarcadores:"+marcadores2)
+// console.log(jogo2.toUpperCase(), "\nGênero:"+genero2, "\nPreço:"+ preco2, "\nMultiplayer:"+multiplayer2, "\nMarcadores:"+marcadores2)
 
-console.log(jogo3.toUpperCase(), "\nGênero:"+genero3, "\nPreço:"+ preco3, "\nMultiplayer:"+multiplayer3, "\nMarcadores:"+marcadores3)
+// console.log(jogo3.toUpperCase(), "\nGênero:"+genero3, "\nPreço:"+ preco3, "\nMultiplayer:"+multiplayer3, "\nMarcadores:"+marcadores3)
 
-console.log(jogo4.toUpperCase(), "\nGênero:"+genero4, "\nPreço:"+ preco4, "\nMultiplayer:"+multiplayer4, "\nMarcadores:"+marcadores4)
+// console.log(jogo4.toUpperCase(), "\nGênero:"+genero4, "\nPreço:"+ preco4, "\nMultiplayer:"+multiplayer4, "\nMarcadores:"+marcadores4)
+
+
+
+// SEMANA 3:
+
+
+const jogo1 = {
+    Título: "Mortal Kombat 11",
+    Gênero: "Ação",
+    Preço: 159.99,
+    multiplayer: true,
+    marcadores: ["Luta", "Violência detalhada", "Violento", "Multiplayer"]
+}
+
+const jogo2 = {
+    Título: "Resident Evil Village",
+    Gênero: "Ação",
+    Preço: 139.90,
+    multiplayer: false,
+    marcadores: ["Terror de Sobrevivência", "Terror", "Primeira Pessoa", "Zumbis"]
+}
+
+const jogo3 = {
+    Título: "F1 2022",
+    Gênero: "Corrida",
+    Preço: 249.00,
+    multiplayer: true,
+    marcadores: ["Corrida", "Esportes", "Simulação", "Cooperativo"]
+}
+
+const jogo4 = {
+    Título: "God Of War",
+    Gênero: "Ação",
+    Preço: 199.90,
+    multiplayer: false,
+    marcadores: ["Aventura", "Um Jogador", "Boa Trama", "RPG"]
+}
+
+
+const jogos = []
+
+
+
+
 
 
 
