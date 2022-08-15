@@ -1,4 +1,4 @@
-const paciente1 = D.K.L
+const paciente1 ="D.K.L"
 const idade1 = 33
 const emDesintox1 = true
 

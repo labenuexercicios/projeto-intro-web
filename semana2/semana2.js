@@ -11,30 +11,26 @@ verificou email?: false
 projetos: ["Projeto de HTML", "Projeto de CSS", "Projeto React"] 
  */
 
-const unidadeSaude = {
-    paciente1 : {
-    nome : "M.B,S",
+const paciente1 = {
+    nome : "D.K.L",
     prontuario : 1001,
     emDesintox : true,
     pts : ["auriculoterapia", "grupo de meditação", "psicologia"],
-},
+};
 
-    paciente2 : {
+const paciente2 = {
     nome : "F.R.T",
     prontuario : 1002,
     emDesintox : true,
     pts : ["avaliação psiquiátrica", "terapia ocupacional", "grupo criarte"],
-},
+};
 
-    paciente3 : {
+const paciente3 = {
     nome : "J.R.C",
     prontuario : 1003,
     emDesintox : false,
     pts : ["avaliação clínica", "auriculoterapia", "grupo cabeça feita"],
-}
-
-}
-
+};
 
 console.log(paciente1.nome.toUpperCase())
 
