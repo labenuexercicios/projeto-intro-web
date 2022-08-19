@@ -1,4 +1,4 @@
-//ENTREGAS SEMANA 1
+/* //ENTREGAS SEMANA 1
 const nome1 = 'Bife de Ancho'
 const preco1 = 88.0
 const semGluten1 = false
@@ -18,7 +18,7 @@ const restauranteSemGluten = console.log(semGluten1 && semGluten2 && semGluten3)
 //ENTREGAS SEMANA 2
 const acompanhamentos1 = ['Arroz Branco', 'Batata Rústica', 'Farofa']
 const acompanhamentos2 = ['Arroz Branco', 'Batata Rústica', 'Farofa']
-const acompanhamentos3 = ['Arroz Branco', 'Batata Rústica', 'Farofa']
+const acompanhamentos3 = ['Arroz Branco', 'Batata Rústica', 'Farofa'] 
 
 console.log(`${nome1.toUpperCase()}
 Preço: R$ ${preco1} 
@@ -42,7 +42,7 @@ Contém Gluten? ${semGluten3}
 Acompanhamentos:
 - ${acompanhamentos3[0]},
 - ${acompanhamentos3[1]},
-- ${acompanhamentos3[2]}`)
+- ${acompanhamentos3[2]}`) */
 
 //ENTREGAS DA SEMANA 3
 item1 = {
@@ -60,7 +60,7 @@ item2 = {
 item3 = {
   nome: 'Assado de Tira',
   preco: 88,
-  contemGlutem: false,
+  contemGlutem: true,
   acompanhamento: ['Arroz Branco', 'Batata Rústica', 'Farofa']
 }
 
@@ -82,4 +82,26 @@ if (item3.contemGlutem === true) {
   alert(`O item ${item3.nome} não foi adicionado`)
 }
 
-console.log(cardapio)
+cardapio.push(
+  (item3 = {
+    nome: 'Linguiça Parrillera',
+    preco: 30.0,
+    contemGlutem: true,
+    acompanhamento: ['Farofa', 'Limão Siciliano']
+  })
+)
+
+for (var i = 0; i < cardapio.length; i++) {
+  console.log('=====================================================')
+  console.log(cardapio[i].nome.toUpperCase())
+  console.log(`R$ ${cardapio[i].preco.toFixed(2)}`)
+  if (cardapio[i].contemGlutem) {
+    console.log('Contém Gluten')
+  } else {
+    console.log('Gluten Free')
+  }
+  console.log('ACOMPANHAMENTOS')
+  for (var j = 0; j < cardapio[i].acompanhamento.length; j++) {
+    console.log('- ' + cardapio[i].acompanhamento[j])
+  }
+}
