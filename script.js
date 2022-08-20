@@ -1,82 +1,82 @@
 //Filmes para ver antes de morrer
+let array = [
+     {
+    nome: "TENET",
+    anoLancamento: 2020,
+    valeAPena: true,
+    diretor: "Christopher Nolan",
+    roteiro: ["Chistopher Nolan"],
+},
 
-let objeto1 = {
-    nome1: "TENET",
-    anoLancamento1: 2020,
-    valeAPena1: true,
-    diretor1: "Christopher Nolan",
-    roteiro1: ["Chistopher Nolan"],
+ {
+    nome: "THE SUN SHINES BRIGHT",
+    anoLancamento: 1953,
+    valeAPena: true,
+    diretor: "John Ford",
+    roteiro: ["Frank Hotaling"],
+},
+
+ {
+    nome: "GREEN BOOK",
+    anoLancamento: 2018,
+    valeAPena: true,
+    diretor: "Peter Farrely",
+    roteiro: ["Peter Farrely", "Nick Vallelonga", "Bryan Hayes Currie"],
 }
+]
 
-let objeto2 = {
-    nome2: "THE SUN SHINES BRIGHT",
-    anoLancamento2: 1953,
-    valeAPena2: true,
-    diretor2: "John Ford",
-    roteiro2: ["Frank Hotaling"],
-}
-
-let objeto3 = {
-    nome3: "GREEN BOOK",
-    anoLancamento3: 2018,
-    valeAPena3: true,
-    diretor3: "Peter Farrely",
-    roteiro3: ["Peter Farrely", "Nick Vallelonga", "Bryan Hayes Currie"],
-}
-
-
-const media = (objeto1.anoLancamento1 + objeto2.anoLancamento2 + objeto3.anoLancamento3)/3
+const media = (array[0].anoLancamento + array[1].anoLancamento + array[2].anoLancamento)/3
     console.log(media)
     
-const verificarValeAPena = objeto1.valeAPena1 && objeto2.valeAPena2 && objeto3.valeAPena3
+const verificarValeAPena = array[0].valeAPena && array[1].valeAPena && array[2].valeAPena
     console.log(verificarValeAPena)
+
     
-let array = []
     
-objeto1.valeAPena1 ? array.push(objeto1) : alert(`Tenet não foi adicionado`)
-objeto2.valeAPena2 ? array.push(objeto2) : alert(`The Sun Shines Bright não foi adicionado`)
-objeto3.valeAPena3 ? array.push(objeto3) : alert(`Green Book não foi adicionado`)
-    
-//console.log(array)
-    
+
+let lista = []
+
+array[0].valeAPena ? lista.push(array[0]) : alert(`Tenet não foi adicionado`)
+array[1].valeAPena ? lista.push(array[1]) : alert(`The Sun Shines Bright não foi adicionado`)
+array[2].valeAPena ? lista.push(array[2]) : alert(`Green Book não foi adicionado`)
+
+console.log(lista)
+
 let string1 = []
     
-for(i in objeto1.roteiro1){
-    if(i < objeto1.roteiro1.length - 1){
-        string1 += `${objeto1.roteiro1[i]}, `
+for(i in array[0].roteiro){
+    if(i < array[0].roteiro.length - 1){
+        string1 += `${array[0].roteiro[i]}, `
     }else{
-        string1 += `${objeto1.roteiro1[i]}`
+        string1 += `${array[0].roteiro[i]}`
     } 
 }
 
 let string2 = []
 
 
-for(i in objeto2.roteiro2){
-    if(i < objeto2.roteiro2.length - 1){
-        string2 += `${objeto2.roteiro2[i]}, `
+for(i in array[1].roteiro){
+    if(i < array[1].roteiro.length - 1){
+        string2 += `${array[1].roteiro[i]}, `
     }else{
-        string2 += `${objeto2.roteiro2[i]}`
+        string2 += `${array[1].roteiro[i]}`
     } 
 }
 
 
 let string3 = []
 
-for(i in objeto3.roteiro3){
-    if(i < objeto3.roteiro3.length - 1){
-        string3 += `${objeto3.roteiro3[i]}, `
+for(i in array[2].roteiro){
+    if(i < array[2].roteiro.length - 1){
+        string3 += `${array[2].roteiro[i]}, `
     }else{
-        string3 += `${objeto3.roteiro3[i]}`
+        string3 += `${array[2].roteiro[i]}`
     } 
 }
 
+let roteiros = []
+roteiros.push(string1, string2, string3)
 
-
-//Relatório
-console.log(`${objeto1.nome1} \nMinutos: ${objeto1.duracaoMinutos1}\nRemake: ${objeto1.valeAPena1} \nDiretor: ${objeto1.diretor1} \nRoteiristas: ${string1}`)
-
-console.log(`${objeto2.nome2} \nMinutos: ${objeto2.duracaoMinutos2} \nRemake: ${objeto2.valeAPena2} \nDiretor: ${objeto2.diretor2} \nRoteiristas: ${string2}`)
-
-console.log(`${objeto3.nome3} \nMinutos: ${objeto3.duracaoMinutos3} \nRemake: ${objeto3.valeAPena3} \nDiretor: ${objeto3.diretor3} \nRoteiristas: ${string3}`)
-    
+for(i in array){
+ console.log(`nome: ${array[i].nome} \nlançamento: ${array[i].anoLancamento} \nvale a pena?: ${array[i].valeAPena} \ndiretor: ${array[i].diretor} \nroteiro: ${roteiros[i]}`)
+}
