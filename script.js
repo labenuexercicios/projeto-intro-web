@@ -22,6 +22,14 @@ let array = [
     valeAPena: true,
     diretor: "Peter Farrely",
     roteiro: ["Peter Farrely", "Nick Vallelonga", "Bryan Hayes Currie"],
+},
+
+{
+    nome: "WHIPLASH",
+    anoLancamento: 2014,
+    valeApena: true,
+    diretor: "Damien Chazelle",
+    roteiro: ["Damien Chazelle", "Olivia Hamil"]
 }
 ]
 
@@ -78,5 +86,5 @@ let roteiros = []
 roteiros.push(string1, string2, string3)
 
 for(i in array){
- console.log(`nome: ${array[i].nome} \nlançamento: ${array[i].anoLancamento} \nvale a pena?: ${array[i].valeAPena} \ndiretor: ${array[i].diretor} \nroteiro: ${roteiros[i]}`)
+ console.log(`nome: ${array[i].nome} \nlançamento: ${array[i].anoLancamento} \nvale a pena?: ${array[i].valeAPena} \ndiretor: ${array[i].diretor} \nroteiro: ${array[i].roteiro}`)
 }
