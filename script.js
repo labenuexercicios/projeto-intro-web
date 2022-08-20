@@ -1,6 +1,6 @@
 //Filmes para ver antes de morrer
 let array = [
-     {
+{
     nome: "TENET",
     anoLancamento: 2020,
     valeAPena: true,
@@ -8,7 +8,7 @@ let array = [
     roteiro: ["Chistopher Nolan"],
 },
 
- {
+{
     nome: "THE SUN SHINES BRIGHT",
     anoLancamento: 1953,
     valeAPena: true,
@@ -16,7 +16,7 @@ let array = [
     roteiro: ["Frank Hotaling"],
 },
 
- {
+{
     nome: "GREEN BOOK",
     anoLancamento: 2018,
     valeAPena: true,
@@ -27,26 +27,31 @@ let array = [
 {
     nome: "WHIPLASH",
     anoLancamento: 2014,
-    valeApena: true,
+    valeAPena: true,
     diretor: "Damien Chazelle",
     roteiro: ["Damien Chazelle", "Olivia Hamil"]
-}
+},
 ]
 
-const media = (array[0].anoLancamento + array[1].anoLancamento + array[2].anoLancamento)/3
-    console.log(media)
-    
-const verificarValeAPena = array[0].valeAPena && array[1].valeAPena && array[2].valeAPena
-    console.log(verificarValeAPena)
 
+let media = 0
+for(let i in array){
+    media = media + array[i].anoLancamento
+}
+console.log(`Media dos anos de lançamento: ${media/array.length}`)
+
+let verificarValeAPena = array[0].valeAPena && array[1].valeAPena && array[2].valeAPena && array[3].valeAPena
+    console.log(verificarValeAPena)
     
     
 
 let lista = []
 
-array[0].valeAPena ? lista.push(array[0]) : alert(`Tenet não foi adicionado`)
-array[1].valeAPena ? lista.push(array[1]) : alert(`The Sun Shines Bright não foi adicionado`)
-array[2].valeAPena ? lista.push(array[2]) : alert(`Green Book não foi adicionado`)
+
+for(i in array){
+    array[i].valeAPena ? lista.push(array[i]) : alert(`Filme da posição ${i} não foi adicionado`)
+}
+
 
 console.log(lista)
 
@@ -81,6 +86,7 @@ for(i in array[2].roteiro){
         string3 += `${array[2].roteiro[i]}`
     } 
 }
+
 
 let roteiros = []
 roteiros.push(string1, string2, string3)
