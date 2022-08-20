@@ -1,4 +1,5 @@
 //Filmes para ver antes de morrer
+
 let objeto1 = {
     nome1: "TENET",
     anoLancamento1: 2020,
@@ -23,21 +24,14 @@ let objeto3 = {
     roteiro3: ["Peter Farrely", "Nick Vallelonga", "Bryan Hayes Currie"],
 }
 
-// console.log(`${objeto3.roteiro3}`)
-// console.log(objeto3.roteiro3[0], objeto3.roteiro3[1], objeto3.roteiro3[2])
-// for(let i = 0; i < objeto3.roteiro3.length; i++){
-    //     banana += `${objeto3.roteiro3[i]}, `
-    // }
-    
-    
-    
+
 const media = (objeto1.anoLancamento1 + objeto2.anoLancamento2 + objeto3.anoLancamento3)/3
     console.log(media)
     
 const verificarValeAPena = objeto1.valeAPena1 && objeto2.valeAPena2 && objeto3.valeAPena3
     console.log(verificarValeAPena)
     
-    let array = []
+let array = []
     
 objeto1.valeAPena1 ? array.push(objeto1) : alert(`Tenet não foi adicionado`)
 objeto2.valeAPena2 ? array.push(objeto2) : alert(`The Sun Shines Bright não foi adicionado`)
