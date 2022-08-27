@@ -56,24 +56,52 @@ let lista = []
 for(i in arrayObjetos){
     arrayObjetos[i].valeAPena ? lista.push(arrayObjetos[i]) : alert(`Filme da posição ${i} não foi adicionado`)
 }
-// console.log(lista)
+console.log(lista)
 
-for(i of objeto1.elenco){
-    
+let elenco1 = ``
+for(i in objeto1.elenco){
+    elenco1 += `${objeto1.elenco[i]}, `
 }
+
+let elenco2 = ``
+for(i in objeto2.elenco){
+    elenco2 += `${objeto2.elenco[i]}, `
+}
+
+let elenco3 = ``
+for(i in objeto3.elenco){
+    elenco3 += `${objeto3.elenco[i]}, `
+}
+
+let elenco4 = ``
+for(i in objeto4.elenco){
+    elenco4 += `${objeto4.elenco[i]}, `
+}
+
+let listaElencos = []
+listaElencos.push(elenco1, elenco2, elenco3, elenco4)
+
+
 
 
 // for(i in arrayObjetos){
-//  console.log(`nome: ${arrayObjetos[i].nome} \nlançamento: ${arrayObjetos[i].anoLancamento} \nvale a pena?: ${arrayObjetos[i].valeAPena} \ndiretor: ${arrayObjetos[i].diretor} \nroteiro: ${arrayObjetos[i].elenco}`)
+//  console.log(`nome: ${arrayObjetos[i].nome} \nlançamento: ${arrayObjetos[i].anoLancamento} \nvale a pena?: ${arrayObjetos[i].valeAPena} \ndiretor: ${arrayObjetos[i].diretor} \nroteiro: ${listaElencos[i]}`)
 // }
 
 
 
-teste = (objeto) =>{
+impressaoRelatorio = (objeto) =>{
     for(i in objeto){
-        console.log(objeto[i])
+        console.log(`${i}: ${objeto[i]}`)
     }
 }
-teste(objeto1)
+impressaoRelatorio(objeto1)
+impressaoRelatorio(objeto2)
+impressaoRelatorio(objeto3)
+impressaoRelatorio(objeto4)
+
+teste = (arrayObjetos, string) =>{
+
+}
   
 
