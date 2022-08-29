@@ -58,6 +58,8 @@ for(i in arrayObjetos){
 }
 console.log(lista)
 
+
+
 let elenco1 = ``
 for(i in objeto1.elenco){
     elenco1 += `${objeto1.elenco[i]}, `
@@ -101,7 +103,19 @@ impressaoRelatorio(objeto3)
 impressaoRelatorio(objeto4)
 
 teste = (arrayObjetos, string) =>{
-
+    let retorno = []
+    for(i in arrayObjetos){
+        if(arrayObjetos[i].nome === string){
+            retorno.push(arrayObjetos[i])
+        }
+    }
+    if(retorno.length === 0){
+     alert(`Nenhum item foi encontrado`)   
+    }
+    return retorno
 }
-  
+console.log(teste(arrayObjetos, `OS VINGADORES`))
+
+
+
 
