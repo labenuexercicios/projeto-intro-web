@@ -1,33 +1,67 @@
-const planetas = []
+
 
 const planeta =[ {
 
-    nome: "mercurio",
-    peridoDeOrbital:88,
-    luas:false,
-    composicaoQuimica : ["Hélio" ,"Hidrogênio"]
-    },
-     
-    {
-    
-    nome:"venus",
-    peridoDeOrbital:225,
-    luas:false,
-    composicaoQuimica:["helio" ,"sodio" , "oxigenio"]},
-    
-    
-    {
-    nome :"terra",
-    peridoDeOrbita: 365,
-    luas : true,
-    composicaoQuimica :["ferro" , "oxigenio" , "silicio"]},
-    
-    {
-    nome : "marte",
-    peridoDeOrbita: 687,
-    luas: true,
-    composicaoQuimica :["Nitrogênio" ,"Oxigênio", "DióxidoDeCarbo"] },
-    ]
+ planeta: "mercurio",
+ satelites:0,
+ orbitaLimpa:true,
+ atmosfera:["42% de oxigênio"," 29% de gás de sódio"," 22% de hidrogênio", "6% de hélio" ," 0,5% de potássio"]
 
-    planetas.push(planeta)
-    console.log(planetas)
+},
+    
+{
+ planeta:"venus",
+ satelites:0,
+orbitaLimpa:true,
+atmosfera: ["96,5% de dióxido de carbono" ," 3,5% de hidrogênio"]
+
+},
+
+{
+ planeta :"terra",
+satelites: 1,
+ orbitaLimpa : true,
+atmosfera:[" 78% de nitrogênio" ," 21% de oxigênio"]
+},
+{
+planeta: "marte",
+satelites: 2,
+orbitaLimpa : true,
+atmosfera :["95,3% de dióxido de carbono", "2,7% de nitrogênio", " 1,6% de argônio"]
+},
+{
+planeta : "Jupiter",
+satelites: 79,
+orbitaLimpa : true,
+atmosfera:[" 75% de hidrogênio"," 24% de hélio"]
+},
+{
+planeta: "Saturno",
+satelites: 82,
+orbitaLimpa : true,
+atmosfera:["93,2% de hidrogênio" ," 6,7% de hélio"]
+},
+
+{
+planeta:"Urano",
+satelites: 27,
+orbitaLimpa:true,
+atmosfera:["83% de hidrogênio", "15% de hélio e 2% metano"]
+},
+{
+planeta:"Neturno",
+satelites:14,
+orbitaLimpa: true,
+atmosfera:["80% de hidrogênio" ," 19% de hélio"]
+    }]
+
+    const copiaPlaneta= planeta.slice()
+   copiaPlaneta.push({
+    nome: "Plutão",
+    satelites:5,
+    orbitaLimpa:false,
+    atmosfera: ["nitrogênio"," metano"," monóxido de carbono"]
+   })
+   console.log(copiaPlaneta)
+
+  
