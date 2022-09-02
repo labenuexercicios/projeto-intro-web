@@ -31,7 +31,7 @@ console.log("A média de recompensas é de "+(recompensa1+recompensa2+recompensa
 
 //4. Imprima o resultado se todos os valores booleanos são verdadeiros
 
-console.log("Todos os personagens são piratas? "+pirata1&&pirata2&&pirata3)
+console.log("Todos os personagens são piratas? ",pirata1&&pirata2&&pirata3)
 
 //5. Crie mais um item, deve ser um array. (Ok)
 
