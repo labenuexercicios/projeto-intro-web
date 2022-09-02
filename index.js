@@ -1,5 +1,7 @@
+// Título ---------------------------
 console.log("Lista de Pets da Casa")
 
+// Brisa ----------------------------
 const nomePet1 = "Brisa"
 let idadePet1 = 9
 const especiePet1 = "Canina"
@@ -16,6 +18,7 @@ Vermifugo: ${vermifugoPet1}
 Brinquedos: ${arrayBriquedos1}
 `)
 
+// Janis ----------------------------
 const nomePet2 = "Janis"
 let idadePet2 = 8
 const especiePet2 = "Felina"
@@ -32,6 +35,7 @@ Vermifugo: ${vermifugoPet2}
 Brinquedos: ${arrayBriquedos2}
 `)
 
+// Lua ----------------------------
 const nomePet3 = "Lua"
 let idadePet3 = 2
 const especiePet3 = "Canina"
@@ -48,6 +52,7 @@ Vermifugo: ${vermifugoPet3}
 Brinquedos: ${arrayBriquedos3}
 `)
 
+// Marilyn ----------------------------
 const nomePet4 = "Marilyn"
 let idadePet4 = 7
 const especiePet4 = "Felina"
