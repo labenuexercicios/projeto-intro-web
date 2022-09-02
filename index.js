@@ -27,6 +27,7 @@ const racaPet2 = "SRD"
 let vacinaPet2 = true
 let vermifugoPet2 = false
 const arrayBriquedos2 = ["[Caixa de papelão", " arranhador de tecido", " ervinha de gato.]"]
+
 console.log(`${nomePet2.toUpperCase()}
 Idade: ${idadePet2}
 Espécie: ${especiePet2}
@@ -44,6 +45,7 @@ const racaPet3 = "Shin Tzu"
 let vacinaPet3 = true
 let vermifugoPet3 = false
 const arrayBriquedos3 = ["[Bolinha", " ossinho", " orelha de boi", " ursinho.]"]
+
 console.log(`${nomePet3.toUpperCase()}
 Idade: ${idadePet3}
 Espécie: ${especiePet3}
@@ -61,6 +63,7 @@ const racaPet4 = "SRD"
 let vacinaPet4 = true
 let vermifugoPet4 = false   
 const arrayBriquedos4 = ["[Caixa de papelão", " barbante enrolado", " erva de gato", " bolinha de lã.]"]
+
 console.log(`${nomePet4.toUpperCase()}
 Idade: ${idadePet4}
 Espécie: ${especiePet4}
