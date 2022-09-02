@@ -6,19 +6,17 @@
 //1. Para este item, você precisa criar pelo menos 1 String, 1 Number, 1 Boolean
 //2. Crie 3 conjuntos de variaveis utilizando as caracteristicas que você definiu. Com dados diferentes.
 
-let contagem = 1
+const contagem = 3
 const nome1 = "Monkey D. Luffy" //string
 const recompensa1 = 3000000000 //number
 const pirata1 = true //boolean
 const haki1 = ["Haki do Rei","Haki do Armamento", "Haki da Observação"]
 
-contagem = contagem + 1
 const nome2 = "\"God\" Usopp" //string
 const recompensa2 = 500000000 //number
 const pirata2 = true //boolean
 const haki2 = ["Haki da Observação"]
 
-contagem = contagem + 1
 const nome3 = "Kizaro" //string
 const recompensa3 = 0 //number
 const pirata3 = false //boolean
