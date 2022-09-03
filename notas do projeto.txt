@@ -39,6 +39,7 @@ Ocupação: Escritor
 Aldeia: Konohagakure
 Mais conhecido como: Sábio Tarado
 Ainda está vivo? false
+principaisJutsus: [Goemon, Rasengan, Hari Jizō, Prisão da Boca do Sapo, Kebari Senbon, ]
 
 Nome: Sasuke
 Clã: Uchiha
@@ -47,6 +48,7 @@ Ocupação: Líder do Clã Uchiha
 Aldeia: Konohagakure
 Mais conhecido como: Sombra de Apoio
 Ainda está vivo? true
+principaisJutsus: [Chibaku Tensei, Susanoo, Amaterasu, Ame-no-tejikara, Chidori]
 
 CONTINUAÇÃO DO PROJETO
 
