@@ -6,7 +6,7 @@ const marca1 = ["adidas", "nike","sortidos"]
 const tipoRoupaAcademia2 = "top"
 const quantidade2 = 6 
 const verificouMarca2 = true
-const marca2 = ["adidas", "nike","sortidos"]
+const marca2 = ["adidas", "nike","sortidos"]   
 
 const tipoRoupaAcademia3 = "short"
 const quantidade3 = 3 
