@@ -3,7 +3,7 @@
 const objeto1 = {
     nome: "Frozen Café Tradicional",
     preco: 16.00,
-    gelado: true,
+    disponivel: true,
     tamanho: 350,
     sabor:"Tradicional",
     ingredientes:["Frozem artesanal da casa", "expresso duplo", "leite cremoso"]
@@ -12,7 +12,7 @@ const objeto1 = {
 const objeto2 = {
     nome: "Frozen Café Doce de Leite",
     preco: 17.00,
-    gelado: true,
+    disponivel: true,
     tamanho: 350,
     sabor:"Doce de Leite",
     ingredientes:["Frozem artesanal doce de leite", "expresso duplo", "leite cremoso"]
@@ -21,14 +21,14 @@ const objeto2 = {
 const objeto3 = {
     nome: "Frozen Café Limão",
     preco: 18.00,
-    gelado: true,
+    disponivel: true,
     tamanho: 350,
     sabor:"Limão",
     ingredientes:["Frozem de limão siciliano", "capuccino tradicional"]
     }
 
 const arrayDeObjetos = []
-if (objeto1.gelado === objeto2.gelado) {
+if (objeto1.disponivel === objeto2.disponivel) {
     arrayDeObjetos.push(objeto1, objeto2, objeto3)
 } else {
     alert("ITENS NÃO ADICIONADOS")
@@ -36,12 +36,14 @@ if (objeto1.gelado === objeto2.gelado) {
 
 console.log(arrayDeObjetos);
 
-// console.log("\n",nome1.toUpperCase());
-// console.log("Preço:", preco1,"R$");
-// console.log("É gelado?", gelado1);
-// console.log("Tamanho:", tamanho1,"ml");
-// console.log("Sabor:", sabor1);
-// console.log("Ingredientes:", ingredientes1);
+console.log(objeto3.ingredientes);
+
+console.log("\n", objeto1.nome.toUpperCase());
+console.log("Preço:", objeto1.preco,"R$");
+console.log("Está disponível?", objeto1.disponivel);
+console.log("Tamanho:", objeto1.tamanho,"ml");
+console.log("Sabor:", objeto1.sabor);
+console.log("Ingredientes:", objeto1.ingredientes);
 
 // console.log("\n",nome2.toUpperCase());
 // console.log("Preço:", preco2,"R$");
