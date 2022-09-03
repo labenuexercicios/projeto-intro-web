@@ -5,27 +5,27 @@ const objeto1 = {
     preco: 16.00,
     disponivel: true,
     tamanho: 350,
-    sabor:"Tradicional",
-    ingredientes:["Frozem artesanal da casa", "expresso duplo", "leite cremoso"]
-    }
+    sabor: "Tradicional",
+    ingredientes: ["Frozem artesanal da casa", "expresso duplo", "leite cremoso"]
+}
 
 const objeto2 = {
     nome: "Frozen Café Doce de Leite",
     preco: 17.00,
     disponivel: true,
     tamanho: 350,
-    sabor:"Doce de Leite",
-    ingredientes:["Frozem artesanal doce de leite", "expresso duplo", "leite cremoso"]
-    }
+    sabor: "Doce de Leite",
+    ingredientes: ["Frozem artesanal doce de leite", "expresso duplo", "leite cremoso"]
+}
 
 const objeto3 = {
     nome: "Frozen Café Limão",
     preco: 18.00,
     disponivel: true,
     tamanho: 350,
-    sabor:"Limão",
-    ingredientes:["Frozem de limão siciliano", "capuccino tradicional"]
-    }
+    sabor: "Limão",
+    ingredientes: ["Frozem de limão siciliano", "capuccino tradicional"]
+}
 
 const arrayDeObjetos = []
 if (objeto1.disponivel === objeto2.disponivel) {
@@ -36,14 +36,26 @@ if (objeto1.disponivel === objeto2.disponivel) {
 
 console.log(arrayDeObjetos);
 
-console.log(objeto3.ingredientes);
+for (let i in arrayDeObjetos) {
+    let string
+    string = `\n${arrayDeObjetos[i].nome.toUpperCase()}
+    \nPreço:${arrayDeObjetos[i].preco}R$
+    \nEstá Disponível:${arrayDeObjetos[i].disponivel}
+    \nTamanho:${arrayDeObjetos[i].tamanho}ml
+    \nSabor:${arrayDeObjetos[i].sabor}
+    \nIngredientes:`
+    for(let j of arrayDeObjetos[i].ingredientes) {
+        string += ` ${j},`
+    }
+    console.log(string);
+}
 
-console.log("\n", objeto1.nome.toUpperCase());
-console.log("Preço:", objeto1.preco,"R$");
-console.log("Está disponível?", objeto1.disponivel);
-console.log("Tamanho:", objeto1.tamanho,"ml");
-console.log("Sabor:", objeto1.sabor);
-console.log("Ingredientes:", objeto1.ingredientes);
+
+// console.log("\n", objeto1.nome.toUpperCase());
+// console.log("Preço:", objeto1.preco, "R$");
+// console.log("Está disponível?", objeto1.disponivel);
+// console.log("Tamanho:", objeto1.tamanho, "ml");
+// console.log("Sabor:", objeto1.sabor);
 
 // console.log("\n",nome2.toUpperCase());
 // console.log("Preço:", preco2,"R$");
