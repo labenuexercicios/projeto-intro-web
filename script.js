@@ -65,7 +65,7 @@ imprimeString(objeto1)
 const imprimePedido = (arrayDeObjetos, pedido) => {
     for (let i in arrayDeObjetos) {
         if (arrayDeObjetos[i].nome === pedido) {
-            return(arrayDeObjetos[i]);
+            return (arrayDeObjetos[i]);
         } else {
             return "pedido não encontrado"
         }
@@ -76,7 +76,7 @@ console.log(imprimePedido(arrayDeObjetos, "Frozen Café Tradicional"));
 
 
 
-//tentativas semana 6 - com alert não deu
+//tentativas semana 6 - com alert não deu nao funciona se são dois obj com mesmo nome
 
 // const imprimePedido = (arrayDeObjetos, pedido) => {
 //     const arrayFiltrado = arrayDeObjetos.filter((item) => {
