@@ -69,6 +69,7 @@ console.log(`O Módulo 02: ${módulo2.toUpperCase()} \nCarga Horária: ${cargaHo
 console.log(`O Módulo 03: ${módulo3.toUpperCase()} \nCarga Horária: ${cargaHorária3}\nconcluído: ${avaliação3}`)
 console.log(`O Módulo 04: ${módulo4.toUpperCase()} \nCarga Horária: ${cargaHorária4}\nconcluído: ${avaliação4}`)
 
+
 //   SEMANA2
 //1. Transforme os itens que criamos nas últimas semanas em objetos.
 
