@@ -1,38 +1,34 @@
 //CARDÁPIO DE VERÃO CONSULADO CAFÉ
 
-const objeto1 = {
-    nome: "Frozen Café Tradicional",
-    preco: 16.00,
-    disponivel: true,
-    tamanho: 350,
-    sabor: "Tradicional",
-    ingredientes: ["Frozem artesanal da casa", "expresso duplo", "leite cremoso"]
-}
+const arrayDeObjetos = [
+    objeto1 = {
+        nome: "Frozen Café Tradicional",
+        preco: 16.00,
+        disponivel: true,
+        tamanho: 350,
+        sabor: "Tradicional",
+        ingredientes: ["Frozem artesanal da casa", "expresso duplo", "leite cremoso"]
+    },
 
-const objeto2 = {
-    nome: "Frozen Café Doce de Leite",
-    preco: 17.00,
-    disponivel: true,
-    tamanho: 350,
-    sabor: "Doce de Leite",
-    ingredientes: ["Frozem artesanal doce de leite", "expresso duplo", "leite cremoso"]
-}
+    objeto2 = {
+        nome: "Frozen Café Doce de Leite",
+        preco: 17.00,
+        disponivel: true,
+        tamanho: 350,
+        sabor: "Doce de Leite",
+        ingredientes: ["Frozem artesanal doce de leite", "expresso duplo", "leite cremoso"]
+    },
 
-const objeto3 = {
-    nome: "Frozen Café Limão",
-    preco: 18.00,
-    disponivel: true,
-    tamanho: 350,
-    sabor: "Limão",
-    ingredientes: ["Frozem de limão siciliano", "capuccino tradicional"]
-}
+    objeto3 = {
+        nome: "Frozen Café Limão",
+        preco: 18.00,
+        disponivel: true,
+        tamanho: 350,
+        sabor: "Limão",
+        ingredientes: ["Frozem de limão siciliano", "capuccino tradicional"]
+    },
+]
 
-const arrayDeObjetos = []
-if (objeto1.disponivel === objeto2.disponivel) {
-    arrayDeObjetos.push(objeto1, objeto2, objeto3)
-} else {
-    alert("ITENS NÃO ADICIONADOS")
-}
 
 console.log(arrayDeObjetos);
 
@@ -50,6 +46,58 @@ for (let i in arrayDeObjetos) {
     console.log(string);
 }
 
+const imprimeString = (objeto) => {
+    let string
+    string = `\n${objeto.nome.toUpperCase()}
+    \nPreço:${objeto.preco}R$
+    \nEstá Disponível:${objeto.disponivel}
+    \nTamanho:${objeto.tamanho}ml
+    \nSabor:${objeto.sabor}
+    \nIngredientes:`
+    for (let j of objeto.ingredientes) {
+        string += ` ${j},`
+    }
+    console.log(string);
+}
+
+imprimeString(objeto1)
+
+const imprimePedido = (arrayDeObjetos, pedido) => {
+    for (let i in arrayDeObjetos) {
+        if (arrayDeObjetos[i].nome === pedido) {
+            return(arrayDeObjetos[i]);
+        } else {
+            return "pedido não encontrado"
+        }
+    }
+}
+
+console.log(imprimePedido(arrayDeObjetos, "Frozen Café Tradicional"));
+
+
+
+//tentativas semana 6 - com alert não deu
+
+// const imprimePedido = (arrayDeObjetos, pedido) => {
+//     const arrayFiltrado = arrayDeObjetos.filter((item) => {
+//         return item.nome === pedido})
+//     for (let i in arrayFiltrado) {
+//         if (arrayFiltrado[i].nome === pedido) {
+//             console.log(arrayFiltrado[i]);
+//         } else {
+//             alert('produto não encontrado')
+//         }
+//     }
+// }
+
+
+// const imprimePedido = (arrayDeObjetos, pedido) => {
+//     const filtro = arrayDeObjetos.filter((item) => {
+//         return item.nome === pedido})
+//     return filtro[0]
+// }
+
+//relatório semana 2
 
 // console.log("\n", objeto1.nome.toUpperCase());
 // console.log("Preço:", objeto1.preco, "R$");
@@ -70,6 +118,15 @@ for (let i in arrayDeObjetos) {
 // console.log("Tamanho:", tamanho3,"ml");
 // console.log("Sabor:", sabor3);
 // console.log("Ingredientes:", ingredientes3);
+
+//coisas semanas passadas
+
+// const arrayDeObjetos = []
+// if (objeto1.disponivel === objeto2.disponivel) {
+//     arrayDeObjetos.push(objeto1, objeto2, objeto3)
+// } else {
+//     alert("ITENS NÃO ADICIONADOS")
+// }
 
 // const mediaPreco = (preco1 + preco2 + preco3) / 3;
 // console.log("\nMedia de Preço:", mediaPreco);
