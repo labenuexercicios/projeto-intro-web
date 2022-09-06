@@ -1,4 +1,4 @@
-//Livros 
+//Teste
 /*const nome = prompt("Olá, qual seu nome?")
 const idade = prompt("Quantos anos voce tem?")
 const altura = prompt("Qual sua altura?")
@@ -6,27 +6,49 @@ const pessoa = `Nome: ${nome} \nIdade: ${idade} \nAltura: ${altura}`
 console.log(pessoa)*/
 
 
-const tituloLivro1 = "Bhagavad-Gita: Como ele é"
+/*const tituloLivro1 = "Bhagavad-Gita: Como ele é"
 const autorLivro1 = "Swami Maharaj"
 const anoDeEdicao1 = 1997
 const adiquirido1 = true
-const sequencias1 = [0]
+const sequencias1 = [0]*/
+const livro1 = {
+    titulo: "Bhagavad-Gita: Como Ele É",
+    autor: "Swami Maharaj",
+    edicao: 1997,
+    adiquirido: true,
+    sequencias: 0,
+}
 console.log('livro'.toUpperCase())
-console.log(`Tituto: \"${tituloLivro1}\" \nAutor: ${autorLivro1} \nAno da Edição: ${anoDeEdicao1} \nSequencias: ${sequencias1}`)
+console.log(`Tituto: \"${livro1.titulo}\" \nAutor: ${livro1.autor} \nAno da Edição: ${livro1.edicao} \nSequencias: ${livro1.sequencias}`)
 
-const tituloLivro2 = "Pedra no Céu"
+/*const tituloLivro2 = "Pedra no Céu"
 const autorLivro2 = "Isaac Azimov"
 const anoDeEdicao2 = 2019
 const adiquirido2 = true
-const sequencias2 = [5, "Saga Fundação"]
-console.log(`Tituto: \"${tituloLivro2}\" \nAutor: ${autorLivro2} \nAno da Edição: ${anoDeEdicao2} \nSequencias: ${sequencias2}`)
+const sequencias2 = [5, "Saga Fundação"]*/
+const livro2 = {
+    titulo: "Pedra no Ceu",
+    autor: "Isaac Azimov",
+    edicao: 2019,
+    adiquirido: true,
+    sequencias: [5, "Saga Fundacao"],
+}
+console.log(`Tituto: \"${livro2.titulo}\" \nAutor: ${livro2.autor} \nAno da Edição: ${livro2.edicao} \nSequencias: ${livro1.sequencias}`)
 
-const tituloLivro3 = "Jurasic Park"
+/*const tituloLivro3 = "Jurassic Park"
 const autorLivro3 = "Michael Crichton"
 const anoDeEdicao3 = 2020
 const adiquirido3 = false
-const sequencias3 = [1, "Jurasic World"]
-console.log(`Tituto: \"${tituloLivro3}\" \nAutor: ${autorLivro3} \nAno da Edição: ${anoDeEdicao3} \nSequencias: ${sequencias3}`)
+const sequencias3 = [1, "Jurassic World"]*/
+const livro3 = {
+    titulo: "Jurassic Park",
+    autor: "Michael Crichton",
+    edicao: 2020,
+    adiquirido: false,
+    sequencias: [1, "Jurassic World"]
+}
+console.log(`Tituto: \"${livro3.titulo}\" \nAutor: ${livro3.autor} \nAno da Edição: ${livro3.edicao} \nSequencias: ${livro3.sequencias}`)
 
-//const anoMedio = (anoDeEdicao1 + anoDeEdicao2 + anoDeEdicao3) / 3
-//console.log(anoMedio)
+const acervo = []
+acervo.push(livro1, livro2, livro3)
+console.log(acervo)
