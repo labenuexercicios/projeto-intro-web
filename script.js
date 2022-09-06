@@ -7,7 +7,9 @@ let objeto1 ={
     diretor: "Joss Whedon",
     elenco: ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Rufallo", "Chris Hemsworth", "Jeremy Renner",
 "Tom Hiddleston", "Samuel L. Jackson"],
+    imagem: `./imagens/vingadores.jpg`,
 };
+    
 
 let objeto2 = {
     nome: "VINGADORES: ERA DE ULTRON",
@@ -16,6 +18,7 @@ let objeto2 = {
     diretor: "Joss Whedon",
     elenco: ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Rufallo", "Chris Hemsworth", "Jeremy Renner",
     "Tom Hiddleston", "Samuel L. Jackson", "Elizabeth Olsen", "James Spader", "Paul Bettany", ],
+    imagem: `./imagens/vingadores2.jpg`,
 };
 
 let objeto3 = {
@@ -25,6 +28,7 @@ let objeto3 = {
     diretor: "Anthony e Joe Russo",
     elenco: ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Rufallo", "Chris Hemsworth", "Jeremy Renner",
     "Tom Hiddleston", "Samuel L. Jackson", "Elizabeth Olsen", "Paul Bettany",],
+    imagem: `./imagens/vingadores-guerra-infinita.webp`,
 };
 
 let objeto4 = {
@@ -33,7 +37,8 @@ let objeto4 = {
     valeAPena: true,
     diretor: "Anthony e Joe Russo",
     elenco: ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Rufallo", "Chris Hemsworth", "Jeremy Renner",
-    "Tom Hiddleston", "Samuel L. Jackson", "Elizabeth Olsen", "Paul Bettany"]
+    "Tom Hiddleston", "Samuel L. Jackson", "Elizabeth Olsen", "Paul Bettany"],
+    imagem: `./imagens/vingadores-ultimato.jpg`,
 };
 
 let arrayObjetos = []
@@ -51,10 +56,13 @@ console.log(verificarValeAPena)
  
 //Semana 4 exercício 1
 let lista = []
-
+let filmes = []
+for(i in arrayObjetos){
+    filmes.push(arrayObjetos[i].nome)
+}
 
 for(i in arrayObjetos){
-    arrayObjetos[i].valeAPena ? lista.push(arrayObjetos[i]) : alert(`Filme da posição ${i} não foi adicionado`)
+    arrayObjetos[i].valeAPena ? lista.push(arrayObjetos[i]) : alert(`O filme ${filmes[i]} não foi adicionado`)
 }
 console.log(lista)
 
@@ -93,16 +101,18 @@ listaElencos.push(elenco1, elenco2, elenco3, elenco4)
 
 
 impressaoRelatorio = (objeto) =>{
+    let imprimir = ``
     for(i in objeto){
-        console.log(`${i}: ${objeto[i]}`)
+        imprimir += `${i}: ${objeto[i]}\n`
     }
+    return imprimir
 }
-impressaoRelatorio(objeto1)
-impressaoRelatorio(objeto2)
-impressaoRelatorio(objeto3)
-impressaoRelatorio(objeto4)
+console.log(impressaoRelatorio(objeto1))
+console.log(impressaoRelatorio(objeto2))
+console.log(impressaoRelatorio(objeto3))
+console.log(impressaoRelatorio(objeto4))
 
-teste = (arrayObjetos, string) =>{
+funcBusca = (arrayObjetos, string) =>{
     let retorno = []
     for(i in arrayObjetos){
         if(arrayObjetos[i].nome === string){
@@ -114,7 +124,7 @@ teste = (arrayObjetos, string) =>{
     }
     return retorno
 }
-console.log(teste(arrayObjetos, `OS VINGADORES`))
+console.log(funcBusca(arrayObjetos, `OS VINGADORES`))
 
 
 
