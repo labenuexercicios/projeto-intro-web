@@ -1,70 +1,95 @@
 //Cientistas mulheres incriveis
+//Criei objetos com os dados de cada cientista
+const cientista1 = {
+    nome: "Katie Bouman",
+    descoberta: "Primeira foto registrada de um buraco negro",
+    idadeDescoberta: 29,
+    anoDescoberta: 2019,
+    pais: "Estados Unidos",
+    viva: true,
+    areaPesquisa: ["fotografia", "universo", "algoritimo"]  //array com caracteristicas (escolhi area de pesquisa)
+}
 
-const nome1 = "Katie Bouman"
-const descoberta1 = "Primeira foto registrada de um buraco negro"
-const idadeDescoberta1 = 29
-const anoDescoberta1 = 2019
-const pais1 = "Estados Unidos"
-const viva1 = true
-//array com caracteristicas do item
-const areaPesquisa1 = ["fotografia", "universo", "algoritimo"]
-//utilizando console.log(), mostre todos os dados de cada um dos itens criados
-console.log(`${nome1.toUpperCase()} \n${descoberta1} \n${idadeDescoberta1} \n${anoDescoberta1} \n${pais1} \n${viva1} \n${areaPesquisa1}`)
+const cientista2 = {
+    nome: "Ada Lovelace",
+    descoberta: "Desenvolveu o primeiro algoritmo que foi processado por uma máquina",
+    idadeDescoberta: 28,
+    anoDescoberta: 1843,
+    pais: "Reino Unido",
+    viva: false,
+    areaPesquisa: ["matematica", "programacao", "computador"]
+}
 
+const cientista3 = {
+    nome: "Maria Curie",
+    descoberta: "Descobriu elementos químicos, como o polônio e rádio, que auxiliavam em tratamentos médicos. Foi a primeira mulher a ganhar o Prêmio Nobel de Física",
+    idadeDescoberta: 31,
+    anoDescoberta: 1898,
+    pais: "Polônia",
+    viva: false, 
+    areaPesquisa: ["quimica", "medicina", "radioatividade"]
+}
 
-const nome2 = "Ada Lovelace"
-const descoberta2 = "Desenvolveu o primeiro algoritmo que foi processado por uma máquina"
-const idadeDescoberta2 = 28
-const anoDescoberta2 = 1843
-const pais2 = "Reino Unido"
-const viva2 = true
-//array com caracteristicas do item
-const areaPesquisa2 = ["matematica", "programacao", "computador"]
-//utilizando console.log(), mostre todos os dados de cada um dos itens criados
-console.log(`${nome2.toUpperCase()} \n${descoberta2} \n${idadeDescoberta2} \n${anoDescoberta2} \n${pais2} \n${viva2} \n${areaPesquisa2}`)
+const cientista4 = {
+    nome: "Jaqueline Goes de Jesus",
+    descoberta: "Sequenciou o genoma da COVID-19 após 48 horas do primeiro caso no Brasil",
+    idadeDescoberta: 32,
+    anoDescoberta: 2020,
+    pais: "Brasil",
+    viva: true,
+    areaPesquisa: ["biologia", "virus", "genetica"]
+}
 
+const cientista5 = {
+    nome: "Hedy Lamarr",
+    descoberta: "Criou o WiFi e um aparelho que fazia interferência em rádios (usado para despistar os radares nazistas na 2ª Guerra Mundial). Além de também ser atriz e cineasta",
+    idadeDescoberta: 28,
+    anoDescoberta: 1942,
+    pais: "Austria",
+    viva: false,
+    areaPesquisa: ["tecnologia", "cinema", "computador"]  
+}
 
-const nome3 = "Maria Curie"
-const descoberta3 = "Descobriu elementos químicos, como o polônio e rádio, que auxiliavam em tratamentos médicos. Foi a primeira mulher a ganhar o Prêmio Nobel de Física"
-const idadeDescoberta3 = 31
-const anoDescoberta3 = 1898
-const pais3 = "Polônia"
-const viva3 = false
-//array com caracteristicas do item
-const areaPesquisa3 = ["quimica", "medicina", "radioatividade"]
-//utilizando console.log(), mostre todos os dados de cada um dos itens criados
-console.log(`${nome3.toUpperCase()} \n${descoberta3} \n${idadeDescoberta3} \n${anoDescoberta3} \n${pais3} \n${viva3} \n${areaPesquisa3}`)
-
-
-const nome4 = "Jaqueline Goes de Jesus"
-const descoberta4 = "Sequenciou o genoma da COVID-19 após 48 horas do primeiro caso no Brasil"
-const idadeDescoberta4 = 32
-const anoDescoberta4 = 2020
-const pais4 = "Brasil"
-const viva4 = true
-//array com caracteristicas do item
-const areaPesquisa4 = ["biologia", "virus", "genetica"]
-//utilizando console.log(), mostre todos os dados de cada um dos itens criados
-console.log(`${nome4.toUpperCase()} \n${descoberta4} \n${idadeDescoberta4} \n${anoDescoberta4} \n${pais4} \n${viva4} \n${areaPesquisa4}`)
-
-
-const nome5 = "Hedy Lamarr"
-const descoberta5 = "Criou o WiFi e um aparelho que fazia interferência em rádios (usado para despistar os radares nazistas na 2ª Guerra Mundial). Além de também ser atriz e cineasta"
-const idadeDescoberta5 = 28
-const anoDescoberta5 = 1942
-const pais5 = "Austria"
-const viva5 = false
-//array com caracteristicas do item
-const areaPesquisa5 = ["tecnologia", "cinema", "computador"]  
-//utilizando console.log(), mostre todos os dados de cada um dos itens criados
-console.log(`${nome5.toUpperCase()} \n${descoberta5} \n${idadeDescoberta5} \n${anoDescoberta5} \n${pais5} \n${viva5} \n${areaPesquisa5}`)
-
+////utilizando console.log(), mostre todos os dados de cada um dos itens criados
+console.log("Detalhes das cientistas: \n", cientista1, "\n", cientista2, "\n", cientista3, "\n", cientista4, "\n", cientista5)
 
 //Média entre os valores numéricos respectivos de cada item (idades)
-const media = (idadeDescoberta1 + idadeDescoberta2 + idadeDescoberta3 + idadeDescoberta4 + idadeDescoberta5)/5
+const media = (cientista1.idadeDescoberta + cientista2.idadeDescoberta + cientista3.idadeDescoberta + cientista4.idadeDescoberta + cientista5.idadeDescoberta)/5
 console.log(`Media das idades das mulheres ciêntistas: ${media}`)
 
-
 //Com um console.log, imprima o resultado de uma operação lógica que checa se todos os valores de variáveis booleanas criadas até aqui são verdadeiras
-const verificarEstaViva = viva1 && viva2 && viva3 && viva4 && viva5
-console.log(verificarEstaViva)
+const verificarEstaViva = cientista1.viva && cientista2.viva && cientista3.viva && cientista4.viva && cientista5.viva
+console.log("Todas as cientistas estão vivas? ", verificarEstaViva)
+
+
+//Semana 2
+//Crie um array vazio
+const cientistas = []
+//Adicione os objetos usando push() ao array, apenas se os booleans forem true
+//Crie uma condição else, que, em caso de valor false, exiba um **ALERT** avisando para o usuário que o item não foi adicionado.
+if (cientista1.viva) {
+    cientistas.push(cientista1)
+} else {
+    alert("Katie Bouman não foi adicionada a lista, pois não está viva")
+}
+if (cientista2.viva) {
+    cientistas.push(cientista2)
+} else {
+    alert("Ada Lovelace não foi adicionada a lista, pois não está viva")
+}
+if (cientista3.viva) {
+    cientistas.push(cientista3)
+} else {
+    alert("Maria Curie não foi adicionada a lista, pois não está viva")
+}
+if (cientista4.viva) {
+    cientistas.push(cientista4)
+} else {
+    alert("Jaqueline Goes de Jesus não foi adicionada a lista, pois não está viva")
+}
+if (cientista5.viva) {
+    cientistas.push(cientista5)
+} else {
+    alert("Hedy Lamarr não foi adicionada a lista, pois não está viva")
+}
+//Checar como ficou a array final: console.log("Array com os objetos \"cientistas\" :", cientistas)
