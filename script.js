@@ -7,7 +7,8 @@ const arrayDeObjetos = [
         disponivel: true,
         tamanho: 350,
         sabor: "Tradicional",
-        ingredientes: ["Frozem artesanal da casa", "expresso duplo", "leite cremoso"]
+        ingredientes: ["Frozem artesanal da casa, ", "expresso duplo e ", "leite cremoso"],
+        img: "/midias/cafe2.png",
     },
 
     objeto2 = {
@@ -16,7 +17,8 @@ const arrayDeObjetos = [
         disponivel: true,
         tamanho: 350,
         sabor: "Doce de Leite",
-        ingredientes: ["Frozem artesanal doce de leite", "expresso duplo", "leite cremoso"]
+        ingredientes: ["Frozem artesanal doce de leite, ", "expresso duplo e ", "leite cremoso"],
+        img: "/midias/cafe4.png",
     },
 
     objeto3 = {
@@ -25,58 +27,48 @@ const arrayDeObjetos = [
         disponivel: true,
         tamanho: 350,
         sabor: "Limão",
-        ingredientes: ["Frozem de limão siciliano", "capuccino tradicional"]
+        ingredientes: ["Frozem de limão siciliano e ", "capuccino tradicional"],
+        img: "/midias/cafe1.png",
     },
 ]
 
-
 console.log(arrayDeObjetos);
 
-for (let i in arrayDeObjetos) {
-    let string
-    string = `\n${arrayDeObjetos[i].nome.toUpperCase()}
-    \nPreço:${arrayDeObjetos[i].preco}R$
-    \nEstá Disponível:${arrayDeObjetos[i].disponivel}
-    \nTamanho:${arrayDeObjetos[i].tamanho}ml
-    \nSabor:${arrayDeObjetos[i].sabor}
-    \nIngredientes:`
-    for(let j of arrayDeObjetos[i].ingredientes) {
-        string += ` ${j},`
-    }
-    console.log(string);
-}
+// semana 5 - A CADA INTERAÇÃO DO FOR IMPRIME UM DOS OBJETOS DO ARRAY COM AS ALTERAÇÕES PEDIDAS 
+// for (let objetos of arrayDeObjetos) {
+//     let string = ""
+//     for (let ingredientes of objetos.ingredientes) {
+//         string += ingredientes
+//     }
+//     objetos.ingredientes = string
+//     objetos.nome = objetos.nome.toUpperCase()
+//     console.log(objetos);
+// }
 
-const imprimeString = (objeto) => {
-    let string
-    string = `\n${objeto.nome.toUpperCase()}
-    \nPreço:${objeto.preco}R$
-    \nEstá Disponível:${objeto.disponivel}
-    \nTamanho:${objeto.tamanho}ml
-    \nSabor:${objeto.sabor}
-    \nIngredientes:`
+// SEMANA 6 PARTE 1 - A FUNCAO IMPRIME O OBJETO CHAMADO COM AS ALTERAÇÕES PEDIDAS 
+
+const imprimeObjComString = (objeto) => {
+    let string = ""
     for (let j of objeto.ingredientes) {
-        string += ` ${j},`
+        string += j + ", "
     }
-    console.log(string);
+    return { ...objeto, nome: objeto.nome.toUpperCase(), ingredientes: string }
 }
+// console.log(imprimeObjComString(objeto1))
 
-imprimeString(objeto1)
+// 
+// const imprimePedido = (arrayDeObjetos, pedido) => {
+//     for (let i in arrayDeObjetos) {
+//         if (arrayDeObjetos[i].nome === pedido) {
+//             return (arrayDeObjetos[i]);
+//         } else {
+//             return "pedido não encontrado"
+//         }
+//     }
+// }
+// console.log(imprimePedido(arrayDeObjetos, "Frozen Café Limão"));
 
-const imprimePedido = (arrayDeObjetos, pedido) => {
-    for (let i in arrayDeObjetos) {
-        if (arrayDeObjetos[i].nome === pedido) {
-            return (arrayDeObjetos[i]);
-        } else {
-            return "pedido não encontrado"
-        }
-    }
-}
-
-console.log(imprimePedido(arrayDeObjetos, "Frozen Café Tradicional"));
-
-
-
-//tentativas semana 6 - com alert não deu nao funciona se são dois obj com mesmo nome
+//tentativas semana 6 PART 2- com alert não deu nao funciona se são dois obj com mesmo nome
 
 // const imprimePedido = (arrayDeObjetos, pedido) => {
 //     const arrayFiltrado = arrayDeObjetos.filter((item) => {
@@ -90,11 +82,57 @@ console.log(imprimePedido(arrayDeObjetos, "Frozen Café Tradicional"));
 //     }
 // }
 
-
 // const imprimePedido = (arrayDeObjetos, pedido) => {
 //     const filtro = arrayDeObjetos.filter((item) => {
 //         return item.nome === pedido})
 //     return filtro[0]
+// }
+
+// SEMANA 6 PARTE 1 - A FUNCAO IMPRIME UMA STRING DO OBJETO COM AS ALTERAÇÕES PEDIDAS
+// const imprimeString = (objeto) => {
+//     let string
+//     string = objeto.nome.toUpperCase()
+//     string += "\nPreço: ", objeto.preco, "R$"
+//     string += "\nEstá Disponível: " + objeto.disponivel
+//     string += "\nTamanho: " + objeto.tamanho + "ml"
+//     string += "\nSabor:" + objeto.sabor
+//     string += "\nIngredientes: "
+//     for (let j of objeto.ingredientes) {
+//         string += `${j}, `
+//     }
+//     console.log(string);
+// }
+
+// imprimeString(objeto1)
+
+// DIFERENTES MODOS SEMANA 5
+
+// A CADA INTERAÇÃO DO FOR IMPRIME UMA STRING DE UM DOS OBJETOS DO ARRAY:
+// for (let i in arrayDeObjetos) {
+//     let string = ""
+//     string = `\n${arrayDeObjetos[i].nome.toUpperCase()}
+//     \nPreço:${arrayDeObjetos[i].preco}R$
+//     \nEstá Disponível:${arrayDeObjetos[i].disponivel}
+//     \nTamanho:${arrayDeObjetos[i].tamanho}ml
+//     \nSabor:${arrayDeObjetos[i].sabor}
+//     \nIngredientes:`
+//     for(let j of arrayDeObjetos[i].ingredientes) {
+//         string += j
+//     }
+//     console.log(string);
+// }
+
+// A CADA INTERAÇÃO DO FOR IMPRIME UM CONSOLE LOG DE UMA DAS PROPRIEDADES DOS OBJETOS DO ARRAY:
+// for (let objetos of arrayDeObjetos) {
+//     let string = ""
+//     for (let ingredientes of objetos.ingredientes) {
+//         string += ingredientes
+//     }
+//     objetos.ingredientes = string
+//     objetos.nome = objetos.nome.toUpperCase()
+//     for (let propriedades in objetos) {
+//         console.log(`${propriedades.toUpperCase()}:`, objetos[propriedades]);
+//     }
 // }
 
 //relatório semana 2
