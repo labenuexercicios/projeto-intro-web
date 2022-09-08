@@ -1,152 +1,242 @@
-        
-        const searchBox = document.querySelector(".search-box");
-        const searchBtn = document.querySelector(".search-icon");
-        const cancelBtn = document.querySelector(".cancel-icon");
-        const searchInput = document.querySelector("input");
-        const searchData = document.querySelector(".search-data");
-        searchBtn.onclick = () => {
-            searchBox.classList.add("active");
-            searchBtn.classList.add("active");
-            searchInput.classList.add("active");
-            cancelBtn.classList.add("active");
-            searchInput.focus();
-            if (searchInput.value != "") {
-                let values = searchInput.value;
-                searchData.classList.remove("active");
-                searchData.innerHTML = `Você acabou de digitar <span style='font-weight: 500;'>${values}</span>`;
-            } else {
-                searchData.textContent = "";
-            }
-        }
-        cancelBtn.onclick = () => {
-            searchBox.classList.remove("active");
-            searchBtn.classList.remove("active");
-            searchInput.classList.remove("active");
-            cancelBtn.classList.remove("active");
-            searchData.classList.toggle("active");
-            searchInput.value = "";
-        }
-/*
-     
-  */
+//Semana 1 2 3 4 
+
+const nome = 'naruto';
+const clan = 'uzumaki';
+const idade = 17;
+const isninja = true;
+const ninjutsu = ["clones da sombras", "jutsu sexy"];
+
+const nome1 = 'kakashi';
+const clan1 = 'Hatake';
+const idade1 = 28;
+const isninja1 = true;
+const ninjutsu1 = ["copiar habilidades", "chidori"];
+
+const nome2 = 'jiraiya';
+const clan2 = 'Hatake';
+const idade2 = 51;
+const isninja2 = true;
+const ninjutsu2 = ["rasengan", "odama rasengan"];
+
+const nome3 = 'maito-gai';
+const clan3 = 'sem clan';
+const idade3 = 27;
+const isninja3 = true;
+const ninjutsu3 = ["não tem"];
+
+const nome4 = 'rock-lee';
+const clan4 = 'sem clan';
+const idade4 = 27;
+const isninja4 = true;
+const ninjutsu4 = ["não tem"];
+
+const nome5 = 'neji';
+const clan5 = 'hyuga';
+const idade5 = 18;
+const isninja5 = true;
+const ninjutsu5 = ["oito trigamas", "Emissão de chakara"];
+
+const nome6 = 'shikamaru';
+const clan6 = 'nara';
+const idade6 = 26;
+const isninja6 = true;
+const ninjutsu6 = ["técnica de Imitação pela Sombra", "técnica da Captura pela Sombra"];
+
+const nome7 = 'nagato';
+const clan7 = 'uzumaki';
+const idade7 = 32;
+const isninja7 = true;
+const ninjutsu7 = ["Jutsus absorção da alma", "Técnica da vida celestial."];
+
+const mediajunta = Number(idade + idade1 + idade2 + idade3 + idade4 + idade5 + idade6 + idade7) / 8
+
+console.log("media", mediajunta);
+
+const verificaninjas = isninja && isninja1 && isninja2 && isninja3 && isninja4 && isninja5 && isninja6 && isninja7;
+console.log("verificação", verificaninjas);
+// nesse caso, vai imprimir false, pois verificouninjas === false
 
 
- const nome = 'naruto';
- const clan = 'uzumaki';
- const idade = 17;
- const isninja = true;
- const ninjutsu = ["clones da sombras","jutsu sexy"];
 
- const nome1 = 'kakashi';
- const clan1 = 'Hatake';
- const idade1 = 28;
- const isninja1 = true;
- const ninjutsu1 = ["copiar habilidades","chidori"];
+//semana 02
+//console.log((`Nome:${nome}`).toUpperCase(), ` Clan:${clan}\n Idade:${idade}\n Isninja:${true}\n Ninjutsu:${ninjutsu}\n`)
+// console.log((`Nome:${nome1}`).toUpperCase(), `\n Clan:${clan1}\n Idade:${idade1}\n Isninja:${true}\n Ninjutsu:${ninjutsu1}\n`)
+// console.log((`Nome:${nome2}`).toUpperCase(), `\n Clan:${clan2}\n Idade:${idade2}\n Isninja:${true}\n Ninjutsu:${ninjutsu2}\n`)
+// console.log((`Nome:${nome3}`).toUpperCase(), `\n Clan:${clan3}\n Idade:${idade3}\n Isninja:${true}\n Ninjutsu:${ninjutsu3}\n`)
+// console.log((`Nome:${nome4}`).toUpperCase(), `\n Clan:${clan4}\n Idade:${idade4}\n Isninja:${true}\n Ninjutsu:${ninjutsu4}\n`)
+// console.log((`Nome:${nome5}`).toUpperCase(), `\n Clan:${clan5}\n Idade:${idade5}\n Isninja:${true}\n Ninjutsu:${ninjutsu5}\n`)
+// console.log((`Nome:${nome6}`).toUpperCase(), `\n Clan:${clan6}\n Idade:${idade6}\n Isninja:${true}\n Ninjutsu:${ninjutsu6}\n`)
+// console.log((`Nome:${nome7}`).toUpperCase(), `\n Clan:${clan7}\n Idade:${idade7}\n Isninja:${true}\n Ninjutsu:${ninjutsu7}\n`)
 
- const nome2 = 'jiraiya';
- const clan2 = 'Hatake';
- const idade2 = 51;
- const isninja2 = true;
- const ninjutsu2 = ["rasengan","odama rasengan"];
- 
- const nome3 = 'maito-gai';
- const clan3 = 'sem clan';
- const idade3 = 27;
- const isninja3 = true;
- const ninjutsu3 = ["não tem"];
 
- const nome4 = 'rock-lee';
- const clan4 = 'sem clan';
- const idade4 = 27;
- const isninja4 = true;
- const ninjutsu4 = ["não tem"];
+// const relatorio1 = ((`Nome:${nome}`).toUpperCase(), ` Clan:${clan} Idade:${idade} Isninja:${true} Ninjutsu:${ninjutsu}`)
+// const relatorio2 = ((`Nome:${nome1}`).toUpperCase(), ` Clan:${clan1} Idade:${idade1} Isninja:${true} Ninjutsu:${ninjutsu1}`)
+// const relatorio3 = ((`Nome:${nome2}`).toUpperCase(), ` Clan:${clan2} Idade:${idade2} Isninja:${true} Ninjutsu:${ninjutsu2}`)
+// const relatorio4 = ((`Nome:${nome3}`).toUpperCase(), ` Clan:${clan3} Idade:${idade3} Isninja:${true} Ninjutsu:${ninjutsu3}`)
+// const relatorio5 = ((`Nome:${nome4}`).toUpperCase(), ` Clan:${clan4} Idade:${idade4} Isninja:${true} Ninjutsu:${ninjutsu4}`)
+// const relatorio6 = ((`Nome:${nome5}`).toUpperCase(), ` Clan:${clan5} Idade:${idade5} Isninja:${true} Ninjutsu:${ninjutsu5}`)
+// const relatorio7 = ((`Nome:${nome6}`).toUpperCase(), ` Clan:${clan6} Idade:${idade6} Isninja:${true} Ninjutsu:${ninjutsu6}`)
+// const relatorio8 = ((`Nome:${nome7}`).toUpperCase(), ` Clan:${clan7} Idade:${idade7} Isninja:${true} Ninjutsu:${ninjutsu7}`)
 
- const nome5 = 'neji';
- const clan5 = 'hyuga';
- const idade5 = 18;
- const isninja5 = true;
- const ninjutsu5 = ["oito trigamas","Emissão de chakara"];
+// const result = ([relatorio1, relatorio2, relatorio3, relatorio4, relatorio5, relatorio6, relatorio7, relatorio8]);
+// console.log(result)
 
- const nome6 = 'shikamaru';
- const clan6 = 'nara';
- const idade6 = 26;
- const isninja6 = true;
- const ninjutsu6 = ["técnica de Imitação pela Sombra","técnica da Captura pela Sombra"];
-
- const nome7 = 'nagato';
- const clan7 = 'uzumaki';
- const idade7 = 32;
- const isninja7 = true;
- const ninjutsu7 = ["Jutsus absorção da alma", "Técnica da vida celestial."];
-
-const ninj = `Nome: ${nome7}\nClan: ${clan7}\nIdade: ${idade7}\nÉ Ninja: ${isninja7}\nSuas Habilidades: ${ninjutsu7}`;
-
+//SEMANA 03
 
 const ninja0 = {
-    nome:'Naruto',
-    clan:'Uzumaki',
-    idade:17,
-    isninja:true,
-    ninjutsus:['Clones das Sombras', 'Jutsu Sexy'],
- }
+   nome: 'Naruto',
+   clan: 'Uzumaki',
+   idade: 17,
+   isninja: true,
+   ninjutsus: ['Clones das Sombras', 'Jutsu Sexy'],
+}
 
- const ninja1 = {
-    nome:'kakashi',
-    clan:'Hatake',
-    idade: 28,
-    isninja: true,
-    ninjutsus:['copiar habilidades', 'chidori']
- }
+const ninja1 = {
+   nome: 'kakashi',
+   clan: 'Hatake',
+   idade: 28,
+   isninja: false,
+   ninjutsus: ['copiar habilidades', 'chidori']
+}
 
- const ninja2 = {
-    nome:'jiraiya',
-    clan:'Hatake',
-    idade: 51,
-    isninja: true,
-    ninjutsus:["rasengan", "odama rasengan"]
- }
+const ninja2 = {
+   nome: 'jiraiya',
+   clan: 'Hatake',
+   idade: 51,
+   isninja: false,
+   ninjutsus: ["rasengan", "odama rasengan"]
+}
 
- const ninja3 = {
-    nome:'Maito Gai',
-    clan:'Sem Clan',
-    idade: 28,
-    isninja: true,
-    ninjutsus:["não tem"]
- }
+const ninja3 = {
+   nome: 'Maito Gai',
+   clan: 'Sem Clan',
+   idade: 28,
+   isninja: true,
+   ninjutsus: ["Os Noves Portões"]
+}
 
- const ninja4 = {
-    nome:'Rock Lee',
-    clan:'Sem Clan',
-    idade: 27,
-    isninja: true,
-    ninjutsus:["não tem"]
- }
+const ninja4 = {
+   nome: 'Rock Lee',
+   clan: 'Sem Clan',
+   idade: 17,
+   isninja: true,
+   ninjutsus: ["Só Tem Taijuts"]
+}
 
- const ninja5 = {
-    nome:'Neji Hyuga',
-    clan:'Hyuga',
-    idade: 17,
-    isninja: true,
-    ninjutsus:["oito trigamas", "Emissão de chakara"]
- }
+const ninja5 = {
+   nome: 'Neji Hyuga',
+   clan: 'Hyuga',
+   idade: 17,
+   isninja: false,
+   ninjutsus: ["oito trigamas", "Emissão de chakara"]
+}
 
- const ninja6 = {
-    nome:'Shikamaru',
-    clan:'Nara',
-    idade: 26,
-    isninja: true,
-    ninjutsus:["técnica de Imitação pela Sombra", "técnica da Captura pela Sombra"]
- }
+const ninja6 = {
+   nome: 'Shikamaru',
+   clan: 'Nara',
+   idade: 26,
+   isninja: true,
+   ninjutsus: ["técnica de Imitação pela Sombra", "técnica da Captura pela Sombra"]
+}
 
- const ninja7 = {
-    nome:'Nagato Pain',
-    clan:'Uzumaki',
-    idade: 32,
-    isninja: true,
-    ninjutsus:["Jutsus absorção da alma", "Técnica da vida celestial."]
- }
+const ninja7 = {
+   nome: 'Nagato Pain',
+   clan: 'Uzumaki',
+   idade: 32,
+   isninja: false,
+   ninjutsus: ["Jutsus absorção da alma", "Técnica da vida celestial."]
+}
 
- const ninjasarray = [];
- ninjasarray.push(ninja0,ninja1,ninja2,ninja3,ninja4,ninja5,ninja6,ninja7)
+// Semana 3
 
- console.log(ninjasarray)
+const ninjasarray = [];
+
+//Semana 04
+// 1. ere o item “Adicione os novos objetos no array de objetos, utilizando o push()” (item 3 da semana 3), 
+// para criar uma verificação antes de dar o push. A caraterística booleana do objeto deve ser validada. 
+// Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for true;
+// 2. Crie uma condição else, que, em caso de valor false na condição acima, 
+// exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push
+
+// if (true) {
+//    if (ninja0.isninja == true) {
+//       ninjasarray.push(ninja0);
+//    } else {
+//       console.log(`**ALERT** O ${ninja0.nome} não foi adicionado, pois ele não e ninja,`)
+//    } 
+//    if (ninja1.isninja == true) {
+//       ninjasarray.push(ninja1);
+//    } else {
+//       alert(`**ALERT** O ${ninja1.nome} não foi adicionado, pois ele não e ninja,`);
+//    } 
+//    if (ninja2.isninja == true) {
+//       ninjasarray.push(ninja2);
+//    } else {
+//       alert(`**ALERT** O ${ninja2.nome} não foi adicionado, pois ele não e ninja,`);
+//    } 
+//    if (ninja3.isninja == true) {
+//       ninjasarray.push(ninja3);
+//    } else {
+//       alert(`**ALERT** O ${ninja3.nome} não foi adicionado, pois ele não e ninja,`);
+//    } 
+//    if (ninja4.isninja == true) {
+//       ninjasarray.push(ninja4);
+//    } else {
+//       alert(`**ALERT** O ${ninja4.nome} não foi adicionado, pois ele não e ninja,`);
+//    } 
+//    if (ninja5.isninja == true) {
+//       ninjasarray.push(ninja5);
+//    } else {
+//       alert(`**ALERT** O ${ninja5.nome} não foi adicionado, pois ele não e ninja,`);
+//    } 
+//    if (ninja6.isninja == true) {
+//       ninjasarray.push(ninja6);
+//    } else {
+//       alert(`**ALERT** O ${ninja6.nome} não foi adicionado, pois ele não e ninja,`);
+//    } 
+//    if (ninja7.isninja == true) {
+//       ninjasarray.push(ninja7);
+//    } else {
+//       alert(`**ALERT** O ${ninja7.nome} não foi adicionado, pois ele não e ninja,`);
+//    }
+// }
+   //SEMANA 04
+// Reescrevendo o relatório da semana 2, altere a forma que a característica de array,
+// criada no item 1 da semana 2, faça um laço que guarde todos os valores da propriedade array do objeto em uma mesma string.Utilize esta string no relatório.
+// Chamamos este processo de reescrever um código já escrito, de refatoração
+// Exemplo:
+// //ANTES ["Projeto de HTML", "Projeto de CSS", "Projeto React"]
+// //DEPOIS "Projeto de HTML,Projeto de CSS,Projeto React" 
+for (let index = 0; index < ninjasarray.length; index++) {
+   const element = ninjasarray[index].ninjutsus.toString();
+   console.log(element);
+}
+// 2.Ainda no relatório, altere - o para que ele seja criado utilizando um laço.Ou seja, você não deve mais imprimir individualmente cada item do relatório.Cada item deve ser exibido a partir de uma iteração do laço. 
+//   Para testar, adicione mais um item ao array de objetos, e verifique se ele é exibido corretamente.
+
+
+//SEMANA 06
+//1. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
+function ninjaRelatorio(objeto){
+   
+   console.log(`Nome: ${objeto.nome.toUpperCase()}\n Clan: ${objeto.clan}\n Idade: ${objeto.idade}\n  Isninja: ${objeto.isninja}\n Habilidades: ${objeto.ninjutsus}\n`)
+}
+for (let i =0; i< ninjasarray.length; i++){
+ninjaRelatorio(ninjasarray[i]);
+};
+//2. Crie uma função que recebe um array de objetos e uma string. 
+//Esta função deve retornar um objeto, 
+//e o objeto retornado deve possuir apenas os itens que 
+//tenham o nome/título igual à string passada como parâmetro. 
+//Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
+//aqui usando o filter
+// function buscarNinja(array, nome){
+
+//    const ninjas = array.filter((objeto)=> objeto.nome.toUpperCase() === nome.toUpperCase());
+//    if(ninjas.length>=1){
+//        return ninjas;
+//    }else{
+//        alert('nenhum ninja foi encontrado.')
+//    }
+// }
+// console.log(buscarNinja(ninjasarray, prompt('Buscar por ninja: ')))
