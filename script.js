@@ -224,17 +224,13 @@ if (serie5.sucesso) {
 for (let i = 0; i < minhasSeries.length; i++) {
   minhasSeries[i].titulo = minhasSeries[i].titulo.toUpperCase();
 
-  minhasSeries[i].genero.map(() => {
+  for (j = 0; j < minhasSeries[i].genero.length; j++) {
     minhasSeries[i].genero += `${""}`;
+  }
 
-    return minhasSeries[i];
-  });
-
-  minhasSeries[i].elenco.map(() => {
+  for (k = 0; k < minhasSeries[i].elenco.length; k++) {
     minhasSeries[i].elenco += `${""}`;
-
-    return minhasSeries[i];
-  });
+  }
 
   console.log(minhasSeries[i]);
 }
