@@ -1,7 +1,27 @@
-#myVideo {
-    position: fixed;
-    right: 0;
+
+
+#myVideo{
+  position: fixed; 
+    right: 0; 
     bottom: 0;
-    min-width: 100%;
+    min-width: 100%; 
     min-height: 100%;
-  }
+    width: auto; 
+    height: auto; 
+    z-index: -1000;
+    background: url(harry-potter-hogwarts-wizardry-casle-free-wallpaper.webm);
+    background-size: cover; 
+}
+img {
+  object-fit:cover;
+  animation:fadeIn 1s;
+  height: 300px;
+  width:400px;
+  border-radius:20px 20px 0px 0px;
+  transition:0.3s;
+  box-shadow: 4px 4px 8px 0;
+}
+.objeto {
+  display: flex;
+  flex-direction:row;
+}
