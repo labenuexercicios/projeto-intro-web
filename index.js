@@ -3,31 +3,89 @@ const preco = Number
 const masculino = Boolean
 const cor = ["verde", "amarelo", "rosa", "jeans"]
 
-const primeiraRoupa = "camiseta"
-const primeiroPreco = 20.00.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
-const primeiroMasculino = true
-const primeiraCor = cor[0]
+primeiroProduto = {
+    roupa: "camiseta",
+    preco: 20.00.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }),
+    masculino: true,
+    cor: cor[0]
+}
 
-const segundaRoupa = "calça"
-const segundoPreco = 50.00.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
-const segundoMasculino = false
-const segundaCor = cor[3]
+segundoProduto = {
+    roupa: "calça",
+    preco: 50.00.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }),
+    masculino: false,
+    cor: cor[3]
+}
 
-const terceiraRoupa = "cueca"
-const terceiroPreco = 15.00.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
-const terceiroMasculino = true
-const terceiraCor = cor[2]
+terceiroProduto = {
+    roupa: "cueca",
+    preco: 15.00.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }),
+    masculino: true,
+    cor: cor[2]
+}
 
-//Verificando a média dos valores dos itens selecionados
-const media = (primeiroPreco + segundoPreco + terceiroPreco) / 2
-console.log(`A média de preço de todos os produtos é: ${media.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`)
+const carrinho = []
 
-//Verificando se as roupas selecionadas são para os sexo masculino
-const verificaSexo = primeiroMasculino && segundoMasculino && terceiroMasculino
-console.log(`Todas as roupas são masculinas? ${verificaSexo}`)
+function verificar(objeto1) {
+    if (objeto1.masculino == true) {
+        carrinho.push(objeto1)
+    } else {
+        alert("Item não adicionado.")
+    }
+}
+function verificar1(objeto2) {
+    if (objeto2.masculino == true) {
+        carrinho.push(objeto2)
+    } else {
+        alert("Item não adicionado.")
+    }
+}
+function verificar2(objeto3) {
+    if (objeto3.masculino == true) {
+        carrinho.push(objeto3)
+    } else {
+        alert("Item não adicionado.")
+    }
+}
+verificar(primeiroProduto)
+//verificar1(segundoProduto) --> esse é false, vai dar **ALERT**
+verificar2(terceiroProduto)
 
-//Imprimindo um relatório de todos os itens listados
-console.log("------------------------LISTA DE ROUPAS------------------------")
-console.log(primeiraRoupa.toUpperCase(),`\nPreço: ${primeiroPreco}\nÉ masculino? ${primeiroMasculino}\nQual a cor?: ${primeiraCor}`)
-console.log(segundaRoupa.toUpperCase(),`\nPreço: ${segundoPreco}\nÉ masculino? ${segundoMasculino}\nQual a cor?: ${segundaCor}`)
-console.log(terceiraRoupa.toUpperCase(),`\nPreço: ${terceiroPreco}\nÉ masculino? ${terceiroMasculino}\nQual a cor?: ${terceiraCor}`)
+console.log(carrinho)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function verificar(objeto1, objeto2, objeto3) {
+//     if (objeto1.masculino == true) {
+//         carrinho.push(objeto1)
+//     } else if (objeto2.masculino == true) {
+//         carrinho.push(objeto2)
+//     } else if (objeto3.masculino == true) {
+//         carrinho.push(objeto3)
+//     } else {
+//         alert("Item não adicionado.")
+//     }
+// }
+// verificar(primeiroProduto, segundoProduto, terceiroProduto)
+// console.log(carrinho)
+
+
