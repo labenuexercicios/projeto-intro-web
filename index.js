@@ -52,19 +52,23 @@ console.log(`Tituto: \"${livro3.titulo}\" \nAutor: ${livro3.autor} \nAno da Edi�
 const acervo = []
 console.log (livro1.adiquirido, livro2.adiquirido, livro3.adiquirido)
 
-if (livro1.adiquirido === true){
+/*if (livro1.adiquirido === true){
     acervo.push(livro1)
 } else {
-    alert (`Livro ${livro1.titulo} n찾o adiquirido`)
+    alert (`Livro: ${livro1.titulo} n찾o adiquirido`)
 } if (livro2.adiquirido === true){
     acervo.push(livro2)
 } else {
-    alert (`Livro ${livro2.titulo} n찾o adiquirido`)
+    alert (`Livro: ${livro2.titulo} n찾o adiquirido`)
 } if (livro3.adiquirido === true){
     acervo.push(livro3)
 }else {
-    alert (`Livro ${livro3.titulo} n찾o adiquirido`)
-}
+    alert (`Livro: ${livro3.titulo} n찾o adiquirido`)
+}*/
+
+livro1.adiquirido === true ? acervo.push(livro1) : alert (`Livro: ${livro1.titulo} n찾o adiquirido`)
+livro2.adiquirido === true ? acervo.push(livro2) : alert (`Livro: ${livro2.titulo} n찾o adiquirido`)
+livro3.adiquirido === true ? acervo.push(livro3) : alert (`Livro: ${livro3.titulo} n찾o adiquirido`)
 
 //acervo.push(livro1, livro2, livro3)
 
