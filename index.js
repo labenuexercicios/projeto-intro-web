@@ -12,7 +12,7 @@ const nomePet1 = {
     arrayBriquedos: ["Bolinha", " ossinho."]
 };
 
-console.log(nomePet1)
+//console.log(nomePet1)
 
 // Janis ----------------------------
 const nomePet2 = {
@@ -25,7 +25,7 @@ const nomePet2 = {
     arrayBriquedos: ["Caixa de papelão", " arranhador de tecido", " ervinha de gato."]
 };
 
-console.log(nomePet2)
+//console.log(nomePet2)
 
 // Lua ----------------------------
 const nomePet3 = {
@@ -38,7 +38,7 @@ const nomePet3 = {
     arrayBriquedos: ["Bolinha", " ossinho", " orelha de boi", " ursinho."]
 }; 
 
-console.log(nomePet3)
+//console.log(nomePet3)
 
 // Marilyn ----------------------------
 const nomePet4 = {
@@ -51,23 +51,40 @@ const nomePet4 = {
     arrayBriquedos: ["Caixa de papelão", " barbante enrolado", " erva de gato", " bolinha de lã."]
 };
 
-console.log(nomePet4)
-
-//array pra guardar os objetos
-
-const todosPets = []
-
-todosPets.push(nomePet1, nomePet2, nomePet3, nomePet4)
-
-console.log(todosPets)
+//console.log(nomePet4)
 
 //média
 let mediaPets = (nomePet1.idade + nomePet2.idade + nomePet3.idade + nomePet4.idade) / 4
+
 console.log(`Média de Idade dos meus pets: ${mediaPets}`)
 
 //verificar booleanos
 const verificarVacinas = nomePet1.vacina && nomePet2.vacina && nomePet3.vacina && nomePet4.vacina
 const verificarVermifugo = nomePet1.vermifugo && nomePet2.vermifugo && nomePet3.vermifugo && nomePet4.vacina
+
 console.log(`Todas vacinadas? ${verificarVacinas}
 Todas vermifugadas? ${verificarVermifugo}
 `)
+
+//array pra guardar os objetos
+
+const todosPets = []
+
+if ((verificarVacinas === true) && (verificarVermifugo === true)) {
+    todosPets.push(nomePet1, nomePet2, nomePet3, nomePet4)
+    console.log(`Todos os pets foram vacinados e vermifugados: ${todosPets}`)
+} else if ((verificarVacinas === false && verificarVermifugo === false)) {
+    todosPets.push(nomePet1.nome, nomePet1.idade, nomePet1.especie, nomePet1.raca, nomePet1.arrayBriquedos, 
+        nomePet2.nome, nomePet2.idade, nomePet2.especie, nomePet2.raca, nomePet2.arrayBriquedos, 
+        nomePet3.nome, nomePet3.idade, nomePet3.especie, nomePet3.raca, nomePet3.arrayBriquedos, 
+        nomePet4.nome, nomePet4.idade, nomePet4.especie, nomePet4.raca, nomePet4.arrayBriquedos)
+    alert(`Os pets não foram vacinados e nem vermifugados!`)
+    console.log(`Os pets não foram vacinados e nem vermifugados! ${todosPets}`)
+} else {
+    todosPets.push(nomePet1.nome, nomePet1.idade, nomePet1.especie, nomePet1.raca, nomePet1.arrayBriquedos, 
+        nomePet2.nome, nomePet2.idade, nomePet2.especie, nomePet2.raca, nomePet2.arrayBriquedos, 
+        nomePet3.nome, nomePet3.idade, nomePet3.especie, nomePet3.raca, nomePet3.arrayBriquedos, 
+        nomePet4.nome, nomePet4.idade, nomePet4.especie, nomePet4.raca, nomePet4.arrayBriquedos)
+    alert(`Os pets não foram vacinados e nem vermifugados!`)
+    console.log(`Os pets não foram vacinados e nem vermifugados! ${todosPets}`)
+}
