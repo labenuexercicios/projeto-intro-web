@@ -1,48 +1,73 @@
-/* 1. Para o item que você decidiu, pense nas características que são importantes para construí-lo.
-Vamos usar estas características para definir exemplos destes objetos usando o código.*/
+//                                          ((PROJETO-INTRO-SEMANA 2))
 
-const nomeCliente1 = "Carlos"
-const AnoNascimento1 = 1988
-const preferencial1 = false 
-let nascionalidade1 = ["BR"] 
+//1. Transforme os itens que criamos nas últimas semanas em objetos.
 
-/*Agora, crie três conjuntos de variáveis utilizando as características que você definiu acima. 
-Lembre-se que deve ser o mesmo tipo de item, com três conjuntos de dados diferentes. */
+const cadastroCliente1 = {
+  cliente: "Carlos",
+  anoNascimento: 1988,
+  preferencial: false,
+  nacionalidade: "BR",
+};
 
-const nomeCliente2 = "José"
-const anoNascimento2 = 1959
-const preferencial2 = true
-let nascionalidade2 = ["FR"]
+const cadastroCliente2 = {
+  cliente: "José",
+  anoNascimento: 1959,
+  preferencial: true,
+  nacionalidade: "FR",
+};
 
-const nomeCliente3 = "Maria"
-const anoNascimento3 = 1960
-const preferencial3 = true 
-const nascionalidade3 = ["IT"]
+const cadastroCliente3 = {
+  cliente: "Maria",
+  anoNascimento: 1960,
+  preferencial: false,
+  nacionalidade: "IT",
+};
 
-const nomeCliente4 = "Ana"
-const anoNascimento4 = 1987
-const preferencial4 = false
-const nascionalidade4 = ["US"]
+const cadastroCliente4 = {
+  cliente: "Ana",
+  anoNascimento: 1987,
+  preferencial: false,
+  nacionalidade: "US",
+};
+//2. Crie um array para guardar os objetos. Este array deve estar vazio, por enquanto;
 
-//3. Faça um cálculo de média, entre os valores numéricos respectivos de cada item.
+let inclusaoCliente = [];
 
-const mediaDeNascimento = (AnoNascimento1 + anoNascimento2 + anoNascimento3 + anoNascimento4) / 4
+//3. Adicione os objetos criados no item 1 ao array de objetos criado no item 2, utilizando o push()
+/* 
+    inclusaoCliente.push(cadastroCliente1, cadastroCliente2, cadastroCliente3, cadastroCliente4)
+        console.log( inclusaoCliente)
+*/
 
-//3.1 Imprima o valor da média utilizando um console.log. Guarde este valor em uma const;
-    console.log("A média do ano de nascimento é:", mediaDeNascimento)
+// 4. Altere o item “Adicione os novos objetos no array de objetos, utilizando o push()” (item 3),
+//para criar uma verificação antes de dar o push. A caraterística booleana do objeto deve ser validada.
+//Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for true;
 
-/* 4. Com um console.log, imprima o resultado de uma operação lógica,
- que checa se todos os valores de variáveis booleanas criadas até aqui são verdadeiras.*/
-const verificarPreferencinal = preferencial1 && preferencial2 && preferencial3 && preferencial4    
-    console.log("Sua verificação é:", verificarPreferencinal)
+if (cadastroCliente1.preferencial === true) {
+  inclusaoCliente.push(cadastroCliente1);
+} else {
+  alert(`O item: ${cadastroCliente1.cliente}, não foi adicionado.`);
+}
 
-/*5. Crie pelo menos mais uma característica para o item que você criou. Esta característica deve ser um array. 
-Mantenha o tipo de dado do array criado sempre o mesmo, isto é, se é um array de strings, só deve receber strings.*/    
-//5.1                                  ((CRIADO, 1 ARRAY EM CADA VARIAVEL))
+if (cadastroCliente2.preferencial === true) {
+  inclusaoCliente.push(cadastroCliente2);
+} else {
+  alert(`O item ${cadastroCliente2.cliente} não foi adicionado`);
+}
 
-//6. Exiba um relatório utilizando console.log(), mostrando todos os dados de cada um dos itens criados até aqui.
-    console.log(`${nomeCliente1.toUpperCase()} \n ${AnoNascimento1} \n ${preferencial1} \n ${nascionalidade1}`)
-    console.log(`${nomeCliente2.toUpperCase()} \n ${anoNascimento2} \n ${preferencial2} \n ${nascionalidade2}`)
-    console.log(`${nomeCliente3.toUpperCase()} \n ${anoNascimento3} \n ${preferencial3} \n ${nascionalidade4}`)
-    console.log(`${nomeCliente4.toUpperCase()} \n ${anoNascimento4} \n ${preferencial4} \n ${nascionalidade4}`)
-    
+if (cadastroCliente3.preferencial === true) {
+  inclusaoCliente.push(cadastroCliente3);
+} else {
+  alert(`O item ${cadastroCliente3.cliente} não foi adicionado`);
+}
+
+if (cadastroCliente4.preferencial === true) {
+  inclusaoCliente.push(cadastroCliente4);
+} else {
+  alert(`O item ${cadastroCliente4.cliente} não foi adicionado`);
+}
+
+/*
+5. Crie uma condição else, que, em caso de valor false na condição acima,
+ exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push
+*/
