@@ -74,17 +74,9 @@ if ((verificarVacinas === true) && (verificarVermifugo === true)) {
     todosPets.push(nomePet1, nomePet2, nomePet3, nomePet4)
     console.log(`Todos os pets foram vacinados e vermifugados: ${todosPets}`)
 } else if ((verificarVacinas === false && verificarVermifugo === false)) {
-    todosPets.push(nomePet1.nome, nomePet1.idade, nomePet1.especie, nomePet1.raca, nomePet1.arrayBriquedos, 
-        nomePet2.nome, nomePet2.idade, nomePet2.especie, nomePet2.raca, nomePet2.arrayBriquedos, 
-        nomePet3.nome, nomePet3.idade, nomePet3.especie, nomePet3.raca, nomePet3.arrayBriquedos, 
-        nomePet4.nome, nomePet4.idade, nomePet4.especie, nomePet4.raca, nomePet4.arrayBriquedos)
     alert(`Os pets não foram vacinados e nem vermifugados!`)
-    console.log(`Os pets não foram vacinados e nem vermifugados! ${todosPets}`)
+    console.log(`Os pets não foram vacinados e nem vermifugados!`)
 } else {
-    todosPets.push(nomePet1.nome, nomePet1.idade, nomePet1.especie, nomePet1.raca, nomePet1.arrayBriquedos, 
-        nomePet2.nome, nomePet2.idade, nomePet2.especie, nomePet2.raca, nomePet2.arrayBriquedos, 
-        nomePet3.nome, nomePet3.idade, nomePet3.especie, nomePet3.raca, nomePet3.arrayBriquedos, 
-        nomePet4.nome, nomePet4.idade, nomePet4.especie, nomePet4.raca, nomePet4.arrayBriquedos)
     alert(`Os pets não foram vacinados e nem vermifugados!`)
-    console.log(`Os pets não foram vacinados e nem vermifugados! ${todosPets}`)
+    console.log(`Os pets não foram vacinados e nem vermifugados!`)
 }
