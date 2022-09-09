@@ -1,45 +1,54 @@
-//1. Para o item que você decidiu, pense nas características que são importantes para construí-lo. Vamos usar estas características para definir exemplos destes objetos usando o código.
-// nome - string
-// marca - string
-// precoCompra - number
-// vencido - boolean
+//1. Transforme os itens que criamos nas últimas semanas em objetos.
+const item1 = {
+  nome1: "Macarrão",
+  marca1: "Amália",
+  precoCompra1: 2.89,
+  vencido1: false,
+};
 
-//2. Agora, crie três conjuntos de variáveis utilizando as características que você definiu acima. Lembre-se que deve ser o mesmo tipo de item, com três conjuntos de dados diferentes.
+const item2 = {
+  nome2: "Arroz",
+  marca2: "Tio João",
+  precoCompra2: 26.99,
+  vencido2: false,
+};
 
-const nome1 = "Macarrão";
-const marca1 = "Amália";
-const precoCompra1 = 2.89;
-const vencido1 = false;
+const item3 = {
+  nome3: "Feijão",
+  marca3: "Supang",
+  precoCompra3: 6.99,
+  vencido3: true,
+};
 
-const nome2 = "Arroz";
-const marca2 = "Tio João";
-const precoCompra2 = 26.99;
-const vencido2 = false;
+//2. Crie um array para guardar os objetos. Este array deve estar vazio, por enquanto;
+let estoque = [];
 
-const nome3 = "Feijão";
-const marca3 = "Supang";
-const precoCompra3 = 6.99;
-const vencido3 = true;
+//3. Adicione os objetos criados no item 1 ao array de objetos criado no item 2, utilizando o push()
 
-//3. Faça um cálculo de média, entre os valores numéricos respectivos de cada item. Imprima o valor da média utilizando um console.log. Guarde este valor em uma const;
+//4. Altere o item “Adicione os novos objetos no array de objetos, utilizando o push()” (item 3), para criar uma verificação antes de dar o push. A caraterística booleana do objeto deve ser validada. Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for true;
 
-const media = (precoCompra1 + precoCompra2 + precoCompra3)/3;
-console.log("A média de preço dos itens existentes é: R$", media);
+//5. Crie uma condição else, que, em caso de valor false na condição acima, exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push
 
-//4. Com um console.log, imprima o resultado de uma operação lógica que checa se todos os valores de variáveis booleanas criadas até aqui são verdadeiras.
+if (!item1.vencido1) {
+  estoque.push(item1);
+} else {
+  alert(
+    `O item ${item1.nome1.toLocaleUpperCase()} não pode ser adicionado ao estoque, pois está vencido!`
+  );
+}
 
-console.log("Os itens checados estão:", (vencido1 && vencido2 && vencido3), "\n*(True para vencidos e false para não vencidos.)");
+if (!item2.vencido2) {
+  estoque.push(item2);
+} else {
+  alert(
+    `O item ${item2.nome2.toLocaleUpperCase()} não pode ser adicionado ao estoque, pois está vencido!`
+  );
+}
 
-//5. Crie pelo menos mais uma característica para o item que você criou. Esta característica deve ser um array. Mantenha o tipo de dado do array criado sempre o mesmo, isto é, se é um array de strings, só deve receber strings.
-
-const tipo1 = ["Penne", "Grande"];
-const tipo2 = ["Branco", "Pequeno"];
-const tipo3 = ["Vermelho", "Grande"];
-
-//6. Exiba um relatório utilizando console.log(), mostrando todos os dados de cada um dos itens criados até aqui
-
-console.log(nome1.toLocaleUpperCase(), "\nMarca: ", marca1, "\nPreço: R$", precoCompra1, "\nVencido: ", vencido1, "\nCaracterísticas: [", tipo1[0], " , ", tipo1[1], "]")
-
-console.log(nome2.toLocaleUpperCase(), "\nMarca: ", marca2, "\nPreço: R$", precoCompra2, "\nVencido: ", vencido2, "\nCaracterísticas: [", tipo2[0], " , ", tipo2[1], "]")
-
-console.log(nome3.toLocaleUpperCase(), "\nMarca: ", marca3, "\nPreço: R$", precoCompra3, "\nVencido: ", vencido3, "\nCaracterísticas: [", tipo3[0], " , ", tipo3[1], "]")
+if (!item3.vencido3) {
+  estoque.push(item3);
+} else {
+  alert(
+    `O item ${item3.nome3.toLocaleUpperCase()} não pode ser adicionado ao estoque, pois está vencido!`
+  );
+}
