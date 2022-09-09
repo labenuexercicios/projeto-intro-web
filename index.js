@@ -2,84 +2,72 @@
 console.log("Lista de Pets da Casa")
 
 // Brisa ----------------------------
-const nomePet1 = "Brisa"
-let idadePet1 = 9
-const especiePet1 = "Canina"
-const racaPet1 = "Pastor Alemão"
-let vacinaPet1 = true
-let vermifugoPet1 = false
-const arrayBriquedos1 = ["[Bolinha", " ossinho.]"]
+const nomePet1 = {
+    nome: "Brisa".toUpperCase(),
+    idade: 9,
+    especie: "Canina",
+    raca: "Pastor Alemão",
+    vacina: confirm(`Brisa tomou vacina?`),
+    vermifugo: confirm(`Brisa tomou vermifugo?`),
+    arrayBriquedos: ["Bolinha", " ossinho."]
+};
 
-console.log(`${nomePet1.toUpperCase()}
-Idade: ${idadePet1}
-Espécie: ${especiePet1}
-Raça: ${racaPet1}
-Vacina: ${vacinaPet1}
-Vermifugo: ${vermifugoPet1}
-Brinquedos: ${arrayBriquedos1}
-`)
+console.log(nomePet1)
 
 // Janis ----------------------------
-const nomePet2 = "Janis"
-let idadePet2 = 8
-const especiePet2 = "Felina"
-const racaPet2 = "SRD"
-let vacinaPet2 = true
-let vermifugoPet2 = false
-const arrayBriquedos2 = ["[Caixa de papelão", " arranhador de tecido", " ervinha de gato.]"]
+const nomePet2 = {
+    nome: "Janis".toUpperCase(),
+    idade: 8,
+    especie: "Felina",
+    raca: "SRD",
+    vacina: confirm(`Janis tomou vacina?`),
+    vermifugo: confirm(`Janis tomou vermifugo?`),
+    arrayBriquedos: ["Caixa de papelão", " arranhador de tecido", " ervinha de gato."]
+};
 
-console.log(`${nomePet2.toUpperCase()}
-Idade: ${idadePet2}
-Espécie: ${especiePet2}
-Raça: ${racaPet2}
-Vacina: ${vacinaPet2}
-Vermifugo: ${vermifugoPet2}
-Brinquedos: ${arrayBriquedos2}
-`)
+console.log(nomePet2)
 
 // Lua ----------------------------
-const nomePet3 = "Lua"
-let idadePet3 = 2
-const especiePet3 = "Canina"
-const racaPet3 = "Shin Tzu"
-let vacinaPet3 = true
-let vermifugoPet3 = false
-const arrayBriquedos3 = ["[Bolinha", " ossinho", " orelha de boi", " ursinho.]"]
+const nomePet3 = {
+    nome: "Lua".toUpperCase(),
+    idade: 2,
+    especie: "Canina",
+    raca: "Shin Tzu",
+    vacina: confirm(`Lua tomou vacina?`),
+    vermifugo: confirm(`Lua tomou vermifugo?`),
+    arrayBriquedos: ["Bolinha", " ossinho", " orelha de boi", " ursinho."]
+}; 
 
-console.log(`${nomePet3.toUpperCase()}
-Idade: ${idadePet3}
-Espécie: ${especiePet3}
-Raça: ${racaPet3}
-Vacina: ${vacinaPet3}
-Vermifugo: ${vermifugoPet3}
-Brinquedos: ${arrayBriquedos3}
-`)
+console.log(nomePet3)
 
 // Marilyn ----------------------------
-const nomePet4 = "Marilyn"
-let idadePet4 = 7
-const especiePet4 = "Felina"
-const racaPet4 = "SRD"
-let vacinaPet4 = true
-let vermifugoPet4 = false   
-const arrayBriquedos4 = ["[Caixa de papelão", " barbante enrolado", " erva de gato", " bolinha de lã.]"]
+const nomePet4 = {
+    nome: "Marilyn".toUpperCase(),
+    idade: 7,
+    especie: "Felina",
+    raca: "SRD",
+    vacina: confirm(`Marilyn tomou vacina?`),
+    vermifugo: confirm(`Marilyn tomou vermifugo?`),   
+    arrayBriquedos: ["Caixa de papelão", " barbante enrolado", " erva de gato", " bolinha de lã."]
+};
 
-console.log(`${nomePet4.toUpperCase()}
-Idade: ${idadePet4}
-Espécie: ${especiePet4}
-Raça: ${racaPet4}
-Vacina: ${vacinaPet4}
-Vermifugo: ${vermifugoPet4}
-Brinquedos: ${arrayBriquedos4}
-`)
+console.log(nomePet4)
+
+//array pra guardar os objetos
+
+const todosPets = []
+
+todosPets.push(nomePet1, nomePet2, nomePet3, nomePet4)
+
+console.log(todosPets)
 
 //média
-let mediaPets = (idadePet1+idadePet2+idadePet3+idadePet4) / 4
+let mediaPets = (nomePet1.idade + nomePet2.idade + nomePet3.idade + nomePet4.idade) / 4
 console.log(`Média de Idade dos meus pets: ${mediaPets}`)
 
 //verificar booleanos
-const verificarVacinas = vacinaPet1 && vacinaPet2 && vacinaPet3 && vacinaPet4
-const verificarVermifugo = vermifugoPet1 && vermifugoPet2 && vermifugoPet3 && vermifugoPet4
+const verificarVacinas = nomePet1.vacina && nomePet2.vacina && nomePet3.vacina && nomePet4.vacina
+const verificarVermifugo = nomePet1.vermifugo && nomePet2.vermifugo && nomePet3.vermifugo && nomePet4.vacina
 console.log(`Todas vacinadas? ${verificarVacinas}
 Todas vermifugadas? ${verificarVermifugo}
 `)
