@@ -5,7 +5,7 @@ Porcoes Number
 Ja fez? Boolean
 Tipo String
 Avaliação pessoal Number
-Ingradientes Object
+Ingradientes Array de Object
 Modo de preparo Array
 
 */
@@ -83,16 +83,12 @@ receita1 = {
         "Misture bem e adicione por último o requeijão.",
         "Passe um pouco de requeijão no interior da moranga e despeje o creme de camarão."],
 };
-
-
-//********************************************************************** */
-
 receita2 = {
     nomeDoPrato: "Molho branco para macarrão",
     tempoDePreparo: 30,
     porcoes: 8,
     tipo: "Molho",
-    jaFez: false,
+    jaFez: true,
     avaliacaoPessoal: 0,
     ingradientes: [
         {
@@ -143,8 +139,6 @@ receita2 = {
         "Quando o molho estiver com uma consistência firme, desligue o fogo e acrescente o queijo, mexendo bem, para ele não grudar.",
         "Sirva com macarrão ou arroz de forno."],
 };
-
-
 receita3 = {
     nomeDoPrato: "Musse de limão",
     tempoDePreparo: 10,
@@ -173,15 +167,14 @@ receita3 = {
         "Bata um pouco e depois vá acrescentando o suco do limão, aos poucos.",
         "Ele vai ficar bem consistente, leve à geladeira."],
 };
-
-if(receita1.jaFez){
+if (receita1.jaFez) {
     receitas.push(receita1)
-}else {
+} else {
     alert(receita1.nomeDoPrato + " não adcionado ao livro pessoal de receita")
 }
-if(receita2.jaFez){
+if (receita2.jaFez) {
     receitas.push(receita2)
-}else {
+} else {
     alert(receita2.nomeDoPrato + " não adcionado ao livro pessoal de receita")
 }
 if (receita3.jaFez) {
@@ -190,83 +183,37 @@ if (receita3.jaFez) {
     alert(receita3.nomeDoPrato + " não adcionado ao livro pessoal de receita")
 }
 
-const tamanhoIngredientes = receitas[0].ingradientes.length;
-const tamanhoModoDePreparo = receitas[0].modoDePreparo.length;
+let tamanhoIngredientes;
+let tamanhoModoDePreparo;
 const quantidadeDeReceitas = receitas.length;
-
-// console.log(tamanhoIngredientes)
-// console.log(tamanhoModoDePreparo);
 let i = 0;
 let numeroDeReceitas = 0;
 
 while (numeroDeReceitas < quantidadeDeReceitas) {
+    tamanhoIngredientes = receitas[numeroDeReceitas].ingradientes.length;
+    tamanhoModoDePreparo = receitas[numeroDeReceitas].modoDePreparo.length;
+
     console.log(`Nome do prato: ${receitas[numeroDeReceitas].nomeDoPrato.toUpperCase()}
 Tempo de preparo: ${receitas[numeroDeReceitas].tempoDePreparo} min
 Porções ${receitas[numeroDeReceitas].porcoes}
 Tipo de prato: ${receitas[numeroDeReceitas].tipo}
 Já experimentou a receita?: ${receitas[numeroDeReceitas].jaFez}`);
+    i = 0;
     while (i < tamanhoIngredientes) {
 
-        console.log(receitas[0].ingradientes[i].quantidade + " " + receitas[0].ingradientes[i].medida + " de " + receitas[0].ingradientes[i].nomeDoingrediente)
+        console.log(receitas[numeroDeReceitas].ingradientes[i].quantidade + " " + receitas[numeroDeReceitas].ingradientes[i].medida + " de " + receitas[numeroDeReceitas].ingradientes[i].nomeDoingrediente)
         i++
     }
     console.log("\nMODO DE PREPARO")
     i = 0;
+
     while (i < tamanhoModoDePreparo) {
 
-        console.log((i + 1) + "-" + receitas[0].modoDePreparo[i])
+        console.log((i + 1) + "-" + receitas[numeroDeReceitas].modoDePreparo[i])
         i++
     }
     numeroDeReceitas++;
 }
-
-
-
-
-// const mediaAvaliacaoPessoal = (avaliacaoPessoal1 + avaliacaoPessoal2 + avaliacaoPessoal3)/3;
-// console.log(mediaAvaliacaoPessoal);
-// const verificacaoSeJaFez = jaFez1 && jaFez2 && jaFez3;
-
-// console.log(verificacaoSeJaFez);
-
-// console.log(`Nome do prato: ${nomeDoPrato1.toUpperCase()}
-// Tempo de preparo: ${tempoDePreparo1} min
-// Porções ${porcoes1}
-// Tipo de prato: ${tipo1}
-// Já experimentou a receita?: ${jaFez1}`);
-// console.log(ingradientes1);
-// console.log("Modo de preparo:",modoDePreparo1);
-
-// console.log(`Nome do prato: ${nomeDoPrato2.toUpperCase()}
-// Tempo de preparo: ${tempoDePreparo2} min
-// Porções ${porcoes2}
-// Tipo de prato: ${tipo2}
-// Já experimentou a receita?: ${jaFez2}`);
-// console.log(ingradientes2);
-// console.log("Modo de preparo:",modoDePreparo2);
-
-// console.log(`Nome do prato: ${nomeDoPrato3.toUpperCase()}
-// Tempo de preparo: ${tempoDePreparo3} min
-// Porções ${porcoes3}
-// Tipo de prato: ${tipo3}
-// Já experimentou a receita?: ${jaFez3}`);
-// console.log(ingradientes3);
-// console.log("Modo de preparo:",modoDePreparo3);
-
-
-
-
-
-// // nomeDoPrato3
-// // tempoDePreparo3
-// // porcoes3
-// // tipo3
-// // jaFez3
-// // avaliacaoPessoal3
-// // ingradientes3
-// // modoDePreparo3
-
-
 
 
 
