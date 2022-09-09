@@ -1,25 +1,59 @@
-const author1 = 'John Ronald Reuel Tolkien';
-const numberBooks1 = 40;
-const live1 = false;
-const bestBook1 = ['The Silmarillion', ' The Lord Of The Rings', ' The Hobbit']
+//CRIANDO OS OBJETOS
+authorBook1 = {
+    author : 'John Ronald Reuel Tolkien',
+    numberBooks : 40,
+    live : false,
+    bestBooks : ['The Silmarillion', ' The Lord Of The Rings', ' The Hobbit'],
+}
 
-const author2 = 'CS Lewis';
-const numberBooks2 = 49;
-const live2 = false;
-const bestBook2 = ['Till We Have Face','The Screwtappers Letters', 'Chronicles Of Narnia: The Last Battle']
+authorBook2 = {
+    author : 'CS Lewis',
+    numberBooks: 49,
+    live : false,
+    bestBooks : ['Till We Have Face','The Screwtappers Letters', 'Chronicles Of Narnia: The Last Battle'],
+}
+
+authorBook3 = {
+    author : 'John Piper',
+    numberBooks: 49,
+    live : true,
+    bestBooks : ['Desiring God', 'Providence', 'Don´t Waste Your Cancer'],
+}
+
+authorBook4 = {
+    author : 'Timothy Keller',
+    numberBooks: 52,
+    live : true,
+    bestBooks : ['Center Church', 'On Birth', 'Counterfeit Gods'],
+}
+
+//CRIANDO O ARRAY
+const authorsLive = []
+
+//CRIANDO AS CONDIÇÕES
+if(authorBook1.live){
+    authorsLive.push(authorBook1)
+} else{
+    alert(authorBook1.author + ' não adicionado')
+} 
+
+if(authorBook2.live){
+    authorsLive.push(authorBook2)
+} else{
+   alert(authorBook2.author + ' não adicionado')
+} 
 
 
-const author3 = 'John Piper';
-const numberBooks3 = 49;
-const live3 = true;
-const bestBook3 = ['Desiring God', 'Providence', 'Don´t Waste Your Cancer']
+if(authorBook3.live){
+    authorsLive.push(authorBook3)
+} else{
+    alert(authorBook3.author + ' não adicionado')
+} 
 
-let media = (numberBooks1+numberBooks2+numberBooks3)/2
-console.log(media);
+if(authorBook4.live){
+    authorsLive.push(authorBook4)
+} else{
+    alert(authorBook4.author + ' não adicionado')
+} 
 
-const authorsLive = live1 && live2 && live3
-console.log(authorsLive, "\n\n---------------------------\n")
-
-console.log(`${author1.toUpperCase()}\nBooks released: ${numberBooks1}\nAlive: ${live1}\nBest books: ${bestBook1}`, "\n\n---------------------------\n")
-console.log(`${author2.toUpperCase()}\nBooks released: ${numberBooks2}\nAlive: ${live2}\nBest books: ${bestBook2}`, "\n\n---------------------------\n")
-console.log(`${author3.toUpperCase()}\nBooks released: ${numberBooks3}\nAlive: ${live3}\nBest books: ${bestBook3}`, "\n\n---------------------------\n")
+console.log(authorsLive)
