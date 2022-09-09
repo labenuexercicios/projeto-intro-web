@@ -29,67 +29,60 @@ const itachi = {
     localImg: "./midia/itachi.jpg"
 }
 
-// const arrayPersonagens = [];
+const arrayPersonagens = [];
 
-// if(naruto.aindaVivo){
-//     arrayPersonagens.push(naruto);
-// }else{
-//     alert("O Objeto Naruto não foi adicionado ao array")
-// }
-// if(minato.aindaVivo){
-//     arrayPersonagens.push(minato);
-// }else{
-//     alert("O Objeto Minato não foi adicionado ao array")
-// }
-// if(kakashi.aindaVivo){
-//     arrayPersonagens.push(kakashi);
-// }else{
-//     alert("O Objeto Kakashi não foi adicionado ao array")
-// }
-// if(itachi.aindaVivo){
-//     arrayPersonagens.push(itachi);
-// }else{
-//     alert("O Objeto Itachi não foi adicionado ao array")
-// }
+let verificaVivo = (obj) => {
+    
+    if(obj.aindaVivo){
+        arrayPersonagens.push(obj);
+    }else{
+        alert("O Objeto Naruto não foi adicionado ao array")
+    }
+}
 
-// const mediaIdade = (naruto.idade + minato.idade + kakashi.idade + itachi.idade) / 4;
-// console.log("A média das idades dos personagens é: ", mediaIdade);
+verificaVivo(naruto)
+verificaVivo(kakashi)
+verificaVivo(minato)
+verificaVivo(itachi)
 
-// const todosVivos = naruto.aindaVivo && minato.aindaVivo && kakashi.aindaVivo && itachi.aindaVivo;
-// console.log("Todos personagens ainda estão vivos? ", todosVivos);
+const mediaIdade = (naruto.idade + minato.idade + kakashi.idade + itachi.idade) / 4;
+console.log("A média das idades dos personagens é: ", mediaIdade);
 
-// for(let i in arrayPersonagens){
-//     let str = []
-//     for(j of arrayPersonagens[i].principaisJutsus){
-//         str += `${j},`
-//     }
-//     console.log(`Nome: ${arrayPersonagens[i].nome.toUpperCase()} \nIdade: ${arrayPersonagens[i].idade}\nAinda está vivo? ${arrayPersonagens[i].aindaVivo}\nPrincipais Jutsus: ${str}`);
-// }
+const todosVivos = naruto.aindaVivo && minato.aindaVivo && kakashi.aindaVivo && itachi.aindaVivo;
+console.log("Todos personagens ainda estão vivos? ", todosVivos);
 
-// const relatorio = (obj) => {
-//     let str = `Nome: ${obj.nome.toUpperCase()}\nIdade: ${obj.idade}\nAinda está vivo? ${obj.aindaVivo}\nPrincipais Jutsus: ${obj.principaisJutsus}`
-//     console.log(str)
-// }
-// relatorio(naruto)
-// relatorio(minato)
-// relatorio(kakashi)
-// relatorio(itachi)
+for(let i in arrayPersonagens){
+    let str = ``
+    for(j of arrayPersonagens[i].principaisJutsus){
+        str += `${j},`
+    }
+    console.log(`Nome: ${arrayPersonagens[i].nome.toUpperCase()} \nIdade: ${arrayPersonagens[i].idade}\nAinda está vivo? ${arrayPersonagens[i].aindaVivo}\nPrincipais Jutsus: ${str}`);
+}
 
-// const funcaoFiltro = (array, string) => {       
-//     let novoArray = []
-//     for(i in array){
-//         for(j in array[i]){
-//             if(array[i][j]===string){
-//                 novoArray.push(array[i])
-//                 return array[i]
-//             }
-//         }
-//     }
-//     if(novoArray.length===0){
-//         alert("Nenhum item foi encontrado!")     
-//     }   
-// }
-// funcaoFiltro(arrayPersonagens,"Kakashi")
-// funcaoFiltro(arrayPersonagens,"Naruto")
-// funcaoFiltro(arrayPersonagens,"Itachi")
+const relatorio = (obj) => {
+    let str = `Nome: ${obj.nome.toUpperCase()}\nIdade: ${obj.idade}\nAinda está vivo? ${obj.aindaVivo}\nPrincipais Jutsus: ${obj.principaisJutsus}`
+    console.log(str)
+}
+relatorio(naruto)
+relatorio(minato)
+relatorio(kakashi)
+relatorio(itachi)
+
+const funcaoFiltro = (array, string) => {       
+    let novoArray = []
+    for(i in array){
+        for(j in array[i]){
+            if(array[i][j]===string){
+                novoArray.push(array[i])
+                return array[i]
+            }
+        }
+    }
+    if(novoArray.length===0){
+        alert("Nenhum item foi encontrado!")     
+    }   
+}
+funcaoFiltro(arrayPersonagens,"Kakashi")
+funcaoFiltro(arrayPersonagens,"Naruto")
+funcaoFiltro(arrayPersonagens,"Itachi")
 

@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: black;
+    color: white;
+    padding: 30px 20px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    line-height: 10px;
+    text-align: center;
+}
+
+
+
