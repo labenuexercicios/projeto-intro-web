@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: rgb(251, 122, 122);
+    padding: 0 5vw 0 5vw;
+}
+
+.pokebola { 
+    max-width: 2.5rem;
+}
+
+main {
+    padding: 5vh 0;
+    background-color: rgb(121, 82, 159);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > div > input {
+    border-color: white;
+    width: 30vw;
+}
+
+main > div > button { 
+    border-radius: 0;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+main > section > article {
+    width: 30vw;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightcoral;
+    margin: 5vh 0;
+    border-radius: 1rem ;
+}
+
+main > section > article > img {
+    min-width: 50%;
+}
+
+main > section > article > div {
+    text-align: center;
+}
+
+main > section > article > div > h2 {
+    font-size: 1.3em;
+}
+
+main > section > article > div > p {
+    font-size: 1.3em;
+    width: 10rem;
+}
+
+#scroll-top {
+    display: none;
+    width: 3rem;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 15vh;
+    color: white;
+    background-color: black;
+}
+
+footer > p {
+    display: inline;
+    margin: 0 auto;
+}
