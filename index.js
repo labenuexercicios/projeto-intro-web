@@ -79,20 +79,21 @@ jogo3 = {
   premios: ["Jogo do ano ", "Jogo mais aguardado ", "Melhor RPG"],
 };
 
-const superJogos = [];
+let superJogos = [];
 //superJogos.push(jogo1, jogo2, jogo3)
 if (jogo1.temNaSteam) {
-  superJogos.push();
+  superJogos.push(jogo1);
 } else {
   alert("O jogo " + jogo1.nome + " não tem na steam!");
 }
 if (jogo2.temNaSteam) {
-  superJogos.push();
+  superJogos.push(jogo2);
 } else {
   alert("O jogo " + jogo2.nome + " não tem na steam!");
 }
 if (jogo3.temNaSteam) {
-  superJogos.push();
+  superJogos.push(jogo3);
 } else {
   alert("O jogo " + jogo3.nome + " não tem na steam!");
 }
+ console.log(superJogos)
