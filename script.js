@@ -77,8 +77,17 @@ for(let i in vikings.elencoPrincipal){
 function relatorio(objeto) {
     let txt = ""
     for(keys in objeto){
-        txt +=keys +": "+ objeto[keys] + "\n"
+        txt += keys +": "+ objeto[keys] + "\n"
     }
     return txt.toString()
 }
+
+// // Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado
+const busca = (array,string)=>{
+    let a = {}
+    const b = array.filter( (titulo) => {return titulo.nome == string})
+    return b.length > 0 ?  a.string = b  : console.log("não foi encontrado")    
+}
+console.log(busca(bdSeries, 'vikings'))
+
 
