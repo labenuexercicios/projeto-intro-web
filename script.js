@@ -44,4 +44,15 @@ const cavaleirosDeAthena = []
 
 cavaleirosDeAthena.push(objeto1, objeto2, objeto3)
 
+
+
+objeto4 = {
+    nome:  "Shun",
+    idade: 13,
+    cavaleiroAtena: true, 
+    golpes: ["corrente de andrômeda", "tempestade nebulosa", "onda relâmpago"]
+    }
+
+cavaleirosDeAthena.push(objeto4)
+
 console.log(cavaleirosDeAthena);
