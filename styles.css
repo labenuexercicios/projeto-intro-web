@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    
+}
+nav{
+    margin: 20px;
+}
+section{
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+}
+footer{
+    text-align: center;
+    margin: 30px;
+}
+body{
+    font-family: sans-serif;
+    
+
+}
+h1 h3{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+input{
+    height: 20px;
+    width: 300px;
+}
+button{
+    height: 20px;
+    width: 100px;
+}
