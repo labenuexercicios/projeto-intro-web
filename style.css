@@ -1,3 +1,7 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
 .cabecalho {
     background-color: black;
     color: white;
@@ -5,27 +9,73 @@
 }
 #busca {
     text-align: center;
+    height: 40px;
+}
+main {
+    padding: 20px;
 }
 section {
     text-align: center;
+    
 }
 #imagem1 {
     height: 200px;
     width: 200px;
     border-radius: 50%;
+    padding: 20px;
 }
 #imagem2 {
     height: 200px;
     width: 200px;
     border-radius: 50%;
+    padding: 20px;
 }
 #imagem3 {
     height: 200px;
     width: 200px;
     border-radius: 50%;
+    padding: 20px;
 }
 #imagem4 {
     height: 200px;
     width: 200px;
     border-radius: 50%;
+    padding: 20px;
+}
+#section1{
+    margin: auto;
+    background-color: orange;
+    width: 700px;
+    height: 250px;
+}
+#section2 {
+    margin: auto;
+    background-color: orange;
+    width: 700px;
+    height: 250px;
+    margin-top: 20px;
+}
+#section3 {
+    margin: auto;
+    background-color: orange;
+    width: 700px;
+    height: 250px;
+    margin-top: 20px;
+}
+#section4 {
+    margin: auto;
+    background-color: orange;
+    width: 700px;
+    height: 250px;
+    margin-top: 20px;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+}
+.proximo {
+    margin: 5px;
 }
