@@ -6,11 +6,16 @@
 
 header{
     text-align: center;
-    margin: 30px;
+    margin: 10px;
+    padding: 20px;
+    
+}
+nav{
+    margin: 20px;
 }
 section{
     text-align: center;
-    margin: 70px;
+    margin: 30px;
     padding: 10px;
 }
 footer{
@@ -19,7 +24,19 @@ footer{
 }
 body{
     font-family: sans-serif;
+    
+
 }
 h1 h3{
     font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    padding: 10px;
+}
+input{
+    height: 20px;
+    width: 300px;
+}
+button{
+    height: 20px;
+    width: 100px;
 }
