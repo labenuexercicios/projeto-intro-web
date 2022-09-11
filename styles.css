@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    margin: 30px;
+}
+section{
+    text-align: center;
+    margin: 70px;
+    padding: 10px;
+}
+footer{
+    text-align: center;
+    margin: 30px;
+}
+body{
+    font-family: sans-serif;
+}
+h1 h3{
+    font-family: 'Courier New', Courier, monospace;
+}
