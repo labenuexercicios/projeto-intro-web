@@ -1,0 +1,31 @@
+.cabecalho {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+#busca {
+    text-align: center;
+}
+section {
+    text-align: center;
+}
+#imagem1 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+#imagem2 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+#imagem3 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+#imagem4 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
