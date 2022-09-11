@@ -1,19 +1,27 @@
-const nome1 = "Seya"
-const idade1 = 16
-const cavaleiroAtena1 = true 
-const golpes1 = ["meteoro de pagaso", " cometa de pegaso", " turbilhão de pagaso"]
+objeto1 = {
+nome: "Seya",
+idade: 16,
+cavaleiroAtena: true, 
+golpes: ["meteoro de pagaso", " cometa de pegaso", " turbilhão de pagaso"]}
 
-const nome2 = "Hyoga"
-const idade2 = 16
-const cavaleiroAtena2 = true
-const golpes2 = ["círculo de gelo", " trovão aurora", " pó de diamante"]
+objeto2 = {
+nome: "Hyoga",
+idade: 16,
+cavaleiroAtena: true,
+golpes: ["círculo de gelo", " trovão aurora", " pó de diamante"]
+}
 
-const nome3 = "Shiryu"
-const idade3 = 15
-const cavaleiroAtena3 = true 
-const golpes3 = ["cólera do dragão", " dragão voador", " dragão nascente"]
+objeto3 = {
+nome:  "Shiryu",
+idade: 15,
+cavaleiroAtena: true, 
+golpes: ["cólera do dragão", " dragão voador", " dragão nascente"]
+}
 
-const cavaleirosDeAthena = cavaleiroAtena1 && cavaleiroAtena2 && cavaleiroAtena3
+console.log(objeto1, objeto2, objeto3);
+
+
+// const cavaleirosDeAthena = cavaleiroAtena1 && cavaleiroAtena2 && cavaleiroAtena3
 
 // console.log(cavaleirosDeAthena);
 
@@ -31,3 +39,9 @@ const cavaleirosDeAthena = cavaleiroAtena1 && cavaleiroAtena2 && cavaleiroAtena3
 // Idade = ${idade3}
 // é um cavaleiro de atena = ${cavaleiroAtena3}
 // Golpes = ${golpes3}`);
+
+const cavaleirosDeAthena = []
+
+cavaleirosDeAthena.push(objeto1, objeto2, objeto3)
+
+console.log(cavaleirosDeAthena);
