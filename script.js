@@ -82,7 +82,6 @@ function relatorio(objeto) {
     return txt.toString()
 }
 
-// // Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado
 const busca = (array,string)=>{
     let a = {}
     const b = array.filter( (titulo) => {return titulo.nome == string})
