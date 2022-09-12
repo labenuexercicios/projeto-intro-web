@@ -7,76 +7,99 @@
 
 header {
     color: white;
-    height: 10vh;
-    width: 100%;
+    height: 100px;
     background-color: black;
-    display: flex;
-    justify-content: center;
-}
-
-h1 {
-    position: relative;
-    top: 30%;
     text-align: center;
-}
-
-form {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    margin: 20px;   
-}
-
-input {
-    border: solid rgb(87, 77, 77) 5px;
-    border-radius: 10px;
-    text-align: center;
-    width: 250px;
-    height: 40px;
-    margin: 10px;
-}
-input:active {
-    border: solid rgb(157, 157, 242) 2px;
-    box-shadow: black 5px;
-}
-
-#button {
-    border: solid rgb(87, 77, 77) 5px;
-    border-radius: 10px;
-    font-size: 18px;
-    width: 150px;
-    height: 50px;
-    margin: 10px;
-}
-
-#button:hover {
-    color: white;
-    background-color: black;
-}
-#button:active {
-    border: solid rgb(157, 157, 242) 2px;
-    box-shadow: black 5px;
-}
-
-footer {
-    width: 100%;
-    height: 60px;
-    padding-top: 20px;
-    position: relative;
-    text-align: center;
-    bottom: calc(100vh-80px);
-    background-color: black;
-    color: white; 
-}
-
-button {
-    height: 30px;
-    width: 80px;
-}
-
-.section-principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 20px;
+}
+
+main {
+    background-color: #f5f5f5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+div {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+button {
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    background-color: azure;
+    border-radius: 100%;
+}
+#ninja-imagem {
+    height: 160px;
+    width: 160px;
+    
+}
+#card {
+    height: 200px;
+    background-color: orange;
+    margin-bottom: 15px;
+    width: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul {
+    text-align: center;
+    line-height: 1;
+    width: 60%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: red;
+}
+
+footer {
+    
+    padding: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
 }

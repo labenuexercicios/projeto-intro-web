@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Ninjas do Naruto</title>
+    <title>Projeto de Introdução ao Desenvolvimento Web</title>
 </head>
 
 <body>
@@ -15,11 +15,11 @@
         <h1>Projeto de Introdução ao Desenvolvimento Web</h1>
     </header>
     <main>
-        
-        <form action="#">
-            <input type="text" id="name" placeholder="Procurar por Ninjas">
-            <button type="submit" id="button">Pesquisar</button>
-        </form>
+
+        <div class="search-container">
+            <input class="search-bar" type="text" placeholder="Procura por Ninja">
+            <button class="search-button" onclick="buscaNinja()">Buscar</button>
+        </div>
 
         <!-- Semana 07
         1. Crie uma página HTML, e nesta página, dê um título para sua lista de itens;
@@ -32,98 +32,100 @@
         dados escritos diretamente nos elementos.
         6. Transforme o nome/título do item em um link para um artigo sobre este item (pode ser do google, de algum blog
         ou da Wikipédia) -->
-        <section class="section-principal">
-            <section>
-                <h2>Seção 01</h2>
+        <section class="card-container">
+            <section id="card">
+                
+                <div id="ninja-imagem"><img class="naruto" src="./img/naruto.png" alt="imagem do naruto"></div>
                 <ul>
-                    <li><a href="https://pt.wikipedia.org/wiki/Naruto" target="_blank">Nome: Naruto</a></li>
-                    <li>Clan: Uzumaki</li>
+                    <li id="nome"><a href="https://pt.wikipedia.org/wiki/Naruto" target="_blank">Nome: Naruto</a></li>
+                    <li><strong>Clan:</strong> Uzumaki</li>
                     <li>Idade: 17</li>
                     <li>Isninja: True</li>
                     <li>Ninjutsus: Clones das Sombras, Jutsu Sexy</li>
-                    <img src="./img/naruto.png" alt="imagem do naruto" style="height: 200px;">
+                    
                 </ul>
             </section>
 
-            <section>
-                <h2>Seção 02</h2>
+            <section id="card">
+                <div id="ninja-imagem"><img src="./img/kakashi.png" alt="imagem do kakashi"></div>
                 <ul>
-                    <li><a href="https://pt.wikipedia.org/wiki/Kakashi_Hatake" target="_blank">Nome: Kakashi</a></li>
-                    <li>Clan: Hatake</li>
-                    <li>Idade: 28</li>
+                    <li id="nome"><a href="https://pt.wikipedia.org/wiki/Kakashi_Hatake" target="_blank">Nome:
+                            Kakashi</a></li>
+                    <li><strong>Clan:</strong> Hatake</li>
+                    <li class="data">Idade: 28</li>
                     <li>Isninja: False</li>
                     <li>Ninjutsus: Copiar Habilidades, Chidori</li>
-                    <img src="./img/kakashi.png" alt="imagem do kakashi" style="height: 200px;">
+                    
                 </ul>
             </section>
 
-            <section>
-                <h2>Seção 03</h2>
+            <section id="card">
+                <div id="ninja-imagem"><img src="./img/Jiraiya.png" alt="imagem do jiraiya"></div>
                 <ul>
                     <li><a href="https://naruto.fandom.com/pt-br/wiki/Jiraiya" target="_blank">Nome: jiraiya</a></li>
-                    <li>Clan: Hatake</li>
+                    <li><strong>Clan:</strong> Hatake</li>
                     <li>Idade: 51</li>
                     <li>Isninja: False</li>
                     <li>Ninjutsus: Rasengan, Odama Rasengan</li>
-                    <img src="./img/Jiraiya.png" alt="imagem do jiraiya" style="height: 200px;">
+                    
                 </ul>
             </section>
-            <section>
-                <h2>Seção 04</h2>
+            <section id="card">
+                <div id="ninja-imagem"><img src="./img/maito-gai.png" alt="imagem do maito-gai"></div>
                 <ul>
                     <li><a href="https://naruto.fandom.com/pt-br/wiki/Might_Guy" target="_blank">Nome: Maito Gai</a>
                     </li>
-                    <li>Clan: Sem Clan</li>
+                    <li><strong>Clan:</strong> Sem Clan</li>
                     <li>Idade: 28</li>
                     <li>Isninja: True</li>
                     <li>Ninjutsus: Os Noves Portões</li>
-                    <img src="./img/maito-gai.png" alt="imagem do maito-gai" style="height: 200px;">
+                    
                 </ul>
             </section>
-            <section>
-                <h2>Seção 05</h2>
+            <section id="card">
+                <div id="ninja-imagem"><img src="./img/rock-lee.png" alt="imagem do rock-lee"></div>
                 <ul>
                     <li><a href="https://naruto.fandom.com/pt-br/wiki/Rock_Lee" target="_blank">Nome: Rock Lee</a></li>
-                    <li>Clan: Sem Clan</li>
+                    <li><strong>Clan:</strong> Sem Clan</li>
                     <li>Idade: 17</li>
                     <li>Isninja: True</li>
                     <li>Ninjutsus: Só Tem Taijuts</li>
-                    <img src="./img/rock-lee.png" alt="imagem do rock-lee" style="height: 200px;">
+                    
                 </ul>
             </section>
-            <section>
-                <h2>Seção 06</h2>
+            <section id="card">
+                <div id="ninja-imagem"><img src="./img/neji.png" alt="imagem do neji"></div>
                 <ul>
                     <li><a href="https://naruto.fandom.com/pt-br/wiki/Neji_Hy%C5%ABga" target="_blank">Nome: Neji
                             Hyuga</a></li>
-                    <li>Clan: Hyuga</li>
+                    <li><strong>Clan:</strong> Hyuga</li>
                     <li>Idade: 17</li>
                     <li>Isninja: False</li>
                     <li>Ninjutsus: Oito Trigamas, Emissão de Chakara</li>
-                    <img src="./img/neji.png" alt="imagem do neji" style="height: 200px;">
+                    
                 </ul>
             </section>
-            <section>
-                <h2>Seção 07</h2>
+            <section id="card">
+                <div id="ninja-imagem"><img src="./img/shikamaru.png" alt="imagem do Shikamaru"></div>
                 <ul>
-                    <li><a href="https://naruto.fandom.com/pt-br/wiki/Shikamaru_Nara" target="_blank">Nome:
-                            Shikamaru</a></li>
-                    <li>Clan: Nara</li>
+                    <li><a href="https://naruto.fandom.com/pt-br/wiki/Shikamaru_Nara" target="_blank">Nome:Shikamaru</a>
+                    </li>
+                    <li><strong>Clan:</strong> Nara</li>
                     <li>Idade: 26</li>
                     <li>Isninja: True</li>
                     <li>Ninjutsus: Técnica de Imitação Pela Sombra, Técnica da Captura pela Sombra</li>
-                    <img src="./img/shikamaru.png" alt="imagem do Shikamaru" style="height: 200px;">
+                    
                 </ul>
             </section>
-            <section>
-                <h2>Seção 08</h2>
+            <section id="card">
+                <div id="ninja-imagem"><img src="./img/nagato.png" alt="imagem do Nagato"></div>
                 <ul>
                     <li><a href="https://naruto.fandom.com/pt-br/wiki/Nagato" target="_blank">Nome: Nagato Pain</a></li>
-                    <li>Clan: Uzumaki</li>
+                    <li><strong>Clan:</strong> Uzumaki</li>
                     <li>Idade: 32</li>
                     <li>Isninja: False</li>
                     <li>Ninjutsus: Jutsus Absorção da Alma, Técnica da Vida Celestial</li>
-                    <img src="./img/nagato.png" alt="imagem do Nagato" style="height: 200px;">
+                    
                 </ul>
             </section>
         </section>
