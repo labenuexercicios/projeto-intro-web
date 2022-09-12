@@ -1,37 +1,6 @@
 ﻿
-
-const nome1 = 'manjubinha';
-const descrição1 = 'empanado na farinha de rosca';
-const  ingredientes1 = 'manjubinha, leite, ovo, farinha de rosca';
-const categoria1 = 'Tira gosto';
-const vegetariano1 = false;
-let preco1 = 35;
-const menu1=[]
-
-
-const nome2 = 'Catumarão';
-const descrição2 =' camarão empanado com catupery';
-const ingredientes2 = 'camarao rosinha, catupery, leite, ovo,farinha de rosca';
-const categoria2 = 'Petisco';
-const vegetariano2 = false;
-let preco2 = 50;
-const menu2=[]
-
-
-const nome3 = 'mandioca';
-const descrição3 ='  mandioca';
-const ingredientes3 = 'mandioca';
-const categoria3 = 'Porçao';
-const vegetariano3 = true;
-let preco3 = 45;
-const menu3=[]
-
-const totalDePreco = preco1 && preco2 && preco3;
-console.log(totalDePreco)
-
-
-let menu = 
-[{
+let menu = [
+    {
     nome1: 'manjubinha',    
     descrição1: 'empanado na farinha de rosca',
     ingredientes1: 'manjubinha, leite, ovo, farinha de rosca',
@@ -53,12 +22,6 @@ let menu =
     ingredientes3: 'mandioca',
     categoria3: 'Porçao',
     vegetariano3: true,
-    preco3: 45
-}]
-
-function divisor (params=30){
-    console.log()
+    preco3: 40
 }
-*/
-(n1,n2,n3)=>n1*n2/n3
-console.log()
+]
