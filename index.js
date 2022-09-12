@@ -3,6 +3,7 @@ const preco = Number
 const masculino = Boolean
 const cor = ["verde", "amarelo", "rosa", "jeans"]
 
+//1. Transforme os itens que criamos nas últimas semanas em objetos.
 primeiroProduto = {
     roupa: "camiseta",
     preco: 20.00.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }),
@@ -24,68 +25,27 @@ terceiroProduto = {
     cor: cor[2]
 }
 
+//2. Crie um array para guardar os objetos. Este array deve estar vazio, por enquanto;
 const carrinho = []
 
-function verificar(objeto1) {
-    if (objeto1.masculino == true) {
-        carrinho.push(objeto1)
+//4 Verificação pra adicionar ao array carrinho
+    if (primeiroProduto.masculino === true) {
+        carrinho.push(primeiroProduto)
     } else {
         alert("Item não adicionado.")
     }
-}
-function verificar1(objeto2) {
-    if (objeto2.masculino == true) {
-        carrinho.push(objeto2)
+
+    //Esse vai emitir um alert dizendo que não foi adicionado
+    if (segundoProduto.masculino === true) {
+        carrinho.push(segundoProduto)
     } else {
         alert("Item não adicionado.")
     }
-}
-function verificar2(objeto3) {
-    if (objeto3.masculino == true) {
-        carrinho.push(objeto3)
+
+    if (terceiroProduto.masculino === true) {
+        carrinho.push(terceiroProduto)
     } else {
         alert("Item não adicionado.")
     }
-}
-verificar(primeiroProduto)
-//verificar1(segundoProduto) --> esse é false, vai dar **ALERT**
-verificar2(terceiroProduto)
 
 console.log(carrinho)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function verificar(objeto1, objeto2, objeto3) {
-//     if (objeto1.masculino == true) {
-//         carrinho.push(objeto1)
-//     } else if (objeto2.masculino == true) {
-//         carrinho.push(objeto2)
-//     } else if (objeto3.masculino == true) {
-//         carrinho.push(objeto3)
-//     } else {
-//         alert("Item não adicionado.")
-//     }
-// }
-// verificar(primeiroProduto, segundoProduto, terceiroProduto)
-// console.log(carrinho)
-
-
