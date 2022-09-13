@@ -1,4 +1,4 @@
-// SEMANA2
+// SEMANA 02
 //1. Transforme os itens que criamos nas últimas semanas em objetos.
 
 const objeto1 = {
@@ -38,14 +38,14 @@ todosOsObjetos.push(objeto1, objeto2, objeto3, objeto4)
 
 
 //4. Altere o item “Adicione os novos objetos no array de objetos, utilizando o push()” (item 3), para criar uma verificação antes de dar o push. A caraterística booleana do objeto deve ser validada. Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for true;
+
 //5. Crie uma condição else, que, em caso de valor false na condição acima, exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push.
 
 
 if(checarAvaliação == true) {
    console.log("Você foi Aprovado!", todosOsObjetos.push())
    /*Se todas as avaliações forem true, o usuário foi aprovado*/
-}
- else if (checarAvaliação == false){
+} else if (checarAvaliação == false) {
    console.log(alert("Você foi reprovado, refaça suas avaliações!"))
    /*Se alguma avaliação for false, o usuário está reprovado*/
 }
