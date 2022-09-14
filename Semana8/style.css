@@ -1,0 +1,85 @@
+footer {
+  color: azure;
+  width: 1440px;
+  height: 100px;
+  top: 552px;
+  left: -749px;
+  background: #000000;
+
+}
+
+body {
+  background-image: url(./media/b7654e23bb2dbb093c5b9d8d6ac1303c.jpg);
+  background-size: cover;
+  position: absolute;
+  opacity: 0.7;
+
+
+}
+
+p {
+  text-align: center;
+  font-style: oblique;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  line-height: 100px;
+}
+
+a {
+  color: white;
+}
+
+article:nth-child(2) {
+  text-align: center;
+}
+
+main {
+  width: 500px;
+  margin: auto;
+
+}
+
+button {
+  background-color: #e7e7e7;
+  color: black;
+  border: 2px solid #e7e7e7;
+  font-weight: bold;
+  width: 93px;
+  height: 37px;
+}
+
+input {
+  padding-left: 46px;
+  background: url(./media/icons8-lup-64.png) no-repeat 10px/24px, white;
+  cursor: pointer;
+  width: 338px;
+  height: 37px;
+}
+
+h1 {
+  background: #1E1E1E;
+  color: white;
+  padding: 3%;}
+
+section {
+  margin: 20px;
+  width: 440px;
+  height: 230px;
+  text-align: center;
+  background: black;
+  border-radius: 10px;
+  color: white;
+}
+
+#image {
+  float: left;
+  max-width: 180px;
+  max-height: 180px;
+  border-radius: 10px;
+}
+
+#search {
+
+  /* cursor: pointer;
+      transition-property: width, border-radius, box-shadow ;
+      transition-duration: 300ms; */
+}
