@@ -1,21 +1,50 @@
-const Artista1 = "Banda Zimbra"
-const QuantosAlbuns = 04
-const TemMaisDe5anos = 12 > 5 
-const AlgunsAlbuns1 = ["Azul", "Sala Dois", "Verniz", "O tudo, o Nada e o Mundo"]
-console.log (Artista1.toUpperCase(), "\nQuantos Albuns:",  QuantosAlbuns,  "\nTem mais de 5 anos?", TemMaisDe5anos, "\nAlguns Albums:", AlgunsAlbuns1)
+const BandaZimbra = {
+    Artista1: "Banda Zimbra",
+    isArtista1 : true,
+    QuantosAlbuns: 04,
+    TemMaisDe5anos: 12 > 5, 
+    AlgunsAlbuns1: ["Azul", "Sala Dois", "Verniz", "O tudo, o Nada e o Mundo"]}
 
-const Artista2 = "Miley Cyrus"
-const QuantosAlbuns2 = 09
-const TemMaisDe5anos2 = 21 > 5 
-const AlgunsAlbuns2 = ["Bangerz", "Can't Be Tamed", "Plastic Hearts" ]
-console.log (Artista2.toUpperCase(), "\nQuantos Albuns:",  QuantosAlbuns2,  "\nTem mais de 5 anos?", TemMaisDe5anos2, "\nAlguns Albums:", AlgunsAlbuns2)
+const Miley = {
+    Artista2: "Miley Cyrus", 
+    isArtista2 : true,
+    QuantosAlbuns2: 09, 
+    TemMaisDe5anos2: 21 > 5, 
+    AlgunsAlbuns2: ["Bangerz", "Can't Be Tamed", "Plastic Hearts" ]
+    }
 
-const  Artista3 = "Pedro Sampaio"
-const QuantosAlbuns3 = 02
-const TemMaisDe5anos3 = 3 > 5 
-const AlgunsAlbuns3 = ["Chama meu Nome", "REMIXES"]
-console.log (Artista3.toUpperCase(), "\nQuantos Albuns:",  QuantosAlbuns3,  "\nTem mais de 5 anos?", TemMaisDe5anos3, "\nAlguns Albums:", AlgunsAlbuns3)
+const PedroSampaio = {
+    Artista3 : "Pedro Sampaio",
+    isArtista3: true,
+    QuantosAlbuns3: 02,
+    TemMaisDe5anos3: 3 > 5,
+    AlgunsAlbuns3: ["Chama meu Nome", "REMIXES"]
+
+}
 
 const MediaAlbuns = 22 / 3
 console.log(MediaAlbuns)
+const ArmarioArtistas = []
 
+
+
+if (BandaZimbra.isArtista1 === true){
+    ArmarioArtistas.push(BandaZimbra)
+}else{
+    alert(`O artista ${BandaZimbra.Artista1} não foi adicionado`)
+}
+
+if(Miley.isArtista2 === true){
+    ArmarioArtistas.push(Miley)
+
+}else{
+    alert(`O artista ${Miley.Artista2} não foi adicionado `)
+}
+
+if(PedroSampaio.isArtista3 === true){
+    ArmarioArtistas.push(PedroSampaio)
+
+}else{
+    alert(`O artista ${PedroSampaio.Artista3} não foi adicionado`)
+}
+console.log(ArmarioArtistas)
