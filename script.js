@@ -1,97 +1,197 @@
-// Semana 1 e 3 // SEMANA 3 1. Transforme os itens que criamos nas últimas semanas em objetos.
+//----SEMANA 1 e 3 criação do tema e lista de itens como objeto.media  e checagem de booleanos.
 
-const animal1 = {
-    nome: 'Rinoceronte-Branco',
-    nomeCientifico: 'Ceratotherium-simum',
-    tempoVida: [40, 50],
-    clase: 'Mamíferos',
-    alturaAnimal: 180,
-    pesoAnimal: 2500,
-    isExtinto: true,
-    localHabita: 'África do Sul, Botsuana, Quênia e Zâmbia, entre outro,',
-    descrisaoAnimal: 'O rinoceronte-branco (Ceratotherium simum) habita na África do Sul, Botsuana, Quênia e Zâmbia, entre outros. Tem duas subespécies, o rinoceronte-branco-do-sul e o rinoceronte-branco-do-norte, extinto na natureza desde 2018. Mesmo assim, ainda há dois indivíduos do sexo feminino em cativeiro. É particularmente grande, pois um indivíduo adulto masculino pode ultrapassar 180 cm de altura e 2.500 kg de peso.É um animal herbívoro que vive na savana e no campo. Quando em uma corrida, pode atingir até 50 km/h. É também um animal gregário, vivendo em comunidades de 10 a 20 indivíduos, que atingem a maturidade sexual tardiamente, por volta dos 7 anos de idade. Segundo a IUCN, é considerada uma espécie quase ameaçada de extinção, dado que existe um interesse internacional pelas espécies para a caça e a fabricação de artesanato e jóias',
+
+const desenho1 = {
+    nome: 'Dragon Ball',
+    criador: ['Akira Toriyama'],
+    duracaoEpisodios: 153,
+    personagens: ['Son Goku', 'Vegeta,', 'Kuririn ', 'Bulma', 'Kame-Sennin', ' Piccolo', ' Chi-Chi', ' Gohan', 'Freeza', 'Cell', 'Boo '],
+    anoLancamento: 1984,
+    enredo: ['A história de Dragon Ball começa com Son Goku, um garoto ingênuo e puro com cauda de macaco e uma força extraordinária. Ele mora sozinho após a morte de seu avô adotivo em uma montanha chamada Paozu. Um dia ele conhece Bulma, uma garota muito inteligente da cidade, que estava em busca das sete Esferas do Dragão. Persuadido, Goku concorda em ajudar Bulma a encontrar as Esferas. Os dois partem em uma longa jornada, durante a qual eles fazem muitos amigos. Depois, Goku passa por um treinamento com Kame-Sennin, onde o garoto Kuririn se torna seu parceiro, e participa de vários torneios mundiais de artes marciais. No curso de seu crescimento e seu desenvolvimento, ele enfrenta inúmeros inimigos, incluindo Piccolo, que depois se torna seu aliado. Quando jovem adulto, Goku se casa com Chi-Chi, cumprindo uma promessa feita por ele quando ambos eram crianças, e possui seu primeiro filho chamado Gohan. Goku acaba descobrindo que pertence à raça extraterrestre Saiyajin, e que foi enviado à Terra quando criança para conquistar o planeta. Pouco depois de sua chegada, no entanto, ele tinha sofrido um ferimento na cabeça, perdendo desta forma a memória da missão e sua natureza agressiva. No entanto, o jovem decide continuar a defender seu planeta adotado do ataque de inimigos cada vez mais difíceis, incluindo o príncipe dos sayajins Vegeta, que depois também se torna seu aliado. Desta forma, juntamente com sua família e seus amigos, Goku luta contra inimigos como Freeza, Cell, Boo, entre outros, se tornando o protetor da Terra e todo o universo.'],
+    isContinuacao: true,
+}
+const desenho2 = {
+    nome: 'Pica-Pau',
+    criador: ['Walter Lantz', 'Ben Hardaway'],
+    duracaoEpisodios: 196,
+    personagens: ['Pica-Pau', 'Pé de Pano', 'Winnie Pica-Pau', '	Leôncio', 'Zeca Urubu', 'Zé Jacaré', ' Dooley', 'Meany Ranheta', 'Smedley', 'Tweaky'],
+    anoLancamento: 1957,
+    enredo: ['O pássaro falante Pica-Pau sempre tenta se dar bem em qualquer situação. Na companhia de seu amigo, o cavalo medroso Pé de Pano, ele adora pregar peças em seus inimigos Zeca Urubu, Zé Jacaré, Meany Ranheta, entre outros'],
+    isContinuacao: true,
+
+}
+const desenho3 = {
+    nome: 'Pantera Cor-de-Rosa',
+    criador: ['Blake Edwards', ' Friz Freleng', 'Hawley Pratt', ' Manu Kumar'],
+    duracaoEpisodios: 120,
+    personagens: ['Pantera Cor-de-Rosa', 'Inspetor Clouseau', 'Charles Lytton', 'Simone Clouseau', 'Princesa Dahla'],
+    anoLancamento: 1963,
+    enredo: ['O diamante conhecido como Pantera Cor-de-Rosa está na mira de um ousado ladrão europeu e seu sobrinho, que tem a intenção de colocar a culpa do roubo no tio. Só que para isso, eles terão que despistar o desajeitado inspetor francês Jacques Clouseau.'],
+    isContinuacao: true,
+}
+const desenho4 = {
+    nome: `Tom e Jerry`,
+    criador: ['William Hanna`,`Joseph Barbera'],
+    duracaoEpisodios: 162,
+    personagens: [`Tom`, `Jerry`, `Mammy Two Shoes`, `Spike`, `Butch, o gato de rua`, `Toodles`, `Joan`, `George`, `Patinho`, `Narrador`],
+    anoLancamento: 1940,
+    enredo: [`O centro da trama se baseia geralmente em tentativas frustradas de Tom tentando capturar Jerry, com o caos e a destruição que ainda se seguem.Tom raramente consegue capturar Jerry, principalmente por causa das habilidades do engenhoso ratinho, e também por causa de sua própria estupidez. As perseguições eram eletrizantes e sempre vinham acompanhadas por uma boa trilha sonora. Também eram utilizadas diversas armadilhas e truques que no final não davam resultado satisfatório, como bombas e ratoeiras, coisas que eram fundamentais na rivalidade entre o gato e o rato. Alguns personagens também marcam presença na trama, como o bulldog Spike e o rival de Tom, o gato Butch.`],
+    isContinuacao: true,
+
+}
+const desenho5 = {
+    nome: `The Flintstones`,
+    criador: [`William Hanna`, `Joseph Barbera`],
+    duracaoEpisodios: 166,
+    personagens: [`Fred Flintstone `, `Wilma Flintstone`, `Barney Rubble`, `Betty Rubble`, `Pedrita`, `Bam-Bam`, `Dino`, `Gazoo`, `SrPedregulho`],
+    anoLancamento: 1960,
+    enredo: [`As vidas das famílias de classe média Flintstone e Rubble e suas aventuras na idade da pedra, lidando com as versões pré-históricas das tecnologias dos anos 60, quase sempre movidas a tração animal. Fred Flintstone gosta de comer e jogar boliche, além de frequentemente se meter em confusões e arrastar seu melhor amigo Barney junto. Quando isso acontece suas esposas precisam se meter e salvá-los`],
+    isContinuacao: false,
+
+}
+const desenho6 = {
+    nome: `Caverna do Dragão `,
+    criador: [`Kevin Paul Coates`, `Mark Evanier`, `Dennis Marks`],
+    duracaoEpisodios: 28,
+    personagens: [`Hank`, `Eric`, `Diana `, `Sheila`, `Presto`, `Bobby `, `Mestre dos Magos`, `Uni`, `Vingador`, `Tiamat`, `Demônio das Sombras`, ``],
+    anoLancamento: 1983,
+    enredo: [`Um grupo de crianças vai a um parque de diversões e lá se deparam com o brinquedo Caverna do Dragão. Ao entrarem nele, são enviados a um mundo mágico, aonde vivem muitas aventuras e contam com a ajuda de Mestre dos Magos para tentar voltar para casa`],
+    isContinuacao: false,
+
+}
+const desenho7 = {
+    nome: `As Aventuras de Jackie Chan`,
+    criador: [`John Rogers`, `Duane Capizzi`, `Jeff Kline`],
+    duracaoEpisodios: 95,
+    personagens: [`Jackie Cahn`, `Jade Chan`, `Tio`, `Tohru`, `Valmont`, `Hak Foo,`, `Paco`, `Viper`, ` El Tuero Fuert`, `Daolan`, `Shendu`, `Finn`, `Capitão Black`],
+    anoLancamento: 2000,
+    enredo: [`Jackie Chan, um arqueólogo amador, preferiria fazer seu trabalho discretamente para a universidade local, mas o destino deu outra mão. Isso acontece quando ele descobre que um escudo contendo um talismã é apenas o primeiro de uma dúzia perseguido por uma organização criminosa chamada A Mão Negra liderada por um homem chamado Valmont e guiado por um espírito chamado Shendu. Contra isso Jackie, sua sobrinha Jade e seu tio devem cooperar com a organização secreta de aplicação da lei, Seção 13, para se opor a essa ameaça. Ao longo do caminho, nossos heróis devem enfrentar perigos selvagens que exigirão toda a habilidade de Jackie em artes marciais e sua ousadia de superar.`],
+    isContinuacao: false,
+
 }
 
-const animal2 = {
-    nome: 'Hipopótamo',
-    nomeCientifico: 'Hippopotamus anfíbio',
-    tempoVida: [40, 50],
-    clase: 'Mamíferos',
-    alturaAnimal: 500,
-    pesoAnimal: 1500,
-    isExtinto: false,
-    descrisaoAnimal: 'O hipopótamo-comum (Hippopotamus anfíbio) é o terceiro maior animal terrestre do mundo. Pode pesar entre 1.300 e 1.500 kg e pode atingir velocidades de até 30 km/h. Vive em rios, manguezais e lagos, onde se refresca durante as horas mais quentes do dia. O hipopótamo-comum pode ser encontrado do Egito a Moçambique, embora existam quatro outras espécies que, juntas, povoam um grande número de países africanos.Eles são animais particularmente agressivos, em relação a outros animais e outros da mesma espécie. Precisamente por esta razão, muitas pessoas se perguntam por que os hipopótamos atacam. Eles são vulneráveis no quesito risco de extinção, de acordo com a IUCN, principalmente devido à venda internacional de suas presas de marfim e ao consumo de sua carne pela população local',
-}
-const animal3 = {
-    nome: 'Crocodilo',
-    nomeCientifico: 'Crocodylus suchus',
-    tempoVida: [50, 80],
-    clase: 'Répteis',
-    tamanhoAnimal: 600,
-    pesoAnimal: 1500,
-    isExtinto: false,
-    descrisaoAnimal: 'Existem três espécies de crocodilos que habitam as áreas de florestas da África: o crocodilo-do-oeste-africano (Crocodylus suchus), o crocodilo-de-focinho-delgado (Mecistops cataphractus) e o crocodilo-do-nilo (Crocodylus niloticus). Estamos falando de grandes répteis que habitam vários tipos de rios, lagoas e pântanos. Podem ultrapassar 6 metros de comprimento e 1.500 quilos.Dependendo da espécie, estes animais da África também podem viver em água salgada. A dieta dos crocodilos é baseada no consumo de vertebrados e invertebrados, embora possa variar de acordo com a espécie. Eles têm uma pele dura, cheia de escamas, e sua expectativa de vida pode exceder 80 anos. É importante conhecer as diferenças entre crocodilos e jacarés, para não confundi-los. Algumas espécies, como o crocodilo-de-focinho-delgado, estão criticamente ameaçadas de extinção.',
-}
-const animal4 = {
-    nome: 'Leão',
-    nomeCientifico: 'Panthera leo',
-    tempoVida: [8, 10],
-    clase: 'Mamíferos',
-    tamanhoAnimal: 125,
-    pesoAnimal: 260,
-    isExtinto: false,
-    descrisaoAnimal: 'O leão (Panthera leo) é o animal com o qual fechamos a lista dos cinco grandes da África. Este superpredador é o único com dimorfismo sexual, o que nos permite diferenciar os machos, com sua crina densa, das fêmeas, que carecem dela. É considerado o maior felino da África e o segundo maior do mundo, somente atrás do tigre. Os machos podem chegar a 260 kg de peso, enquanto as fêmeas pesam no máximo 180 kg. A altura até a cernelha está entre 100 e 125 cm.As fêmeas são as encarregadas da caça, para isso, elas coordenam e perseguem a presa escolhida, podendo atingir até 59 km/h em acelerações rápidas. Estes animais africanos podem alimentar-se de zebras, gnus, javalis ou qualquer outro animal. Um detalhe que poucas pessoas sabem é que o leão e as hienas são rivais que lutam entre si pela caça, e embora geralmente se pense que a hiena é um animal necrófago, a verdade é que é o leão que muitas vezes age como um animal oportunista roubando comida das hienas.O leão é considerado em estado vunerável de acordo com a UICN, pois sua população diminui anualmente, existindo atualmente um total de 23 mil a 39 mil espécimes adulto',
-}
-const animal5 = {
-    nome: 'Javali-africano',
-    nomeCientifico: ' Phacochoerus africanus',
-    tempoVida: [20],
-    clase: 'Mamíferos',
-    tamanhoAnimal: 150,
-    pesoAnimal: 150,
-    isExtinto: false,
-    descrisaoAnimal: 'O facocero, também conhecido como javali-africano, apesar de não ser de fato um javali, é o nome que se refere aos animais do gênero Phacochoerus, que inclui duas espécies africanas, o Phacochoerus africanus e o Phacochoerus aethiopicus. Eles habitam savanas e áreas semi-desérticas, onde se alimentam de todo tipo de frutas e vegetais, embora sua dieta também inclua ovos, aves e carniça. Portanto, eles são animais onívoros.Estes animais africanos também são sociáveis, pois compartilham áreas de descanso, alimentação ou banho com outras espécies. Além disso, estamos falando de um gênero de animais inteligentes, que aproveitam os ninhos de outros animais, tais como os porco-formigueiro (Orycteropus afer) para se refugiarem dos predadores enquanto dormem. Assim como os gnus, os javalis são considerados espécies de menor preocupação pela IUCN por não correrem risco de extinção.',
-}
-const animal6 = {
-    nome: 'Dodô',
-    nomeCientifico: 'Raphus cucullatus)',
-    tempoVida: [21],
-    clase: 'Aves',
-    tamanhoAnimal: 100,
-    pesoAnimal: 20,
-    isExtinto: true,
-    descrisaoAnimal: 'é a mais famosa ave extinta pelo homem. Nativo das Ilhas Maurício, esses animais sofreram com as frequentes navegações dos anos 1500. Nessa época, a ilha foi invadida por colonos que trouxeram animais exóticos como porcos, ratos e principalmente macacos que destruíam os ninhos do Dodô. Além disso, as aves eram muito caçadas para consumo dos próprios navegantes enquanto estavam na ilha, pois não tinham medo de humanos e eram de fácil captura, fazendo com que a ave desaparecesse completamente em meados do século XVII. Pertencente à subfamília Raphinae, os Dodôs possuíam as asas atrofiadas e não eram capazes de voar. Mediam cerca de 1 m de altura com aproximadamente 20 Kg. Suas penas variavam entre as cores branca, cinza e preto. Possuía o bico longo e curvado na ponta, adaptado para sua alimentação que era composta principalmente de peixes, sementes e frutas.',
-}
+//---- push para array de objetos!--------
 
-// 3. Faça um cálculo de média, entre os valores numéricos respectivos de cada item. Imprima o valor da média utilizando um console.log. Guarde este valor em uma const;
-const mediaPeso = (animal1.pesoAnimal + animal2.pesoAnimal + animal3.pesoAnimal + animal4.pesoAnimal + animal5.pesoAnimal + animal6.pesoAnimal) / 6
-//  console.log(mediaPeso);
+const desenhoArray = []
+desenhoArray.push(desenho1, desenho2, desenho3, desenho4, desenho5, desenho6, desenho7)
+// console.log(desenhoArray)
 
-//  4. Com um console.log, imprima o resultado de uma operação lógica que checa se todos os valores de variáveis booleanas criadas até aqui são verdadeiras.
-const verificaExtincao = animal1.isExtinto && animal2.isExtinto && animal3.isExtinto && animal4.isExtinto && animal5.isExtinto && animal6.isExtinto
-// console.log(verificaExtincao);
+//----- media de episodios
 
-// semana 2 arrays 1. Crie pelo menos mais uma característica para o item que você criou. Esta característica deve ser um array. Mantenha o tipo de dado do array criado sempre o mesmo, isto é, se é um array de strings, só deve receber strings.
-const animais = [animal1.nome.toUpperCase(), animal2.nome.toUpperCase(), animal3.nome.toUpperCase(), animal4.nome.toUpperCase(), animal5.nome.toUpperCase(), animal6.nome.toUpperCase()]
-const nomesCientifico = [animal1.nomeCientifico.toLocaleUpperCase(), animal2.nomeCientifico.toLocaleUpperCase(), animal3.nomeCientifico.toLocaleUpperCase(), animal4.nomeCientifico.toLocaleUpperCase(), animal5.nomeCientifico.toLocaleUpperCase(), animal6.nomeCientifico.toLocaleUpperCase()]
-// console.log(animais,nomesCientifico);
+const mediaEpisodios = desenhoArray.map(objeto => objeto.duracaoEpisodios).reduce((episodio, episodio2,) => episodio + episodio2, 0) / desenhoArray.length
+// console.log(mediaEpisodios);
 
-// SEMANA 3 2. Crie um array para guardar os objetos. Este array deve estar vazio, por enquanto; 3. Adicione os objetos criados no item 1 ao array de objetos criado no item 2, utilizando o push()
-const animaisAfrica = [];
-animaisAfrica.push(animal1, animal2, animal3, animal4, animal5, animal6)
-// console.log(animaisAfrica);
-
-// SEMANA 4 1. Altere o item “Adicione os novos objetos no array de objetos, utilizando o push()” (item 3 da semana 3), para criar uma verificação antes de dar o push. A caraterística booleana do objeto deve ser validada. Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for true;
-// 2. Crie uma condição else, que, em caso de valor false na condição acima, exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push
-const animaisExtintos = [];
-if (animaisAfrica) {
-    if (animal1.isExtinto) { animaisExtintos.push(animal1), alert(`Animal:${animal1.nome}, é extinto`) } else { alert(`Animal: ${animal1.nome}, não é extinto`) }
-    if (animal2.isExtinto) { animaisExtintos.push(animal2), alert(`Animal:${animal2.nome}, é extinto`) } else { alert(`Animal: ${animal2.nome}, não é extinto`) }
-    if (animal3.isExtinto) { animaisExtintos.push(animal3), alert(`Animal:${animal3.nome}, é extinto`) } else { alert(`Animal: ${animal3.nome}, não é extinto`) }
-    if (animal4.isExtinto) { animaisExtintos.push(animal4), alert(`Animal:${animal4.nome}, é extinto`) } else { alert(`Animal: ${animal4.nome}, não é extinto`) }
-    if (animal5.isExtinto) { animaisExtintos.push(animal5), alert(`Animal:${animal5.nome}, é extinto`) } else { alert(`Animal: ${animal5.nome}, não é extinto`) }
-    if (animal6.isExtinto) { animaisExtintos.push(animal6), alert(`Animal:${animal6.nome}, é extinto`) } else { alert(`Animal: ${animal6.nome}, não é extinto`) }
+// Alteração SEMANA 4  , verificando itens e adicionando ao array.
+const desenhoContinuacao = []
+const desenhoSemContinuacao = []
+const verificaContinuacao = (array) => {
+    for (let i in array) {
+        if (array[i].isContinuacao) {
+            desenhoContinuacao.push(array[i].nome)
+        } else {
+            desenhoSemContinuacao.push(array[i].nome)
+            // aler/t('item não foi adicionado ao desenhoContinuacao')
+        }
+    } return
 }
-// console.log(animaisExtintos);
-// SEMANA . Reescrevendo o relatório da semana 2, altere a forma que a característica de array, criada no item 1 da semana 2, faça um laço que guarde todos os valores da propriedade array do objeto em uma mesma string. Utilize esta string no relatório2. Ainda no relatório, altere-o para que ele seja criado utilizando um laço. Ou seja, você não deve mais imprimir individualmente cada item do relatório. Cada item deve ser exibido a partir de uma iteração do laço. Para testar, adicione mais um item ao array de objetos, e verifique se ele é exibido corretamente.
+verificaContinuacao(desenhoArray)
+// console.log(desenhoContinuacao);
+// console.log(desenhoSemContinuacao)
 
+
+//------SEMANA 2 nome maiusculo e adicionando array no objetos.
+const caixaAlta = (array) => {
+    for (let i in array) {
+        console.log(array[i].nome.toUpperCase())
+
+    }
+    return
+}
+// caixaAlta(desenhoArray)
+
+// -----------SEMANA 5 Reescrevendo o relatório criado utilizando console.log() que começamos na semana 2, altere a forma que a característica de array dos itens seja escrita como um laço que guarde todos os valores da propriedade array do objeto em uma mesma string. Utilize esta string no relatório.
+
+const mostraStringSeparadas = (array) => {
+
+    for (let i in array) {
+        for (let j in array[i]) {
+            console.log(`${array[i][j]}`);
+        }
+    }
+    return
+}
+// console.log( mostraStringSeparadas(desenhoArray))
+const retornaString = (array) => {
+    let texto = ``
+    let lista = 1
+    for (let i in array) {
+        texto = console.log(`${lista++}) Desenho :  ${array[i].nome}, Criado por : ${array[i].criador}. Quantidade de episodios:  ${array[i].duracaoEpisodios} . Enredo : ${array[i].enredo}`)
+    }
+    return texto
+}
+// console.log(retornaString(desenhoArray))
+
+
+// ------ SEMANA 6 --- Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objetO
+const stringDeInfo = (objeto) => {
+    let string = ""
+    for (let i in objeto) {
+        string += console.log(`${[i]} : ${objeto[i]}`)
+
+    } return string
+}
+// stringDeInfo(desenho1)
+
+//---------2. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
+
+
+let string
+const funcao2 = (array, string) => {
+    string = 'As Aventuras de Jackie Chan'
+    for (let i in array) {
+        if (string === array[i].nome) {
+            console.log(`${array[i].nome}`);;
+           
+        } else {  console.log('Item não encontrado!'); 
+        }    
+    }
+    return 
+}
+// funcao2(desenhoArray, string)
+          
+
+            
+
+
+const retornaObjetoString = (objeto)=>{ 
+    string = `Tom e Jerry`
+    if( string === objeto.nome || string !==objeto.nome ){  string === objeto.nome  ? console.log('item correto') : console.log('item incorreto!') }
+}
+// retornaObjetoString(desenho4)
+    
+//
+
+// let des1
+//  switch (string1) {
+//     case "Dragon Ball":
+//         des1 = {...desenho1}
+//         console.log(`${des1.nome}`);
+//         break; 
+//     case "argentina":
+//         console.log("a pessoa é da Argentina!")
+//         break; 
+//     case "uruguaia":
+//         console.log("a pessoa é do Uruguai!")
+//         break; 
+//     case "chilena":
+//         console.log("a pessoa é do Chile!")
+//         break;
+//     case "colombiana":
+//         console.log("a pessoa é da Colombia!")
+//         break;
+//     default:
+//         console.log("item nao encontrado")
+// }
+
+
+ 

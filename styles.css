@@ -1,0 +1,82 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+h1{
+    color: aliceblue;
+    font-size: 3vw;
+    text-shadow: 1vw 1vw 1vw #000, 0 0 3vw #24ff00, 0 0 3vw #24ff00;
+}
+header {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-image: linear-gradient(180deg, rgb(227, 219, 219), rgba(13, 12, 13, 0.982));
+
+}
+
+main {
+    min-height: 80vh;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 3%;
+    margin-left: 2vh;
+}
+.sectionA{
+    height: 100vh;
+    width:22vw;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(90deg, rgb(17, 15, 15),rgb(237, 217, 217)
+    );
+  
+}
+.lista{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid ;     
+    color: rgb(255, 255, 255);
+}
+li{
+  padding: 8px;
+  color: white;
+}
+footer {
+    position: sticky;
+    bottom: 0px;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    align-items: center;
+    background-image: linear-gradient(180deg, rgb(177, 171, 171), rgb(16, 15, 15));
+
+}
+
+.github {
+    height: 5vh;
+}
+
+.linkedin {
+    height: 4vh;
+}
+
+.rodape {
+    color: white;
+    text-align: left;
+}
+.imagem{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-color: bisque;
+}
+.pantera{
+    background-color: pink;
+    border-radius: 10px;
+}
