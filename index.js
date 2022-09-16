@@ -5,11 +5,12 @@ Porcoes Number
 Ja fez? Boolean
 Tipo String
 Avaliação pessoal Number
-Ingradientes Array de Object
+ingredientes Array de Object
 Modo de preparo Array
 
 */
-const receitas = [];
+const todasAsReceitas = [];
+const receitasProcuradas = [];
 
 receita1 = {
     nomeDoPrato: "Camarão na Moranga",
@@ -18,7 +19,7 @@ receita1 = {
     tipo: "Frutos do mar",
     jaFez: true,
     avaliacaoPessoal: 4.5,
-    ingradientes: [
+    ingredientes: [
         {
             nomeDoingrediente: "Camarão",
             quantidade: 1,
@@ -84,13 +85,13 @@ receita1 = {
         "Passe um pouco de requeijão no interior da moranga e despeje o creme de camarão."],
 };
 receita2 = {
-    nomeDoPrato: "Molho branco para macarrão",
+    nomeDoPrato: "Molho branco",
     tempoDePreparo: 30,
     porcoes: 8,
     tipo: "Molho",
     jaFez: true,
     avaliacaoPessoal: 0,
-    ingradientes: [
+    ingredientes: [
         {
             nomeDoingrediente: "Cebola pequena",
             quantidade: 1,
@@ -146,7 +147,7 @@ receita3 = {
     tipo: "Doces",
     jaFez: true,
     avaliacaoPessoal: 0,
-    ingradientes: [
+    ingredientes: [
         {
             nomeDoingrediente: "Leite condensado",
             quantidade: 1,
@@ -167,53 +168,136 @@ receita3 = {
         "Bata um pouco e depois vá acrescentando o suco do limão, aos poucos.",
         "Ele vai ficar bem consistente, leve à geladeira."],
 };
+
+
+
 if (receita1.jaFez) {
-    receitas.push(receita1)
+    todasAsReceitas.push(receita1)
 } else {
     alert(receita1.nomeDoPrato + " não adcionado ao livro pessoal de receita")
 }
 if (receita2.jaFez) {
-    receitas.push(receita2)
+    todasAsReceitas.push(receita2)
 } else {
     alert(receita2.nomeDoPrato + " não adcionado ao livro pessoal de receita")
 }
+
+
 if (receita3.jaFez) {
-    receitas.push(receita3)
+    todasAsReceitas.push(receita3)
 } else {
     alert(receita3.nomeDoPrato + " não adcionado ao livro pessoal de receita")
 }
 
-let tamanhoIngredientes;
-let tamanhoModoDePreparo;
-const quantidadeDeReceitas = receitas.length;
-let i = 0;
-let numeroDeReceitas = 0;
 
-while (numeroDeReceitas < quantidadeDeReceitas) {
-    tamanhoIngredientes = receitas[numeroDeReceitas].ingradientes.length;
-    tamanhoModoDePreparo = receitas[numeroDeReceitas].modoDePreparo.length;
 
-    console.log(`Nome do prato: ${receitas[numeroDeReceitas].nomeDoPrato.toUpperCase()}
-Tempo de preparo: ${receitas[numeroDeReceitas].tempoDePreparo} min
-Porções ${receitas[numeroDeReceitas].porcoes}
-Tipo de prato: ${receitas[numeroDeReceitas].tipo}
-Já experimentou a receita?: ${receitas[numeroDeReceitas].jaFez}`);
-    i = 0;
-    while (i < tamanhoIngredientes) {
 
-        console.log(receitas[numeroDeReceitas].ingradientes[i].quantidade + " " + receitas[numeroDeReceitas].ingradientes[i].medida + " de " + receitas[numeroDeReceitas].ingradientes[i].nomeDoingrediente)
-        i++
-    }
+console.log(todasAsReceitas );
+
+//console.log(todasAsReceitas)
+//************************************Print Objetos das receitas Procuradas***************** */
+for (let a in todasAsReceitas){
+    todasAsReceitas[a].nomeDoPrato = todasAsReceitas[a].nomeDoPrato.toUpperCase();
+    console.log(`Nome do prato: ${todasAsReceitas[a].nomeDoPrato}
+Tempo de preparo: ${todasAsReceitas[a].tempoDePreparo} min
+Porções ${todasAsReceitas[a].porcoes}
+Tipo de prato: ${todasAsReceitas[a].tipo}
+Já experimentou a receita?: ${todasAsReceitas[a].jaFez}`);
+    // for(let b in todasAsReceitas[a].ingredientes){
+    //     console.log(todasAsReceitas[a].ingredientes[b].quantidade + " " + todasAsReceitas[a].ingredientes[b].medida + " de " + todasAsReceitas[a].ingredientes[b].nomeDoingrediente)
+    // }
     console.log("\nMODO DE PREPARO")
-    i = 0;
+    for(let i in todasAsReceitas[a].modoDePreparo){
+        console.log((Number(i) + 1) + "-" + todasAsReceitas[a].modoDePreparo[i])
+        todasAsReceitas[a].stringModoDePreparo = todasAsReceitas[a].modoDePreparo.join()
+        console.log(todasAsReceitas[a].stringModoDePreparo);
+    }   
 
-    while (i < tamanhoModoDePreparo) {
-
-        console.log((i + 1) + "-" + receitas[numeroDeReceitas].modoDePreparo[i])
-        i++
-    }
-    numeroDeReceitas++;
 }
+
+
+
+function devolvendoString (objeto){
+    let stringDoObjeto = ""
+    const arrayObjeto = []
+    for(let i in objeto){
+        arrayObjeto.push(objeto[i])
+    }
+    stringDoObjeto = arrayObjeto.join() 
+  //  console.log(stringDoObjeto )
+    return stringDoObjeto;
+
+}
+
+
+devolvendoString (receita1)
+
+function procuraDeReceita(receitaObjeto, qualreceita){
+    console.log(receitaObjeto);
+    for(let i in receitaObjeto){
+        console.log(receitaObjeto[i].nomeDoPrato);
+        console.log(i);
+        console.log(qualreceita);
+        if(receitaObjeto[i].nomeDoPrato === qualreceita)
+        {
+            return receitaObjeto[i]
+
+        }
+    }
+    alert('Receita não encontrada')
+    return "Receita não encontrada";
+}
+
+const receitaProcurada = prompt('Digite qual receita q vc quer').toUpperCase();
+
+console.log(procuraDeReceita(todasAsReceitas, receitaProcurada));
+
+
+
+// function parametrosDaReceita(objeto)
+// {
+//     for (let i in objeto){
+//         console.log(objeto[i]);
+//     }
+// }
+
+//  parametrosDaReceita(receita1)
+ 
+// for(let i in todasAsReceitas){
+//     console.log( todasAsReceitas[i].nomeDoPrato );
+//     }
+
+// function checkReceita (arrayObjetos , string, funcao){ 
+//     const arrayReceita = []
+//     let stringObjeto =""
+//     for(let i in arrayObjetos){
+//         for(let j in arrayObjetos[i] ){
+//             //console.log("AAAA"+ arrayObjetos[i][j] );
+//             stringObjeto += arrayObjetos[i][j]
+//            // console.log( stringObjeto );
+//             if(stringObjeto.includes(string)){
+                
+//                 arrayReceita.push(arrayObjetos[i])
+                
+//             }
+//         }
+//     }
+//     if (arrayReceita.length === 0)
+//     {
+//         alert('receita não encontrada')
+//     }
+//     return arrayReceita
+
+//     // const mapDosObjetos = arrayObjetos.map((valor) => valor.nomeDoPrato)
+//     // const filtroObjeto = mapDosObjetos.filter((nome) => string === nome )   
+    
+
+//     // return filtroObjeto
+// }
+
+// const receitaProcurada = "Musse de limão"//prompt("Que receita voçê quer?")
+
+// console.log(checkReceita(todasAsReceitas, receitaProcurada))
 
 
 
