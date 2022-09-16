@@ -61,69 +61,43 @@ A página consiste em um HTML, ligado a um ou mais arquivos CSS, e um ou mais ar
 
 **Opcional**: Tente utilizar o **Github pages** para fazer o deploy do seu projeto.*/
 
-/*presidente*/
+var presidentes = [{
 
+nome: "Lula",
+partido: "PT",
+esquerda: true,
+tempoPoder: 8,
+projetos: [ "bolsa família", "fome zero", "primeiro emprego"],
+},{
+ nome: "FHC",
+ partido: "PSDB",
+ esquerda: false,
+ tempopoder: 8,
+ projetos: ["Programa Auxílio-Gás", "Programa Nacional de Renda Mínima vinculada à Saúde","Cadastramento Único do Governo Federal"]},
+{
+nome: "dilmãe",
+partido: "pt",
+esquerda: true,
+tempopoder: 6,
+projetos: ["Mais Médicos","PAC2" ,"Programa Nacional de Acesso ao Ensino Técnico e Emprego",]
+}]
+console.log(presidentes)
 
-const nome = "Lula"
-const partido = "PT"
-const esquerda = true
-const tempoPoder = 8
-const projetos = [ "bolsa família", "fome zero", "primeiro emprego"]
-console.log("nome:" + nome.toLocaleUpperCase())
-console.log("partido:" + partido)
-var espectro = []
-if (esquerda == true) {
-   (espectro = "esquerda") 
-} else {
-   (espectro = "direita")
+var presidentesESQ = []
+var presidentesDIR = []
+
+var presidentesESQ = presidentes.filter((presidentes) =>{
+   if (presidentes.esquerda === true){
+     return presidentes
+   }
+ })
+
+var presidentesDIR = presidentes.filter((presidentes)=>{
+   if (presidentes.esquerda === false){
+      return presidentes
+   }
 }
-console.log("no espectro esse candidato é de: " + espectro)
-console.log("ficou no poder: " + tempoPoder + " anos")
-console.log("seus principais projetos foram: "+ projetos)
+)
 
-
-
-
-
-const nome1 = "FHC"
-const partido1 = "PSDB"
-const esquerda1 = false
-const tempopoder1 = 8
-const projetos1 = ["Programa Auxílio-Gás", "Programa Nacional de Renda Mínima vinculada à Saúde","Cadastramento Único do Governo Federal"]
-console.log("nome:" + nome1.toLocaleUpperCase())
-console.log("partido:" + partido1)
-var espectro = []
-if (esquerda1 == true) {
-   (espectro = "esquerda") 
-} else {
-   (espectro = "direita")
-}
-console.log("no espectro esse candidato é de: " + espectro)
-console.log("ficou no poder: " + tempopoder1 + " anos")
-console.log("seus principais projetos foram: "+ projetos1)
-
-const nome2 = "dilmãe"
-const partido2 = "pt"
-const esquerda2 = true
-const tempopoder2 = 6
-const projetos2 = ["Mais Médicos","PAC2" ,"Programa Nacional de Acesso ao Ensino Técnico e Emprego"]
-console.log("nome:" + nome2.toLocaleUpperCase())
-console.log("partido:" + partido2)
-var espectro = []
-if (esquerda2 == true) {
-   (espectro = "esquerda") 
-} else {
-   (espectro = "direita")
-}
-console.log("no espectro esse candidato é de: " + espectro)
-console.log("ficou no poder: " + tempop oder2 + " anos")
-console.log("seus principais projetos foram: "+ projetos2)
-
-
-const media = ((tempoPoder + tempopoder1 + tempopoder2) / 3)
-console.log(media + " a média do tempo de permanência dos três itens")
-
-const esquerdaT = esquerda && esquerda1 && esquerda2
-console.log(esquerdaT)
-
-
+console.log(presidentesDIR)
+console.log(presidentesESQ)
