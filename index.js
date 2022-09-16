@@ -80,3 +80,17 @@ if ((verificarVacinas === true) && (verificarVermifugo === true)) {
     alert(`Os pets não foram vacinados e nem vermifugados!`)
     console.log(`Os pets não foram vacinados e nem vermifugados!`)
 }
+
+//valores da propriedade array do objeto em uma mesma string
+
+let stringPet1 = nomePet1.arrayBriquedos.join()
+let stringPet2 = nomePet2.arrayBriquedos.join()
+let stringPet3 = nomePet3.arrayBriquedos.join()
+let stringPet4 = nomePet4.arrayBriquedos.join()
+
+console.log(stringPet1)
+console.log(stringPet2)
+console.log(stringPet3)
+console.log(stringPet4)
+
+
