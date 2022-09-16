@@ -16,7 +16,7 @@ let tenis2 = {
     cor : ["Branco", "Vermelho", "Preto"],    
     marca : "Nike",
     tamanho : [38, 39, 40, 41, 42, 43, 44],
-    temEstoque : true,
+    temEstoque : false,
     preco : 1300
 };
 
@@ -27,6 +27,15 @@ let tenis3 = {
     tamanho : [38, 39, 40, 41, 42, 43, 44],
     temEstoque : true,
     preco : 1000
+};
+
+let tenis4 = {
+    nome: "Yeezy Boost 350",   
+    cor: ["Branco"],
+    marca : "Adidas",
+    tamanho : [38, 39, 40, 41, 42, 43, 44],
+    temEstoque : true,
+    preco : 1350
 };
 
 let meusObjetos = [];               //Adicionando objetos ao array verificando booleanos
@@ -49,7 +58,31 @@ if(tenis3.temEstoque){
     alert(`O produto ${tenis3.nome} está em falta no estoque!`)
 };
 
-console.log(meusObjetos);
+if(tenis4.temEstoque){
+    meusObjetos.push(tenis4)
+} else{
+    alert(`O produto ${tenis4.nome} está em falta no estoque!`)
+};
 
-let mediaPreco = (tenis1.preco + tenis2.preco + tenis3.preco) / meusObjetos.length
-console.log("A média de preço dos tênis é", mediaPreco);   //Atualizando Média de Preço do produto
+//Retirando média de preço dos produtos para colocá-lo em função posteriores
+
+function relatorioObjeto (arrayObjeto) {
+    for(i in arrayObjeto) {
+        console.log(`Produto ${Number(i)+1} :`, arrayObjeto[i]);
+    }
+}
+console.log(`Você tem ${meusObjetos.length} produtos em estoque, são eles:`)
+relatorioObjeto(meusObjetos);                      //Atualizando Relatório dos produtos
+
+
+function buscarItens (arrayObj, string) {
+    for(objeto of arrayObj){
+        if(objeto.nome === string){
+            return string
+        }
+    }
+    return alert(`Seu produto ${string} não foi encontrado!`)
+}
+console.log("Você buscou por:", buscarItens(meusObjetos, "Yeezy Boost 350"));
+console.log("Você buscou por:", buscarItens(meusObjetos, "Tenis daora"));    
+//Buscando itens através de função.
