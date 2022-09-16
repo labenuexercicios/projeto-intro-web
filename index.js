@@ -1,27 +1,34 @@
 //1. Transforme os itens que criamos nas últimas semanas em objetos.
 const item1 = {
-  nome1: "Macarrão",
-  marca1: "Amália",
-  precoCompra1: 2.89,
-  vencido1: false,
+  nome: "Macarrão",
+  marca: "Amália",
+  precoVenda: 2.89,
+  quantidade: 2000,
+  vencido: false,
+  tipo: ["Penne", "Grande"],
 };
 
 const item2 = {
-  nome2: "Arroz",
-  marca2: "Tio João",
-  precoCompra2: 26.99,
-  vencido2: false,
+  nome: "Arroz",
+  marca: "Tio João",
+  precoVenda: 26.99,
+  quantidade: 300,
+  vencido: false,
+  tipo: ["Branco", "Pequeno"],
 };
 
 const item3 = {
-  nome3: "Feijão",
-  marca3: "Supang",
-  precoCompra3: 6.99,
-  vencido3: true,
+  nome: "Feijão",
+  marca: "Supang",
+  precoVenda: 6.99,
+  quantidade: 5000,
+  vencido: true,
+  tipo: ["Vermelho", "Grande"],
 };
 
 //2. Crie um array para guardar os objetos. Este array deve estar vazio, por enquanto;
 let estoque = [];
+let descarte = [];
 
 //3. Adicione os objetos criados no item 1 ao array de objetos criado no item 2, utilizando o push()
 
@@ -29,26 +36,58 @@ let estoque = [];
 
 //5. Crie uma condição else, que, em caso de valor false na condição acima, exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push
 
-if (!item1.vencido1) {
-  estoque.push(item1);
-} else {
-  alert(
-    `O item ${item1.nome1.toLocaleUpperCase()} não pode ser adicionado ao estoque, pois está vencido!`
-  );
+function agruparItensComValidadeBoaOuNaoEmArrays(objeto) {
+  if (!objeto.vencido) {
+    estoque.push(objeto);
+  } else {
+    alert(
+      `O item ${objeto.nome.toLocaleUpperCase()} não pode ser adicionado ao estoque, pois está vencido. O item foi adicionado na fila de descarte!`
+    );
+    descarte.push(objeto);
+  }
+}
+function imprimeRelatorio(array, string) {
+  console.log(`::::::::::     ${string.toLocaleUpperCase()}     ::::::::::`);
+  for (let obj in array) {
+    for (let caraterística in array[obj]) {
+      if (caraterística === "nome") {
+        console.log(array[obj][caraterística].toLocaleUpperCase());
+      } else if (caraterística === "tipo") {
+        console.log(`${caraterística}: \"${array[obj][caraterística]}\"`);
+      } else {
+        console.log(`${caraterística}: ${array[obj][caraterística]}`);
+      }
+    }
+  }
+}
+function devolveString(objeto) {
+  return objeto.tipo;
+}
+function procuraString(arrayDeObj, string) {
+  let obj = {};
+  let j = 0;
+  for (let i in arrayDeObj) {
+    if (arrayDeObj[i].nome.toLocaleUpperCase() === string.toLocaleUpperCase()) {
+      obj = {
+        ...arrayDeObj[i],
+      };
+      j++;
+    }
+  }
+  if (j === 0) {
+    alert(`O item ${string} buscado não foi encontrado!`);
+    return;
+  }
+  return obj;
 }
 
-if (!item2.vencido2) {
-  estoque.push(item2);
-} else {
-  alert(
-    `O item ${item2.nome2.toLocaleUpperCase()} não pode ser adicionado ao estoque, pois está vencido!`
-  );
-}
+agruparItensComValidadeBoaOuNaoEmArrays(item1);
+agruparItensComValidadeBoaOuNaoEmArrays(item2);
+agruparItensComValidadeBoaOuNaoEmArrays(item3);
 
-if (!item3.vencido3) {
-  estoque.push(item3);
-} else {
-  alert(
-    `O item ${item3.nome3.toLocaleUpperCase()} não pode ser adicionado ao estoque, pois está vencido!`
-  );
-}
+imprimeRelatorio(estoque, "estoque");
+imprimeRelatorio(descarte, "descarte");
+
+console.log(`Tipo: ${devolveString(estoque[0])}`);
+
+console.log(procuraString(estoque, "feijão"));
