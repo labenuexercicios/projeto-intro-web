@@ -1,5 +1,5 @@
-/*  SEMANA 1
-
+//  SEMANA 1
+/*
 const tipoRoupaAcademia1 = "calça-Leg"
 const quantidade1 = 5 
 const verificouMarca1 = false
@@ -49,48 +49,45 @@ quando pedi p perguntar quais marcas existem
 
 const tipoRoupaAcademia1 = {
     nome: "calça-Leg",
-    quantidade1: 5, 
-    verificouMarca1: false,
-    marca1: ["adidas", "nike","sortidos"]
-    }
-    
-    const tipoRoupaAcademia2 = {
-     nome: "top",
-     quantidade2: 6, 
-     verificouMarca2: true,
-     marca2: ["adidas", "nike","sortidos"] 
-    }  
-    
-    const tipoRoupaAcademia3 = {
-    nome: "short",
-    quantidade3: 3, 
-    verificouMarca3: true,
-    marca3: ["adidas", "nike","sortidos"]
-    }
-    
-    
-    const guardarObjeto = []
-    
-        
-    if( tipoRoupaAcademia1.verificouMarca1){
-        guardarObjeto.push(tipoRoupaAcademia1)
-    }else(alert("Marca não é confiável, por isso não pode ser adicionado"))
-    if ( tipoRoupaAcademia2.verificouMarca2){
-        guardarObjeto.push(tipoRoupaAcademia2)
-    }else(alert("Marca não é confiável, por isso não pode ser adicionado"))
-    if ( tipoRoupaAcademia3.verificouMarca3){
-        guardarObjeto.push(tipoRoupaAcademia3)
-    }else(alert("Marca não é confiável, por isso não pode ser adicionado"))
-    
-    console.log(guardarObjeto)
-    
+    quantidade: 5,
+    verificouMarca: false,
+    marca: ["adidas", "nike", "sortidos"]
+}
 
-    console.log("Tipo de roupa que escolheu: "+tipoRoupaAcademia1.toUpperCase()+"\nQuantidade que deseja: "+quantidade1+" \nMarca desejada: "+verificouMarca1+" \nQual marca que pediu: "+copiaMarca1.splice(0,1)+"  ") 
-    console.log("Marcas Existentes:", marca1)
-    
-    console.log("Tipo de roupa que escolheu: "+tipoRoupaAcademia2.toUpperCase()+"\nQuantidade que deseja: "+quantidade2+" \nMarca desejada: "+verificouMarca2+" ") 
-    console.log("Marcas Existentes:", marca2)
-    
-    console.log("Tipo de roupa que escolheu: "+tipoRoupaAcademia3.toUpperCase()+"\nQuantidade que deseja: "+quantidade3+" \nMarca desejada: "+verificouMarca3+" ") 
-    console.log("Marcas Existentes:", marca3)
+const tipoRoupaAcademia2 = {
+    nome: "top",
+    quantidade: 6,
+    verificouMarca: true,
+    marca: ["adidas", "nike", "sortidos"]
+}
+
+const tipoRoupaAcademia3 = {
+    nome: "short",
+    quantidade: 3,
+    verificouMarca: true,
+    marca3: ["adidas", "nike", "sortidos"]
+}
+
+
+const guardarObjeto = []
+
+
+if (tipoRoupaAcademia1.verificouMarca) {
+    guardarObjeto.push(tipoRoupaAcademia1)
+} else (alert("Marca não é confiável, por isso não pode ser adicionado"))
+
+if (tipoRoupaAcademia2.verificouMarca) {
+    guardarObjeto.push(tipoRoupaAcademia2)
+} else (alert("Marca não é confiável, por isso não pode ser adicionado"))
+
+if (tipoRoupaAcademia3.verificouMarca) {
+    guardarObjeto.push(tipoRoupaAcademia3)
+} else (alert("Marca não é confiável, por isso não pode ser adicionado"))
+
+for ( i of guardarObjeto ){
+    i.nome = i.nome.toUpperCase()
+}
+
+console.log(guardarObjeto)
+
 
