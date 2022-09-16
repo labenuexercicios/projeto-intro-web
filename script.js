@@ -1,5 +1,7 @@
 /////////////////////// 10 LINGUAGENS DE PROGRAMAÇÃO POPULARES ////////////////////////////
 
+/////////  SEMANA 1  //////////
+
 // const linguagem1 = 'Python';
 // const ranking1 = 1;
 // const indicadoPara1 = 'Iniciantes';
@@ -80,6 +82,93 @@
 // const usos10 = ['Desenvolvimento web front-end', 'Desenvolvimento web back-end'];
 // const mediaSalarial10 = 5560;
 
+// console.log(ranking1 + " " + linguagem1.toUpperCase());
+// console.log('Indicado para: ' + indicadoPara1);
+// console.log('Dificuldade: ' + dificuldade1);
+// console.log('Fácil de aprender: ' + facilDeAprender1);
+// console.log('Usos: ' + usos1);
+// console.log('Média Salarial: R$ ' + mediaSalarial1);
+// console.log("");
+
+// console.log(ranking2 + " " + linguagem2.toUpperCase());
+// console.log('Indicado para: ' + indicadoPara2);
+// console.log('Dificuldade: ' + dificuldade2);
+// console.log('Fácil de aprender: ' + facilDeAprender2);
+// console.log('Usos: ' + usos2);
+// console.log('Média Salarial: R$ ' + mediaSalarial2);
+// console.log("");
+
+
+// console.log(ranking3 + " " + linguagem3.toUpperCase());
+// console.log('Indicado para: ' + indicadoPara3);
+// console.log('Dificuldade: ' + dificuldade3);
+// console.log('Fácil de aprender: ' + facilDeAprender3);
+// console.log('Usos: ' + usos3);
+// console.log('Média Salarial: R$ ' + mediaSalarial3);
+// console.log("");
+
+
+// console.log(ranking4 + " " + linguagem4.toUpperCase());
+// console.log('Indicado para: ' + indicadoPara4);
+// console.log('Dificuldade: ' + dificuldade4);
+// console.log('Fácil de aprender: ' + facilDeAprender4);
+// console.log('Usos: ' + usos4);
+// console.log('Média Salarial: R$ ' + mediaSalarial4);
+// console.log("");
+
+
+// console.log(ranking5 + " " + linguagem5.toUpperCase());
+// console.log('Indicado para: ' + indicadoPara5);
+// console.log('Dificuldade: ' + dificuldade5);
+// console.log('Fácil de aprender: ' + facilDeAprender5);
+// console.log('Usos: ' + usos5);
+// console.log('Média Salarial: R$ ' + mediaSalarial5);
+// console.log("");
+
+
+// console.log(ranking6 + " " + linguagem6.toUpperCase());
+// console.log('Indicado para: ' + indicadoPara6);
+// console.log('Dificuldade: ' + dificuldade6);
+// console.log('Fácil de aprender: ' + facilDeAprender6);
+// console.log('Usos: ' + usos6);
+// console.log('Média Salarial: R$ ' + mediaSalarial6);
+// console.log("");
+
+
+// console.log(ranking7 + " " + linguagem7.toUpperCase());
+// console.log('Indicado para: ' + indicadoPara7);
+// console.log('Dificuldade: ' + dificuldade7);
+// console.log('Fácil de aprender: ' + facilDeAprender7);
+// console.log('Usos: ' + usos7);
+// console.log('Média Salarial: R$ ' + mediaSalarial7);
+// console.log("");
+
+// console.log(ranking8 + " " + linguagem8.toUpperCase());
+// console.log('Indicado para: ' + indicadoPara8);
+// console.log('Dificuldade: ' + dificuldade8);
+// console.log('Fácil de aprender: ' + facilDeAprender8);
+// console.log('Usos: ' + usos8);
+// console.log('Média Salarial: R$ ' + mediaSalarial8);
+// console.log("");
+
+// console.log(ranking9 + " " + linguagem9.toUpperCase());
+// console.log('Indicado para: ' + indicadoPara9);
+// console.log('Dificuldade: ' + dificuldade9);
+// console.log('Fácil de aprender: ' + facilDeAprender9);
+// console.log('Usos: ' + usos9);
+// console.log('Média Salarial: R$ ' + mediaSalarial9);
+// console.log("");
+
+// console.log(ranking10 + " " + linguagem10.toUpperCase());
+// console.log('Indicado para: ' + indicadoPara10);
+// console.log('Dificuldade: ' + dificuldade10);
+// console.log('Fácil de aprender: ' + facilDeAprender10);
+// console.log('Usos: ' + usos10);
+// console.log('Média Salarial: R$ ' + mediaSalarial10);
+// console.log("");
+
+
+// console.log("");
 // const mediaFinal = (mediaSalarial1 + mediaSalarial2 + mediaSalarial3 + mediaSalarial4 + mediaSalarial5 + mediaSalarial6 + mediaSalarial7 + mediaSalarial8 + mediaSalarial9 + mediaSalarial10) / 10;
 // console.log('Média salarial somando todas as linguagens listadas:', mediaFinal);
 
@@ -198,7 +287,7 @@ if (linguagem2.facilDeAprender === true) {
 if (linguagem3.facilDeAprender === true) {
     linguagens.push(linguagem3);
 } else {
-    alert("Linguagem 3: " + linguagem3.nome + " não adicionada!");
+    // alert("Linguagem 3: " + linguagem3.nome + " não adicionada!");
 }
 
 // ITEM 4
@@ -250,15 +339,88 @@ if (linguagem10.facilDeAprender === true) {
     alert("Linguagem 10: " + linguagem10.nome + " não adicionada!");
 }
 
-console.log(`Linguagem 1: ${linguagem1.facilDeAprender} (${linguagem1.nome})`);
-console.log(`Linguagem 2: ${linguagem2.facilDeAprender} (${linguagem2.nome})`);
-console.log(`Linguagem 3: ${linguagem3.facilDeAprender} (${linguagem3.nome})`);
-console.log(`Linguagem 4: ${linguagem4.facilDeAprender} (${linguagem4.nome})`);
-console.log(`Linguagem 5: ${linguagem5.facilDeAprender} (${linguagem5.nome})`);
-console.log(`Linguagem 6: ${linguagem6.facilDeAprender} (${linguagem6.nome})`);
-console.log(`Linguagem 7: ${linguagem7.facilDeAprender} (${linguagem7.nome})`);
-console.log(`Linguagem 8: ${linguagem8.facilDeAprender} (${linguagem8.nome})`);
-console.log(`Linguagem 9: ${linguagem9.facilDeAprender} (${linguagem9.nome})`);
-console.log(`Linguagem 10: ${linguagem10.facilDeAprender} (${linguagem10.nome})`);
+// console.log(`Linguagem 1: ${linguagem1.facilDeAprender} (${linguagem1.nome})`);
+// console.log(`Linguagem 2: ${linguagem2.facilDeAprender} (${linguagem2.nome})`);
+// console.log(`Linguagem 3: ${linguagem3.facilDeAprender} (${linguagem3.nome})`);
+// console.log(`Linguagem 4: ${linguagem4.facilDeAprender} (${linguagem4.nome})`);
+// console.log(`Linguagem 5: ${linguagem5.facilDeAprender} (${linguagem5.nome})`);
+// console.log(`Linguagem 6: ${linguagem6.facilDeAprender} (${linguagem6.nome})`);
+// console.log(`Linguagem 7: ${linguagem7.facilDeAprender} (${linguagem7.nome})`);
+// console.log(`Linguagem 8: ${linguagem8.facilDeAprender} (${linguagem8.nome})`);
+// console.log(`Linguagem 9: ${linguagem9.facilDeAprender} (${linguagem9.nome})`);
+// console.log(`Linguagem 10: ${linguagem10.facilDeAprender} (${linguagem10.nome})`);
 
-console.log(linguagens);
+// console.log(linguagens);
+
+
+// SEMANA 5
+
+// let stringArrays;
+
+// RELATÓRIO - IMPRIMINDO O ARRAY DE OBJETOS COM LAÇO FOR IN
+// for (const i in linguagens){
+//     for (const property in linguagens[i]){
+//      stringArrays = `${property} : ${linguagens[i][property]}`;
+     
+//     console.log(stringArrays);
+//     }
+//     console.log("");
+// }
+
+
+// SEMANA 6 
+
+// let stringObjeto
+
+// const relatorio1 = objeto => {
+//     for (const property in objeto){
+//         // console.log(property + " : " + linguagem1[property]);
+//         stringObjeto = `${property} : ${objeto[property]}`;
+    
+//         console.log(stringObjeto);
+//     }
+//     console.log("");
+// }
+
+// relatorio(linguagem1);
+// relatorio(linguagem2);
+// relatorio(linguagem3);
+// relatorio(linguagem4);
+// relatorio(linguagem5);
+// relatorio(linguagem6);
+// relatorio(linguagem7);
+// relatorio(linguagem8);
+// relatorio(linguagem9);
+// relatorio(linguagem10);
+
+// const relatorio = objeto => {
+//     let stringArrays;
+//     for (const property in objeto){
+//         // console.log(property + " : " + linguagem1[property]);
+//         stringArrays = `${property} : ${objeto[property]}`;
+    
+//         console.log(stringArrays);
+//     }
+//     console.log("");
+// }
+
+    // for (const property in objeto){
+    //     // console.log(property + " : " + linguagem1[property]);
+    //     stringArrays = `${property} : ${objeto[property]}`;
+    
+    //     console.log(stringArrays);
+    // }
+
+function relatorio2(arrayDeObjetos) {
+    let stringRelatorio;
+    for (const i in arrayDeObjetos){
+        for (const property in arrayDeObjetos[i]){
+         stringRelatorio = `${property} : ${arrayDeObjetos[i][property]}`;
+         
+        console.log(stringRelatorio);
+        }
+        console.log("");
+    }
+}
+
+relatorio2(linguagens);
