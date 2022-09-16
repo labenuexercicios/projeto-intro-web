@@ -1,86 +1,85 @@
-// O tema que escolhi para o projeto é Serial Killers. 
+// O tema que escolhi para o projeto é Serial Killers. Mas vou alterar para algo que eu gosto mais, que serão plantas.
 
-const nome1 = "Ted Bundy"
-const modusOperandi1 = "Sequestro e estrangulamento"
-const ano1 = 1974
-const vitimas1 = 30
-const condenado1 = true
+let nome1 = "Aegon Targaryen"
+let conjuge1 = "Visenya e Rhaenys Targaryen"
+let montavaDragão1 = true
+let anosdeReinado1 = 37
+//let descendentes1 = "Aenys e Maegor"
 
-const nome2 = "Andrew Cunanan"
-const modusOperandi2 = "Violência randômica"
-const ano2 = 1997
-const vitimas2 = 5
-const condenado2 = false
+let nome2 = "Aenys Targaryen"
+let conjuge2 = "Alyssa Velaryon"
+let montavaDragão2 = true
+let anosdeReinado2 = 5
+//let descendentes2 = "Rhaena, Aegon, Viserys, Jaehaerys, Alysanne e Vaella"
 
-const nome3 = "Jeffrey Dahmer"
-const modusOperandi3 = "Sequestro, necrofilia e canibalismo"
-const ano3 = 1978
-const vitimas3 = 17
-const condenado3 = true
+let nome3 = "Jaehaerys Targaryen"
+let conjuge3 = "Alysanne Targaryen"
+let montavaDragão3 = true
+let anosdeReinado3 = 55
+//let descendentes3 = "Aegon, Daenerys, Aemon, Baelon, Alyssa, Maegelle, Vaegon, Daella, Saera, Viserra, Gaemon, Valerion e Gael"
 
-const nome4 = "Dennis Rader (BTK)"
-const modusOperandi4 = "Invasão, tortura e estrangulamento"
-const ano4 = 1974
-const vitimas4 = 10
-const condenado4 = true
+let nome4 = "Viserys Targaryen"
+let conjuge4 = "Aemma Arryn e Alicent Hightwoer"
+let montavaDragão4 = false
+let anosdeReinado4 = 26
+//let descendentes4 = "Rhaenyra, Baelon, Aegon, Helaena, Aemond e Daeron"
 
-const nome5 = "John Wayne Gacy"
-const modusOperandi5 = "Tortura, estupro e estrangulamento"
-const ano5 = 1972
-const vitimas5 = 33
-const condenado5 = true
 
-// Cálculo da média entre as variáveis vítimas. 
+// Cálculo da média entre as variáveis Anos de Reinado. 
 
-let media = ((vitimas1+vitimas2+vitimas3+vitimas4+vitimas5)/5) 
-console.log (`Média das vítimas: ${media}`)
+let media = ((anosdeReinado1+anosdeReinado2+anosdeReinado3+anosdeReinado4)/4) 
+console.log (`Média do tempo de reinado para cada rei: ${media}`)
 
 // Resultado que checa se todos os booleanas até aqui são verdadeiros.
 
-const condenacao = condenado1 && condenado2 && condenado3 && condenado4 && condenado5
-console.log (condenacao)
+const dragonRiders = montavaDragão1 && montavaDragão2 && montavaDragão3 && montavaDragão4
+console.log (dragonRiders)
 
 // Criando novos arrays
 
-const crimes1 = ["Sequestro", "Tentativa de homicídio", "Homicídio", "Roubo", "Estupro", "Tortura"]
-const crimes2 = ["Sequestro", "homicídio", "Roubo"]
-const crimes3 = ["Homicídio em primeiro grau", "Abuso sexual infantil", "Estupro","Exposição indecente", "conduta desordeira", "intoxicação pública"]
-const crimes4 = ["Homicídio em primeiro grau", "Tortura", "Estupro"]
-const crimes5 = ["Abuso infantil", "Homicídio", "Estupro", "Agressão sexual"]
+const descendentes1 = ["Aenys", "Maegor"]
+const descendentes2 = ["Rhaena","Aegon", "Viserys", "Jaehaerys", "Alysanne", "Vaella"]
+const descendentes3 = ["Aegon", "Daenerys", "Aemon", "Baelon", "Alyssa", "Maegelle", "Vaegon", "Daella", "Saera", "Viserra", "Gaemon", "Valerion","Gael"]
+const descendentes4 = ["Rhaenyra", "Baelon", "Aegon", "Helaena", "Aemond", "Daeron"]
 
 // Console log de todas os itens
 
-console.log (`nome: ${nome1.toUpperCase()} 
-Modus Operandi: ${modusOperandi1} 
-Ano da primeira vítima: ${ano1} 
-Quantidade de vítimas: ${vitimas1} 
-Condenado: ${condenado1} 
-Crimes: ${crimes1}`)
+console.log (`
 
-console.log (`nome: ${nome2.toUpperCase()} 
-Modus Operandi: ${modusOperandi2} 
-Ano da primeira vítima: ${ano2} 
-Quantidade de vítimas: ${vitimas2} 
-Condenado: ${condenado2}
-Crimes: ${crimes2} `)
+    Nome: ${nome1.toUpperCase()} 
+    Cônjuge: ${conjuge1} 
+    Montava Dragão: ${montavaDragão1}
+    Anos de reinado: ${anosdeReinado1}
+    Descendentes: ${descendentes1}
 
-console.log (`nome: ${nome3.toUpperCase()} 
-Modus Operandi: ${modusOperandi3} 
-Ano da primeira vítima: ${ano3} 
-Quantidade de vítimas: ${vitimas3} 
-Condenado: ${condenado3} 
-Crimes: ${crimes3}`)
+`)
 
-console.log (`nome: ${nome4.toUpperCase()} 
-Modus Operandi: ${modusOperandi4} 
-Ano da primeira vítima: ${ano4} 
-Quantidade de vítimas: ${vitimas4} 
-Condenado: ${condenado4}
-Crimes: ${crimes4} `)
+console.log (`
 
-console.log (`nome: ${nome5.toUpperCase()} 
-Modus Operandi: ${modusOperandi5} 
-Ano da primeira vítima: ${ano5} 
-Quantidade de vítimas: ${vitimas5} 
-Condenado: ${condenado5}
-Crimes: ${crimes5} `)
+    Nome: ${nome2.toUpperCase()} 
+    Cônjuge: ${conjuge2} 
+    Montava Dragão: ${montavaDragão2}
+    Anos de reinado: ${anosdeReinado2}
+    Descendentes: ${descendentes2}
+
+`)
+
+console.log (`
+
+    Nome: ${nome3.toUpperCase()} 
+    Cônjuge: ${conjuge3} 
+    Montava Dragão: ${montavaDragão3}
+    Anos de reinado: ${anosdeReinado3}
+    Descendentes: ${descendentes3}
+
+`)
+
+console.log (`
+
+    Nome: ${nome4.toUpperCase()} 
+    Cônjuge: ${conjuge4} 
+    Montava Dragão: ${montavaDragão4}
+    Anos de reinado: ${anosdeReinado4}
+    Descendentes: ${descendentes4}
+
+`)
