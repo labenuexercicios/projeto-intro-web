@@ -4,38 +4,41 @@
 const objeto1 = {
    módulo1: "Legislação de Trânsito",
    cargaHorária1: 12,
-   avaliação1: true 
+   avaliação1: true,
+   dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"]
 }
 
 const objeto2 = {
   módulo2: "Direção Defensiva",
   cargaHorária2: 8,
-  avaliação2: true
+  avaliação2: true,
+  dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"]
 }
 
 const objeto3 = {
  módulo3: "Noções de Primeiros Socorros",
  cargaHorária3: 4,
  avaliação3: true,
+ dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"]
 }
 
 const objeto4 = {
  módulo4: "Relacionamento Interpessoal",
  cargaHorária4: 6,
- avaliação4: true
+ avaliação4: true,
+ dadosDoUsuário: ["Nome do Aluno", "Idade", "Email", "Data de Nascimento"]
 }
 
 //2. Crie um array para guardar os objetos. Este array deve estar vazio, por enquanto;
 
 const todosOsObjetos = []
-console.log(todosOsObjetos)
+
 
 //3. Adicione os objetos criados no item 1 ao array de objetos criado no item 2, utilizando o push()
 
 todosOsObjetos.push(objeto1, objeto2, objeto3, objeto4)
    
-//console.log(todosOsObjetos)
-
+console.log(todosOsObjetos)
 
 //4. Altere o item “Adicione os novos objetos no array de objetos, utilizando o push()” (item 3), para criar uma verificação antes de dar o push. A caraterística booleana do objeto deve ser validada. Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for true;
 
