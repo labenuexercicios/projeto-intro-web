@@ -1,85 +1,55 @@
-// O tema que escolhi para o projeto é Serial Killers. Mas vou alterar para algo que eu gosto mais, que serão plantas.
+// Transformando em Objetos 
 
-let nome1 = "Aegon Targaryen"
-let conjuge1 = "Visenya e Rhaenys Targaryen"
-let montavaDragão1 = true
-let anosdeReinado1 = 37
-//let descendentes1 = "Aenys e Maegor"
+objAegon = {
+    nome: "Aegon Targaryen",
+    conjuge: "Visenya e Rhaenys Targaryen",
+    montavaDragão: true,
+    anosdeReinado: 37,
+    descendentes: ["Aenys", "Maegor"]
+}
 
-let nome2 = "Aenys Targaryen"
-let conjuge2 = "Alyssa Velaryon"
-let montavaDragão2 = true
-let anosdeReinado2 = 5
-//let descendentes2 = "Rhaena, Aegon, Viserys, Jaehaerys, Alysanne e Vaella"
+objAenys = {
+    nome: "Aenys Targaryen",
+    conjuge: "Alyssa Velaryon",
+    montavaDragão: true,
+    anosdeReinado: 5,
+    descendentes: ["Rhaena","Aegon", "Viserys", "Jaehaerys", "Alysanne", "Vaella"]
+}
 
-let nome3 = "Jaehaerys Targaryen"
-let conjuge3 = "Alysanne Targaryen"
-let montavaDragão3 = true
-let anosdeReinado3 = 55
-//let descendentes3 = "Aegon, Daenerys, Aemon, Baelon, Alyssa, Maegelle, Vaegon, Daella, Saera, Viserra, Gaemon, Valerion e Gael"
+objJaehaerys = {
+    nome: "Jaehaerys Targaryen",
+    conjuge: "Alysanne Targaryen",
+    montavaDragão: true,
+    anosdeReinado: 55,
+    descendentes: ["Aegon", "Daenerys", "Aemon", "Baelon", "Alyssa", "Maegelle", "Vaegon", "Daella", "Saera", "Viserra", "Gaemon", "Valerion","Gael"]
+}
 
-let nome4 = "Viserys Targaryen"
-let conjuge4 = "Aemma Arryn e Alicent Hightwoer"
-let montavaDragão4 = false
-let anosdeReinado4 = 26
-//let descendentes4 = "Rhaenyra, Baelon, Aegon, Helaena, Aemond e Daeron"
+objViserys = {
+    nome: "Viserys Targaryen",
+    conjuge: "Aemma Arryn e Alicent Hightower",
+    montavaDragão: false,
+    anosdeReinado: 26,
+    descendentes: ["Rhaenyra", "Baelon", "Aegon", "Helaena", "Aemond", "Daeron"]
+}
+
+const dragonRiders = []
 
 
-// Cálculo da média entre as variáveis Anos de Reinado. 
+if (objAegon.montavaDragão === true) {
+    dragonRiders.push(objAegon)
+} else {alert('Este rei não é um montador de Dragão. Não foi adicionado a categoria "Montador de dragão"')}
 
-let media = ((anosdeReinado1+anosdeReinado2+anosdeReinado3+anosdeReinado4)/4) 
-console.log (`Média do tempo de reinado para cada rei: ${media}`)
+if (objAenys.montavaDragão === true) {
+    dragonRiders.push(objAenys)
+} else {alert('Este rei não é um montador de Dragão. Não foi adicionado a categoria "Montador de dragão"')}
 
-// Resultado que checa se todos os booleanas até aqui são verdadeiros.
+if (objJaehaerys.montavaDragão === true) {
+    dragonRiders.push(objJaehaerys)
+} else {alert('Este rei não é um montador de Dragão. Não foi adicionado a categoria "Montador de dragão"')}
 
-const dragonRiders = montavaDragão1 && montavaDragão2 && montavaDragão3 && montavaDragão4
-console.log (dragonRiders)
+if (objViserys.montavaDragão === true) {
+    dragonRiders.push(objViserys)
+} else {alert('Este rei não é um montador de Dragão. Não foi adicionado a categoria "Montador de dragão"')}
 
-// Criando novos arrays
+console.log(dragonRiders)
 
-const descendentes1 = ["Aenys", "Maegor"]
-const descendentes2 = ["Rhaena","Aegon", "Viserys", "Jaehaerys", "Alysanne", "Vaella"]
-const descendentes3 = ["Aegon", "Daenerys", "Aemon", "Baelon", "Alyssa", "Maegelle", "Vaegon", "Daella", "Saera", "Viserra", "Gaemon", "Valerion","Gael"]
-const descendentes4 = ["Rhaenyra", "Baelon", "Aegon", "Helaena", "Aemond", "Daeron"]
-
-// Console log de todas os itens
-
-console.log (`
-
-    Nome: ${nome1.toUpperCase()} 
-    Cônjuge: ${conjuge1} 
-    Montava Dragão: ${montavaDragão1}
-    Anos de reinado: ${anosdeReinado1}
-    Descendentes: ${descendentes1}
-
-`)
-
-console.log (`
-
-    Nome: ${nome2.toUpperCase()} 
-    Cônjuge: ${conjuge2} 
-    Montava Dragão: ${montavaDragão2}
-    Anos de reinado: ${anosdeReinado2}
-    Descendentes: ${descendentes2}
-
-`)
-
-console.log (`
-
-    Nome: ${nome3.toUpperCase()} 
-    Cônjuge: ${conjuge3} 
-    Montava Dragão: ${montavaDragão3}
-    Anos de reinado: ${anosdeReinado3}
-    Descendentes: ${descendentes3}
-
-`)
-
-console.log (`
-
-    Nome: ${nome4.toUpperCase()} 
-    Cônjuge: ${conjuge4} 
-    Montava Dragão: ${montavaDragão4}
-    Anos de reinado: ${anosdeReinado4}
-    Descendentes: ${descendentes4}
-
-`)
