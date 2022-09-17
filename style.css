@@ -1,8 +1,15 @@
+@font-face {
+    font-family:'naruto';
+    src: url('njnaruto.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 * {
     margin: 0;
     border: 0;
     padding: 0;
     font-family: sans-serif;
+    
 }
 
 header {
@@ -15,13 +22,21 @@ header {
     justify-content: center;
     padding-left: 20px;
 }
+h1 {
+    font-family: 'naruto','Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-style: normal;
+    color: rgba(255, 213, 0, 0.689);
+}
 
 main {
-    background-color: #f5f5f5;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-image: url('./img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    height: 100%;
 }
 
 div {
@@ -33,25 +48,37 @@ div {
 }
 
 input {
-    width: 300px;
+    width: 400px;
     height: 40px;
     margin: 10px;
     border-radius: 5px;
+    transition: 0.5s;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+input:hover {
+    background-color: orangered;
+    color: yellow;
 }
 
 button {
+    width: 100px;
     height: 40px;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.2s;
+}
+button:active {
+    color: white;
+    background-color: black;
 }
 
 .card-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
 }
 
 img {
@@ -63,16 +90,17 @@ img {
 #ninja-imagem {
     height: 160px;
     width: 160px;
-    
+    margin: 5px;
 }
 #card {
     height: 200px;
-    background-color: orange;
+    background-color: rgba(255, 213, 0, 0.689);
     margin-bottom: 15px;
     width: 450px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-radius: 20px;
 }
 
 ul {
@@ -92,7 +120,12 @@ a {
 a:hover {
     color: red;
 }
-
+#name {
+    color: white;
+}
+#name:hover {
+    color: red;
+}
 footer {
     
     padding: 20px;
@@ -103,3 +136,8 @@ footer {
     color: white;
     text-align: center;
 }
+/* Semana 8
+A partir do nosso exemplo de estilização, crie a identidade da sua página seguindo os passos abaixo:
+1. Estilize o cabeçalho da sua página com o mesmo título que está no <title>;
+2. Estilize o rodapé para sua página, e nele, coloque suas informações de contato (nome e github);
+3. Estilize a lista criada na semana passada, seguindo o padrão enviado; */
