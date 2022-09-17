@@ -3,6 +3,8 @@
 // Semana 3 - OK
 // Semana 4 - OK
 // Semana 5 - OK
+// Semana 6 - OKGIT
+// SEMANA 7 - OK
 
 // Objetos Séries (itens)
 // Objeto 1
@@ -123,15 +125,39 @@ const serie5 = {
     "Uma série que mostra os dramas entre os médicos e pacientes num hospital do Rio de Janeiro.",
 };
 
+// Objeto 6
+const serie6 = {
+  titulo: "Desalma",
+  ondeAssistir: "Globoplay",
+  lancamento: 2020,
+  temporadas: 2,
+  episodios: 20,
+  remake: false,
+  sucesso: true,
+  avaliacaoIMDB: 7.2,
+  genero: ["Drama", "Fantasia", "Mistério"],
+  elenco: [
+    "Cássia Kis",
+    "Cláudia Abreu",
+    "Maria Ribeiro",
+    "Anna Melo",
+    "Camila Botelho",
+  ],
+  criacao: "Ana Paula Maia",
+  sinopse:
+    "Após o suicídio de seu marido, uma mulher e suas filhas se mudam para Brigida, uma pequena vila que está prestes a recuperar os festivais pagãos de Ivana Kupala, que foram proibidos 30 anos antes.",
+};
+
 // Média das Temporadas (num)
 somaTemporadas =
   serie1.temporadas +
   serie2.temporadas +
   serie3.temporadas +
   serie4.temporadas +
-  serie5.temporadas;
-mediaTemporadas = somaTemporadas / 5;
-// console.log (`A média de Temporadas é: ${mediaTemporadas}`)
+  serie5.temporadas +
+  serie6.temporadas;
+mediaTemporadas = somaTemporadas / 6;
+console.log(`A média de Temporadas entre as séries é: ${mediaTemporadas}`);
 
 // Média dos Episódios (num)
 somaEps =
@@ -139,9 +165,10 @@ somaEps =
   serie2.episodios +
   serie3.episodios +
   serie4.episodios +
-  serie5.episodios;
-mediaEps = somaEps / 5;
-// console.log (`A média de Episódios é: ${mediaEps}`)
+  serie5.episodios +
+  serie6.episodios;
+mediaEps = somaEps / 6;
+console.log(`A média de Episódios entre as séries é: ${mediaEps}`);
 
 // Média da Avaliação do IMDb (num)
 somaAvaliacao =
@@ -149,9 +176,10 @@ somaAvaliacao =
   serie2.avaliacaoIMDB +
   serie3.avaliacaoIMDB +
   serie4.avaliacaoIMDB +
-  serie5.avaliacaoIMDB;
-mediaAvaliacao = somaAvaliacao / 5;
-// console.log (`A média da Avaliação IMDb é: ${mediaAvaliacao}`)
+  serie5.avaliacaoIMDB +
+  serie6.avaliacaoIMDB;
+mediaAvaliacao = somaAvaliacao / 6;
+console.log(`A média da Avaliação IMDb entre as séries é: ${mediaAvaliacao}`);
 
 // Verificando se são Remake (Booleano)
 verificaRemake =
@@ -159,8 +187,9 @@ verificaRemake =
   serie2.remake &&
   serie3.remake &&
   serie4.remake &&
-  serie5.remake;
-// console.log (`As séries são um remake? ${verificaRemake}`)
+  serie5.remake &&
+  serie6.remake;
+console.log(`As séries são um remake? ${verificaRemake}`);
 
 // Verificando se são um sucesso (Booleano)
 verificaSucesso =
@@ -168,8 +197,9 @@ verificaSucesso =
   serie2.sucesso &&
   serie3.sucesso &&
   serie4.sucesso &&
-  serie5.remake;
-// console.log (`As séries são um sucesso? ${verificaSucesso}`)
+  serie5.sucesso &&
+  serie6.sucesso;
+console.log(`As séries são um sucesso? ${verificaSucesso}`);
 
 // // Imprimindo os dados de cada série (Relatório)
 // console.log (serie1.titulo.toUpperCase(),serie1.ondeAssistir, serie1.lancamento, serie1.temporadas, serie1.episodios, serie1.remake, serie1.sucesso, serie1.avaliacaoIMDB, serie1.genero, serie1.elenco, serie1.criacao, serie1.sinopse)
@@ -178,59 +208,87 @@ verificaSucesso =
 // console.log (serie4.titulo.toUpperCase(),serie4.ondeAssistir, serie4.lancamento, serie4.temporadas, serie4.episodios, serie4.remake, serie4.sucesso, serie4.avaliacaoIMDB, serie4.genero, serie4.elenco, serie4.criacao, serie4.sinopse)
 
 // Meu Array de Objetos
-const minhasSeries = [];
+const arrayMinhasSeries = [];
 
-// Condicional para adicionar no array de Objetos
+// SEMANA 4
+// Condicional para adicionar as séries no array de Objetos
 // Condicional 1
 if (serie1.sucesso) {
-  minhasSeries.push(serie1);
+  arrayMinhasSeries.push(serie1);
 } else {
   alert(`A série ${serie1.titulo}, não pode ser adicionada`);
 }
 
 // Condicional 2
 if (serie2.sucesso) {
-  minhasSeries.push(serie2);
+  arrayMinhasSeries.push(serie2);
 } else {
   alert(`A série ${serie2.titulo}, não pode ser adicionada`);
 }
 
 // Condicional 3
 if (serie3.sucesso) {
-  minhasSeries.push(serie3);
+  arrayMinhasSeries.push(serie3);
 } else {
   alert(`A série ${serie3.titulo}, não pode ser adicionada`);
 }
 
 // Condicional 4
 if (serie4.sucesso) {
-  minhasSeries.push(serie4);
+  arrayMinhasSeries.push(serie4);
 } else {
   alert(`A série ${serie4.titulo}, não pode ser adicionada`);
 }
 
 // Condicional 5
 if (serie5.sucesso) {
-  minhasSeries.push(serie5);
+  arrayMinhasSeries.push(serie5);
 } else {
   alert(`A série ${serie5.titulo}, não pode ser adicionada`);
 }
 
-// Imprimindo as Séries
-// console.log (minhasSeries)
-
-// Mudando as Características de array para string (Laços)
-// Mudando o Modo de criação do Relatório (Laços)
-for (let i = 0; i < minhasSeries.length; i++) {
-  minhasSeries[i].titulo = minhasSeries[i].titulo.toUpperCase();
-
-  for (j = 0; j < minhasSeries[i].genero.length; j++) {
-    minhasSeries[i].genero += `${""}`;
-  }
-
-  for (k = 0; k < minhasSeries[i].elenco.length; k++) {
-    minhasSeries[i].elenco += `${""}`;
-  }
-
-  console.log(minhasSeries[i]);
+// Condicional 6
+if (serie6.sucesso) {
+  arrayMinhasSeries.push(serie6);
+} else {
+  alert(`A série ${serie6.titulo}, não pode ser adicionada`);
 }
+
+// SEMANA 5
+// Mudando as Características das Propriedades de array para String por Laços
+// Mudando o modo de criação do Relatório de console.log para Laços
+for (let i = 0; i < arrayMinhasSeries.length; i++) {
+  arrayMinhasSeries[i].titulo = arrayMinhasSeries[i].titulo.toUpperCase();
+
+  for (j = 0; j < arrayMinhasSeries[i].genero.length; j++) {
+    arrayMinhasSeries[i].genero += `${""}`;
+  }
+
+  for (k = 0; k < arrayMinhasSeries[i].elenco.length; k++) {
+    arrayMinhasSeries[i].elenco += `${""}`;
+  }
+  console.log(arrayMinhasSeries[i]);
+}
+
+// SEMANA 6
+// Função que recebe um Objeto e devolve esse Objeto em String
+const objMinhaSerie = (obj) => {
+  console.log(obj);
+};
+
+objMinhaSerie(serie3);
+
+// Função que recebe um array de Objeto e uma String, devolve o objeto com o titulo igual a String
+const pesquisaObjNoArray = (arrayObj, string) => {
+  const minhaSerie = arrayObj.filter((filtro, indice, array) => {
+    return filtro.titulo === string.toUpperCase();
+  });
+
+  if (minhaSerie.length === 0) {
+    alert("Série não está disponível em nosso catalogo");
+  }
+
+  return minhaSerie;
+};
+
+console.log(pesquisaObjNoArray(arrayMinhasSeries, "Friends"));
