@@ -28,6 +28,7 @@ const serie1 = {
   criacao: "David Benioff, D.B. Weiss",
   sinopse:
     "Nove famílias nobres lutam pelo controle sobre as terras míticas de Westeros, enquanto um antigo inimigo retorna depois de estar adormecido por milhares de anos.",
+  imagem: "/Imagens Séries/game of thrones_capa.jpg",
 };
 
 // Objeto 2
@@ -52,6 +53,7 @@ const serie2 = {
   criacao: "David Crane, Marta Kauffman",
   sinopse:
     "Relata a vida pessoal de seis amigos em seus 30's na cidade de Manhattan.",
+  imagem: "/Imagens Séries/friends_capa.jpg",
 };
 
 // Objeto 3
@@ -76,6 +78,7 @@ const serie3 = {
   criacao: "Frank Darabont",
   sinopse:
     "Um Xerife acorda de um coma para dar-se conta que o mundo está em ruínas, e deve liderar um grupo de sobreviventes para se manter vivo.",
+  imagem: "/Imagens Séries/the walking dead_capa.jpg",
 };
 
 // Objeto 4
@@ -100,6 +103,7 @@ const serie4 = {
   criacao: "Matt Duffer, Ross Duffer",
   sinopse:
     "Depois do desaparecimento de um menino, sua mãe, um chefe de polícia e seus amigos precisam enfrentar forças aterrorizantes para trazê-lo de volta.",
+  imagem: "/Imagens Séries/stranger things_capa.jpg",
 };
 
 // Objeto 5
@@ -123,6 +127,7 @@ const serie5 = {
   criacao: "Jorge Furtado, Renato Fagundes, Luiz Noronha",
   sinopse:
     "Uma série que mostra os dramas entre os médicos e pacientes num hospital do Rio de Janeiro.",
+  imagem: "/Imagens Séries/sob pressao_capa.jpg",
 };
 
 // Objeto 6
@@ -146,6 +151,7 @@ const serie6 = {
   criacao: "Ana Paula Maia",
   sinopse:
     "Após o suicídio de seu marido, uma mulher e suas filhas se mudam para Brigida, uma pequena vila que está prestes a recuperar os festivais pagãos de Ivana Kupala, que foram proibidos 30 anos antes.",
+  imagem: "/Imagens Séries/desalma_capa.png",
 };
 
 // Média das Temporadas (num)
@@ -273,10 +279,10 @@ for (let i = 0; i < arrayMinhasSeries.length; i++) {
 // SEMANA 6
 // Função que recebe um Objeto e devolve esse Objeto em String
 const objMinhaSerie = (obj) => {
-  console.log(obj);
+  return obj;
 };
 
-objMinhaSerie(serie3);
+console.log(objMinhaSerie(serie3));
 
 // Função que recebe um array de Objeto e uma String, devolve o objeto com o titulo igual a String
 const pesquisaObjNoArray = (arrayObj, string) => {
