@@ -5,20 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto Intro Web</title>
+    <link rel="stylesheet" href="/style.css" />
     <script src="script.js"></script>
   </head>
 
   <body>
     <header>
-      <h1>EduSéries TV</h1>
+      <nav>
+        <ul class="nav1">
+          <li class="nav11">Assistir</li>
+          <li class="nav11">Minha Lista</li>
+          <li class="nav11">Categorias</li>
+        </ul>
+      </nav>
+      <h1>Séries TV</h1>
     </header>
     <main>
-      <div>
-        <input type="text" />
-        <button>Pesquisar</button>
+      <div class="buscar">
+        <input type="text" id="txtBusca" placeholder="Buscar..." />
+        <button id="buttonBusca">Buscar</button>
       </div>
-
-      <div>
+      <div class="series">
         <section class="got">
           <ul>
             <li>
@@ -46,6 +53,7 @@
             </li>
           </ul>
           <img
+            id="imagem_got"
             src="Imagens Séries/game of thrones_capa.jpg"
             width="12%"
             alt="Navegador não suporta a imagem"
@@ -78,6 +86,7 @@
             </li>
           </ul>
           <img
+            id="imagem_friends"
             src="/Imagens Séries/friends_capa.jpg"
             width="12%"
             alt="Navegador não suporta a imagem"
@@ -111,13 +120,14 @@
             </li>
           </ul>
           <img
+            id="imagem_twd"
             src="/Imagens Séries/the walking dead_capa.jpg"
             width="12%"
             alt="Navegador não suporta a imagem"
           />
         </section>
 
-        <section class="strangerthings">
+        <section class="strangerThings">
           <ul>
             <li>
               <a href="https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0"
@@ -144,13 +154,14 @@
             </li>
           </ul>
           <img
+            id="imagem_strangerThings"
             src="/Imagens Séries/stranger things_capa.jpg"
             width="12%"
             alt="Navegador não suporta a imagem"
           />
         </section>
 
-        <section class="sobpressao">
+        <section class="sobPressao">
           <ul>
             <li>
               <a href="https://www.imdb.com/title/tt7216954/?ref_=nv_sr_srsg_0"
@@ -176,6 +187,7 @@
             </li>
           </ul>
           <img
+            id="imagem_sobPressao"
             src="/Imagens Séries/sob pressao_capa.jpg"
             width="12%"
             alt="Navegador não suporta a imagem"
@@ -210,6 +222,7 @@
             </li>
           </ul>
           <img
+            id="imagem_desalma"
             src="/Imagens Séries/desalma_capa.png"
             width="12%"
             alt="Navegador não suporta a imagem"
@@ -217,6 +230,11 @@
         </section>
       </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <p>
+        Eduardo Fernandes -
+        <a href="https://github.com/eduesf">github.com/eduesf</a>
+      </p>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,34 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(37, 34, 34);
+}
+
+h1 {
+  color: white;
+  font-family: Trebuchet MS, Lucida Sans Unicode, Lucida Grande, Lucida Sans,
+    Arial, sans-serif;
+}
+
+.nav1 {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  flex-direction: column;
+  font-family: Trebuchet MS, Lucida Sans Unicode, Lucida Grande, Lucida Sans,
+    Arial, sans-serif;
+}
+
+.na11 {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.nav11 {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: beige;
+}
