@@ -19,32 +19,54 @@ const item2 = {
 const item3 = {
     desenho: "Flapjack",
     temporadas: 3,
-    lgbt: false,
+    lgbt: true,
     principais: ["Flapjack", "Capitão Falange", "Bolha"]
 
 }
 
 const listaItens = []
 
-if (item1.lgbt === true) {
+if (item1.lgbt) {
     listaItens.push(item1)
 } else {
     alert("O item1 não foi adicionado a lista.")
 }
 
-if (item2.lgbt === true) {
+if (item2.lgbt) {
     listaItens.push(item2)
 } else {
     alert("O item2 não foi adicionado a lista.")
 }
 
-if (item3.lgbt === true) {
+if (item3.lgbt) {
     listaItens.push(item3)
 } else {
     alert("O item3 não foi adicionado a lista.")
 }
 
-console.log(listaItens)
+
+//Mostrar tudo no console e tranformar os arrays em string
+for (let i in listaItens) {
+    listaItens[i].principais = listaItens[i].principais.toString()
+    console.log(listaItens[i])
+}
+
+//3. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
+function strObj(objeto) {
+    return objeto.desenho
+}
+
+//4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
+function busca(array, string) {
+    for (let i in array) {
+        if (array[i].desenho === string) {
+            return array[i]
+        }
+    }
+    return alert(`Seu produto ${string} não foi encontrado.`)
+}
+
+console.log(busca(listaItens, "Sailor Moon"))
 
 
 // const desenho1 = "Hora de Aventura";
