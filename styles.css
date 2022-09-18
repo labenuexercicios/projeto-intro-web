@@ -3,58 +3,172 @@
     padding: 0px;
     margin: 0px;
 }
-h1{
+
+.body {
+    display: flex;
+}
+
+h1 {
     color: aliceblue;
     font-size: 3vw;
-    text-shadow: 1vw 1vw 1vw #000, 0 0 3vw #24ff00, 0 0 3vw #24ff00;
+    text-shadow: 1vw 1vw 1vw #000, 0 0 3vw #ff8800, 0 0 3vw #ffa200;
 }
+
 header {
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    height: 10vh;
-    align-items: center;
+
     position: sticky;
     top: 0px;
-    background-image: linear-gradient(180deg, rgb(227, 219, 219), rgba(13, 12, 13, 0.982));
+    background-image: linear-gradient(180deg, rgb(66, 65, 65), rgba(251, 119, 18, 0.982), rgb(66, 65, 65));
 
 }
 
 main {
+    display: flex;
     min-height: 80vh;
-    display: flex;
-    /* flex-wrap: wrap; */
-    gap: 3%;
-    margin-left: 2vh;
+    border: 1px solid;
+    margin-left: px;
 }
-.sectionA{
-    height: 100vh;
-    width:22vw;
+
+.sectionA {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(90deg, rgb(17, 15, 15),rgb(237, 217, 217)
-    );
-  
+    min-height: 2vh;
+    background-image: linear-gradient(90deg, rgb(43, 42, 42), rgb(230, 103, 13));
+    color: #fff;
 }
-.lista{
+
+#lista {
+
+
     display: flex;
     flex-direction: column;
-    border: 1px solid ;     
+    border-top: #fff 1px solid;
+    border-bottom: #fff 1px solid;
     color: rgb(255, 255, 255);
 }
-li{
-  padding: 8px;
-  color: white;
+
+input {
+    border-bottom-right-radius: 15px;
 }
+
+button {
+    border: 1px solid;
+
+    border-end-start-radius: 8px;
+}
+
+li {
+    margin-left: 2px;
+    padding: 16px;
+    color: white;
+
+}
+
+.liA:hover {
+    background-image: url(assets/dragonBall/kamehamera-hover.jpg);
+    background-repeat: round;
+    border-radius: 10px;
+    font-size: 18px;
+    transition-duration: 0.7s;
+
+}
+
+.liB:hover {
+    background-image: url(assets/picaPau/sequencia.jpg);
+    background-repeat: round;
+    border-radius: 10px;
+    font-display: none;
+    transition-duration: 0.7s;
+    font-size: 18px;
+}
+
+.liC:hover {
+    background-image: url(assets/pantera/231321.png);
+    background-repeat: round;
+    image-rendering: optimizeQuality;
+    border-radius: 10px;
+    font-display: none;
+    transition-duration: 0.7s;
+    font-size: 18px;
+}
+
+.liD:hover {
+    background-image: url(assets/tomEJerry/logo.jpg);
+    background-repeat: round;
+    border-radius: 10px;
+    font-size: 23px;
+    color: #000;
+    text-align: start;
+    transition-duration: 0.7s;
+}
+
+.liE:hover {
+    background-image: url(assets/osFlintsotne/download.png);
+    background-repeat: round;
+    border-radius: 10px;
+    font-size: 23px;
+    color: #000;
+    transition-duration: 0.7s;
+    text-align: start;
+}
+
+.liF:hover {
+    background-image: url(assets/cavernaDoDragao/cavernadragaoCard.jpeg);
+    background-repeat: round;
+    border-radius: 10px;
+    font-size: 23px;
+    color: #fff;
+    text-align: start;
+    transition-duration: 0.7s;
+}
+
+.liG:hover {
+    background-image: url(assets/aventuraJackieChan/capa.jpg);
+    background-repeat: round;
+    border-radius: 10px;
+    font-size: 23px;
+    color: #000;
+    text-align: start;
+    transition-duration: 0.7s;
+}
+
+.liA:hover p {
+    opacity: 1%;
+}
+
+.liB:hover p {
+    opacity: 1%;
+}
+
+.liC:hover p {
+    opacity: 1%;
+}
+
+.liD:hover p {
+    opacity: 1%;
+}
+
+.liE:hover p {
+    opacity: 1%;
+}
+
+.liF:hover p {
+    opacity: 1%;
+}
+
+.liG:hover p {
+    opacity: 1%;
+}
+
 footer {
     position: sticky;
     bottom: 0px;
-    height: 7vh;
+    height: 5vh;
     display: flex;
     justify-content: center;
-    gap: 35px;
+    gap: 28px;
     align-items: center;
-    background-image: linear-gradient(180deg, rgb(177, 171, 171), rgb(16, 15, 15));
+    background-image: linear-gradient(180deg, rgb(215, 211, 211), rgb(57, 56, 56), rgb(66, 64, 64));
 
 }
 
@@ -70,13 +184,64 @@ footer {
     color: white;
     text-align: left;
 }
-.imagem{
+
+.galery {
     display: flex;
     flex-wrap: wrap;
-    border-radius: 20px;
-    background-color: bisque;
+    flex-direction: column;
+    gap: 10px;
+
+    background-color: rgb(43, 43, 43);
 }
-.pantera{
+
+.dBall {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 1%;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #ff8800;
+
+}
+
+.imghome {
+    height: 60vh;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.perfil {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    gap: 2%;
+    /* justify-items: center; */
+
+}
+
+.perfil img {
+    height: 13vh;
+    border: 1px solid;
+    border-radius: 40px;
+}
+
+.dBall article {
+    text-align: justify;
+    margin:10px;
+}
+
+.dBall h2 {
+    text-align: center;
+}
+
+.pantera {
     background-color: pink;
     border-radius: 10px;
 }
+
+
+/* transition: opacity .2s linear;
+  background-color:rgba(0,0,0,.7) */

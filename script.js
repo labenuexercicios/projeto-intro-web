@@ -4,7 +4,7 @@
 const desenho1 = {
     nome: 'Dragon Ball',
     criador: ['Akira Toriyama'],
-    duracaoEpisodios: 153,
+    duracaoEpisodios: 519,
     personagens: ['Son Goku', 'Vegeta,', 'Kuririn ', 'Bulma', 'Kame-Sennin', ' Piccolo', ' Chi-Chi', ' Gohan', 'Freeza', 'Cell', 'Boo '],
     anoLancamento: 1984,
     enredo: ['A história de Dragon Ball começa com Son Goku, um garoto ingênuo e puro com cauda de macaco e uma força extraordinária. Ele mora sozinho após a morte de seu avô adotivo em uma montanha chamada Paozu. Um dia ele conhece Bulma, uma garota muito inteligente da cidade, que estava em busca das sete Esferas do Dragão. Persuadido, Goku concorda em ajudar Bulma a encontrar as Esferas. Os dois partem em uma longa jornada, durante a qual eles fazem muitos amigos. Depois, Goku passa por um treinamento com Kame-Sennin, onde o garoto Kuririn se torna seu parceiro, e participa de vários torneios mundiais de artes marciais. No curso de seu crescimento e seu desenvolvimento, ele enfrenta inúmeros inimigos, incluindo Piccolo, que depois se torna seu aliado. Quando jovem adulto, Goku se casa com Chi-Chi, cumprindo uma promessa feita por ele quando ambos eram crianças, e possui seu primeiro filho chamado Gohan. Goku acaba descobrindo que pertence à raça extraterrestre Saiyajin, e que foi enviado à Terra quando criança para conquistar o planeta. Pouco depois de sua chegada, no entanto, ele tinha sofrido um ferimento na cabeça, perdendo desta forma a memória da missão e sua natureza agressiva. No entanto, o jovem decide continuar a defender seu planeta adotado do ataque de inimigos cada vez mais difíceis, incluindo o príncipe dos sayajins Vegeta, que depois também se torna seu aliado. Desta forma, juntamente com sua família e seus amigos, Goku luta contra inimigos como Freeza, Cell, Boo, entre outros, se tornando o protetor da Terra e todo o universo.'],
@@ -140,58 +140,23 @@ const stringDeInfo = (objeto) => {
 
     } return string
 }
-// stringDeInfo(desenho1)
+stringDeInfo(desenho1)
 
 //---------2. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
 
-
-let string
-const funcao2 = (array, string) => {
-    string = 'As Aventuras de Jackie Chan'
-    for (let i in array) {
-        if (string === array[i].nome) {
-            console.log(`${array[i].nome}`);;
-           
-        } else {  console.log('Item não encontrado!'); 
-        }    
-    }
-    return 
+const verificarNome =(array, string)=>{
+    let verificarString = array.filter((nome)=>{
+        return nome.nome ===string
+    })
+    if(verificarString.length ===0){
+        alert (`Item não encontrado`)
+    }return verificarString
 }
-// funcao2(desenhoArray, string)
+// console.log(verificarNome(desenhoArray,'As Aventuras de Jackie Chan'))
+
+
           
 
             
 
 
-const retornaObjetoString = (objeto)=>{ 
-    string = `Tom e Jerry`
-    if( string === objeto.nome || string !==objeto.nome ){  string === objeto.nome  ? console.log('item correto') : console.log('item incorreto!') }
-}
-// retornaObjetoString(desenho4)
-    
-//
-
-// let des1
-//  switch (string1) {
-//     case "Dragon Ball":
-//         des1 = {...desenho1}
-//         console.log(`${des1.nome}`);
-//         break; 
-//     case "argentina":
-//         console.log("a pessoa é da Argentina!")
-//         break; 
-//     case "uruguaia":
-//         console.log("a pessoa é do Uruguai!")
-//         break; 
-//     case "chilena":
-//         console.log("a pessoa é do Chile!")
-//         break;
-//     case "colombiana":
-//         console.log("a pessoa é da Colombia!")
-//         break;
-//     default:
-//         console.log("item nao encontrado")
-// }
-
-
- 
