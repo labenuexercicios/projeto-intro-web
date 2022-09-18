@@ -1,26 +1,37 @@
-// semana 2 //
+// semana 3 //
 
 // Pet's
 
+Pet = { 
 
-const nome = "Ozzy";
-let idade = 8;
-const dog = true;
-let alimentacao =  [ "Ração" , "Arroz" , "linguiça" ] ;
+    nome: "Ozzy",
+    idade: 8,
+    dog: true,
+    alimentacao:  [ "Ração" , "Arroz" , "linguiça" ],
+};
 
-const nome2 = "Erick";
-let idade2 = 15;
-const dog2 = true;
-let alimentacao2 =  [ "Ração" , "Arroz" , "linguiça" , "Palitinhos" ] ;
+Pet2 = {
 
-const nome3 = "Alice" ;
-let idade3 = 5;
-const dog3 = false;
-let alimentacao3 =  [ "Ração"] ;
+    nome: "Erick",
+    idade: 15,
+    dog: true,
+    alimentacao: [ "Ração" , "Arroz" , "linguiça" , "Palitinhos" ],
 
+};
 
-console.log (`nome: ${nome.toLocaleUpperCase()} \n idade:${idade} \n é um cachorro: ${dog} \n gosta de comer: ${alimentacao}`);
-console.log (`nome: ${nome2.toLocaleUpperCase()} \n idade:${idade2} \n é um cachorro: ${dog2} \n gosta de comer: ${alimentacao2}`);
-console.log (`nome: ${nome3.toLocaleUpperCase()} \n idade:${idade3} \n é um cachorro: ${dog3} \n gosta de comer: ${alimentacao3}`);
+Pet3 = {
+
+    nome: "Alice",
+    idade: 5,
+    dog: false,
+    alimentacao: [ "Ração"],
+
+};
+
+let animais = [];
+
+console.log(animais);
+
+animais.push(Pet, Pet2, Pet3);
 
 
