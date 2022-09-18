@@ -1,54 +1,44 @@
 //Declarando os Itens
 
-const item1 = {
+let itens = [{
     desenho: "Hora de Aventura",
     temporadas: 10,
     lgbt: true,
     principais: ["Finn", "Jake"]
 
-}
+},
 
-const item2 = {
+{
     desenho: "Sailor Moon",
     temporadas: 5,
     lgbt: true,
     principais: ["Usagi", "Mamoru", "Chibiusa", "Hotaru", "Rei Hino", "Minako Aino", "Makoto Kino"]
 
-}
+},
 
-const item3 = {
+{
     desenho: "Flapjack",
     temporadas: 3,
-    lgbt: true,
+    lgbt: false,
     principais: ["Flapjack", "Capitão Falange", "Bolha"]
 
+}]
+
+const listaTrue = []
+
+//Verifica o Booleano dos objetos!
+for (let i in itens) {
+    if (itens[i].lgbt) {
+        listaTrue.push(itens[i])
+    } else {
+        alert(`O ${itens[i].desenho} não foi adicionado a lista.`)
+    }
 }
-
-const listaItens = []
-
-if (item1.lgbt) {
-    listaItens.push(item1)
-} else {
-    alert("O item1 não foi adicionado a lista.")
-}
-
-if (item2.lgbt) {
-    listaItens.push(item2)
-} else {
-    alert("O item2 não foi adicionado a lista.")
-}
-
-if (item3.lgbt) {
-    listaItens.push(item3)
-} else {
-    alert("O item3 não foi adicionado a lista.")
-}
-
 
 //Mostrar tudo no console e tranformar os arrays em string
-for (let i in listaItens) {
-    listaItens[i].principais = listaItens[i].principais.toString()
-    console.log(listaItens[i])
+for (let i in itens) {
+    itens[i].principais = itens[i].principais.toString()
+    console.log(itens[i])
 }
 
 //3. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
@@ -66,7 +56,7 @@ function busca(array, string) {
     return alert(`Seu produto ${string} não foi encontrado.`)
 }
 
-console.log(busca(listaItens, "Sailor Moon"))
+console.log(busca(itens, "Sailor Moon"))
 
 
 // const desenho1 = "Hora de Aventura";
