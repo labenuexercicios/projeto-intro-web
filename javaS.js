@@ -1,41 +1,24 @@
-const leao = {
-    nome: "leão".toUpperCase(),
-    tempoMedioDeVida: 15, 
-    classe: true,
-    array:["rei da selva","dono da mordida que tem uma potencia de 600 a 650 PSI","sempre é o primeiro a comer"],
-}
+const nome = "leão"
+const tempoMedioDeVida = 15
+const classe = true
+const array = ["Natural da Savana", "Rei da selva", "Raçador nato"]
 
-const urso = {
-    nome: "urso-pardo".toUpperCase(),
-    tempoMedioDeVida: 26,
-    classe: true,
-    array:["têm pelagens grossas e em camadas"," são grandes, fortes e rápidos","podem andar apenas com as patas traseiras"]
-}
+const nome2 = "urso-pardo"
+const tempoMedioDeVida2 = 26
+const classe2 = false
+const array2 = ["Rei da Antarctica", "Rarnívoro", ""]
 
-const cachorro = {
-    nome: "cachorro".toUpperCase(),
-    tempoMedioDeVida: 13,
-    classe: true,
-    array:["O olfato de um cachorro é 1 milhão de vezes melhor do que o dos humanos","se não for castrada, uma pode ter 66 filhotes em 6 anos","são onívoros, eles precisam comer mais do que apenas carne"]
-}
+const nome3 = "cachorro"
+const tempoMedioDeVida3 = 13
+const classe3 = true
+const array3 = ["Melhor amigo do homem", "É um animal domestico", "Gosta muito de brincar"]
 
-const media = ((leao.tempoMedioDeVida + urso.tempoMedioDeVida + cachorro.tempoMedioDeVida) / 3)
+const media = ((tempoMedioDeVida + tempoMedioDeVida2 + tempoMedioDeVida3) / 3)
 
-const verifica = (leao.classe && urso.classe && cachorro.classe)
+// console.log(media)
 
-const nomealto = (`
-    ${leao.nome}\n${leao.tempoMedioDeVida} anos em média que eles vivem\nÉ um mamifero "${leao.classe}"\nE é ${leao.array[1]};
-
-    ${urso.nome}\n${urso.tempoMedioDeVida} anos em média que eles vivem\nÉ um carnívoro "${urso.classe}"\nOs Ursos-Pardos${urso.array[1]};
-
-    ${cachorro.nome}\n${cachorro.tempoMedioDeVida} anos em média que eles vivem\nÉ um mamifero "${cachorro.classe}"\n${cachorro.array[0]}
+console.log(`
+${nome.toUpperCase()}\n${tempoMedioDeVida}\n${classe}\n${array}\n
+${nome2.toUpperCase()}\n${tempoMedioDeVida2}\n${classe2}\n${array2}\n
+${nome3.toUpperCase()}\n${tempoMedioDeVida3}\n${classe3}\n${array3}
 `)
-
-console.log (nomealto)
-
-
-
-
-
-
-
