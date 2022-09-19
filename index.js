@@ -194,25 +194,34 @@ if (receita3.jaFez) {
 
 console.log(todasAsReceitas );
 
-//console.log(todasAsReceitas)
-//************************************Print Objetos das receitas Procuradas***************** */
-for (let a in todasAsReceitas){
-    todasAsReceitas[a].nomeDoPrato = todasAsReceitas[a].nomeDoPrato.toUpperCase();
-    console.log(`Nome do prato: ${todasAsReceitas[a].nomeDoPrato}
-Tempo de preparo: ${todasAsReceitas[a].tempoDePreparo} min
-Porções ${todasAsReceitas[a].porcoes}
-Tipo de prato: ${todasAsReceitas[a].tipo}
-Já experimentou a receita?: ${todasAsReceitas[a].jaFez}`);
-    // for(let b in todasAsReceitas[a].ingredientes){
-    //     console.log(todasAsReceitas[a].ingredientes[b].quantidade + " " + todasAsReceitas[a].ingredientes[b].medida + " de " + todasAsReceitas[a].ingredientes[b].nomeDoingrediente)
-    // }
-    console.log("\nMODO DE PREPARO")
-    for(let i in todasAsReceitas[a].modoDePreparo){
-        console.log((Number(i) + 1) + "-" + todasAsReceitas[a].modoDePreparo[i])
-        todasAsReceitas[a].stringModoDePreparo = todasAsReceitas[a].modoDePreparo.join()
-        console.log(todasAsReceitas[a].stringModoDePreparo);
-    }   
+// { Pensamento anterior
+// // for (let a in todasAsReceitas){    
+// //     todasAsReceitas[a].nomeDoPrato = todasAsReceitas[a].nomeDoPrato.toUpperCase();
+// //     console.log(`Nome do prato: ${todasAsReceitas[a].nomeDoPrato}
+// // Tempo de preparo: ${todasAsReceitas[a].tempoDePreparo} min
+// // Porções ${todasAsReceitas[a].porcoes}
+// // Tipo de prato: ${todasAsReceitas[a].tipo}
+// // Já experimentou a receita?: ${todasAsReceitas[a].jaFez}`);
+// //     for(let b in todasAsReceitas[a].ingredientes){
+// //         console.log(todasAsReceitas[a].ingredientes[b].quantidade + " " + todasAsReceitas[a].ingredientes[b].medida + " de " + todasAsReceitas[a].ingredientes[b].nomeDoingrediente)
+// //     }
+// //     console.log("\nMODO DE PREPARO")
+// //     for(let i in todasAsReceitas[a].modoDePreparo){
+// //         console.log((Number(i) + 1) + "-" + todasAsReceitas[a].modoDePreparo[i])
+// //         todasAsReceitas[a].stringModoDePreparo = todasAsReceitas[a].modoDePreparo.join()       
+// //     }  
+// //     console.log(todasAsReceitas[a].stringModoDePreparo); 
+// // }
+// } 
 
+     
+
+for (let a of todasAsReceitas){
+    for(let idx in a){
+        console.log(`${idx}: ${a[idx]}`);
+
+    }
+    a.stringDoObjeto = a.modoDePreparo.join()
 }
 
 
@@ -225,6 +234,7 @@ function devolvendoString (objeto){
     }
     stringDoObjeto = arrayObjeto.join() 
   //  console.log(stringDoObjeto )
+  
     return stringDoObjeto;
 
 }
@@ -238,7 +248,7 @@ function procuraDeReceita(receitaObjeto, qualreceita){
         console.log(receitaObjeto[i].nomeDoPrato);
         console.log(i);
         console.log(qualreceita);
-        if(receitaObjeto[i].nomeDoPrato === qualreceita)
+        if(receitaObjeto[i].nomeDoPrato.toUpperCase() === qualreceita)
         {
             return receitaObjeto[i]
 
