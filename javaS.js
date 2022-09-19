@@ -1,29 +1,17 @@
-const leao = {
-    nome: "leão",
-    tempoMedioDeVida: 15, 
-    classe: true,
-}
+const nome = "leão"
+const tempoMedioDeVida = 15
+const classe = true
 
-const urso = {
-    nome: "urso-pardo",
-    tempoMedioDeVida: 26,
-    classe: true,
-}
+const nome2 = "urso-pardo"
+const tempoMedioDeVida2 = 26
+const classe2 = false
 
-const cachorro = {
-    nome: "cachorro",
-    tempoMedioDeVida: 13,
-    classe: true,
-}
+const nome3 = "cachorro"
+const tempoMedioDeVida3 = 13
+const classe3 = true
 
-const media = ((leao.tempoMedioDeVida + urso.tempoMedioDeVida + cachorro.tempoMedioDeVida) / 3)
+const media = ((tempoMedioDeVida + tempoMedioDeVida2 + tempoMedioDeVida3) / 3)
 
-console.log (media)
+console.log(media)
 
-console.log (leao.classe && urso.classe && cachorro.classe)
-
-
-
-
-
-
+console.log(classe && classe2 && classe3)
