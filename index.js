@@ -1,40 +1,71 @@
 
 addEventListener('load', (event) => {
-    const menu = [
+    const menus = [
         {
             'comida': "Hambúrguer de costela",
             'preco': 29.90,
-            'ingredientes': ["Pão australiano", "Costelinha", "Bacon", "Queijo cheddar", "Cebola caramelizada"],
+            'ingredientes': "Pão australiano, Costelinha, Bacon, Queijo cheddar, Cebola caramelizada",
             'vegano': false
         }, {
             'comida': "Hambúrguer gourmet",
             'preco': 28.90,
-            'ingredientes': ["Pão brioche", "Carne bovina", "Bacon", "Queijo cheddar", "Cebola caramelizada"],
+            'ingredientes': "Pão brioche, Carne bovina, Bacon, Queijo cheddar, Cebola caramelizada",
             'vegano': false
         }, {
             'comida': "Hambúrguer de frango",
             'preco': 25.90,
-            'ingredientes': ["Pão brioche", "Filé de frango", "Alface", "Tomate", "Queijo prato"],
+            'ingredientes': "Pão brioche, Filé de frango, Alface, Tomate, Queijo prato",
             'vegano': false
         }, {
             'comida': "Veggie hambúrguer",
             'preco': 26.90,
-            'ingredientes': ["Pão brioche", "Hambúrguer de falafel", "Alface", "Tomate", "Cebola"],
+            'ingredientes': "Pão brioche, Hambúrguer de falafel, Alface, Tomate, Cebola",
             'vegano': true
         }]
 
-    const vegano = []
-    menu.forEach(item => {
-        if (item.vegano)
-            vegano.push(item)
-        else
-            alert(`O item ${item.comida} não foi adicionado`)
+    function minhaFunction(menu) {
+        console.log(menu.comida)
+    }
 
-    });
+    function minhaFunction2(lista, comparacao) {
+        const retorno = []
+        for (item of lista) {
+            if (item.ingredientes.includes(comparacao)) {
+                retorno.push(item);
+            } else {
+                alert("O item não contém tomate");
+            }
+        }
 
-    console.log(vegano)
+        return retorno;
+    }
+
+    function minhaFunction3(lista, comida) {
+        const retorno = []
+        for (item of lista) {
+            if (item.comida === comida) {
+                retorno.push(item);
+            } else {
+                alert(`O item não é a comida ${comida}`);
+            }
+        }
+
+        return retorno;
+    }
+
+    for (const menu of menus) {
+        minhaFunction(menu)
+        console.log(menu.ingredientes)
+    }
+
+    // const resultado = minhaFunction2(menus, "Tomate");
+    // console.log(resultado);
+
+    const resultado2 = minhaFunction3(menus, "Hambúrguer gourmet");
+    console.log(resultado2);
 
 });
+
 
 
 // const mediaPreco = (preco + preco2 + preco3 + preco4) / 4
