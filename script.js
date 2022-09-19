@@ -1,4 +1,4 @@
-// semana 3 //
+// semana 4 //
 
 // Pet's
 
@@ -30,8 +30,25 @@ Pet3 = {
 
 let animais = [];
 
+if(Pet.dog){
+    animais.push(Pet)
+}else{
+    alert( Pet.nome + " não foi incluído!")
+};
+
+if(Pet2.dog){
+    animais.push(Pet2)
+}else{
+    alert( Pet2.nome + " não foi incluído!")
+};
+
+if(Pet3.dog){
+    animais.push(Pet3)
+}else{
+    alert( Pet3.nome + " não foi incluído(a)!")
+};
+
 console.log(animais);
 
-animais.push(Pet, Pet2, Pet3);
 
 
