@@ -169,7 +169,7 @@ footer {
     gap: 28px;
     align-items: center;
     background-image: linear-gradient(180deg, rgb(215, 211, 211), rgb(57, 56, 56), rgb(66, 64, 64));
-
+    
 }
 
 .github {
@@ -186,61 +186,137 @@ footer {
 }
 
 .galery {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 10px;
-
-    background-color: rgb(43, 43, 43);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    gap: 1px;
+    background-color: rgb(189, 189, 189);
 }
-
+/* Dragon Ball */
 .dBall {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     justify-items: center;
-    align-items: center;
-    gap: 1%;
+    align-items: flex-start;
     border: 1px solid;
     border-radius: 5px;
     background-color: #ff8800;
-
+    gap: 10px;
 }
 
-.imghome {
-    height: 60vh;
+.capadragonball img {
     border: 1px solid;
-    border-radius: 5px;
+    border-radius: 50px;
+    grid-column: 1;
+    grid-row: 1/2;
 }
 
-.perfil {
+.perfil1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    gap: 2%;
-    /* justify-items: center; */
-
+    align-content:center;
+    justify-items:flex-start;
+    grid-column: 1;
+   
 }
 
-.perfil img {
+.perfil1 img {
     height: 13vh;
     border: 1px solid;
     border-radius: 40px;
 }
 
-.dBall article {
-    text-align: justify;
-    margin:10px;
+.infodragonball{
+    grid-column: 2;
+    grid-row: 1/3;
 }
 
 .dBall h2 {
     text-align: center;
 }
+/* Final Dragon Ball */
 
-.pantera {
+/* Pica-Pau */
+.picapau{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr;
+    
+}
+
+.picapau h2{ text-align: center;}
+.capapicapau img {
+    border: 1px solid;
+    border-radius: 50px;
+    grid-column: 1;
+    grid-row: 1;
+    justify-items: center;
+    
+}
+.infopicapau{
+    grid-column: 2;
+    grid-row: 1/3;
+    
+}
+.perfil2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content:center;
+    justify-items:flex-start;
+    grid-column: 1;
+    grid-row: 2/3;
+    
+}
+.perfil2 img{
+    height: 13vh;
+    border: 1px solid;
+    border-radius: 40px;
+    
+
+}
+/* Final PicaPau */
+
+/* Tom e jerry */
+.tomejerry{
+    background-color: #504c4c;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr;
+    /* justify-content: center; */
+}
+.capatom img{
+   border: 1px solid;
+    border-radius: 50px;
+    grid-column: 1;
+    grid-row: 1;
+    justify-items: center;
+}
+.perfil3{
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content:center;
+    justify-items:flex-start;
+
+}
+.perfil3 img{
+    height: 13vh;
+    border: 1px solid;
+    border-radius: 40px;
+}
+.infotomejerry{
+    border: 1px solid ;
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
+
+/* .pantera {
     background-color: pink;
     border-radius: 10px;
-}
+} */
 
 
 /* transition: opacity .2s linear;
