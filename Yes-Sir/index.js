@@ -78,7 +78,7 @@ relatorioObjeto(meusObjetos);                      //Atualizando Relatório dos 
 function buscarItens (arrayObj, string) {
     for(objeto of arrayObj){
         if(objeto.nome === string){
-            return string
+            return objeto
         }
     }
     return alert(`Seu produto ${string} não foi encontrado!`)
