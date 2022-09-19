@@ -1,0 +1,52 @@
+.banner1 {
+    background-image: url('../img/banner-principal.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw 700px;
+    background-attachment: fixed;
+    height: 1000px;
+}
+
+.banner1 {
+  position: relative;
+  text-align: center;
+}
+.banner-principal {
+position: absolute;
+
+}
+
+.banner-titulo {
+    font-size: 5em;
+    font-weight: bold;
+    color:var(--laranja);
+    line-height: 1.3em;
+    position: absolute;
+    top: 480px;
+    width: 1000px;
+    margin-left: 3em;
+    /* text-shadow: var(--preto) 0.1em 0.1em 0.3em; */
+}
+
+.banner-titulo span{
+   color: black;
+}
+
+.banner2 {
+    background-image: url('../img/banner-blog.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw 550px;
+    background-attachment: fixed;
+    height: 600px;
+}
+
+.banner3 {
+    background-image: url('../img/banner3.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw 450px;
+    background-attachment: fixed;
+    height: 600px;
+}
+

@@ -1,0 +1,61 @@
+.contato {
+text-align: center;
+margin: 30px;
+}
+
+.titulo-contato {
+    font-size: 2.5em;
+    font-family: var(--font-secundaria);
+    font-weight: 700;
+    padding-bottom: 50px;
+    margin-top: 100px;
+}
+
+.contato-formulario {
+    display: flex;
+}
+
+.img-form, .form-contato {
+    width: 50%;
+}
+
+.input-form {
+    width: 40%;
+    padding: 15px;
+    margin: 13px;
+    background-color: var(--cinza-claro);
+    border: none;
+    font-size: 0.9em;
+ }
+
+ .msg {
+    height: 90px;
+    width: 80%;
+}
+
+.btn {
+    padding: 10px 25px;
+    border: none;
+    background-color: var(--laranja);
+    color: var(--branco);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: var(--cinza);
+}
+
+.redes-contato {
+    width: 40px;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.link-redes {
+    text-decoration: none;
+}
+
+
+
+

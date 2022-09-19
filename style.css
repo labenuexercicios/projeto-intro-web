@@ -1,0 +1,29 @@
+@import url('style/navegacao.css');
+@import url('style/informacoes.css');
+@import url('style/acessorios.css');
+@import url('style/banner.css');
+@import url('style/servicos.css');
+@import url('style/contato.css');
+@import url('style/rodape.css');
+
+
+
+
+:root {
+    --cinza-claro: #ecebeb;
+    --branco: #ffffff;
+    --preto: #000000;
+    --laranja: #fe7e02;
+    --cinza-escuro: #323b3f;
+    --cinza: #666666;
+    --font-principal: 'poppins', sans-serif;
+    --font-secundaria: 'Josefin Sans', sans-serif;
+
+}
+
+body {
+    font-family: var(--font-principal);
+    font-size: 1em;
+    font-weight: 400;
+    
+}

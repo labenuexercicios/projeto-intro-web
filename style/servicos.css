@@ -1,0 +1,60 @@
+.servicos {
+    background-color: var(--cinza-claro);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card {
+    text-align: center;
+    background-color: var(--branco);
+    margin: -80px 15px 80px 30px;
+    height: 400px;
+    width: 400px;
+    position: relative;
+}
+
+.card:hover {
+    background-color: var(--laranja);
+    color: var(--branco);
+}
+
+
+.img-card {
+    width: 60px;
+    border: 1px solid var(--branco);
+    border-radius: 50%;
+    padding: 20px;
+    background-color: var(--cinza-claro);
+    margin-top: -50px;
+    
+}
+
+.titulo-card {
+    margin: 50px 0;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.texto-card {
+    margin: 0 50px ;
+    font-size: 1em;
+    line-height: 1.5em;
+    /* text-align: center; */
+}
+
+
+.img-card-link {
+    width: 20px;
+    margin: 0 auto;
+    border: 1px solid var(--laranja);
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--laranja);
+    position: absolute;
+    bottom: -15px;
+    left: 180px;
+}
+

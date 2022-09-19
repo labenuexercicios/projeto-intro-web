@@ -1,0 +1,13 @@
+.rodape {
+    background-color: var(--laranja);
+    width: 100vw;
+    height: 40px;
+    text-align: center;
+}
+
+.titulo-footer {
+    font-size: 1.5em;
+    color: var(--branco);
+    font-weight: 700;
+    padding-top: 10px; 
+}
