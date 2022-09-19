@@ -4,19 +4,19 @@ nome:"LULA",
 partido: "PT",
 esquerda: true,
 tempopoder: 8,
-projetos: "bolsa família, fome zero, primeiro emprego"
+projetos: ["bolsa família", "fome zero", "primeiro emprego"]
 },{
  nome:"FHC",
  partido: "PSDB",
  esquerda: false,
  tempopoder: 8,
- projetos: "Programa Auxílio-Gás, Programa Nacional de Renda Mínima vinculada à Saúde, Cadastramento Único do Governo Federal"},
+ projetos: ["Programa Auxílio-Gás", "Programa Nacional de Renda Mínima vinculada à Saúde", "Cadastramento Único do Governo Federal"]},
 {
 nome:"DILMA",
 partido: "PT",
 esquerda: true,
 tempopoder: 6,
-projetos: "Mais Médicos, PAC2, Programa Nacional de Acesso ao Ensino Técnico e Emprego"
+projetos: ["Mais Médicos","PAC2", "Programa Nacional de Acesso ao Ensino Técnico e Emprego"]
 }]
 
 //adicionar ao objeto
@@ -29,6 +29,20 @@ var presidentes1 = [{
 }]
 
 presidentes.push(presidentes1[0])
+
+
+//transformar string
+
+//precisa tirar o primeiro valor 
+
+for ( let i in presidentes){
+   let proje
+   for (let x in presidentes[i].projetos){
+      proje += presidentes[i].projetos[x] + `,`
+   }
+   presidentes[i].projetos = proje
+}
+
 
 //Condicinal e tratamento dados
 
@@ -61,7 +75,10 @@ function Nomecanditado(nome){
       return presidentes[i]
    } if (nome !== presidentes[i].nome){
       alert(`Não encontrado`)
-   }}}//achar uma solução para resolver a questão da resposta.
+   }}}//achar uma solução para resolver a questão da resposta.*/
+
+
+
 
 
 function media(){
@@ -74,7 +91,17 @@ function truet(){
    return teste //automatizar com laço
 }
 
-
+/*
+function Nomecanditado(nome){
+   const filtraPresidente = presidentes.filter((nome)=>{
+   if (presidentes.nome === nome){
+      alert(`${nome} foi presidente`)
+   } else if  (presidentes.nome !== nome){
+      alert(`${nome} não é válido`)
+   }
+})
+}
+*/   
 
 //console
 for (let i in presidentes){
@@ -88,3 +115,7 @@ console.log(presidentesESQ)
 console.log(truet(presidentes))
 var nome = prompt("qual o nome do canditado?").toLocaleUpperCase()
 console.log(Nomecanditado(nome))
+
+
+
+console.log(presidentes.length)
