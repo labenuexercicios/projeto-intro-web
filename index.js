@@ -59,13 +59,15 @@ const tipoRoupaAcademia2 = {
     quantidade: 6,
     verificouMarca: true,
     marca: ["adidas", "nike", "sortidos"]
+
 }
 
 const tipoRoupaAcademia3 = {
     nome: "short",
     quantidade: 3,
     verificouMarca: true,
-    marca3: ["adidas", "nike", "sortidos"]
+    marca: ["adidas", "nike", "sortidos", "misunooooooooooo" ],
+
 }
 
 
@@ -84,10 +86,67 @@ if (tipoRoupaAcademia3.verificouMarca) {
     guardarObjeto.push(tipoRoupaAcademia3)
 } else (alert("Marca não é confiável, por isso não pode ser adicionado"))
 
-for ( i of guardarObjeto ){
-    i.nome = i.nome.toUpperCase()
+console.log(guardarObjeto)
+
+/*
+for (i of guardarObjeto) {
+    
+
+    console.log(`
+    ${i.nome.toUpperCase()} 
+    Quantidade: ${i.quantidade} 
+    Marcar desejada?: ${i.verificouMarca}
+    Marcas disponíveis:${i.marca.join(",")} `)  //poderia usar tbm a função toString(), que faz a msm coisa que o join
+
 }
 
-console.log(guardarObjeto)
+*/
+
+for (i of guardarObjeto) {
+    for (propriedade in i) {
+
+console.log(`${propriedade}: ${i[propriedade]}`)
+
+}
+
+console.log("-------------")
+}
+
+
+
+
+const objetoString = (roupaFitness) => {
+    const tipoLogo = "\n" + roupaFitness.nome.toUpperCase() + 
+        "\n" + roupaFitness.quantidade +
+        "\n" + roupaFitness.verificouMarca +
+        "\n" + roupaFitness.marca + ""
+    console.log("Devolvendo a string com os dados do objeto", tipoLogo)
+}
+
+objetoString(tipoRoupaAcademia1)
+
+
+
+const objetoStringNome = (NomeRoupa, NomeMarca) => {
+ //   const outroObjeto = NomeRoupa.filter((lista) => {
+  //      return lista.nome === NomeMarca
+  for (let i in NomeRoupa){
+    if(NomeRoupa[i].nome===NomeMarca){
+        return NomeRoupa[i]
+
+    }
+    }
+   
+    return alert("Marca não encontrada")
+    
+}
+console.log(objetoStringNome(guardarObjeto,"top"))
+
+//const filtro = objetoStringNome(guardarObjeto, "top")
+//filtro.length != 0 ? console.log(filtro) : alert()
+
+//ternário
+
+
 
 
