@@ -41,3 +41,8 @@ for (let j = 0; j < adc.length; j++) {
     console.log(`Nome ${adc[j].nome.toUpperCase()}\nTempo médio de vida ${adc[j].tempoMedioDeVida}\n${adc[j].classe}\n${adc[j].array}`)
 }
 
+function queRetorna(leao){
+    console.log(leao)
+}
+
+queRetorna(leao)
