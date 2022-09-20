@@ -15,7 +15,6 @@ h1 {
 }
 
 header {
-
     position: sticky;
     top: 0px;
     background-image: linear-gradient(180deg, rgb(66, 65, 65), rgba(251, 119, 18, 0.982), rgb(66, 65, 65));
@@ -26,15 +25,16 @@ main {
     display: flex;
     min-height: 80vh;
     border: 1px solid;
-    margin-left: px;
+    background-image: linear-gradient(0deg,rgb(168, 229, 14),#333,rgb(230, 115, 6))  
+
 }
 
 .sectionA {
     display: flex;
     flex-direction: column;
     min-height: 2vh;
-    background-image: linear-gradient(90deg, rgb(43, 42, 42), rgb(230, 103, 13));
-    color: #fff;
+    /* background-image: linear-gradient(90deg, rgb(43, 42, 42), rgb(230, 103, 13)); */
+   
 }
 
 #lista {
@@ -53,7 +53,6 @@ input {
 
 button {
     border: 1px solid;
-
     border-end-start-radius: 8px;
 }
 
@@ -190,20 +189,23 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     margin: 0 auto;
-    gap: 1px;
-    background-color: rgb(189, 189, 189);
+    gap: 3em;
+    
+}
+/* Padronizando textos aside. */
+#info{
+    border-left: 2px solid;
+    grid-column: 2;
+    grid-row: 1/3;
+    text-align: justify;
+    padding: 14px ;
 }
 /* Dragon Ball */
 .dBall {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    align-items: flex-start;
-    border: 1px solid;
-    border-radius: 5px;
-    background-color: #ff8800;
-    gap: 10px;
+    grid-template-rows:  1fr;
+    gap: 1%;
 }
 
 .capadragonball img {
@@ -216,6 +218,7 @@ footer {
 .perfil1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1;
     align-content:center;
     justify-items:flex-start;
     grid-column: 1;
@@ -228,10 +231,6 @@ footer {
     border-radius: 40px;
 }
 
-.infodragonball{
-    grid-column: 2;
-    grid-row: 1/3;
-}
 
 .dBall h2 {
     text-align: center;
@@ -243,10 +242,12 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows:  1fr;
+    gap: 1%;
     
 }
 
-.picapau h2{ text-align: center;}
+.picapau h2{ 
+    text-align: center;}
 .capapicapau img {
     border: 1px solid;
     border-radius: 50px;
@@ -255,11 +256,7 @@ footer {
     justify-items: center;
     
 }
-.infopicapau{
-    grid-column: 2;
-    grid-row: 1/3;
-    
-}
+
 .perfil2{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -280,11 +277,11 @@ footer {
 
 /* Tom e jerry */
 .tomejerry{
-    background-color: #504c4c;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows:  1fr;
-    /* justify-content: center; */
+    justify-content: center;
+    gap: 1%;
 }
 .capatom img{
    border: 1px solid;
@@ -294,11 +291,10 @@ footer {
     justify-items: center;
 }
 .perfil3{
-    /* border: 1px solid; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-content:center;
-    justify-items:flex-start;
+    justify-items:center;
 
 }
 .perfil3 img{
@@ -306,18 +302,81 @@ footer {
     border: 1px solid;
     border-radius: 40px;
 }
-.infotomejerry{
-    border: 1px solid ;
-    grid-column: 2;
-    grid-row: 1/3;
+
+/* final tom e jerry */
+
+/* inicio os flistones */
+.flintstone{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr;
+    justify-content: center;
+    gap: 1%;
+}
+.flintstone-capa img{
+    border: 1px solid;
+    border-radius: 50px;
+    grid-column: 1;
+    grid-row: 1;
+    justify-items: center;
 }
 
+.perfil4{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-content:center;
+    justify-items:center;
+}
+.perfil4 img {
+    height: 13vh;
+    border: 1px solid;
+    border-radius: 40px;
+    background-color: #fff;
+}
+/* final Os flinstones */
 
-/* .pantera {
-    background-color: pink;
-    border-radius: 10px;
-} */
+/* inicio Caverna do dragao */
+.cavernadragao{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr;
+    justify-content: center;
+    gap: 1%;
+}
+.cavernadragao-capa img {
+    border: 1px solid;
+    border-radius: 50px;
+    grid-column: 1;
+    grid-row: 1;
+    justify-items: center;
+}
+.perfil5{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-content:center;
+    justify-items:center;
+}
+.perfil5 img {
+    height: 13vh;
+    border: 1px solid;
+    border-radius: 40px;
+    background-color: #fff;
+    
+}
 
 
 /* transition: opacity .2s linear;
   background-color:rgba(0,0,0,.7) */
+  @media screen and (max-width: 480px){
+    main{
+        display: block;
+        }
+    .sectionA{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .picapau{
+        display: block;
+    }
+}

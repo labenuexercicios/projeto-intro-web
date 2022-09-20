@@ -53,7 +53,7 @@ const desenho6 = {
     nome: `Caverna do Dragão `,
     criador: [`Kevin Paul Coates`, `Mark Evanier`, `Dennis Marks`],
     duracaoEpisodios: 28,
-    personagens: [`Hank`, `Eric`, `Diana `, `Sheila`, `Presto`, `Bobby `, `Mestre dos Magos`, `Uni`, `Vingador`, `Tiamat`, `Demônio das Sombras`, ``],
+    personagens: [`Hank`, `Eric`, `Diana `, `Sheila`, `Presto`, `Bobby `, `Mestre dos Magos`, `Uni`, `Vingador`, `Tiamat`, `Demônio das Sombras`,],
     anoLancamento: 1983,
     enredo: [`Um grupo de crianças vai a um parque de diversões e lá se deparam com o brinquedo Caverna do Dragão. Ao entrarem nele, são enviados a um mundo mágico, aonde vivem muitas aventuras e contam com a ajuda de Mestre dos Magos para tentar voltar para casa`],
     isContinuacao: false,
