@@ -11,6 +11,15 @@ const desenho1 = {
     isContinuacao: true,
 }
 const desenho2 = {
+    nome: 'Pokémon',
+    criador: ["Satoshi Tajiri"],
+    duracaoEpisodios: 1212,
+    personagens: ['Ash Ketchum', 'Pikachu', 'Brock Harrison', 'Misty Williams', 'James','Jessie','Meowth','Professo Carvalho'],
+    anoLancamento: 1995,
+    enredo: ['Depois que ele completa 10 anos, Ash Ketchum (Satoshi no Japão) tem permissão para começar sua jornada no mundo dos Pokémon e sonha em se tornar um mestre Pokémon. No dia em que ele receberia seu primeiro Pokémon, Ash acorda em pânico, tendo dormido demais por assistir uma batalha de Pokemón. O Professor Carvalho, o pesquisador local de Pokémon, já doou os três Pokémon iniciais de Kanto (Bulbasaur, Charmander e Squirtle) a novos Treinadores Pokémon quando Ash finalmente chega atrasado ao Laboratório de Carvalho. O único Pokémon que ele deixou é um Pikachu, que ele dá para Ash. Determinado a fazer isso em sua jornada, Ash faz o melhor para fazer amizade com Pikachu, mas ele não confia nele e se recusa a voltar para a sua Pokébola, mesmo atacando Ash com seus poderes elétricos. É só depois que Ash protege Pikachu de um grupo de Spearow irritados que Pikachu percebe o quanto Ash se preocupa com ele, levando-o a salvar Ash. Depois, ambos veem um Pokémon misterioso e não identificável que estimula os dois a trabalharem para o objetivo de Ash.'],
+    isContinuacao: true,
+}
+const desenho3 = {
     nome: 'Pica-Pau',
     criador: ['Walter Lantz', 'Ben Hardaway'],
     duracaoEpisodios: 196,
@@ -19,15 +28,6 @@ const desenho2 = {
     enredo: ['O pássaro falante Pica-Pau sempre tenta se dar bem em qualquer situação. Na companhia de seu amigo, o cavalo medroso Pé de Pano, ele adora pregar peças em seus inimigos Zeca Urubu, Zé Jacaré, Meany Ranheta, entre outros'],
     isContinuacao: true,
 
-}
-const desenho3 = {
-    nome: 'Pantera Cor-de-Rosa',
-    criador: ['Blake Edwards', ' Friz Freleng', 'Hawley Pratt', ' Manu Kumar'],
-    duracaoEpisodios: 120,
-    personagens: ['Pantera Cor-de-Rosa', 'Inspetor Clouseau', 'Charles Lytton', 'Simone Clouseau', 'Princesa Dahla'],
-    anoLancamento: 1963,
-    enredo: ['O diamante conhecido como Pantera Cor-de-Rosa está na mira de um ousado ladrão europeu e seu sobrinho, que tem a intenção de colocar a culpa do roubo no tio. Só que para isso, eles terão que despistar o desajeitado inspetor francês Jacques Clouseau.'],
-    isContinuacao: true,
 }
 const desenho4 = {
     nome: `Tom e Jerry`,
@@ -59,21 +59,12 @@ const desenho6 = {
     isContinuacao: false,
 
 }
-const desenho7 = {
-    nome: `As Aventuras de Jackie Chan`,
-    criador: [`John Rogers`, `Duane Capizzi`, `Jeff Kline`],
-    duracaoEpisodios: 95,
-    personagens: [`Jackie Cahn`, `Jade Chan`, `Tio`, `Tohru`, `Valmont`, `Hak Foo,`, `Paco`, `Viper`, ` El Tuero Fuert`, `Daolan`, `Shendu`, `Finn`, `Capitão Black`],
-    anoLancamento: 2000,
-    enredo: [`Jackie Chan, um arqueólogo amador, preferiria fazer seu trabalho discretamente para a universidade local, mas o destino deu outra mão. Isso acontece quando ele descobre que um escudo contendo um talismã é apenas o primeiro de uma dúzia perseguido por uma organização criminosa chamada A Mão Negra liderada por um homem chamado Valmont e guiado por um espírito chamado Shendu. Contra isso Jackie, sua sobrinha Jade e seu tio devem cooperar com a organização secreta de aplicação da lei, Seção 13, para se opor a essa ameaça. Ao longo do caminho, nossos heróis devem enfrentar perigos selvagens que exigirão toda a habilidade de Jackie em artes marciais e sua ousadia de superar.`],
-    isContinuacao: false,
 
-}
 
 //---- push para array de objetos!--------
 
 const desenhoArray = []
-desenhoArray.push(desenho1, desenho2, desenho3, desenho4, desenho5, desenho6, desenho7)
+desenhoArray.push(desenho1, desenho2, desenho3, desenho4, desenho5, desenho6)
 // console.log(desenhoArray)
 
 //----- media de episodios

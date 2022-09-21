@@ -13,66 +13,63 @@
 
 <body>
     <header>
-        <h1> Desenhos nostálgicos</h1>
+        <h1> Desenhos Nostálgicos</h1>
     </header>
     <br>
-<main>
-    <!-- Menu -->
-    <section class="sectionA">
-        <form>
-            <label for="texto">Pesquisar</label>
-            <input type="texto" placeholder="    Digite aqui ">
-            <button type="submit"> Clique Aqui</button>
-        </form><br><br>
-        <p>Confira os Artigos sobre os desenhos!</p>
-        <nav id="lista">
-            <ul>
-                <li class="liA">
-                    <p>DragonBall</p>
-                </li>
-                <li class="liB">
-                    <p>Pica-Pau</p>
-                </li>
-                <li class="liC">
-                    <p> Pantera Cor de Rosa</p>
-                </li>
-                <li class="liD">
-                    <p> Tom e Jerry</p>
-                </li>
-                <li class="liE">
-                    <p>Os Flintstones</p>
-                </li>
-                <li class="liF">
-                    <p> Caverna do Dragão</p>
-                </li>
-                <li class="liG">
-                    <p>As Aventuras de Jackie Chan</p>
-                </li>
-            </ul>
-        </nav>
-                
-        
-    </section>
-    <!-- galery -->
-    <section class="galery">
-    <!-- desenho1 -->
+    <main id="container">
+        <!-- Menu -->
+        <section class="sectionA">
+            <form>
+                <label for="texto">Pesquisar </label>
+                <input type="texto" placeholder="    Digite aqui ">
+                <button id="button" type="submit"> Clique Aqui</button>
+            </form><br><br>
+            <p>Confira os Artigos sobre os desenhos!</p>
+            <nav id="lista">
+                <ul>
+                    <li class="liA">
+                        <p>DragonBall</p>
+                    </li>
+                    <li class="liB">
+                        <p>Pokemón</p>
+                    </li>
+                    <li class="liC">
+                        <p> Pica-Pau</p>
+                    </li>
+                    <li class="liD">
+                        <p> Tom e Jerry</p>
+                    </li>
+                    <li class="liE">
+                        <p>Os Flintstones</p>
+                    </li>
+                    <li class="liF">
+                        <p> Caverna do Dragão</p>
+                    </li>
+                   
+                </ul>
+            </nav>
+        </section>
+        <!-- galery -->
+        <section class="galery">
+            <!-- desenho1 -->
 
-    <section class="dBall">
-            <figure class="capadragonball" >
-                 <img  src="assets/dragonBall/dragon-ball-capa.jpg" alt="dragonBall">
-            </figure>
-            <section class="perfil1">
-                <img src="assets/dragonBall/gokukid-perfil.jpg" alt="goku-perfil">
-                <img src="assets/dragonBall/kuririn-perfil.jpg" alt="">
-                <img src="assets/dragonBall/bulma-perfil.jpg" alt="">
-                <img src="assets/dragonBall/MestreKame-perfil.png" alt="">
-                <img src="assets/dragonBall/chichi-perfil.jpg" alt="">
-             </section>
+            <section class="dBall" id="container-principal">
+                <figure id="capa-desenho">
+                    <img src="assets/dragonBall/dragon-ball-capa.jpg" alt="dragonBall">
+                </figure>
+                <section class="perfil1" id="personagens">
+                    <img src="assets/dragonBall/goku-perfil.jpg" alt="goku-perfil">
+                    <img src="assets/dragonBall/kuririn-perfil.jpg" alt="kuririn-perfil">
+                    <img src="assets/dragonBall/bulma-perfil.jpg" alt="bulma-perfil">
+                    <img src="assets/dragonBall/MestreKame-perfil.png" alt="MestreKame-perfil">
+                    <img src="assets/dragonBall/chichi-perfil.jpg" alt="chichi-perfil">
+                    <img src="assets/dragonBall/picolo-perfil.jpg" alt="picolo-perfil">
+                </section>
                 <aside id="info">
                     <h2>Dragon Ball</h2><br>
                     <h4> Criador por Akira Toriyama em 1984. </h4><br>
-                    <p>Personagens importantes: Son Goku, Kuririn, Bulma, Kame-Sennin, Piccolo, Chi-Chi, Gohan, Freeza,
-                        Cell, Boo, Vegeta. </p><br>
+                    <p>Personagens importantes: Son Goku, Kuririn, Bulma, Kame-Sennin, Piccolo, Chi-Chi, Gohan,
+                        Freeza,Cell, Boo, Vegeta. </p><br>
                     <p>A história de Dragon Ball começa com Son Goku, um garoto ingênuo e puro com cauda de macaco e uma
                         força extraordinária. Ele mora sozinho após a morte de seu avô adotivo em uma montanha chamada
                         Paozu. Um dia ele conhece Bulma, uma garota muito inteligente da cidade, que estava em busca das
@@ -90,113 +87,153 @@
                         dos sayajins Vegeta, que depois também se torna seu aliado. Desta forma, juntamente com sua
                         família e seus amigos, Goku luta contra inimigos como Freeza, Cell, Boo, entre outros, se
                         tornando o protetor da Terra e todo o universo.</p>
-
                 </aside>
-    </section>
-    <!-- desenho2 -->
+            </section>
 
-            <section class="picapau">
-                <figure class="capapicapau">
+            <!-- desenho2 -->
+
+            <section class="pokemon" id="container-principal">
+                <figure id="capa-desenho">
+                    <img src="assets/pokemon/Pokemon-capa1.jpeg" alt="Pokemon">
+                </figure>
+                <section class="perfil2" id="personagens">
+                    <img src="assets/pokemon/ash-perfil.png" alt="ash-perfil">
+                    <img src="assets/pokemon/Brock-perfil.jpg" alt="Brock-perfil">
+                    <img src="assets/pokemon/Misty-perfil.png" alt="Misty-perfil">
+                    <img src="assets/pokemon/pikachu-perfil.png" alt="pikachu-perfil">
+                    <img src="assets/pokemon/miau-perfil.png" alt="miau-perfil">
+                    <img src="assets/pokemon/Professor-Carvalho-Pokémon-perfil.png"
+                        alt="Professor-Carvalho-Pokémon-perfil">
+                    <img src="assets/pokemon/James-perfil.jpg" alt="James-perfil">
+                    <img src="assets/pokemon/jesse-perfil.png" alt="jesse-perfil">
+                </section>
+                <aside id="info">
+                    <h2>Pokémon</h2><br>
+                    <h4>Criado por : Satoshi Tajiri em 1995.</h4><br>
+                    <p>Personagens : Ash Ketchum, Pikachu, Brock Harrison, Misty Williams, James, Jessie ,Meowth
+                        ,Professo Carvalho.</p><br>
+                    <p>Depois que ele completa 10 anos, Ash Ketchum (Satoshi no Japão) tem permissão para começar sua
+                        jornada no mundo dos Pokémon e sonha em se tornar um mestre Pokémon. No dia em que ele receberia
+                        seu primeiro Pokémon, Ash acorda em pânico, tendo dormido demais por assistir uma batalha de
+                        Pokemón. O Professor Carvalho, o pesquisador local de Pokémon, já doou os três Pokémon iniciais
+                        de Kanto (Bulbasaur, Charmander e Squirtle) a novos Treinadores Pokémon quando Ash finalmente
+                        chega atrasado ao Laboratório de Carvalho. O único Pokémon que ele deixou é um Pikachu, que ele
+                        dá para Ash. Determinado a fazer isso em sua jornada, Ash faz o melhor para fazer amizade com
+                        Pikachu, mas ele não confia nele e se recusa a voltar para a sua Pokébola, mesmo atacando Ash
+                        com seus poderes elétricos. É só depois que Ash protege Pikachu de um grupo de Spearow irritados
+                        que Pikachu percebe o quanto Ash se preocupa com ele, levando-o a salvar Ash. Depois, ambos veem
+                        um Pokémon misterioso e não identificável que estimula os dois a trabalharem para o objetivo de
+                        Ash.</p>
+                </aside>
+            </section>
+
+            <!-- Desenho 3  -->
+
+            <section class="picapau" id="container-principal">
+                <figure id="capa-desenho" id="personagens">
                     <img src="assets/picaPau/capa-pica-pau2.jpg" alt="picaPau">
                 </figure>
-            <section class="perfil2">
-                <img src="assets/picaPau/picapau.png" alt="pica pau perfil">
-                <img src="assets/picaPau/leoncio-perfil.jpg" alt="leoncio-perfil">
-                <img src="assets/picaPau/pe-de-pano-perfil.webp" alt="pe-de-pano-perfil">
-                <img src="assets/picaPau/zeca-urubu-perfil.jpg" alt="zeca-urubu-perfil">
-            </section>
+                <section class="perfil3">
+                    <img src="assets/picaPau/picapau.png" alt="pica pau perfil">
+                    <img src="assets/picaPau/winnie.png" alt="winnie">
+                    <img src="assets/picaPau/pe-de-pano-perfil.webp" alt="pe-de-pano-perfil">
+                    <img src="assets/picaPau/zeca-urubu-perfil.jpg" alt="zeca-urubu-perfil">
+                    <img src="assets/picaPau/leoncio-perfil.jpg" alt="leoncio-perfil">
+                    <img src="assets/picaPau/zejacare1.jpg" alt="zejacare1">
+                </section>
                 <aside id="info">
                     <h2>Pica-Pau</h2><br>
                     <h4>Criado por : Walter Lantz, Ben Hardaway.</h4><br>
-                    <p>Personagens: Pé de Pano, Winnie Pica-Pau, Leôncio, Zeca Urubu, Zé Jacaré, Dooley, Meany Ranheta,
-                    Smedley,Tweaky. </p><br>
-                    <p>
-                    O pássaro falante Pica-Pau sempre tenta se dar bem em qualquer situação. Na companhia de seu
-                    amigo, o cavalo medroso Pé de Pano, ele adora pregar peças em seus inimigos Zeca Urubu, Zé
-                    Jacaré, Meany Ranheta, entre outros
+                    <p>Personagens: Pica-Pau , Pé de Pano, Winnie Pica-Pau, Leôncio, Zeca Urubu, Zé Jacaré, Dooley,
+                        Meany Ranheta, Smedley,Tweaky.</p><br>
+                    <p> O pássaro falante Pica-Pau sempre tenta se dar bem em qualquer situação. Na companhia de seu
+                        amigo, o cavalo medroso Pé de Pano, ele adora pregar peças em seus inimigos Zeca Urubu, Zé
+                        Jacaré, Meany Ranheta, entre outros</p>
+                </aside>
+            </section>
+
+            <!--Desenho4  -->
+
+            <section class="tomejerry" id="container-principal">
+                <figure id="capa-desenho">
+                    <img src="assets/tomEJerry/TJCapa2.png" alt="TomeJerry">
+                </figure>
+                <section class="perfil4" id="personagens">
+                    <img src="assets/tomEJerry/92a62f0221f58fe503a15fcb13f5c107.png" alt="tom-perfil">
+                    <img src="assets/tomEJerry/jerry-perfil1.jpg" alt="jerry-perfil">
+                    <img src="assets/tomEJerry/spick1.jpg" alt="spick1">
+                    <img src="assets/tomEJerry/Butch-perfil.jpg" alt="Butch-perfil">
+                    <img src="assets/tomEJerry/Quacker_The_Duck-perfil.jpg" alt="Quacker_The_Duck-perfil">
+                    <img src="assets/tomEJerry/mammytwoshoesavatar-perfil.png" alt="mammytwoshoesavatar-perfil">
+                </section>
+                <aside id="info">
+                    <h2>Tom e Jerry</h2><br>
+                    <h4>Criado por : William Hanna, Joseph Barbera </h4>
+                    <p>Personagens : Tom, Jerry, Mammy Two Shoes, Spike, Butch, o gato de rua, Toodles, Joan,
+                        George,Patinho, Narrador.</p><br>
+                    <p> O centro da trama se baseia geralmente em tentativas frustradas de Tom tentando capturar
+                        Jerry,com o caos e a destruição que ainda se seguem.Tom raramente consegue capturar Jerry
+                        principalmente por causa das habilidades do engenhoso ratinho, e também por causa de sua própria
+                        estupidez. As perseguições eram eletrizantes e sempre vinham acompanhadas por uma boa trilha
+                        sonora. Também eram utilizadas diversas armadilhas e truques que no final não davam resultado
+                        satisfatório, como bombas e ratoeiras, coisas que eram fundamentais na rivalidade entre o gato e
+                        o rato. Alguns personagens também marcam presença na trama, como o bulldog Spike e o rival de
+                        Tom, o gato Butch.
                     </p>
                 </aside>
             </section>
-    <!--Desenho3  -->
+            <!--Desenho5  -->
 
-    <section class="tomejerry">
-        <figure class="capatom">
-            <img src="assets/tomEJerry/TJCapa2.png" alt="TomeJerry">
-        </figure>
-        <section class="perfil3">
-            <img src="assets/tomEJerry/tom-perfil.jpg" alt="tom-perfil">
-            <img src="assets/tomEJerry/jerry-perfil.jpg" alt="jerry-perfil">
-        </section>
-        <aside id="info">
-            <h2>Tom e Jerry</h2><br>
-            <h4>Criado por : William Hanna, Joseph Barbera </h4>
-            <p>Personagens : Tom, Jerry, Mammy Two Shoes, Spike, Butch, o gato de rua, Toodles, Joan, George,
-                Patinho, Narrador.</p><br>
-            <p>
-                O centro da trama se baseia geralmente em tentativas frustradas de Tom tentando capturar Jerry,
-                com o caos e a destruição que ainda se seguem.Tom raramente consegue capturar Jerry,
-                principalmente por causa das habilidades do engenhoso ratinho, e também por causa de sua própria
-                estupidez. As perseguições eram eletrizantes e sempre vinham acompanhadas por uma boa trilha
-                sonora. Também eram utilizadas diversas armadilhas e truques que no final não davam resultado
-                satisfatório, como bombas e ratoeiras, coisas que eram fundamentais na rivalidade entre o gato e
-                o rato. Alguns personagens também marcam presença na trama, como o bulldog Spike e o rival de
-                Tom, o gato Butch.
-            </p>
-        </aside>
-    </section>
-    <!--Desenho4  -->
+            <section class="flintstone" id="container-principal">
+                <figure id="capa-desenho">
+                    <img src="assets/osFlintsotne/os-flintstones-capa.jpg" alt="Os Flintstones">
+                </figure>
+                <section class="perfil5" id="personagens">
+                    <img src="assets/osFlintsotne/Fred-perfil.jpg" alt="Fred-perfil">
+                    <img src="assets/osFlintsotne/wilma-perfil.jpg" alt="wilma-perfil">
+                    <img src="assets/osFlintsotne/barney-perfil.jpg" alt="barney-perfil">
+                    <img src="assets/osFlintsotne/Betty_Rubble-perfil.png" alt="Betty_Rubble-perfil">
+                    <img src="assets/osFlintsotne/pedrita-perfil.jpg" alt="pedrita-perfil">
+                    <img src="assets/osFlintsotne/bambam-perfil.png" alt="bambam-perfil">
+                    <img src="assets/osFlintsotne/dino-perfil.jpg" alt="Dino">
+                </section>
+                <aside id="info">
+                    <h2>The Flintstones</h2><br>
+                    <h4>Criado por : William Hanna , Joseph Barbera</h4><br>
+                    <p>Personagens: Fred Flintstone, Wilma Flintstone, Barney Rubble, Betty Rubble, Pedrita,
+                        Bam-Bam, Dino, Gazoo, SrPedregulho.</p><br>
+                    <p> As vidas das famílias de classe média Flintstone e Rubble e suas aventuras na idade da
+                        pedra, lidando com as versões pré-históricas das tecnologias dos anos 60, quase sempre
+                        movidas a tração animal. Fred Flintstone gosta de comer e jogar boliche, além de
+                        frequentemente se meter em confusões e arrastar seu melhor amigo Barney junto. Quando
+                        isso acontece suas esposas precisam se meter e salvá-los
+                    </p>
+                </aside>
+            </section>
 
-    <section class="flintstone">
-        <figure class="flintstone-capa"><img src="assets/osFlintsotne/os-flintstones-capa.jpg" alt="Os Flintstones"></figure>
-        <section class="perfil4">
-            <img src="assets/osFlintsotne/Fred-perfil.jpg" alt="Fred-perfil">
-            <img src="assets/osFlintsotne/wilma-perfil.jpg" alt="wilma-perfil">
-            <img src="assets/osFlintsotne/barney-perfil.jpg" alt="barney-perfil">
-            <img src="assets/osFlintsotne/Betty_Rubble-perfil.png" alt="Betty_Rubble-perfil">
-            <img src="assets/osFlintsotne/pedrita-perfil.jpg" alt="pedrita-perfil">
-            <img src="assets/osFlintsotne/bambam-perfil.png" alt="bambam-perfil">
-            <img src="assets/osFlintsotne/dino-perfil.jpg" alt="">
-        </section>
-        <aside id="info">
-            <h2>The Flintstones</h2><br>
-            <h4>Criado por : William Hanna  , Joseph Barbera</h4><br>
-            <p>Personagens: Fred Flintstone, Wilma Flintstone, Barney Rubble, Betty Rubble, Pedrita, Bam-Bam, Dino, Gazoo, SrPedregulho.</p><br>
-            <p>
-                As vidas das famílias de classe média Flintstone e Rubble e suas aventuras na idade da pedra, lidando com as versões pré-históricas das tecnologias dos anos 60, quase sempre movidas a tração animal. Fred Flintstone gosta de comer e jogar boliche, além de frequentemente se meter em confusões e arrastar seu melhor amigo Barney junto. Quando isso acontece suas esposas precisam se meter e salvá-los
-            </p>
+            <!-- Desenho 6  -->
 
-        </aside>
-    </section>
-     <!-- Desenho 5  -->
-     <section class="cavernadragao">
-        <figure class="cavernadragao-capa"><img src="assets/cavernaDoDragao/cavernadragao-capa2.jpg"
-                 alt="Caverna do Dragao"></figure>
-        <section class="perfil5">
-            <img src="assets/cavernaDoDragao/hank-perfil1.jpg" alt="hank-perfil">
-            <img src="assets/cavernaDoDragao/eric-perfil1.jpg" alt="eric-perfil">
-            <img src="assets/cavernaDoDragao/Diana-perfil1.jpg" alt="Diana-perfil">
-            <img src="assets/cavernaDoDragao/sheila-perfil.jpg" alt="sheila-perfil">
-            <img src="assets/cavernaDoDragao/Presto-perfil1.jpg"  alt="Presto-perfil">
-            <img src="assets/cavernaDoDragao/bobby-perfil.jpg" alt="bobby-perfil">
-            <img src="assets/cavernaDoDragao/mestredosmagos-perfil.jpg" alt="mestredosmagos-perfil">
-            <img src="assets/cavernaDoDragao/vingador-perfil22.jpg" alt="">
-        </section>
-        <aside id="info">
-            <h2>Caverna do Dragão</h2><br>
-            <h4>Criado por : Kevin Paul Coates, Mark Evanier, Dennis Marks </h4><br>
-            <p>Personagens:Hank, Eric, Diana, Sheila, Presto, Bobby, Mestre dos Magos, Uni, Vingador, Tiamat, Demônio das Sombras. </p><br>
-            <p>
-                Um grupo de crianças vai a um parque de diversões e lá se deparam com o brinquedo Caverna do Dragão. Ao entrarem nele, são enviados a um mundo mágico, aonde vivem muitas aventuras e contam com a ajuda de Mestre dos Magos para tentar voltar para casa.
-            </p>
-        </aside>
-     </section>
-                
-                        
-
-
-            <section>
-                <figure class="jeckieChan"><img src="assets/aventuraJackieChan/capa2.jpg"
-                        alt="As Aventuras de JackieChan"></figure>
+            <section class="cavernadragao" id="container-principal">
+                <figure id="capa-desenho">
+                    <img src="assets/cavernaDoDragao/cavernadragao-capa2.jpg" alt="Caverna do Dragao">
+                </figure>
+                <section class="perfil6" id="personagens" >
+                    <img src="assets/cavernaDoDragao/hank-perfil1.jpg" alt="hank-perfil">
+                    <img src="assets/cavernaDoDragao/eric-perfil1.jpg" alt="eric-perfil">
+                    <img src="assets/cavernaDoDragao/Diana-perfil1.jpg" alt="Diana-perfil">
+                    <img src="assets/cavernaDoDragao/sheila-perfil.jpg" alt="sheila-perfil">
+                    <img src="assets/cavernaDoDragao/Presto-perfil1.jpg" alt="Presto-perfil">
+                    <img src="assets/cavernaDoDragao/bobby-perfil.jpg" alt="bobby-perfil">
+                    <img src="assets/cavernaDoDragao/mestredosmagos-perfil.jpg" alt="mestredosmagos-perfil">
+                    <img src="assets/cavernaDoDragao/vingador-perfil22.jpg" alt="">
+                </section>
+                <aside id="info">
+                    <h2>Caverna do Dragão</h2><br>
+                    <h4>Criado por : Kevin Paul Coates, Mark Evanier, Dennis Marks em 1983 e até o momento com 28 da série. </h4><br>
+                    <p><b>Personagens</b>: Eric, Diana, Sheila, Presto, Bobby, Mestre dos Magos, Uni, Vingador, Tiamat,  Demônio das Sombras. </p>
+                    <p>Um grupo de crianças vai a um parque de diversões e lá se deparam com o brinquedo Caverna do Dragão. Ao entrarem nele, são enviados a um mundo mágico, aonde vivem muitas aventuras e contam com a ajuda de Mestre dos Magos para tentar voltar para casa.
+                    </p>
+                </aside>
             </section>
         </section>
 
