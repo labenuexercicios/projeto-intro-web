@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: helvetica;
+}
+
+main{
+    position: relative;
+}
+
+article{
+    margin-top:0.313rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hdr{
+    color: white;
+    background-color: black;
+}
+
+.ftr{
+    color: black;
+    background-color: #154cf2;
+    text-align: center;
+    margin-top: 53px;
+    width: 100%;
+}
+
+.content{
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    padding-top: 1.25rem;
+    text-align: center;
+    color: white;
+}
+
+
+#author-1{
+    background-color: #154cf2;
+    border-radius: 10px;
+}
+
+
+#author-2{
+    background-color: #154cf2;
+    border-radius: 10px;
+}
+
+
+#author-3{
+    background-color: #154cf2;
+    border-radius: 10px;
+}
+
+
+#author-4{
+    background-color: #154cf2;
+    border-radius: 10px;
+}
