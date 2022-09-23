@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    border-bottom: 1px solid brown;
+    text-align: center;
+    background-color: brown;
+    color: white;
+    font-family: 'Trebuchet MS';
+    position: sticky;
+    top: 0;
+  }
+
+  main{
+    
+  }
