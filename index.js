@@ -53,3 +53,75 @@
 // "Qual sua posição no Ranking?" ${posicaoRanking4}
 // "É vencedora de Grand Slam?" ${vencedoraGrandslam4}
 // "Quais torneios a tenista já venceu? ${torneiosVencidos4}`)
+
+//==========================SEMANA 2===========================================================
+
+jogadora1 = {
+    tenista1: "Beatriz Haddad Maia",
+    idade: 26,
+    posicaoRanking1: 15,
+    vencedoraGrandslam1: false,
+    torneiosVencidos1: ["WTA 250 de Nottingham", "WTA 125 de Saint Malo", " WTA 500 de Sydney"]
+    }
+    console.log(jogadora1)
+
+    jogadora2 = {
+    tenista2: "Laura Pigossi", 
+    idade: 28,
+    posicaoRanking2: 100,
+    vencedoraGrandslam2: false,
+    torneiosVencidos2: ["ITF São Paulo, Brasil", "ITF Cairo, Egito","ITF Hammamet"]
+    }
+    console.log(jogadora2)
+
+    jogadora3 = {
+    tenista3: "Carolina Meligeni Alves",
+    idade: 26,
+    posicaoRanking3: 175,
+    vencedoraGrandeslam3: false,
+    torneiosVencidos3: ["ITF São José do Rio Preto, Brasil", "ITF São Paulo, Brasil", "ITF Itu, Brasil"]
+    }
+    console.log(jogadora3)
+
+    jogadora4 = {
+    tenista4: "Gabriela Cé",
+    idade: 29,
+    posicaoranking4: 286,
+    vencedoraGrandslam4: false,
+    torneiosVencidos4: ["ITF Campos do Jordão, Brasil", "ITF Santos, Brasil", "ITF Ribeirão Preto, Brasil"]
+    }
+    console.log(jogadora4)
+
+    const guardarMedia = ((jogadora1.idade + jogadora2.idade + jogadora3.idade + jogadora4.idade)/4)
+    console.log("A média de idade das tenistas é", (guardarMedia)) //Média dos numeros de jogadores
+    
+
+const melhoresTenistasBra = [] //array para guardar objetos
+
+melhoresTenistasBra.push(jogadora1, jogadora2, jogadora3,jogadora4)
+console.log(melhoresTenistasBra)
+
+// if (jogadora1.vencedoraGrandslam1 === true){
+//     melhoresTenistasBra.push(jogadora1)
+// } else {
+//     alert(`Tenista ${jogadora1.tenista1} não é vencedora de GranSlam`)
+
+// }
+
+// if (jogadora2.vencedoraGrandslam2 === true) {
+//     melhoresTenistasBra.push(jogadora2)
+// }else {
+//     alert(`Tenista ${jogadora2.tenista2} não é vencedora de GranSlam`)
+// }
+
+// if (jogadora3.vencedoraGrandeslam3 === true) {
+//     melhoresTenistasBra.push(jogadora2)
+// }else {
+//     alert(`Tenista ${jogadora3.tenista3} não é vencedora de GranSlam`)
+// }
+
+// if (jogadora4.vencedoraGrandslam4 === true) {
+//     melhoresTenistasBra.push(jogadora2)
+// }else {
+//     alert(`Tenista ${jogadora4.tenista4} não é vencedora de GranSlam`)
+}
