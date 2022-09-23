@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Outfit:wght@500&family=Poppins:ital,wght@1,200&display=swap');
+
+header {
+    text-align: center;
+    font-size: 3vh;
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 2vh groove rgb(222, 222, 222);
+    padding: 3vh 0;
+    color: rgb(241, 241, 241);
+}
+
+body {
+    background: rgb(241, 241, 241);
+    background: radial-gradient(circle, rgba(222, 222, 222,1) 0%, rgba(74, 74, 74,1) 100%);
+}
+
+main {
+    color: black;
+    text-align: center;
+    font-size: 3vh;
+}
+
+.titulo-main {
+    color: rgb(241, 241, 241);
+    font-size: 3vh;
+    margin-top: 4vh;
+    font-family: 'Oswald', sans-serif;
+}
+
+.busca {
+    color: rgb(241, 241, 241);
+    margin: 6vh 0;
+}
+
+#input-busca {
+    font-size: 2vh;
+    font-family: 'Oswald', sans-serif;
+}
+
+#nome, #busca {
+    padding: 1vh 1vw;
+    border: 8px groove rgb(222, 222, 222);
+}
+
+#busca {
+    font-size: 1vh;
+}
+
+#busca:hover {
+    cursor: pointer;
+}
+
+ul {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 8vh;
+    margin-top: 4vh;
+    border-bottom: 1.5vh groove rgb(241, 241, 241);
+    padding-bottom: 4vh;
+}
+
+footer {
+    background-color: rgb(55, 55, 55);
+    color: white;
+    text-align: center;
+    height: 16vh;
+    padding-top: 2vh;
+    font-family: 'Outfit', sans-serif;
+    font-size: 2vh;
+}
+
+p {
+    margin-bottom: 1vh;
+}
+
+p a {
+    color: white;
+}
+
+a {
+    color: black;
+}
