@@ -34,8 +34,6 @@ let nomeMaiusculo = receita1.toUpperCase()
 
 console.log(`${nomeMaiusculo} \nQuantidade de ingredientes: ${quantitadeIngredientes1} \nÉ vegetariana? ${ehvegetariana1}\n${arrayDeString}`)
 
-//Proejto Intro Webb - Semana 2
-
 
 //1
 receita1 = {
@@ -120,3 +118,6 @@ recebeObjetosStrings(receita, frase)
 
 
 
+=======
+//Proejto Intro Webb - semana 1
+>>>>>>> main
