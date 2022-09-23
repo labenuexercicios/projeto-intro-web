@@ -4,7 +4,7 @@
 // * uma característica String;
 // * uma característica Number;
 // * uma característica Boolean;
-Himym= {
+let Himym= {
  nome:"How I met your mother",
  AnoDeLancamento: 2005,
  episodios: 208,
@@ -18,7 +18,7 @@ Himym= {
 // Generos:${generoHimym}`)
 //2. Agora, crie três conjuntos de variáveis utilizando as características que você definiu acima. Lembre-se que deve ser o mesmo tipo de item, com três conjuntos de dados diferentes.
 
-Friends= {
+let Friends= {
     nome:"Friends",
     AnoDeLancamento: 1994,
     episodios: 236,
@@ -31,7 +31,7 @@ Friends= {
 // Generos:${generoFriends}`)
 
 
-blackMirror= {
+let blackMirror= {
     nome:"Black Mirror",
     AnoDeLancamento: 2011,
     episodios: 22,
@@ -46,13 +46,28 @@ blackMirror= {
 //ideia posso tamber criar outro boolean "continua no ar?" ou seja continua na tv aberta ou em programas de streaming.
 
 //3. Faça um cálculo de média, entre os valores numéricos respectivos de cada item. Imprima o valor da média utilizando um console.log. Guarde este valor em uma const.
-// const media= (episodiosFriends + episodiosHimym + episodiosBlackMirror)/3
-// console.log("A media de episodios das 3 series e de: "+ media) 
+const media= (blackMirror.episodios + Himym.episodios + Friends.episodios)/3;
+console.log("A media de episodios das 3 series e de: "+ media) 
 
 
 // 4. Com um console.log, imprima o resultado de uma operação lógica que checa se todos os valores de variáveis booleanas criadas até aqui são verdadeiras.
-// const continuamLancando= continuaLancandoBlackMirror && continuaLancandoFriends && continuaLancandoHimym;
-// console.log(continuamLancando)
+
+const continuamLancando= (Friends.continuaLancando && Himym.continuaLancando && blackMirror.continuaLancando);
+console.log(`Checa se todos os valores de variáveis booleanas criadas até aqui são verdadeiras: ${continuamLancando}`)
+
+
+// 6. Exiba um relatório utilizando console.log(), mostrando todos os dados de cada um dos itens criados até aqui
+//   1. O log deve exibir o dado de nome, título ou afim sempre em LETRAS MAIÚSCULAS, como no exemplo abaixo.
+
+for (const i in Friends) {
+    console.log(`${i}: ${Friends[i]}`)
+}
+for (const i in Himym) {
+    console.log(`${i}: ${Himym[i]}`)
+}
+for (const i in blackMirror) {
+    console.log(`${i}: ${blackMirror[i]}`)
+}
 
 // Crie pelo menos mais uma característica para o item que você criou. Esta característica deve ser um array. Mantenha o tipo de dado do array criado sempre o mesmo, isto é,
 //  se é um array de strings, só deve receber strings.
@@ -74,9 +89,6 @@ if(blackMirror.continuaLancando===true){
     alert('objeto nao foi adcionado na array')
 }
 
-
-
-console.log(array)
-
-// array.push(Friends, Himym, blackMirror)
-// console.log(array)
+for (const i in array) {
+    console.log(array[i])
+}
