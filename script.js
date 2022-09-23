@@ -3,7 +3,7 @@
 // Semana 3 - OK
 // Semana 4 - OK
 // Semana 5 - OK
-// Semana 6 - OKGIT
+// Semana 6 - OK
 // SEMANA 7 - OK
 
 // Objetos Séries (itens)
@@ -218,6 +218,22 @@ const arrayMinhasSeries = [];
 
 // SEMANA 4
 // Condicional para adicionar as séries no array de Objetos
+
+// condicionalAdicionaNoArray = (objSeries) => {
+//   if (objSeries.sucesso) {
+//     arrayMinhasSeries.push(objSeries);
+//   } else {
+//     alert(`A série ${objSeries.titulo}, não pode ser adicionada`);
+//   }
+// };
+
+// console.log(condicionalAdicionaNoArray(serie1));
+// console.log(condicionalAdicionaNoArray(serie2));
+// console.log(condicionalAdicionaNoArray(serie3));
+// console.log(condicionalAdicionaNoArray(serie4));
+// console.log(condicionalAdicionaNoArray(serie5));
+// console.log(condicionalAdicionaNoArray(serie6));
+
 // Condicional 1
 if (serie1.sucesso) {
   arrayMinhasSeries.push(serie1);
