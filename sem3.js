@@ -84,13 +84,13 @@ const alteraParaString = (arrayEnviado) => {
 
 }
 console.log(alteraParaString(listaProdutos))
-//console.log(listaProdutos)
+console.log(listaProdutos)
 for (let i of listaProdutos) {
-    //console.log(i)
+    console.log(i)
 }
 
 for (let i in listaProdutos) {
-   // console.log(listaProdutos[i].nome.toUpperCase(), listaProdutos[i].descricao, listaProdutos[i].estoque, listaProdutos[i].valor, listaProdutos[i].ingredientes)
+    console.log(listaProdutos[i].nome.toUpperCase(), listaProdutos[i].descricao, listaProdutos[i].estoque, listaProdutos[i].valor, listaProdutos[i].ingredientes)
 }
 
 // function devolveString (parametro){
@@ -103,13 +103,26 @@ for (let i in listaProdutos) {
 //     return stringDevolvida
 // }
 // console.log(devolveString(listaProdutos))
-//function devolveString (parametro){
+// function devolveString (parametro){
 //     for(const i of parametro){
 //         for(const j in i){
 //             console.log (parametro[i][j])
 //         }
 
-// }
+//  }}
+// Ex.03 recebe um array de objetos e transforma tudo em string
+function objetoString (listaOjetosEnviada){
+    let juntaTudo = " "
+    for(let itens of listaOjetosEnviada){
+        for(let k in itens){
+            console.log(itens[k])
+            juntaTudo += (itens[k] + " ")
+        }
+    }
+    return juntaTudo
+    }
+
+console.log(objetoString(listaProdutos))
 
 // objeto listaProdutos, dentro deste objeto na propriedade ingredientes tenho um array
 
@@ -124,11 +137,11 @@ for (let i of listaProdutos) {
 
 
 }
-
+// Ex. 04 Recebe um array de ojbetos e uma string
 const recebeArrayObjetos = (arrayInformado, stringInformada) => {
-    const resultado = arrayInformado.filter((pedevela) => {
+    const resultado = arrayInformado.filter((item) => {
         
-        return pedevela.nome === stringInformada
+        return item.nome === stringInformada
     })
     if (resultado.length > 0) {
         console.log(resultado)
@@ -137,5 +150,5 @@ const recebeArrayObjetos = (arrayInformado, stringInformada) => {
     }
 }
 
-recebeArrayObjetos(listaProdutos, "Nozinho")
+ recebeArrayObjetos(listaProdutos, "Cone")
 
