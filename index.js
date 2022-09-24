@@ -7,30 +7,30 @@ objeto1 = {
     anoDeLancamento: 1943,
     virouFilme: true,
     categorias: ["infantil", "filosofica", "poetica", "romantico"],
-    valido : true
+    valido: true
 }
 
 objeto2 = {
 
-    titulo2: "After",
-    anoDeLancamento2: 2014,
-    virouFilme2: true,
-    categorias1: ["adolescente", "romantico", "drama", "autoastral"],
+    titulo: "After",
+    anoDeLancamento: 2014,
+    virouFilme: true,
+    categorias: ["adolescente", "romantico", "drama", "autoastral"],
     valido: true
 }
 
 objeto3 = {
 
-    titulo3: "Clean Code",
-    anoDeLancamento3: 2008,
-    virouFilme3: false,
-    categoria3: ["tecnico", "filosofico", "ciencia"],
+    titulo: "Clean Code",
+    anoDeLancamento: 2008,
+    virouFilme: false,
+    categorias: ["tecnico", "filosofico", "ciencia"],
     valido: true
 
 }
 
-objeto4={
-    valido:false
+objeto4 = {
+    valido: false
 
 }
 
@@ -66,32 +66,61 @@ const livros = []
 
 if (objeto1.valido) {
     livros.push(objeto1)
-}else{
-    alert ("o item n foi adicionado")
+} else {
+    alert("o item n foi adicionado")
 }
 
 if (objeto2.valido) {
     livros.push(objeto2)
-}else{
-    alert ("o item não foi adicionado")
+} else {
+    alert("o item não foi adicionado")
 }
 
 if (objeto3.valido) {
     livros.push(objeto3)
-}else{
-    alert ("o item n foi adicionado")
+} else {
+    alert("o item n foi adicionado")
 }
 
 if (objeto4.valido) {
     livros.push(objeto4)
-}else{
-    alert ("o item não foi adicionado")
+} else {
+    // alert ("o item não foi adicionado")
 }
 
-if (objeto4.valido) {
-    livros.push(objeto4)
+for (let livroObjeto of livros) {
+    livroObjeto.categorias = livroObjeto.categorias.join(", ")
 }
+
+
 
 // livros.push(objeto1,objeto2,objeto3)
-console.log(livros)
+// console.log(livros)
 
+
+for (let livro of livros) {
+
+    objetoParaString(livro)
+
+    console.log("----------------------");
+}
+
+function objetoParaString(livroParafuncao) {
+    for (let propriedade in livroParafuncao) {
+        console.log(`${propriedade}: ${livroParafuncao[propriedade]}`)
+    }
+
+}
+
+function buscaLivroTitulo (titulo, arrayDeObjetos){
+    for(let LivroEscolhido of arrayDeObjetos){
+        if(LivroEscolhido.titulo.toLocaleLowerCase() == titulo.toLocaleLowerCase()){
+            console.log(LivroEscolhido)
+            return LivroEscolhido
+        }
+
+    }alert ("Livro não encontrado")
+    
+}
+
+buscaLivroTitulo("after",livros)
