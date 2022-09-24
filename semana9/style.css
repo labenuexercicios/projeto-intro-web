@@ -1,112 +1,95 @@
+body , ul {
+  margin: 0px;
+  padding:0px;
+  list-style: none;
+  font-size: 1.2rem;
+  background-color: #000000;
+  
+
+}  
+
+a{
+  color: azure;
+  align-self: start;
+}
 
 
-footer {
-    color: azure;
-    width: 1440px;
-    height: 100px;
-    top: 552px;
-    left: -749px;
-    background: #000000;
+header {
+  background: #1E1E1E;
+  color: white;
+  padding: 2%;}
+
+ul {
+  display: flex;
+  margin-left: 10px;
+  padding: 10px
   
-  }
+}
+
+
+button {
+  background-color: #e7e7e7;
+  color: black;
+  border: 2px solid #e7e7e7;
+  font-weight: bold;
+  width: 93px;
+  height: 37px;
+}
+
+#search {
+  padding-left: 46px;
+  background: url(./media/icons8-lup-64.png) no-repeat 10px/24px, white;
+  cursor: pointer;
+  width: 338px;
+  height: 37px;
+}
+
+article:nth-child(2) {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  max-width: 180px;
+max-height: 180px;
+}
+
+section{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+  color: azure;
+  opacity: 0.7;
+  filter: drop-shadow(0 0 0.4em rgb(38,212,255));
   
-  
-  
-  
-  body {
-    background-color: #000000;
-    background-size: cover;
-    position: absolute;
-    opacity: 0.7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    filter: drop-shadow(0 0 0.4em rgb(38,212,255));
-  
-    
-  
-  
-  
-  }
-  
-  p {
-    text-align: center;
-    font-style: oblique;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    line-height: 100px;
-    
-  }
-  
-  a {
-    color: white;
-  }
-  
-  article:nth-child(2) {
-    text-align: center;
-  
-  }
-  
-  
-  main {
-    width: 500px;
-    margin: auto;
-  
-  }
-  
-  button {
-    background-color: #e7e7e7;
-    color: black;
-    border: 2px solid #e7e7e7;
-    font-weight: bold;
-    width: 93px;
-    height: 37px;
-  }
-  
-  input {
-    padding-left: 46px;
-    background: url(./media/icons8-lup-64.png) no-repeat 10px/24px, white;
-    cursor: pointer;
-    width: 338px;
-    height: 37px;
-  }
-  
-  h1 {
-    background: #1E1E1E;
-    color: white;
-    padding: 3%;}
-  
-  section {
-    margin: 20px;
-    width: 440px;
-    height: 230px;
-    text-align: center;
-    background: black;
-    border-radius: 10px;
-    color: white;
-    transform-style: preserve-3d;
-  
-  
-  }
-  
-  section:hover{
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-  
-  #image {
-    float: left;
-    max-width: 180px;
-    max-height: 180px;
-    border-radius: 10px;
-    
-  }
-  
-  /* #search {
-  
-    cursor: pointer;
-        /* transition-property: width, border-radius, box-shadow ;
-        transition-duration: 300ms; */
-  
+}
+
+section > ul {
+  flex: 1 1 200px;
+  margin: 10px;
+  background-color: #1E1E1E;
+}
+
+
+p {
+text-align: center;
+font-style: oblique;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+line-height: 100px;
+color: #e7e7e7;
+
+}
+
+
+section:hover{
+-webkit-transform: scale(1.1);
+-moz-transform: scale(1.1);
+-o-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+}
