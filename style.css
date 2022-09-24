@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    background-color: #FFFACD;
+} */
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: #F4A460;
+    height: 12vh;
+    color: black;    
+}
+
+.titulopg{
+   /*oi*/
+}
+
+main{
+    text-align: center;
+    height: 100vh;
+    width: 99vw;
+}
+
+.todosPets{
+    height: 16vh;
+    width: 48vw;
+    margin: 12px;
+    padding: 36px;
+    background-color: #ff8c0072;
+    border: 1px solid brown;
+    text-align: left;
+}
+.imagemLista{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.imagem{
+    max-width: 100px; 
+    max-height: 150px;
+}
+
+h2{
+    text-align: center;
+    color: #FF4500;
+    height: 2px;
+    padding: 2px;
+    margin-top: 0;
+}
+
+#nome{
+    width: 360px;
+    height: 16px;
+    margin: 12px;
+}
+
+#label{
+    margin: 4px;
+}
+
+.buscador{
+    height: 14px;
+    width: 20px;
+}
+
+/* .listaPet{
+    opacity: 100%;
+} */
+
+/* #brisa{
+    border: 1px solid brown;
+    text-align: left;
+}
+
+#janis{
+    border: 1px solid brown;
+    text-align: left;
+}
+
+#marilyn{
+    border: 1px solid brown;
+    text-align: left;
+}
+
+#lua{
+    border: 1px solid brown;
+    text-align: left;
+} */
+
+button{
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    height: 22px;
+    width: 60px;
+}
+button:active{
+    background-color: #FF4500;
+    color: white;
+    border-radius: 4px;
+}
+
+#github{
+    max-width: 28px; 
+    max-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 90px;
+}
+
+#nomeMarina{
+    margin-left: 10px;
+}
+
+#ano2022{
+    margin-right: 10px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #F4A460;
+    height: 32px;
+    color: black;
+}

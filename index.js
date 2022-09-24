@@ -7,8 +7,9 @@ const nomePet1 = {
     idade: 9,
     especie: "Canina",
     raca: "Pastor Alemão",
-    vacina: confirm(`Brisa tomou vacina?`),
-    arrayBriquedos: ["Bolinha", "orelha de boi", " ossinho."]
+    vacina: true, //confirm(`Brisa tomou vacina?`),
+    arrayBriquedos: ["Bolinha", "orelha de boi", " ossinho."],
+    imagem: `./asset/WhatsApp Image 2021-04-16 at 21.59.22 (43).jpeg`
 };
 
 //console.log(nomePet1)
@@ -19,8 +20,9 @@ const nomePet2 = {
     idade: 8,
     especie: "Felina",
     raca: "SRD",
-    vacina: confirm(`Janis tomou vacina?`),
-    arrayBriquedos: ["Caixa de papelão", " arranhador de tecido", " ervinha de gato."]
+    vacina: false, //confirm(`Janis tomou vacina?`),
+    arrayBriquedos: ["Caixa de papelão", " arranhador de tecido", " ervinha de gato."],
+    imagem: `./asset/20220315_204709.jpg`
 };
 
 //console.log(nomePet2)
@@ -30,9 +32,10 @@ const nomePet3 = {
     nome: "Lua".toUpperCase(),
     idade: 2,
     especie: "Canina",
-    raca: "Shin Tzu",
-    vacina: confirm(`Lua tomou vacina?`),
-    arrayBriquedos: ["Bolinha", " ossinho", " orelha de boi", " ursinho."]
+    raca: "Shih Tzu",
+    vacina: false, //confirm(`Lua tomou vacina?`),
+    arrayBriquedos: ["Bolinha", " ossinho", " orelha de boi", " ursinho."],
+    imagem: `./asset/IMG_2112.jpeg`,
 }; 
 
 //console.log(nomePet3)
@@ -43,8 +46,9 @@ const nomePet4 = {
     idade: 7,
     especie: "Felina",
     raca: "SRD",
-    vacina: confirm(`Marilyn tomou vacina?`), 
-    arrayBriquedos: ["Caixa de papelão", " barbante enrolado", " erva de gato", " bolinha de lã."]
+    vacina: true, //confirm(`Marilyn tomou vacina?`), 
+    arrayBriquedos: ["Caixa de papelão", " barbante enrolado", " erva de gato", " bolinha de lã."],
+    imagem: `./asset/IMG_4864.jpeg`
 };
 
 //console.log(nomePet4)
@@ -182,27 +186,38 @@ funcaoPets(todosPets)
 
 console.log("=====EX04 - FUNÇÃO RECEBE OBJETO=====")
 
-const funcaoDupla = (objeto, buscaItem) =>{
-    for (let i in todosPets){
-        if (todosPets[i].nome === buscaItem){
-            return objeto[i]
-            // Vazio
-        // }else if(todosPets[i].idade === buscaItem){
-        //     //Vazio
-        // }else if(todosPets[i].especie === buscaItem){ 
-        //     //Vazio
-        // }else if(todosPets[i].raca === buscaItem){
-        //     //Vazio
-        // }else if(todosPets[i].vacina === buscaItem){
-        //     //Vazio
-        // }else if(todosPets[i].arrayBriquedos === buscaItem){
-        //     //Vazio
-        // }else{
-            
-        }}
-        return alert(`Nenhum pet foi encontrado!`) 
-    }
+const recebeArrayObjetos = (arrayInformado, stringInformada) => {
+    const resultado = arrayInformado.filter((item) => {
 
-    console.log(funcaoDupla(todosPets, "BRISA"))
+        return item.nome === stringInformada
+    })
+    if (resultado.length > 0) {
+        console.log(resultado)
+    } else {
+        alert("Nenhum pet encontrado")
+    }
+}
+
+console.log(recebeArrayObjetos(todosPets, "BRISA"))
+// const funcaoDupla = (objeto, buscaItem) =>{
+//     for (let i in todosPets){
+//         if (todosPets[i].nome === buscaItem){
+//             return objeto[i]
+//             // Vazio
+//         // }else if(todosPets[i].idade === buscaItem){
+//         //     //Vazio
+//         // }else if(todosPets[i].especie === buscaItem){ 
+//         //     //Vazio
+//         // }else if(todosPets[i].raca === buscaItem){
+//         //     //Vazio
+//         // }else if(todosPets[i].vacina === buscaItem){
+//         //     //Vazio
+//         // }else if(todosPets[i].arrayBriquedos === buscaItem){
+//         //     //Vazio
+//         // }else{
+            
+//         }}
+//         return alert(`Nenhum pet foi encontrado!`) 
+//     }
 
     
