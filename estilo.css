@@ -1,14 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 .conteiner {
     width: 400px;
     margin: auto;
     position: relative;
     color: rgb(255, 255, 255);
-    background: url(../projeto-intro-web/image/pexels-photo-7130555.jpg);
+    background: url()
 }
 
 .conteiner img {
     width: 100%;
-    background: url(../projeto-intro-web/image/pexels-photo-7130555.jpg);
+    background: url();
 }
 
 .baixoEsquerda {
@@ -62,23 +68,29 @@
 
 }
 
+button {
+    background-color: plum;
+    color: aliceblue;
+    border-radius: 10px;
+    width: 50px;
+    height: 30px;
+    position: relative;
+
+}
+
+button:active {
+    background-color: red;
+}
+
 .rodape {
-    width: 200%;
-    background: rgb(246, 152, 202);
-    position: absolute;
+    position: fixed;
+    width: 100%;
     bottom: 0;
-        padding: 20px;
+    background-color: #FFC107;
+    padding: 20px;
+
 }
 
-.rodape .copy {
-    padding-left: left 25px;
-}
-
-.rodape a {
-    float: right;
-    padding-right: 25px;
-}
-.rodape .copy,
 .rodape a {
     font-size: 14px;
     color: white;

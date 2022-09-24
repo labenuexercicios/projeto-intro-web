@@ -20,50 +20,38 @@ addEventListener('load', (event) => {
             'comida': "Veggie hambúrguer",
             'preco': 26.90,
             'ingredientes': "Pão brioche, Hambúrguer de falafel, Alface, Tomate, Cebola",
-            'vegano': true
+            'vegano': true,
+
         }]
+    //item 2
+    function relatarMenu(menu) {
+        let lanche = ""
+        for (key in menu) {
+            lanche += `${key}: ${menu[key]}\n`
+        }
+        return lanche
 
-    function minhaFunction(menu) {
-        console.log(menu.comida)
     }
+    //item 4 
+    function relatarArrayeString(menus, vegano) {
+        let menuString = "";
 
-    function minhaFunction2(lista, comparacao) {
-        const retorno = []
-        for (item of lista) {
-            if (item.ingredientes.includes(comparacao)) {
-                retorno.push(item);
-            } else {
-                alert("O item não contém tomate");
-            }
+        for (const menu of menus.filter(w => w.vegano === vegano)) {
+            menuString += `${relatarMenu(menu)}\n`
         }
 
-        return retorno;
+        return menuString
     }
 
-    function minhaFunction3(lista, comida) {
-        const retorno = []
-        for (item of lista) {
-            if (item.comida === comida) {
-                retorno.push(item);
-            } else {
-                alert(`O item não é a comida ${comida}`);
-            }
-        }
-
-        return retorno;
-    }
-
+    // Item 2 e 3
     for (const menu of menus) {
-        minhaFunction(menu)
-        console.log(menu.ingredientes)
+        console.log(relatarMenu(menu))
     }
 
-    // const resultado = minhaFunction2(menus, "Tomate");
-    // console.log(resultado);
-
-    const resultado2 = minhaFunction3(menus, "Hambúrguer gourmet");
-    console.log(resultado2);
-
+    // Item 4
+    const resultado = relatarArrayeString(menus, true)
+    if (resultado.length === 0)
+        alert('Nenhum menu encontrado')
 });
 
 
