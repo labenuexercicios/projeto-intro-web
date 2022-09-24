@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(230, 136, 13);
+    color: blue;
+    border: 1px solid blue;
+}
+
+main{
+    width: center;
+    text-align: center; 
+    height: 800px;   
+    padding:18px ;   
+}
+
+section {
+    height: 10vh;
+    width: 32vw;
+    margin: 8px;
+    padding: 36px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.Goku {
+    background-color: rgb(230, 136, 13);
+    color: blue;
+    border: 1px solid blue;
+    text-align: left;
+}
+
+.Vegeta {
+    background-color: rgb(230, 136, 13);
+    color: blue;
+    border: 1px solid blue;
+    text-align: left;
+}
+
+.Gohan {
+    background-color: rgb(230, 136, 13);
+    color: blue;
+    border: 1px solid blue;
+    text-align: left;
+}
+
+.Freeza {
+    background-color: rgb(230, 136, 13);
+    color: blue;
+    border: 1px solid blue;
+    text-align: left;
+}
+
+footer {
+    background-color:rgb(230, 136, 13);
+    color: blue;
+    border: 1px solid blue;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+  }
+
