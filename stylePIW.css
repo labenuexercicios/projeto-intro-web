@@ -2,17 +2,47 @@
     margin: 0;
     padding: 0;
   }
+
+  body{
+    background-color: #EAEAAE;
+  }
   
   header {
-    border-bottom: 1px solid brown;
-    text-align: center;
-    background-color: brown;
-    color: white;
+    border-bottom: 1px solid #5C3317;
+    background-color: #5C3317;
+    color: #EAEAAE;
     font-family: 'Trebuchet MS';
     position: sticky;
     top: 0;
+    height: 40px;
+    padding: 15px 15px;
+  }
+
+  header:active{
+    color: #EAEAAE;
+    text-decoration: none;
   }
 
   main{
-    
+    margin: 0 auto;
+    text-align: center;
+    width: 800px;
+    height: 500px;
+    padding: 50px;
+  }
+
+  section{
+    padding: 30px;
+    border: 1px solid #5C3317;
+  }
+
+  footer{
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #5C3317;
+    color: #EAEAAE;
+    text-decoration: none;
   }
