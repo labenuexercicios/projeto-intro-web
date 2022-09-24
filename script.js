@@ -153,13 +153,13 @@ relatorioSem6(bruxosHp);
 
 //2. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
 function procuraNome (array, buscaUsuario) {
-  const procura = array.filter((bruxo)=>bruxo.nome.toUpperCase()===buscaUsuario.toUpperCase())
+  const procura = array.filter((bruxo)=>bruxo.nome.toUpperCase().includes(buscaUsuario.toUpperCase()))
   if(procura.length>=1){
     return procura;
   }else{
   alert("nenhum item foi encontrado")
   }
 }
-console.log(procuraNome(bruxosHp,"severo snape"));
+console.log(procuraNome(bruxosHp,"tom"));
 
 

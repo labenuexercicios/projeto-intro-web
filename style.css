@@ -1,32 +1,62 @@
 *{
   margin: 0;
-  padding: 0;
+	/* padding: 0;
+	border: 0; */
 }
 
 #myVideo{
   position: fixed; 
-    right: 0; 
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    width: auto; 
-    height: auto; 
-    z-index: -1000;
-    background: url(harry-potter-hogwarts-wizardry-casle-free-wallpaper.webm);
-    background-size: cover; 
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto; 
+  z-index: -1000;
+  background: url(harry-potter-hogwarts-wizardry-casle-free-wallpaper.webm);
+  background-size: cover; 
 }
 header {
   background-color: black;
   color: white;
   width: 100%;
-  height: 5vh;
+  height: 12vh;
   padding: 10px;
   font-size: 18px;
-  display: flex;;
-  margin:auto;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-width: 370px;
 }
+main{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+.container-search{
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+input {
+  width: 300px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
 h1 {
   top: 20cm;
+  font-family: 'HarryP';
+  font-size: 60px;
+  color: goldenrod;
+
 }
 img {
   height: 100%;
@@ -34,51 +64,54 @@ img {
   background-color: azure;
   border-radius: 100%;
 }
-#bruxo-imagem {
+.bruxo-imagem {
   height: 160px;
   width: 160px;
 } 
 .objeto {
-  display: flex;
-  flex-direction:column;
+  display: grid;
+  grid-template-columns: 400px;
   align-items: center;
 }
 .card {
     height: 200px;
-    background-color: rgba(17, 122, 158, 0.747);
+    background-color: rgba(142, 142, 142, 0.61);
     margin-bottom: 15px;
-    width: 450px;
+    width: 400px;
+    border-radius: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    color: gold;
 }
-div {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-input {
-  width: 300px;
-  height: 40px;
-  margin: 10px;
-  border-radius: 5px;
-}
+
 button {
-  height: 45px;
+  height: 42px;
   margin: 10px;
-  padding: 10px;
+  padding: auto;
   border-radius: 5px;
   cursor: pointer;
+}
+button:hover{
+  background-color: silver;
+
 }
 li {
   list-style: none;
 }
 footer {
-  padding: 20px;
-  left: 0;
+  padding: 10px;
   bottom: 0;
   width: 100%;
   background-color: black;
   color: white;
   text-align: center;
+}
+footer img {
+  width: 32px;
+  height: 32px;
+}
+footer p {
+  font-size: 18px;
+  color:whitesmoke
 }
