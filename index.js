@@ -21,3 +21,6 @@ const voaOuNaoAnimal3 = false
 
 const mediaDePatas = (patasAnimal1+patasAnimal2+patasAnimal3)/3
 console.log(mediaDePatas)
+
+const verificarTodosAnimaisVoadoresOuNao = voaOuNaoAnimal1 && voaOuNaoAnimal2 && voaOuNaoAnimal3
+console.log(verificarTodosAnimaisVoadoresOuNao)
