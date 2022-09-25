@@ -9,15 +9,15 @@ header {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   justify-items: center;
-  align-items: center;
+  align-items: start;
   background-color: black;
 }
 
 h1 {
   color: white;
   font-family: fantasy;
-  font-size: 60px;
-  font-weight: 200;
+  font-size: 50px;
+  font-weight: 100;
 }
 
 h4 {
