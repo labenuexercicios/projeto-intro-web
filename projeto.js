@@ -34,7 +34,6 @@ objViserys = {
 
 const dragonRiders = []
 
-
 if (objAegon.montavaDragão === true) {
     dragonRiders.push(objAegon)
 } else {alert('Este rei não é um montador de Dragão. Não foi adicionado a categoria "Montador de dragão"')}
@@ -51,5 +50,61 @@ if (objViserys.montavaDragão === true) {
     dragonRiders.push(objViserys)
 } else {alert('Este rei não é um montador de Dragão. Não foi adicionado a categoria "Montador de dragão"')}
 
-console.log(dragonRiders)
+/* console.log(dragonRiders) */
 
+/////////////////////////////////////////////////
+
+let dragonKings = [objAegon,objAenys,objJaehaerys,objViserys]
+
+for (let objeto of dragonKings) {
+    objeto.descendentes = objeto.descendentes.toString()
+}
+
+console.log(objAegon)
+console.log(objAenys)
+console.log(objJaehaerys)
+console.log(objViserys)
+
+// Atividade 2
+
+function impressao (objeto){
+    for (i in objeto) {
+        console.log(objeto[i])
+    }
+}
+
+impressao (objAegon)
+impressao (objAenys)
+impressao (objJaehaerys)
+impressao (objViserys) 
+
+// Atividade 3 - 3. Crie uma função que receba como parâmetro um objeto, 
+// e devolva a string do relatório com os dados do objeto.
+
+function devolverString (arrayDragon) {
+    for (objeto of arrayDragon) {
+        for (propriedade in objeto) {
+            console.log(`${propriedade}:${objeto[propriedade]}`)
+        } console.log('--------------------')
+    }
+}
+
+devolverString (dragonKings)
+
+// Atividade 4 - 
+
+/* function devolvaString (arraydeObjetos) {
+    console.log(arraydeObjetos)
+}
+
+devolvaString (dragonKings)
+console.log(devolvaString) */
+
+
+
+"Aegon"
+
+const apenasAegon = dragonKings.filter((Aegon) => {
+    return Aegon.nome === "Aegon Targaryen"})
+
+    console.log(apenasAegon)
