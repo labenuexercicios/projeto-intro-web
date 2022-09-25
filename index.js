@@ -18,3 +18,5 @@ const nomeAnimal3 = "Foca"
 const origemAnimal3 = "Hemisfério do Norte"
 const patasAnimal3 = 0
 const voaOuNaoAnimal3 = false
+
+const imprimaMediaDePatas = console.log((patasAnimal1+patasAnimal2+patasAnimal3)/3)
