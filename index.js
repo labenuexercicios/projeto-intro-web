@@ -50,6 +50,13 @@ const arara = {nome: nomeAnimal2, origem: origemAnimal2, patas: patasAnimal2, co
 const foca = {nome: nomeAnimal3, origem: origemAnimal3, patas: patasAnimal3, cores: coresComunsAnimal3}
 
 let animais = []
-animais.push(shibaInu, arara, foca)
+
+if (animais.includes(animais.push(shibaInu, arara, foca)) === false) {
+    animais.push(shibaInu, arara, foca)
+}
+
+else {
+ alert (`Objeto não adicionado! Já existia no array.`)
+}
 
 console.log(animais)
