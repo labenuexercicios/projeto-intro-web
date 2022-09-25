@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(157, 213, 213);
+    color: rgb(73, 66, 66);
+    text-align: center;
+    padding: 8px;
+}
+
+section {
+    background-color: rgb(218, 184, 236);
+    margin: 20px;
+    padding: 32px;
+    text-align: center;
+    color: rgb(73, 66, 66);
+}
+
+li {
+    margin-top: 16px;
+    list-style-type: none;
+}
+
+.nome {
+    font-weight: bold;
+}
+
+.area-pesquisa {
+    margin-top: 12px;
+    font-style: italic;
+}
+
+.input-botao {
+    margin: 12px;
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+}

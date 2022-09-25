@@ -7,7 +7,8 @@ const cientista1 = {
     anoDescoberta: 2019,
     pais: "Estados Unidos",
     viva: true,
-    areaPesquisa: ["fotografia", "universo", "algoritimo"]  //array com caracteristicas (escolhi area de pesquisa)
+    areaPesquisa: ["fotografia", "universo", "algoritimo"],  //array com caracteristicas (escolhi area de pesquisa)
+    linkImagem: "https://s2.glbimg.com/LC0BkSbOs0672gk85aQQDlysN4c=/e.glbimg.com/og/ed/f/original/2019/04/11/captura_de_tela_2019-04-11_as_13.13.44.png"
 }
 
 const cientista2 = {
@@ -17,17 +18,19 @@ const cientista2 = {
     anoDescoberta: 1843,
     pais: "Reino Unido",
     viva: false,
-    areaPesquisa: ["matematica", "programacao", "computador"]
+    areaPesquisa: ["matematica", "programacao", "computador"],
+    linkImagem: "https://blogdaengenharia.com/wp-content/uploads/ada-lovelace-blog-da-engenharia-3.jpg"
 }
 
 const cientista3 = {
-    nome: "Maria Curie",
+    nome: "Marie Curie",
     descoberta: "Descobriu elementos químicos, como o polônio e rádio, que auxiliavam em tratamentos médicos. Foi a primeira mulher a ganhar o Prêmio Nobel de Física",
     idadeDescoberta: 31,
     anoDescoberta: 1898,
     pais: "Polônia",
     viva: false, 
-    areaPesquisa: ["quimica", "medicina", "radioatividade"]
+    areaPesquisa: ["quimica", "medicina", "radioatividade"],
+    linkImagem: "https://super.abril.com.br/wp-content/uploads/2021/04/Marie-Curie-a-polonesa-mais-brilhante-da-historia.png?w=1024&resize=1200,800"
 }
 
 const cientista4 = {
@@ -37,17 +40,19 @@ const cientista4 = {
     anoDescoberta: 2020,
     pais: "Brasil",
     viva: true,
-    areaPesquisa: ["biologia", "virus", "genetica"]
+    areaPesquisa: ["biologia", "medicina", "genetica"],
+    linkImagem: "https://claudia.abril.com.br/wp-content/uploads/2022/02/Copia-de-IMG_7294-2.jpg?quality=85&strip=info"
 }
 
 const cientista5 = {
     nome: "Hedy Lamarr",
-    descoberta: "Criou o WiFi e um aparelho que fazia interferência em rádios (usado para despistar os radares nazistas na 2ª Guerra Mundial). Além de também ser atriz e cineasta",
+    descoberta: "Criou o WiFi e um aparelho que fazia interferência em rádios (usado para despistar os radares nazistas na 2ª Guerra Mundial). Também foi atriz e cineasta",
     idadeDescoberta: 28,
     anoDescoberta: 1942,
     pais: "Austria",
     viva: false,
-    areaPesquisa: ["tecnologia", "cinema", "computador"]  
+    areaPesquisa: ["tecnologia", "cinema", "computador"],
+    linkImagem: "https://i0.wp.com/jornalgrandeabc.com/wp-content/uploads/2021/04/Everett-Collection.jpg?fit=960%2C1099&ssl=1"
 }
 
 //Semana 3
