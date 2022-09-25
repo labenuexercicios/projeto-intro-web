@@ -58,5 +58,3 @@ if (animais.includes(animais.push(shibaInu, arara, foca)) === false) {
 else {
  alert (`Objeto não adicionado! Já existia no array.`)
 }
-
-console.log(animais)
