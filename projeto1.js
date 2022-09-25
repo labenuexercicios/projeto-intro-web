@@ -50,46 +50,66 @@ const cientista5 = {
     areaPesquisa: ["tecnologia", "cinema", "computador"]  
 }
 
-////utilizando console.log(), mostre todos os dados de cada um dos itens criados
-console.log("Detalhes das cientistas: \n", cientista1, "\n", cientista2, "\n", cientista3, "\n", cientista4, "\n", cientista5)
+//Semana 3
+//item 1
+let guardarObjeto = [cientista1, cientista2, cientista3, cientista4, cientista5]
+for (i of guardarObjeto) {
+    i.areaPesquisa = i.areaPesquisa.join(", ")
+}
 
-//Média entre os valores numéricos respectivos de cada item (idades)
-const media = (cientista1.idadeDescoberta + cientista2.idadeDescoberta + cientista3.idadeDescoberta + cientista4.idadeDescoberta + cientista5.idadeDescoberta)/5
-console.log(`Media das idades das mulheres ciêntistas: ${media}`)
+// console.log(cientista3);
 
-//Com um console.log, imprima o resultado de uma operação lógica que checa se todos os valores de variáveis booleanas criadas até aqui são verdadeiras
-const verificarEstaViva = cientista1.viva && cientista2.viva && cientista3.viva && cientista4.viva && cientista5.viva
-console.log("Todas as cientistas estão vivas? ", verificarEstaViva)
+//item 2
+// for (i in cientista1) {
+//     console.log(cientista1[i]);
+// }  -->  isso seria sem função, ai teria que colocar um objeto de cada vez
+
+//usando função
+function imprimirPropriedades (objeto) {
+    for (propriedade in objeto) {
+        console.log(objeto[propriedade]);
+    }
+    console.log("======================================================");
+}
 
 
-//Semana 2
-//Crie um array vazio
-const cientistas = []
-//Adicione os objetos usando push() ao array, apenas se os booleans forem true
-//Crie uma condição else, que, em caso de valor false, exiba um **ALERT** avisando para o usuário que o item não foi adicionado.
-if (cientista1.viva) {
-    cientistas.push(cientista1)
-} else {
-    alert("Katie Bouman não foi adicionada a lista, pois não está viva")
+// imprimirPropriedades(cientista1)
+// imprimirPropriedades(cientista2)
+// imprimirPropriedades(cientista3)
+// imprimirPropriedades(cientista4)
+// imprimirPropriedades(cientista5)
+
+//item 3
+function stringComPropriedades (objeto) {
+    let arrayPropriedades = []
+    let paraString = ""
+    for (i in objeto) {
+        arrayPropriedades.push(objeto[i])
+        paraString = arrayPropriedades.join(", ")
+    }
+    console.log(paraString);
+    console.log("=====================================================");
 }
-if (cientista2.viva) {
-    cientistas.push(cientista2)
-} else {
-    alert("Ada Lovelace não foi adicionada a lista, pois não está viva")
+
+// stringComPropriedades(cientista1)
+// stringComPropriedades(cientista2)
+// stringComPropriedades(cientista3)
+// stringComPropriedades(cientista4)
+// stringComPropriedades(cientista5)
+
+//item 4
+function procurarString (arrayObjetos, stringPesquisar) {
+    const stringFiltrada = arrayObjetos.filter((objeto) => {
+        if (objeto.nome === stringPesquisar) {
+            return objeto
+        }
+    })
+
+    if (stringFiltrada.length === 0) {
+        alert ("Nome não encontrado")
+    } else {
+        console.log(stringFiltrada);
+    }
 }
-if (cientista3.viva) {
-    cientistas.push(cientista3)
-} else {
-    alert("Maria Curie não foi adicionada a lista, pois não está viva")
-}
-if (cientista4.viva) {
-    cientistas.push(cientista4)
-} else {
-    alert("Jaqueline Goes de Jesus não foi adicionada a lista, pois não está viva")
-}
-if (cientista5.viva) {
-    cientistas.push(cientista5)
-} else {
-    alert("Hedy Lamarr não foi adicionada a lista, pois não está viva")
-}
-//Checar como ficou a array final: console.log("Array com os objetos \"cientistas\" :", cientistas)
+
+// procurarString(guardarObjeto, "Ada Lovelace")
