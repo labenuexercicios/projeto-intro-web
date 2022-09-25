@@ -44,3 +44,7 @@ console.log(
     Quantas patas tem? ${patasAnimal3}
     Quais são as cores comuns do animal? ${coresComunsAnimal3}`
 )
+
+const shibaInu = {nome: nomeAnimal1, origem: origemAnimal1, patas: patasAnimal1, cores: coresComunsAnimal1}
+const arara = {nome: nomeAnimal2, origem: origemAnimal2, patas: patasAnimal2, cores: coresComunsAnimal2}
+const foca = {nome: nomeAnimal3, origem: origemAnimal3, patas: patasAnimal3, cores: coresComunsAnimal3}
