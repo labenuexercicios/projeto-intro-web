@@ -50,3 +50,6 @@ const arara = {nome: nomeAnimal2, origem: origemAnimal2, patas: patasAnimal2, co
 const foca = {nome: nomeAnimal3, origem: origemAnimal3, patas: patasAnimal3, cores: coresComunsAnimal3}
 
 let animais = []
+animais.push(shibaInu, arara, foca)
+
+console.log(animais)
