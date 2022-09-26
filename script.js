@@ -45,7 +45,7 @@ const ninjutsu6 = ["técnica de Imitação pela Sombra", "técnica da Captura pe
 const nome7 = 'nagato';
 const clan7 = 'uzumaki';
 const idade7 = 32;
-const isninja7 = true;
+const isninja7 = false;
 const ninjutsu7 = ["Jutsus absorção da alma", "Técnica da vida celestial."];
 
 const mediajunta = Number(idade + idade1 + idade2 + idade3 + idade4 + idade5 + idade6 + idade7) / 8
@@ -158,51 +158,51 @@ const ninjasarray = [];
 // 2. Crie uma condição else, que, em caso de valor false na condição acima, 
 // exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push
 
-// if (true) {
-//    if (ninja0.isninja == true) {
-//       ninjasarray.push(ninja0);
-//    } else {
-//       console.log(`**ALERT** O ${ninja0.nome} não foi adicionado, pois ele não e ninja,`)
-//    } 
-//    if (ninja1.isninja == true) {
-//       ninjasarray.push(ninja1);
-//    } else {
-//       alert(`**ALERT** O ${ninja1.nome} não foi adicionado, pois ele não e ninja,`);
-//    } 
-//    if (ninja2.isninja == true) {
-//       ninjasarray.push(ninja2);
-//    } else {
-//       alert(`**ALERT** O ${ninja2.nome} não foi adicionado, pois ele não e ninja,`);
-//    } 
-//    if (ninja3.isninja == true) {
-//       ninjasarray.push(ninja3);
-//    } else {
-//       alert(`**ALERT** O ${ninja3.nome} não foi adicionado, pois ele não e ninja,`);
-//    } 
-//    if (ninja4.isninja == true) {
-//       ninjasarray.push(ninja4);
-//    } else {
-//       alert(`**ALERT** O ${ninja4.nome} não foi adicionado, pois ele não e ninja,`);
-//    } 
-//    if (ninja5.isninja == true) {
-//       ninjasarray.push(ninja5);
-//    } else {
-//       alert(`**ALERT** O ${ninja5.nome} não foi adicionado, pois ele não e ninja,`);
-//    } 
-//    if (ninja6.isninja == true) {
-//       ninjasarray.push(ninja6);
-//    } else {
-//       alert(`**ALERT** O ${ninja6.nome} não foi adicionado, pois ele não e ninja,`);
-//    } 
-//    if (ninja7.isninja == true) {
-//       ninjasarray.push(ninja7);
-//    } else {
-//       alert(`**ALERT** O ${ninja7.nome} não foi adicionado, pois ele não e ninja,`);
-//    }
-// }
+if (true) {
+   if (ninja0.isninja == true) {
+      ninjasarray.push(ninja0);
+   } else {
+      console.log(`**ALERT** O ${ninja0.nome} não foi adicionado, pois ele não e ninja,`)
+   }
+   if (ninja1.isninja == true) {
+      ninjasarray.push(ninja1);
+   } else {
+      alert(`**ALERT** O ${ninja1.nome} não foi adicionado, pois ele não e ninja,`);
+   }
+   if (ninja2.isninja == true) {
+      ninjasarray.push(ninja2);
+   } else {
+      alert(`**ALERT** O ${ninja2.nome} não foi adicionado, pois ele não e ninja,`);
+   }
+   if (ninja3.isninja == true) {
+      ninjasarray.push(ninja3);
+   } else {
+      alert(`**ALERT** O ${ninja3.nome} não foi adicionado, pois ele não e ninja,`);
+   }
+   if (ninja4.isninja == true) {
+      ninjasarray.push(ninja4);
+   } else {
+      alert(`**ALERT** O ${ninja4.nome} não foi adicionado, pois ele não e ninja,`);
+   }
+   if (ninja5.isninja == true) {
+      ninjasarray.push(ninja5);
+   } else {
+      alert(`**ALERT** O ${ninja5.nome} não foi adicionado, pois ele não e ninja,`);
+   }
+   if (ninja6.isninja == true) {
+      ninjasarray.push(ninja6);
+   } else {
+      alert(`**ALERT** O ${ninja6.nome} não foi adicionado, pois ele não e ninja,`);
+   }
+   if (ninja7.isninja == true) {
+      ninjasarray.push(ninja7);
+   } else {
+      alert(`**ALERT** O ${ninja7.nome} não foi adicionado, pois ele não e ninja,`);
+   }
+}
 
 
-   
+
 
 //SEMANA 04
 // Reescrevendo o relatório da semana 2, altere a forma que a característica de array,
@@ -225,12 +225,12 @@ for (let index = 0; index < ninjasarray.length; index++) {
 
 //SEMANA 06
 //1. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
-function ninjaRelatorio(objeto){
-   
+function ninjaRelatorio(objeto) {
+
    console.log(`Nome: ${objeto.nome.toUpperCase()}\n Clan: ${objeto.clan}\n Idade: ${objeto.idade}\n  Isninja: ${objeto.isninja}\n Habilidades: ${objeto.ninjutsus}\n`)
 }
-for (let i =0; i< ninjasarray.length; i++){
-ninjaRelatorio(ninjasarray[i]);
+for (let i = 0; i < ninjasarray.length; i++) {
+   ninjaRelatorio(ninjasarray[i]);
 };
 //2. Crie uma função que recebe um array de objetos e uma string. 
 //Esta função deve retornar um objeto, 
@@ -239,13 +239,29 @@ ninjaRelatorio(ninjasarray[i]);
 //Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
 //aqui usando o filter
 
-// function buscarNinja(array, nome){
+function buscarNinja(array, nome) {
+   
+   const ninjas = array.filter((objeto) => objeto.nome.toUpperCase() === nome.toUpperCase());
+   if (ninjas.length >= 1) {
+      return ninjas;
+   } else {
+      alert('nenhum ninja foi encontrado.')
+   }
+}
 
-//    const ninjas = array.filter((objeto)=> objeto.nome.toUpperCase() === nome.toUpperCase());
-//    if(ninjas.length>=1){
-//        return ninjas;
-//    }else{
-//        alert('nenhum ninja foi encontrado.')
-//    }
-// }
-// console.log(buscarNinja(ninjasarray, prompt('Buscar por ninja: ')))
+function buscaPersonagem(){
+   const search = document.querySelector(".search-bar").value;
+   if(!search){
+       alert("Digite algo para que a busca aconteça");
+   }else {
+      const ninjasFiltrados = buscarNinja(ninjasarray, search);
+      console.log(ninjasFiltrados);
+      // criaNinjas(ninjasFiltrados);
+   }
+}
+
+
+
+
+
+console.log(buscarNinja(ninjasarray))
