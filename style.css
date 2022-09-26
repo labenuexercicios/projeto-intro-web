@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+    header{
+        border-bottom: 1px solid black;
+        height: 100px;       
+        width: 100vw;
+        text-align:center;
+        background-image: url(./pexels-anilha.jpg);
+        background-size: 50%;
+        padding: 50px;        
+        /*background-repeat: no-repeat;*/
+        
+      } 
+      .gym{
+        text-align: center;
+        padding: 10px;
+        font-size: 50px;
+        color: white;
+      }
+      #menu{
+        margin-top: 74px;
+        background-color: black;
+        color: white;
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* position: relative; */
+        
+        height: 50px;       
+        /* width: 100vw; */
+        border: 1px solid black;
+        font-family: Courier, monospace;
+        text-align: left;
+        
+      } 
+
+      /* .bloco-tela-inteira{
+        border: 1px solid black;
+        margin: 0 auto;
+        width: 500px;
+      } */
+      main{
+        width: 100%;
+        text-align:center; 
+        height: 800px;   
+        padding:70px ;
+        color: black; 
+        margin: 0 auto;
+        margin-top: 29px;  
+        background-color:pink;  
+          
+      }
+ 
+      #a{
+        margin-top: 50px;
+        margin-left: 150px;
+        margin-right: 150px;
+        width: 380px;
+        border: 1px solid black;
+        font-family: Courier, monospace;
+        text-align: left;
+        color: black;
+      } 
+      #b {
+        margin-top: 10px;
+        margin-left: 150px;
+        margin-right: 150px;        
+        width: 380px;
+        border: 1px solid black;
+        font-family: Courier, monospace;
+        text-align: left;
+        color: black;
+      }
+      
+      ul{
+        list-style-type: none;
+    }
+    
+      button{
+        background-color:black ;
+        color: white;
+        font-family: monospace;
+      }
+      #clicada{
+        background-color: rgb(223, 214, 214);
+        color: black;        
+      }
+      #clicada:active{  
+        background-color: white;
+        color: black;      
+      }
+      article, .d{
+        background-color: #dedede;
+        height: 25%;
+        width: 100%;
+        margin-top: 20px;
+        padding-top: 2%;
+        padding-left: 1%;
+      }
+    
+      footer{
+        background-color: black;
+        color: white;
+        padding: 18px;   
+        /*position: sticky;*/
+        bottom: 0; 
+      } 
+      .icone{
+        width: 18px;
+        height: 18px;
+      }
+      .icone-git{
+        width: 20px;
+        height: 20px;
+
+      }
+     
+      
+   

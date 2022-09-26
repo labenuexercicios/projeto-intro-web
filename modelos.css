@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    border-bottom: 1px solid black;
+    height: 100px;       
+    width: 100vw;
+   
+    text-align:center;
+    background-image: url(./pexels-anilha.jpg);
+    background-size: 50%;
+                  
+  } 
+  #menu{
+    margin-top: 66px;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;  
+    height: 50px;       
+    width: 100vw;
+    border: 1px solid black;
+    font-family: Courier, monospace;
+    text-align: left;
+
+    
+  } 
+  main{
+    width:center;
+    text-align:center; 
+    height: 1400px;   
+    padding:18px ;
+    /* display:flex; */
+            
+  } 
+ 
+  #Comprar{
+    background-color:darkmagenta;
+    color: white;  
+    width: 80px;
+    height: 30px; 
+    border-radius: 20px;     
+  }
+ #Comprar:hover{
+  background-color:rgb(230, 80, 155);
+  color: white;
+}
+  #Comprar:active{  
+    background-color:pink;
+    color: white; 
+  } 
+
+
+  #Comprar1{
+    background-color:darkmagenta;
+    color: white;  
+    width: 80px;
+    height: 30px; 
+    border-radius: 20px;     
+  }
+  #Comprar1:hover{
+  background-color:rgb(230, 80, 155);
+  color: white;
+}
+  #Comprar1:active{  
+    background-color:pink;
+    color: white; 
+  } 
+        
+   .leg{
+    width: 25%;
+    margin-top: 50px;
+    padding-top: 40%;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-image: url(./pexels-miriam-alonso-LegPretoTopCinza.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: black;
+    text-align: center;
+  }
+  .leg:hover{
+    width: 25%;
+    margin-top: 50px;
+    padding-top: 40%;
+    border-radius: 20px;
+    background-image: url(./midia/pexels-legpreta.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;   
+    
+    }
+   
+  .top{
+        width: 30%;
+        margin-top: 10px;
+        padding-top: 40%;
+        border-radius: 20px;
+        border: 2px solid black;
+        background-image: url(./pexels-topNike.jpg);
+        background-size: 80%;
+        background-repeat: no-repeat;
+        color: black;
+        text-align: center;
+        
+  }
+  .top:hover{   
+    width: 30%;
+    margin-top: 10px;
+    padding-top: 40%;
+    border-radius: 20px;
+    background-image: url(./pexels-topNiiikkkke.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    
+  }
+  /*n esta lendo essas linhas de butom*/
+ /* #comprar{  
+    background-color: orangered;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #comprar{
+    background-color: rgb(223, 214, 214);
+    color: black;        
+  }
+  #comprar:active{  
+    background-color: white;
+    color: black;      
+  }
+*/
+  footer{
+    background-color: black;
+    color: white;
+    padding: 18px;   
+    /*position: sticky;*/
+    bottom: 0; 
+  }
+  .icone{
+    width: 18px;
+    height: 18px;
+  }
+  .icone-git{
+    width: 20px;
+    height: 20px;
+
+  }
