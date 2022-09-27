@@ -1,34 +1,4 @@
 
-const nome1 = "Reyna"
-const idade1 = 25
-const classe1 = "Duelista"
-const hype1 = true
-const habilidade1 = ["Comedora de Alma", "Intagibilidade rsrs", "Olho que Cega", "Mulé fico brava"]
-
-
-const nome2 = "Viper"
-const idade2 = 30
-const classe2 = "Controladora"
-const hype2 = true
-const habilidade2 = ["Peido Tenebroso", "Parede de fumaça", "Veneninho Slime", "Bob Marley"]
-
-const nome3 = "Sova"
-const idade3 = 33
-const classe3 = "Iniciador"
-const hype3 = false
-const habilidade3 = ["Flecha ricochete", "Flecha (não vai subir ninguém)", "Drone Abelha", "Não Existe Fusca!!!"]
-
-
-const media = (idade1 + idade2 + idade3) / 3
-const hype = hype1 && hype2 && hype3
-
-console.log(media)
-console.log(hype)
-
-console.log(nome1.toUpperCase(), idade1, classe1, hype1, habilidade1)
-console.log(nome2.toUpperCase(), idade2, classe2, hype2, habilidade2)
-console.log(nome3.toUpperCase(), idade3, classe3, hype3, habilidade3)
-
 
 const allAgentes = [] 
 
@@ -36,7 +6,7 @@ const allAgentes = []
     nome: ("Reyna"),
     idade: (25),
     classe: ("Duelista"),
-    hype: (true),
+    existe: (true),
     habilidades: ["Comedora de Alma", "Intagibilidade rsrs", "Olho que Cega", "Mulé fico brava"]
 }
 
@@ -44,7 +14,7 @@ viper = {
     nome: ("Viper"),
     idade: (30),
     classe: ("Controladora"),
-    hype: (false),
+    existe: (true),
     habilidades2: ["Peido Tenebroso", "Parede de fumaça", "Veneninho Slime", "Bob Marley"],
 }
 
@@ -52,13 +22,38 @@ sova = {
     nome: ("Sova"),
     idade: (33),
     classe: ("Iniciador"),
-    hype: (false),
+    existe: (true),
     habilidades: ["Flecha ricochete", "Flecha (não vai subir ninguém)", "Drone Abelha", "Não Existe Fusca!!!"]
 }
 
 
+const media = (sova.idade + reyna.idade + viper.idade) / 3
+const existe = (sova.existe && reyna.existe && viper.existe)
+
+console.log(media)
+console.log(existe)
+
+// console.log(nome1.toUpperCase(), idade1, classe1, existe1, habilidade1)
+// console.log(nome2.toUpperCase(), idade2, classe2, existe2, habilidade2)
+// console.log(nome3.toUpperCase(), idade3, classe3, existe3, habilidade3)
 
 
+// if(reyna.existe){
+//     allAgentes.push(reyna)
+// }else{
+//     alert("Não foi adicionado o ao array porque o booleano é falso.")
+// }
+
+const verificaExiste = (objeto,array) => {
+    if(objeto.existe){
+        array.push(objeto)
+    }else{
+        alert("Não foi adicionado o ao array porque o booleano é falso.")
+    }
+} 
+verificaExiste(reyna,allAgentes);
+verificaExiste(sova,allAgentes);
+verificaExiste(viper,allAgentes);
 
 
 
