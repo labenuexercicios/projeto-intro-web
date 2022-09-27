@@ -1,0 +1,5 @@
+// console.log(allAgentes.reyna.toUpperCase(),allAgentes.nome[0],allAgentes.idade[2],allAgentes.classe[3],allAgentes.hype[3],allAgentes.habilidades[4])
+
+// console.log(allAgentes.viper.toUpperCase(),allAgentes.nome[0],allAgentes.idade[2],allAgentes.classe[3],allAgentes.hype[3],allAgentes.habilidades[4])
+
+// console.log(allAgentes.sova.toUpperCase(),allAgentes.nome[0],allAgentes.idade[2],allAgentes.classe[3],allAgentes.hype[3],allAgentes.habilidades[4])

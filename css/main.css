@@ -1,0 +1,16 @@
+header-1{background-color:#e41b1b}
+
+ body{
+    margin: 0;
+    padding: 0;
+
+    background-color: blue;
+ }
+ .menu-principal{
+    background-color: black;
+ }
+ .menu-principal img{
+    height: 100px; 
+    align-items: center;
+}
+ 
