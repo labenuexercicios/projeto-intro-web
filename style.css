@@ -67,3 +67,21 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+
+@media screen and (min-device-width : 481px) and (max-device-width : 920px)  {
+    div {
+        grid-template-columns: 3fr;
+    }
+}
+@media screen and (min-device-width : 320px) and (max-device-width : 510px){
+    div {
+        grid-template-columns: 3fr;
+    }
+    section {
+        height: 45vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
