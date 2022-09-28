@@ -22,8 +22,6 @@ img {
     list-style-type: none;
     padding: 10px;
 }
-
-
 div {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -31,10 +29,35 @@ div {
     row-gap: 2vh;
     margin-bottom: 2vh;
 }
+section {
+    height: 30vh;
+}
 #section1 {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: orange;
+}
+#section2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: orange;
+}
+#section3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-color: orange;
+}
+#section4 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
     background-color: orange;
 }
 
