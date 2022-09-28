@@ -73,13 +73,16 @@ footer {
     div {
         grid-template-columns: 3fr;
     }
+    section {
+        height: 20vh;
+    }
 }
 @media screen and (min-device-width : 320px) and (max-device-width : 510px){
     div {
         grid-template-columns: 3fr;
     }
     section {
-        height: 45vh;
+        height: 35vh;
         justify-content: center;
         align-items: center;
     }
