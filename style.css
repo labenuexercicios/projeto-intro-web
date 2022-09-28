@@ -16,16 +16,16 @@ img {
     height: 150px;
     border-radius: 50%;
     padding: 2vh 1vw;
+    margin-left: 5vw;
 }
 .lista {
-    display: grid;
     list-style-type: none;
+    padding: 10px;
 }
 
 
 div {
     display: grid;
-    background-color: blue;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     row-gap: 2vh;
