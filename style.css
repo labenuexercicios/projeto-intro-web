@@ -62,14 +62,14 @@ div {
 input {
     width: 400px;
     height: 40px;
-    color: white;
+    color: black;
     margin: 10px;
     border-bottom: solid 2px orangered;
     border-radius: 5px;
     transition: 0.5s;
     font-size: 18px;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 input:hover {
@@ -130,7 +130,9 @@ img {
 }
 
 #card:hover {
-    background: url('./img/gifs-do-sharingan-8.gif') left center no-repeat;
+    height: 240px;
+    width: 500px;
+    background: url('./img/gifs/naruto.gif') left center no-repeat;
     background-size: 500px;
     color: white;
     text-align: left;
@@ -140,6 +142,96 @@ img {
     border: white solid 2px;
 }
 
+#card:nth-child(2):hover {
+    height: 240px;
+    width: 500px;
+    background: url('./img/gifs/kakashi.gif') left center no-repeat;
+    background-size: 500px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    text-shadow: azure 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border: white solid 2px;
+}
+
+#card:nth-child(3):hover {
+    height: 240px;
+    width: 500px;
+    background: url('./img/gifs/jiraiya.gif') right;
+    background-size: 500px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    text-shadow: azure 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border: white solid 2px;
+}
+
+#card:nth-child(4):hover {
+    height: 240px;
+    width: 500px;
+    background: url('./img/gifs/maitogai.gif') right;
+    background-size: 500px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    text-shadow: azure 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border: white solid 2px;
+}
+
+#card:nth-child(5):hover {
+    height: 240px;
+    width: 500px;
+    background: url('./img/gifs/rocklee.gif') right;
+    background-size: 500px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    text-shadow: azure 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border: white solid 2px;
+}
+
+#card:nth-child(6):hover {
+    height: 240px;
+    width: 500px;
+    background: url('./img/gifs/neji.webp') right;
+    background-size: 500px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    text-shadow: azure 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border: white solid 2px;
+}
+
+#card:nth-child(7):hover {
+    height: 240px;
+    width: 500px;
+    background: url('./img/gifs/shikamaru1.gif') right;
+    background-size: 500px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    text-shadow: azure 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border: white solid 2px;
+}
+
+#card:nth-child(8):hover {
+    height: 240px;
+    width: 500px;
+    background: url('./img/gifs/nagato-rinnegan.gif') right;
+    background-size: 500px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    text-shadow: azure 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border: white solid 2px;
+}
 /* img:hover {
     transform:scale(1.2);
 } */

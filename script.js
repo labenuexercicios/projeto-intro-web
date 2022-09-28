@@ -89,6 +89,7 @@ const ninja0 = {
    idade: 17,
    isninja: true,
    ninjutsus: ['Clones das Sombras', 'Jutsu Sexy'],
+   img: "img/naruto.png"
 }
 
 const ninja1 = {
@@ -96,7 +97,8 @@ const ninja1 = {
    clan: 'Hatake',
    idade: 28,
    isninja: false,
-   ninjutsus: ['copiar habilidades', 'chidori']
+   ninjutsus: ['copiar habilidades', 'chidori'],
+   img: "img/kakashi.png"
 }
 
 const ninja2 = {
@@ -104,7 +106,8 @@ const ninja2 = {
    clan: 'Hatake',
    idade: 51,
    isninja: false,
-   ninjutsus: ["rasengan", "odama rasengan"]
+   ninjutsus: ["rasengan", "odama rasengan"],
+   img: "img/jiraiya.png"
 }
 
 const ninja3 = {
@@ -112,7 +115,8 @@ const ninja3 = {
    clan: 'Sem Clan',
    idade: 28,
    isninja: true,
-   ninjutsus: ["Os Noves Portões"]
+   ninjutsus: ["Os Noves Portões"],
+   img: "img/maito-gai.png"
 }
 
 const ninja4 = {
@@ -120,7 +124,8 @@ const ninja4 = {
    clan: 'Sem Clan',
    idade: 17,
    isninja: true,
-   ninjutsus: ["Só Tem Taijuts"]
+   ninjutsus: ["Só Tem Taijuts"],
+   img: "img/rock-lee.png"
 }
 
 const ninja5 = {
@@ -128,7 +133,8 @@ const ninja5 = {
    clan: 'Hyuga',
    idade: 17,
    isninja: false,
-   ninjutsus: ["oito trigamas", "Emissão de chakara"]
+   ninjutsus: ["oito trigamas", "Emissão de chakara"],
+   img: "img/neji.png"
 }
 
 const ninja6 = {
@@ -136,7 +142,8 @@ const ninja6 = {
    clan: 'Nara',
    idade: 26,
    isninja: true,
-   ninjutsus: ["técnica de Imitação pela Sombra", "técnica da Captura pela Sombra"]
+   ninjutsus: ["técnica de Imitação pela Sombra", "técnica da Captura pela Sombra"],
+   img: "img/shikamaru.png"
 }
 
 const ninja7 = {
@@ -144,7 +151,8 @@ const ninja7 = {
    clan: 'Uzumaki',
    idade: 32,
    isninja: false,
-   ninjutsus: ["Jutsus absorção da alma", "Técnica da vida celestial."]
+   ninjutsus: ["Jutsus absorção da alma", "Técnica da vida celestial."],
+   img: "img/nagato.png"
 }
 
 // Semana 3
@@ -240,26 +248,48 @@ for (let i = 0; i < ninjasarray.length; i++) {
 //aqui usando o filter
 
 function buscarNinja(array, nome) {
-   
-   const ninjas = array.filter((objeto) => objeto.nome.toUpperCase() === nome.toUpperCase());
-   if (ninjas.length >= 1) {
-      return ninjas;
-   } else {
-      alert('nenhum ninja foi encontrado.')
+
+   if(nome != undefined){
+
+      const ninjas = array.filter((objeto) => objeto.nome.toUpperCase() == nome.toUpperCase());
+      if (ninjas.length >= 1) {
+         return ninjas;
+      } else {
+         alert('nenhum ninja foi encontrado.')
+      }
    }
+   
 }
 
 function buscaPersonagem(){
+
+   let html ;
+
    const search = document.querySelector(".search-bar").value;
    if(!search){
        alert("Digite algo para que a busca aconteça");
    }else {
       const ninjasFiltrados = buscarNinja(ninjasarray, search);
       console.log(ninjasFiltrados);
-      // criaNinjas(ninjasFiltrados);
+
+      html = `<section id="card">
+
+                <div id="ninja-imagem"><img class="naruto" src="${ninjasFiltrados[0].img}" alt="imagem do naruto"></div>
+                <ul>
+                    <li id="nome"><a href="https://pt.wikipedia.org/wiki/Naruto" target="_blank">Nome: ${ninjasFiltrados[0].nome}</a></li>
+                    <li><strong>Clan:</strong> ${ninjasFiltrados[0].clan}</li>
+                    <li>Idade: ${ninjasFiltrados[0].idade}</li>
+                    <li>Isninja: ${ninjasFiltrados[0].isninja}</li>
+                    <li>Ninjutsus: ${ninjasFiltrados[0].ninjutsus}</li>
+
+                </ul>
+            </section>`;
+
+      document.querySelector(".card-container").innerHTML = "";
+      document.querySelector(".card-container").innerHTML = html;
+   
    }
 }
-
 
 
 
