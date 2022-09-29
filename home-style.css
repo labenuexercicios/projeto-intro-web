@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: white;
+    height: 10%;
+    border-bottom: 1px solid green;
+}
+main{
+    height: 88%;
+    min-height: 800px;
+    background-color: white;
+    font-family: helvetica;
+    text-align: center;
+}
+footer{
+    height: 2%;
+    background-color: green;
+    color: white;
+}
+#logo-super-brasil{
+    width: 600px;
+    padding: 1%;
+}
+#botao-voltar{
+    margin: 0px 0px 0 0;
+    width: 40px;
+    height: 40px;
+}
+
+header>button:hover{
+    border: 2px solid green;
+    border-radius: 2px;
+    background-color: white;
+
+}
+header>button{
+    float:right;
+    margin: 25px 25px 0 0;
+    
+}
+
+main>h1{
+    font-size: 50px;
+    padding: 20px 0 0 50px;
+    text-align: left;
+    color: rgb(3, 92, 3);
+}
+
+main>img{
+    margin: 20px;
+}
+
+main>p{
+    text-align: justify;
+    margin: 0 50px;
+}

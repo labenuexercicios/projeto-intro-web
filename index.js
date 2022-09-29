@@ -2,7 +2,7 @@
 const item1 = {
   nome: "Macarrão",
   marca: "Amália",
-  precoVenda: 2.89,
+  preco: 2.89,
   quantidade: 2000,
   vencido: false,
   tipo: ["Penne", "Grande"],
@@ -11,7 +11,7 @@ const item1 = {
 const item2 = {
   nome: "Arroz",
   marca: "Tio João",
-  precoVenda: 26.99,
+  preco: 26.99,
   quantidade: 300,
   vencido: false,
   tipo: ["Branco", "Pequeno"],
@@ -20,7 +20,7 @@ const item2 = {
 const item3 = {
   nome: "Feijão",
   marca: "Supang",
-  precoVenda: 6.99,
+  preco: 6.99,
   quantidade: 5000,
   vencido: true,
   tipo: ["Vermelho", "Grande"],
@@ -60,8 +60,12 @@ function imprimeRelatorio(array, string) {
     }
   }
 }
-function devolveString(objeto) {
-  return objeto.tipo;
+function devolveString(objArray) {
+  let strings = ""
+  for (let string of objArray) {
+    strings += string + ", "
+  }
+  return strings;
 }
 function procuraString(arrayDeObj, string) {
   let obj = {};
@@ -76,18 +80,19 @@ function procuraString(arrayDeObj, string) {
   }
   if (j === 0) {
     alert(`O item ${string} buscado não foi encontrado!`);
-    return;
+    return false;
   }
   return obj;
 }
 
-agruparItensComValidadeBoaOuNaoEmArrays(item1);
-agruparItensComValidadeBoaOuNaoEmArrays(item2);
-agruparItensComValidadeBoaOuNaoEmArrays(item3);
 
-imprimeRelatorio(estoque, "estoque");
-imprimeRelatorio(descarte, "descarte");
+// agruparItensComValidadeBoaOuNaoEmArrays(item1);
+// agruparItensComValidadeBoaOuNaoEmArrays(item2);
+// agruparItensComValidadeBoaOuNaoEmArrays(item3);
 
-console.log(`Tipo: ${devolveString(estoque[0])}`);
+// imprimeRelatorio(estoque, "estoque");
+// imprimeRelatorio(descarte, "descarte");
 
-console.log(procuraString(estoque, "feijão"));
+// console.log(`Tipo: ${devolveString(item1.tipo)}`);
+
+// console.log(procuraString(estoque, "feijão"));

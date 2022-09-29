@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: white;
+    height: 10%;
+    border-bottom: 1px solid green;
+}
+main{
+    height: 88%;
+    min-height: 800px;
+    background-color: white;
+    font-family: helvetica;
+}
+footer{
+    height: 2%;
+    background-color: green;
+    color: white;
+}
+section{
+    text-align: right;
+}
+
+.itens{
+    margin: 20px;
+    width: 150px;
+    border-radius: 75px;
+    box-shadow: 5px 5px 10px rgb(143, 142, 142);
+}
+
+#logo-super-brasil{
+    width: 600px;
+    padding: 1%;
+}
+
+#centro{
+    width: 500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li{
+	
+	border-right: none;
+}
+
+ul{
+    width: 200px;
+    text-align: center;
+    background-color: white;
+    list-style-type: none; 
+	/* padding:0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px; */
+    float:left;
+    margin: 43px 0 0 20px;
+}
+
+#home{
+    margin: 0px 0px 0 0;
+    width: 40px;
+    height: 40px;
+}
+
+header>button:hover{
+    border: 2px solid green;
+    border-radius: 2px;
+    background-color: white;
+
+}
+header>button{
+    float:right;
+    margin: 25px 25px 0 0;
+    
+}
+
+.subtitulo{
+    padding: 10px 0 0 20px;
+}
+
+.botao{
+    padding: 40px;
+    text-align: center;
+}
+
+.subtitulo{
+    font-size: 50px;
+    padding: 20px 0 0 50px;
+    text-align: left;
+    color: rgb(3, 92, 3);
+}
