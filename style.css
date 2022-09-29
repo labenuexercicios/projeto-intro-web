@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin:0
+}
+.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "left header right"
+    "left search-box right"
+    "left main right"
+    "left footer right";
+    grid-template-columns: 245px 4fr 245px;
+    grid-template-rows: 100px 104px 1fr 55px;
+  }
+  .header {
+    grid-area: header;
+    color: #c00707;
+    border: 1px solid rgb(255, 0, 0);
+    position:initial;
+    text-align: center;
+    font-size: 30px;
+  }
+  #LogoAstaroth{
+    height: 100px;
+    position: absolute;
+    left: 246px;
+    top: 0px;
+}
+  .search-box {
+    grid-area: search-box;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-85%, -50%);
+
+    background: rgb(0, 0, 0);
+    color: #c00707;
+    height: 50px;
+    padding: 10px;
+    border-radius: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ::-webkit-input-placeholder{
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #c00707;
+}
+.loupe-white{
+    display: none;
+}
+.search-text{
+    background: none;
+    border: 0;
+    outline: 0;
+
+    padding: 0;
+
+    font-size: 16px;
+    color: #c00707;
+
+    transition: 0.4s;
+    width: 0;
+}
+.search-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+.search-box:hover > .search-text{
+    width: 320px;
+    padding-left: 20px;
+}
+.search-box:hover > .search-btn{
+    background-color: #c00707;
+}
+.search-box:hover> .search-btn .loupe-blue{
+    display: none;
+}
+.search-box:hover> .search-btn .loupe-white{
+    display: block;
+}
+.left {
+    grid-area: left;
+    background-image: url(https://t1.uc.ltmcdn.com/pt/posts/8/9/0/como_fazer_pentagrama_invertido_10098_600.jpg)
+}
+.right {
+    grid-area: right;
+    background-image: url(https://t1.uc.ltmcdn.com/pt/posts/8/9/0/como_fazer_pentagrama_invertido_10098_600.jpg);
+  }
+  .main {
+    grid-area: main;
+    display: grid;
+    justify-items: center;
+    font-family: Luminari, fantasy;
+    color: #c00707;
+  }
+  .footer {
+    grid-area: footer;
+    border: 1px solid rgb(255, 0, 119);
+    color: #c00707;
+    font-family: Luminari, fantasy;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  body{
+    background: linear-gradient(287.56deg, rgb(0, 0, 0) 70%, rgb(255, 0, 0) 100%);
+}
+
+ul{
+    font-size: 24px;
+    display: grid;
+    justify-items: center
+}
+
+li { 
+    display: block;
+    margin: 5px;
+}
