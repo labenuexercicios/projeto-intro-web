@@ -6,11 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
+    <script src="scriptDom.js" defer></script>
     <title>Document</title>
 </head>
 <body>
+    <div class="modal closed">
+        <div class="container-modal">
+            <span class="closeButton" onclick="closeModal()">X</span>
+                <article>
+                    <p>Bulbasaur</p>
+                    <img class="imgModal" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="">
+                </article>
+                <article>
+                    <p>Ivysaur</p>
+                    <img class="imgModal" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="">
+                </article>
+                <article>
+                    <p>Venusaur</p>
+                    <img class="imgModal" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="">
+                </article>
+
+        </div>
+    </div>
     <header>
-        <h1>Pokemons Iniciais</h1>
+        <h1 id="logo-text">Pokémons Iniciais</h1>
         <img class="pokebola" src="/assets/pokemon_go_play_game_cinema_film_movie_icon-icons.com_69163.svg" alt="">
     </header> 
     
@@ -22,31 +41,32 @@
 
         <section>
             <article>
-                <img width='20%' src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="">
+                <img onclick="bigPicture(event)" width='20%' src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="">
                 <div>
-                    <h2>Bumbasauro</h2>
-                    <p>Nivel 5</p>
-                    <p>Evoluções: "Ivysaur", "Venusaur"</p>
+                    <h2></h2>
+                    <p class="lv"></p>
+                    <p class="evolução"></p>
                 </div>
             </article>
             <article>
-                <img width='20%' src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="">
+                <img onclick="bigPicture(event)" width='20%' src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="">
                 <div>              
-                    <h2>Charmander</h2>
-                    <p>Nivel 5</p>
-                    <p>Evoluções: "Charmeleon", "Charizard"</p>
+                    <h2></h2>
+                    <p class="lv"></p>
+                    <p class="evolução"></p>
                 </div>
             </article>
             <article>
-                <img width='20%' src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="">
+                <img onclick="bigPicture(event)" width='20%' src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="">
                 <div>
-                    <h2>Squirtle</h2>
-                    <p>Nivel 5</p>
-                    <p>Evoluções: "Wartortle", "Blastoise"</p>
+                    <h2></h2>
+                    <p class="lv"></p>
+                    <p class="evolução"></p>
                 </div>
             </article>
         </section>
         <img onclick="topFunction()" id="scroll-top" src="/assets/Pokemon_Go_Arrow_icon-icons.com_67522.svg" alt="">
+
     </main>
 
     <footer>

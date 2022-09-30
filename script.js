@@ -4,7 +4,7 @@ const pokemon = [
     nivel: 5,
     tipo: "grama",
     isInicial: true,
-    evolução: ["Ivysaur", "Venusaur"],
+    evoluçao: ["Ivysaur", "Venusaur"],
   },
   {
     nome: "charmander",
@@ -63,7 +63,6 @@ const search = (arr, str) => {
 
 search(pokemonsInicial, 'charmander')
 
-
 // ---------------------------------------
 
 let toTop = document.getElementById("scroll-top");
@@ -81,3 +80,17 @@ function scrollFunction() {
 function topFunction() {
   document.documentElement.scrollTop = 0;
 } 
+
+// ---------------------------------------
+
+const pokeName = document.getElementsByTagName('h2')
+const pokeLv = document.getElementsByClassName('lv')
+const pokeEvolution = document.getElementsByClassName('evolução')
+
+console.log(pokemon[0])
+
+for (i in pokemon) {
+  pokeName[i].innerHTML = pokemon[i].nome;
+  pokeLv[i].innerHTML = `Nível ${pokemon[i].nivel}`;
+  pokeEvolution[i].innerHTML = pokemon[0].evolução
+}
