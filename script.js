@@ -115,6 +115,8 @@ function recebeObjetosStrings(receita, stringFunction)
 let frase = prompt("digite algo")
 recebeObjetosStrings(receita, frase)
 
+//Proejto Intro Webb - Semana 4
+
 
 
 
