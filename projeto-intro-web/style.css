@@ -1,0 +1,37 @@
+header{
+    background-image: linear-gradient(to bottom, black, #9D26AD);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 0px;
+    font-family: sans-serif;
+}
+
+.formulario{
+    font-family: sans-serif;
+    text-align: center;
+    margin: 20px;
+    padding: 10px
+}
+
+.filmes{
+    margin: 10px 550px;
+    font-family: sans-serif
+}
+
+footer{
+    background-image: linear-gradient(to bottom, #9D26AD, black);
+    color: white;
+    padding: 30px;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+h2{
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin: 0px auto;
+}
