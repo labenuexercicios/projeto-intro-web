@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color: rgb(104, 4, 4);
+    color: beige;
+    font-family:'Courier New', Courier, monospace;
+    border: 4px solid rgb(141, 32, 32);
+    justify-content:center;
+    display: flex;
+    height: 50px;
+}
+
+.Rodapé{
+    background-color: rgb(36, 35, 35);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid gray;
+    color:blanchedalmond;
+    position: static;
+    bottom: 0px;
+    width: 1390px;
+    text-align: center;
+}
+
+.container{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    background-color: beige;      
+    border: 2px rgb(104, 4, 4) solid; 
+    margin: 10px 20px 15px 10px;
+}
+
+.Busca{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    height: 20px;
+    margin-bottom: 2px;
+    justify-items: center;
+    align-content: center;
+}
+
+.Busca button{
+    background-color: black;
+    color: rgb(241, 241, 234);
+    height: auto;
+    width: auto;
+}
+
+.Cartaz{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 3vh;
+    width: 100px;
+    justify-content: center;
+}
