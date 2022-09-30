@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: grid;
+    background-color: aqua;
+    font-family: Georgia;
+    padding-left: 10vw;
+    font-size: 50px;
+    
+}
+
+.tamanhoSection{
+    background-color: steelblue;
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    padding-left: 3vw;
+    border: 1px solid black;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    bottom: 0;
+}
+ #moverUl2{
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+ }
+
+ #moverUl3{
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 1/2;
+ }
