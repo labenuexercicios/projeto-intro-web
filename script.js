@@ -54,14 +54,14 @@ const personagem6 = {
 
 /*Faça um cálculo de média, entre os valores numéricos respectivos de cada item. Imprima o valor da média utilizando um console.log.
 Guarde este valor em uma const*/
-const somaAltura = (personagem1.altura + personagem2.altura + personagem3.altura + personagem4.altura + personagem5.altura + personagem6.altura) / 6;
-console.log(somaAltura)
+const mediaAltura = (personagem1.altura + personagem2.altura + personagem3.altura + personagem4.altura + personagem5.altura + personagem6.altura) / 6;
+console.log('Média das alturas = ',mediaAltura)
 
 /*Com um console.log, imprima o resultado de uma operação lógica que checa se todos os valores de variáveis booleanas
 criadas até aqui são verdadeiras.*/
 
 const verifSeBruxo = personagem1.bruxo && personagem2.bruxo && personagem3.bruxo && personagem4.bruxo && personagem5.bruxo && personagem6.bruxo;
-console.log(verifSeBruxo); //true pq todas as const são verdadeiras.
+console.log('verificação se todos personagens são bruxos = ',verifSeBruxo); //true pq todas as const são verdadeiras.
 
 //Semana 2
 /*1. Crie pelo menos mais uma característica para o item que você criou. Esta característica deve ser um array. Mantenha o tipo de dado do array criado sempre o mesmo, isto é, se é um array de strings, só deve receber strings.
@@ -152,6 +152,7 @@ function relatorioSem6 (objeto) {
 relatorioSem6(bruxosHp);
 
 //2. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
+
 function procuraNome (array, buscaUsuario) {
   const procura = array.filter((bruxo)=>bruxo.nome.toUpperCase().includes(buscaUsuario.toUpperCase()))
   if(procura.length>=1){
@@ -160,6 +161,6 @@ function procuraNome (array, buscaUsuario) {
   alert("nenhum item foi encontrado")
   }
 }
-console.log(procuraNome(bruxosHp,"tom"));
+console.log(procuraNome(bruxosHp,"harry"));
 
 
