@@ -1,115 +1,102 @@
-//SEMANA 2
+//SEMANA 3
 
-// 1. Transforme os itens que criamos nas últimas semanas em objetos.
-  const carta1 = {
+// 1. Reescrevendo o relatório criado utilizando console.log() que começamos na semana 2, altere a forma que a característica de array dos itens seja escrita como um laço que guarde todos os valores da propriedade array do objeto em uma mesma string. Utilize esta string no relatório.
+
+ array = [{
  Personagem: "Saci-Pererê",
 personagemProtetor : false,  
 localidade : "mata",
-anoDaLenda : 1918
-}
+anoDaLenda : 1918,
+elementoConjunto : ["Redemoinho", "Velocidade", "Invisibilidade"]
+},
 
-const carta2 = {
+{
  Personagem : "Lobisomem",
- PersonagemDoFolclore : true,
+ personagemProtetor : true,
  localidade : "cidade do interior",
- anoDaLenda : 1400
-}
+ anoDaLenda : 1400,
+ elementoConjunto : ["Super-Força", "Velocidade", "Ressucitar", "Mudar de aparencia"]
+},
 
-const carta3 ={
+{
 Personagem : "Boto-Rosa",
 personagemProtetor : false,
 localidade : "lago",
-anoDaLenda : 1800
-}
+anoDaLenda : 1800,
+elementoConjunto : ["Mudar aparencia", "invisilidade", "Ressucitar"]
+},
 
-const carta4 ={
+{
 Personagem : "Cuca",
 personagemProtetor : false,
  localidade : "cidade grande",
- anoDaLenda: 1921
-}
+ anoDaLenda: 1921,
+ elementoConjunto : ["Super mordida", "Disfarces", "Poderes de feitiço"]
+},
 
-const carta5 = {
+{
 Personagem : "Caipora",
 personagemProtetor : true,
 localidade : "mata fechada",
-anoDaLenda: 1870
-}
- const carta6 ={
+anoDaLenda: 1870,
+elementoConjunto : ["Proteção", "Velocidade", "Super audição"]
+
+},
+{
  Personagem : "Mula sem Cabeça",
  personagemProtetor : false,
  localidade : "cidade",
- anoDaLenda: 1972
- }
+ anoDaLenda: 1972,
+ elementoConjunto : ["Fogo", "Velocidade", "Invisibilidade"]
 
- const carta7 = {
+ },
+
+{
  Persoanagem : "Curupira",
  personagemProtetor : true,
 localidade : "mata",
-anoDaLenda : 1560
- }
+anoDaLenda : 1560,
+elementoConjunto : ["velocidade", "camuflagem com a floresta", "visão de raio - X"]
+ },
 
- const carta8 = {
+ {
 Personagem : "Iara",
 personagemProtetor : true,
  localidade : "mar",
- anoDaLenda: 1600
- }
-//  2. Crie um array para guardar os objetos. Este array deve estar vazio, por enquanto;
- const array = []
- // 3. Adicione os objetos criados no item 1 ao array de objetos criado no item 2, utilizando o push()
-
-//  array.push(carta1,carta2,carta3,carta4,carta5,carta6,carta7,carta8)
-//  console.log(array)
+ anoDaLenda: 1600,
+ elementoConjunto : ["hipnose pela voz", "super-audição", "camuflagem com o mar"]
+ }]
 
 
-// 4. Altere o item 3 “Adicione os novos objetos no array de objetos, utilizando o push()”, para criar uma verificação antes de dar o push. A caraterística booleana do objeto deve ser validada. Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for true;
-
-if (carta1.personagemProtetor === true){
-    array.push(carta1)
-} else {
-    alert("Carta 1 não adicionada pois é false!")
+const novoArray =[]
+for (let i in array){
+   if (array[i].personagemProtetor){
+      novoArray.push(array[i])
+   } else {
+      alert (`${array[i].Personagem} Não foi adicionado!`)
+   }
 }
-if (carta2.personagemProtetor === true){
-    array.push(carta2)
-} else {
-    alert("Carta 2 não adicionada pois é false!")
-} 
-if (carta3.personagemProtetor === true){
-     array.push(carta3)
-} else {
-    alert("Carta 3 não adicionada pois é false !")
-} 
- if (carta4.personagemProtetor === true){
-     array.push(carta4)
- } else{
-    alert ("Carta 4 não adicionada pois é false")
- }
- if (carta5.personagemProtetor === true){
-     array.push(carta5)
- } else{
-    alert("Carta 5 não adicionada pois é false")
- }
- if (carta6.personagemProtetor === true){
-    array.push(carta6)
- } else {
-    alert("Carta 6 não adicionada pois é false")
- } 
- if (carta7.personagemProtetor === true){
-    array.push(carta7)
- } else {
-    alert("Carta 7 não adicionada pois é false")
- }
- if (carta8.personagemProtetor === true){
-    array.push(carta8)
- } else {
-    alert ("Carta 8 não adicionada pois é false")
- }
-  console.log("Cartas adicionadas", array)
 
-  console.log(array)
 
-//   5. Crie uma condição else, que, em caso de valor false na condição acima, exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push
+// 2. Ainda no relatório, altere-o para que ele seja criado utilizando laços. Ou seja, você não deve mais imprimir individualmente cada item do relatório. Cada item deve ser exibido a partir de uma iteração do laço. Para testar, adicione mais um item ao array de objetos, e verifique se ele é exibido corretamente.
 
-const mediaTodos = (carta1.anoDaLenda + carta2.anoDaLenda + carta3.anoDaLenda + carta4.anoDaLenda + carta5.anoDaLenda + carta6.anoDaLenda + carta7.anoDaLenda + carta8.anoDaLenda) / 8 
-console.log("Média de anos das Lendas é ", mediaTodos )
+
+for(let i in array){
+   array[i].elementoConjunto = array[i].elementoConjunto.toString()
+   console.log(array[i])
+}
+// 3. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
+
+function obj (objeto){
+   return objeto.Personagem
+}
+// 4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
+
+function busca (array,string){
+     for(let i in array){
+       if (array[i].Personagem === string){
+          return array[i]
+          }
+       }  
+         return alert(`O ${string}, não foi encontrado!`)
+      }
