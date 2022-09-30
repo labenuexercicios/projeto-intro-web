@@ -80,66 +80,66 @@ console.log(guardarObjetos)
 
 // console.log(guardarObjetos)
 
-console.log("Semana 3")
+// console.log("Semana 3")
 
 
-const obj = (objetos) => {
-    return{
-        filme:objetos.filme,
-        anoLançamento:objetos.anoLançamento,
-        remake:objetos.remake,
-        elenco:objetos.elenco
-    }
-}
-console.log(obj(objeto1))
-console.log(obj(objeto2))
-console.log(obj(objeto3))
+// const obj = (objetos) => {
+//     return{
+//         filme:objetos.filme,
+//         anoLançamento:objetos.anoLançamento,
+//         remake:objetos.remake,
+//         elenco:objetos.elenco
+//     }
+// }
+// console.log(obj(objeto1))
+// console.log(obj(objeto2))
+// console.log(obj(objeto3))
 
-function string (objeto1){
-    console.log(`${objeto1.filme} ${objeto1.anoLançamento} ${objeto1.remake} ${objeto1.elenco}`)
-}
-string(objeto1)
+// function string (objeto1){
+//     console.log(`${objeto1.filme} ${objeto1.anoLançamento} ${objeto1.remake} ${objeto1.elenco}`)
+// }
+// string(objeto1)
 
-function string (objeto2){
-    console.log(`${objeto2.filme} ${objeto2.anoLançamento} ${objeto2.remake} ${objeto2.elenco}`)
-}
-string(objeto2)
+// function string (objeto2){
+//     console.log(`${objeto2.filme} ${objeto2.anoLançamento} ${objeto2.remake} ${objeto2.elenco}`)
+// }
+// string(objeto2)
 
-function string (objeto3){
-    console.log(`${objeto3.filme} ${objeto3.anoLançamento} ${objeto3.remake} ${objeto3.elenco}`)
-}
-string(objeto3)
+// function string (objeto3){
+//     console.log(`${objeto3.filme} ${objeto3.anoLançamento} ${objeto3.remake} ${objeto3.elenco}`)
+// }
+// string(objeto3)
 
-const array = []
+// const array = []
 
-if (objeto1.remake) {
-    array.push(objeto1)
-}else{
-    alert(`O filme" ${objeto1.filme} "não foi encontrado!"`)
-}
+// if (objeto1.remake) {
+//     array.push(objeto1)
+// }else{
+//     alert(`O filme" ${objeto1.filme} "não foi encontrado!"`)
+// }
 
-if (objeto2.remake) {
-    array.push(objeto2)
-}else{
-    alert(`O filme" ${objeto2.filme} "não foi encontrado!"`)
-}
+// if (objeto2.remake) {
+//     array.push(objeto2)
+// }else{
+//     alert(`O filme" ${objeto2.filme} "não foi encontrado!"`)
+// }
 
-if (objeto3.remake) {
-    array.push(objeto3)
-}else{
-    alert(`O filme" ${objeto3.filme} "não foi encontrado!"`)
-}
-console.log(array)
+// if (objeto3.remake) {
+//     array.push(objeto3)
+// }else{
+//     alert(`O filme" ${objeto3.filme} "não foi encontrado!"`)
+// }
+// console.log(array)
 
-var filmes = [objeto1, objeto2, objeto3]
+// var filmes = [objeto1, objeto2, objeto3]
 
-function verify(nome){
-    for(i=0; i<=(filmes.length-1); i++){
-    if(nome === filmes[i].filme){
-        console.log("Filme:" +filmes[i].filme)
-    }else{
-        console.log("Filme não encontrado!")
-    }
-    }
-}
-verify(verify(prompt("Digite um filme")))
+// function verify(nome){
+//     for(i=0; i<=(filmes.length-1); i++){
+//     if(nome === filmes[i].filme){
+//         console.log("Filme:" +filmes[i].filme)
+//     }else{
+//         console.log("Filme não encontrado!")
+//     }
+//     }
+// }
+// verify(verify(prompt("Digite um filme")))
