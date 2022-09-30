@@ -6,6 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Outfit:wght@500&family=Poppins:ital,wght@1,200&display=swap');
 
 header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
     font-size: 3vh;
     font-family: 'Oswald', sans-serif;
@@ -20,9 +23,17 @@ body {
 }
 
 main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     color: black;
     text-align: center;
     font-size: 3vh;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 15vh 1fr 5vh;
 }
 
 .titulo-main {
@@ -35,6 +46,8 @@ main {
 .busca {
     color: rgb(241, 241, 241);
     margin: 6vh 0;
+    display: flex;
+    justify-content: center;
 }
 
 #input-busca {
@@ -45,6 +58,8 @@ main {
 #nome, #busca {
     padding: 1vh 1vw;
     border: 8px groove rgb(222, 222, 222);
+    border-radius: 1rem;
+    text-align: center;
 }
 
 #busca {
@@ -61,6 +76,19 @@ ul {
     margin-top: 4vh;
     border-bottom: 1.5vh groove rgb(241, 241, 241);
     padding-bottom: 4vh;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+}
+
+.my-shoes {
+    display: flex;
+    margin: 0 auto;
+    border-radius: 1rem;
 }
 
 footer {
