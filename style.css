@@ -8,20 +8,32 @@ header {
     background-color: rgb(157, 213, 213);
     color: rgb(73, 66, 66);
     text-align: center;
-    padding: 8px;
+    padding: 2%;
 }
 
 section {
+    width: 50vw;
     background-color: rgb(218, 184, 236);
-    margin: 20px;
-    padding: 32px;
+    margin: 2% auto;
+    padding: 4%;
     text-align: center;
     color: rgb(73, 66, 66);
 }
 
 li {
-    margin-top: 16px;
+    margin-top: 2%;
     list-style-type: none;
+}
+
+footer {
+    background-color: rgb(60, 54, 54);
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+a {
+    color: whitesmoke;
+    font-weight: bolder;
 }
 
 .nome {
@@ -29,15 +41,19 @@ li {
 }
 
 .area-pesquisa {
-    margin-top: 12px;
+    margin-top: 4%;
     font-style: italic;
 }
 
 .input-botao {
-    margin: 12px;
+    margin: 1%;
 }
 
-footer {
-    background-color: black;
-    color: whitesmoke;
+.github {
+    margin-left: 85%
+}
+   
+a:hover {
+    color: rgb(21, 20, 20);
+    background-color: white;
 }
