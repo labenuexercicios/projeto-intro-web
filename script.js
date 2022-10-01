@@ -81,12 +81,13 @@ function relatorio(objeto) {
     }
     return txt.toString()
 }
+const teste = relatorio(greysAnatomy)
+console.log(teste)
 
 const busca = (array,string)=>{
-    let a = {}
     const b = array.filter( (titulo) => {return titulo.nome == string})
-    return b.length > 0 ?  a.string = b  : console.log("não foi encontrado")    
+    return b.length > 0 ?  b  : console.log("não foi encontrado")    
 }
-console.log(busca(bdSeries, 'vikings'))
+
 
 
