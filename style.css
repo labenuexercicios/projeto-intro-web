@@ -42,7 +42,6 @@ main {
     background-image: url('./img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;

@@ -89,7 +89,8 @@ const ninja0 = {
    idade: 17,
    isninja: true,
    ninjutsus: ['Clones das Sombras', 'Jutsu Sexy'],
-   img: "img/naruto.png"
+   img: "img/naruto.png",
+   href:'https://pt.wikipedia.org/wiki/Naruto',
 }
 
 const ninja1 = {
@@ -116,7 +117,8 @@ const ninja3 = {
    idade: 28,
    isninja: true,
    ninjutsus: ["Os Noves Portões"],
-   img: "img/maito-gai.png"
+   img: "img/maito-gai.png",
+   href:'https://naruto.fandom.com/pt-br/wiki/Might_Guy',
 }
 
 const ninja4 = {
@@ -125,7 +127,8 @@ const ninja4 = {
    idade: 17,
    isninja: true,
    ninjutsus: ["Só Tem Taijuts"],
-   img: "img/rock-lee.png"
+   img: "img/rock-lee.png",
+   href:'https://naruto.fandom.com/pt-br/wiki/Rock_Lee',
 }
 
 const ninja5 = {
@@ -143,7 +146,8 @@ const ninja6 = {
    idade: 26,
    isninja: true,
    ninjutsus: ["técnica de Imitação pela Sombra", "técnica da Captura pela Sombra"],
-   img: "img/shikamaru.png"
+   img: "img/shikamaru.png",
+   href:'https://naruto.fandom.com/pt-br/wiki/Shikamaru_Nara',
 }
 
 const ninja7 = {
@@ -276,7 +280,7 @@ function buscaPersonagem(){
 
                 <div id="ninja-imagem"><img class="naruto" src="${ninjasFiltrados[0].img}" alt="imagem do naruto"></div>
                 <ul>
-                    <li id="nome"><a href="https://pt.wikipedia.org/wiki/Naruto" target="_blank">Nome: ${ninjasFiltrados[0].nome}</a></li>
+                    <li id="nome"><a href="${ninjasFiltrados[0].href}" target="_blank">Nome: ${ninjasFiltrados[0].nome}</a></li>
                     <li><strong>Clan:</strong> ${ninjasFiltrados[0].clan}</li>
                     <li>Idade: ${ninjasFiltrados[0].idade}</li>
                     <li>Isninja: ${ninjasFiltrados[0].isninja}</li>
@@ -294,4 +298,4 @@ function buscaPersonagem(){
 
 
 
-console.log(buscarNinja(ninjasarray))
+// console.log(buscarNinja(ninjasarray))
