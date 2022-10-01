@@ -1,0 +1,183 @@
+/* SEMANA 7 */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    /* display:flex; */
+    display: grid;
+}
+main{
+    color: white;
+    
+}
+header{
+    color: white;
+    border: 40px rgb(215, 36, 36)outset;
+    background-color: rgb(89, 107, 122);
+    /*colocar umas fotos dentro do header */
+}
+.coleção{
+    color: aqua;
+    font-family: monospace;
+    font-size: 40px;
+    text-align: center;
+}
+#cabeçalho{
+    color: aqua;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    border: 15px rgb(255, 255, 255) groove;
+    
+}
+
+
+.título-TLK{
+    font-family: Helvetica;
+    position: relative;
+    top: 0px; left: 300px;
+}
+.the-last-kingdon{
+    width:250px;
+    height:310px;
+    position: relative;
+    top: 0px; left: 275px;
+}
+.link-para-página-tlk{
+    position: relative;
+    top: 0px; left: 300px;
+}
+
+
+.link-para-pagina-twd{
+    position: relative;
+    top: 0px; left: 300px;
+}
+.título-TWD{
+    font-family:Helvetica;
+    position: relative;
+    top: 0px; left: 300px;
+}
+.The-walking-dead{
+    width: 250px;
+    height:310px;
+    position: relative;
+    top: 0px; left: 275px;
+}
+
+
+.link-para-página-cluube-da-luta{
+    position: relative;
+    top: 0px; left: 300px;
+}
+.título-clube-da-luta{
+    font-family: Helvetica;
+    position: relative;
+    top: 0px; left: 300px;
+}
+.clube-da-luta{
+    width:250px;
+    height: 310px;
+    position: relative;
+    top: 0px; left: 275px;
+}
+
+
+
+footer{
+  border: 20px rgb(125, 113, 113)outset;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  position: static;
+  height: 40vh;
+  width: 12vw;
+  background-color:black;
+  right:180px;
+  color: white;
+  position: relative;
+  top: 0px; left: 40%;
+}
+
+@media screen and (max-device-width : 2000px) {
+    .divConteudo{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #botão{
+        position: fixed;
+    }
+    .informacoes-de-contato{
+        
+        grid-template-columns: repeat(1fr);
+    }
+}
+@media screen and (min-device-width : 200px){
+    footer{
+        grid-template-columns: 1fr;
+    }  
+}
+/* @media screen and (min-device-width:200px){
+    .divConteudo{
+        flex-wrap: wrap;
+    }
+} */
+
+.informacoes-de-contato{
+    font-family: Helvetica;
+    text-align:center;
+    border:0;
+    color: rgb(255, 255, 255);
+    border: 6px rgb(235, 36, 36)outset;
+}
+footer:hover{
+    background-color: rgb(253, 4, 4);
+    
+}
+.nome-de-usuário{
+    font-family:serif;
+    font-size: 20px;
+}
+.Github{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+.linkedln{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px;
+}
+.informacoes-de-contato:hover{
+    background: blue;
+    color: aquamarine;
+}
+img{
+    justify-content: center;
+    height:130px;
+    width:130px;
+
+}
+#inputS{
+    font-size: 30px;
+    height: 2rem;
+    position: relative;
+    top: 0px; left: 790px;
+    /* bottom: 2px; */
+    border: 10px rgb(196, 196, 221) outset;
+}
+#botão{
+    font-size: 30px;
+    height: 3rem;
+    position: relative;
+    top: 0px; left: 800px;
+    border: 10px rgb(196, 196, 221) outset
+}
+
+
+
+
+
