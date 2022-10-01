@@ -14,7 +14,8 @@ const greysAnatomy = {...series,
     totTemporadas: Number(19),
     genero: ['drama', 'ficção medica', 'romance', 'comedia dramatica'],
     elencoPrincipal: ['ellen pompeo', 'patrick dempsey', 'sandra oh'],
-    sinopse:`Conheça Meredith Grey, uma brilhante estagiária cirúrgica do primeiro ano do Seattle Grace Hospital. Juntamente com seus colegas residentes em treinamento, Meredith navega pelos traumas diários e pelas minas sociais da vida dentro do hospital e no mundo real.`
+    sinopse:`Conheça Meredith Grey, uma brilhante estagiária cirúrgica do primeiro ano do Seattle Grace Hospital. Juntamente com seus colegas residentes em treinamento, Meredith navega pelos traumas diários e pelas minas sociais da vida dentro do hospital e no mundo real.`,
+    imagem: `C:\Users\mathe\OneDrive\Documentos\projeto-intro-web\imagens\greysAnatomy.jpg`
 }
 
 const laCasaDePapel = {...series,
@@ -24,7 +25,8 @@ const laCasaDePapel = {...series,
     totTemporadas: Number(4),
     genero: ['assalto', 'drama', 'suspense', 'crime'],
     elencoPrincipal: ['alvaro morte', 'alba flores', 'miguel herran'],
-    sinopse:`Oito ladrões se trancam com reféns na Casa da Moeda da Espanha. Seu líder manipula a polícia para realizar um plano. Será o maior roubo da história, ou uma missão em vão?`
+    sinopse:`Oito ladrões se trancam com reféns na Casa da Moeda da Espanha. Seu líder manipula a polícia para realizar um plano. Será o maior roubo da história, ou uma missão em vão?`,
+    imagem: `C:\Users\mathe\OneDrive\Documentos\projeto-intro-web\imagens\laCasaDePapel.jpg`
 }
 const vikings = {...series,
     nome: 'vikings',
@@ -33,7 +35,8 @@ const vikings = {...series,
     totTemporadas: Number(6),
     genero: ['guerra', 'drama', 'ação', 'aventura'],
     elencoPrincipal: ['travis fimmel', 'clive standen', 'gustaf skarsgard'],
-    sinopse: `Esta série dramática acompanha a vida do viking Ragnar Lothbrok em sua jornada para ampliar o domínio nórdico e desafiar um líder incompetente e sem visão.`
+    sinopse: `Esta série dramática acompanha a vida do viking Ragnar Lothbrok em sua jornada para ampliar o domínio nórdico e desafiar um líder incompetente e sem visão.`,
+    imagem: `C:\Users\mathe\OneDrive\Documentos\projeto-intro-web\imagens\vijings.jpg`
 }
 // Exercicio 2
 const bdSeries = []
