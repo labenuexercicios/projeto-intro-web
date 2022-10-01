@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -59,6 +61,38 @@ a{
     transition: 0.3s;
 }
 
+/*--------MAIN------------*/
+
+main{
+    margin-top: 20px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.author{
+    width: 39.06vw;
+    height: 46.58vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #154cf2;
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+.author:hover{
+    background-color: #ffd42b;
+    transition: 0.5s;
+}
+
+/*---------MAIN------------*/
 .ftr{
     color: white;
     background-color: #154cf2;
@@ -67,35 +101,6 @@ a{
     width: 100%;
 }
 
-.content{
-    display: block;
-    margin: 0 auto;
-    width: 40%;
-    padding-top: 1.25rem;
-    text-align: center;
-    color: white;
-}
-
-
-#author-1{
-    background-color: #154cf2;
-    border-radius: 10px;
-}
-
-
-#author-2{
-    background-color: #154cf2;
-    border-radius: 10px;
-}
-
-
-#author-3{
-    background-color: #154cf2;
-    border-radius: 10px;
-}
-
-
-#author-4{
-    background-color: #154cf2;
-    border-radius: 10px;
+a{
+    color: black;
 }
