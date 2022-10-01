@@ -59,6 +59,7 @@ a{
     background:#ffd42b;
     color: white;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 /*--------MAIN------------*/
