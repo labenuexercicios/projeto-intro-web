@@ -9,7 +9,8 @@ let Himym= {
  AnoDeLancamento: 2005,
  episodios: 208,
  continuaLancando: false,
- genero:["siticom"," romance"," drama"," comedia"," misterio"]
+ genero:["siticom"," romance"," drama"," comedia"," misterio"],
+ notaPessoal: 9.5
 }
 
 // console.log(`nome:${nomeHimym}
@@ -23,7 +24,8 @@ let Friends= {
     AnoDeLancamento: 1994,
     episodios: 236,
     continuaLancando: false,
-    genero:["siticom", "romance", "comedia"]
+    genero:["siticom", "romance", "comedia"],
+    NotaPessoal: 10
 }
 // console.log(`nome:${nomeFriends}
 // ano de lancamento:${AnoDelancamentoFriends}
@@ -36,7 +38,8 @@ let blackMirror= {
     AnoDeLancamento: 2011,
     episodios: 22,
     continuaLancando: true,
-    genero:[" Distopia", " Ficção científica", " Suspense", " Drama", " Sátira", " Ficção especulativa"]
+    genero:[" Distopia", " Ficção científica", " Suspense", " Drama", " Sátira", " Ficção especulativa"],
+    NotaPessoal:9
 }
 // console.log(`nome:${nomeBlackMirror}
 // ano de lancamento:${AnoDeLancamentoBlackMirror}
@@ -72,6 +75,7 @@ for (const i in blackMirror) {
 // Crie pelo menos mais uma característica para o item que você criou. Esta característica deve ser um array. Mantenha o tipo de dado do array criado sempre o mesmo, isto é,
 //  se é um array de strings, só deve receber strings.
 const array= []
+
 //crie uma array para guardar os objetos
 if(Friends.continuaLancando===true){
     array.push(Friends)
@@ -92,3 +96,23 @@ if(blackMirror.continuaLancando===true){
 for (const i in array) {
     console.log(array[i])
 }
+
+
+ArrayParaString=(array) =>{
+    for(let i in array){
+        for(let j in array){
+            let arrayString ="";
+        arrayString+= array[i].genero
+        console.log(arrayString)
+        }
+    }
+}
+ArrayParaString(array)
+
+///semana 4
+
+
+
+
+
+
