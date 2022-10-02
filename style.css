@@ -93,15 +93,42 @@ main{
     transition: 0.5s;
 }
 
-/*---------MAIN------------*/
+/*---------FOOTER------------*/
 .ftr{
     color: white;
     background-color: #154cf2;
-    text-align: center;
     margin-top: 53px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Lato', sans-serif;
+    height: 14.97vh;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.infs{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 a{
     color: black;
+}
+
+.text-ftr{
+    color: white;
+}
+
+.text-ftr:hover{
+    color: #ffd42b;
+    transition: 0.5s;
 }
