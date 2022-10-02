@@ -1,0 +1,103 @@
+
+
+.titulo{
+    text-align: center;
+    background-image: linear-gradient(135deg, #f7f4f3 0, #e0e9eb 12.5%, #c8dee4 25%, #aed2dd 37.5%, #92c4d7 50%, #76b6d2 62.5%, #5aa9ce 75%, #3e9ccb 87.5%, #1e90c8 100%);
+    border-radius: 10px;
+    margin-right: 10fr;
+    border: thick double aqua;
+
+    color: white;
+}
+.botao{
+    background-image: linear-gradient(135deg, #f7f4f3 0, #e0e9eb 12.5%, #c8dee4 25%, #aed2dd 37.5%, #92c4d7 50%, #76b6d2 62.5%, #5aa9ce 75%, #3e9ccb 87.5%, #1e90c8 100%);
+    margin-left: 70vh;
+    margin-right: 60vh;
+    margin-bottom: 0.5vh;
+    margin-top: 00.5vh;
+    margin: auto;
+    border-radius: 5px;
+    
+    
+    
+    
+    
+}
+
+
+.all{
+    background-image: linear-gradient(180deg, #ebf5f0 0, #deefe9 12.5%, #d0e9e3 25%, #c0e2dc 37.5%, #afdbd7 50%, #9dd4d3 62.5%, #8ccdd0 75%, #7bc6cf 87.5%, #6bc0ce 100%);
+    display: block;
+    display: flex;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    justify-content: space-evenly;
+
+    
+    
+
+}
+
+h1{
+    color: white;
+    text-align: center;
+    
+}
+
+.b1{
+    background-image: linear-gradient(180deg, #9ab3bc 0, #99acb1 12.5%, #97a4a6 25%, #969b9b 37.5%, #949191 50%, #928788 62.5%, #8f7e81 75%, #8c767c 87.5%, #896f79 100%);
+    border-radius: 10px;
+    margin: 10px; 
+    border: thick double aqua;
+    text-align: center;
+   
+    
+
+}
+.b2{
+    background-image: linear-gradient(180deg, #9ab3bc 0, #99acb1 12.5%, #97a4a6 25%, #969b9b 37.5%, #949191 50%, #928788 62.5%, #8f7e81 75%, #8c767c 87.5%, #896f79 100%);
+    border-radius: 10px;
+    margin: 10px;
+    border: thick double aqua;
+    text-align: center;
+   
+}
+.b3{
+    background-image: linear-gradient(180deg, #9ab3bc 0, #99acb1 12.5%, #97a4a6 25%, #969b9b 37.5%, #949191 50%, #928788 62.5%, #8f7e81 75%, #8c767c 87.5%, #896f79 100%);
+    border-radius: 10px;
+    margin:10px;
+    border: thick double aqua;
+    text-align: center;
+}
+.b4{
+    background-image: linear-gradient(180deg, #9ab3bc 0, #99acb1 12.5%, #97a4a6 25%, #969b9b 37.5%, #949191 50%, #928788 62.5%, #8f7e81 75%, #8c767c 87.5%, #896f79 100%);
+    border-radius: 10px;
+    border: thick double aqua;
+    text-align: center;
+    
+}
+
+footer{
+    background-image: linear-gradient(180deg, #ebf5f0 0, #deefe9 12.5%, #d0e9e3 25%, #c0e2dc 37.5%, #afdbd7 50%, #9dd4d3 62.5%, #8ccdd0 75%, #7bc6cf 87.5%, #6bc0ce 100%);
+    border-radius: 5px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    color: rgb(91, 79, 133);
+    text-decoration: underline;
+}   
+.botao2{
+    background-image: linear-gradient(180deg, #97ccbe 0, #86c7ba 12.5%, #74c0b7 25%, #5fb9b4 37.5%, #44b2b2 50%, #19aab1 62.5%, #00a3b0 75%, #009cb1 87.5%, #0096b2 100%);
+    border-radius: 10px;
+    margin-bottom: 3px;
+    margin-top: 1px;
+    text-decoration: none;
+    padding: 3px 3px 3px 3px;
+}
+.botao2:hover{
+    background-image: linear-gradient(135deg, #ffffff 0, #ffffff 12.5%, #f5fdff 25%, #daf1f8 37.5%, #bfe3f1 50%, #a4d5eb 62.5%, #8bc7e7 75%, #75bae3 87.5%, #62aee0 100%);
+    padding: 3px 3px 3px 3px
+}

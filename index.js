@@ -109,6 +109,6 @@ function encontrarBanda (nome){
     }
     return string*///TRAVOU NA PARTE 4
 
-//4
+//4//
 
 encontrarBanda(prompt("Qual banda/artista deseja encontrar?"))
