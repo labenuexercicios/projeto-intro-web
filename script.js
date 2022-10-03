@@ -127,5 +127,34 @@ funcBusca = (arrayObjetos, string) =>{
 console.log(funcBusca(arrayObjetos, `OS VINGADORES`))
 
 
+// itens = (texto, posicao) => {
+//     let listagem = document.getElementById("listaa")
+//     let item = document.createElement("li")
+//     let text = document.createTextNode(texto)
+//     item.appendChild(text)
+//     console.log(listagem)
+//     listagem.insertAdjacentElement(posicao, item)
+// }
+// itens("Vingadores", "beforeend")
+// itens("Ano de Lançamento: 2012", "beforeend")
+// itens("Vale a pena?", "beforeend")
+// itens("Diretor: Joss Whedon", "beforeend")
+// itens(`Robert Downey Jr., Scarlett Johansson, Chris Evans, Mark Rufallo, Chris Hemsworth, Jeremy Renner,
+// Tom Hiddleston, Samuel L. Jackson`, "beforeend")
+
+itens = (texto, posicao, id) => {
+    let listagem = document.getElementById(id)
+    let item = document.createElement("li")
+    let text = document.createTextNode(texto)
+    item.appendChild(text)
+    console.log(listagem)
+    listagem.insertAdjacentElement(posicao, item)
+}
+itens("Vingadores", "beforeend", "lista1")
+itens("Ano de Lançamento: 2012", "beforeend", "lista1")
+itens("Vale a pena ? Sim", "beforeend", "lista1")
+itens("Diretor: Joss Whedon", "beforeend", "lista1")
+itens(`Robert Downey Jr., Scarlett Johansson, Chris Evans, Mark Rufallo, Chris Hemsworth, Jeremy Renner,
+Tom Hiddleston, Samuel L. Jackson`, "beforeend", "lista1")
 
 
