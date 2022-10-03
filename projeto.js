@@ -57,7 +57,7 @@ if (objViserys.montavaDragão === true) {
 let dragonKings = [objAegon,objAenys,objJaehaerys,objViserys]
 
 for (let objeto of dragonKings) {
-    objeto.descendentes = objeto.descendentes.toString()
+    objeto.descendentes = objeto.descendentes.join(", ")
 }
 
 console.log(objAegon)
@@ -93,18 +93,13 @@ devolverString (dragonKings)
 
 // Atividade 4 - 
 
-/* function devolvaString (arraydeObjetos) {
-    console.log(arraydeObjetos)
-}
+const recebeArray = (array, string) => {
+        for (objeto of array) {
+        if(objeto.nome === string) {
+            console.log(objeto, string)
+        } else {alert("Não encontrado")}
+        }
+    }
+    
+recebeArray (dragonKings, prompt("Digite um rei Targaryen"))
 
-devolvaString (dragonKings)
-console.log(devolvaString) */
-
-
-
-"Aegon"
-
-const apenasAegon = dragonKings.filter((Aegon) => {
-    return Aegon.nome === "Aegon Targaryen"})
-
-    console.log(apenasAegon)
