@@ -17,3 +17,25 @@
 //     assert.strictEqual(disemvowel("What are you, a communist?"), "Wht r y,  cmmnst?")
 //     })
 //   })
+
+
+if(itemFilme1.isRemake === false){
+    console.log('aceito, itemFilme1 foi alocado no arraVazio')
+    arrayVazio.push(itemFilme1)
+}else{
+    alert('não é possivel adiciona-lo ao arrayVazio')
+}
+
+if(itemSerie1.isRemake === false){
+    console.log('aceito, itemSerie1 foi alocado no arraVazio')
+    arrayVazio.push(itemSerie1)
+    
+}else{
+    alert('não é possivel adiciona-lo ao arrayVazio')
+}
+
+if(itemSerie2.isRemake === false){
+    console.log('aceito, itemSerie2 foi alocado no arraVazio')
+    arrayVazio.push(itemSerie2)
+}
+console.log("ARRAY VAZIO", arrayVazio)

@@ -4,7 +4,7 @@
     margin: 0;
 }
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(33, 32, 71);
     color: white;
     /* display:flex; */
     display: grid;
@@ -15,9 +15,19 @@ main{
 }
 header{
     color: white;
-    border: 40px rgb(215, 36, 36)outset;
-    background-color: rgb(89, 107, 122);
+    border: 40px rgb(194, 50, 50)outset;
+    background-color: rgb(7, 7, 7);
     /*colocar umas fotos dentro do header */
+}
+/* section{
+    display: grid;
+} */
+/*div com o input e o button*/
+.botaoEclique{
+    border: 10px rgb(42, 30, 97) solid;
+}
+button:hover{
+    background-color: aqua;
 }
 .coleção{
     color: aqua;
@@ -37,11 +47,13 @@ section{
     
 }
 
-
+/*the last kingdom*/
 .título-TLK{
     font-family: Helvetica;
     position: relative;
-    top: 0px; left: 300px;
+    top: 0px; left: 320px;
+    color: rgb(255, 255, 255) outset;
+    font-size: 20px;
 }
 .the-last-kingdon{
     width:250px;
@@ -51,18 +63,24 @@ section{
 }
 .link-para-página-tlk{
     position: relative;
-    top: 0px; left: 300px;
+    top: 0px; left: 260px;
+    color: rgb(255, 5, 5);
+    font-size: 25px;
 }
-
-
+/*----------------------*/
+/*the wwalking dead*/
 .link-para-pagina-twd{
     position: relative;
-    top: 0px; left: 300px;
+    top: 0px; left: 260px;
+    color: rgb(255, 5, 5);
+    font-size: 25px;
 }
 .título-TWD{
     font-family:Helvetica;
     position: relative;
-    top: 0px; left: 300px;
+    top: 0px; left: 315px;
+    color: rgb(255, 255, 255) outset;
+    font-size: 20px;
 }
 .The-walking-dead{
     width: 250px;
@@ -70,16 +88,20 @@ section{
     position: relative;
     top: 0px; left: 275px;
 }
-
-
+/*------------------------*/
+/*clube da luta*/
 .link-para-página-cluube-da-luta{
     position: relative;
-    top: 0px; left: 300px;
+    top: 0px; left: 260px;
+    color: rgb(255, 5, 5);
+    font-size: 25px;
 }
 .título-clube-da-luta{
     font-family: Helvetica;
     position: relative;
-    top: 0px; left: 300px;
+    top: 0px; left: 342px;
+    color: rgb(255, 255, 255) outset;
+    font-size: 20px;
 }
 .clube-da-luta{
     width:250px;
@@ -87,7 +109,7 @@ section{
     position: relative;
     top: 0px; left: 275px;
 }
-
+/*---------------------------*/
 
 
 footer{
@@ -139,17 +161,25 @@ footer:hover{
     background-color: rgb(253, 4, 4);
     
 }
+
+/*cartão do foooter*/
 .nome-de-usuário{
-    font-family:serif;
-    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
 }
-.Github{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
-}
-.linkedln{
+.GithubLink{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 26px;
+}
+.linkedlnLink{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 28px;
+}
+.nomeDoLinkedln{
+    font-size: 20px;
+}
+.nomeDoGit{
+    font-size:20px;
 }
 .informacoes-de-contato:hover{
     background: blue;
