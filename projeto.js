@@ -93,24 +93,13 @@ devolverString (dragonKings)
 
 // Atividade 4 - 
 
-/* function devolvaString (arraydeObjetos) {
-    console.log(arraydeObjetos)
-}
-
-devolvaString (dragonKings)
-console.log(devolvaString) */
-
-
-
-"Aegon"
-
-
-
-/* const nome = dragonKings.filter((Aegon) => {
-    if (for (propriedade in objeto)
-        Aegon.nome === "Aegon Targaryen")
-        {} else {alert("Nome não encontrado")}
-    })
-
-    console.log(nome) */
+const recebeArray = (array, string) => {
+        for (objeto of array) {
+        if(objeto.nome === string) {
+            console.log(objeto, string)
+        } else {alert("Não encontrado")}
+        }
+    }
+    
+recebeArray (dragonKings, prompt("Digite um rei Targaryen"))
 
