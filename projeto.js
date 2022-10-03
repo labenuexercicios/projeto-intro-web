@@ -57,7 +57,7 @@ if (objViserys.montavaDragão === true) {
 let dragonKings = [objAegon,objAenys,objJaehaerys,objViserys]
 
 for (let objeto of dragonKings) {
-    objeto.descendentes = objeto.descendentes.toString()
+    objeto.descendentes = objeto.descendentes.join(", ")
 }
 
 console.log(objAegon)
@@ -104,7 +104,13 @@ console.log(devolvaString) */
 
 "Aegon"
 
-const apenasAegon = dragonKings.filter((Aegon) => {
-    return Aegon.nome === "Aegon Targaryen"})
 
-    console.log(apenasAegon)
+
+/* const nome = dragonKings.filter((Aegon) => {
+    if (for (propriedade in objeto)
+        Aegon.nome === "Aegon Targaryen")
+        {} else {alert("Nome não encontrado")}
+    })
+
+    console.log(nome) */
+
