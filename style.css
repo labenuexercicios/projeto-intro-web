@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    height: 10vh;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    padding: 5vh;
+}
+main{
+    background-color: rgb(25, 24, 24);
+    color: white;
+}
+.series{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5vh;
+}
+.serie1{
+    background-color: black;
+    border: solid white 1px;
+}
+.serie2{
+    background-color: black;
+    border: solid white 1px;
+}
+.serie3{
+    background-color: black;
+    border: solid white 1px;
+}
+ul {
+    list-style-type: none;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 8vh;
+}
