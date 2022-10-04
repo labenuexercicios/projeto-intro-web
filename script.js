@@ -127,21 +127,6 @@ funcBusca = (arrayObjetos, string) =>{
 console.log(funcBusca(arrayObjetos, `OS VINGADORES`))
 
 
-// itens = (texto, posicao) => {
-//     let listagem = document.getElementById("listaa")
-//     let item = document.createElement("li")
-//     let text = document.createTextNode(texto)
-//     item.appendChild(text)
-//     console.log(listagem)
-//     listagem.insertAdjacentElement(posicao, item)
-// }
-// itens("Vingadores", "beforeend")
-// itens("Ano de Lançamento: 2012", "beforeend")
-// itens("Vale a pena?", "beforeend")
-// itens("Diretor: Joss Whedon", "beforeend")
-// itens(`Robert Downey Jr., Scarlett Johansson, Chris Evans, Mark Rufallo, Chris Hemsworth, Jeremy Renner,
-// Tom Hiddleston, Samuel L. Jackson`, "beforeend")
-
 itens = (texto, posicao, id) => {
     let listagem = document.getElementById(id)
     let item = document.createElement("li")
@@ -150,11 +135,31 @@ itens = (texto, posicao, id) => {
     console.log(listagem)
     listagem.insertAdjacentElement(posicao, item)
 }
-itens("Vingadores", "beforeend", "lista1")
+
+itens("Nome: Vingadores", "beforeend", "lista1")
 itens("Ano de Lançamento: 2012", "beforeend", "lista1")
 itens("Vale a pena ? Sim", "beforeend", "lista1")
 itens("Diretor: Joss Whedon", "beforeend", "lista1")
 itens(`Robert Downey Jr., Scarlett Johansson, Chris Evans, Mark Rufallo, Chris Hemsworth, Jeremy Renner,
 Tom Hiddleston, Samuel L. Jackson`, "beforeend", "lista1")
+
+itens("NOME: VINGADORES ERA DE ULTRON", "beforeend", "lista2")
+itens("Ano de lançamento: 2015", "beforeend", "lista2")
+itens("Vale a Pena ? Sim", "beforeend", "lista2")
+itens("Diretor: Joss Whedon", "beforeend", "lista2")
+itens(`Elenco: Robert Downey Jr., Scarlett Johansson, Chris Evans, Mark Rufallo, Tom Hiddletons, Samuel L. Jackson, Elizabeth Olsen, James Spader, Paul Bettany`, "beforeend", "lista2")
+
+itens("NOME: VINGADORES: GUERRA INFINITA", "beforeend", "lista3")
+itens("Ano de Lançamento: 2018", "beforeend", "lista3")
+itens("Vale a pena ? Sim", "beforeend", "lista3")
+itens("Diretor: Anthony e Joe Russo", "beforeend", "lista3")
+itens(`Elenco: Robert Downey Jr., Scarlett Johansson, Chris Evans, Mark Rufallo, Tom Hiddletons, Samuel L. Jackson, Elizabeth Olsen, Paul Bettany`, "beforeend", "lista3")
+
+itens("NOME: VINGADORES ULTIMATO", "beforeend", "lista4")
+itens("Ano de lançamento: 2019", "beforeend", "lista4")
+itens("Vale a Pena? Sim", "beforeend", "lista4")
+itens("Diretor: Anthony e Joe Russo", "beforeend", "lista4")
+itens(`Elenco: Robert Downey Jr., Scarlett Johansson, Chris Evans, Mark Rufallo,Jeremy Renner, Tom Hiddletons, Samuel L. Jackson, Elizabeth Olsen, Paul Bettany`, "beforeend", "lista4")
+
 
 
