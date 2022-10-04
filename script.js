@@ -90,7 +90,7 @@ const ninja0 = {
    isninja: true,
    ninjutsus: ['Clones das Sombras', 'Jutsu Sexy'],
    img: "img/naruto.png",
-   href:'https://pt.wikipedia.org/wiki/Naruto',
+   href: 'https://pt.wikipedia.org/wiki/Naruto',
 }
 
 const ninja1 = {
@@ -118,7 +118,7 @@ const ninja3 = {
    isninja: true,
    ninjutsus: ["Os Noves Portões"],
    img: "img/maito-gai.png",
-   href:'https://naruto.fandom.com/pt-br/wiki/Might_Guy',
+   href: 'https://naruto.fandom.com/pt-br/wiki/Might_Guy',
 }
 
 const ninja4 = {
@@ -128,7 +128,7 @@ const ninja4 = {
    isninja: true,
    ninjutsus: ["Só Tem Taijuts"],
    img: "img/rock-lee.png",
-   href:'https://naruto.fandom.com/pt-br/wiki/Rock_Lee',
+   href: 'https://naruto.fandom.com/pt-br/wiki/Rock_Lee',
 }
 
 const ninja5 = {
@@ -147,7 +147,7 @@ const ninja6 = {
    isninja: true,
    ninjutsus: ["técnica de Imitação pela Sombra", "técnica da Captura pela Sombra"],
    img: "img/shikamaru.png",
-   href:'https://naruto.fandom.com/pt-br/wiki/Shikamaru_Nara',
+   href: 'https://naruto.fandom.com/pt-br/wiki/Shikamaru_Nara',
 }
 
 const ninja7 = {
@@ -253,7 +253,7 @@ for (let i = 0; i < ninjasarray.length; i++) {
 
 function buscarNinja(array, nome) {
 
-   if(nome != undefined){
+   if (nome != undefined) {
 
       const ninjas = array.filter((objeto) => objeto.nome.toUpperCase() == nome.toUpperCase());
       if (ninjas.length >= 1) {
@@ -262,22 +262,21 @@ function buscarNinja(array, nome) {
          alert('nenhum ninja foi encontrado.')
       }
    }
-   
+
 }
 
-function buscaPersonagem(){
+function buscaPersonagem() {
 
-   let html ;
+   let html;
 
    const search = document.querySelector(".search-bar").value;
-   if(!search){
-       alert("Digite algo para que a busca aconteça");
-   }else {
+   if (!search) {
+      alert("Digite algo para que a busca aconteça");
+   } else {
       const ninjasFiltrados = buscarNinja(ninjasarray, search);
       console.log(ninjasFiltrados);
 
       html = `<section id="card">
-
                 <div id="ninja-imagem"><img class="naruto" src="${ninjasFiltrados[0].img}" alt="imagem do naruto"></div>
                 <ul>
                     <li id="nome"><a href="${ninjasFiltrados[0].href}" target="_blank">Nome: ${ninjasFiltrados[0].nome}</a></li>
@@ -285,13 +284,12 @@ function buscaPersonagem(){
                     <li>Idade: ${ninjasFiltrados[0].idade}</li>
                     <li>Isninja: ${ninjasFiltrados[0].isninja}</li>
                     <li>Ninjutsus: ${ninjasFiltrados[0].ninjutsus}</li>
-
                 </ul>
             </section>`;
 
       document.querySelector(".card-container").innerHTML = "";
       document.querySelector(".card-container").innerHTML = html;
-   
+
    }
 }
 
