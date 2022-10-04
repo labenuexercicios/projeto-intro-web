@@ -26,7 +26,7 @@ console.log(authorBook1)
 //OBJETO 02
 
 authorBook2 = {
-    author: 'CLive Staples Lewis',
+    author: 'Clive Staples Lewis',
     numberBooks: 49,
     live: false,
     bestBooks: ['Till We Have Face', 'The Screwtappers Letters', 'Chronicles Of Narnia: The Last Battle']
