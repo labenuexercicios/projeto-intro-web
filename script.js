@@ -86,7 +86,8 @@ function relatorio(objeto) {
 }
 
 
-function addElem() {
+function addElem(obj) {
+    const propiedades = ['nome', 'ano de lançamento','E uma serie?', 'genero','elenco']
 
     const main = document.getElementById('main');
     // Criando elemento section
@@ -94,12 +95,21 @@ function addElem() {
     // Inserindo elemento SECTION no HTML
     main.appendChild(section)
     const ul = document.createElement('ul')
-    for (prop in greysAnatomy) {
+    let cont = 0
+    for (prop in obj) {
         //  Criando elemento lista
         const li = document.createElement('li')
-        li.innerHTML += greysAnatomy[prop]
+        li.innerHTML += `${propiedades[cont]}: ${obj[prop]}`
         section.appendChild(li)
+        if(cont < propiedades.length){
+            cont = cont + 1
+        }
+        
+        
         
     }
 }
-addElem()
+addElem(greysAnatomy)
+
+
+
