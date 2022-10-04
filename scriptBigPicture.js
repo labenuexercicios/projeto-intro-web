@@ -3,14 +3,17 @@ const modal = document.getElementsByClassName("modal")
 
 const bigPicture = (event) => {
     modal[0].classList.toggle("closed")
+    modal[0].classList.toggle("open")
     const pokeNomeTarget = pokemonsInicial.filter(poke => poke.nome === event.target.alt)
     modalHtml(pokeNomeTarget)    
     modalHtml(pokeNomeTarget)    
-    modalHtml(pokeNomeTarget)    
+    modalHtml(pokeNomeTarget)   
 }
 
 const closeModal = () => {
     modal[0].classList.toggle("closed")
+    modal[0].classList.toggle("open")
+
 }
 
 let num = 0 
@@ -48,7 +51,7 @@ const pokeImg = document.getElementsByClassName("imgModal")
 
 const modalHtml = (pokeTarget) => {
 
-    //   containerModal[0].style.backgroundColor = "rgb(138, 43, 226)";
+      containerModal[0].style.backgroundColor = "rgb(138, 43, 226)";
       pokeNome[0].innerHTML = pokeTarget[0].nome;
       pokeNome[1].innerHTML = pokeTarget[0].evolucao.split(",")[0];
       pokeNome[2].innerHTML = pokeTarget[0].evolucao.split(",")[1];
@@ -60,6 +63,3 @@ const modalHtml = (pokeTarget) => {
         pokeImg[1].src = `${pokeTarget[0].imageEvolution1}`;
         pokeImg[2].src = `${pokeTarget[0].imageEvolution2}`;
 }
-
-// event.target.currentSrc.includes("001")
-

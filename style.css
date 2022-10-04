@@ -133,8 +133,115 @@ footer > p {
     margin: 0 auto;
 }
 
+/* modal */
+
+div.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    animation-name: open;
+    animation-duration: .2s;
+}
+
+@keyframes open {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+div.closed {
+    display: none;
+}
+
+div.container-modal {
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid;
+    width: 90vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation-name: openContainer;
+    animation-duration: .2s;
+    z-index: 99;
+}
+
+span.closeButton { 
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+span.close:hover { 
+    cursor: pointer;
+}
+
+img.imgModal {
+    width: 15vw;
+}
+
+div.container-modal > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container-modal > article > p {
+    font-size: 2em;
+}
+
+div.container-modal > article > img {
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+div.container-modal > article > img.imgModal:hover {
+    width: 20vw;
+    font-size: 2rem;
+    text-align: center;
+    transition: 0.1s;
+} 
+
+div.container-modal > article > p.pokeTipo {
+    border: 1px solid;
+    border-radius: 50px;
+    width: 10vw;
+    height: 7vh;
+    text-align: center;
+}
+
 @media screen and (min-device-width : 481px) and (max-device-width : 800px) {
 	/* aqui colocamos o CSS para tablets */
+    div.container-modal {
+        width: 80vw;
+        height: 30vh;
+    }
+
+    div.container-modal > article > p {
+        font-size: 1.5rem;
+    }
+
+    div.container-modal > article > p.pokeTipo {
+        border-radius: 30px;
+        width: 15vw;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     main {
         background-color: rgb(69, 35, 104);
     }
@@ -167,6 +274,25 @@ footer > p {
 
 @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	/* aqui colocamos o CSS para celulares */
+    div.container-modal {
+        width: 90vw;
+        height: 20vh;
+    }
+
+    div.container-modal > article > p {
+        font-size: 1.3rem;
+    }
+
+    div.container-modal > article > p.pokeTipo {
+        border-radius: 20px;
+        width: 20vw;
+        height: 3vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+
     main {
         display: flex;
         flex-direction: column;
@@ -203,91 +329,4 @@ footer > p {
     main > section > article > img {
         min-width: 50%;
     }
-}
-
-/* modal */
-
-div.modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    animation-name: open;
-    animation-duration: .2s;
-}
-
-@keyframes open {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-div.closed {
-    display: none;
-}
-
-div.container-modal {
-    background-color: red;
-    position: relative;
-    border-radius: 20px;
-    border: 2px solid;
-    width: 90vw;
-    height: 40vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    animation-name: openContainer;
-    animation-duration: .2s;
-}
-
-span.closeButton { 
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-span.close:hover { 
-    cursor: pointer;
-}
-
-img.imgModal {
-    width: 15vw;
-}
-
-div.container-modal > article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-div.container-modal > article > p {
-    font-size: 2em;
-}
-
-div.container-modal > article > img {
-    cursor: pointer;
-}
-
-div.container-modal > article > img.imgModal:hover {
-    width: 20vw;
-    font-size: 2rem;
-    text-align: center;
-} 
-
-div.container-modal > article > p.pokeTipo {
-    border: 1px solid;
-    border-radius: 50px;
-    width: 10vw;
-    height: 7vh;
-    text-align: center;
 }

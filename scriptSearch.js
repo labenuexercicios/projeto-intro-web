@@ -17,6 +17,7 @@ const reset = () => {
 
 const search = () => {
   const searchPokemon = document.getElementById('buscar')
+
   for ( i in pokemon ) {
     if (pokemon[i].nome.toLowerCase() === searchPokemon.value.toLowerCase()) {
       filterElement(pokemon[i].nome)
