@@ -5,27 +5,17 @@
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
-    <script src="scriptDom.js" defer></script>
+    <script src="/script.js" defer></script>
+    <script src="/scriptBigPicture.js" defer></script>
+    <script src="/scriptCreateHtml.js" defer></script>
+    <script src="/scriptSearch.js" defer></script>
+    <script src="/scriptToTopButton.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <div class="modal closed">
         <div class="container-modal">
             <span class="closeButton" onclick="closeModal()">X</span>
-                <article>
-                    <p>Bulbasaur</p>
-                    <img class="imgModal" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="">
-                </article>
-                <article>
-                    <p>Ivysaur</p>
-                    <img class="imgModal" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="">
-                </article>
-                <article>
-                    <p>Venusaur</p>
-                    <img class="imgModal" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="">
-                </article>
-
         </div>
     </div>
     <header>
@@ -34,39 +24,15 @@
     </header> 
     
     <main>
-        <div>
-            <input type="text" name="buscar" id="buscar" placeholder="Pesquise aqui"> 
-            <button type="submit" name="buscar">Buscar</button>
+        <div id="searchBar">
+            <input onkeypress="search()" type="text" name="buscar" id="buscar" placeholder="Busque um pokémon"> 
+            <button onclick="search()" type="submit" name="buscar">Buscar</button>
+            <button onclick="reset()" type="submit">Resetar</button>
         </div>
 
-        <section>
-            <article>
-                <img onclick="bigPicture(event)" width='20%' src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="">
-                <div>
-                    <h2></h2>
-                    <p class="lv"></p>
-                    <p class="evolução"></p>
-                </div>
-            </article>
-            <article>
-                <img onclick="bigPicture(event)" width='20%' src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="">
-                <div>              
-                    <h2></h2>
-                    <p class="lv"></p>
-                    <p class="evolução"></p>
-                </div>
-            </article>
-            <article>
-                <img onclick="bigPicture(event)" width='20%' src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="">
-                <div>
-                    <h2></h2>
-                    <p class="lv"></p>
-                    <p class="evolução"></p>
-                </div>
-            </article>
+        <section id="section-article">
         </section>
         <img onclick="topFunction()" id="scroll-top" src="/assets/Pokemon_Go_Arrow_icon-icons.com_67522.svg" alt="">
-
     </main>
 
     <footer>

@@ -16,32 +16,60 @@ header {
     padding: 0 5vw 0 5vw;
 }
 
+header > h1#logo-text {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+header > h1#logo-text:hover {
+    color: wheat;
+    transition: 0.3s;
+}
+
 .pokebola { 
     max-width: 2.5rem;
     margin-left: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pokebola:hover { 
+    transition: 0.3s;
+    transform: scale(1.2);
 }
 
 main {
+    min-height: 100vh;
     padding: 5vh 0;
     background-color: rgb(121, 82, 159);
     display: grid;
     justify-content: center;
+    align-content: flex-start;
+}
+
+main > div#searchBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 main > div > input {
     border-color: white;
-    width: 38vw;
+    width: 100%;
     height: 25px;
+    margin-right: 2px;
 }
 
 main > div > button { 
     height: 30px;
     border-radius: 0;
-    margin-left: 3px;
+    margin: 0 2px;
     cursor: pointer;
 }
 
 main > section > article {
+    cursor: pointer;
     max-width: 40vw;
     padding: 1rem;
     display: flex;
@@ -50,6 +78,13 @@ main > section > article {
     background-color: lightcoral;
     margin: 5vh 0;
     border-radius: 1rem ;
+    transition: 0.3s;
+}
+
+main > section > article:hover {
+    background-color: hsl(0, 79%, 75%);
+    transform: translateY(-10px);
+    transition: 0.3s;
 }
 
 main > section > article > div > h2 {
@@ -75,7 +110,13 @@ main > section > article > div {
     position: fixed;
     right: 5%;
     bottom: 5%;
+    transition: 0.3s;
     cursor: pointer;
+}
+
+#scroll-top:hover {
+    transition: 0.3s;
+    transform: scale(1.2);
 }
 
 footer {
@@ -94,8 +135,11 @@ footer > p {
 
 @media screen and (min-device-width : 481px) and (max-device-width : 800px) {
 	/* aqui colocamos o CSS para tablets */
+    main {
+        background-color: rgb(69, 35, 104);
+    }
+
     main > div > input {
-        width: 67vw;
         height: 25px;
     }
 
@@ -124,11 +168,18 @@ footer > p {
 @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	/* aqui colocamos o CSS para celulares */
     main {
-        background-color: blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main > div#searchBar {
+        width: 70%;
     }
     
     main > div > input {
-        width: 50vw;
+        width: 100%;
         height: 25px;
     }
 
@@ -181,14 +232,14 @@ div.closed {
 }
 
 div.container-modal {
+    background-color: red;
     position: relative;
-    background-color: blue;
     border-radius: 20px;
     border: 2px solid;
-    width: 70vw;
-    height: 60vh;
+    width: 90vw;
+    height: 40vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     animation-name: openContainer;
     animation-duration: .2s;
@@ -209,7 +260,7 @@ span.close:hover {
 }
 
 img.imgModal {
-    width: 20vw;
+    width: 15vw;
 }
 
 div.container-modal > article {
@@ -228,7 +279,15 @@ div.container-modal > article > img {
 }
 
 div.container-modal > article > img.imgModal:hover {
-    width: 25vw;
+    width: 20vw;
     font-size: 2rem;
+    text-align: center;
+} 
+
+div.container-modal > article > p.pokeTipo {
+    border: 1px solid;
+    border-radius: 50px;
+    width: 10vw;
+    height: 7vh;
     text-align: center;
 }
