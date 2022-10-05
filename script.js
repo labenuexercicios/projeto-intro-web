@@ -8,6 +8,7 @@ let objeto1 ={
     elenco: ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Rufallo", "Chris Hemsworth", "Jeremy Renner",
 "Tom Hiddleston", "Samuel L. Jackson"],
     imagem: `./imagens/vingadores.jpg`,
+    link: "https://pt.wikipedia.org/wiki/Vingadores",
 };
     
 
@@ -127,12 +128,12 @@ funcBusca = (arrayObjetos, string) =>{
 console.log(funcBusca(arrayObjetos, `OS VINGADORES`))
 
 
+
 itens = (texto, posicao, id) => {
     let listagem = document.getElementById(id)
     let item = document.createElement("li")
     let text = document.createTextNode(texto)
     item.appendChild(text)
-    console.log(listagem)
     listagem.insertAdjacentElement(posicao, item)
 }
 
@@ -161,5 +162,33 @@ itens("Vale a Pena? Sim", "beforeend", "lista4")
 itens("Diretor: Anthony e Joe Russo", "beforeend", "lista4")
 itens(`Elenco: Robert Downey Jr., Scarlett Johansson, Chris Evans, Mark Rufallo,Jeremy Renner, Tom Hiddletons, Samuel L. Jackson, Elizabeth Olsen, Paul Bettany`, "beforeend", "lista4")
 
+
+for(i in arrayObjetos){
+    let div = document.getElementById("div-sections")
+    let section = document.createElement("section")
+    let ul = document.createElement("ul")
+    let li1 = document.createElement("li")
+    let li2 = document.createElement("li")
+    let li3 = document.createElement("li")
+    let a = document.createElement("a")
+    let imagem = document.createElement("img")
+    section.setAttribute("id", "section1")
+    imagem.setAttribute("id", "imagem1")
+    ul.setAttribute("id", "lista1")
+    ul.setAttribute("class", "lista")
+    imagem.src=arrayObjetos[i].imagem
+    a.setAttribute("href", arrayObjetos[i].link)
+    a.innerHTML = arrayObjetos[i].nome.toUpperCase()
+    li1.innerHTML = a
+    li2.innerHTML = arrayObjetos[i].anoLancamento
+    li3.innerHTML = arrayObjetos[i].valeAPena
+    div.appendChild(section)
+    section.appendChild(imagem)
+    section.appendChild(ul)
+    ul.appendChild(li1)
+    ul.appendChild(li2)
+    ul.appendChild(li3)
+    
+}
 
 
