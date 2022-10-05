@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+}
+
+header {
+    display: flex;
+
+    background-color: orangered;
+    color: white;
+
+    flex-flow: column;
+    align-items: center;
+    justify-self: center;
+    
+    padding-top: 1ch;
+    padding-bottom: 1ch;
+
+    margin-bottom: 1ch;
+}
+
+label {
+    font-size: large;
+    margin-right: 0.5ch;
+}
+
+input {
+    font-size: large;
+}
+
+hr {
+    margin: 1ch;
+    transition-duration: 500ms;
+}
+
+.Q {
+    display: flex;
+    
+    flex-flow: row;
+    justify-content: center;
+}
+
+#Busca {
+    margin-left: 0.5ch;
+    font-size: large;
+
+    border: 0;
+
+    transition-duration: 500ms;
+}
+
+#Busca:hover {
+
+    background-color: black;
+    color: white;
+
+    border: 1px;
+    border-color: white;
+
+}
+
+#Jogador {
+    display: flex;
+    flex-direction: row;    
+    
+    height: 2in;
+    width: 6in;
+
+    padding: 0.1in;
+    
+    border-style: groove;
+    border-radius: 0.3in;
+    margin: 0.05in;
+}
+
+#imgJogador {
+    width: 2in;
+    height: 2in;
+
+    background-color: aquamarine;
+
+    object-fit: scale-down;
+
+    border: 1px;
+    border-radius: 1in;
+
+    margin-right: 0.2in;
+}
+
+#nome {
+    margin-bottom: 0.1in;
+}
+
+#Jogadores {
+    display: flex;
+
+    flex-flow: column;
+    align-items: center;
+    justify-self: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    
+    padding-bottom: 0.5in;
+}
