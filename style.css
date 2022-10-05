@@ -1,4 +1,4 @@
-*{
+*, *::before, *::after{
    
     font-family: Arial, Helvetica, sans-serif;
     font-size: clamp(0.5em, 0.7em + 1vw, 1em);
@@ -6,14 +6,23 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
 }
 body{
     display: grid;
     place-items: auto 2fr auto;
     justify-items: center;
+    gap: 1em;
 }
 #header{
     background-color: #225930;
+    width: 100%;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    border-bottom: 0.2em solid black;
+    margin-bottom: 5em;
+    box-sizing: border-box;
 }
 #main{
     display: flex;
@@ -27,23 +36,28 @@ body{
 .img{
     height: 12.5em;
     justify-self: stretch;
-    margin-right: 3em;
-    margin-left: 3em;
+    margin-right: 1em;
+    margin-left: 1.7em;
     margin-top: 1em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 10px 10px 10px 30px;
 }
 .card{
     display: flex;
     flex-direction: row;
     margin: 1em;
     align-items: center;
-    border: 1px solid black;
+    border:1px solid black;
+    background-color: #225930;
+    border-radius: 10px 40px 150px;
+    
 }
 
 .pesquisa{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 4em;
 }
 
 #name{
@@ -55,4 +69,17 @@ body{
 #send{
     padding: 0.4em;
     
+}
+#footer{
+    background-color: #225930;
+    
+    width: 100%;
+
+}
+
+.listaInformacoes{
+    margin-right: 2em;
+    line-height: 150%;
+    width: 60%;
+    color: white;
 }

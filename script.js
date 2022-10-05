@@ -112,7 +112,7 @@ function addElem(obj) {
     main.appendChild(section)
     const ul = document.createElement('ul')
     // Inserindo atributos na tag UL
-    ul.setAttribute('class', 'listaInformações')
+    ul.setAttribute('class', 'listaInformacoes')
     // Inserindo ul no HTML
     section.appendChild(ul)
     let cont = 0
