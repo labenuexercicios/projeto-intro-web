@@ -13,7 +13,7 @@ body{
     justify-items: center;
 }
 #header{
-    
+    background-color: #225930;
 }
 #main{
     display: flex;
@@ -38,4 +38,21 @@ body{
     margin: 1em;
     align-items: center;
     border: 1px solid black;
+}
+
+.pesquisa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#name{
+    margin-right: 1em;
+    width: 75%;
+    padding: 0.4em;
+}
+
+#send{
+    padding: 0.4em;
+    
 }
