@@ -129,38 +129,7 @@ console.log(funcBusca(arrayObjetos, `OS VINGADORES`))
 
 
 
-itens = (texto, posicao, id) => {
-    let listagem = document.getElementById(id)
-    let item = document.createElement("li")
-    let text = document.createTextNode(texto)
-    item.appendChild(text)
-    listagem.insertAdjacentElement(posicao, item)
-}
 
-itens("Nome: Vingadores", "beforeend", "lista1")
-itens("Ano de Lançamento: 2012", "beforeend", "lista1")
-itens("Vale a pena ? Sim", "beforeend", "lista1")
-itens("Diretor: Joss Whedon", "beforeend", "lista1")
-itens(`Robert Downey Jr., Scarlett Johansson, Chris Evans, Mark Rufallo, Chris Hemsworth, Jeremy Renner,
-Tom Hiddleston, Samuel L. Jackson`, "beforeend", "lista1")
-
-itens("NOME: VINGADORES ERA DE ULTRON", "beforeend", "lista2")
-itens("Ano de lançamento: 2015", "beforeend", "lista2")
-itens("Vale a Pena ? Sim", "beforeend", "lista2")
-itens("Diretor: Joss Whedon", "beforeend", "lista2")
-itens(`Elenco: Robert Downey Jr., Scarlett Johansson, Chris Evans, Mark Rufallo, Tom Hiddletons, Samuel L. Jackson, Elizabeth Olsen, James Spader, Paul Bettany`, "beforeend", "lista2")
-
-itens("NOME: VINGADORES: GUERRA INFINITA", "beforeend", "lista3")
-itens("Ano de Lançamento: 2018", "beforeend", "lista3")
-itens("Vale a pena ? Sim", "beforeend", "lista3")
-itens("Diretor: Anthony e Joe Russo", "beforeend", "lista3")
-itens(`Elenco: Robert Downey Jr., Scarlett Johansson, Chris Evans, Mark Rufallo, Tom Hiddletons, Samuel L. Jackson, Elizabeth Olsen, Paul Bettany`, "beforeend", "lista3")
-
-itens("NOME: VINGADORES ULTIMATO", "beforeend", "lista4")
-itens("Ano de lançamento: 2019", "beforeend", "lista4")
-itens("Vale a Pena? Sim", "beforeend", "lista4")
-itens("Diretor: Anthony e Joe Russo", "beforeend", "lista4")
-itens(`Elenco: Robert Downey Jr., Scarlett Johansson, Chris Evans, Mark Rufallo,Jeremy Renner, Tom Hiddletons, Samuel L. Jackson, Elizabeth Olsen, Paul Bettany`, "beforeend", "lista4")
 
 
 for(i in arrayObjetos){
@@ -177,9 +146,10 @@ for(i in arrayObjetos){
     ul.setAttribute("id", "lista1")
     ul.setAttribute("class", "lista")
     imagem.src=arrayObjetos[i].imagem
+    a.setAttribute("target", "_blank")
     a.setAttribute("href", arrayObjetos[i].link)
-    a.innerHTML = arrayObjetos[i].nome.toUpperCase()
-    li1.innerHTML = a
+    a.innerHTML += `${arrayObjetos[i].nome.toUpperCase()}`
+    li1.appendChild(a)
     li2.innerHTML = arrayObjetos[i].anoLancamento
     li3.innerHTML = arrayObjetos[i].valeAPena
     div.appendChild(section)
@@ -188,7 +158,31 @@ for(i in arrayObjetos){
     ul.appendChild(li1)
     ul.appendChild(li2)
     ul.appendChild(li3)
-    
-}
+
+    // let div = document.getElementById("div-sections");
+    //     let section = document.createElement("section");
+    //     let img = document.createElement("img");
+    //     let link = document.createElement("a");
+    //     let ul = document.createElement("ul");
+    //     let li1 = document.createElement("li");
+    //     let li2 = document.createElement("li");
+    //     let li3 = document.createElement("li");
+    //     link.setAttribute("class" , "a-footer");
+    //     img.src = arrayObjetos[i].imagem;
+    //     link.setAttribute("href",arrayObjetos[i].link);
+    //         link.setAttribute("target","_blank");
+    //         link.innerHTML += arrayObjetos[i].nome.toUpperCase();
+    //         li1.innerHTML += "Nome: ";
+    //         li2.innerHTML += `População: ${arrayObjetos[i].anoLancamento}`;
+    //         li3.innerHTML += `Principais Cidades: ${arrayObjetos[i].valeAPena}`;
+    //     section.setAttribute("id", "section1");
+    //     div.appendChild(section);
+    //     li1.appendChild(link);
+    //     section.append(img);
+    //     section.appendChild(ul);
+    //     ul.appendChild(li1);
+    //     ul.appendChild(li2);
+    //     ul.appendChild(li3);
+    }
 
 
