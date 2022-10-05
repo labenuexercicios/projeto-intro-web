@@ -322,6 +322,202 @@ footer {
         font-size: 20px;
     }
 }
+#card2 {
+    height: 200px;
+    background-color: black;
+    margin-bottom: 15px;
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: black 0.5px 0px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+#card3 {
+    height: 200px;
+    background-color: black;
+    margin-bottom: 15px;
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: black 0.5px 0px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+#card4 {
+    height: 200px;
+    background-color: black;
+    margin-bottom: 15px;
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: black 0.5px 0px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+#card5 {
+    height: 200px;
+    background-color: black;
+    margin-bottom: 15px;
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: black 0.5px 0px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+#card6 {
+    height: 200px;
+    background-color: black;
+    margin-bottom: 15px;
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: black 0.5px 0px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+#card7 {
+    height: 200px;
+    background-color: black;
+    margin-bottom: 15px;
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: black 0.5px 0px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+#card8 {
+    height: 200px;
+    background-color: black;
+    margin-bottom: 15px;
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: black 0.5px 0px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+#card:hover {
+    height: 240px;
+    width: 500px;
+    background: url('./img/gifs/naruto.gif') left center no-repeat;
+    background-size: 500px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    text-shadow: azure 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border: white solid 2px;
+}
+
+#card2:hover {
+    height: 240px;
+    width: 500px;
+    background: url('./img/gifs/kakashi.gif') left center no-repeat;
+    background-size: 500px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    text-shadow: azure 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border: white solid 2px;
+}
+
+#card3:hover {
+    height: 240px;
+    width: 500px;
+    background: url('./img/gifs/jiraiya.gif') right;
+    background-size: 500px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    text-shadow: azure 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border: white solid 2px;
+}
+
+#card4:hover {
+    height: 240px;
+    width: 500px;
+    background: url('./img/gifs/maitogai.gif') right;
+    background-size: 500px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    text-shadow: azure 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border: white solid 2px;
+}
+
+#card5:hover {
+    height: 240px;
+    width: 500px;
+    background: url('./img/gifs/rocklee.gif') right;
+    background-size: 500px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    text-shadow: azure 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border: white solid 2px;
+}
+
+#card6:hover {
+    height: 240px;
+    width: 500px;
+    background: url('./img/gifs/neji.webp') right;
+    background-size: 500px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    text-shadow: azure 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border: white solid 2px;
+}
+
+#card7:hover {
+    height: 240px;
+    width: 500px;
+    background: url('./img/gifs/shikamaru1.gif') right;
+    background-size: 500px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    text-shadow: azure 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border: white solid 2px;
+}
+
+#card8:hover {
+    height: 240px;
+    width: 500px;
+    background: url('./img/gifs/nagato-rinnegan.gif') right;
+    background-size: 500px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    text-shadow: azure 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border: white solid 2px;
+}
 
 /* Semana 8
 A partir do nosso exemplo de estilização, crie a identidade da sua página seguindo os passos abaixo:

@@ -91,6 +91,7 @@ const ninja0 = {
    ninjutsus: ['Clones das Sombras', 'Jutsu Sexy'],
    img: "img/naruto.png",
    href: 'https://pt.wikipedia.org/wiki/Naruto',
+   card:'card'
 }
 
 const ninja1 = {
@@ -99,7 +100,8 @@ const ninja1 = {
    idade: 28,
    isninja: false,
    ninjutsus: ['copiar habilidades', 'chidori'],
-   img: "img/kakashi.png"
+   img: "img/kakashi.png",
+   card:'card2'
 }
 
 const ninja2 = {
@@ -108,7 +110,8 @@ const ninja2 = {
    idade: 51,
    isninja: false,
    ninjutsus: ["rasengan", "odama rasengan"],
-   img: "img/jiraiya.png"
+   img: "img/jiraiya.png",
+   card:'card3'
 }
 
 const ninja3 = {
@@ -119,6 +122,7 @@ const ninja3 = {
    ninjutsus: ["Os Noves Portões"],
    img: "img/maito-gai.png",
    href: 'https://naruto.fandom.com/pt-br/wiki/Might_Guy',
+   card:'card4',
 }
 
 const ninja4 = {
@@ -129,6 +133,7 @@ const ninja4 = {
    ninjutsus: ["Só Tem Taijuts"],
    img: "img/rock-lee.png",
    href: 'https://naruto.fandom.com/pt-br/wiki/Rock_Lee',
+   card:'card5'
 }
 
 const ninja5 = {
@@ -137,7 +142,8 @@ const ninja5 = {
    idade: 17,
    isninja: false,
    ninjutsus: ["oito trigamas", "Emissão de chakara"],
-   img: "img/neji.png"
+   img: "img/neji.png",
+   card:'card6'
 }
 
 const ninja6 = {
@@ -148,6 +154,7 @@ const ninja6 = {
    ninjutsus: ["técnica de Imitação pela Sombra", "técnica da Captura pela Sombra"],
    img: "img/shikamaru.png",
    href: 'https://naruto.fandom.com/pt-br/wiki/Shikamaru_Nara',
+   card:'card7',
 }
 
 const ninja7 = {
@@ -156,7 +163,8 @@ const ninja7 = {
    idade: 32,
    isninja: false,
    ninjutsus: ["Jutsus absorção da alma", "Técnica da vida celestial."],
-   img: "img/nagato.png"
+   img: "img/nagato.png",
+   card:'card8'
 }
 
 // Semana 3
@@ -276,7 +284,7 @@ function buscaPersonagem() {
       const ninjasFiltrados = buscarNinja(ninjasarray, search);
       console.log(ninjasFiltrados);
 
-      html = `<section id="card">
+      html = `<section id="${ninjasFiltrados[0].card}">
                 <div id="ninja-imagem"><img class="naruto" src="${ninjasFiltrados[0].img}" alt="imagem do naruto"></div>
                 <ul>
                     <li id="nome"><a href="${ninjasFiltrados[0].href}" target="_blank">Nome: ${ninjasFiltrados[0].nome}</a></li>
