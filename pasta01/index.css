@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    height: 10vh;
+    background-color: #5DAEEB;
+    align-items: center;
+    border: 1px solid black;
+    
+}
+.estrutura{
+    display: grid;
+    grid-template-columns: 1fr 3fr  1fr;
+    background-color:#62d2c1 ;
+}
+.latesquerda{
+    grid-row: 1/3;
+    grid-column: 1/2;
+    background-color: #70b5e9;
+}
+/* #4E4DD6
+#B14CF5
+#5DAEEB
+#4AD4BF
+#46FA70 */
+.buscador{
+    top:0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 3/4;
+    margin: 8px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #B14CF5;
+    color: white;
+}
+.buscadorLayout{
+padding: 8px;
+}
+.centro{
+    grid-column: 2/3;
+    
+}
+.Cracha{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    border: 1px solid   black;
+}
+.infobicho{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:repeat(4 , 1fr) ;
+    grid-row: 2/3;
+}
+li{
+    display: flex;
+    margin-left: 10%;
+}
+#foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 1/5;
+    margin: 0
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #5DAEEB;
+    color: black;
+    align-items: center;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+    
+    background-image: url(./../assets/Planice.jpg);
+    background-attachment: fixed;
+} */
+/* .grid{
+    display: grid;
+    grid-template-columns: 10vw 1fr;
+}
+
+header{
+    display: flex;
+    text-align: center;
+    background: linear-gradient(180deg, rgb(0, 97, 0), rgb(35, 218, 35));
+    color: white;
+    border-bottom:4px solid rgb(1, 73, 1);
+    position: sticky;
+    top: 0;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    display: flex;
+    background: linear-gradient(180deg, rgb(0, 97, 0), rgb(35, 218, 35));
+    color: black;
+    width: 100vw
+}
+.teste{
+    border: 1px solid black;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    grid-column: repeat(auto-fill, minmax(100px, 1fr));
+    padding: 16px;
+    
+}
+
+article{
+   
+}
+#balaozim{
+     border-bottom-left-radius: 16px;
+    font-size: 24px;
+    background: linear-gradient(180deg, rgb(0, 97, 0), rgb(35, 218, 35));
+    color: white;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    position: fixed;
+    right: 0;
+    width: 350px;
+} */
