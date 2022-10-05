@@ -14,7 +14,8 @@ const greysAnatomy = {
     isSerie: true,
     totTemporadas: 19,
     genero: ['drama', 'ficção medica', 'romance', 'comedia dramatica'],
-    elencoPrincipal: ['ellen pompeo', 'patrick dempsey', 'sandra oh']
+    elencoPrincipal: ['ellen pompeo', 'patrick dempsey', 'sandra oh'],
+    imagem: "imgs/graysAnatomyLogo.jpg"
 }
 
 const laCasaDePapel = {
@@ -24,7 +25,8 @@ const laCasaDePapel = {
     isSerie: true,
     totTemporadas: Number(4),
     genero: ['assalto', 'drama', 'suspense', 'crime'],
-    elencoPrincipal: ['alvaro morte', 'alba flores', 'miguel herran']
+    elencoPrincipal: ['alvaro morte', 'alba flores', 'miguel herran'],
+    imagem: "imgs/laCasaDePapelLogo.png"
 }
 const vikings = {
     ...series,
@@ -33,7 +35,8 @@ const vikings = {
     isSerie: true,
     totTemporadas: Number(6),
     genero: ['guerra', 'drama', 'ação', 'aventura'],
-    elencoPrincipal: ['travis fimmel', 'clive standen', 'gustaf skarsgard']
+    elencoPrincipal: ['travis fimmel', 'clive standen', 'gustaf skarsgard'],
+    imagem: "imgs/vikings.jpg"
 }
 // Exercicio 2
 const bdSeries = []
@@ -86,8 +89,11 @@ function relatorio(objeto) {
 }
 
 
-function addElem(obj,caminhoImg) {
-    const propiedades = ['nome', 'ano de lançamento','E uma serie?', 'genero','elenco']
+// console.log(relatorio(greysAnatomy))
+
+
+function addElem(obj) {
+    const propiedades = ['nome', 'ano de lançamento', 'E uma serie?', 'Total de temporadas', 'genero', 'elenco', 'imagem']
     // Elemento de referencia
     const main = document.getElementById('main');
     // Criando elemento section
@@ -95,7 +101,8 @@ function addElem(obj,caminhoImg) {
     // Elemento imagem
     const img = document.createElement('img')
     // Inserindo atributos na imagem
-    // img.setAttribute('src', caminhoImg)
+    img.setAttribute('src', obj.imagem)
+    img.setAttribute('class', 'img')
     // Inserindo atributos na SECTION
     section.setAttribute('class', 'card')
     section.setAttribute('id', 'card')
@@ -110,17 +117,51 @@ function addElem(obj,caminhoImg) {
     section.appendChild(ul)
     let cont = 0
     for (prop in obj) {
-        //  Criando elemento lista
-        const li = document.createElement('li')
-        li.innerHTML += ` ${propiedades[cont]}: ${obj[prop]}`
-        ul.appendChild(li)
-        if(cont < propiedades.length){
+        if (propiedades[cont] != 'imagem') {
+            //  Criando elemento lista
+            const li = document.createElement('li')
+            li.innerHTML += ` ${propiedades[cont]}: ${obj[prop]}`
+            ul.appendChild(li)
+        }
+        if (cont < propiedades.length) {
             cont = cont + 1
-        }  
+        }
     }
 }
-addElem(greysAnatomy,'imgs\graysAnatomyLogo.jpg')
-addElem(laCasaDePapel, 'C:\Users\mathe\OneDrive\Documentos\projeto-intro-web\imgs\laCasaDePapelLogo.png')
-addElem(vikings, 'C:\Users\mathe\OneDrive\Documentos\projeto-intro-web\imgs\laCasaDePapelLogo.png')
 
 
+
+
+
+
+
+function cards(array) {
+    for (let obj = 0; obj < bdSeries.length; obj++) {
+        addElem(bdSeries[obj])
+    }
+}
+
+function busca() {
+    const btn = document.querySelector("#send")
+
+    btn.addEventListener("click", function (e) {
+        e.preventDefault()
+
+        const name = document.getElementById("name")
+
+        const value = name.value
+
+        for (let obj = 0; obj < bdSeries.length; obj++) {
+            if (value === bdSeries[obj].nome) {
+                addElem(bdSeries[obj])
+
+            } else {
+                console.log('errado')
+            }
+        }
+    })
+}
+
+
+cards(bdSeries)
+busca()

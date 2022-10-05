@@ -9,46 +9,33 @@
 }
 body{
     display: grid;
-    grid-template-rows: auto 1fr auto;
-    place-items: center;
-    grid-gap: 1em;
+    place-items: auto 2fr auto;
+    justify-items: center;
 }
-#card{
-    display: grid;
-    grid-template-columns:minmax(2em, 35%) auto;
-    align-items: center;
-    grid-gap: 0.5em;
+#header{
+    
 }
-.pesquisa{
+#main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    
+    
+}
+
+.img{
+    height: 12.5em;
+    justify-self: stretch;
+    margin-right: 3em;
+    margin-left: 3em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.card{
     display: flex;
     flex-direction: row;
     margin: 1em;
-    justify-self: center;
-    width: 100%;
-    box-sizing: content-box;
-    
-}
-#btnSearch{
-    width: 20%;
-    height: 15%;
-    margin-left: 1em;
-    text-align: center;
-}
-#iSearch{
-    height: 15%;
-    width: 50%;
-    margin-left: 4em;
-}
-#header{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-
-main{
-    display: grid;
-    place-items: center;
-    gap: 2em;
-    justify-items: stretch;
+    align-items: center;
+    border: 1px solid black;
 }
