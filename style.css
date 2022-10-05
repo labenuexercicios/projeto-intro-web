@@ -1,4 +1,54 @@
+*{
+   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(0.5em, 0.7em + 1vw, 1em);
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
 body{
     display: grid;
     grid-template-rows: auto 1fr auto;
+    place-items: center;
+    grid-gap: 1em;
+}
+#card{
+    display: grid;
+    grid-template-columns:minmax(2em, 35%) auto;
+    align-items: center;
+    grid-gap: 0.5em;
+}
+.pesquisa{
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    justify-self: center;
+    width: 100%;
+    box-sizing: content-box;
+    
+}
+#btnSearch{
+    width: 20%;
+    height: 15%;
+    margin-left: 1em;
+    text-align: center;
+}
+#iSearch{
+    height: 15%;
+    width: 50%;
+    margin-left: 4em;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+main{
+    display: grid;
+    place-items: center;
+    gap: 2em;
+    justify-items: stretch;
 }

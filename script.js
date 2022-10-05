@@ -86,30 +86,41 @@ function relatorio(objeto) {
 }
 
 
-function addElem(obj) {
+function addElem(obj,caminhoImg) {
     const propiedades = ['nome', 'ano de lançamento','E uma serie?', 'genero','elenco']
-
+    // Elemento de referencia
     const main = document.getElementById('main');
     // Criando elemento section
     const section = document.createElement('section')
+    // Elemento imagem
+    const img = document.createElement('img')
+    // Inserindo atributos na imagem
+    // img.setAttribute('src', caminhoImg)
+    // Inserindo atributos na SECTION
+    section.setAttribute('class', 'card')
+    section.setAttribute('id', 'card')
+    // Inserindo imagem no HTML
+    section.appendChild(img)
     // Inserindo elemento SECTION no HTML
     main.appendChild(section)
     const ul = document.createElement('ul')
+    // Inserindo atributos na tag UL
+    ul.setAttribute('class', 'listaInformações')
+    // Inserindo ul no HTML
+    section.appendChild(ul)
     let cont = 0
     for (prop in obj) {
         //  Criando elemento lista
         const li = document.createElement('li')
-        li.innerHTML += `${propiedades[cont]}: ${obj[prop]}`
-        section.appendChild(li)
+        li.innerHTML += ` ${propiedades[cont]}: ${obj[prop]}`
+        ul.appendChild(li)
         if(cont < propiedades.length){
             cont = cont + 1
-        }
-        
-        
-        
+        }  
     }
 }
-addElem(greysAnatomy)
-
+addElem(greysAnatomy,'imgs\graysAnatomyLogo.jpg')
+addElem(laCasaDePapel, 'C:\Users\mathe\OneDrive\Documentos\projeto-intro-web\imgs\laCasaDePapelLogo.png')
+addElem(vikings, 'C:\Users\mathe\OneDrive\Documentos\projeto-intro-web\imgs\laCasaDePapelLogo.png')
 
 
