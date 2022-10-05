@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estoque e descarte supermercado</title>
     <script src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="estoque-style.css" />
+    <link rel="stylesheet" type="text/css" href="descarte-style.css" />
 </head>
 
 <body>
@@ -23,24 +23,24 @@
     </header>
     <main>
         <div>
-            <h2 class="subtitulo"><strong>Estoque Supermercado Brasil</strong></h2>
+            <h2 class="subtitulo"><strong>Descarte Supermercado Brasil</strong></h2>
             <div class="botao">
                 <label for="procura"></label>
-                <input type="text" name="procura" id="procura"  placeholder="Procurar...">
-                <button type="submit" onclick="procuraElementoEstoque()">Enviar</button>
-                <button type="submit" onclick="limparPesquisaEstoque()">Limpar Pesquisa</button>
+                <input type="text" name="procura" id="procura" placeholder="Procurar...">
+                <button type="submit" onclick="procuraElementoDescarte()">Enviar</button>
+                <button type="submit" onclick="limparPesquisaDescarte()">Limpar Pesquisa</button>
             </div>
         </div>
         <div class="div-flex">
             <nav>
                 <h3><a href="/home.html">Home</a></h3>
+                <h3><a href="/estoque.html">Estoque</a></h3>
                 <h3><a>A Vencer</a></h3>
-                <h3><a href="/descarte.html">Descarte</a></h3>
                 <h3><a>Cadastro</a></h3>
             </nav>
             <div class="centro" id="centro">
                 <script>
-                    window.onload = imprimirEstoque()
+                    window.onload = imprimirDescarte()
                 </script>
             </div>
             <aside>

@@ -1,11 +1,13 @@
-//1. Transforme os itens que criamos nas últimas semanas em objetos.
+//Transforme os itens que criamos nas últimas semanas em objetos.
 const item1 = {
   nome: "Macarrão",
   marca: "Amália",
   preco: 2.89,
   quantidade: 2000,
-  vencido: false,
+  validade: new Date("12/09/2022"),
   tipo: ["Penne", "Grande"],
+  img: "/Fotos/macarrao-amalia-penne.jpg",
+  link: "https://pt.wikipedia.org/wiki/Macarr%C3%A3o",
 };
 
 const item2 = {
@@ -13,8 +15,10 @@ const item2 = {
   marca: "Tio João",
   preco: 26.99,
   quantidade: 300,
-  vencido: false,
+  validade: new Date("12/09/2022"),
   tipo: ["Branco", "Pequeno"],
+  img: "/Fotos/arroz-tiojoao-branco.png",
+  link: "https://pt.wikipedia.org/wiki/Arroz",
 };
 
 const item3 = {
@@ -22,32 +26,19 @@ const item3 = {
   marca: "Supang",
   preco: 6.99,
   quantidade: 5000,
-  vencido: true,
+  validade: new Date("12/09/2022"),
   tipo: ["Vermelho", "Grande"],
+  img: "/Fotos/feijao-vermelho-supang.jpg",
+  link: "https://pt.wikipedia.org/wiki/Feij%C3%A3o",
 };
 
-//2. Crie um array para guardar os objetos. Este array deve estar vazio, por enquanto;
+//Crie um array para guardar os objetos. Este array deve estar vazio, por enquanto;
 let estoque = [];
 let descarte = [];
 
-//3. Adicione os objetos criados no item 1 ao array de objetos criado no item 2, utilizando o push()
+//FUNÇÕES NÃO UTILIZADAS MAIS
 
-//4. Altere o item “Adicione os novos objetos no array de objetos, utilizando o push()” (item 3), para criar uma verificação antes de dar o push. A caraterística booleana do objeto deve ser validada. Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for true;
-
-//5. Crie uma condição else, que, em caso de valor false na condição acima, exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push
-
-function agruparItensComValidadeBoaOuNaoEmArrays(objeto) {
-  if (!objeto.vencido) {
-    estoque.push(objeto);
-  } else {
-    alert(
-      `O item ${objeto.nome.toLocaleUpperCase()} não pode ser adicionado ao estoque, pois está vencido. O item foi adicionado na fila de descarte!`
-    );
-    descarte.push(objeto);
-  }
-}
 function imprimeRelatorio(array, string) {
-  console.log(`::::::::::     ${string.toLocaleUpperCase()}     ::::::::::`);
   for (let obj in array) {
     for (let caraterística in array[obj]) {
       if (caraterística === "nome") {
@@ -61,38 +52,155 @@ function imprimeRelatorio(array, string) {
   }
 }
 function devolveString(objArray) {
-  let strings = ""
+  let strings = "";
   for (let string of objArray) {
-    strings += string + ", "
+    strings += string + ", ";
   }
   return strings;
 }
+
+//FUNÇÕES EM USO
+
+function agruparItensComValidadeBoaOuNaoEmArrays(objeto) {
+  if (objeto.validade > new Date()) {
+    estoque.push(objeto);
+  } else {
+    descarte.push(objeto);
+  }
+}
+
 function procuraString(arrayDeObj, string) {
-  let obj = {};
+  let array = [];
   let j = 0;
   for (let i in arrayDeObj) {
-    if (arrayDeObj[i].nome.toLocaleUpperCase() === string.toLocaleUpperCase()) {
-      obj = {
-        ...arrayDeObj[i],
-      };
+    let obj = {};
+    if (arrayDeObj[i].nome.toLocaleUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") ===
+      string.toLocaleUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) {
+
+      const arr = document.getElementsByClassName("conteiner-produtos");
+      const cont = arr.length;
+      console.log(arr)
+      console.log(arr[1])
+      console.log(arr[2])
+      for (let itens=0; itens<cont; itens++) {
+        console.log(arr[itens])
+        arr[itens].remove();
+      }
+
+      obj = {...arrayDeObj[i],};
+      array[j] = obj;
       j++;
     }
   }
   if (j === 0) {
-    alert(`O item ${string} buscado não foi encontrado!`);
-    return false;
+    alert(
+      `O item \"${string.toLocaleUpperCase()}\" buscado não foi encontrado!`
+    );
   }
-  return obj;
+  return array;
+}
+
+let varImprimirRelatorioAuto = 0;
+let variavel = 0;
+function imprimirRelatorioAuto(array) {
+  for (let item of array) {
+    //criando a section
+    document
+      .getElementById("centro")
+      .insertAdjacentElement("beforeend", document.createElement("section"))
+      .setAttribute("id", `item ${varImprimirRelatorioAuto}`);
+    document
+      .getElementById(`item ${varImprimirRelatorioAuto}`)
+      .setAttribute("class", "conteiner-produtos");
+
+    //adicionando a img
+    document
+      .getElementById(`item ${varImprimirRelatorioAuto}`)
+      .insertAdjacentElement("beforeend", document.createElement("img"))
+      .setAttribute("id", `foto ${varImprimirRelatorioAuto}`);
+    document
+      .getElementById(`foto ${varImprimirRelatorioAuto}`)
+      .setAttribute("src", `${item.img}`);
+    document
+      .getElementById(`foto ${varImprimirRelatorioAuto}`)
+      .setAttribute("alt", `${item.nome}-${item.marca}`);
+    document
+      .getElementById(`foto ${varImprimirRelatorioAuto}`)
+      .setAttribute("class", "imagens");
+
+    //adicionando ul
+    document
+      .getElementById(`item ${varImprimirRelatorioAuto}`)
+      .insertAdjacentElement("beforeend", document.createElement("ul"))
+      .setAttribute("id", `ul ${varImprimirRelatorioAuto}`);
+    document
+      .getElementById(`ul ${varImprimirRelatorioAuto}`)
+      .setAttribute("class", "texto");
+
+    //adicionando li
+    for (let caraterística in item) {
+      if (caraterística === "link") {
+      } else if (caraterística === "img") {
+      } else if (caraterística === "nome") {
+        document
+          .getElementById(`ul ${varImprimirRelatorioAuto}`)
+          .insertAdjacentElement("beforeend", document.createElement("li"))
+          .setAttribute("id", `li ${variavel}`);
+
+        document.getElementById(
+          `li ${variavel}`
+        ).innerHTML = `<strong><a href="${item.link}">${item[
+          caraterística
+        ].toLocaleUpperCase()}</a></strong> `;
+        variavel++;
+      } else {
+        document
+          .getElementById(`ul ${varImprimirRelatorioAuto}`)
+          .insertAdjacentElement("beforeend", document.createElement("li"))
+          .setAttribute("id", `li ${variavel}`);
+
+        document.getElementById(
+          `li ${variavel}`
+        ).innerHTML = `<strong>${caraterística.toLocaleUpperCase()}</strong>: ${item[caraterística]}`;
+        variavel++;
+      }
+    }
+    varImprimirRelatorioAuto++;
+  }
 }
 
 
-// agruparItensComValidadeBoaOuNaoEmArrays(item1);
-// agruparItensComValidadeBoaOuNaoEmArrays(item2);
-// agruparItensComValidadeBoaOuNaoEmArrays(item3);
+agruparItensComValidadeBoaOuNaoEmArrays(item1);
+agruparItensComValidadeBoaOuNaoEmArrays(item2);
+agruparItensComValidadeBoaOuNaoEmArrays(item3);
 
-// imprimeRelatorio(estoque, "estoque");
-// imprimeRelatorio(descarte, "descarte");
+const imprimirEstoque = () => imprimirRelatorioAuto(estoque);
+const imprimirDescarte = () => imprimirRelatorioAuto(descarte);
 
-// console.log(`Tipo: ${devolveString(item1.tipo)}`);
+const procuraElementoEstoque = () => {
+  imprimirRelatorioAuto(procuraString(estoque, document.getElementById("procura").value.trim()));
+};
 
-// console.log(procuraString(estoque, "feijão"));
+const limparPesquisaEstoque = () => {
+  const arr = document.getElementsByClassName("conteiner-produtos");
+  const cont = arr.length;
+  for (let s = 0; s<cont ; s++) {
+    arr[s].remove();
+  }
+
+  imprimirRelatorioAuto(estoque)
+}
+
+const procuraElementoDescarte = () => {
+  imprimirRelatorioAuto(procuraString(estoque, document.getElementById("procura").value.trim()));
+};
+
+const limparPesquisaDescarte = () => {
+  const arr = document.getElementsByClassName("conteiner-produtos");
+  const cont = arr.length;
+  for (let s = 0; s<cont ; s++) {
+    arr[s].remove();
+  }
+
+  imprimirRelatorioAuto(estoque)
+}

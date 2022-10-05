@@ -1,13 +1,21 @@
+/* :::::::::::::::::CONFIGURACAO DE PAGINA::::::::::::::::: */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 header{
     background-color: white;
     height: 10%;
+    width: 100%;
     border-bottom: 1px solid green;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+
 }
 main{
     height: 88%;
@@ -20,75 +28,85 @@ footer{
     background-color: green;
     color: white;
 }
-section{
-    text-align: right;
+#logo-super-brasil{
+    width: 50%;
+    min-width: 270px;
+    padding: 1%;
 }
+/* :::::::::::::::::CONFIGURACAO DE PAGINA::::::::::::::::: */
 
-.itens{
+/* :::::::::::::::::BOTAO SUPERIOR::::::::::::::::: */
+#home{
+    width: 40px;
+    height: 40px;
+    padding: 2%;
+}
+header>button:hover{
+    border: 2px solid green;
+    border-radius: 2px;
+    background-color: white;
+}
+/* :::::::::::::::::BOTAO SUPERIOR::::::::::::::::: */
+
+/* :::::::::::::::::SUBTITULO E PESQUISA::::::::::::::::: */
+.botao{
+    padding: 40px;
+    text-align: center;
+}
+.subtitulo{
+    font-size: 2em;
+    padding: 20px 0 0 0;
+    text-align: center;
+    color: rgb(3, 92, 3);
+}
+/* :::::::::::::::::SUBTITULO E PESQUISA::::::::::::::::: */
+
+/* :::::::::::::::::CONFIGURACAO CENTRO::::::::::::::::: */
+.imagens{
     margin: 20px;
     width: 150px;
     border-radius: 75px;
     box-shadow: 5px 5px 10px rgb(143, 142, 142);
 }
-
-#logo-super-brasil{
-    width: 600px;
-    padding: 1%;
-}
-
-#centro{
-    width: 500px;
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-li{
-	
-	border-right: none;
-}
-
-ul{
-    width: 200px;
+.conteiner-produtos{
     text-align: center;
-    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(246, 253, 246);
+    margin-bottom: 10px;
+    padding: 2%;
+    border-radius: 5%; 
+}
+.texto{
+    text-align: center;
     list-style-type: none; 
-	/* padding:0px 0px 0px 0px;
-	margin: 0px 0px 0px 0px; */
-    float:left;
-    margin: 43px 0 0 20px;
 }
-
-#home{
-    margin: 0px 0px 0 0;
-    width: 40px;
-    height: 40px;
+.div-flex{
+    display: flex;
+    justify-content: space-between;
 }
-
-header>button:hover{
-    border: 2px solid green;
-    border-radius: 2px;
-    background-color: white;
-
+nav{
+    flex-grow: 1;
+    padding-left: 1%;
+    min-width: 15%;
 }
-header>button{
-    float:right;
-    margin: 25px 25px 0 0;
-    
+.centro{
+    flex-grow: 3;
 }
-
-.subtitulo{
-    padding: 10px 0 0 20px;
+aside{
+    flex-grow: 1;
+    border: 1px solid green;
+    margin: 0 2%;
+    padding: 1%;
+    height: fit-content;
+    min-width: 20%;
 }
-
-.botao{
-    padding: 40px;
+aside>h2{
     text-align: center;
 }
-
-.subtitulo{
-    font-size: 50px;
-    padding: 20px 0 0 50px;
-    text-align: left;
-    color: rgb(3, 92, 3);
+#saiba{
+    text-align: right;
+    padding-right: 5%;
 }
+/* :::::::::::::::::CONFIGURACAO CENTRO::::::::::::::::: */

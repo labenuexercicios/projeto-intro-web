@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -12,17 +12,42 @@
 <body>
     <header>
         <img src="/Fotos/supermercado-brasil.jpeg" alt="Logo" id="logo-super-brasil">
-        <button type="menu" ><a href="/estoque.html"><img src="/Fotos/botao-voltar.png" alt="botao home" id="botao-voltar"></img></a></button>
+        <script lang="javascript" type="text/javascript">
+            const dayName = ["domingo", "segunda", "terça", "quarta", "quinta", "sexta"];
+            const monName = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+            let now = new Date;
+            document.write(`<p>Hoje é ${dayName[now.getDay()]}, ${now.getDay()} de ${monName[now.getMonth()]} de ${now.getFullYear()}</p>`);
+        </script>
     </header>
     <main>
-        <h1>QUEM SOMOS</h1>
-        <img src="/Fotos/foto-super.jpg" alt="Foto Supermecado Brasil" width="600px">
-        <p>O Supermecado Brasil iniciou suas atividades há XX anos.
-            Atualmente possui XX lojas distribuídas por XX cidades do Leste de Minas Gerais: Caratinga, Coronel Fabriciano, Governador Valadares, Ipatinga, Manhuaçu e Teófilo Otoni.
-            Além das lojas, o grupo possui um moderno centro de distribuição na cidade de Governador Valadares.
-            Nosso compromisso vai além de oferecer o menor preço: trabalhamos para ser a melhor alternativa do mercado varejista, garantindo qualidade, conforto e modernidade em todas as nossas lojas.
-            Buscamos pela excelência em nossos negócios com a parceria de nossos fornecedores e o apoio de nossos colaboradores, alcançando assim a satisfação de nossos clientes.
-            Supermecado Brasil: O Dono do Menor Preço</p>
+        <div>
+            <h2>QUEM SOMOS</h2>
+        </div>
+        <div class="conteiner">
+            <nav>
+                <h3><a href="/estoque.html">Estoque</a></h3>
+                <h3><a>A Vencer</a></h3>
+                <h3><a href="/descarte.html">Descarte</a></h3>
+                <h3><a>Cadastro</a></h3>
+            </nav>
+            <article>
+                <img src="/Fotos/foto-super.jpg" alt="Foto Supermecado Brasil">
+                <p>O Supermecado Brasil iniciou suas atividades há XX anos.
+                    Atualmente possui XX lojas distribuídas por XX cidades do Leste de Minas Gerais: Caratinga, Coronel Fabriciano, Governador Valadares, Ipatinga, Manhuaçu e Teófilo Otoni.
+                    Além das lojas, o grupo possui um moderno centro de distribuição na cidade de Governador Valadares.
+                    Nosso compromisso vai além de oferecer o menor preço: trabalhamos para ser a melhor alternativa do mercado varejista, garantindo qualidade, conforto e modernidade em todas as nossas lojas.
+                    Buscamos pela excelência em nossos negócios com a parceria de nossos fornecedores e o apoio de nossos colaboradores, alcançando assim a satisfação de nossos clientes.
+                    Supermecado Brasil: O Dono do Menor Preço</p>
+            </article>
+            <aside>
+                <h2>Atenção</h2>
+                <h4>Feijão Supang</h4>
+                <p>Vence em X dias</p>
+                <h4>Arroz Carijo</h4>
+                <p>Vence em X dias</p>
+                <p id="saiba">+ Saiba mais</p>
+        </aside>
+        </div>
     </main>
     <footer>
         <h5>Copyright © 2022 Supermecado Brasil | Todos os Direitos Reservados</h5>
