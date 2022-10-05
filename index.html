@@ -3,71 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <title>Personagens de Naruto</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
       <h1>Personagens de Naruto</h1>
     </header>
-    <main>
+    <main id="main">
       <div class="botao">
-        <label for=""></label>
-        <input type="text" placeholder="Pesquise aqui!"/>
-        <button type="submit">Buscar</button>
+        <label for="busca"></label>
+        <input id="input" type="text" name="busca" placeholder="Pesquise aqui!" value="" required/>
+        <button type="submit" onclick="buscar(event)">Buscar</button>
       </div>
 
-      <div class="personagens">
-        <section class="sessao1">
-          <img src="./midia/naruto.jpg" alt="naruto-uzumaki" />
-          <ul class="lista1">
-            <li>Nome:<a href="https://naruto.fandom.com/pt-br/wiki/Naruto_Uzumaki">Naruto</a></li>
-            <li>Idade: 32 anos</li>
-            <li>Ainda Vivo: Sim</li>
-            <li>
-              Principais Jutsus: Sexy, Multiplos Clones das Sombras, Invocação,
-              Rasengan, Rasen-Shuriken
-            </li>
-          </ul>
-        </section>
-        <section class="sessao2">
-          <img src="./midia/minato.jpg" alt="minato-namikaze" />
-          <ul class="lista2">
-            <li>Nome:<a href="https://naruto.fandom.com/pt-br/wiki/Minato_Namikaze">Minato</a>
-            </li>
-            <li>Idade: 24 anos</li>
-            <li>Ainda Vivo: Não</li>
-            <li>
-              Principais Jutsus: Rasengan, Invocação, Clones das sombras,
-              Tecnica de Selamento, Hiraishin
-            </li>
-          </ul>
-        </section>
-        <section class="sessao3">
-          <img src="./midia/kakashi.jpg" alt="kakashi-hataki" />
-          <ul class="lista3">
-            <li>Nome:<a href="https://naruto.fandom.com/pt-br/wiki/Kakashi_Hatake">Kakashi</a>
-            </li>
-            <li>Idade: 47 anos</li>
-            <li>Ainda Vivo: Sim</li>
-            <li>
-              Principais Jutsus:  Multiplos clones das sombras, Rasengan, Chidori, Raikiri,
-              Sharingan
-            </li>
-          </ul>
-        </section>
-        <section class="sessao4">
-          <img src="./midia/itachi.jpg" alt="itachi-uchiha" />
-          <ul class="lista4">
-            <li>Nome:<a href="https://naruto.fandom.com/pt-br/wiki/Itachi_Uchiha">Itachi</a></li>
-            <li>Idade: 21 anos</li>
-            <li>Ainda Vivo: Não</li>
-            <li>
-              Principais Jutsus: Izanami, Kotoamatsukami, Tsukiyomi, Susanoo,
-              Amaterasu
-            </li>
-          </ul>
-        </section>
+      <div id="personagens">
+       
       </div>
     </main>
     <footer>
