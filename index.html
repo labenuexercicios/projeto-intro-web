@@ -12,70 +12,147 @@
 
 <body>
     <header>
-        <nav>
+        <!-- <nav>
             <ul id="position">
                 <a href="https://www.ubisoft.com/pt-br/game/far-cry/far-cry-3" target="_blank"><li class="menu">Far Cry 3</li></a>
                 <a href="https://www.ubisoft.com/pt-br/game/far-cry/far-cry-4" target="_blank"><li class="menu">Far Cry 4</li></a>
-                <a href="https://www.ubisoft.com/pt-br/game/far-cry/far-cry-5" target="_blank"><li class="menu">Far Cry 5</li></a>
+                <a href="https://www.ubisoft.com/pt-br/game/far-cry/far-cry-5" target="_blank"><li class="menu">Far Cry 5</li></a> 
             </ul>
-        </nav>
+        </nav> -->
         <h1>FAR CRY SERIES</h1>
+
+
     </header>
     <br>
     <main>
         <div id="input">
             <form action="#">
-                <label for="input">Input</label>
+                <label for="input">Procurar Far Cry</label>
                 <br>
-                <input type="text">
+                <input class='pesquisaJogos' type="text">
                 <br>
                 <br>
-                <button>Botão</button>
+                <button type="submit" onclick="pesquisaJogo()">Pesquisar</button>
             </form>
-
         </div>
 
-        <div id="Secoes">
+        <div class="conteiner">
             <section class="section-design">
-                <h2>Far Cry 3</h2>
-                <img src="/Imagens/Far Cry 3.jpg" alt="Capa do jogo Far Cry 3. Onde o vilão Vaas Montenegro segura uma arma em cada mão sentado na praia">
-            <ul>
-                <li class="description">Nome do jogo: Far Cry 3</li>
-                <li class="description">Personagens Principais: Jason Brody, Vaas Montenegro, Citra Talugmai, Hoyt Volker </li>
-                <li class="description">Ano de lancamento: 2012</li>
-                <li class="description">Recomendo esse jogo? Sim</li>
-            </ul>
-            </section>
-
-            <section class="section-design">
-                <h2>Far Cry 4</h2>
-                <img src="/Imagens/Far Cry 4.jpg" alt="Capa do Jogo Far Cry 4. Vilão Pagan Min sentado em seu trono com a mão na cabeça de um súdito segurando uma granada.">
+                <!-- <h2>Far Cry</h2> -->
+                <img class="foto1" src="/Imagens/Far cry 1.jpg"
+                    alt="Capa do Jogo Far Cry. Personagem saindo de um lago em meio a selva. com uma metralhadora automática empunhada em apenas uma mão.">
                 <ul>
-                    <li class="description">Nome do jogo: Far Cry 4</li>
-                    <li class="description">Personagens Principais: Pagan Min, Amita , Sabal , Ajay Ghale </li>
-                    <li class="description">Ano de lancamento: 2014</li>
-                    <li class="description">Recomendo esse jogo? Sim</li>
+                    <li class="description">Nome do Jogo: Far Cry</li>
+                    <br>
+                    <li class="description">Personagens Principais: Não possue personagem com nome </li>
+                    <br>
+                    <li class="description">Ano de lançamento: 2004</li>
+                    <br>
+                    <li class="description">Recomendo esse jogo: Sim</li>
+                    <br>
+                    <li class="description">Sinopse: Situado em um misterioso arquipélago tropical, o jogo segue Jack Carver, um ex-agente das forças especiais americanas,
+                    enquanto procura a jornalista Valerie Constantine, que o acompanhou às ilhas, mas desapareceu depois que seu barco foi destruído por mercenários.</li>
                 </ul>
             </section>
 
             <section class="section-design">
-                <h2>Far Cry 5</h2>
-                <img src="/Imagens/Far Cry 5.jpg" alt="Capa do jogo Far Cry 5. Vilão Joseph Seed sentado a mesa com sua família, fazendo referência ao quadro da Santa Ceia.">
+                <!-- <h2>Far Cry 2</h2> -->
+                <img class="foto2" src="/Imagens/Far Cry 2.jpg"
+                    alt="Capa do Far Cry 2. Pessoa ao fundo de uma paisagem na selva africana, com o chão pegando fogo.">
+                <ul>
+                    <li class="description">Nome do Jogo: Far Cry 2</li>
+                    <br>
+                    <li class="description">Personagens Principais: Paul Ferenc, Warren Clyde</li>
+                    <br>
+                    <li class="description">Ano de lançamento: 2008</li>
+                    <br>
+                    <li class="description">Recomendo esse jogo? Sim</li>
+                    <br>
+                    <li class="description">Sinopse: O jogo acontece em um país Africano devastado pela guerra. O jogador assume o papel de um mercenário que é enviado para o país para assassinar um traficante de armas notório conhecido como O Chacal. 
+                    Mas seu contrato é cancelado então, ele é forçado a trabalhar para as facções em conflito, enquanto lutava contra sua malária e indo em uma missão para matar o Chacal.</li>
+                </ul>
+            </section>
+
+            <section class="section-design">
+                <!-- <h2>Far Cry 3</h2> -->
+                <img class="foto3" src="/Imagens/Far Cry 3.jpg"
+                    alt="Capa do jogo Far Cry 3. Onde o vilão Vaas Montenegro segura uma arma em cada mão sentado na praia">
+                <ul>
+                    <li class="description">Nome do jogo: Far Cry 3</li>
+                    <br>
+                    <li class="description">Personagens Principais: Jason Brody, Vaas Montenegro</li>
+                    <br>
+                    <li class="description">Ano de lancamento: 2012</li>
+                    <br>
+                    <li class="description">Recomendo esse jogo? Sim</li>
+                    <br>
+                    <li class="description">Sinopse: Os eventos de Far Cry 3 se desenvolvem em uma ilha tropical localizada no cruzamento dos oceanos Índico e Pacífico, e conta a história do americano Jason Brody, 
+                    que após perder-se na ilha durante suas férias, tem de salvar os seus amigos sequestrados e escapar dos fatais piratas que lá habitam.</li>
+                </ul>
+            </section>
+
+            <section class="section-design">
+                <!-- <h2>Far Cry 4</h2> -->
+                <img class="foto4" src="/Imagens/Far Cry 4.jpg"
+                    alt="Capa do Jogo Far Cry 4. Vilão Pagan Min sentado em seu trono com a mão na cabeça de um súdito segurando uma granada.">
+                <ul>
+                    <li class="description">Nome do jogo: Far Cry 4</li>
+                    <br>
+                    <li class="description">Personagens Principais: Pagan Min, Ajay Ghale </li>
+                    <br>
+                    <li class="description">Ano de lancamento: 2014</li>
+                    <br>
+                    <li class="description">Recomendo esse jogo? Sim</li>
+                    <br>
+                    <li class="description">Sinopse: Em Far Cry 4 o protagonista é Ajay Ghale que regressa a Kyrat (uma nação fictícia fortemente inspirada em locais da região Himalaia do Nepal),
+                    uma zona indomável e selvagem no seu pais de origem, para espalhar as cinzas da sua falecida mãe.</li>
+                </ul>
+            </section>
+
+            <section class="section-design">
+                <!-- <h2>Far Cry 5</h2> -->
+                <img class="foto5" src="/Imagens/Far Cry 5.jpg"
+                    alt="Capa do jogo Far Cry 5. Vilão Joseph Seed sentado a mesa com sua família, fazendo referência ao quadro da Santa Ceia.">
                 <ul>
                     <li class="description">Nome do jogo: Far Cry 5</li>
-                    <li class="description">Personagens Principais: Joseph Seed, Boomer, X-burguer, Jacob Seed </li>
+                    <br>
+                    <li class="description">Personagens Principais: Joseph Seed, Boomer </li>
+                    <br>
                     <li class="description">Ano de lancamento: 2018</li>
+                    <br>
                     <li class="description">Recomendo esse jogo? Sim</li>
+                    <br>
+                    <li class="description">Sinopse: O jogo é ambientado na fictícia Hope Country, Montana, Estados Unidos, onde um pregador cristão chamado Joseph Seed alcançou proeminência. 
+                    Seed acredita que ele foi escolhido para proteger o povo de Hope County de um "colapso inevitável" e estabeleceu uma congregação chamada Projeto do Portão do Éden.</li>
+                </ul>
+            </section>
+
+            <section class="section-design">
+                <!-- <h2>Far Cry 6</h2> -->
+                <img class="foto6" src="/Imagens/Far Cry 6.jpg"
+                    alt="Capa do jogo Far Cry 6. Vilão Anton Castillo, interpretado pelo ator Giancarlo Esposito, com as mão sob os ombros de seu filho.">
+                <ul>
+                    <li class="description">Nome do jogo: 
+                        Far Cry 6</li>
+                    <br>
+                    <li class="description">Personagens Principais: Dani Rojas,Anton Castillo</li>
+                    <br>
+                    <li class="description">Ano de lançamento: 2021</li>
+                    <br>
+                    <li class="description">Recomendo esse jogo? Sim</li>
+                    <br>
+                    <li class="description">Sinopse: O jogo se passa em Yara, uma fictícia ilha no Caribe governada em regime de ditadura por “El Presidente” Antón Castillo, que educa o seu filho Diego para seguir seus passos.
+                    O jogador assume o papel de Dani Rojas, um membro da guerrilha tentando derrubar Castillo e seu regime.</li>
                 </ul>
             </section>
         </div>
     </main>
 
     <footer>
-      Criador: Leonardo de Souza
-      <br>
-      <br>
-      GitHub: https://github.com/leoosouza
+        Criador: Leonardo de Souza
+        <br>
+        <br>
+        GitHub: https://github.com/leoosouza
     </footer>
 </body>
 
