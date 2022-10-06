@@ -91,7 +91,7 @@ const ninja0 = {
    ninjutsus: ['Clones das Sombras', 'Jutsu Sexy'],
    img: "img/naruto.png",
    href: 'https://pt.wikipedia.org/wiki/Naruto',
-   card:'card'
+   card: 'card'
 }
 
 const ninja1 = {
@@ -101,7 +101,7 @@ const ninja1 = {
    isninja: false,
    ninjutsus: ['copiar habilidades', 'chidori'],
    img: "img/kakashi.png",
-   card:'card2'
+   card: 'card2'
 }
 
 const ninja2 = {
@@ -111,7 +111,7 @@ const ninja2 = {
    isninja: false,
    ninjutsus: ["rasengan", "odama rasengan"],
    img: "img/jiraiya.png",
-   card:'card3'
+   card: 'card3'
 }
 
 const ninja3 = {
@@ -122,7 +122,7 @@ const ninja3 = {
    ninjutsus: ["Os Noves Portões"],
    img: "img/maito-gai.png",
    href: 'https://naruto.fandom.com/pt-br/wiki/Might_Guy',
-   card:'card4',
+   card: 'card4',
 }
 
 const ninja4 = {
@@ -133,7 +133,7 @@ const ninja4 = {
    ninjutsus: ["Só Tem Taijuts"],
    img: "img/rock-lee.png",
    href: 'https://naruto.fandom.com/pt-br/wiki/Rock_Lee',
-   card:'card5'
+   card: 'card5'
 }
 
 const ninja5 = {
@@ -143,7 +143,7 @@ const ninja5 = {
    isninja: false,
    ninjutsus: ["oito trigamas", "Emissão de chakara"],
    img: "img/neji.png",
-   card:'card6'
+   card: 'card6'
 }
 
 const ninja6 = {
@@ -154,7 +154,7 @@ const ninja6 = {
    ninjutsus: ["técnica de Imitação pela Sombra", "técnica da Captura pela Sombra"],
    img: "img/shikamaru.png",
    href: 'https://naruto.fandom.com/pt-br/wiki/Shikamaru_Nara',
-   card:'card7',
+   card: 'card7',
 }
 
 const ninja7 = {
@@ -164,11 +164,86 @@ const ninja7 = {
    isninja: false,
    ninjutsus: ["Jutsus absorção da alma", "Técnica da vida celestial."],
    img: "img/nagato.png",
-   card:'card8'
+   card: 'card8'
 }
 
 // Semana 3
-
+const ninjaarray = [{
+   nome: 'Naruto',
+   clan: 'Uzumaki',
+   idade: 17,
+   isninja: true,
+   ninjutsus: ['Clones das Sombras', 'Jutsu Sexy'],
+   img: "img/naruto.png",
+   href: 'https://pt.wikipedia.org/wiki/Naruto',
+   card: 'card'
+},
+{
+   nome: 'kakashi',
+   clan: 'Hatake',
+   idade: 28,
+   isninja: false,
+   ninjutsus: ['copiar habilidades', 'chidori'],
+   img: "img/kakashi.png",
+   card: 'card2'
+},
+{
+   nome: 'jiraiya',
+   clan: 'Hatake',
+   idade: 51,
+   isninja: false,
+   ninjutsus: ["rasengan", "odama rasengan"],
+   img: "img/jiraiya.png",
+   card: 'card3'
+},
+{
+   nome: 'Maito Gai',
+   clan: 'Sem Clan',
+   idade: 28,
+   isninja: true,
+   ninjutsus: ["Os Noves Portões"],
+   img: "img/maito-gai.png",
+   href: 'https://naruto.fandom.com/pt-br/wiki/Might_Guy',
+   card: 'card4',
+},
+{
+   nome: 'Rock Lee',
+   clan: 'Sem Clan',
+   idade: 17,
+   isninja: true,
+   ninjutsus: ["Só Tem Taijuts"],
+   img: "img/rock-lee.png",
+   href: 'https://naruto.fandom.com/pt-br/wiki/Rock_Lee',
+   card: 'card5'
+},
+{
+   nome: 'Neji Hyuga',
+   clan: 'Hyuga',
+   idade: 17,
+   isninja: false,
+   ninjutsus: ["oito trigamas", "Emissão de chakara"],
+   img: "img/neji.png",
+   card: 'card6'
+},
+{
+   nome: 'Shikamaru',
+   clan: 'Nara',
+   idade: 26,
+   isninja: true,
+   ninjutsus: ["técnica de Imitação pela Sombra", "técnica da Captura pela Sombra"],
+   img: "img/shikamaru.png",
+   href: 'https://naruto.fandom.com/pt-br/wiki/Shikamaru_Nara',
+   card: 'card7',
+},
+{
+   nome: 'Nagato Pain',
+   clan: 'Uzumaki',
+   idade: 32,
+   isninja: false,
+   ninjutsus: ["Jutsus absorção da alma", "Técnica da vida celestial."],
+   img: "img/nagato.png",
+   card: 'card8'
+}];
 const ninjasarray = [];
 
 //Semana 04
@@ -178,51 +253,58 @@ const ninjasarray = [];
 // 2. Crie uma condição else, que, em caso de valor false na condição acima, 
 // exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push
 
-if (true) {
-   if (ninja0.isninja == true) {
-      ninjasarray.push(ninja0);
+// if (true) {
+//    if (ninja0.isninja == true) {
+//       ninjasarray.push(ninja0);
+//    } else {
+//       console.log(`**ALERT** O ${ninja0.nome} não foi adicionado, pois ele não e ninja,`)
+//    }
+//    if (ninja1.isninja == true) {
+//       ninjasarray.push(ninja1);
+//    } else {
+//       alert(`**ALERT** O ${ninja1.nome} não foi adicionado, pois ele não e ninja,`);
+//    }
+//    if (ninja2.isninja == true) {
+//       ninjasarray.push(ninja2);
+//    } else {
+//       alert(`**ALERT** O ${ninja2.nome} não foi adicionado, pois ele não e ninja,`);
+//    }
+//    if (ninja3.isninja == true) {
+//       ninjasarray.push(ninja3);
+//    } else {
+//       alert(`**ALERT** O ${ninja3.nome} não foi adicionado, pois ele não e ninja,`);
+//    }
+//    if (ninja4.isninja == true) {
+//       ninjasarray.push(ninja4);
+//    } else {
+//       alert(`**ALERT** O ${ninja4.nome} não foi adicionado, pois ele não e ninja,`);
+//    }
+//    if (ninja5.isninja == true) {
+//       ninjasarray.push(ninja5);
+//    } else {
+//       alert(`**ALERT** O ${ninja5.nome} não foi adicionado, pois ele não e ninja,`);
+//    }
+//    if (ninja6.isninja == true) {
+//       ninjasarray.push(ninja6);
+//    } else {
+//       alert(`**ALERT** O ${ninja6.nome} não foi adicionado, pois ele não e ninja,`);
+//    }
+//    if (ninja7.isninja == true) {
+//       ninjasarray.push(ninja7);
+//    } else {
+//       alert(`**ALERT** O ${ninja7.nome} não foi adicionado, pois ele não e ninja,`);
+//    }
+// }
+
+// Codigo refatorado
+for (const i in ninjaarray) {
+   if (ninjaarray[i].isninja == true) {
+      ninjasarray.push(ninjaarray[i]);
+      console.log(ninjasarray)
    } else {
-      console.log(`**ALERT** O ${ninja0.nome} não foi adicionado, pois ele não e ninja,`)
-   }
-   if (ninja1.isninja == true) {
-      ninjasarray.push(ninja1);
-   } else {
-      alert(`**ALERT** O ${ninja1.nome} não foi adicionado, pois ele não e ninja,`);
-   }
-   if (ninja2.isninja == true) {
-      ninjasarray.push(ninja2);
-   } else {
-      alert(`**ALERT** O ${ninja2.nome} não foi adicionado, pois ele não e ninja,`);
-   }
-   if (ninja3.isninja == true) {
-      ninjasarray.push(ninja3);
-   } else {
-      alert(`**ALERT** O ${ninja3.nome} não foi adicionado, pois ele não e ninja,`);
-   }
-   if (ninja4.isninja == true) {
-      ninjasarray.push(ninja4);
-   } else {
-      alert(`**ALERT** O ${ninja4.nome} não foi adicionado, pois ele não e ninja,`);
-   }
-   if (ninja5.isninja == true) {
-      ninjasarray.push(ninja5);
-   } else {
-      alert(`**ALERT** O ${ninja5.nome} não foi adicionado, pois ele não e ninja,`);
-   }
-   if (ninja6.isninja == true) {
-      ninjasarray.push(ninja6);
-   } else {
-      alert(`**ALERT** O ${ninja6.nome} não foi adicionado, pois ele não e ninja,`);
-   }
-   if (ninja7.isninja == true) {
-      ninjasarray.push(ninja7);
-   } else {
-      alert(`**ALERT** O ${ninja7.nome} não foi adicionado, pois ele não e ninja,`);
+      alert(`**ALERT** O ${ninjaarray[i].nome} não foi adicionado, pois ele não e ninja,`);
    }
 }
-
-
-
 
 //SEMANA 04
 // Reescrevendo o relatório da semana 2, altere a forma que a característica de array,
@@ -259,32 +341,15 @@ for (let i = 0; i < ninjasarray.length; i++) {
 //Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
 //aqui usando o filter
 
-function buscarNinja(array, nome) {
-
-   if (nome != undefined) {
-
-      const ninjas = array.filter((objeto) => objeto.nome.toUpperCase() == nome.toUpperCase());
-      if (ninjas.length >= 1) {
-         return ninjas;
-      } else {
-         alert('nenhum ninja foi encontrado.')
-      }
-   }
-
-}
-
 function buscaPersonagem() {
-
-   let html;
-
+   let container;
    const search = document.querySelector(".search-bar").value;
    if (!search) {
       alert("Digite algo para que a busca aconteça");
    } else {
-      const ninjasFiltrados = buscarNinja(ninjasarray, search);
+      const ninjasFiltrados = filtroNinja(ninjasarray, search);
       console.log(ninjasFiltrados);
-
-      html = `<section id="${ninjasFiltrados[0].card}">
+      container = `<section id="${ninjasFiltrados[0].card}">
                 <div id="ninja-imagem"><img class="naruto" src="${ninjasFiltrados[0].img}" alt="imagem do naruto"></div>
                 <ul>
                     <li id="nome"><a href="${ninjasFiltrados[0].href}" target="_blank">Nome: ${ninjasFiltrados[0].nome}</a></li>
@@ -294,14 +359,21 @@ function buscaPersonagem() {
                     <li>Ninjutsus: ${ninjasFiltrados[0].ninjutsus}</li>
                 </ul>
             </section>`;
-
       document.querySelector(".card-container").innerHTML = "";
-      document.querySelector(".card-container").innerHTML = html;
-
+      document.querySelector(".card-container").innerHTML = container;
+   }
+}
+function filtroNinja(array, nome) {
+   if (nome != undefined) {
+      const ninjas = array.filter((objeto) => objeto.nome.toUpperCase() == nome.toUpperCase());
+      if (ninjas.length >= 1) {
+         return ninjas;
+      } else {
+         alert('nenhum ninja foi encontrado.')
+      }
    }
 }
 
 
 
 
-// console.log(buscarNinja(ninjasarray))
