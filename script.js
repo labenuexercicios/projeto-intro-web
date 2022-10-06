@@ -1,16 +1,16 @@
 //Filmes para ver antes de morrer
 
-let objeto1 ={
+let objeto1 = {
     nome: "OS VINGADORES",
     anoLancamento: 2012,
     valeAPena: true,
     diretor: "Joss Whedon",
     elenco: ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Rufallo", "Chris Hemsworth", "Jeremy Renner",
-"Tom Hiddleston", "Samuel L. Jackson"],
+        "Tom Hiddleston", "Samuel L. Jackson"],
     imagem: `./imagens/vingadores.jpg`,
     link: "https://pt.wikipedia.org/wiki/Vingadores",
 };
-    
+
 
 let objeto2 = {
     nome: "VINGADORES: ERA DE ULTRON",
@@ -18,7 +18,7 @@ let objeto2 = {
     valeAPena: true,
     diretor: "Joss Whedon",
     elenco: ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Rufallo", "Chris Hemsworth", "Jeremy Renner",
-    "Tom Hiddleston", "Samuel L. Jackson", "Elizabeth Olsen", "James Spader", "Paul Bettany", ],
+        "Tom Hiddleston", "Samuel L. Jackson", "Elizabeth Olsen", "James Spader", "Paul Bettany",],
     imagem: `./imagens/vingadores2.jpg`,
 };
 
@@ -28,7 +28,7 @@ let objeto3 = {
     valeAPena: true,
     diretor: "Anthony e Joe Russo",
     elenco: ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Rufallo", "Chris Hemsworth", "Jeremy Renner",
-    "Tom Hiddleston", "Samuel L. Jackson", "Elizabeth Olsen", "Paul Bettany",],
+        "Tom Hiddleston", "Samuel L. Jackson", "Elizabeth Olsen", "Paul Bettany",],
     imagem: `./imagens/vingadores-guerra-infinita.webp`,
 };
 
@@ -38,7 +38,7 @@ let objeto4 = {
     valeAPena: true,
     diretor: "Anthony e Joe Russo",
     elenco: ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Rufallo", "Chris Hemsworth", "Jeremy Renner",
-    "Tom Hiddleston", "Samuel L. Jackson", "Elizabeth Olsen", "Paul Bettany"],
+        "Tom Hiddleston", "Samuel L. Jackson", "Elizabeth Olsen", "Paul Bettany"],
     imagem: `./imagens/vingadores-ultimato.jpg`,
 };
 
@@ -46,23 +46,23 @@ let arrayObjetos = []
 arrayObjetos.push(objeto1, objeto2, objeto3, objeto4)
 
 let media = 0
-for(let i in arrayObjetos){
+for (let i in arrayObjetos) {
     media += arrayObjetos[i].anoLancamento
 }
-console.log(`Media dos anos de lançamento: ${media/arrayObjetos.length}`)
+console.log(`Media dos anos de lançamento: ${media / arrayObjetos.length}`)
 
 let verificarValeAPena = arrayObjetos[0].valeAPena && arrayObjetos[1].valeAPena && arrayObjetos[2].valeAPena && arrayObjetos[3].valeAPena
 console.log(verificarValeAPena)
 
- 
+
 //Semana 4 exercício 1
 let lista = []
 let filmes = []
-for(i in arrayObjetos){
+for (i in arrayObjetos) {
     filmes.push(arrayObjetos[i].nome)
 }
 
-for(i in arrayObjetos){
+for (i in arrayObjetos) {
     arrayObjetos[i].valeAPena ? lista.push(arrayObjetos[i]) : alert(`O filme ${filmes[i]} não foi adicionado`)
 }
 console.log(lista)
@@ -70,22 +70,22 @@ console.log(lista)
 
 
 let elenco1 = ``
-for(i in objeto1.elenco){
+for (i in objeto1.elenco) {
     elenco1 += `${objeto1.elenco[i]}, `
 }
 
 let elenco2 = ``
-for(i in objeto2.elenco){
+for (i in objeto2.elenco) {
     elenco2 += `${objeto2.elenco[i]}, `
 }
 
 let elenco3 = ``
-for(i in objeto3.elenco){
+for (i in objeto3.elenco) {
     elenco3 += `${objeto3.elenco[i]}, `
 }
 
 let elenco4 = ``
-for(i in objeto4.elenco){
+for (i in objeto4.elenco) {
     elenco4 += `${objeto4.elenco[i]}, `
 }
 
@@ -101,9 +101,9 @@ listaElencos.push(elenco1, elenco2, elenco3, elenco4)
 
 
 
-impressaoRelatorio = (objeto) =>{
+impressaoRelatorio = (objeto) => {
     let imprimir = ``
-    for(i in objeto){
+    for (i in objeto) {
         imprimir += `${i}: ${objeto[i]}\n`
     }
     return imprimir
@@ -113,26 +113,57 @@ console.log(impressaoRelatorio(objeto2))
 console.log(impressaoRelatorio(objeto3))
 console.log(impressaoRelatorio(objeto4))
 
-funcBusca = (arrayObjetos, string) =>{
-    let retorno = []
-    for(i in arrayObjetos){
-        if(arrayObjetos[i].nome === string){
-            retorno.push(arrayObjetos[i])
+funcBusca = (arrayObjetos, string) => {
+    for (i in arrayObjetos) {
+        if (arrayObjetos[i].nome === string) {
+            let main = document.getElementById("main")
+            let div = document.createElement("div")
+            let section = document.createElement("section")
+            let ul = document.createElement("ul")
+            let li1 = document.createElement("li")
+            let li2 = document.createElement("li")
+            let li3 = document.createElement("li")
+            let a = document.createElement("a")
+            let imagem = document.createElement("img")
+            section.setAttribute("id", "section1")
+            imagem.setAttribute("id", "imagem1")
+            ul.setAttribute("id", "lista1")
+            ul.setAttribute("class", "lista")
+            imagem.src = arrayObjetos[i].imagem
+            a.setAttribute("target", "_blank")
+            a.setAttribute("href", arrayObjetos[i].link)
+            a.innerHTML += `${arrayObjetos[i].nome.toUpperCase()}`
+            li1.appendChild(a)
+            li2.innerHTML = arrayObjetos[i].anoLancamento
+            li3.innerHTML = arrayObjetos[i].valeAPena
+            main.appendChild(div)
+            div.appendChild(section)
+            section.appendChild(imagem)
+            section.appendChild(ul)
+            ul.appendChild(li1)
+            ul.appendChild(li2)
+            ul.appendChild(li3)
         }
     }
-    if(retorno.length === 0){
-     alert(`Nenhum item foi encontrado`)   
-    }
-    return retorno
 }
-console.log(funcBusca(arrayObjetos, `OS VINGADORES`))
+
+function busca(event){
+    event.preventDefault()
+    let input = document.getElementById("input").value.toUpperCase()
+    if(input === ""){
+        alert("Nenhum objeto encontrado")
+    }else{
+        document.getElementById("div-sections").remove()
+        funcBusca(arrayObjetos, input)
+    }
+}
 
 
 
 
 
 
-for(i in arrayObjetos){
+for (i in arrayObjetos) {
     let div = document.getElementById("div-sections")
     let section = document.createElement("section")
     let ul = document.createElement("ul")
@@ -145,7 +176,7 @@ for(i in arrayObjetos){
     imagem.setAttribute("id", "imagem1")
     ul.setAttribute("id", "lista1")
     ul.setAttribute("class", "lista")
-    imagem.src=arrayObjetos[i].imagem
+    imagem.src = arrayObjetos[i].imagem
     a.setAttribute("target", "_blank")
     a.setAttribute("href", arrayObjetos[i].link)
     a.innerHTML += `${arrayObjetos[i].nome.toUpperCase()}`
@@ -183,6 +214,6 @@ for(i in arrayObjetos){
     //     ul.appendChild(li1);
     //     ul.appendChild(li2);
     //     ul.appendChild(li3);
-    }
+}
 
 
