@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Projeto de Introdução ao Desenvolvimento Web</title>
+</head>
+
+<body>
+    <header>
+        <h1>Projeto de Intro ao Desenvolvimento Web</h1>
+        <audio id="myaudio" style="border:5px solid lightsalmon;
+        border-radius: 50px;" src="./music/videoplayback.mp3" type="audio/mp3" controls autoplay loop>
+        </audio>
+    </header>
+    <main class="container">
+
+        <div class="search-container">
+            <input class="search-bar" id="search-bar" type="text" placeholder="Procura por Ninja">
+            <button type="submit" class="search-button" onclick="buscaPersonagem()">Buscar</button>
+        </div>
+
+        <!-- Semana 07
+        1. Crie uma página HTML, e nesta página, dê um título para sua lista de itens;
+        2. Crie um cabeçalho, uma seção principal, e um footer para a página;
+        3. Na seção principal. Crie duas divisões. Uma deve possuir um input e um botão. A outra, deve possuir sections
+        para criar os itens da lista;
+        4. Crie uma section para cada item da lista;
+        5. Para cada um dos três itens criados deve possuir todas as informações do array de objetos. As informações
+        devem estar elencadas como lista não ordenada. Esta tela não precisa interagir com o JavaScript, tendo seus
+        dados escritos diretamente nos elementos.
+        6. Transforme o nome/título do item em um link para um artigo sobre este item (pode ser do google, de algum blog
+        ou da Wikipédia) -->
+        <section class="card-container">
+            <section id="card">
+
+                <div id="ninja-imagem"><img class="naruto" src="./img/naruto.png" alt="imagem do naruto"></div>
+                <ul>
+                    <li id="nome"><a href="https://pt.wikipedia.org/wiki/Naruto" target="_blank">Nome: Naruto</a></li>
+                    <li><strong>Clan:</strong> Uzumaki</li>
+                    <li>Idade: 17</li>
+                    <li>Isninja: True</li>
+                    <li>Ninjutsus: Clones das Sombras, Jutsu Sexy</li>
+
+                </ul>
+            </section>
+
+            <section id="card">
+                <div id="ninja-imagem"><img src="./img/kakashi.png" alt="imagem do kakashi"></div>
+                <ul>
+                    <li id="nome"><a href="https://pt.wikipedia.org/wiki/Kakashi_Hatake" target="_blank">Nome:
+                            Kakashi</a></li>
+                    <li><strong>Clan:</strong> Hatake</li>
+                    <li class="data">Idade: 28</li>
+                    <li>Isninja: False</li>
+                    <li>Ninjutsus: Copiar Habilidades, Chidori</li>
+
+                </ul>
+            </section>
+
+            <section id="card">
+                <div id="ninja-imagem"><img src="./img/Jiraiya.png" alt="imagem do jiraiya"></div>
+                <ul>
+                    <li><a href="https://naruto.fandom.com/pt-br/wiki/Jiraiya" target="_blank">Nome: jiraiya</a></li>
+                    <li><strong>Clan:</strong> Hatake</li>
+                    <li>Idade: 51</li>
+                    <li>Isninja: False</li>
+                    <li>Ninjutsus: Rasengan, Odama Rasengan</li>
+
+                </ul>
+            </section>
+            <section id="card">
+                <div id="ninja-imagem"><img src="./img/maito-gai.png" alt="imagem do maito-gai"></div>
+                <ul>
+                    <li><a href="https://naruto.fandom.com/pt-br/wiki/Might_Guy" target="_blank">Nome: Maito Gai</a>
+                    </li>
+                    <li><strong>Clan:</strong> Sem Clan</li>
+                    <li>Idade: 28</li>
+                    <li>Isninja: True</li>
+                    <li>Ninjutsus: Os Noves Portões</li>
+
+                </ul>
+            </section>
+            <section id="card">
+                <div id="ninja-imagem"><img src="./img/rock-lee.png" alt="imagem do rock-lee"></div>
+                <ul>
+                    <li><a href="https://naruto.fandom.com/pt-br/wiki/Rock_Lee" target="_blank">Nome: Rock Lee</a></li>
+                    <li><strong>Clan:</strong> Sem Clan</li>
+                    <li>Idade: 17</li>
+                    <li>Isninja: True</li>
+                    <li>Ninjutsus: Só Tem Taijuts</li>
+
+                </ul>
+            </section>
+            <section id="card">
+                <div id="ninja-imagem"><img src="./img/neji.png" alt="imagem do neji"></div>
+                <ul>
+                    <li><a href="https://naruto.fandom.com/pt-br/wiki/Neji_Hy%C5%ABga" target="_blank">Nome: Neji
+                            Hyuga</a></li>
+                    <li><strong>Clan:</strong> Hyuga</li>
+                    <li>Idade: 17</li>
+                    <li>Isninja: False</li>
+                    <li>Ninjutsus: Oito Trigamas, Emissão de Chakara</li>
+
+                </ul>
+            </section>
+            <section id="card">
+                <div id="ninja-imagem"><img src="./img/shikamaru.png" alt="imagem do Shikamaru"></div>
+                <ul>
+                    <li><a href="https://naruto.fandom.com/pt-br/wiki/Shikamaru_Nara" target="_blank">Nome:Shikamaru</a>
+                    </li>
+                    <li><strong>Clan:</strong> Nara</li>
+                    <li>Idade: 26</li>
+                    <li>Isninja: True</li>
+                    <li>Ninjutsus: Técnica de Imitação Pela Sombra, Técnica da Captura pela Sombra</li>
+
+                </ul>
+            </section>
+            <section id="card">
+                <div id="ninja-imagem"><img src="./img/nagato.png" alt="imagem do Nagato"></div>
+                <ul>
+                    <li><a href="https://naruto.fandom.com/pt-br/wiki/Nagato" target="_blank">Nome: Nagato Pain</a></li>
+                    <li><strong>Clan:</strong> Uzumaki</li>
+                    <li>Idade: 32</li>
+                    <li>Isninja: False</li>
+                    <li>Ninjutsus: Jutsus Absorção da Alma, Técnica da Vida Celestial</li>
+
+                </ul>
+            </section>
+        </section>
+    </main>
+    <footer class="bg-dark text-center text-white" style="align-items: center;">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/cleitoneregina"
+                    target="_blank" role="button"><i class="bi bi-facebook"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitch.tv/srheizenberg"
+                    target="_blank" role="button"><i class="bi bi-twitter"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/celio_cleiton/"
+                    target="_blank" role="button"><i class="bi bi-instagram"
+                        style="background-color: rgb(243, 118, 22); border-radius:100%; padding: 5px;"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/c%C3%A9lio-cleiton-39709249/" target="_blank"
+                    role="button"><i class="bi bi-linkedin"
+                        style="padding: 5px; background-color: rgb(71, 89, 186); border-radius:100%;"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/srheizenberg" target="_blank"
+                    role="button"><i class="bi bi-github"
+                        style="padding: 5px; background-color: rgb(17, 15, 15); border-radius:100%;"></i></a>
+
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); text-align: center;">
+            © 2022 Copyright:
+            <a class="text-white" href="#" style="padding: 5px;"> Célio Cleiton</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+
+</html>
