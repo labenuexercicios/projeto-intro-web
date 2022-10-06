@@ -11,28 +11,28 @@
     padding: 0px;
     font-family: sans-serif;
 }
+
 body {
     height: 100%;
 }
+
 header {
     color: white;
     height: 100px;
     width: 100%;
     min-width: 365px;
     background-color: black;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 20px;
-    align-items: center;
 }
 
 h1 {
     font-family: 'naruto', 'Times New Roman', Times, serif;
     font-weight: bolder;
     font-style: normal;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     padding: 10px;
     letter-spacing: 0.3rem;
@@ -50,10 +50,10 @@ main {
     width: 100%;
 }
 
-div {
-    width: 400px;
+.search-container {
+    width: 350px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: row;
     align-items: center;
 }
@@ -231,6 +231,7 @@ img {
     text-shadow: black 0.1em 0.1em 0.2em;
     border: white solid 2px;
 }
+
 /* img:hover {
     transform:scale(1.2);
 } */
@@ -286,6 +287,7 @@ footer {
     border-radius: 100%;
     padding: 5px;
 }
+
 .bi-facebook {
     border-radius: 100%;
     background-color: #3b5998;
@@ -293,11 +295,17 @@ footer {
 }
 
 @media screen and (max-width: 390px) {
-    header {
+
+    /* header {
         min-width: 120vw;
-    }
+    } */
     h1 {
         font-size: 18px;
+        text-align: center;
+    }
+
+    main {
+        display: block;
     }
 
     #card {
@@ -306,7 +314,7 @@ footer {
         margin-bottom: 15px;
         width: 350px;
         display: flex;
-        flex-wrap:nowrap;
+        flex-wrap: nowrap;
         justify-content: space-evenly;
         align-items: center;
         border-radius: 20px;
@@ -317,11 +325,8 @@ footer {
     footer {
         min-width: 120vw;
     }
-
-    h1 {
-        font-size: 20px;
-    }
 }
+
 #card2 {
     height: 200px;
     background-color: black;
@@ -349,6 +354,7 @@ footer {
     box-shadow: black 0.5px 0px 0px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
 }
+
 #card4 {
     height: 200px;
     background-color: black;
@@ -362,6 +368,7 @@ footer {
     box-shadow: black 0.5px 0px 0px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
 }
+
 #card5 {
     height: 200px;
     background-color: black;
@@ -375,6 +382,7 @@ footer {
     box-shadow: black 0.5px 0px 0px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
 }
+
 #card6 {
     height: 200px;
     background-color: black;
@@ -388,6 +396,7 @@ footer {
     box-shadow: black 0.5px 0px 0px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
 }
+
 #card7 {
     height: 200px;
     background-color: black;
@@ -401,6 +410,7 @@ footer {
     box-shadow: black 0.5px 0px 0px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
 }
+
 #card8 {
     height: 200px;
     background-color: black;

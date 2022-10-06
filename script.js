@@ -98,7 +98,7 @@ const ninja1 = {
    nome: 'kakashi',
    clan: 'Hatake',
    idade: 28,
-   isninja: false,
+   isninja: true,
    ninjutsus: ['copiar habilidades', 'chidori'],
    img: "img/kakashi.png",
    card: 'card2'
@@ -108,7 +108,7 @@ const ninja2 = {
    nome: 'jiraiya',
    clan: 'Hatake',
    idade: 51,
-   isninja: false,
+   isninja: true,
    ninjutsus: ["rasengan", "odama rasengan"],
    img: "img/jiraiya.png",
    card: 'card3'
@@ -140,7 +140,7 @@ const ninja5 = {
    nome: 'Neji Hyuga',
    clan: 'Hyuga',
    idade: 17,
-   isninja: false,
+   isninja: true,
    ninjutsus: ["oito trigamas", "Emissão de chakara"],
    img: "img/neji.png",
    card: 'card6'
@@ -182,7 +182,7 @@ const ninjaarray = [{
    nome: 'kakashi',
    clan: 'Hatake',
    idade: 28,
-   isninja: false,
+   isninja: true,
    ninjutsus: ['copiar habilidades', 'chidori'],
    img: "img/kakashi.png",
    card: 'card2'
@@ -191,7 +191,7 @@ const ninjaarray = [{
    nome: 'jiraiya',
    clan: 'Hatake',
    idade: 51,
-   isninja: false,
+   isninja: true,
    ninjutsus: ["rasengan", "odama rasengan"],
    img: "img/jiraiya.png",
    card: 'card3'
@@ -220,7 +220,7 @@ const ninjaarray = [{
    nome: 'Neji Hyuga',
    clan: 'Hyuga',
    idade: 17,
-   isninja: false,
+   isninja: true,
    ninjutsus: ["oito trigamas", "Emissão de chakara"],
    img: "img/neji.png",
    card: 'card6'
