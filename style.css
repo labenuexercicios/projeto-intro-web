@@ -53,12 +53,12 @@ a {
   border-radius: 15px;
   height: 4.15vh;
   width:120px;
+  transition: 0.3s;
 }
 
 #btn:hover {
   background: #ffd42b;
   color: white;
-  transition: 0.3s;
   cursor: pointer;
 }
 
@@ -80,17 +80,17 @@ main {
   width: 39.06vw;
   height: 46.58vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   background-color: #154cf2;
   border-radius: 10px;
   font-family: "Lato", sans-serif;
   color: white;
+   transition: 0.5s;
 }
 
 .author:hover {
   background-color: #ffd42b;
-  transition: 0.5s;
 }
 
 /*---------FOOTER------------*/
@@ -126,11 +126,12 @@ a {
 
 .text-ftr {
   color: white;
+  transition: 0.5s;
 }
 
 .text-ftr:hover {
   color: #ffd42b;
-  transition: 0.5s;
+ 
 }
 
 /*---------RESPONSIVO-TABLET-----------*/
@@ -145,6 +146,11 @@ a {
   .author {
     width: 360px;
   }
+
+  .author{
+    padding-right: 20px;
+  }
+
 }
 
 /*---------RESPONSIVO-PHONE-----------*/
@@ -157,6 +163,12 @@ a {
   }
 
   /*MAIN*/
+
+  .author{
+    padding-right: 20px;
+  }
+
+
   .author {
     width: 90%;
   }
