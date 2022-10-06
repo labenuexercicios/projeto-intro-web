@@ -39,7 +39,7 @@ let objeto4 = {
     diretor: "Anthony e Joe Russo",
     elenco: ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Rufallo", "Chris Hemsworth", "Jeremy Renner",
         "Tom Hiddleston", "Samuel L. Jackson", "Elizabeth Olsen", "Paul Bettany"],
-    imagem: `./imagens/vingadores-ultimato.jpg`,
+    imagem: "./imagens/vingadores-ultimato.jpeg",
 };
 
 let arrayObjetos = []
@@ -170,6 +170,8 @@ for (i in arrayObjetos) {
     let li1 = document.createElement("li")
     let li2 = document.createElement("li")
     let li3 = document.createElement("li")
+    let li4 = document.createElement("li")
+    let li5 = document.createElement("li")
     let a = document.createElement("a")
     let imagem = document.createElement("img")
     section.setAttribute("id", "section1")
@@ -183,12 +185,16 @@ for (i in arrayObjetos) {
     li1.appendChild(a)
     li2.innerHTML = arrayObjetos[i].anoLancamento
     li3.innerHTML = arrayObjetos[i].valeAPena
+    li4.innerHTML = arrayObjetos[i].diretor
+    li5.innerHTML = arrayObjetos[i].elenco
     div.appendChild(section)
     section.appendChild(imagem)
     section.appendChild(ul)
     ul.appendChild(li1)
     ul.appendChild(li2)
     ul.appendChild(li3)
+    ul.appendChild(li4)
+    ul.appendChild(li5)
 
     // let div = document.getElementById("div-sections");
     //     let section = document.createElement("section");
