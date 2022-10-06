@@ -37,75 +37,67 @@ footer{
 /* :::::::::::::::::CONFIGURACAO DE PAGINA::::::::::::::::: */
 
 /* :::::::::::::::::SUBTITULO E PESQUISA::::::::::::::::: */
-.botao{
-    padding: 40px;
-    text-align: center;
-}
 .subtitulo{
     font-size: 2em;
     padding: 20px 0 0 0;
     text-align: center;
     color: rgb(3, 92, 3);
+    margin-bottom: 99px;
 }
 /* :::::::::::::::::SUBTITULO E PESQUISA::::::::::::::::: */
 
-/* :::::::::::::::::CONFIGURACAO CENTRO::::::::::::::::: */
-.imagens{
-    margin: 20px;
-    width: 150px;
-    border-radius: 75px;
-    box-shadow: 5px 5px 10px rgb(143, 142, 142);
-}
-.conteiner-produtos{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(246, 253, 246);
-    margin-bottom: 10px;
-    padding: 2%;
-    border-radius: 5%; 
-}
-.texto{
-    text-align: center;
-    list-style-type: none; 
-}
+/* :::::::::::::::::CONFIGURACAO DE CENTRO::::::::::::::::: */
 .div-flex{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
-.centro{
+.conteiner{
     flex-grow: 3;
-    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+    align-items: center;
 }
-/* :::::::::::::::::CONFIGURACAO CENTRO::::::::::::::::: */
+form{
+    text-align: center;
+}
+.centro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 30%;
+    column-gap: 5%;  
+    padding: 100px;
+    justify-content: center;
+    
+}
+#foto{
+    
+}
+#enviar{
+    
+}
+/* :::::::::::::::::CONFIGURACAO DE CENTRO::::::::::::::::: */
 
-/* :::::::::::::::::CONFIGURACAO NAV::::::::::::::::: */
+/* :::::::::::::::::CONFIGURACAO DE NAV::::::::::::::::: */
 nav{
     flex-grow: 1;
     padding-left: 1%;
     min-width: 15%;
     text-align: center;
-    max-width: 300px;
 }
-/* :::::::::::::::::CONFIGURACAO NAV::::::::::::::::: */
-
+/* :::::::::::::::::CONFIGURACAO DE NAV::::::::::::::::: */
 /* :::::::::::::::::CONFIGURACAO ASIDE::::::::::::::::: */
 aside{
     flex-grow: 1;
-    border: 1px solid green;
+    border: 1px solid white;
     margin: 0 2%;
     padding: 1%;
     height: fit-content;
     min-width: 20%;
     max-width: 300px;
-}
-aside>h2{
-    text-align: center;
-}
-#saiba{
-    text-align: right;
-    padding-right: 5%;
 }
 /* :::::::::::::::::CONFIGURACAO ASIDE::::::::::::::::: */

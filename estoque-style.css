@@ -27,6 +27,7 @@ footer{
     height: 2%;
     background-color: green;
     color: white;
+    margin-top: 2%;
 }
 #logo-super-brasil{
     width: 50%;
@@ -34,19 +35,6 @@ footer{
     padding: 1%;
 }
 /* :::::::::::::::::CONFIGURACAO DE PAGINA::::::::::::::::: */
-
-/* :::::::::::::::::BOTAO SUPERIOR::::::::::::::::: */
-#home{
-    width: 40px;
-    height: 40px;
-    padding: 2%;
-}
-header>button:hover{
-    border: 2px solid green;
-    border-radius: 2px;
-    background-color: white;
-}
-/* :::::::::::::::::BOTAO SUPERIOR::::::::::::::::: */
 
 /* :::::::::::::::::SUBTITULO E PESQUISA::::::::::::::::: */
 .botao{
@@ -84,16 +72,26 @@ header>button:hover{
 }
 .div-flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+.centro{
+    flex-grow: 3;
+    max-width: 600px;
+}
+/* :::::::::::::::::CONFIGURACAO CENTRO::::::::::::::::: */
+
+/* :::::::::::::::::CONFIGURACAO NAV::::::::::::::::: */
 nav{
     flex-grow: 1;
     padding-left: 1%;
     min-width: 15%;
+    text-align: center;
+    max-width: 300px;
 }
-.centro{
-    flex-grow: 3;
-}
+/* :::::::::::::::::CONFIGURACAO NAV::::::::::::::::: */
+
+/* :::::::::::::::::CONFIGURACAO ASIDE::::::::::::::::: */
 aside{
     flex-grow: 1;
     border: 1px solid green;
@@ -101,6 +99,7 @@ aside{
     padding: 1%;
     height: fit-content;
     min-width: 20%;
+    max-width: 300px;
 }
 aside>h2{
     text-align: center;
@@ -109,4 +108,4 @@ aside>h2{
     text-align: right;
     padding-right: 5%;
 }
-/* :::::::::::::::::CONFIGURACAO CENTRO::::::::::::::::: */
+/* :::::::::::::::::CONFIGURACAO ASIDE::::::::::::::::: */

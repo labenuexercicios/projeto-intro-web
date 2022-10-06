@@ -26,10 +26,21 @@ const item3 = {
   marca: "Supang",
   preco: 6.99,
   quantidade: 5000,
-  validade: new Date("12/09/2022"),
+  validade: new Date("01/09/2022"),
   tipo: ["Vermelho", "Grande"],
   img: "/Fotos/feijao-vermelho-supang.jpg",
   link: "https://pt.wikipedia.org/wiki/Feij%C3%A3o",
+};
+
+const item4 = {
+  nome: "Farinha",
+  marca: "Anchieta",
+  preco: 5.99,
+  quantidade: 2500,
+  validade: new Date("05/09/2022"),
+  tipo: ["Branca", "Mandioca"],
+  img: "/Fotos/farinha-mandioca-yoki.png",
+  link: "https://pt.wikipedia.org/wiki/Farinha",
 };
 
 //Crie um array para guardar os objetos. Este array deve estar vazio, por enquanto;
@@ -69,6 +80,11 @@ function agruparItensComValidadeBoaOuNaoEmArrays(objeto) {
   }
 }
 
+agruparItensComValidadeBoaOuNaoEmArrays(item1);
+agruparItensComValidadeBoaOuNaoEmArrays(item2);
+agruparItensComValidadeBoaOuNaoEmArrays(item3);
+agruparItensComValidadeBoaOuNaoEmArrays(item4);
+
 function procuraString(arrayDeObj, string) {
   let array = [];
   let j = 0;
@@ -77,13 +93,9 @@ function procuraString(arrayDeObj, string) {
     if (arrayDeObj[i].nome.toLocaleUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") ===
       string.toLocaleUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) {
 
-      const arr = document.getElementsByClassName("conteiner-produtos");
+      const arr = [...document.getElementsByClassName("conteiner-produtos")];
       const cont = arr.length;
-      console.log(arr)
-      console.log(arr[1])
-      console.log(arr[2])
       for (let itens=0; itens<cont; itens++) {
-        console.log(arr[itens])
         arr[itens].remove();
       }
 
@@ -141,7 +153,17 @@ function imprimirRelatorioAuto(array) {
     for (let caraterística in item) {
       if (caraterística === "link") {
       } else if (caraterística === "img") {
-      } else if (caraterística === "nome") {
+      } else if (caraterística === "validade"){
+        document
+          .getElementById(`ul ${varImprimirRelatorioAuto}`)
+          .insertAdjacentElement("beforeend", document.createElement("li"))
+          .setAttribute("id", `li ${variavel}`);
+
+        document.getElementById(
+          `li ${variavel}`
+        ).innerHTML = `<strong>${caraterística.toLocaleUpperCase()}</strong>: ${item[caraterística].toLocaleDateString()}`;
+        variavel++;
+      }else if (caraterística === "nome") {
         document
           .getElementById(`ul ${varImprimirRelatorioAuto}`)
           .insertAdjacentElement("beforeend", document.createElement("li"))
@@ -169,11 +191,6 @@ function imprimirRelatorioAuto(array) {
   }
 }
 
-
-agruparItensComValidadeBoaOuNaoEmArrays(item1);
-agruparItensComValidadeBoaOuNaoEmArrays(item2);
-agruparItensComValidadeBoaOuNaoEmArrays(item3);
-
 const imprimirEstoque = () => imprimirRelatorioAuto(estoque);
 const imprimirDescarte = () => imprimirRelatorioAuto(descarte);
 
@@ -182,7 +199,7 @@ const procuraElementoEstoque = () => {
 };
 
 const limparPesquisaEstoque = () => {
-  const arr = document.getElementsByClassName("conteiner-produtos");
+  const arr = [...document.getElementsByClassName("conteiner-produtos")];
   const cont = arr.length;
   for (let s = 0; s<cont ; s++) {
     arr[s].remove();
@@ -192,15 +209,15 @@ const limparPesquisaEstoque = () => {
 }
 
 const procuraElementoDescarte = () => {
-  imprimirRelatorioAuto(procuraString(estoque, document.getElementById("procura").value.trim()));
+  imprimirRelatorioAuto(procuraString(descarte, document.getElementById("procura").value.trim()));
 };
 
 const limparPesquisaDescarte = () => {
-  const arr = document.getElementsByClassName("conteiner-produtos");
+  const arr = [...document.getElementsByClassName("conteiner-produtos")];
   const cont = arr.length;
   for (let s = 0; s<cont ; s++) {
     arr[s].remove();
   }
 
-  imprimirRelatorioAuto(estoque)
+  imprimirRelatorioAuto(descarte)
 }

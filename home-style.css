@@ -27,6 +27,7 @@ footer{
     height: 2%;
     background-color: green;
     color: white;
+    margin-top: 2%;
 }
 #logo-super-brasil{
     width: 50%;
@@ -39,6 +40,7 @@ footer{
 .conteiner{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 main>div{
     display: flex;
@@ -54,7 +56,7 @@ div>h2{
 article>img{
     align-self: center;
     margin: 10px;
-    width: 60%;
+    max-width: 600px;
 }
 article>p{
     text-align: justify;
@@ -64,13 +66,15 @@ nav{
     flex-grow: 1;
     padding-left: 1%;
     min-width: 15%;
-}
-article{
-    flex-grow: 1;
     text-align: center;
 }
+article{
+    flex-grow: 3;
+    text-align: center;
+    max-width: 60%;
+}
 aside{
-    /* flex-grow: 1; */
+    flex-grow: 1;
     border: 1px solid green;
     margin: 0 2%;
     padding: 1%;

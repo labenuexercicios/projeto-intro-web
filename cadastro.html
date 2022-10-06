@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estoque e descarte supermercado</title>
     <script src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="descarte-style.css" />
+    <link rel="stylesheet" type="text/css" href="cadastro-style.css" />
 </head>
 
 <body>
@@ -23,33 +23,33 @@
     </header>
     <main>
         <div>
-            <h2 class="subtitulo"><strong>Descarte</strong></h2>
-            <div class="botao">
-                <label for="procura"></label>
-                <input type="text" name="procura" id="procura" placeholder="Procurar...">
-                <button type="submit" onclick="procuraElementoDescarte()">Enviar</button>
-                <button type="submit" onclick="limparPesquisaDescarte()">Limpar Pesquisa</button>
-            </div>
+            <h2 class="subtitulo"><strong>Cadastro de Itens</strong></h2>
         </div>
         <div class="div-flex">
             <nav>
                 <h3><a href="/home.html">Home</a></h3>
                 <h3><a href="/estoque.html">Estoque</a></h3>
                 <h3><a>A Vencer</a></h3>
-                <h3><a href="/cadastro.html">Cadastro</a></h3>
+                <h3><a href="/descarte.html">Descarte</a></h3>
+                
             </nav>
-            <div class="centro" id="centro">
-                <script>
-                    window.onload = imprimirDescarte()
-                </script>
+            <div class="conteiner">
+                <form >
+                    <input type="file" name="foto" id="foto"  placeholder="Upload Foto...">
+                    <div class="centro" >
+                        <input type="text" name="nome" id="nome"  placeholder="Nome...">
+                        <input type="text" name="marca" id="marca"  placeholder="Marca...">
+                        <input type="number" name="preco" id="preco"  placeholder="Preço...">
+                        <input type="number" name="quantidade" id="quantidade"  placeholder="Quantidade...">
+                        <input type="date" name="validade" id="validade"  placeholder="Data de Validade...">
+                        <input type="text" name="tipo" id="tipo"  placeholder="Tipo...">
+                        <input type="url" name="link" id="link"  placeholder="Link...">
+                    </div>
+                    <button type="submit" id="enviar">ENVIAR</button>
+                </form>
             </div>
             <aside>
-                    <h2>Atenção</h2>
-                    <h4>Feijão Supang</h4>
-                    <p>Vence em X dias</p>
-                    <h4>Arroz Carijo</h4>
-                    <p>Vence em X dias</p>
-                    <p id="saiba">+ Saiba mais</p>
+                
             </aside>
         </div>
     </main>
