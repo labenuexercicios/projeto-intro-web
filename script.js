@@ -157,14 +157,68 @@ objeto09 = {
 "Mirai Shida", "Jun Kunimura", "Shinobu Otake", "Mansai Nomura"]
 }
 
+// const studioGhibliFilmografia = []
+// studioGhibliFilmografia.push(objeto01, objeto02, objeto03, objeto04, objeto05, 
+//     objeto06, objeto07, objeto07, objeto08, objeto09)
+
+// console.log(studioGhibliFilmografia);
+
+//SEMANA 04
+
 const studioGhibliFilmografia = []
-studioGhibliFilmografia.push(objeto01)
-studioGhibliFilmografia.push(objeto03)
-studioGhibliFilmografia.push(objeto04)
-studioGhibliFilmografia.push(objeto05)
-studioGhibliFilmografia.push(objeto06)
-studioGhibliFilmografia.push(objeto07)
-studioGhibliFilmografia.push(objeto08)
-studioGhibliFilmografia.push(objeto09)
+
+if (objeto01.RoteiroDeHayaoMiyazaki01 === true) {
+    studioGhibliFilmografia.push(objeto01)
+}else{
+    alert ("**-_-_-ALERT-_-_-**")
+}
+
+if (objeto02.RoteiroDeHayaoMiyazaki02 === true) {
+    studioGhibliFilmografia.push(objeto02)
+}else{
+    alert ("**-_-_-ALERT-_-_-**")
+}
+
+if (objeto03.RoteiroDeHayaoMiyazaki03 === true) {
+    studioGhibliFilmografia.push(objeto03)
+}else{
+    alert ("**-_-_-ALERT-_-_-**")
+}
+
+if (objeto04.RoteiroDeHayaoMiyazaki04 === true) {
+    studioGhibliFilmografia.push(objeto04)
+}else{
+    alert ("**-_-_-ALERT-_-_-**")
+}
+
+if (objeto05.RoteiroDeHayaoMiyazaki05 === true) {
+    studioGhibliFilmografia.push(objeto05)
+}else{
+    alert ("**-_-_-ALERT-_-_-**")
+}
+
+if (objeto06.RoteiroDeHayaoMiyazaki06 === true) {
+    studioGhibliFilmografia.push(objeto06)
+}else{
+    alert ("**-_-_-ALERT-_-_-**")
+}
+
+if (objeto07.RoteiroDeHayaoMiyazaki07 === true) {
+    studioGhibliFilmografia.push(objeto07)
+}else{
+    alert ("**-_-_-ALERT-_-_-**")
+}
+
+if (objeto08.RoteiroDeHayaoMiyazaki08 === true) {
+    studioGhibliFilmografia.push(objeto08)
+}else{
+    alert ("**-_-_-ALERT-_-_-**")
+}
+
+if (objeto09.RoteiroDeHayaoMiyazaki09 === true) {
+    studioGhibliFilmografia.push(objeto09)
+}else{
+    alert ("**-_-_-ALERT-_-_-**")
+}
 
 console.log(studioGhibliFilmografia);
