@@ -35,17 +35,17 @@
             </nav>
             <div class="conteiner">
                 <form >
-                    <input type="file" name="foto" id="foto"  placeholder="Upload Foto...">
+                    <input type="url" name="foto" id="img" placeholder="Link da foto...">
                     <div class="centro" >
-                        <input type="text" name="nome" id="nome"  placeholder="Nome...">
-                        <input type="text" name="marca" id="marca"  placeholder="Marca...">
-                        <input type="number" name="preco" id="preco"  placeholder="Preço...">
-                        <input type="number" name="quantidade" id="quantidade"  placeholder="Quantidade...">
-                        <input type="date" name="validade" id="validade"  placeholder="Data de Validade...">
-                        <input type="text" name="tipo" id="tipo"  placeholder="Tipo...">
-                        <input type="url" name="link" id="link"  placeholder="Link...">
+                        <input type="text" name="nome" class="inputs" id="nome"  placeholder="Nome..." required>
+                        <input type="text" name="marca" class="inputs" id="marca"  placeholder="Marca..." required>
+                        <input type="number" name="preco" class="inputs" id="preco"  placeholder="Preço...">
+                        <input type="number" name="quantidade" class="inputs" id="quantidade"  placeholder="Quantidade..." required>
+                        <input type="date" name="validade" class="inputs" id="validade"  placeholder="Data de Validade..." required>
+                        <input type="text" name="tipo" class="inputs" id="tipo"  placeholder="Tipo...">
+                        <input type="url" name="link" class="inputs" id="link"  placeholder="Link...">
                     </div>
-                    <button type="submit" id="enviar">ENVIAR</button>
+                    <button type="button" id="enviar" onclick="cadastroItem()">ENVIAR</button>
                 </form>
             </div>
             <aside>

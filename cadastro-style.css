@@ -68,17 +68,16 @@ form{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    row-gap: 30%;
-    column-gap: 5%;  
-    padding: 100px;
+    margin: 10% 0 10% 0;
     justify-content: center;
     
 }
-#foto{
-    
+.inputs{
+    padding: 2%;
+    margin: 10px;
 }
-#enviar{
-    
+#foto{
+    margin-top: 10%;
 }
 /* :::::::::::::::::CONFIGURACAO DE CENTRO::::::::::::::::: */
 

@@ -221,3 +221,21 @@ const limparPesquisaDescarte = () => {
 
   imprimirRelatorioAuto(descarte)
 }
+
+function cadastroItem(){
+  let item = {};
+  
+  item.nome = (document.getElementById("nome").value)
+  item.marca = (document.getElementById("marca").value)
+  item.preco = Number(document.getElementById("preco").value)
+  item.quantidade = Number(document.getElementById("quantidade").value)
+  item.validade = new Date(document.getElementById("validade").value)
+  item.tipo = String(document.getElementById("tipo").value)
+  item.img = (document.getElementById("img").value)
+  item.link = (document.getElementById("link").value)
+
+  // console.log(item)
+  agruparItensComValidadeBoaOuNaoEmArrays(item)
+  // console.log(estoque)
+  }
+

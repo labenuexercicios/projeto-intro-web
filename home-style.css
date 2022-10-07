@@ -37,15 +37,6 @@ footer{
 /* :::::::::::::::::CONFIGURACAO DE PAGINA::::::::::::::::: */
 
 /* :::::::::::::::::CONFIGURACAO CENTRO::::::::::::::::: */
-.conteiner{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-main>div{
-    display: flex;
-    flex-direction: column;
-}
 div>h2{
     font-size: 2em;
     padding: 20px 0 0 0;
@@ -53,39 +44,54 @@ div>h2{
     color: rgb(3, 92, 3);
     margin-bottom: 99px;
 }
-article>img{
-    align-self: center;
-    margin: 10px;
-    max-width: 600px;
-}
-article>p{
-    text-align: justify;
-    font-size: 1em;
-}
-nav{
-    flex-grow: 1;
-    padding-left: 1%;
-    min-width: 15%;
-    text-align: center;
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 article{
     flex-grow: 3;
     text-align: center;
-    max-width: 60%;
+    
 }
-aside{
-    flex-grow: 1;
-    border: 1px solid green;
-    margin: 0 2%;
-    padding: 1%;
-    height: fit-content;
-    min-width: 20%;
+article>img{
+    align-self: center;
+    margin: 10px;
+    width: 60%;
+    max-width: 600px;
+    min-width: 200px;
+
 }
-aside>h2{
+article>p{
     text-align: center;
+    font-size: 1em;
+    /* padding: 5%; */
+    /* max-width: 650px; */
+   
 }
-#saiba{
-    text-align: right;
-    padding-right: 5%;
+#caixa-texto{
+    width: 600px;
+    padding: 5%;
+    
 }
 /* :::::::::::::::::CONFIGURACAO CENTRO::::::::::::::::: */
+
+/* :::::::::::::::::CONFIGURACAO NAV::::::::::::::::: */
+nav{
+    flex-grow: 1;
+    padding-left: 1%;
+    text-align: center;
+    width: 200px;
+    max-width: 250px;
+    height: fit-content;
+
+}
+/* :::::::::::::::::CONFIGURACAO NAV::::::::::::::::: */
+
+/* :::::::::::::::::CONFIGURACAO ASIDE::::::::::::::::: */
+ aside{
+    width: 200px;
+    height: 50px;
+}
+/* :::::::::::::::::CONFIGURACAO ASIDE::::::::::::::::: */
