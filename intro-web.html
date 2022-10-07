@@ -5,28 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grandes times do futebol brasileiro 2022</title>
-    <!-- <script src="intro-web.js"></script> -->
+    <script src="intro-web.js"></script>
     <link rel="stylesheet" href="intro-web.css">
 </head>
-<body>
     <body>
         <header>
             <h1> Grandes times do Brasil</h1>
         </header>
 
-        <main class="container">
+        <main>
             <section id="divBusca">
                 <img src="./midia/lupa.jpg" alt="Buscar..."/>
-                <input type="text" id="txtBusca" placeholder="Pesquise um time..."/>
-                <button id="btnBusca">Buscar</button>
+                <input type="text" id="txtBusca" onkeydown="digitou(event)" placeholder="Pesquise um time..."/>
+                <button id="btnBusca" onclick="insereItem(event)"">Buscar</button>
               </section>
 
           <section >
       
             <article class="bloco" id="bloco-1">
-                <img class="dimension" src="./midia/Flamengo_braz_logo.svg.png" alt="Flamengo">
-                <ol class="list-lateral">
-                    <ul>time:<strong> <a href="https://pt.wikipedia.org/wiki/Clube_de_Regatas_do_Flamengo" target="_blank"> Flamengo</a></strong> </ul>
+                <img class="dimension" id="img-fla" src="./midia/Flamengo_braz_logo.svg.png" alt="Flamengo">
+                <ol class="list-lateral" id="list-lateral-fla">
+                    <ul>time:<strong> <a href="https://pt.wikipedia.org/wiki/Clube_de_Regatas_do_Flamengo" style="color: black" target="_blank"> Flamengo</a></strong> </ul>
                     <ul>maiorRival: <strong>Vasco</strong></ul>
                     <ul>temMundial: <strong>true</strong></ul>
                     <ul>foiRebaixado: <strong>false</strong></ul>
@@ -36,15 +35,15 @@
                     <!-- <ul>titulos: <strong>["libertadores: 2", "brasileirão: 8", "copa do brasil: 3"]</strong></ul> -->
                     <!-- <ul><a href="https://pt.wikipedia.org/wiki/Clube_de_Regatas_do_Flamengo" target="_blank"> Página do wikipedia</a></ul> -->
 
-                </ol>
+                </ol>   
                 
                 
             </article>
   
             <article class="bloco" id="bloco-2">
-                <img class="dimension" src="./midia/Palmeiras.svg.png" alt="Palmeiras">
+                <img class="dimension" id="img-pal" src="./midia/Palmeiras.svg.png" alt="Palmeiras">
                 <ol class="list-lateral">
-                    <ul>time:<strong><a href="https://pt.wikipedia.org/wiki/Sociedade_Esportiva_Palmeiras" target="_blank"> Palmeiras</a></strong> </ul>
+                    <ul>time:<strong><a href="https://pt.wikipedia.org/wiki/Sociedade_Esportiva_Palmeiras" style="color: white" target="_blank"> Palmeiras</a></strong> </ul>
                     <ul>maiorRival: <strong>Corinthians</strong></ul>
                     <ul>temMundial: <strong>false</strong></ul>
                     <ul>foiRebaixado: <strong>true</strong></ul>
@@ -59,7 +58,7 @@
             <article class="bloco" id="bloco-3">
                 <img class="dimension" id="img-cru" src="./midia/CruzeiroEC2021.png" alt="Cruzeiro">
                 <ol class="list-lateral">
-                    <ul>time:<strong><a href="https://pt.wikipedia.org/wiki/T%C3%ADtulos_do_Cruzeiro_Esporte_Clube" target="_blank"> Cruzeiro</a></ul></strong> </ul>
+                    <ul>time:<strong><a href="https://pt.wikipedia.org/wiki/T%C3%ADtulos_do_Cruzeiro_Esporte_Clube" style="color: white" target="_blank"> Cruzeiro</a></ul></strong> </ul>
                     <ul>maiorRival: <strong>Atlético MG</strong></ul>
                     <ul>temMundial: <strong>false</strong></ul>
                     <ul>foiRebaixado: <strong>true</strong></ul>
@@ -75,8 +74,8 @@
 
             <article class="bloco" id="bloco-4">
                 <img class="dimension" id="img-cap" src="./midia/180px-Club_Athletico_Paranaense_2019.png" alt="CAP">
-                <ol class="list-lateral">
-                    <ul>time:<strong><a href="https://pt.wikipedia.org/wiki/Club_Athletico_Paranaense" target="_blank"> Athletico Paranaense</a></ul></strong> </ul>
+                <ol class="list-lateral" id="list-lateral-cap">
+                    <ul>time:<strong><a href="https://pt.wikipedia.org/wiki/Club_Athletico_Paranaense" style="color: red" target="_blank"> Athletico Paranaense</a></ul></strong> </ul>
                     <ul>maiorRival: <strong>Coritiba</strong></ul>
                     <ul>temMundial: <strong>false</strong></ul>
                     <ul>foiRebaixado: <strong>true</strong></ul>
@@ -90,18 +89,16 @@
                 
             </article>
 
-
-
         </section>
 
         </main>
       
-        <footer class="center">
-            <h3>Criado pelo dev Luiz Henrique Marinho</h3>
-            <p>Instagram:<a href="https://www.instagram.com/luiz_marinho97/" target="_blank"><img src="./midia/insta.jpg" height="30px" width="30"/></a></p>
-            <p>github: <a href="https://github.com/LuizHenriqueMarinho" target="_blank"> https://github.com/LuizHenriqueMarinho </a></p>
-            
+        <footer>
+            <h3>Criado por Luiz Henrique Marinho</h3>
+            <p><a href="https://www.instagram.com/luiz_marinho97/" target="_blank"><img class="imagem-insta" src="./midia/Instagram_icon.png.webp" /></a>
+            <a href="https://www.linkedin.com/in/luiz-henrique-marinho-23456019b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BuBR5XHfbS7%2BMT7aDC5KRfA%3D%3D" target="_blank"><img class="imagem-linkedin" src="./midia/linkedin.png"/></a> 
+            <a href="https://github.com/LuizHenriqueMarinho" target="_blank"><img class="imagem-git" src="./midia/github.jpg"/></a> 
+            </p>       
         </footer>
       </body>
-</body>
 </html>

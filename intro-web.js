@@ -180,7 +180,7 @@ if (temMundial_1 === true) {
     console.log(" o " + objeto_1.time + " tem mundial")
 }
 else {
-    alert("**ALERT** o " + objeto_1.time + " não tem mundial")
+    //alert("**ALERT** o " + objeto_1.time + " não tem mundial")
 }
 
 if (temMundial_2 === true) {
@@ -188,7 +188,7 @@ if (temMundial_2 === true) {
     console.log(" o " + objeto_2.time + " tem mundial")
 }
 else {
-    alert("**ALERT** o " + objeto_2.time + " não tem mundial")
+    //alert("**ALERT** o " + objeto_2.time + " não tem mundial")
 }
 
 if (temMundial_3 === true) {
@@ -196,7 +196,7 @@ if (temMundial_3 === true) {
     console.log(" o " + objeto_3.time + " tem mundial")
 }
 else {
-    alert("**ALERT** o " + objeto_3.time + " não tem mundial")
+    //alert("**ALERT** o " + objeto_3.time + " não tem mundial")
 }
 
 if (temMundial_4 === true) {
@@ -204,7 +204,7 @@ if (temMundial_4 === true) {
     console.log(" o " + objeto_4.time + " tem mundial")
 }
 else {
-    alert("**ALERT** o " + objeto_4.time + " não tem mundial")
+    //alert("**ALERT** o " + objeto_4.time + " não tem mundial")
 }
 
 console.log("informações dos times que possuem mundial: ")
@@ -292,7 +292,22 @@ function arrayObjetosToStrings(arrayObjetosFunction, stringFunction)
     }
 }
 
-let string = prompt("digite a string que será pesquisada")
-arrayObjetosToStrings(arrayObjetos, string)
+//let string = prompt("digite a string que será pesquisada")
+var string
+//clique no botão
+function insereItem()
+{
+string = document.getElementById("txtBusca").value
+return arrayObjetosToStrings(arrayObjetos, string)
+}
 
+//enter
+function digitou(e) 
+{
+    if (e.keyCode == 13) {
+      // AO PRESSIONAR A TECLA "ENTER"
+      return insereItem()
+    }
+}
 
+///////DOM esconde itens
