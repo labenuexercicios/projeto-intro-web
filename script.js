@@ -192,6 +192,68 @@ for (author of authorsLive) {
     }
 }
 
+//CARDS
+let keller = document.getElementById('author-1')
+keller.innerHTML = ` <img src="assets/keller.png"
+height="200px">
+<ul>
+<li>
+    <h2><a href="https://en.wikipedia.org/wiki/Tim_Keller_(pastor)" target="_blank">Timothy
+            Keller</a></h2>
+</li>
+<li>Age: ${authorsLive[1].age}</li>
+<li>Number of Books: ${authorsLive[1].numberBooks}</li>
+<li>Is living: ${authorsLive[1].live}</li>
+</ul>
+`
+
+/////////////////////////////////////////////////
+
+let piper = document.getElementById('author-2')
+piper.innerHTML = ` <img src="assets/piper.png"
+height="200px">
+<ul>
+<li>
+    <h2><a href="https://en.wikipedia.org/wiki/John_Piper_(theologian)" target="_blank">${authorsLive[0].author}</a></h2>
+</li>
+<li>Age: ${authorsLive[0].age}</li>
+<li>Number of Books: ${authorsLive[0].numberBooks}</li>
+<li>Is living: ${authorsLive[0].live}</li>
+</ul>
+`
+
+////////////////////////////////////////////////////////
+
+let rothfuss = document.getElementById('author-3')
+rothfuss.innerHTML = ` <img src="assets/rothfuss.png"
+height="200px">
+<ul>
+<li>
+    <h2><a href="https://en.wikipedia.org/wiki/Patrick_Rothfuss" target="_blank">${authorsLive[2].author}</a></h2>
+</li>
+<li>Age: ${authorsLive[2].age}</li>
+<li>Number of Books: ${authorsLive[2].numberBooks}</li>
+<li>Is living: ${authorsLive[2].live}</li>
+</ul>
+`
+
+//////////////////////////////////////////////////
+
+let gaiman = document.getElementById('author-4')
+gaiman.innerHTML = ` <img src="assets/gaiman.png"
+height="200px">
+<ul>
+<li>
+    <h2><a href="https://en.wikipedia.org/wiki/Neil_Gaiman" target="_blank">${authorsLive[3].author}</a></h2>
+</li>
+<li>Age: ${authorsLive[3].age}</li>
+<li>Number of Books: ${authorsLive[3].numberBooks}</li>
+<li>Is living: ${authorsLive[3].live}</li>
+</ul>
+`
+
+
+//PESQUISA DE FILTRO
 function filtrar(obj) {
     const busca = document.getElementById('busca');
     let str = busca.value;
