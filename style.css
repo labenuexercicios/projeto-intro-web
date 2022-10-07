@@ -226,7 +226,7 @@ div.container-modal > article > p.pokeTipo {
 	/* aqui colocamos o CSS para tablets */
     div.container-modal {
         width: 80vw;
-        height: 30vh;
+        height: 50vh;
     }
 
     div.container-modal > article > p {
@@ -276,7 +276,15 @@ div.container-modal > article > p.pokeTipo {
 	/* aqui colocamos o CSS para celulares */
     div.container-modal {
         width: 90vw;
-        height: 20vh;
+        height: 40vh;
+    }
+
+    div.container-modal > article > .imgModal {
+        width: 25vw;
+    }
+
+    div.container-modal > article > img.imgModal:hover {
+        width: 40vw;
     }
 
     div.container-modal > article > p {

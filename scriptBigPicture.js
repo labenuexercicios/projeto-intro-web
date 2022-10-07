@@ -1,10 +1,12 @@
 const containerModal = document.getElementsByClassName("container-modal");
 const modal = document.getElementsByClassName("modal")
+const buttonClose = document.getElementsByClassName("closeButton")
+const articlePokemon = document.getElementsByClassName("articlePokemon")
 
 const bigPicture = (event) => {
     modal[0].classList.toggle("closed")
-    modal[0].classList.toggle("open")
-    const pokeNomeTarget = pokemonsInicial.filter(poke => poke.nome === event.target.alt)
+    clickOutside()
+    const pokeNomeTarget = pokemonsInicial.filter(poke => poke.nome === event.target.id)
     modalHtml(pokeNomeTarget)    
     modalHtml(pokeNomeTarget)    
     modalHtml(pokeNomeTarget)   
@@ -12,8 +14,14 @@ const bigPicture = (event) => {
 
 const closeModal = () => {
     modal[0].classList.toggle("closed")
-    modal[0].classList.toggle("open")
+}
 
+const clickOutside = (e) => {
+    modal[0].onclick = (e) => {
+        if(e.target === modal[0]) {
+            closeModal()
+        } 
+    }
 }
 
 let num = 0 
@@ -21,6 +29,7 @@ const createModal = () => {
 
     const newArticleModal = document.createElement("article");
     newArticleModal.classList.add(`articlePokemon${num}`)
+    newArticleModal.classList.add(`articlePokemon`)
 
     const createPokeName = document.createElement("p")
     createPokeName.classList.add(`pokeNome`)

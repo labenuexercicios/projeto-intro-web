@@ -10,7 +10,7 @@ const createContainer = () => {
   const newImg = document.createElement("img");
   newImg.addEventListener("click", bigPicture);
   newImg.style.width = "20%";
-  newImg.alt = `${pokemonsInicial[i].nome}`
+  newImg.setAttribute('id', `${pokemonsInicial[i].nome}`)
   newImg.src = `${pokemonsInicial[i].image}`;
   i++;
   
@@ -40,7 +40,13 @@ const AddHtm = () => {
   const pokemonNameSection = document.getElementsByClassName("pokeNameSection");
   const pokeLv = document.getElementsByClassName("lv");
   const pokeEvolution = document.getElementsByClassName("evolução");
-  
+
+  for (i in pokemonsInicial) {
+    for (evolucao in pokemonsInicial[i]) {
+      pokemonsInicial[i].evolucao = pokemonsInicial[i].evolucao.toString()
+    }
+  }  
+
   for (i in pokemonsInicial) {
     pokemonNameSection[i].innerHTML = pokemonsInicial[i].nome;
     pokeLv[i].innerHTML = `Nível ${pokemonsInicial[i].nivel}`;

@@ -34,7 +34,7 @@ let pokemon = [...pokemonPadrao,
       ...pokemonPadrao[0],
       nome: "Caterpie",
       tipo: "inseto",
-      // isInicial: false,
+      isInicial: false,
       image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png",
       imageEvolution1: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png",
       imageEvolution2: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png",
@@ -64,13 +64,13 @@ let pokemon = [...pokemonPadrao,
       image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/158.png",
       imageEvolution1: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/159.png",
       imageEvolution2: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/160.png",
-      evolucao: ["Croconaw", "Feraligatr"]
+      evolucao: ["Croconaw", "Feraligator"]
     },
     {
       ...pokemonPadrao[0],
       nome: 'Abra',
       tipo: "psiquico",
-      // isInicial: false,
+      isInicial: false,
       image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/063.png",
       imageEvolution1: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/064.png",
       imageEvolution2: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/065.png",
@@ -80,7 +80,7 @@ let pokemon = [...pokemonPadrao,
       ...pokemonPadrao[0],
       nome: 'Nidorina',
       tipo: "normal",
-      // isInicial: false,
+      isInicial: false,
       image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/029.png",
       imageEvolution1: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/030.png",
       imageEvolution2: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/031.png",
@@ -90,7 +90,7 @@ let pokemon = [...pokemonPadrao,
       ...pokemonPadrao[0],
       nome: 'Gastly',
       tipo: "fantasma",
-      // isInicial: false,
+      isInicial: false,
       image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/092.png",
       imageEvolution1: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/093.png",
       imageEvolution2: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png",
@@ -100,43 +100,36 @@ let pokemon = [...pokemonPadrao,
 
 const pokemonsInicial = [];
 
+// semana 4
 for (i in pokemon) {
   // mudar para alert
   if (pokemon[i].isInicial === true) {
     pokemonsInicial.push(pokemon[i])
   } else {
-    alert(`${pokemon[i].nome} não foi add`)
+    console.log(`${pokemon[i].nome} não foi add`)
   }
 }
 
-for (i in pokemonsInicial) {
-  for (evolucao in pokemonsInicial[i]) {
-    pokemonsInicial[i].evolucao = pokemonsInicial[i].evolucao.toString();
-
-  }
-}
-
+// semana 5
 const retornarString = () => {
   for ( i in pokemonsInicial ) {
     console.log(`${pokemonsInicial[i].nome}, ${pokemonsInicial[i].nivel}, ${pokemonsInicial[i].tipo}, ${pokemonsInicial[i].evolucao}`)
   }
 }
 
-// retornarString()
+retornarString()
 
-// const alerta = (obj, string) => {
+// semana 6
+const alertar = (obj, string) => {
 
-//   const objFiltrado = obj.filter(pokemon => pokemon.nome === string)
+  const objFiltrado = obj.filter(pokemon => pokemon.nome.toLowerCase() === string.toLowerCase())
   
-//   if (objFiltrado.length === 0)  {
-//     alert('Não encontrado')
-//   } else {
-//     console.log(objFiltrado)
-//   }
-// }
-
-// alerta(pokemonsInicial, 'Charmander')
-
-const a = () => {
-
+  if (objFiltrado.length === 0)  {
+    alert('Não encontrado')
+  } else {
+    return objFiltrado[0]
+  }
 }
+
+console.log(alertar(pokemonsInicial, 'Charmander'))
+
