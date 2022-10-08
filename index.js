@@ -90,16 +90,23 @@ function procuraString(arrayDeObj, string) {
   let j = 0;
   for (let i in arrayDeObj) {
     let obj = {};
-    if (arrayDeObj[i].nome.toLocaleUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") ===
-      string.toLocaleUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) {
-
+    if (
+      arrayDeObj[i].nome
+        .toLocaleUpperCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "") ===
+      string
+        .toLocaleUpperCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+    ) {
       const arr = [...document.getElementsByClassName("conteiner-produtos")];
       const cont = arr.length;
-      for (let itens=0; itens<cont; itens++) {
+      for (let itens = 0; itens < cont; itens++) {
         arr[itens].remove();
       }
 
-      obj = {...arrayDeObj[i],};
+      obj = { ...arrayDeObj[i] };
       array[j] = obj;
       j++;
     }
@@ -153,7 +160,7 @@ function imprimirRelatorioAuto(array) {
     for (let caraterística in item) {
       if (caraterística === "link") {
       } else if (caraterística === "img") {
-      } else if (caraterística === "validade"){
+      } else if (caraterística === "validade") {
         document
           .getElementById(`ul ${varImprimirRelatorioAuto}`)
           .insertAdjacentElement("beforeend", document.createElement("li"))
@@ -161,9 +168,11 @@ function imprimirRelatorioAuto(array) {
 
         document.getElementById(
           `li ${variavel}`
-        ).innerHTML = `<strong>${caraterística.toLocaleUpperCase()}</strong>: ${item[caraterística].toLocaleDateString()}`;
+        ).innerHTML = `<strong>${caraterística.toLocaleUpperCase()}</strong>: ${item[
+          caraterística
+        ].toLocaleDateString()}`;
         variavel++;
-      }else if (caraterística === "nome") {
+      } else if (caraterística === "nome") {
         document
           .getElementById(`ul ${varImprimirRelatorioAuto}`)
           .insertAdjacentElement("beforeend", document.createElement("li"))
@@ -183,59 +192,82 @@ function imprimirRelatorioAuto(array) {
 
         document.getElementById(
           `li ${variavel}`
-        ).innerHTML = `<strong>${caraterística.toLocaleUpperCase()}</strong>: ${item[caraterística]}`;
+        ).innerHTML = `<strong>${caraterística.toLocaleUpperCase()}</strong>: ${
+          item[caraterística]
+        }`;
         variavel++;
       }
     }
     varImprimirRelatorioAuto++;
   }
+  
 }
 
-const imprimirEstoque = () => imprimirRelatorioAuto(estoque);
-const imprimirDescarte = () => imprimirRelatorioAuto(descarte);
+const imprimirEstoque = () => {
+  agruparItensComValidadeBoaOuNaoEmArrays(criarItem())
+  imprimirRelatorioAuto(estoque);
+}
+const imprimirDescarte = () => {
+  agruparItensComValidadeBoaOuNaoEmArrays(criarItem())
+  imprimirRelatorioAuto(descarte);
+}
 
 const procuraElementoEstoque = () => {
-  imprimirRelatorioAuto(procuraString(estoque, document.getElementById("procura").value.trim()));
+  imprimirRelatorioAuto(
+    procuraString(estoque, document.getElementById("procura").value.trim())
+  );
 };
 
 const limparPesquisaEstoque = () => {
   const arr = [...document.getElementsByClassName("conteiner-produtos")];
   const cont = arr.length;
-  for (let s = 0; s<cont ; s++) {
+  for (let s = 0; s < cont; s++) {
     arr[s].remove();
   }
 
-  imprimirRelatorioAuto(estoque)
-}
+  imprimirRelatorioAuto(estoque);
+};
 
 const procuraElementoDescarte = () => {
-  imprimirRelatorioAuto(procuraString(descarte, document.getElementById("procura").value.trim()));
+  imprimirRelatorioAuto(
+    procuraString(descarte, document.getElementById("procura").value.trim())
+  );
 };
 
 const limparPesquisaDescarte = () => {
   const arr = [...document.getElementsByClassName("conteiner-produtos")];
   const cont = arr.length;
-  for (let s = 0; s<cont ; s++) {
+  for (let s = 0; s < cont; s++) {
     arr[s].remove();
   }
 
-  imprimirRelatorioAuto(descarte)
+  imprimirRelatorioAuto(descarte);
+};
+
+function cadastroItem() {
+  localStorage.setItem("nome", document.getElementById("nome").value);
+  localStorage.setItem("marca", document.getElementById("marca").value);
+  localStorage.setItem("preco", Number(document.getElementById("preco").value));
+  localStorage.setItem("quantidade", Number(document.getElementById("quantidade").value));
+  localStorage.setItem("validade", new Date(document.getElementById("validade").value));
+  localStorage.setItem("tipo", String(document.getElementById("tipo").value));
+  localStorage.setItem("img", document.getElementById("img").value);
+  localStorage.setItem("link", document.getElementById("link").value);
+
+  // console.log(localStorage.getItem("nome"))
 }
 
-function cadastroItem(){
-  let item = {};
+function criarItem(){
+  let item = {}
+
+  item.nome = localStorage.getItem("nome")
+  item.marca = localStorage.getItem("marca")
+  item.preco = localStorage.getItem("preco")
+  item.quantidade = localStorage.getItem("quantidade")
+  item.validade = new Date (localStorage.getItem("validade"))
+  item.tipo = localStorage.getItem("tipo")
+  item.img = localStorage.getItem("img")
+  item.link = localStorage.getItem("link")
   
-  item.nome = (document.getElementById("nome").value)
-  item.marca = (document.getElementById("marca").value)
-  item.preco = Number(document.getElementById("preco").value)
-  item.quantidade = Number(document.getElementById("quantidade").value)
-  item.validade = new Date(document.getElementById("validade").value)
-  item.tipo = String(document.getElementById("tipo").value)
-  item.img = (document.getElementById("img").value)
-  item.link = (document.getElementById("link").value)
-
-  // console.log(item)
-  agruparItensComValidadeBoaOuNaoEmArrays(item)
-  // console.log(estoque)
-  }
-
+  return item
+}
