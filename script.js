@@ -77,7 +77,7 @@ const jogoTres={
     personagensPrincipais : ['Pagan Min','Amita','Sabal','Ajay Ghale'],
     anoDeLancamento : 2014,
     ehUmBomJogo: true,
-    img:'/Imagens/Far cry 2.jpg'
+    img:'/Imagens/Far cry 4.jpg'
 }
 
 if (jogoTres.ehUmBomJogo===true){
