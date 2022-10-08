@@ -20,25 +20,27 @@ const copaDoBrasil_2 = 4
 const titulos_2 = ["libertadores: 3", "brasileirão: 10", "copa do brasil: 4"] //=> na ordem: liberta, brasileirão e copa do brasil 
 const imagem_2 = "./midia/180px-Palmeiras_logo.svg.png"
 
-const time_3 = "athletico paranaense"
-const maiorRival_3 = "coritiba"
+const time_3 = "Cruzeiro"
+const maiorRival_3 = "Atlético MG"
 const temMundial_3 = false
 const foiRebaixado_3 = true
-const libertadores_3 = 0
-const brasileirao_3 = 1
-const copaDoBrasil_3 = 1
-const titulos_3 = ["libertadores: 0", "brasileirão: 1", "copa do brasil: 1"] //=> na ordem: liberta, brasileirão e copa do brasil 
-const imagem_3 = "./midia/CAP.png"
+const libertadores_3 = 2
+const brasileirao_3 = 4
+const copaDoBrasil_3 = 6
+const titulos_3 = ["libertadores: 2", "brasileirão: 4", "copa do brasil: 6"] //=> na ordem: liberta, brasileirão e copa do brasil 
+const imagem_3 = "./midia/CruzeiroEC2021.png"
 
-const time_4 = "Cruzeiro"
-const maiorRival_4 = "Atlético MG"
+const time_4 = "athletico paranaense"
+const maiorRival_4 = "coritiba"
 const temMundial_4 = false
 const foiRebaixado_4 = true
-const libertadores_4 = 2
-const brasileirao_4 = 4
-const copaDoBrasil_4 = 6
-const titulos_4 = ["libertadores: 2", "brasileirão: 4", "copa do brasil: 6"] //=> na ordem: liberta, brasileirão e copa do brasil 
-const imagem_4 = "./midia/CruzeiroEC2021.png"
+const libertadores_4 = 0
+const brasileirao_4 = 1
+const copaDoBrasil_4 = 1
+const titulos_4 = ["libertadores: 0", "brasileirão: 1", "copa do brasil: 1"] //=> na ordem: liberta, brasileirão e copa do brasil 
+const imagem_4 = "./midia/CAP.png"
+
+
 //semana 1 item 3
 //total de títulos
 const total_1 = libertadores_1 + brasileirao_1 + copaDoBrasil_1
@@ -115,8 +117,8 @@ const objeto_1 =
     libertadores: 2,
     brasileirao: 8,
     copaDoBrasil: 3,
-    titulos: ["libertadores: 2", "brasileirão: 8", "copa do brasil: 3"],
-    imagem: "./midia/Flamengo_braz_logo.svg.png"
+    //titulos: ["libertadores: 2", "brasileirão: 8", "copa do brasil: 3"],
+    //imagem: "./midia/Flamengo_braz_logo.svg.png"
 }
 
 const objeto_2 =
@@ -134,19 +136,6 @@ const objeto_2 =
 
 const objeto_3 =
 {
-    time: "athletico paranaense",
-    maiorRival: "coritiba",
-    temMundial: false,
-    foiRebaixado: true,
-    libertadores: 0,
-    brasileirao: 1,
-    copaDoBrasil: 1,
-    titulos: ["libertadores: 0", "brasileirão: 1", "copa do brasil: 1"],
-    imagem: "./midia/CAP.png"
-}
-
-const objeto_4 =
-{
     time: "cruzeiro",
     maiorRival: "Atlético MG",
     temMundial: false,
@@ -156,6 +145,19 @@ const objeto_4 =
     copaDoBrasil: 3,
     titulos: ["libertadores: 2", "brasileirão: 4", "copa do brasil: 6"],
     imagem: "./midia/CruzeiroEC2021.png"
+}
+
+const objeto_4 =
+{
+    time: "athletico paranaense",
+    maiorRival: "coritiba",
+    temMundial: false,
+    foiRebaixado: true,
+    libertadores: 0,
+    brasileirao: 1,
+    copaDoBrasil: 1,
+    titulos: ["libertadores: 0", "brasileirão: 1", "copa do brasil: 1"],
+    imagem: "./midia/CAP.png"
 }
 
 
@@ -283,7 +285,8 @@ function arrayObjetosToStrings(arrayObjetosFunction, stringFunction)
         if(arrayObjetosFunction[i].time === stringFunction.toLowerCase())
         {
             pesquisa = Number(1)
-            console.log("o resultado da pesquisa foi: ", arrayObjetosFunction[i]) 
+            console.log("o resultado da pesquisa foi: ", arrayObjetosFunction[i])
+            return resultadoNaTela(i) 
         }
     }
     if(pesquisa !== 1)
@@ -295,7 +298,7 @@ function arrayObjetosToStrings(arrayObjetosFunction, stringFunction)
 //let string = prompt("digite a string que será pesquisada")
 var string
 //clique no botão
-function insereItem()
+function pesquisaItem()
 {
 string = document.getElementById("txtBusca").value
 return arrayObjetosToStrings(arrayObjetos, string)
@@ -306,8 +309,32 @@ function digitou(e)
 {
     if (e.keyCode == 13) {
       // AO PRESSIONAR A TECLA "ENTER"
-      return insereItem()
+      return pesquisaItem()
     }
 }
-
 ///////DOM esconde itens
+//function insereItem()
+//{ 
+    for (let elementos in objeto_1) ////// se for para fazer a iteração apenas pro array
+    {
+        lista = document.getElementById("list-lateral-fla")
+        item = document.createElement("ul")
+        item.innerHTML = `${elementos}: ${objeto_1[elementos]}`
+        lista.appendChild(item)
+    }
+//}
+
+//////Funcao pra aparecer o time pesquisado na tela
+function resultadoNaTela(i)
+{
+    for(j=0; j<=arrayObjetos.length;j++)
+    {
+        if(j !== i)
+        {
+            apagar = document.getElementById(`bloco-${j+1}`)
+            apagar.setAttribute("id", "apaga")
+        }
+    }
+
+//}
+}
