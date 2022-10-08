@@ -46,21 +46,21 @@ console.log(saborBrig3.toUpperCase(), "Preço: R$", precoBrig3, "Ingredientes:",
 //1. Transforme os itens que criamos nas últimas semanas em objetos.
 
 const brig1 = {
-    sabor: "Brigadeiro sabor: Chocolate",
+    sabor: "Chocolate",
     preco: 3.50,
     contemLactose: true,
     ingredientes: ["Chocolate ao leite em pó", "leite condensado", "creme de leite", "manteiga"]
 }
 
 const brig2 = {
-    sabor: "Brigadeiro sabor: Cajuzinho",
+    sabor: "Cajuzinho",
     preco: 3.50,
     contemLactose: true,
     ingredientes: ["Chocolate Meio Amargo", "amendoim", "leite condensado", "creme de leite", "manteiga"]
 }
 
 const brig3 = {
-    sabor: "Brigadeiro sabor: Beijinho",
+    sabor: "Beijinho",
     preco: 3.20,
     contemLactose: true,
     ingredientes: ["Coco ralado", "leite condensado", "creme de leite", "manteiga"]
@@ -76,7 +76,7 @@ const brigadeiros = []
 // console.log("Objetos criados e adicionados ao array", brigadeiros)
 
 //4. Altere o item “Adicione os novos objetos no array de objetos, utilizando o push()” (item 3), para criar uma verificação antes de dar o push. A caraterística booleana do objeto deve ser validada. Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for true;
-//5. Crie uma condição else, que, em caso de valor false na condição acima, exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push
+//5. Crie uma condição else, que, em caso de valor false na condição acima, exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push.
 
 if (brig1.contemLactose === true) {
     brigadeiros.push(brig1)
@@ -104,49 +104,78 @@ console.log(brigadeiros)
 
 console.log("SEMANA 3 - ITEM 1")
 
-console.log("Sabor:" + brigadeiros[0].sabor)
-console.log("Preço:" + brigadeiros[0].preco)
-console.log("Contém Lactose:" + brigadeiros[0].contemLactose)
-console.log("Ingredientes:" + brigadeiros[0].ingredientes)
+const brigadeiro = [
+    {
+        sabor: "Chocolate",
+        preco: 3.50,
+        contemLactose: true,
+        ingredientes: ["Chocolate ao leite em pó", "leite condensado", "creme de leite", "manteiga"],
+        imagem: "./assets/Brigadeiro.png"
+    },
 
-console.log("Sabor:" + brigadeiros[1].sabor)
-console.log("Preço:" + brigadeiros[1].preco)
-console.log("Contém Lactose:" + brigadeiros[1].contemLactose)
-console.log("Ingredientes:" + brigadeiros[1].ingredientes)
+    {
+        sabor: "Cajuzinho",
+        preco: 3.50,
+        contemLactose: true,
+        ingredientes: ["Chocolate Meio Amargo", "amendoim", "leite condensado", "creme de leite", "manteiga"],
+        imagem: "./assets/Cajuzinho.png"
+    },
 
-console.log("Sabor:" + brigadeiros[2].sabor)
-console.log("Preço:" + brigadeiros[2].preco)
-console.log("Contém Lactose:" + brigadeiros[2].contemLactose)
-console.log("Ingredientes:" + brigadeiros[2].ingredientes)
+    {
+        sabor: "Beijinho",
+        preco: 3.20,
+        contemLactose: true,
+        ingredientes: ["Coco ralado", "leite condensado", "creme de leite", "manteiga"],
+        imagem: "./assets/Beijinho.png"
+    }
+]
 
-// for (i in brigadeiros) {
-//     console.log(
-//         [brigadeiros[i].sabor,
-//         brigadeiros[i].preço,
-//         brigadeiros[i].ContemLactose,
-//         brigadeiros[i].ingredientes.join(", ")])
-// }
+for (i in brigadeiro) {
+    console.log([
+        brigadeiro[i].sabor,
+        brigadeiro[i].preco,
+        brigadeiro[i].contemLactose,
+        brigadeiro[i].ingredientes.join(", ")
+    ])
+}
 
 
 //2. Ainda no relatório, altere-o para que ele seja criado utilizando um laço. Ou seja, você não deve mais imprimir individualmente cada item do relatório. Cada item deve ser exibido a partir de uma iteração do laço. Para testar, adicione mais um item ao array de objetos, e verifique se ele é exibido corretamente.
 console.log("SEMANA 3 - ITEM 2")
 
-for (let brigadeiro of brigadeiros) {
-    for (let propriedades in brigadeiro)
-        console.log(`${propriedades}: ${brigadeiro[propriedades]}`)
+for (let brig of brigadeiro) {
+    for (let propriedades in brig) {
+        console.log(`${propriedades}: ${brig[propriedades]}`)
+    }
+
 }
 
 //3. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
 console.log("SEMANA 3 - ITEM 3")
 
-const doces = (objeto) => {
-    let string = ' ';
-        for (let propriedade in objeto) {
-            if(typeof objeto[propriedade] == 'string'){
-                console.log(string[propriedade])
-            }            
-        }
+function recebeObjetoEDevolveString(doces) {
+    for (item in doces) {
+        return `Sabor: ${doces[item].sabor} \nContém lactose: ${doces[item].contemLactose} \nIngredientes: ${doces[item].ingredientes} \nPreço: ${doces[item].preco}`
+    }
+
 }
-(doces(brigadeiros))
+console.log(recebeObjetoEDevolveString(brigadeiro))
+
 
 //4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
+
+console.log("SEMANA 3 - ITEM 4")
+
+//let itemBuscado = (prompt("O que você busca na nossa loja?"))
+
+function buscaSite(listaDeDoces, buscaCliente) {
+    const retornoBusca = listaDeDoces.filter((item) => {
+        if (item.sabor === buscaCliente) {
+            return item
+        } else {
+            alert("Item não encontrado.")
+        }
+    })
+    return retornoBusca
+}
+buscaSite(brigadeiro, itemBuscado)
