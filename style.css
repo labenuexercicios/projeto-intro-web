@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+	padding: 0;
+}
+#myVideo{
+  position: fixed; 
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto; 
+  z-index: -1000;
+  background: url(harry-potter-hogwarts-wizardry-casle-free-wallpaper.webm);
+  background-size: cover; 
+}
+header {
+  background-color: black;
+  width: 100vw;
+  height: 10vh;
+}
+h1 {
+  padding: 10px;
+  top: 20cm;
+  font-family: 'HarryP';
+  font-size: 70px;
+  color: goldenrod;
+}
+main{
+  font-size: 18px;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+.container-search{
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+input {
+  width: 300px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+button {
+  height: 40px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: silver;
+}
+img {
+  height: 190px;
+  width: 190px;
+  border-radius: 50%;
+}
+.card {
+    height: 250px;
+    background-image: linear-gradient(to right,rgba(4, 38, 61, 0.655), rgba(191, 188, 188, 0.617) );
+    margin-bottom: 15px;
+    width: 550px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: gold;
+}
+
+li {
+  list-style: none;
+}
+footer {
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+footer img {
+  width: 32px;
+  height: 32px;
+}
+footer p {
+  color:whitesmoke
+}
+footer a {
+  color: whitesmoke;
+}
+@media screen and (max-device-width: 800px){
+  header {
+    min-width: 390px;
+    min-height: 18vh;
+    width: 100vw;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  .card {
+    height: 200px;
+    width: 390px;
+  }
+  img {
+    height: 140px;
+    width: 140px;
+  }
+}
