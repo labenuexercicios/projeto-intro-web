@@ -4,12 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lista de Jogos</title>
     <link rel="stylesheet" type="text/css"
     href="styles.css"> 
     <script src="script.js"></script>
 </head>
 <body>
+    
+    <header>
+        <h1>Lista de Jogos</h1>
+    </header>
+
+    <main class="container">
+        <div class="pesquisa">
+            <input class="barra-de-busca" id="barra-de-busca" type="text" placeholder="Digite o nome do jogo">
+            <button type="submit" class="botão-de-busca" onclick="buscarJogo">Buscar</button>
+        </div>
+
+        <section class="container-de-jogos" id="container-de-jogos">
+
+            <section id="jogo" class="jogos">
+                <div id="jogo-imagem">
+                    <img class="mortal" src="./Images/Mortal Kombat 11.jpg" alt="Mortal Kombat 11">
+                    <video class="mortal-trailer" src="./Images/Mortal Kombat 11 - Trailer Oficial de Lançamento.mp4" controls>Trailer</video>
+                </div>
+                <ul>
+                    <li id="titulo">
+                    <a href="https://store.steampowered.com/app/976310/Mortal_Kombat11/" target="_blank">Título: Mortal Kombat 11</a>
+                    </li>
+                    <li>Gênero: Ação</li>
+                    <li>Preço: 159.99</li>
+                    <li>Multiplayer: true</li>
+                    <li>Marcadores: Luta, Violência detalhada, Violento, Multiplayer</li>
+                </ul>
+            </section>
+
+            <section id="jogo" class="jogos">
+                <div id="jogo-imagem">
+                    <img class="resident" src="./Images/Resident Evil Village.jpg" alt="Resident Evil Village">
+                    <video class="resident-trailer" src="./Images/Resident Evil Village - Trailer de Lançamento.mp4" controls>Trailer</video>
+                </div>
+                <ul>
+                    <li id="titulo">
+                    <a href="https://store.steampowered.com/app/1196590/Resident_Evil_Village/" target="_blank">Título: Resident Evil Village</a>
+                    </li>
+                    <li>Gênero: Ação</li>
+                    <li>Preço: 139.90</li>
+                    <li>Multiplayer: false</li>
+                    <li>Marcadores: Terror de Sobrevivência, Terror, Primeira Pessoa, Zumbis</li>
+                </ul>
+            </section>    
+   
+            <section id="jogo" class="jogos">
+                <div id="jogo-imagem">
+                    <img class="f1" src="./Images/F1 2022.jpg" alt="F1 2022">
+                    <video class="f1-trailer" src="./Images/F1 22  Launch Trailer.mp4" controls>Trailer</video>
+                </div>
+                <ul>
+                    <li id="titulo">
+                    <a href="https://store.steampowered.com/app/1692250/F1_22/" target="_blank">Título: F1 2022</a>
+                    </li>
+                    <li>Gênero: Corrida</li>
+                    <li>Preço: 199.90</li>
+                    <li>Multiplayer: true</li>
+                    <li>Marcadores: Corrida, Esportes, Simulação, Cooperativo</li>
+                </ul>
+            </section>
+
+            <section id="jogo" class="jogos">
+                <div id="jogo-imagem">
+                    <img class="god" src="./Images/God Of War.jpg" alt="God Of War">
+                    <video class="god-trailer" src="./Images/God of War  Full TV Commercial  PS4.mp4" controls>Trailer</video>
+                </div>
+                <ul>
+                    <li id="titulo">
+                    <a href="https://store.steampowered.com/app/1593500/God_of_War/" target="_blank">Título: God Of War</a>
+                    </li>
+                    <li>Gênero: Ação</li>
+                    <li>Preço: 199.90</li>
+                    <li>Multiplayer: false</li>
+                    <li>Marcadores: Aventura, Um Jogador, Boa Trama, RPG</li>
+                </ul>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Criado por: Daniel de Oliveira</p>
+        <p><a href="https://github.com/Daniel-O-Souza" target="_blank">Github</a></p>
+    </footer>
+
     
 </body>
 </html>

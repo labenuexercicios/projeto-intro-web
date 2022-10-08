@@ -1,0 +1,82 @@
+.mortal{
+    height: 350px;
+    width: 250px;
+}
+
+.resident{
+    height: 350px;
+    width: 250px;
+}
+
+.f1{
+    height: 350px;
+    width: 250px;
+}
+
+.god{
+    height: 350px;
+    width: 250px;
+}
+
+.mortal-trailer{
+    height: 350px;
+    width: 450px;
+    position: relative;
+    position: absolute;
+    right: 400px;
+}
+
+.resident-trailer{
+    height: 350px;
+    width: 450px;
+    position: relative;
+    position: absolute;
+    right: 400px;
+}
+
+.f1-trailer{
+    height: 350px;
+    width: 450px;
+    position: relative;
+    position: absolute;
+    right: 400px;
+}
+
+.god-trailer{
+    height: 350px;
+    width: 450px;
+    position: absolute;
+    right: 400px;
+}
+
+.container-de-jogos{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jogos{
+    color: white;
+    background-color: rgb(22, 22, 62);
+    margin-bottom: 20px;
+    border: 10px solid black;
+    width: 50vw;
+    height: 30%;
+}
+
+header{
+    border: 50px solid black;
+}
+
+main{
+    background-color: rgb(37, 29, 107);
+}
+
+.pesquisa{
+    margin-bottom: 200px;
+    justify-content: center;
+}
+
+
+

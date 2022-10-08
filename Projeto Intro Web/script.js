@@ -1,4 +1,4 @@
-// SEMANA 1:
+// SEMANA 1: #################################################################################################################
 
 
 // const jogo = "Mortal kombat 11"
@@ -31,7 +31,7 @@
 
 
 
-// SEMANA 2:
+// SEMANA 2: #################################################################################################################
 
 
 // const jogo = "Mortal kombat 11"
@@ -68,37 +68,37 @@
 
 
 
-// SEMANA 3:
+// SEMANA 3: #################################################################################################################
 
 
 const jogo1 = {
-    Título: "Mortal Kombat 11",
-    Gênero: "Ação",
-    Preço: 159.99,
+    Titulo: "Mortal Kombat 11",
+    Genero: "Ação",
+    Preco: 159.99,
     Multiplayer: true,
     Marcadores: ["Luta", "Violência detalhada", "Violento", "Multiplayer"]
 }
 
 const jogo2 = {
-    Título: "Resident Evil Village",
-    Gênero: "Ação",
-    Preço: 139.90,
+    Titulo: "Resident Evil Village",
+    Genero: "Ação",
+    Preco: 139.90,
     Multiplayer: false,
     Marcadores: ["Terror de Sobrevivência", "Terror", "Primeira Pessoa", "Zumbis"]
 }
 
 const jogo3 = {
-    Título: "F1 2022",
-    Gênero: "Corrida",
-    Preço: 249.00,
+    Titulo: "F1 2022",
+    Genero: "Corrida",
+    Preco: 249.00,
     Multiplayer: true,
     Marcadores: ["Corrida", "Esportes", "Simulação", "Cooperativo"]
 }
 
 const jogo4 = {
-    Título: "God Of War",
-    Gênero: "Ação",
-    Preço: 199.90,
+    Titulo: "God Of War",
+    Genero: "Ação",
+    Preco: 199.90,
     Multiplayer: false,
     Marcadores: ["Aventura", "Um Jogador", "Boa Trama", "RPG"]
 }
@@ -106,36 +106,78 @@ const jogo4 = {
 
 const jogos = []
 
-// jogos.push(jogo1, jogo2, jogo3, jogo4)
+jogos.push(jogo1, jogo2, jogo3, jogo4)
+
+// console.log(jogos)
 
 
 
-// SEMANA 4:
+// SEMANA 4: #################################################################################################################
 
 
-if (jogo1.Multiplayer === true){
-    jogos.push(jogo1)
-}else{
-    alert("O jogo 1 não foi adicionado")
+// if (jogo1.Multiplayer === true){
+//     jogos.push(jogo1)
+// }else{
+//     alert("O jogo 1 não foi adicionado")
+// }
+
+// if (jogo2.Multiplayer === true){
+//     jogos.push(jogo2)
+// }else{
+//     alert("O jogo 2 não foi adicionado")
+// }
+
+// if (jogo3.Multiplayer === true){
+//     jogos.push(jogo3)
+// }else{
+//     alert("O jogo 3 não foi adicionado")
+// }
+
+// if (jogo4.Multiplayer === true){
+//     jogos.push(jogo4)
+// }else{
+//     alert("O jogo 4 não foi adicionado")
+// }
+
+
+// SEMANA 5: #################################################################################################################
+
+// for(let i in jogos){
+//     let string = jogos[i].Marcadores.toString()
+//     console.log(string)
+// }
+
+// SEMANA 6: #################################################################################################################
+
+// for(i in jogos){
+
+//     console.log(`Título:${jogos[i].Titulo} \nGênero:${jogos[i].Genero} \nPreço:${jogos[i].Preco} \nMultiplayer: ${jogos[i].Multiplayer}\nMarcadores:${jogos[i].Marcadores}`)
+// }
+
+function pesquisa(arrayDeObjetos, valorString){
+
+    let objetoARetornar = {};
+
+    for(let i = 0; i < arrayDeObjetos.length; i++){
+
+        if(arrayDeObjetos[i].Titulo === valorString){
+            objetoARetornar.Titulo = arrayDeObjetos[i].Titulo;
+            objetoARetornar.Genero = arrayDeObjetos[i].Genero;
+            objetoARetornar.Preco = arrayDeObjetos[i].Preco;
+            objetoARetornar.Multiplayer = arrayDeObjetos[i].Multiplayer;
+            objetoARetornar.Marcadores = arrayDeObjetos[i].Marcadores;
+        }
+    }
+
+    if(objetoARetornar.Titulo !== valorString){
+        alert("Jogo não encontrado");
+    }else{
+        return objetoARetornar;
+    }
 }
 
-if (jogo2.Multiplayer === true){
-    jogos.push(jogo2)
-}else{
-    alert("O jogo 2 não foi adicionado")
-}
-
-if (jogo3.Multiplayer === true){
-    jogos.push(jogo3)
-}else{
-    alert("O jogo 3 não foi adicionado")
-}
-
-if (jogo4.Multiplayer === true){
-    jogos.push(jogo4)
-}else{
-    alert("O jogo 4 não foi adicionado")
-}
+const objetoDoJogo = pesquisa(jogos, "Mortal Kombat 11")
+console.log(objetoDoJogo)
 
 
 
