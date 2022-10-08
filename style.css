@@ -12,13 +12,13 @@
     font-family: sans-serif;
 }
 
-body {
+/* body {
     height: 100%;
-}
+} */
 
 header {
     color: white;
-    height: 100px;
+    height: 60px;
     width: 100%;
     min-width: 365px;
     background-color: black;
@@ -26,6 +26,7 @@ header {
     flex-direction: column;
     justify-content: center;
     padding-left: 20px;
+    text-align: center;
 }
 
 h1 {
@@ -46,15 +47,15 @@ main {
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
 }
 
 .search-container {
     width: 350px;
     display: flex;
     /* justify-content: center; */
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: center;
 }
 
@@ -272,7 +273,7 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    padding: 20px;
+    padding: 10px;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -292,39 +293,6 @@ footer {
     border-radius: 100%;
     background-color: #3b5998;
     padding: 5px;
-}
-
-@media screen and (max-width: 390px) {
-
-    /* header {
-        min-width: 120vw;
-    } */
-    h1 {
-        font-size: 18px;
-        text-align: center;
-    }
-
-    main {
-        display: block;
-    }
-
-    #card {
-        height: 200px;
-        background-color: black;
-        margin-bottom: 15px;
-        width: 350px;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        align-items: center;
-        border-radius: 20px;
-        box-shadow: black 0.5px 0px 0px rgba(0, 0, 0, 0.2);
-        transition: 0.5s;
-    }
-
-    footer {
-        min-width: 120vw;
-    }
 }
 
 #card2 {
@@ -529,6 +497,109 @@ footer {
     border: white solid 2px;
 }
 
+@media screen and (max-width: 600px) and (min-width: 360px) {
+
+    /* header {
+        min-width: 120vw;
+    } */
+    h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    main {
+        display: block;
+    }
+    .search-container {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    input {
+        width: 220px;
+        height: 40px;
+        color: black;
+        margin: 10px;
+        border-bottom: solid 2px orangered;
+        border-radius: 5px;
+        transition: 0.5s;
+        font-size: 18px;
+        text-align: center;
+    }
+    .card-container {
+        align-content: space-evenly;
+        justify-content: center;
+    }
+
+    #card {
+        height: 200px;
+        background-color: black;
+        margin-bottom: 15px;
+        width: 350px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: black 0.5px 0px 0px rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+    }
+    #card:hover {
+        transform: scale(0.8);
+    }
+    footer {
+        min-width: 100vw;
+    }
+
+    #myaudio {
+        display: none;
+    }
+}
+@media screen and (min-width: 390px) and (max-width: 200px){
+
+    header {
+        min-width: 120vw;
+    }
+    h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    main {
+        display: block;
+    }
+
+    .card-container {
+        align-content: space-evenly;
+        justify-content: center;
+    }
+
+    #card {
+        height: 200px;
+        background-color: black;
+        margin-bottom: 15px;
+        width: 350px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: black 0.5px 0px 0px rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+    }
+    #card:hover {
+        transform: scale(0.8);
+    }
+    footer {
+        min-width: 100vw;
+    }
+
+    #myaudio {
+        display: none;
+    }
+}
 /* Semana 8
 A partir do nosso exemplo de estilização, crie a identidade da sua página seguindo os passos abaixo:
 1. Estilize o cabeçalho da sua página com o mesmo título que está no <title>;
