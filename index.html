@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desenhos</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -18,42 +18,26 @@
     <br>
     <main id="container">
         <!-- Menu -->
-        <section class="sectionA">
+        <section class="sectionA"><br>
+            <a href="index.html">Página inicial</a><br>
             <form>
                 <label for="texto"> </label>
-                <input type="texto" placeholder="    Digite aqui ">
-                <button id="button" type="submit"> Pesquisar</button>
-            </form><br><br>
+                <input type="texto" id="texto" placeholder="    Digite aqui ">
+                <button  id="button" onclick="imprimirItem(event)" > Pesquisar</button>
+            </form><br>
+            <br>
             <p>Lista de Desenhos!</p>
-            <nav id="lista">
-                <ul>
-                    <li class="liA" id="imgHover">
-                        <p>Dragon Ball</p>
-                    </li>
-                    <li class="liB" id="imgHover">
-                        <p>Pokemón</p>
-                    </li>
-                    <li class="liC" id="imgHover">
-                        <p> Pica-Pau</p>
-                    </li>
-                    <li class="liD" id="imgHover" >
-                        <p> Tom e Jerry</p>
-                    </li>
-                    <li class="liE" id="imgHover">
-                        <p>Os Flintstones</p>
-                    </li>
-                    <li class="liF" id="imgHover">
-                        <p> Caverna do Dragão</p>
-                    </li>
-                   
+            
+                <ul id="menu">
+                  
                 </ul>
-            </nav>
+            
         </section>
         <!-- galery -->
         <section class="galery">
             <!-- desenho1 -->
 
-            <section class="dBall" id="container-principal">
+            <section  class="dBall" id="container-principal">
                 <figure id="capa-desenho">
                     <img src="assets/dragonBall/dragon-ball-capa.jpg" alt="dragonBall">
                 </figure>
@@ -132,10 +116,10 @@
             <!-- Desenho 3  -->
 
             <section class="picapau" id="container-principal">
-                <figure id="capa-desenho" id="personagens">
+                <figure id="capa-desenho" >
                     <img src="assets/picaPau/capa-pica-pau2.jpg" alt="picaPau">
                 </figure>
-                <section class="perfil3">
+                <section class="perfil3" id="personagens">
                     <img src="assets/picaPau/picapau.png" alt="pica pau perfil">
                     <img src="assets/picaPau/winnie.png" alt="winnie">
                     <img src="assets/picaPau/pe-de-pano-perfil.webp" alt="pe-de-pano-perfil">
@@ -161,7 +145,7 @@
                 <figure id="capa-desenho">
                     <img src="assets/tomEJerry/TJCapa2.png" alt="TomeJerry">
                 </figure>
-                <section class="perfil4" id="personagens">
+                <section class="perfil4" id="0">
                     <img src="assets/tomEJerry/92a62f0221f58fe503a15fcb13f5c107.png" alt="tom-perfil">
                     <img src="assets/tomEJerry/jerry-perfil1.jpg" alt="jerry-perfil">
                     <img src="assets/tomEJerry/spick1.jpg" alt="spick1">
@@ -230,12 +214,12 @@
                     <img src="assets/cavernaDoDragao/Presto-perfil1.jpg" alt="Presto-perfil">
                     <img src="assets/cavernaDoDragao/bobby-perfil.jpg" alt="bobby-perfil">
                     <img src="assets/cavernaDoDragao/mestredosmagos-perfil.jpg" alt="mestredosmagos-perfil">
-                    <img src="assets/cavernaDoDragao/vingador-perfil22.jpg" alt="">
+                    <img src="assets/cavernaDoDragao/Vingador-perfil22.jpg" alt="Vingador-perfil">
                 </section>
                 <aside id="info">
                     <h2>Caverna do Dragão</h2><br>
                     <h4>Criado por : Kevin Paul Coates, Mark Evanier, Dennis Marks em 1983 e com 28 capítulos. </h4><br>
-                    <p><b>Personagens</b>: Eric, Diana, Sheila, Presto, Bobby, Mestre dos Magos, Uni, Vingador, Tiamat,  Demônio das Sombras. </p>
+                    <p><b>Personagens</b>: Eric, Diana, Sheila, Presto, Bobby, Mestre dos Magos, Uni, Vingador, Tiamat,  Demônio das Sombras. </p><br>
                     <p>Um grupo de crianças vai a um parque de diversões e lá se deparam com o brinquedo Caverna do Dragão. Ao entrarem nele, são enviados a um mundo mágico, aonde vivem muitas aventuras e contam com a ajuda de Mestre dos Magos para tentar voltar para casa.
                     </p><br><br>
                     <p><b> Confira artigo completo <a href="https://pt.wikipedia.org/wiki/Dungeons_%26_Dragons_(s%C3%A9rie_animada)">Clicando aqui</a></b></p>

@@ -14,7 +14,7 @@ const desenho2 = {
     nome: 'Pokémon',
     criador: ["Satoshi Tajiri"],
     duracaoEpisodios: 1212,
-    personagens: ['Ash Ketchum', 'Pikachu', 'Brock Harrison', 'Misty Williams', 'James','Jessie','Meowth','Professo Carvalho'],
+    personagens: ['Ash Ketchum', 'Pikachu', 'Brock Harrison', 'Misty Williams', 'James', 'Jessie', 'Meowth', 'Professo Carvalho'],
     anoLancamento: 1995,
     enredo: ['Depois que ele completa 10 anos, Ash Ketchum (Satoshi no Japão) tem permissão para começar sua jornada no mundo dos Pokémon e sonha em se tornar um mestre Pokémon. No dia em que ele receberia seu primeiro Pokémon, Ash acorda em pânico, tendo dormido demais por assistir uma batalha de Pokemón. O Professor Carvalho, o pesquisador local de Pokémon, já doou os três Pokémon iniciais de Kanto (Bulbasaur, Charmander e Squirtle) a novos Treinadores Pokémon quando Ash finalmente chega atrasado ao Laboratório de Carvalho. O único Pokémon que ele deixou é um Pikachu, que ele dá para Ash. Determinado a fazer isso em sua jornada, Ash faz o melhor para fazer amizade com Pikachu, mas ele não confia nele e se recusa a voltar para a sua Pokébola, mesmo atacando Ash com seus poderes elétricos. É só depois que Ash protege Pikachu de um grupo de Spearow irritados que Pikachu percebe o quanto Ash se preocupa com ele, levando-o a salvar Ash. Depois, ambos veem um Pokémon misterioso e não identificável que estimula os dois a trabalharem para o objetivo de Ash.'],
     isContinuacao: true,
@@ -40,7 +40,7 @@ const desenho4 = {
 
 }
 const desenho5 = {
-    nome: `The Flintstones`,
+    nome: `Os Flintstones`,
     criador: [`William Hanna`, `Joseph Barbera`],
     duracaoEpisodios: 166,
     personagens: [`Fred Flintstone `, `Wilma Flintstone`, `Barney Rubble`, `Betty Rubble`, `Pedrita`, `Bam-Bam`, `Dino`, `Gazoo`, `SrPedregulho`],
@@ -50,7 +50,7 @@ const desenho5 = {
 
 }
 const desenho6 = {
-    nome: `Caverna do Dragão `,
+    nome: `Caverna do Dragão`,
     criador: [`Kevin Paul Coates`, `Mark Evanier`, `Dennis Marks`],
     duracaoEpisodios: 28,
     personagens: [`Hank`, `Eric`, `Diana `, `Sheila`, `Presto`, `Bobby `, `Mestre dos Magos`, `Uni`, `Vingador`, `Tiamat`, `Demônio das Sombras`,],
@@ -131,23 +131,71 @@ const stringDeInfo = (objeto) => {
 
     } return string
 }
-stringDeInfo(desenho1)
+// stringDeInfo(desenho1)
 
 //---------2. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
 
-const verificarNome =(array, string)=>{
-    let verificarString = array.filter((nome)=>{
-        return nome.nome ===string
+const verificarNome = (array, string) => {
+    let verificarString = array.filter((nome) => {
+        return nome.nome === string
     })
-    if(verificarString.length ===0){
-        alert (`Item não encontrado`)
-    }return verificarString
+    if (verificarString.length === 0) {
+        alert(`Item não encontrado`)
+    } return verificarString
 }
-// console.log(verificarNome(desenhoArray,'As Aventuras de Jackie Chan'))
 
 
-          
+// DOM. Semana 11 
+function addDesenho(desenho) {
+    const id = document.getElementById("menu")
+    const addItem = document.createElement("li")
+    const item = document.createTextNode(desenho.nome)
+    addItem.appendChild(item)
+    addItem.setAttribute("class", "style-lista")
+    id.insertAdjacentElement("beforeend", addItem)
 
-            
+}
+addDesenho(desenho1)
+addDesenho(desenho2)
+addDesenho(desenho3)
+addDesenho(desenho4)
+addDesenho(desenho5)
+addDesenho(desenho6)
+
+// Semana 12 DOM
+const galery = document.querySelector(".galery")
+const dragonBall = document.querySelector(`.dBall`)
+const pokemon = document.querySelector(`.pokemon`)
+const picapau = document.querySelector(`.picapau`)
+const tomejerry = document.querySelector(`.tomejerry`)
+const flintstone = document.querySelector(`.flintstone`)
+const cavernadragao = document.querySelector(`.cavernadragao`)
+
+
+
+function imprimirItem(event) {
+    event.preventDefault()
+    const input = document.getElementById(`texto`);
+    const textoCampo = input.value
+    let conteudo = verificarNome(desenhoArray, textoCampo)
+//  retorna item pesquisado e removes o restante, 
+    if (textoCampo.toLowerCase() === desenho1.nome.toLowerCase()) {
+        pokemon.remove(); picapau.remove(); tomejerry.remove(); flintstone.remove(); cavernadragao.remove()
+    } else if (textoCampo.toLowerCase() === desenho2.nome.toLowerCase()) {
+        dragonBall.remove(); picapau.remove(); tomejerry.remove(); flintstone.remove(); cavernadragao.remove()
+    } else if (textoCampo.toLowerCase() === desenho3.nome.toLowerCase()) {
+        pokemon.remove(); dragonBall.remove(); tomejerry.remove(); flintstone.remove(); cavernadragao.remove()
+    } else if (textoCampo.toLowerCase() === desenho4.nome.toLowerCase()) {
+        pokemon.remove(); picapau.remove(); dragonBall.remove(); flintstone.remove(); cavernadragao.remove()
+    } else if (textoCampo.toLowerCase() === desenho5.nome.toLowerCase()) {
+        pokemon.remove(); picapau.remove(); tomejerry.remove(); dragonBall.remove(); cavernadragao.remove()
+    } else if (textoCampo.toLowerCase() === desenho6.nome.toLowerCase()) {
+        pokemon.remove(); picapau.remove(); tomejerry.remove(); flintstone.remove(); dragonBall.remove(); 
+    }
+      
+
+    return
+}
+
 
 
