@@ -1,167 +1,242 @@
-const series = {
-    nome: '',
-    anoLancamento: 0,
-    isSerie: true,
-    totTemporadas: 0,
-    genero: [],
-    elencoPrincipal: []
-}
+// Semana 1
+// ------------------
+console.log("");
+console.log("SEMANA 1");
+console.log("");
 
+const Serie = {
+  titulo: "",
+  totTemporadas: 0,
+  genero: [],
+  sinopse: "",
+  transmissao: [],
+  isBrasileira: Boolean,
+  anoLancamento: 0,
+  thumbnail: "",
+};
+// --------------------
 const greysAnatomy = {
-    ...series,
-    nome: 'greys anatomy',
-    anoLancamento: 2005,
-    isSerie: true,
-    totTemporadas: 19,
-    genero: ['drama', 'ficção medica', 'romance', 'comedia dramatica'],
-    elencoPrincipal: ['ellen pompeo', 'patrick dempsey', 'sandra oh'],
-    imagem: "imgs/graysAnatomyLogo.jpg"
-}
-
+  ...Serie,
+  titulo: "greys anatomy",
+  totTemporadas: 19,
+  genero: ["drama", "ficção medica", "romance", "comedia dramatica"],
+  sinopse:
+    "Greys Anatomy é uma série de TV americana transmitida originalmente pelo canal American Broadcasting Company (ABC). O drama acompanha a vida pessoal e profissional de estagiários de cirurgia e seus supervisores do Grey Sloan Memorial Hospital, anteriormente conhecido como o Seattle Grace Hospital.",
+  transmissao: ["netflix", "amazon", "star plus"],
+  isBrasileira: false,
+  anoLancamento: 2005,
+  thumbnail: "imgs/greysanatomy.webp"
+};
+// ---------------------------
 const laCasaDePapel = {
-    ...series,
-    nome: 'lá casa de papel',
-    anoLancamento: Number(2017),
-    isSerie: true,
-    totTemporadas: Number(4),
-    genero: ['assalto', 'drama', 'suspense', 'crime'],
-    elencoPrincipal: ['alvaro morte', 'alba flores', 'miguel herran'],
-    imagem: "imgs/laCasaDePapelLogo.png"
-}
+  ...Serie,
+  titulo: "la casa de papel",
+  elenco: ["alvaro morte", "alba flores", "miguel herran"],
+  totTemporadas: 4,
+  sinopse:
+    "Oito ladrões se trancam com reféns na Casa da Moeda da Espanha. Seu líder manipula a polícia para realizar um plano que pode ser o maior roubo da história ou uma missão em vão.",
+  transmissao: ["netflix"],
+  isBrasileira: false,
+  anoLancamento: 2017,
+  thumbnail: "imgs/laCasaDePapelLogo.png",
+};
+// ---------------------------
 const vikings = {
-    ...series,
-    nome: 'vikings',
-    anoLancamento: Number(2013),
-    isSerie: true,
-    totTemporadas: Number(6),
-    genero: ['guerra', 'drama', 'ação', 'aventura'],
-    elencoPrincipal: ['travis fimmel', 'clive standen', 'gustaf skarsgard'],
-    imagem: "imgs/vikings.jpg"
-}
-// Exercicio 2
-const bdSeries = []
-// Exercicio 3
-if (laCasaDePapel.isSerie) {
-    bdSeries.push(laCasaDePapel)
+  ...Serie,
+  titulo: "vikings",
+  elenco: ["travis fimmel", "clive standen", "gustaf skarsgard"],
+  totTemporadas: 6,
+  sinopse:
+    "A série acompanha a saga dos navegadores nórdicos que exploram - e conquistam - novos territórios nos tempos medievais.",
+  transmissao: ["netflix"],
+  isBrasileira: false,
+  anoLancamento: 2013,
+  thumbnail: "imgs/vikings.png",
+};
+
+const media =
+  (vikings.totTemporadas +
+    laCasaDePapel.totTemporadas +
+    greysAnatomy.totTemporadas) /
+  3;
+console.log(`Semana 1, exercicio 3. A media e igual a ${media}`);
+
+if (greysAnatomy.isBrasileira === true) {
+  console.log(`Semana 1, exercicio 4. A variavel e verdadeira`);
 } else {
-    console.log('A serie ', laCasaDePapel.nome, 'não foi adicionada.')
-
+  console.log(`Semana 1, exercicio 4. A variavel e falsa`);
 }
 
-if (greysAnatomy.isSerie) {
-    bdSeries.push(greysAnatomy)
+if (laCasaDePapel.isBrasileira === true) {
+  console.log(`Semana 1, exercicio 4. A variavel e verdadeira`);
 } else {
-    console.log('A serie ', greysAnatomy.nome, ' não foi adicionado')
+  console.log(`Semana 1, exercicio 4. A variavel e falsa`);
 }
 
-if (vikings.isSerie) {
-    bdSeries.push(vikings)
+if (vikings.isBrasileira === true) {
+  console.log(`Semana 1, exercicio 4. A variavel e verdadeira`);
 } else {
-    console.log('A serie ', vikings.nome, ' não foi adicionado')
-}
-// console.log(teste)
-
-let txtVikings = vikings.elencoPrincipal.toString()
-let txtGreysAnatomy = greysAnatomy.elencoPrincipal.toString()
-let txtLaCasaDePapel = laCasaDePapel.elencoPrincipal.toString()
-
-let = stringGreysAnatomy = ""
-for (let i in greysAnatomy.elencoPrincipal) {
-    stringGreysAnatomy += greysAnatomy.elencoPrincipal[i] + " "
+  console.log(`Semana 1, exercicio 4. A variavel e falsa`);
 }
 
-let = stringLaCasaDePapel = ""
-for (let i in laCasaDePapel.elencoPrincipal) {
-    stringLaCasaDePapel += laCasaDePapel.elencoPrincipal[i] + " "
+// Semana 2
+// -----------------------
+console.log("");
+console.log("SEMANA 2");
+console.log("");
+
+greysAnatomy.elenco = ["ellen pompeo", "patrick dempsey", "sandra oh"];
+// -------------------------
+vikings.elenco = ["guerra", "drama", "ação", "aventura"];
+// ------------------------
+laCasaDePapel.elenco = ["assalto", "drama", "suspense", "crime"];
+
+// ------------------------
+
+console.log("Semana 2, exercicio 2", greysAnatomy);
+// console.log('Semana 2, exercicio 2', vikings);
+// console.log('Semana 2, exercicio 2', laCasaDePapel);
+
+const arrayComObjSerie = [];
+
+arrayComObjSerie.push(greysAnatomy);
+arrayComObjSerie.push(vikings);
+arrayComObjSerie.push(laCasaDePapel);
+
+// Semana 4
+console.log("");
+console.log("SEMANA 4");
+console.log("");
+
+const arrayComObjSerieComVerificacao = [];
+
+if (greysAnatomy.isBrasileira === true) {
+  arrayComObjSerieComVerificacao.push(greysAnatomy);
+} else {
+  console.log(`O objeto ${greysAnatomy.titulo} não foi adicionado`);
 }
 
-let = stringVikings = ""
-for (let i in vikings.elencoPrincipal) {
-    stringVikings += vikings.elencoPrincipal[i] + " "
+if (vikings.isBrasileira === true) {
+  arrayComObjSerieComVerificacao.push(vikings);
+} else {
+  console.log(`O objeto ${vikings.titulo} não foi adicionado`);
 }
 
-function relatorio(objeto) {
-    let txt = ""
-    for (keys in objeto) {
-        txt += keys + ": " + objeto[keys] + "\n"
+if (laCasaDePapel.isBrasileira === true) {
+  arrayComObjSerieComVerificacao.push(laCasaDePapel);
+} else {
+  console.log(`O objeto ${laCasaDePapel.titulo} não foi adicionado`);
+}
+
+// Semana 5
+console.log("");
+console.log("SEMANA 5");
+console.log("");
+const propiedadesSerie = [
+  "titulo",
+  "total de temporadas",
+  "genero",
+  "sinopse",
+  "transmmissão",
+  "E uma serie brasileira?",
+  "Ano de lançamento",
+];
+
+let propiedades = 0;
+for (let i = 0; i < arrayComObjSerie.length; i++) {
+  console.log(`${propiedadesSerie[0]}: ${arrayComObjSerie[i].titulo}`);
+  console.log(`${propiedadesSerie[1]}: ${arrayComObjSerie[i].totTemporadas}`);
+  console.log(`${propiedadesSerie[2]}: ${arrayComObjSerie[i].genero}`);
+  console.log(`${propiedadesSerie[4]}: ${arrayComObjSerie[i].transmissao}`);
+  console.log(`${propiedadesSerie[3]}: ${arrayComObjSerie[i].sinopse}`);
+  console.log("");
+}
+
+// Semana 6
+console.log("");
+console.log("Semana 6");
+console.log("");
+
+function relatorioObjetos(obj) {
+  const dados = `Titulo: ${obj.titulo}.
+
+Total de temporadas: ${obj.totTemporadas}.
+
+genero: ${obj.genero}.
+
+Transmissão: ${obj.transmissao}.
+
+Sinopse: ${obj.sinopse}
+
+`;
+  return dados;
+}
+
+const teste = relatorioObjetos(greysAnatomy);
+console.log(teste);
+
+console.log("");
+console.log("Semana 6");
+console.log("");
+
+function buscaTitulo(array, str) {
+  let objeto = {};
+  str = str.toLowerCase();
+
+  for (let i = 0; i < array.length; i++) {
+    let obj = {};
+    let nome = array[i].titulo.toLowerCase();
+    if (nome === str) {
+      return (obj = { ...array[i] });
     }
-    return txt.toString()
+  }
+    return alert('Seriado não encontrado')
 }
 
+// Semana 11
 
-// console.log(relatorio(greysAnatomy))
-
-
-function addElem(obj) {
-    const propiedades = ['nome', 'ano de lançamento', 'E uma serie?', 'Total de temporadas', 'genero', 'elenco', 'imagem']
-    // Elemento de referencia
-    const main = document.getElementById('main');
-    // Criando elemento section
+function addElem(obj){
+    const main = document.getElementById('main')
     const section = document.createElement('section')
-    // Elemento imagem
-    const img = document.createElement('img')
-    // Inserindo atributos na imagem
-    img.setAttribute('src', obj.imagem)
-    img.setAttribute('class', 'img')
-    // Inserindo atributos na SECTION
-    section.setAttribute('class', 'card')
-    section.setAttribute('id', 'card')
-    // Inserindo imagem no HTML
-    section.appendChild(img)
-    // Inserindo elemento SECTION no HTML
-    main.appendChild(section)
+    const article = document.createElement('article')
     const ul = document.createElement('ul')
-    // Inserindo atributos na tag UL
-    ul.setAttribute('class', 'listaInformacoes')
-    // Inserindo ul no HTML
-    section.appendChild(ul)
-    let cont = 0
-    for (prop in obj) {
-        if (propiedades[cont] != 'imagem') {
-            //  Criando elemento lista
-            const li = document.createElement('li')
-            li.innerHTML += ` ${propiedades[cont]}: ${obj[prop]}`
-            ul.appendChild(li)
-        }
-        if (cont < propiedades.length) {
-            cont = cont + 1
-        }
-    }
+    const liTitulo = document.createElement('li')
+    const liTotTemporadas = document.createElement('li')
+    const liTransmissao = document.createElement('li')
+    const liSinopse = document.createElement('li')
+    const liGenero = document.createElement('li')
+    const figure = document.createElement('figure')
+    const thumbnail = document.createElement('img')
+
+    section.setAttribute('class','card')
+    thumbnail.setAttribute('class', 'img')
+    thumbnail.setAttribute('src', obj.thumbnail)
+    ul.setAttribute('class','listaInformacoes')
+
+    main.insertAdjacentElement('beforeend',section)
+    section.insertAdjacentElement('beforeend', figure)
+    figure.insertAdjacentElement('beforeend', thumbnail)
+    section.insertAdjacentElement('beforeend',article)
+    article.insertAdjacentElement('beforeend',ul)
+    ul.insertAdjacentElement('beforeend',liTitulo)
+    ul.insertAdjacentElement('beforeend',liTotTemporadas)
+    ul.insertAdjacentElement('beforeend',liGenero)
+    ul.insertAdjacentElement('beforeend',liTransmissao)
+    ul.insertAdjacentElement('beforeend',liSinopse)
+
+    liTitulo.innerHTML += `Titulo: ${obj.titulo}.`
+    liTotTemporadas.innerHTML += `Total de temporadas: ${obj.totTemporadas}.` 
+    liGenero.innerHTML += `Generos: ${obj.genero}.`
+    liTransmissao.innerHTML += `Onde assistir: ${obj.transmissao}.`
 }
-
-
-
-
-
-
-
-function cards(array) {
-    for (let obj = 0; obj < bdSeries.length; obj++) {
-        addElem(bdSeries[obj])
-    }
-}
-
-function busca() {
-    const btn = document.querySelector("#send")
-
-    btn.addEventListener("click", function (e) {
-        e.preventDefault()
-
-        const name = document.getElementById("name")
-
-        const value = name.value
-
-        for (let obj = 0; obj < bdSeries.length; obj++) {
-            if (value === bdSeries[obj].nome) {
-                addElem(bdSeries[obj])
-
-            } else {
-                console.log('errado')
-            }
-        }
-    })
-}
-
-
-cards(bdSeries)
-busca()
+addElem(greysAnatomy)
+addElem(greysAnatomy)
+addElem(greysAnatomy)
+addElem(greysAnatomy)
+addElem(greysAnatomy)
+addElem(greysAnatomy)
+addElem(greysAnatomy)
+addElem(greysAnatomy)
+addElem(greysAnatomy)
+addElem(greysAnatomy)
+addElem(greysAnatomy)

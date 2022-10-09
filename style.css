@@ -1,85 +1,212 @@
-*, *::before, *::after{
-   
+*,
+*::before,
+*::after {
     font-family: Arial, Helvetica, sans-serif;
     font-size: clamp(0.5em, 0.7em + 1vw, 1em);
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
-}
-body{
-    display: grid;
-    place-items: auto 2fr auto;
-    justify-items: center;
-    gap: 1em;
-}
-#header{
-    background-color: #225930;
-    width: 100%;
-    padding: 1em;
-    position: fixed;
-    top: 0;
-    border-bottom: 0.2em solid black;
-    margin-bottom: 5em;
-    box-sizing: border-box;
-}
-#main{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: stretch;
-    
-    
 }
 
-.img{
-    height: 12.5em;
-    justify-self: stretch;
-    margin-right: 1em;
-    margin-left: 1.7em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border-radius: 10px 10px 10px 30px;
+body {
+    display: grid;
+    grid-template-rows: auto, 1fr, auto;
+    place-items: center;
 }
-.card{
+#header {
+    background-color: #225930;
+    grid-row: -1;
+    padding: 1.5%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    color: white;
+    justify-content: center;
+    height: 3vh;
+}
+#footer {
+    grid-row: 3/4;
+    background-color: #225930;
+    width: 100vw;
+    color: white;
+    height: auto;
+    position: sticky;
+    bottom: 0px;
+}
+@media screen and (min-width:1023px) and (max-width: 2559px) {
+
+
+    #main {
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 4em;
+    }
+
+
+    .pesquisa {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    #input {
+        width: 50%;
+        border: 0.1em solid black;
+        border-radius: 0.2em;
+        text-align: center;
+        padding: 0.2em;
+        margin: 1em;
+        height: 2em;
+    }
+
+    #btnPesquisa {
+        font-size: 0.7rem;
+        margin-left: 1em;
+        border-radius: 0.2em;
+        border: 0.1em solid black;
+        padding: 0.2em;
+        height: 2em;
+    }
+}
+
+.listaInformacoes {
+    margin-top: 1.3em;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    line-height: 150%;
+    width: 90%;
+    color: white;
+}
+
+.img {
+    height: 10em;
+    width: 10em;
+    margin: 1em;
+    border-radius: 10em;
+}
+
+.card {
     display: flex;
     flex-direction: row;
     margin: 1em;
-    align-items: center;
-    border:1px solid black;
+    border: 1px solid 0C261D;
     background-color: #225930;
-    border-radius: 10px 40px 150px;
-    
-}
-
-.pesquisa{
-    display: flex;
-    flex-direction: row;
+    border-radius: 10px 40px 30px;
+    border-right: 10px solid #0C261D;
     justify-content: center;
-    margin-top: 4em;
+    height: auto;
 }
 
-#name{
-    margin-right: 1em;
-    width: 75%;
-    padding: 0.4em;
+@media screen and (min-width:427px) and (max-width: 728px) {
+    #main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3.7em;
+    }
+    .pesquisa {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        margin: 1em;
+    }
+}
+@media screen and (max-width:426px) {
+    #main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+        align-items: center;
+        grid-row: 2/3;
+
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 65%;
+    }
+    .pesquisa {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        margin: 1em;
+    }
+    .img {
+        height: 10em;
+        width: 10em;
+        margin: 1em;
+        border-radius: 1em;
+    }
+    #input {
+        width: 50%;
+        border: 0.1em solid black;
+        border-radius: 0.2em;
+        text-align: center;
+        padding: 0.2em;
+        margin: 1em;
+        height: 2em;
+    }
+
+    #btnPesquisa {
+        font-size: 0.7rem;
+        margin-left: 1em;
+        border-radius: 0.2em;
+        border: 0.1em solid black;
+        padding: 0.2em;
+        height: 2em;
+    }
 }
 
-#send{
-    padding: 0.4em;
-    
-}
-#footer{
-    background-color: #225930;
-    
-    width: 100%;
+@media screen and (min-width:2560px) {
+    #main{
+        margin-top: 10em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
 
-}
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+    }
+    .pesquisa {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        margin: 1em;
 
-.listaInformacoes{
-    margin-right: 2em;
-    line-height: 150%;
-    width: 60%;
-    color: white;
+    }
+    #input {
+        width: 50%;
+        border: 0.1em solid black;
+        border-radius: 0.2em;
+        text-align: center;
+        padding: 0.2em;
+        margin: 1em;
+        height: 2em;
+    }
+    #btnPesquisa {
+        font-size: 0.7rem;
+        margin-left: 1em;
+        border-radius: 0.2em;
+        border: 0.1em solid black;
+        padding: 0.2em;
+        height: 2em;
+    }
 }
