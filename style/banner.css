@@ -12,7 +12,8 @@
   text-align: center;
 }
 .banner-principal {
-position: absolute;
+display: flex;
+justify-content: center;
 
 }
 
@@ -25,7 +26,7 @@ position: absolute;
     top: 480px;
     width: 1000px;
     margin-left: 3em;
-    /* text-shadow: var(--preto) 0.1em 0.1em 0.3em; */
+   
 }
 
 .banner-titulo span{
@@ -50,3 +51,25 @@ position: absolute;
     height: 600px;
 }
 
+
+@media screen and (min-width: 800px) and (max-width:1200px) {
+.banner1 {
+    background-size: 100% 500px;
+    height: 800px;
+}
+
+.banner-titulo {
+    font-size: 4em;
+    width: 600px;
+    margin: 0 ;
+}
+
+.banner3 {
+    background-size: 100vw 350px;
+}
+
+.banner2 {
+    background-size: 100vw 350px;
+
+}
+}

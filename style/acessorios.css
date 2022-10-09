@@ -1,6 +1,5 @@
 .acessorios {
     text-align: center;
-    
 }
 
 .titulo-acessorios {
@@ -12,6 +11,8 @@
 
 .acessorios-geral {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 50px ;
     
    
@@ -114,7 +115,7 @@
     font-weight: 500;
     background-color: var(--laranja);
     color: var(--branco);
-    padding: 20px 70px;
+    padding: 10px 40px;
     border-radius: 40px;
 }
 
@@ -124,4 +125,8 @@
 
 .link-novidades:hover {
     background-color: var(--cinza);
+}
+
+@media screen and (max-width: 1024px) {
+    
 }

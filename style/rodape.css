@@ -1,7 +1,7 @@
 .rodape {
     background-color: var(--laranja);
     width: 100vw;
-    height: 40px;
+    height: 120px;
     text-align: center;
 }
 
@@ -10,4 +10,20 @@
     color: var(--branco);
     font-weight: 700;
     padding-top: 10px; 
+}
+
+.h2-footer, .link-github {
+    font-size: 1.5em;
+    font-family: var(--font-secundaria);
+    color: var(--branco);
+    margin-top: 0.5em;
+}
+
+.link-github {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+
 }

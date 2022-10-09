@@ -1,0 +1,55 @@
+
+{
+ "pesquisa": [
+       {
+        "dog": 1,
+        "raca": "Golden retriever",
+       "origem": "Escócia",
+        "pesoKg": "25 a 34 kg",
+        'alturaCm': 56 + ' a ' + 60,
+        'expectativaDeVidaAno': 10 + ' a ' + 12,
+        'racaParaApartamento': false,
+        'porteDaRaca': ['Grande porte', ' Medio porte', ' Pequeno porte']
+    },
+    
+     dog2 = {
+        'raca': 'Buldogue inglês',
+        'origem': 'Inglaterra',
+        'pesoKg': 18 + ' a ' + 22,
+        'alturaCm': 35 + ' a ' + 38,
+        'expectativaDeVidaAno': 8 + ' a ' + 10,
+        'racaParaApartamento': true,
+        'porteDaRaca': ['Grande porte', ' Medio porte', ' Pequeno porte']
+    },
+    
+     dog3 = {
+        'raca': 'Basset hound',
+        'origem': 'Escócia',
+        'pesoKg': 25 + ' a ' + 34,
+        'alturaCm': 56 + ' a ' + 60,
+        'expectativaDeVidaAno': 10 + ' a ' + 12,
+        'racaParaApartamento': true,
+        'porteDaRaca': ['Grande porte', ' Medio porte', ' Pequeno porte']
+    },
+    
+     dog4 = {
+        'raca': 'Pug',
+        'origem': 'China',
+        'pesoKg': 6 + ' a ' + 8,
+        'alturaCm': 25 + ' a ' + 30,
+        'expectativaDeVidaAno': 13 + ' a ' + 15,
+        'racaParaApartamento': true,
+        'porteDaRaca': ['Grande porte', ' Medio porte', ' Pequeno porte']
+    },
+    
+     dog5 = {
+        'raca': 'Beagle',
+        'origem': 'Inglaterra e Estados Unidos',
+        'pesoKg': 9 + ' a ' + 13.5,
+        'alturaCm': 33 + ' a ' + 38,
+        'expectativaDeVidaAno': 10 + ' a ' + 15,
+        'racaParaApartamento': true,
+        'porteDaRaca': ['Grande porte', ' Medio porte', ' Pequeno porte']
+    }
+]
+}

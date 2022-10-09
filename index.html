@@ -23,22 +23,24 @@
     <div class="navegacao-menu">
       <h1 class="nav-logo">Labe<span class="logo">Pet</span></h1>
 
+      <input type="checkbox" id="menu" class="menu-hamburguer">
+      <label for="menu">
+        <span class="menu-lista"></span>
+      </label>
+
       <ul class="navbar-lista">
-        <li><a class="navbar-link" href="index.html">Home</a></li>
+        <li class="menu-li"><a class="navbar-link" href="index.html">Home</a></li>
         <li>
-          <a class="navbar-link" href="informacoes.html">Informações</a>
+          <a class="navbar-link" href="#servico">Serviços</a>
         </li>
-        <li>
-          <a class="navbar-link" href="acessorios.html">Acessórios</a>
+        <li class="menu-li">
+          <a class="navbar-link" href="#informacoe">Informações</a>
         </li>
-        <li>
-          <a class="navbar-link" href="#">Galeria</a>
+        <li class="menu-li">
+          <a class="navbar-link" href="#acessorio">Acessórios</a>
         </li>
-        <li>
-          <a class="navbar-link" href="servicos.html">Serviços</a>
-        </li>
-        <li>
-          <a class="navbar-link" href="contato.html">Contato</a>
+        <li class="menu-li">
+          <a class="navbar-link" href="#contato">Contato</a>
         </li>
       </ul>
     </div>
@@ -55,6 +57,7 @@
     </section>
 
     <section class="servicos">
+      <div id="servico"></div>
       <div class="card">
         <span class="span-card"><img class="img-card" src="./img/vet.svg" alt=""></span>
         <h3 class="titulo-card">Veterinário</h3>
@@ -87,55 +90,61 @@
     </section>
 
     <section class="informacoes">
-      <h1 class="informacoes-titulo">Lista das raças</h1>
+      <span id="informacoe"></span>
+      <h1 class="informacoes-titulo">Curiosidades sobre sua raça preferida!</h1>
 
-      <input type="search" placeholder="Pesquise sua raça favorita..." class="pesquisa-informacoes">
+      <input id="listaDog"  type="text" name="search" placeholder="." class="pesquisa-informacoes">
+      <button onclick="verificaDog()" id="btn" class="bnt-infor link-infor">Pesquisar</button>
+
+      <div id="list"></div>
 
       <div class="imagens-informacoes">
-        <div class="imagem">
+
+        <div class="imagem" id="listadog">
           <img src="img/cachorrinho.jpeg" class="informacao-img" />
           <h3 class="nome-raca">Golden retriever</h3>
         </div>
 
-        <div class="imagem">
+        <div class="imagem" id="listadog">
           <img src="img/cachorrinho1.jpeg" class="informacao-img" />
           <h3 class="nome-raca">Buldogue Inglês</h3>
         </div>
 
-        <div class="imagem">
+        <div class="imagem" id="listadog">
           <img src="img/cachorrinho7.jpeg" class="informacao-img" />
           <h3 class="nome-raca">Basset hound</h3>
         </div>
 
-        <div class="imagem">
+        <div class="imagem" id="listadog">
           <img src="img/cachorrinho3.jpeg" class="informacao-img" />
           <h3 class="nome-raca">Pug</h3>
         </div>
 
-        <div class="imagem">
+        <div class="imagem" id="listadog">
           <img src="img/cachorrinho4.jpeg" class="informacao-img" />
           <h3 class="nome-raca">Beagle</h3>
         </div>
 
-        <div class="imagem">
+        <div class="imagem" id="listadog">
           <img src="img/cachorrinho5.jpeg" class="informacao-img" />
           <h3 class="nome-raca">Cocker spaniel inglês</h3>
         </div>
 
-        <div class="imagem">
+        <div class="imagem" id="listadog">
           <img src="img/cachorrinho6.jpeg" class="informacao-img" />
           <h3 class="nome-raca">Shih tzu</h3>
         </div>
 
-        <div class="imagem">
+        <div class="imagem" id="listadog">
           <img src="img/cachorrinho2.jpeg" class="informacao-img" />
           <h3 class="nome-raca">Jack russell terrier</h3>
         </div>
 
-        <div class="imagem">
+        <div class="imagem" id="listadog">
           <img src="img/labrador.jpeg" class="informacao-img" />
           <h3 class="nome-raca">Labrador</h3>
         </div>
+        <button onclick="voltarListaDogs()" id="btn-2" class="bnt-infor">voltar</button>
       </div>
     </section>
 
@@ -144,6 +153,7 @@
     </section>
 
     <section class="acessorios">
+      <div id="acessorio"></div>
       <div class="produto">
         <h2 class="titulo-acessorios">Acessórios</h2>
       </div>
@@ -227,14 +237,15 @@
         </div>
       </div>
       <div class="link-btn">
-      <a href="#" class="link-novidades">Confira nossas novidades</a>
-    </div>
+        <a href="#" class="link-novidades">Confira nossas novidades</a>
+      </div>
     </section>
 
     <section class="banner3">
     </section>
 
     <section class="contato">
+      <div id="contato"></div>
       <div class="titulo-contato">
         <h2>Entre em contato.</h2>
       </div>
@@ -280,4 +291,12 @@
 
   <footer class="rodape">
     <h3 class="titulo-footer">LabePet</h3>
+    <h2 class="h2-footer">criação "Jôse Barros"</h2>
+    <a href="https://github.com/JosyBarros22" class="link-github">Github</a>
   </footer>
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

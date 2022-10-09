@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 50px;
-    
+
 }
 
 .nav-logo {
@@ -22,8 +22,6 @@
     font-size: 1.5em;
     font-weight: 700;
     font-family: var(--font-secundaria);
-    
-
 }
 
 .logo {
@@ -34,7 +32,7 @@
 .navbar-lista {
     display: flex;
     gap: 20px;
-    
+
 
 }
 
@@ -48,4 +46,82 @@
 .navbar-link:hover {
     border-bottom: 4px solid var(--laranja);
     color: var(--laranja);
+}
+
+.menu-lista {
+    display: none;
+}
+
+.menu-hamburguer {
+    display: none;
+}
+
+
+@media screen and (min-width: 800px) and (max-width:1200px) {
+    .navegacao {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .navegacao-menu {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+
+    .menu-lista {
+        width: 24px;
+        height: 24px;
+        background-image: url('../img/Menu.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 150px;
+
+    }
+
+    .navbar-lista {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 31%;
+        padding: 1em;
+        background-color: var(--laranja);
+        width: 50vw;
+        padding: 3em;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    .navbar-link {
+        color: var(--branco);
+        font-size: 24px;
+    }
+
+    .menu-li {
+        padding: 2em;
+    }
+
+    .menu-hamburguer:checked~.navbar-lista {
+        display: block;
+    }
+
+    .menu-hamburguer {
+        display: none;
+    }
+}
+
+@media screen and (max-width:799px)  {
+   .navegacao-menu {
+    
+   }
+   
+   
+    .menu-lista {
+        margin-right: 180px;
+        
+    }
+
 }

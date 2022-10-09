@@ -2,7 +2,7 @@
     width: 100%;
     height: auto;
     text-align: center;
-    
+
 }
 
 .informacoes-titulo {
@@ -13,14 +13,39 @@
     color: var(--cinza-escuro);
 }
 
+#list {
+    color: var(--branco);
+    background-color: var(--laranja);
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    width: 450px;
+    margin: 10px auto;
+    /* padding: 0.5em; */
+}
+
+#btn-2 {
+   cursor: pointer; 
+   display: none;
+}
+
 .pesquisa-informacoes {
+    position: relative;
     text-align: center;
     border-radius: 40px;
     font-size: 1em;
-    padding: 18px 35px;
+    padding: 11px 35px;
     border: 2px solid #000;
     width: 40%;
     margin: 3em;
+}
+
+.bnt-infor {
+    padding: 15px 60px;
+    border: none;
+    color: var(--branco);
+    background-color: var(--laranja);
+    border-radius: 10px;
 }
 
 .pesquisa-informacoes::placeholder {
@@ -28,7 +53,7 @@
     background: url(../img/lupa.svg) no-repeat;
     background-position: 1em;
     background-size: 1.5em;
-    margin-left: 9em;
+    margin-left: 30%;
 }
 
 .imagens-informacoes {
@@ -39,7 +64,7 @@
     gap: 4em;
     padding: 20px;
     margin: 0 10%;
-   
+
 }
 
 .imagem {
@@ -48,9 +73,7 @@
     border: 10px solid var(--laranja);
     background: var(--cinza-claro);
     cursor: pointer;
-    overflow: hidden;;
-    
-    
+    overflow: hidden;
 }
 
 .informacao-img {
@@ -58,16 +81,37 @@
     height: 310px;
     object-fit: cover;
     transition: .2s linear;
-    
-    
+
+
 }
 
 .informacao-img:hover {
     transform: scale(1.2);
-    
+
 }
 
 .nome-raca {
-font-size: 1em;
-padding: 5px;
+    font-size: 1em;
+    padding: 5px;
+}
+
+@media screen and (min-width: 800px) and (max-width:1200px) {
+    .informacoes-titulo {
+        font-size: 2em;
+
+    }
+
+    .pesquisa-informacoes::placeholder {
+        margin: 0.01em;
+
+    }
+
+    .imagem {
+        width: 250px;
+    height: 285px;
+    }
+
+    .informacao-img {
+        height: 260px;
+    }
 }

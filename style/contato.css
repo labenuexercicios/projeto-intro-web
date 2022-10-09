@@ -1,6 +1,9 @@
 .contato {
 text-align: center;
 margin: 30px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
 }
 
 .titulo-contato {
@@ -8,7 +11,7 @@ margin: 30px;
     font-family: var(--font-secundaria);
     font-weight: 700;
     padding-bottom: 50px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .contato-formulario {
@@ -30,7 +33,7 @@ margin: 30px;
 
  .msg {
     height: 90px;
-    width: 80%;
+    width: 75%;
 }
 
 .btn {
@@ -47,7 +50,7 @@ margin: 30px;
 }
 
 .redes-contato {
-    width: 40px;
+    width: 30px;
     margin: 20px 0;
     padding: 20px;
 }
@@ -56,6 +59,18 @@ margin: 30px;
     text-decoration: none;
 }
 
+
+@media screen and (min-width: 800px) and (max-width:1200px) {
+    .img-contato, .img-form{
+        display: none;
+    }
+    .form-inf {
+        width: 100vw;
+    }
+
+    
+
+}
 
 
 

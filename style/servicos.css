@@ -4,7 +4,6 @@
     height: auto;
     display: flex;
     justify-content: center;
-    
 }
 
 .card {
@@ -29,7 +28,7 @@
     padding: 20px;
     background-color: var(--cinza-claro);
     margin-top: -50px;
-    
+
 }
 
 .titulo-card {
@@ -39,7 +38,7 @@
 }
 
 .texto-card {
-    margin: 0 50px ;
+    margin: 0 50px;
     font-size: 1em;
     line-height: 1.5em;
     /* text-align: center; */
@@ -58,3 +57,27 @@
     left: 180px;
 }
 
+@media screen and (min-width: 800px) and (max-width:1200px) {
+    .servicos {
+        flex-wrap: wrap;
+        gap: 100px;
+       
+    }
+
+    .card {
+        margin: -50px 0px 80px 10px;
+        height: 350px;
+        width: 350px;
+
+    }
+    .img-card-link {
+        bottom: -25px;
+        left: 150px;
+    }
+
+    .img-card-link {
+        left: 150px;
+    
+
+    }
+}
