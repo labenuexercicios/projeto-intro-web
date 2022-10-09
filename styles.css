@@ -2,40 +2,138 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-header{
-    text-align: center;
-    margin: 10px;
-    padding: 20px;
-    
-}
-nav{
-    margin: 20px;
-}
-section{
-    text-align: center;
-    margin: 30px;
-    padding: 10px;
-}
-footer{
-    text-align: center;
-    margin: 30px;
+    font-size: 16pt arial;
+    list-style: none;
 }
 body{
-    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 100vh; */
+}   
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+header{
+    height: 25vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.976);
+    color: white;
+    
+}
+#pesquisar{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    height: 30px;
+    align-items: center;
+    margin-top: 10px;
+}
+footer{
+    height: 25vh;
+    width: 100vw;
+    background-color: black;
+    /* bottom: 0; */
+    /* margin-top: 20px; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(57, 54, 54);
+    background-image: url(imagens/433852-abstract-blue-dark-black-white-colorful-Estonia.jpg);
+    background-size: cover;
+    padding: 10px;
+    
+    min-height: 50vh;
+
+    
+}
+#principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+    text-align: center;
+    max-width: 50%;
+}
+.filme{
+    border: 5px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    width: 50vw;
+    
+}
+
+
+.filme img{
+    /* height: 30vh; */
+    width: 20vw;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+  
+@media screen and (max-width: 400px) {
+    .filme img{
+        width: 50vw;
+    }
+    .filme{
+        flex-direction: column;
+    }   
+        
+        
+        
+        
+        
+    
+}
+@media screen and (max-width: 800px) {
+    .filme img{
+        width: 40vw;
+        
+    }
+    .filme{
+        flex-direction: column;
+    }  
+}
+        
+        
+        
     
 
-}
-h1 h3{
-    font-family: 'Courier New', Courier, monospace;
+
     
-}
-input{
-    height: 20px;
-    width: 300px;
-}
-button{
-    height: 20px;
-    width: 100px;
-}
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+
+
+    
+    
