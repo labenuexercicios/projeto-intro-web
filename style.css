@@ -29,52 +29,23 @@ main{
 
 
 #personagens{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    display: flex;
     row-gap: 2vh;
     margin-bottom: 2vh;
-    grid-template-rows: repeat(4, 1fr);
+    flex-direction: column;
+    margin: auto;
+    width: 60vw;
 }
 
-.sessao1{
-    display: grid;
+.sessao{
+    display: flex;
     align-items: center;
-    justify-items: center;
     grid-template-columns: 1fr 2fr;
     background-color: orange;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    
-}
-.sessao2{
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: 1fr 2fr;
-    background-color: orange;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    
-}
-.sessao3{
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: 1fr 2fr;
-    background-color: orange;
-    grid-column: 2/3;
-    grid-row: 3/4;
-    
-}
-.sessao4{
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: 1fr 2fr;
-    background-color: orange;
-    grid-column: 2/3;
-    grid-row: 4/5;
-    
+    padding: 2vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    gap: 3vw;
 }
 .lista{
     display: grid;
@@ -83,8 +54,8 @@ main{
 }
 img{
     border-radius: 50%;
-    width: 150px; 
-    height: 150px; 
+    width: 120px; 
+    height: 120px; 
 }
 footer{
     background-color: black;
