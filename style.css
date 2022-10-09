@@ -1,133 +1,275 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* body{
-    background-color: #FFFACD;
-} */
-
-header{
+header {
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #F4A460;
-    height: 12vh;
-    color: black;    
+    font-family: fantasy;
+    height: 8vh;
+    background-image: url(./asset/PataDogTransparente.png);
+    background-position-y: 30vh;
+    background-size: 40rem;
+    color: white;
+    text-shadow: 1px 1px black;
 }
 
-.titulopg{
-   /*oi*/
-}
-
-main{
+main {
     text-align: center;
-    height: 100vh;
-    width: 99vw;
-}
-
-.todosPets{
-    height: 16vh;
-    width: 48vw;
-    margin: 12px;
-    padding: 36px;
-    background-color: #ff8c0072;
-    border: 1px solid brown;
-    text-align: left;
-}
-.imagemLista{
+    background-image: url(/asset/papel-de-parede-pet.jpeg);
     display: flex;
-    flex-direction: row-reverse;
-    justify-content:space-between;
+    flex-direction: column;
     align-items: center;
 }
 
-.imagem{
-    max-width: 100px; 
-    max-height: 150px;
+#buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    gap: 1rem;
+    padding-top: 1rem;
 }
 
-h2{
-    text-align: center;
-    color: #FF4500;
-    height: 2px;
-    padding: 2px;
-    margin-top: 0;
+#label {
+    font-size: 1em;
 }
 
-#nome{
-    width: 360px;
-    height: 16px;
-    margin: 12px;
+#nome {
+    width: 35vh;
+    height: 3vh;
 }
 
-#label{
-    margin: 4px;
-}
-
-.buscador{
-    height: 14px;
-    width: 20px;
-}
-
-/* .listaPet{
-    opacity: 100%;
-} */
-
-/* #brisa{
-    border: 1px solid brown;
-    text-align: left;
-}
-
-#janis{
-    border: 1px solid brown;
-    text-align: left;
-}
-
-#marilyn{
-    border: 1px solid brown;
-    text-align: left;
-}
-
-#lua{
-    border: 1px solid brown;
-    text-align: left;
-} */
-
-button{
+button {
     background-color: white;
     color: black;
     border-radius: 4px;
-    height: 22px;
-    width: 60px;
+    height: 3vh;
+    width: 5vw;
+    font-family: fantasy;
+    font-size: 1em;
 }
-button:active{
-    background-color: #FF4500;
+
+button:active {
+    background-color: #f75216bd;
     color: white;
     border-radius: 4px;
 }
 
-#github{
-    max-width: 28px; 
-    max-height: 28px;
+.geralPets {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-right: 90px;
+    gap: 1rem;
+    padding: 1rem;
 }
 
-#nomeMarina{
-    margin-left: 10px;
-}
-
-#ano2022{
-    margin-right: 10px;
-}
-
-footer{
-    display: flex;
+.todosPets {
+    background-color: #ff8c0072;
+    border-radius: 8px;
+    box-shadow: 2px 2px black;
+    height: 77vh;
+    width: 24vw;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 6fr 4r;
+    justify-items: center;
     align-items: center;
-    justify-content:space-between;
+}
+
+.tituloH2 {
+    color: #FF4500;
+    font-family: fantasy;
+    text-shadow: 1px 1px black;
+    grid-row: 1 / 2;
+}
+
+.imagem {
+    width: 20vw;
+    height: 40vh;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 1px 1px black;
+    grid-row: 2 / 3;
+    align-self: flex-start;
+}
+
+.listaPet {
+    font-family: fantasy;
+    text-align: left;
+    list-style-type: none;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    align-items: center;
     background-color: #F4A460;
-    height: 32px;
-    color: black;
+    height: 8vh;
+    background-image: url(/asset/patacat20.png);
+    background-repeat: repeat;
+    background-position-y: 32vh;
+    background-size: 60em;
+}
+
+#nomeMarina {
+    margin-left: 1rem;
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: flex-start;
+}
+
+#ano2022 {
+    margin-right: 10px;
+    grid-column: 3/4;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+#imagemFooter {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+}
+
+#github {
+    max-height: 4.5vh;
+}
+
+#likendin {
+    max-height: 5vh;
+}
+
+@media screen and (max-device-width: 1550px) and (min-device-width: 1250px) {
+
+    header {
+        background-position-y: 30vh;
+    }
+
+    .geralPets {
+        padding: 2rem;
+    }
+
+    .todosPets {
+        height: 74vh;
+        width: 23vw;
+    }
+
+    .tituloH2 {
+        font-size: 1rem;
+    }
+
+    .imagem {
+        width: 18vw;
+        height: 35vh;
+    }
+
+    footer {
+        background-position-y: 32vh;
+        background-size: 59em;
+        background-position-x: 51vw;
+    }
+}
+
+@media screen and (max-device-width: 1250px) and (min-device-width: 950px) {
+
+    #buscador {
+        flex-direction: column;
+    }
+
+    button {
+        height: 3vh;
+        width: 6vw;
+        font-size: 1em;
+    }
+
+    .geralPets {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tituloH2 {
+        font-size: 1rem;
+    }
+
+    .todosPets {
+        height: 65vh;
+        width: 40vw;
+    }
+
+    .imagem {
+        width: 30vw;
+        height: 35vh;
+    }
+
+    footer {
+        background-position-y: 32vh;
+        background-size: 57em;
+        background-position-x: 51vw;
+    }
+}
+
+@media screen and (max-device-width: 950px) {
+
+    #buscador {
+        flex-direction: column;
+    }
+
+    #label {
+        font-size: 1.5em;
+    }
+
+    #nome {
+        width: 30vh;
+        height: 3vh;
+    }
+
+    button {
+        width: 8vw;
+    }
+
+    .geralPets {
+        flex-direction: column;
+    }
+
+    .todosPets {
+        height: 30vh;
+        width: 80vw;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 50px 1fr;
+
+    }
+
+    .tituloH2 {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    .imagem {
+        width: 25vw;
+        height: 25vh;
+        grid-column: 3/4;
+        grid-row: 1/3;
+        align-self: center;
+    }
+
+    .tabelaLista {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        align-self: center;
+        font-size: 1.2em;
+    }
+
+    footer {
+        background-position-y: 32vh;
+        background-size: 56em;
+        background-position-x: 52vw;
+    }
+
 }

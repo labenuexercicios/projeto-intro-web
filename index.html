@@ -5,81 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de Vacina</title>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1 id="titulopg">Lista dos Pets</h1>
+        <h1>Lista dos Pets Vacinados</h1>
     </header>
     <main>
         <div id="buscador">
-            <label id="label" for="nome">Pesquise o nome do pet:</label>
-            <input type="text" id="nome">
-            <button>Buscar</button>
+            <label id="label" for="nome">Pesquise seu pet:</label>
+            <input type="text" id="nome" onclick="devolverPesquisaPet ()">
+            <button onclick="selecionarPet()">Buscar</button>
         </div>
-        <section class="todosPets" id="brisa">
-            <h2>Brisa</h2>
-            <article class="imagemLista">
+    <div class="geralPets">    
+        <section class="todosPets" id="removerPet1">
+            <h2 class="tituloH2"></h2>
             <img class="imagem" src="./asset/WhatsApp Image 2021-04-16 at 21.59.22 (43).jpeg" alt="Imagem da Brisa"/>
-            <ul class="listaPet">
-                <li>Nome: <a href="https://pt.wikipedia.org/wiki/Pastor-alem%C3%A3o">Brisa</a></li>
-                <li>Idade: 9 anos</li>
-                <li>Espécie: Canina</li>
-                <li>Raça: Pastor Alemão</li>
-                <li>Vacina: Sim.</li>
-                <li>Briquedos: Bolinha, orelha de boi, ossinho.</li>
-            </ul>
-        </article>
+                <article class="tabelaLista">
+                    <ul class="listaPet">
+                        <!-- <li>Nome: <a href="https://pt.wikipedia.org/wiki/Pastor-alem%C3%A3o">Brisa</a></li>
+                        <li>Idade: 9 anos</li>
+                        <li>Espécie: Canina</li>
+                        <li>Raça: Pastor Alemão</li>
+                        <li>Vacina: Sim.</li>
+                        <li>Briquedos: Bolinha, orelha de boi, ossinho.</li> -->
+                     </ul>
+                </article>
         </section>
-        <section class="todosPets" id="janis">
-            <h2>Janis</h2>
-            <article class="imagemLista">
+        <section class="todosPets" id="removerPet2">
+            <h2 class="tituloH2"></h2>
             <img class="imagem" src="./asset/20220315_204709.jpg" alt="Imagem da Janis"/>
-            <ul class="listaPet">
-                <li>Nome: <a href="https://pt.wikipedia.org/wiki/Gato_preto">Janis Joplin</a></li>
-                <li>Idade: 8 anos</li>
-                <li>Espécie: Felina</li>
-                <li>Raça: SRD</li>
-                <li>Vacina: Não.</li>
-                <li>Briquedos: Caixa de papelão, arranhador de tecido, ervinha de gato.</li>
-            </ul>
-        </article>
+                <article class="tabelaLista">
+                    <ul class="listaPet">
+                        <!-- <li>Nome: <a href="https://pt.wikipedia.org/wiki/Gato_preto">Janis Joplin</a></li>
+                        <li>Idade: 8 anos</li>
+                        <li>Espécie: Felina</li>
+                        <li>Raça: SRD</li>
+                        <li>Vacina: Não.</li>
+                        <li>Briquedos: Caixa de papelão, arranhador de tecido, ervinha de gato.</li> -->
+                    </ul>
+                </article>
         </section>
-        <section class="todosPets" id="marilyn">
-            <h2>Marilyn</h2>
-            <article class="imagemLista">
-            <img class="imagem" src="./asset/IMG_4864.jpeg" alt="Imagem da Marilyn"/>
-            <ul class="listaPet">
-                <li>Nome: <a href="https://pt.wikipedia.org/wiki/Gato">Marilyn Monroe</a></li>
-                <li>Idade: 7 anos</li>
-                <li>Espécie: Felina</li>
-                <li>Raça SRD:</li>
-                <li>Vacina: Sim.</li>
-                <li>Briquedos: Caixa de papelão, barbante enrolado, erva de gato, bolinha de lã.</li>
-            </ul>
-        </article>
+        <section class="todosPets" id="removerPet3">
+            <h2 class="tituloH2"></h2>
+            <img class="imagem" src="./asset/marilyn.jpeg" alt="Imagem da Marilyn"/>
+                <article class="tabelaLista">
+                    <ul class="listaPet">
+                        <!-- <li>Nome: <a href="https://pt.wikipedia.org/wiki/Gato">Marilyn Monroe</a></li>
+                        <li>Idade: 7 anos</li>
+                        <li>Espécie: Felina</li>
+                        <li>Raça: SRD</li>
+                        <li>Vacina: Sim.</li>
+                        <li>Briquedos: Caixa de papelão, barbante enrolado, erva de gato, bolinha de lã.</li> -->
+                     </ul>
+                </article>
         </section>
-        <section class="todosPets" id="lua">
-            <h2>Lua</h2>
-            <article class="imagemLista">
+        <section class="todosPets" id="removerPet4">
+            <h2 class="tituloH2"></h2>
             <img class="imagem" src="./asset/IMG_2112.jpeg" alt="Imagem da Lua"/>
-            <ul class="listaPet">
-                <li>Nome: <a href="https://pt.wikipedia.org/wiki/Shih-tzu">Lua</a></li>
-                <li>Idade: 2 anos</li>
-                <li>Espécie: Canina</li>
-                <li>Raça: Shih Tzu</li>
-                <li>Vacina: Não.</li>
-                <li>Briquedos: Bolinha, ossinho, orelha de boi, ursinho.</li>
-            </ul>
-        </article>
+                <article class="tabelaLista">
+                    <ul class="listaPet">
+                        <!-- <li>Nome: <a href="https://pt.wikipedia.org/wiki/Shih-tzu">Lua</a></li>
+                        <li>Idade: 2 anos</li>
+                        <li>Espécie: Canina</li>
+                        <li>Raça: Shih Tzu</li>
+                        <li>Vacina: Não.</li>
+                        <li>Briquedos: Bolinha, ossinho, orelha de boi, ursinho.</li> -->
+                    </ul>
+                </article>
         </section>
-    </section>
+    </div>
+    </main>
     <footer>
         <div id="nomeMarina">Marina Rosas Rachid Jaudy</div>
-        <a href="https://github.com/MJFreedom"> <img id="github" src="./asset/logogithub-removebg-preview.png"></a>
-        <div id="ano2022">2022</div>
+            <div id="imagemFooter"> 
+            <a href="https://github.com/MJFreedom"> <img id="github" src="./asset/logogithub-removebg-preview.png"></a>
+            <a href="https://www.linkedin.com/in/marina-jaudy-599b11a9/"> <img id="likendin" src="./asset/LogoLinkedin.png" ></a>
+            </div>
+            <div id="ano2022">2022</div>
     </footer>
-    </main>
 </body>
 </html>
