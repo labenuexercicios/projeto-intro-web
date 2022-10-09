@@ -70,7 +70,7 @@ desenhoArray.push(desenho1, desenho2, desenho3, desenho4, desenho5, desenho6)
 //----- media de episodios
 
 const mediaEpisodios = desenhoArray.map(objeto => objeto.duracaoEpisodios).reduce((episodio, episodio2,) => episodio + episodio2, 0) / desenhoArray.length
-// console.log(mediaEpisodios);
+console.log(mediaEpisodios,'média de todos os itens(episódios)!');
 
 // Alteração SEMANA 4  , verificando itens e adicionando ao array.
 const desenhoContinuacao = []
@@ -86,8 +86,8 @@ const verificaContinuacao = (array) => {
     } return
 }
 verificaContinuacao(desenhoArray)
-// console.log(desenhoContinuacao);
-// console.log(desenhoSemContinuacao)
+console.log(desenhoContinuacao,'verifica se o desenho teve continuação , ou seja true ele será enviado para array separado!');
+console.log(desenhoSemContinuacao,'verifica se o teve continução, neste caso  false e enviado a outro array.')
 
 
 //------SEMANA 2 nome maiusculo e adicionando array no objetos.
@@ -120,7 +120,7 @@ const retornaString = (array) => {
     }
     return texto
 }
-// console.log(retornaString(desenhoArray))
+console.log(retornaString(desenhoArray))
 
 
 // ------ SEMANA 6 --- Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objetO
@@ -140,7 +140,7 @@ const verificarNome = (array, string) => {
         return nome.nome === string
     })
     if (verificarString.length === 0) {
-        alert(`Item não encontrado`)
+        alert(`Item não encontrado, Por favor digite corretamente o nome do Desenho!`)
     } return verificarString
 }
 
@@ -149,7 +149,7 @@ const verificarNome = (array, string) => {
 function addDesenho(desenho) {
     const id = document.getElementById("menu")
     const addItem = document.createElement("li")
-    const item = document.createTextNode(desenho.nome)
+    const item = document.createTextNode(desenho.nome.toUpperCase())
     addItem.appendChild(item)
     addItem.setAttribute("class", "style-lista")
     id.insertAdjacentElement("beforeend", addItem)
@@ -163,6 +163,8 @@ addDesenho(desenho5)
 addDesenho(desenho6)
 
 // Semana 12 DOM
+//  Função para pesquisa do inpur e redenizar apenas item pesquisado!
+
 const galery = document.querySelector(".galery")
 const dragonBall = document.querySelector(`.dBall`)
 const pokemon = document.querySelector(`.pokemon`)
@@ -171,31 +173,38 @@ const tomejerry = document.querySelector(`.tomejerry`)
 const flintstone = document.querySelector(`.flintstone`)
 const cavernadragao = document.querySelector(`.cavernadragao`)
 
-
-
 function imprimirItem(event) {
     event.preventDefault()
     const input = document.getElementById(`texto`);
     const textoCampo = input.value
+    const id = document.getElementById("menu")
+    const addItem = document.createElement("li")
+    id.innerHTML = ""
+    addItem.innerHTML = 'Volte para Página inicial'
+    addItem.setAttribute("class", "style-lista")
+    id.insertAdjacentElement("beforeend", addItem)
     let conteudo = verificarNome(desenhoArray, textoCampo)
-//  retorna item pesquisado e removes o restante, 
+    //  retorna item pesquisado e removes o restante, 
     if (textoCampo.toLowerCase() === desenho1.nome.toLowerCase()) {
+        addItem.innerHTML = textoCampo;
         pokemon.remove(); picapau.remove(); tomejerry.remove(); flintstone.remove(); cavernadragao.remove()
     } else if (textoCampo.toLowerCase() === desenho2.nome.toLowerCase()) {
         dragonBall.remove(); picapau.remove(); tomejerry.remove(); flintstone.remove(); cavernadragao.remove()
+        addItem.innerHTML = textoCampo;
     } else if (textoCampo.toLowerCase() === desenho3.nome.toLowerCase()) {
         pokemon.remove(); dragonBall.remove(); tomejerry.remove(); flintstone.remove(); cavernadragao.remove()
+        addItem.innerHTML = textoCampo;
     } else if (textoCampo.toLowerCase() === desenho4.nome.toLowerCase()) {
         pokemon.remove(); picapau.remove(); dragonBall.remove(); flintstone.remove(); cavernadragao.remove()
+        addItem.innerHTML = textoCampo;
     } else if (textoCampo.toLowerCase() === desenho5.nome.toLowerCase()) {
         pokemon.remove(); picapau.remove(); tomejerry.remove(); dragonBall.remove(); cavernadragao.remove()
+        addItem.innerHTML = textoCampo;
     } else if (textoCampo.toLowerCase() === desenho6.nome.toLowerCase()) {
-        pokemon.remove(); picapau.remove(); tomejerry.remove(); flintstone.remove(); dragonBall.remove(); 
+        pokemon.remove(); picapau.remove(); tomejerry.remove(); flintstone.remove(); dragonBall.remove();
+        addItem.innerHTML = textoCampo;
     }
-      
+
 
     return
 }
-
-
-

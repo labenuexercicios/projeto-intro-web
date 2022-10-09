@@ -30,6 +30,7 @@ header {
     align-items: flex-start;
     gap: 3%;
     height: 100%;
+    
 }
 
 /* estrutua capa, perfil e texto lateral */
@@ -42,23 +43,28 @@ header {
     justify-content: flex-end;
 }
 
+#capa-desenho {
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    
+}
 #capa-desenho img {
     border: 1px solid;
     border-radius: 50px;
     grid-column: 1/2;
     grid-row: 1/2;
-    width: 90%;
+    width: 100%;
 }
 
 /* Padronizando textos aside. texto lateral*/
 #personagens{
-    justify-content: space-between;
-    align-items: flex-start;
+    width: 100%;
     
 }
 #personagens img {
     border-radius: 80px;
-   
+    width: 100%;
 }
 #info {
     
@@ -70,34 +76,21 @@ header {
 }
 
 /* nomes dos desenhos na coluna */
-#lista {
-    display: flex;
-    flex-direction: column;
-    border-top: #fff 1px solid;
-    border-bottom: #fff 1px solid;
-    color: rgb(255, 255, 255);
 
-}
 
 .sectionA {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-left: 2%;
     margin-top: 3%;
-
-
 }
-
-input {
-    border-bottom-right-radius: 15px;
-
-}
-
-button {
-    width: 6vw;
-    border: 1px solid;
-    border-end-start-radius: 8px;
-    border-start-end-radius: 8px;
+input, button {
+    height: 3.5vh;
+    width: 95%;
+    background-color: #ffffff;
+    border: 2px solid;
+    border-bottom-right-radius: 20px;
 }
 
 button:hover {
@@ -124,15 +117,19 @@ footer {
     border-radius: 10px;
     align-items: center;
     background-image: linear-gradient(180deg, #dad8d4, #1b1a1a);
-
+    
 }
 
 li {
     list-style-type: none;
 }
+.sectionA a {
+    text-decoration: none;
+    color: #ffffff;
+}
 
 .style-lista {
-    text-shadow: 2px 2px 2px #1b1a1a;
+    text-shadow: 3px 3px 3px #1b1a1a;
 }
 
 .style-lista:hover {
@@ -260,7 +257,7 @@ li {
 
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    justify-items: center;
+    
     align-content: space-between;
     
 }
@@ -281,7 +278,7 @@ li {
 
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    align-content: center;
+    align-content: flex-start;
     justify-items: center;
 
 }
@@ -291,7 +288,6 @@ li {
     border: 1px solid;
     border-radius: 40px;
     background-color: #fff;
-    width: 70%;
 
 }
 
@@ -305,30 +301,30 @@ li {
     li {
         list-style-type: none;
     }
+ 
 
     h1 {
         text-align: center;
         height: 40px;
-        
         font-size: 30px;
     }
     .sectionA p {
-        border-bottom: 10px solid ;
-        font-size: 30px;
+        border-bottom: 8px solid ;
+        font-size: 40px;
         
     }
     form {
-        display: flex;
+         display: flex;
         justify-content: flex-start;
         border: 1px solid;
         background-color: #333;
         position: fixed;
-        top: 80px;
+        top: 75px;
         color: #fff;
         font-size: larger;
-        height: 50%;
+        height: 13%; 
         width: 90%;
-    }
+    } 
 
     button {
         width: 10vw;
@@ -338,20 +334,22 @@ li {
     .sectionA form {
         display: flex;
         justify-content: space-between;
-        height: 2em;
-
+        height: 1.8em;
+        align-items: flex-start;
     }
 
     input {
        
-        width: 20em;
+        width: 18em;
         order: -1;
         font-size: larger;
+        height: 3.2vh;
     }
 
     button {
         font-size: larger;
         width: 15em;
+        height: 3vh;
     }
 
     .sectionA {
@@ -398,7 +396,6 @@ li {
     #capa-desenho img {
         margin: 1%;
         width: 93%;
-
     }
 
     footer {
@@ -467,13 +464,13 @@ li {
         margin-left: 4%;
 
     }
- 
 
     
 
-    .sectionA p {
+    .sectionA p  {
         font-size: 20px;
         text-align: center;
+
     }
 
     #container {
@@ -495,7 +492,7 @@ li {
         flex-wrap: wrap;
         width: 100vw;
         margin-top: 0% auto;
-        margin-bottom: 5vh; 
+        
     }
 
     #personagens {
@@ -510,6 +507,9 @@ li {
     #personagens img {
         width: 12vw;
         height: 7vh;
+    }
+    #info{
+        margin-bottom: 8vh;
     }
     .perfil4  img{
         width: 10vw;
