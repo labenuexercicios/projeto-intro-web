@@ -19,7 +19,7 @@ const cachorro = {
     classe: true,
     array: ["O olfato de um cachorro é 1 milhão de vezes melhor do que o dos humanos", "se não for castrada", "uma pode ter 66 filhotes em 6 anos", "são onívoros", "eles precisam comer mais do que apenas carne"]
 }
-
+/*
 const escolha = prompt("Digite " + "\"Sim\"" + " pra adcionar os objetos ao array de objetos ou " + "\"Não\"" + " para não adcionar os objeotos no array de objetos").toUpperCase()
 
 const variavel = ("SIM" === escolha)  //solução mais legal 
@@ -63,4 +63,4 @@ function nan (celular, sust) {
     console.log (fofo)
 }
 
-nan(adc, leao)
+nan(adc, leao)*/
