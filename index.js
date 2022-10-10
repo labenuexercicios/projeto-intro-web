@@ -3,7 +3,7 @@
 
 // Brisa ----------------------------
 const nomePet1 = {
-    nome: "Brisa".toUpperCase(),
+    nome: "brisa".toUpperCase(),
     idade: 9,
     especie: "Canina",
     raca: "Pastor Alemão",
@@ -16,7 +16,7 @@ const nomePet1 = {
 
 // Janis ----------------------------
 const nomePet2 = {
-    nome: "Janis".toUpperCase(),
+    nome: "janis".toUpperCase(),
     idade: 8,
     especie: "Felina",
     raca: "SRD",
@@ -29,7 +29,7 @@ const nomePet2 = {
 
 // Lua ----------------------------
 const nomePet3 = {
-    nome: "Marilyn".toUpperCase(),
+    nome: "marilyn".toUpperCase(),
     idade: 7,
     especie: "Felina",
     raca: "SRD",
@@ -42,7 +42,7 @@ const nomePet3 = {
 
 // Marilyn ----------------------------
 const nomePet4 = {
-    nome: "Lua".toUpperCase(),
+    nome: "lua".toUpperCase(),
     idade: 2,
     especie: "Canina",
     raca: "Shih Tzu",
