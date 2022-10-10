@@ -76,7 +76,18 @@ a {
 	margin: 10px;
 	padding: 20px;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	
+	
 }
+.tituloPoker{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 10%;
+}
+
 
 .pokemon .img-container {
 	background-color: rgba(255, 255, 255, 0.6);
@@ -84,6 +95,7 @@ a {
 	width: 120px;
 	height: 120px;
 	text-align: center;
+
 }
 
 .pokemon .img-container img {
@@ -93,6 +105,7 @@ a {
 
 .pokemon .info {
 	margin-top: 20px;
+	
 }
 
 .pokemon .info .number {
@@ -105,6 +118,7 @@ a {
 .pokemon .info .name {
 	margin: 15px 0 7px;
 	letter-spacing: 1px;
+
 }
 
 
