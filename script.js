@@ -13,6 +13,7 @@ const Serie = {
   isBrasileira: Boolean,
   anoLancamento: 0,
   thumbnail: "",
+  linkTitulo: "",
 };
 // --------------------
 const greysAnatomy = {
@@ -25,7 +26,8 @@ const greysAnatomy = {
   transmissao: ["netflix", "amazon", "star plus"],
   isBrasileira: false,
   anoLancamento: 2005,
-  thumbnail: "imgs/greysanatomy.webp"
+  thumbnail: "imgs/greysanatomy.webp",
+  linkTitulo: "https://pt.wikipedia.org/wiki/Grey%27s_Anatomy",
 };
 // ---------------------------
 const laCasaDePapel = {
@@ -33,12 +35,14 @@ const laCasaDePapel = {
   titulo: "la casa de papel",
   elenco: ["alvaro morte", "alba flores", "miguel herran"],
   totTemporadas: 4,
+  genero: ["assalto", "drama", "suspense", "crime"],
   sinopse:
     "Oito ladrões se trancam com reféns na Casa da Moeda da Espanha. Seu líder manipula a polícia para realizar um plano que pode ser o maior roubo da história ou uma missão em vão.",
   transmissao: ["netflix"],
   isBrasileira: false,
   anoLancamento: 2017,
   thumbnail: "imgs/laCasaDePapelLogo.png",
+  linkTitulo: "https://pt.wikipedia.org/wiki/La_casa_de_papel",
 };
 // ---------------------------
 const vikings = {
@@ -46,12 +50,31 @@ const vikings = {
   titulo: "vikings",
   elenco: ["travis fimmel", "clive standen", "gustaf skarsgard"],
   totTemporadas: 6,
+  genero: ["guerra", "drama", "obra de epoca", "aventura"],
   sinopse:
     "A série acompanha a saga dos navegadores nórdicos que exploram - e conquistam - novos territórios nos tempos medievais.",
   transmissao: ["netflix"],
   isBrasileira: false,
   anoLancamento: 2013,
   thumbnail: "imgs/vikings.png",
+  linkTitulo:
+    "https://pt.wikipedia.org/wiki/Vikings_(s%C3%A9rie_de_televis%C3%A3o)",
+};
+// ---------------------------
+const lost = {
+  ...Serie,
+  titulo: "lost",
+  elenco: ["Jorge garcia", "Matthew Fox", "Evangeline Lily"],
+  totTemporadas: 6,
+  genero: ["guerra", "drama", "obra de epoca", "aventura"],
+  sinopse:
+    "Os sobreviventes de um voo que estava milhas fora do curso caem em uma ilha que abriga um sistema de segurança monstruoso, uma série de abrigos subterrâneos e um grupo de sobrevivencialistas violentos escondidos nas sombras.",
+  transmissao: ["globoplay", "star+"],
+  isBrasileira: false,
+  anoLancamento: 2004,
+  thumbnail: "imgs/lost.jpg",
+  linkTitulo:
+    "https://pt.wikipedia.org/wiki/Lost_(s%C3%A9rie_de_televis%C3%A3o)",
 };
 
 const media =
@@ -102,6 +125,7 @@ const arrayComObjSerie = [];
 arrayComObjSerie.push(greysAnatomy);
 arrayComObjSerie.push(vikings);
 arrayComObjSerie.push(laCasaDePapel);
+arrayComObjSerie.push(lost);
 
 // Semana 4
 console.log("");
@@ -123,6 +147,11 @@ if (vikings.isBrasileira === true) {
 }
 
 if (laCasaDePapel.isBrasileira === true) {
+  arrayComObjSerieComVerificacao.push(laCasaDePapel);
+} else {
+  console.log(`O objeto ${laCasaDePapel.titulo} não foi adicionado`);
+}
+if (lost.isBrasileira === true) {
   arrayComObjSerieComVerificacao.push(laCasaDePapel);
 } else {
   console.log(`O objeto ${laCasaDePapel.titulo} não foi adicionado`);
@@ -180,63 +209,153 @@ console.log("Semana 6");
 console.log("");
 
 function buscaTitulo(array, str) {
-  let objeto = {};
-  str = str.toLowerCase();
+  
 
-  for (let i = 0; i < array.length; i++) {
-    let obj = {};
-    let nome = array[i].titulo.toLowerCase();
-    if (nome === str) {
-      return (obj = { ...array[i] });
+  for (let i in array) {
+    
+    for (let j in array[i]) {
+      if (array[i][j] === str) {
+        // return (obj = { ...array[i] });
+        const main = document.getElementById("main");
+        const div = document.createElement("div");
+        const section = document.createElement("section");
+        const imagem = document.createElement("img");
+        const ancora = document.createElement("a");
+        const ul = document.createElement("ul");
+        const li1 = document.createElement("li");
+        const li2 = document.createElement("li");
+        const li3 = document.createElement("li");
+        const li4 = document.createElement("li");
+
+        div.setAttribute("id", "container");
+        imagem.setAttribute("class", "img");
+        ancora.setAttribute("href", arrayComObjSerie[i].linkTitulo);
+        ancora.innerHTML += arrayComObjSerie[i].titulo;
+        section.setAttribute("class", "card");
+        ul.setAttribute("class", "listaInformacoes");
+
+        imagem.src = arrayComObjSerie[i].thumbnail;
+        ancora.setAttribute("target", "_blank");
+
+        li1.innerHTML += `nome: `;
+        li1.appendChild(ancora);
+        li2.innerHTML += `Genero: ${arrayComObjSerie[i].genero}`;
+        li3.innerHTML += arrayComObjSerie[i].totTemporadas;
+        li4.innerHTML += arrayComObjSerie[i].elenco;
+
+        main.appendChild(div);
+        div.appendChild(section);
+        section.appendChild(imagem);
+        section.appendChild(ul);
+        ul.appendChild(li1);
+        ul.appendChild(li2);
+        ul.appendChild(li3);
+        ul.appendChild(li4);
+      }
     }
   }
-    return alert('Seriado não encontrado')
+  return alert("Seriado não encontrado");
 }
 
 // Semana 11
+console.log("");
+console.log("Semana 11");
+console.log("");
 
-function addElem(obj){
-    const main = document.getElementById('main')
-    const section = document.createElement('section')
-    const article = document.createElement('article')
-    const ul = document.createElement('ul')
-    const liTitulo = document.createElement('li')
-    const liTotTemporadas = document.createElement('li')
-    const liTransmissao = document.createElement('li')
-    const liSinopse = document.createElement('li')
-    const liGenero = document.createElement('li')
-    const figure = document.createElement('figure')
-    const thumbnail = document.createElement('img')
+function addElem(array) {
+  for (let obj = 0; obj < array.length; obj++) {
+    const main = document.getElementById("main");
+    const section = document.createElement("section");
+    const article = document.createElement("article");
+    const ul = document.createElement("ul");
+    const liTitulo = document.createElement("li");
+    const liTotTemporadas = document.createElement("li");
+    const liTransmissao = document.createElement("li");
+    const liSinopse = document.createElement("li");
+    const liGenero = document.createElement("li");
+    const figure = document.createElement("figure");
+    const thumbnail = document.createElement("img");
 
-    section.setAttribute('class','card')
-    thumbnail.setAttribute('class', 'img')
-    thumbnail.setAttribute('src', obj.thumbnail)
-    ul.setAttribute('class','listaInformacoes')
+    section.setAttribute("class", "card");
+    article.setAttribute('id', 'novaDiv')
+    thumbnail.setAttribute("class", "img");
+    thumbnail.setAttribute("src", array[obj].thumbnail);
+    ul.setAttribute("class", "listaInformacoes");
 
-    main.insertAdjacentElement('beforeend',section)
-    section.insertAdjacentElement('beforeend', figure)
-    figure.insertAdjacentElement('beforeend', thumbnail)
-    section.insertAdjacentElement('beforeend',article)
-    article.insertAdjacentElement('beforeend',ul)
-    ul.insertAdjacentElement('beforeend',liTitulo)
-    ul.insertAdjacentElement('beforeend',liTotTemporadas)
-    ul.insertAdjacentElement('beforeend',liGenero)
-    ul.insertAdjacentElement('beforeend',liTransmissao)
-    ul.insertAdjacentElement('beforeend',liSinopse)
+    main.insertAdjacentElement("beforeend", section);
+    section.insertAdjacentElement("beforeend", figure);
+    figure.insertAdjacentElement("beforeend", thumbnail);
+    section.insertAdjacentElement("beforeend", article);
+    article.insertAdjacentElement("beforeend", ul);
+    ul.insertAdjacentElement("beforeend", liTitulo);
+    ul.insertAdjacentElement("beforeend", liTotTemporadas);
+    ul.insertAdjacentElement("beforeend", liGenero);
+    ul.insertAdjacentElement("beforeend", liTransmissao);
+    ul.insertAdjacentElement("beforeend", liSinopse);
 
-    liTitulo.innerHTML += `Titulo: ${obj.titulo}.`
-    liTotTemporadas.innerHTML += `Total de temporadas: ${obj.totTemporadas}.` 
-    liGenero.innerHTML += `Generos: ${obj.genero}.`
-    liTransmissao.innerHTML += `Onde assistir: ${obj.transmissao}.`
+    liTitulo.innerHTML += `Titulo: ${array[obj].titulo}.`;
+    liTotTemporadas.innerHTML += `Total de temporadas: ${array[obj].totTemporadas}.`;
+    liGenero.innerHTML += `Generos: ${array[obj].genero}.`;
+    liTransmissao.innerHTML += `Onde assistir: ${array[obj].transmissao}.`;
+    liSinopse.innerHTML += `Sinopse: ${array[obj].sinopse}`;
+  }
 }
-addElem(greysAnatomy)
-addElem(greysAnatomy)
-addElem(greysAnatomy)
-addElem(greysAnatomy)
-addElem(greysAnatomy)
-addElem(greysAnatomy)
-addElem(greysAnatomy)
-addElem(greysAnatomy)
-addElem(greysAnatomy)
-addElem(greysAnatomy)
-addElem(greysAnatomy)
+
+
+// Semana 12
+console.log("");
+console.log("Semana 12");
+console.log("");
+
+function btnBusca(event) {
+  event.preventDefault();
+  let input = document.getElementById("input").value.toLowerCase();
+  if (input == " ") {
+    console.log("Seriado não encontrado");
+  } else {
+    document.getElementById("container").remove();
+    buscaTitulo(arrayComObjSerie, input);
+  }
+}
+
+function criaObj(array) {
+  for (i in arrayComObjSerie) {
+    const div = document.getElementById("container");
+
+    const section = document.createElement("section");
+    const imagem = document.createElement("img");
+    const ancora = document.createElement("a");
+    const ul = document.createElement("ul");
+    const li1 = document.createElement("li");
+    const li2 = document.createElement("li");
+    const li3 = document.createElement("li");
+    const li4 = document.createElement("li");
+    const li5 = document.createElement("li");
+
+    imagem.setAttribute("class", "img");
+    ancora.setAttribute("href", arrayComObjSerie[i].linkTitulo);
+    ancora.innerHTML += arrayComObjSerie[i].titulo;
+    section.setAttribute("class", "card");
+    ul.setAttribute("class", "listaInformacoes");
+
+    imagem.src = arrayComObjSerie[i].thumbnail;
+    ancora.setAttribute("target", "_blank");
+
+    li1.innerHTML += `nome: `;
+    li1.appendChild(ancora);
+    li2.innerHTML += `Genero: ${arrayComObjSerie[i].genero}`;
+    li3.innerHTML += `Total de temporadas: ${arrayComObjSerie[i].totTemporadas}`;
+    li4.innerHTML += `Elenco ${arrayComObjSerie[i].elenco}`;
+    li4.innerHTML += `Elenco ${arrayComObjSerie[i].e}`
+
+    main.appendChild(div);
+    div.appendChild(section);
+    section.appendChild(imagem);
+    section.appendChild(ul);
+    ul.appendChild(li1);
+    ul.appendChild(li2);
+    ul.appendChild(li3);
+    ul.appendChild(li4);
+  }
+}
+criaObj(arrayComObjSerie)
