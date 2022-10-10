@@ -8,7 +8,7 @@ let objeto1 = {
     elenco: ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Rufallo", "Chris Hemsworth", "Jeremy Renner",
         "Tom Hiddleston", "Samuel L. Jackson"],
     imagem: `./imagens/vingadores.jpg`,
-    link: "https://pt.wikipedia.org/wiki/Vingadores",
+    link: "https://www.adorocinema.com/filmes/filme-130440/",
 };
 
 
@@ -20,6 +20,7 @@ let objeto2 = {
     elenco: ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Rufallo", "Chris Hemsworth", "Jeremy Renner",
         "Tom Hiddleston", "Samuel L. Jackson", "Elizabeth Olsen", "James Spader", "Paul Bettany",],
     imagem: `./imagens/vingadores2.jpg`,
+    link: "https://www.adorocinema.com/filmes/filme-198488/"
 };
 
 let objeto3 = {
@@ -30,6 +31,7 @@ let objeto3 = {
     elenco: ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Rufallo", "Chris Hemsworth", "Jeremy Renner",
         "Tom Hiddleston", "Samuel L. Jackson", "Elizabeth Olsen", "Paul Bettany",],
     imagem: `./imagens/vingadores-guerra-infinita.webp`,
+    link: "https://www.adorocinema.com/filmes/filme-218265/"
 };
 
 let objeto4 = {
@@ -40,6 +42,7 @@ let objeto4 = {
     elenco: ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Rufallo", "Chris Hemsworth", "Jeremy Renner",
         "Tom Hiddleston", "Samuel L. Jackson", "Elizabeth Olsen", "Paul Bettany"],
     imagem: "./imagens/vingadores-ultimato.jpeg",
+    link: "https://www.adorocinema.com/filmes/filme-232669/"
 };
 
 let arrayObjetos = []
@@ -123,6 +126,8 @@ funcBusca = (arrayObjetos, string) => {
             let li1 = document.createElement("li")
             let li2 = document.createElement("li")
             let li3 = document.createElement("li")
+            let li4 = document.createElement("li")
+            let li5 = document.createElement("li")
             let a = document.createElement("a")
             let imagem = document.createElement("img")
             section.setAttribute("id", "section1")
@@ -134,8 +139,10 @@ funcBusca = (arrayObjetos, string) => {
             a.setAttribute("href", arrayObjetos[i].link)
             a.innerHTML += `${arrayObjetos[i].nome.toUpperCase()}`
             li1.appendChild(a)
-            li2.innerHTML = arrayObjetos[i].anoLancamento
-            li3.innerHTML = arrayObjetos[i].valeAPena
+            li2.innerHTML = `Ano de lançamento: ${arrayObjetos[i].anoLancamento}`
+            li3.innerHTML = `Vale a pena: ${arrayObjetos[i].valeAPena}`
+            li4.innerHTML = `Diretor: ${arrayObjetos[i].diretor}`
+            li5.innerHTML = `Elenco: ${arrayObjetos[i].elenco}`
             main.appendChild(div)
             div.appendChild(section)
             section.appendChild(imagem)
@@ -143,6 +150,8 @@ funcBusca = (arrayObjetos, string) => {
             ul.appendChild(li1)
             ul.appendChild(li2)
             ul.appendChild(li3)
+            ul.appendChild(li4)
+            ul.appendChild(li5)
         }
     }
 }
@@ -157,9 +166,6 @@ function busca(event){
         funcBusca(arrayObjetos, input)
     }
 }
-
-
-
 
 
 
@@ -183,10 +189,10 @@ for (i in arrayObjetos) {
     a.setAttribute("href", arrayObjetos[i].link)
     a.innerHTML += `${arrayObjetos[i].nome.toUpperCase()}`
     li1.appendChild(a)
-    li2.innerHTML = arrayObjetos[i].anoLancamento
-    li3.innerHTML = arrayObjetos[i].valeAPena
-    li4.innerHTML = arrayObjetos[i].diretor
-    li5.innerHTML = arrayObjetos[i].elenco
+    li2.innerHTML = `Ano de lançamento: ${arrayObjetos[i].anoLancamento}`
+    li3.innerHTML = `Vale a pena: ${arrayObjetos[i].valeAPena}`
+    li4.innerHTML = `Diretor: ${arrayObjetos[i].diretor}`
+    li5.innerHTML = `Elenco: ${arrayObjetos[i].elenco}`
     div.appendChild(section)
     section.appendChild(imagem)
     section.appendChild(ul)
@@ -196,30 +202,7 @@ for (i in arrayObjetos) {
     ul.appendChild(li4)
     ul.appendChild(li5)
 
-    // let div = document.getElementById("div-sections");
-    //     let section = document.createElement("section");
-    //     let img = document.createElement("img");
-    //     let link = document.createElement("a");
-    //     let ul = document.createElement("ul");
-    //     let li1 = document.createElement("li");
-    //     let li2 = document.createElement("li");
-    //     let li3 = document.createElement("li");
-    //     link.setAttribute("class" , "a-footer");
-    //     img.src = arrayObjetos[i].imagem;
-    //     link.setAttribute("href",arrayObjetos[i].link);
-    //         link.setAttribute("target","_blank");
-    //         link.innerHTML += arrayObjetos[i].nome.toUpperCase();
-    //         li1.innerHTML += "Nome: ";
-    //         li2.innerHTML += `População: ${arrayObjetos[i].anoLancamento}`;
-    //         li3.innerHTML += `Principais Cidades: ${arrayObjetos[i].valeAPena}`;
-    //     section.setAttribute("id", "section1");
-    //     div.appendChild(section);
-    //     li1.appendChild(link);
-    //     section.append(img);
-    //     section.appendChild(ul);
-    //     ul.appendChild(li1);
-    //     ul.appendChild(li2);
-    //     ul.appendChild(li3);
+  
 }
 
 
