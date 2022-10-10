@@ -139,18 +139,20 @@ function verificaDog() {
     for (i = 0; i < x.length; i++) {
         if (!x[i].innerHTML.toLowerCase().includes(input)) {
             x[i].style.display = "none";
-           
+        
+
         }else {
             x[i].style.display = "list-item";
     }
         }
+       
 
         if(input === ""){
             document.getElementById('list').innerHTML = 'Digite o nome da raça desejada!'
              }  else {
               list.remove()
            }
-        
+           return alert("raça não encontrada")
     }
 
 //    if(x.length !== input){

@@ -25,7 +25,7 @@ justify-content: center;
     position: absolute;
     top: 480px;
     width: 1000px;
-    margin-left: 3em;
+    
    
 }
 
@@ -52,7 +52,7 @@ justify-content: center;
 }
 
 
-@media screen and (min-width: 800px) and (max-width:1200px) {
+@media screen and (max-width:1200px) {
 .banner1 {
     background-size: 100% 500px;
     height: 800px;
@@ -70,6 +70,27 @@ justify-content: center;
 
 .banner2 {
     background-size: 100vw 350px;
+}
 
 }
+
+@media screen and (max-width:600px) {
+
+    .banner1 {
+        background-size: 100% 350px;
+    }
+
+    .banner-titulo {
+        font-size: 3.5em;
+        width: 500px;
+        margin: 0 ;
+    }
+
+    .banner3 {
+        background-size: 100vw 250px;
+    }
+    
+    .banner2 {
+        background-size: 100vw 250px;
+    }
 }

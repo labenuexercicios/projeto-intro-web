@@ -57,7 +57,7 @@
 }
 
 
-@media screen and (min-width: 800px) and (max-width:1200px) {
+@media screen and (max-width:1200px) {
     .navegacao {
         position: fixed;
         top: 0;
@@ -113,15 +113,11 @@
     }
 }
 
-@media screen and (max-width:799px)  {
-   .navegacao-menu {
-    
-   }
-   
-   
+@media screen and (max-width:600px)  {
+  
     .menu-lista {
-        margin-right: 180px;
-        
+        margin-right: 100px;
+
     }
 
 }

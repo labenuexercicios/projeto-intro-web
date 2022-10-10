@@ -116,7 +116,7 @@
     background-color: var(--laranja);
     color: var(--branco);
     padding: 10px 40px;
-    border-radius: 40px;
+    border-radius: 10px;
 }
 
 .link-btn {
@@ -128,5 +128,12 @@
 }
 
 @media screen and (max-width: 1024px) {
-    
+    .acessorios-produto {
+        width: 180px;
+        height: 250px;
+    }
+
+    .link-novidades {
+        padding: 8px 20px;
+    }
 }

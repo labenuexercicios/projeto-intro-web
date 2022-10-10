@@ -4,6 +4,8 @@
     height: auto;
     display: flex;
     justify-content: center;
+    text-align: center;
+    
 }
 
 .card {
@@ -13,7 +15,7 @@
     height: 400px;
     width: 400px;
     position: relative;
-}
+   }
 
 .card:hover {
     background-color: var(--laranja);
@@ -41,7 +43,6 @@
     margin: 0 50px;
     font-size: 1em;
     line-height: 1.5em;
-    /* text-align: center; */
 }
 
 
@@ -57,7 +58,7 @@
     left: 180px;
 }
 
-@media screen and (min-width: 800px) and (max-width:1200px) {
+@media screen and (max-width:1200px) {
     .servicos {
         flex-wrap: wrap;
         gap: 100px;
@@ -80,4 +81,30 @@
     
 
     }
+}
+
+@media screen and (max-width: 839px) {
+
+.card {
+    height: 280px;
+    width:280px;
+   }
+
+   .img-card {
+    width: 30px;
+}
+
+.texto-card {
+    font-size: 0.8em;
+    margin: 0 30px;
+}
+
+.titulo-card {
+    margin: 40px 0;
+}
+
+.img-card-link {
+    bottom: -19px;
+    left: 120px;
+}
 }

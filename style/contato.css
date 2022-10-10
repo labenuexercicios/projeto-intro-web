@@ -39,6 +39,7 @@ justify-content: center;
 .btn {
     padding: 10px 25px;
     border: none;
+    border-radius: 10px;
     background-color: var(--laranja);
     color: var(--branco);
     cursor: pointer;
@@ -60,15 +61,32 @@ justify-content: center;
 }
 
 
-@media screen and (min-width: 800px) and (max-width:1200px) {
+@media screen and (max-width:1200px) {
     .img-contato, .img-form{
         display: none;
     }
+
     .form-inf {
         width: 100vw;
+        margin: 0 30px;
     }
 
-    
+       
+
+}
+
+@media screen and (max-width:581px) {
+      .form-inf {
+        margin: 0 30px;
+    }
+
+    .input-form {
+        width: 70%;
+    }
+
+    .btn {
+        margin-left: 20px;
+    }
 
 }
 

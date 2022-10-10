@@ -25,8 +25,8 @@
 }
 
 #btn-2 {
-   cursor: pointer; 
-   display: none;
+    cursor: pointer;
+    display: none;
 }
 
 .pesquisa-informacoes {
@@ -95,7 +95,7 @@
     padding: 5px;
 }
 
-@media screen and (min-width: 800px) and (max-width:1200px) {
+@media screen and (max-width:1200px) {
     .informacoes-titulo {
         font-size: 2em;
 
@@ -108,10 +108,11 @@
 
     .imagem {
         width: 250px;
-    height: 285px;
+        height: 285px;
     }
 
     .informacao-img {
         height: 260px;
     }
 }
+
