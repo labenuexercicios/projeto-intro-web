@@ -5,8 +5,8 @@ let objeto1 = {
     anoLancamento: 2012,
     valeAPena: true,
     diretor: "Joss Whedon",
-    elenco: ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Rufallo", "Chris Hemsworth", "Jeremy Renner",
-        "Tom Hiddleston", "Samuel L. Jackson"],
+    elenco: ["Robert Downey Jr.", " Scarlett Johansson", " Chris Evans", " Mark Rufallo", " Chris Hemsworth", " Jeremy Renner",
+        " Tom Hiddleston", " Samuel L. Jackson"],
     imagem: `./imagens/vingadores.jpg`,
     link: "https://www.adorocinema.com/filmes/filme-130440/",
 };
@@ -17,8 +17,8 @@ let objeto2 = {
     anoLancamento: 2015,
     valeAPena: true,
     diretor: "Joss Whedon",
-    elenco: ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Rufallo", "Chris Hemsworth", "Jeremy Renner",
-        "Tom Hiddleston", "Samuel L. Jackson", "Elizabeth Olsen", "James Spader", "Paul Bettany",],
+    elenco: [" Robert Downey Jr.", " Scarlett Johansson", " Chris Evans", " Mark Rufallo", " Chris Hemsworth", " Jeremy Renner",
+        " Tom Hiddleston", " Samuel L. Jackson", " Elizabeth Olsen", " James Spader", " Paul Bettany",],
     imagem: `./imagens/vingadores2.jpg`,
     link: "https://www.adorocinema.com/filmes/filme-198488/"
 };
@@ -28,8 +28,8 @@ let objeto3 = {
     anoLancamento: 2018,
     valeAPena: true,
     diretor: "Anthony e Joe Russo",
-    elenco: ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Rufallo", "Chris Hemsworth", "Jeremy Renner",
-        "Tom Hiddleston", "Samuel L. Jackson", "Elizabeth Olsen", "Paul Bettany",],
+    elenco: [" Robert Downey Jr.", " Scarlett Johansson", " Chris Evans", " Mark Rufallo", " Chris Hemsworth", " Jeremy Renner",
+        " Tom Hiddleston", " Samuel L. Jackson", " Elizabeth Olsen", " Paul Bettany",],
     imagem: `./imagens/vingadores-guerra-infinita.webp`,
     link: "https://www.adorocinema.com/filmes/filme-218265/"
 };
@@ -39,8 +39,8 @@ let objeto4 = {
     anoLancamento: 2019,
     valeAPena: true,
     diretor: "Anthony e Joe Russo",
-    elenco: ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Rufallo", "Chris Hemsworth", "Jeremy Renner",
-        "Tom Hiddleston", "Samuel L. Jackson", "Elizabeth Olsen", "Paul Bettany"],
+    elenco: [" Robert Downey Jr.", " Scarlett Johansson", " Chris Evans", " Mark Rufallo", " Chris Hemsworth", " Jeremy Renner",
+        " Tom Hiddleston", " Samuel L. Jackson", " Elizabeth Olsen", " Paul Bettany"],
     imagem: "./imagens/vingadores-ultimato.jpeg",
     link: "https://www.adorocinema.com/filmes/filme-232669/"
 };
@@ -148,19 +148,9 @@ for (i in arrayObjetos) {
     ul.appendChild(li3)
     ul.appendChild(li4)
     ul.appendChild(li5)
-
-    function busca(event) {
-        event.preventDefault()
-        let input = document.getElementById("input").value.toUpperCase()
-        if (input === "") {
-            alert("Nenhum objeto encontrado")
-        } else {
-            document.getElementById("div-sections").remove()
-            funcBusca(arrayObjetos, input)
-        }
-    }
-
 }
+    
+
 funcBusca = (arrayObjetos, string) => {
     for (i in arrayObjetos) {
         if (arrayObjetos[i].nome === string) {
@@ -201,6 +191,16 @@ funcBusca = (arrayObjetos, string) => {
     }
 }
 
+function busca(event){
+    event.preventDefault()
+    let input = document.getElementById("input").value.toUpperCase()
+    if(input === ""){
+        alert("Nenhum objeto encontrado")
+    }else{
+        document.getElementById("div-sections").remove()
+        funcBusca(arrayObjetos, input)
+    }
+}
 
 
 
