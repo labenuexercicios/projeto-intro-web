@@ -1,5 +1,5 @@
 // Título ---------------------------
-//console.log("Lista de Pets da Casa")
+console.log("Lista de Pets da Casa")
 
 // Brisa ----------------------------
 const nomePet1 = {
@@ -12,7 +12,7 @@ const nomePet1 = {
     imagem: `./asset/WhatsApp Image 2021-04-16 at 21.59.22 (43).jpeg`
 };
 
-//console.log(nomePet1)
+console.log(nomePet1)
 
 // Janis ----------------------------
 const nomePet2 = {
@@ -25,7 +25,7 @@ const nomePet2 = {
     imagem: `./asset/20220315_204709.jpg`
 };
 
-//console.log(nomePet2)
+console.log(nomePet2)
 
 // Lua ----------------------------
 const nomePet3 = {
@@ -38,7 +38,7 @@ const nomePet3 = {
     imagem: `./asset/IMG_2112.jpeg`,
 };
 
-//console.log(nomePet3)
+console.log(nomePet3)
 
 // Marilyn ----------------------------
 const nomePet4 = {
@@ -51,7 +51,7 @@ const nomePet4 = {
     imagem: `./asset/IMG_4864.jpeg`
 };
 
-//console.log(nomePet4)
+console.log(nomePet4)
 
 //média
 let mediaPets = (nomePet1.idade + nomePet2.idade + nomePet3.idade + nomePet4.idade) / 4
@@ -274,7 +274,6 @@ for (let i in nomePet4) {
     }
 }
 
-
 //DOM INSERIR TÍTULO
 
 // const conteinerPet = document.getElementsByClassName("todosPets")
@@ -289,6 +288,7 @@ for (let i in todosPets) {
     const novoConteudo = document.createTextNode(todosPets[i].nome)
     criarTagH.appendChild(novoConteudo)
     titulo[i].insertAdjacentElement("afterbegin", criarTagH)
+    console.log(i)
 }
 
 //DOM BUSCADOR
