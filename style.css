@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+}
+
+.containerBody {
+  display: grid;
+  grid-column: auto;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  margin-top: 1px;
+  border-style: groove;
+  border-top: 0.2vw solid black;
+  border-bottom: 0.2vw solid black;
+  text-align: center;
+  background-color: tomato;
+}
+
+.buscadorPizza{
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  background-color: black;
+  color: white;
+}
+
+main {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./mídiasparasite/vecteezy_repeated-slice-of-pizza-with-a-blue-background_.jpg);
+  background-size: cover;
+  border-color: black;
+  border-style: dashed;
+}
+
+
+.pizzaSalgadas{
+  display: grid;
+  grid-template-rows: 2fr;
+  grid-template-columns: 1fr;
+  margin-left: 2px;  
+  justify-content: center;
+  align-items: center; 
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.padraoContainerPizzas
+{display: grid;
+  grid-template-rows: 2fr 1fr 1fr 2fr;
+  grid-template-columns: 2fr;
+  border: 1px;
+  background-color: rgba(245, 245, 220, 0.699);
+  justify-items: center;
+  align-items: center;
+  border: 1px;
+  border-color: chocolate;
+  border-style: dashed;
+  padding-bottom: 1rem;
+}
+
+.imagensPizza{
+  grid-row: 1/2;
+}
+
+.tituloPizza{
+  grid-row: 2/3;
+}
+
+.ingredientePizza{
+  grid-row: 3/4;
+}
+
+.ajusteIngredientes{
+  justify-self: flex-start;
+  margin-left: 2rem;
+  list-style-type: none;
+  align-self: flex-start;
+  grid-row: 4/5;
+
+}
+
+.buscadorPizza-button:active {
+  position: center;
+  background-color: gray;
+  color: white;
+  font-family: serif;
+  font-size: large;
+} 
+
+.tituloPizza{
+  display: flex;
+  justify-content: center;
+}
+
+.imagensPizza{
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  bottom: 0;
+  background-color: black;
+  color: white;
+  height: 6vh;
+  width: 100%;
+}
+
+#pizza01{
+  grid-row: 1/2;
+}
+
+#pizza02{
+  grid-row: 1/2;
+}
+
+#pizza03{
+  grid-row: 1/2;
+}
+
+@media only screen and (max-width: 480px) {  img {    width: 100%;  }}
