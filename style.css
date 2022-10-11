@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.fakeBody{
+    display: grid;
+    grid-template-rows: 1fr 12fr 1fr;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -12,7 +17,7 @@ header {
     font-family: fantasy;
     height: 8vh;
     background-image: url(./asset/PataDogTransparente.png);
-    background-position-y: 29vh;
+    background-position-y: 34vh;
     background-size: 40rem;
     color: white;
     text-shadow: 1px 1px black;
@@ -116,6 +121,7 @@ button:active {
     grid-row: 3 / 4;
     display: flex;
     flex-direction: column;
+    font-size: 1rem;
 }
 
 footer {
@@ -126,7 +132,7 @@ footer {
     height: 8vh;
     background-image: url(/asset/patacat20.png);
     background-repeat: repeat;
-    background-position-y: 32vh;
+    background-position-y: 38vh;
     background-position-x: 50vw;
     background-size: 60em;
 }
@@ -232,7 +238,7 @@ footer {
     }
 
     .listaPet {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -347,8 +353,6 @@ footer {
     }
 
     .imagem {
-        width: 25vw;
-        height: 25vh;
         grid-column: 3/4;
         grid-row: 1/3;
         align-self: center;
@@ -358,7 +362,6 @@ footer {
         grid-column: 1/2;
         grid-row: 1/3;
         align-self: center;
-        font-size: 1.2em;
     }
 
 }
