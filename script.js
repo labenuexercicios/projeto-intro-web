@@ -209,13 +209,9 @@ console.log("Semana 6");
 console.log("");
 
 function buscaTitulo(array, str) {
-  
-
   for (let i in array) {
-    
     for (let j in array[i]) {
       if (array[i][j] === str) {
-        // return (obj = { ...array[i] });
         const main = document.getElementById("main");
         const div = document.createElement("div");
         const section = document.createElement("section");
@@ -226,6 +222,7 @@ function buscaTitulo(array, str) {
         const li2 = document.createElement("li");
         const li3 = document.createElement("li");
         const li4 = document.createElement("li");
+        const li5 = document.createElement("li");
 
         div.setAttribute("id", "container");
         imagem.setAttribute("class", "img");
@@ -242,6 +239,7 @@ function buscaTitulo(array, str) {
         li2.innerHTML += `Genero: ${arrayComObjSerie[i].genero}`;
         li3.innerHTML += arrayComObjSerie[i].totTemporadas;
         li4.innerHTML += arrayComObjSerie[i].elenco;
+        li5.innerHTML += arrayComObjSerie[i].sinopse;
 
         main.appendChild(div);
         div.appendChild(section);
@@ -254,69 +252,13 @@ function buscaTitulo(array, str) {
       }
     }
   }
-  return alert("Seriado não encontrado");
+  // return alert("Seriado não encontrado");
 }
 
 // Semana 11
 console.log("");
 console.log("Semana 11");
 console.log("");
-
-function addElem(array) {
-  for (let obj = 0; obj < array.length; obj++) {
-    const main = document.getElementById("main");
-    const section = document.createElement("section");
-    const article = document.createElement("article");
-    const ul = document.createElement("ul");
-    const liTitulo = document.createElement("li");
-    const liTotTemporadas = document.createElement("li");
-    const liTransmissao = document.createElement("li");
-    const liSinopse = document.createElement("li");
-    const liGenero = document.createElement("li");
-    const figure = document.createElement("figure");
-    const thumbnail = document.createElement("img");
-
-    section.setAttribute("class", "card");
-    article.setAttribute('id', 'novaDiv')
-    thumbnail.setAttribute("class", "img");
-    thumbnail.setAttribute("src", array[obj].thumbnail);
-    ul.setAttribute("class", "listaInformacoes");
-
-    main.insertAdjacentElement("beforeend", section);
-    section.insertAdjacentElement("beforeend", figure);
-    figure.insertAdjacentElement("beforeend", thumbnail);
-    section.insertAdjacentElement("beforeend", article);
-    article.insertAdjacentElement("beforeend", ul);
-    ul.insertAdjacentElement("beforeend", liTitulo);
-    ul.insertAdjacentElement("beforeend", liTotTemporadas);
-    ul.insertAdjacentElement("beforeend", liGenero);
-    ul.insertAdjacentElement("beforeend", liTransmissao);
-    ul.insertAdjacentElement("beforeend", liSinopse);
-
-    liTitulo.innerHTML += `Titulo: ${array[obj].titulo}.`;
-    liTotTemporadas.innerHTML += `Total de temporadas: ${array[obj].totTemporadas}.`;
-    liGenero.innerHTML += `Generos: ${array[obj].genero}.`;
-    liTransmissao.innerHTML += `Onde assistir: ${array[obj].transmissao}.`;
-    liSinopse.innerHTML += `Sinopse: ${array[obj].sinopse}`;
-  }
-}
-
-
-// Semana 12
-console.log("");
-console.log("Semana 12");
-console.log("");
-
-function btnBusca(event) {
-  event.preventDefault();
-  let input = document.getElementById("input").value.toLowerCase();
-  if (input == " ") {
-    console.log("Seriado não encontrado");
-  } else {
-    document.getElementById("container").remove();
-    buscaTitulo(arrayComObjSerie, input);
-  }
-}
 
 function criaObj(array) {
   for (i in arrayComObjSerie) {
@@ -345,8 +287,8 @@ function criaObj(array) {
     li1.appendChild(ancora);
     li2.innerHTML += `Genero: ${arrayComObjSerie[i].genero}`;
     li3.innerHTML += `Total de temporadas: ${arrayComObjSerie[i].totTemporadas}`;
-    li4.innerHTML += `Elenco ${arrayComObjSerie[i].elenco}`;
-    li4.innerHTML += `Elenco ${arrayComObjSerie[i].e}`
+    li4.innerHTML += `Elenco: ${arrayComObjSerie[i].elenco}`;
+    li5.innerHTML += `Sinopse: ${arrayComObjSerie[i].sinopse}`;
 
     main.appendChild(div);
     div.appendChild(section);
@@ -356,6 +298,24 @@ function criaObj(array) {
     ul.appendChild(li2);
     ul.appendChild(li3);
     ul.appendChild(li4);
+    ul.appendChild(li5);
   }
 }
-criaObj(arrayComObjSerie)
+
+// Semana 12
+console.log("");
+console.log("Semana 12");
+console.log("");
+
+function btnBusca(event) {
+  event.preventDefault();
+  let input = document.getElementById("input").value.toLowerCase();
+  if (input == " ") {
+    alert("Seriado não encontrado");
+  } else {
+    document.getElementById("container").remove();
+    buscaTitulo(arrayComObjSerie, input);
+  }
+}
+
+criaObj(arrayComObjSerie);

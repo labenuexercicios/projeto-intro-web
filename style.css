@@ -5,9 +5,12 @@
     font-size: clamp(0.5em, 0.7em + 1vw, 1em);
     margin: 0;
     padding: 0;
-    text-decoration: none;
     list-style: none;
 }
+a{
+    text-decoration: none;
+    color: blanchedalmond;
+}   
 
 
 
@@ -120,7 +123,6 @@ body {
     background-color: #225930;
     border-radius: 10px 40px 30px;
     border-right: 10px solid #0C261D;
-    /* justify-content: center; */
     width: 80vw;
     align-items: center;
 }
@@ -147,7 +149,6 @@ body {
         background-color: #225930;
         border-radius: 10px 40px 30px;
         border-right: 10px solid #0C261D;
-        /* justify-content: center; */
         width: 80vw;
         align-items: center;
     }
