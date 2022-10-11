@@ -58,7 +58,7 @@ footer {
         width: 100vw;
     }
 }
-@media screen and (min-device-width : 320px) and (max-device-width : 510px){
+@media screen and (min-device-width : 280px) and (max-device-width : 510px){
     #section1 {
         display: grid;
         align-items: center;
@@ -66,6 +66,6 @@ footer {
         grid-template-rows: 1fr 3fr;
         grid-template-columns: 1fr;
         width: 100vw;
-        height: 55vh;
+        height: 45vh;
     }
 }

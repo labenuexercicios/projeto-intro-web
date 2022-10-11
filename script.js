@@ -116,6 +116,51 @@ console.log(impressaoRelatorio(objeto2))
 console.log(impressaoRelatorio(objeto3))
 console.log(impressaoRelatorio(objeto4))
 
+for (i in arrayObjetos) {
+    let div = document.getElementById("div-sections")
+    let section = document.createElement("section")
+    let ul = document.createElement("ul")
+    let li1 = document.createElement("li")
+    let li2 = document.createElement("li")
+    let li3 = document.createElement("li")
+    let li4 = document.createElement("li")
+    let li5 = document.createElement("li")
+    let a = document.createElement("a")
+    let imagem = document.createElement("img")
+    section.setAttribute("id", "section1")
+    imagem.setAttribute("id", "imagem1")
+    ul.setAttribute("id", "lista1")
+    ul.setAttribute("class", "lista")
+    imagem.src = arrayObjetos[i].imagem
+    a.setAttribute("target", "_blank")
+    a.setAttribute("href", arrayObjetos[i].link)
+    a.innerHTML += `${arrayObjetos[i].nome.toUpperCase()}`
+    li1.appendChild(a)
+    li2.innerHTML = `Ano de lançamento: ${arrayObjetos[i].anoLancamento}`
+    li3.innerHTML = `Vale a pena: ${arrayObjetos[i].valeAPena}`
+    li4.innerHTML = `Diretor: ${arrayObjetos[i].diretor}`
+    li5.innerHTML = `Elenco: ${arrayObjetos[i].elenco}`
+    div.appendChild(section)
+    section.appendChild(imagem)
+    section.appendChild(ul)
+    ul.appendChild(li1)
+    ul.appendChild(li2)
+    ul.appendChild(li3)
+    ul.appendChild(li4)
+    ul.appendChild(li5)
+
+    function busca(event) {
+        event.preventDefault()
+        let input = document.getElementById("input").value.toUpperCase()
+        if (input === "") {
+            alert("Nenhum objeto encontrado")
+        } else {
+            document.getElementById("div-sections").remove()
+            funcBusca(arrayObjetos, input)
+        }
+    }
+
+}
 funcBusca = (arrayObjetos, string) => {
     for (i in arrayObjetos) {
         if (arrayObjetos[i].nome === string) {
@@ -156,53 +201,8 @@ funcBusca = (arrayObjetos, string) => {
     }
 }
 
-function busca(event){
-    event.preventDefault()
-    let input = document.getElementById("input").value.toUpperCase()
-    if(input === ""){
-        alert("Nenhum objeto encontrado")
-    }else{
-        document.getElementById("div-sections").remove()
-        funcBusca(arrayObjetos, input)
-    }
-}
 
 
 
-for (i in arrayObjetos) {
-    let div = document.getElementById("div-sections")
-    let section = document.createElement("section")
-    let ul = document.createElement("ul")
-    let li1 = document.createElement("li")
-    let li2 = document.createElement("li")
-    let li3 = document.createElement("li")
-    let li4 = document.createElement("li")
-    let li5 = document.createElement("li")
-    let a = document.createElement("a")
-    let imagem = document.createElement("img")
-    section.setAttribute("id", "section1")
-    imagem.setAttribute("id", "imagem1")
-    ul.setAttribute("id", "lista1")
-    ul.setAttribute("class", "lista")
-    imagem.src = arrayObjetos[i].imagem
-    a.setAttribute("target", "_blank")
-    a.setAttribute("href", arrayObjetos[i].link)
-    a.innerHTML += `${arrayObjetos[i].nome.toUpperCase()}`
-    li1.appendChild(a)
-    li2.innerHTML = `Ano de lançamento: ${arrayObjetos[i].anoLancamento}`
-    li3.innerHTML = `Vale a pena: ${arrayObjetos[i].valeAPena}`
-    li4.innerHTML = `Diretor: ${arrayObjetos[i].diretor}`
-    li5.innerHTML = `Elenco: ${arrayObjetos[i].elenco}`
-    div.appendChild(section)
-    section.appendChild(imagem)
-    section.appendChild(ul)
-    ul.appendChild(li1)
-    ul.appendChild(li2)
-    ul.appendChild(li3)
-    ul.appendChild(li4)
-    ul.appendChild(li5)
-
-  
-}
 
 
