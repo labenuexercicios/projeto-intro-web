@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: aqua;
+    color: #000000;
+    height: 10vh;
+    display: grid;
+    font-size: 2rem;
+    justify-content: center ;
+    align-items: center;
+    padding: 2%;
+}
+
+.lista1{
+    list-style-type: none;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.div-Listas{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 2vh;
+    border-bottom: 2cm;
+    justify-items: center;
+}
+
+.section1 {
+    display: grid;
+    background-color: orange;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    grid-template-columns: 1fr 2fr;
+    height: 20vh;
+    align-items: center;
+    justify-items: center;
+    width: 50vh;
+}
+
+.section2 {
+    display: grid;
+    background-color: orange;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    grid-template-columns: 1fr 2fr;
+    height: 20vh;
+    align-items: center;
+    justify-items: center;
+    width: 50vh;
+}
+
+.section3 {
+    display: grid;
+    background-color: orange;   
+    grid-column: 2/3;
+    grid-row: 3/4;
+    grid-template-columns: 1fr 2fr;
+    height: 20vh;
+    align-items: center;
+    justify-items: center;
+    width: 50vh;
+}
+
+.universal{
+    display: grid;
+    align-items: center;
+    list-style: none;
+}
+
+footer{
+    background-color: aqua;
+    color: black;
+    height: 15vh;
+    display: grid;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    list-style: none ;
+}
