@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.418);
+}
+
+header{
+    background-image: linear-gradient(to bottom,  #000000,#bbb4b460 ,#000000);
+    text-shadow:3px 3px 0px rgba(241, 241, 241, 0.438);
+    display: grid;
+    border: 1px solid rgb(0, 0, 0);
+    justify-items: center; /*centralizando itens dentro do container*/
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 6px;
+   
+}
+
+.pesquisa{
+    background-color: rgb(252, 11, 192);
+
+    display: grid;
+    border: 1px solid rgb(0, 0, 0);
+    justify-items: center; /*centralizando itens dentro do container*/
+    align-items: center;
+    padding: 20px;
+    
+    margin: auto;
+    height: 100px;
+    width: 250px;
+    border-radius: 10px;
+  
+
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    
+    
+}
+
+.divPrincipal{
+ display: grid;
+   justify-items: center;
+   width: 300px;
+
+}
+
+.container{
+    background-image: linear-gradient(to bottom, #ffffff,#00000060 ,#000000);
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    margin: auto;
+    margin-top: 10px;
+  
+    justify-items: center;
+    border: 1px solid rgb(0, 0, 0);
+    
+    border-radius: 10px;
+    width: 900px;
+    height: 600px;
+}
+
+article > ul{
+     height: 100%px;
+}
+
+img{
+    border-radius: 100px;
+    height: 400px;
+}
+
+a{
+    color: black;
+}
+
+
+footer{
+    background-color: black;
+   
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    
+}
+
+.footerb{
+    color: aliceblue;
+}
+
+
+.hover1 {
+    color: rgb(255, 255, 255);
+
+}
+
+.hover1:hover{
+    color: blueviolet;
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 568px ){
+    .container{
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 10px;
+        width: 900px;
+        height: 600px;
+    
+     }
+   
+  
+}
+
+@media screen and (min-width: 374px) and (max-width: 668px ){
+    .container{
+        height: 350px;
+        width: 450px;
+        margin: auto;
+        margin-top: 5px;
+     }
+
+     img{
+        border-radius: 50px;
+        height: 200px;
+    }
+  
+}
+
+@media screen and (min-width: 668px) and (max-width: 1024px ){
+    .container{
+        height: 350px;
+        width: 450px;
+        margin: auto;
+        margin-top: 5px;
+     }
+
+     img{
+        border-radius: 50px;
+        height: 200px;
+    }
+  
+}
+
+@media screen and (min-width: 1024px){
+    .container{
+        height: 97vh;
+        width: 97vh;
+        margin: auto;
+        margin-top: 5px;
+     }
+
+     img{
+        border-radius: 50px;
+        height: 400px;
+    }
+
+    
+}

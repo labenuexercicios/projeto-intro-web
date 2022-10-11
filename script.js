@@ -1,24 +1,78 @@
 
+    
+/* Semana 1    */
+
+/*const nome1 = "Aranha-marrom"
+const tempoMedioDeVida1 = 2
+const extinto1 = false
+const arrayCores1 = [ "Marrom" ]
+
+const nome2 = "Viuva-negra"
+const tempoMedioDeVida2 = 3
+const extinto2 = false
+const arrayCores2 = [ "Preta" ]
+
+const nome3 = "Aranha-armadeira"
+const tempoMedioDeVida3 = 2
+const extinto3 = false
+const arrayCores3 = [ "Marrom" ]
+
+*/
+
 const animal1 = {
-    nome1: "Aranha-marrom",
-    tempoMedioDeVida1: 2,
-    arrayCor1: [ "Marrom" ],
-    extinto1: false
+    nome: "Aranha marrom (Loxosceles)",
+    link: "https://pt.wikipedia.org/wiki/Loxosceles",
+    imagem:"imagens/imagem_2_aranha-marrom-caracteristicas-prevencao-e-controle-eficaz.jpg",
+    tempoMedioDeVida: 2,
+    arrayCores: [ "Marrom" ],
+    extinto: false
 }
 
 const animal2 = {
-    nome2: "Viuva-negra",
-    tempoMedioDeVida2: 3,
-    arrayCor2: [ "preta" ],
-   extinto2: false
+    nome: "Viuva negra (Latrodectus)",
+    link: "https://pt.wikipedia.org/wiki/Latrodectus",
+    imagem: "imagens/destaque-1.jpg" ,
+    tempoMedioDeVida: 3,
+    arrayCores: [ "preta" ],
+    extinto: false
+    
 }
 
 
-const animal3 = {
-    nome3: "Aranha-armadeira",
-    tempoMedioDeVida3: 2 ,
-    arrayCor3: [ "marrom" ],
-    extinto3: false
+const animal3 = { 
+    nome: "Aranha armadeira (Phoneutria)",
+    imagem: "imagens/armadeira3.jpg" ,
+    tempoMedioDeVida: 2 ,
+    arrayCores: [ "marrom" ],
+    extinto: false
+}
+
+//-----------------------------//
+
+const animal5 = { 
+    nome: "Aranha teia de funil (Atrax robustus)",
+    link: "https://pt.wikipedia.org/wiki/Atrax_robustus",
+    imagem: "imagens/aranha teia de funil.jpg",
+    tempoMedioDeVida: 2 ,
+    arrayCores: [ "Preta" ],
+    extinto: false
+}
+
+const animal6 = { 
+    nome: "Aranha de alçapão de cabeça vermelha",
+    imagem: "imagens/aranha-rato.jpg",
+    tempoMedioDeVida: 25 ,
+    arrayCores: [ "Preta" ],
+    extinto: false
+}
+
+const animal7 = { 
+    nome: "Aranha da areia (Aptostichus sp)",
+    link: "https://pt.wikipedia.org/wiki/Aptostichus",
+    imagem: "imagens/aranhas-mais-venenosas-perigosas-do-mundo-5.jpg",
+    tempoMedioDeVida: 0 ,
+    arrayCores: [ "Branca" ],
+    extinto: false
 }
 
 
@@ -27,64 +81,92 @@ const animal3 = {
 
 
 
-let mediaDeTempoDeVida = animal1.tempoMedioDeVida1 + animal2.tempoMedioDeVida2 + animal3.tempoMedioDeVida3
-let mediaDeTempoDeVidaFinal =  mediaDeTempoDeVida / 3
 
-let media = mediaDeTempoDeVidaFinal
+console.log('--- Calculando media Semana 1 abaixo --- ')
 
-console.log("A media de vida é:",media)
+let mediaDeTempoDeVida = animal1.tempoMedioDeVida + animal2.tempoMedioDeVida + animal3.tempoMedioDeVida + animal5.tempoMedioDeVida + animal6.tempoMedioDeVida + animal7.tempoMedioDeVida /3
 
-const verificarExtinto = animal1.extinto1 && animal2.extinto2 && animal3.extinto3;
+console.log("A media de vida é:", mediaDeTempoDeVida)
+
+const verificarExtinto = animal1.extinto && animal2.extinto && animal3.extinto && animal5.extinto && animal6.extinto && animal7.extinto
 
 console.log(verificarExtinto)
 
+// --- Semana 2 ----
+
+console.log('Semana 2 exibindo')
+
 console.log(
 
-`${animal1.nome1.toLocaleUpperCase()} 
-Tempo de vida media: ${animal1.tempoMedioDeVida1}
-Qual a cor da aranha: ${animal1.arrayCor1}
-Ela esté extinta? ${animal1.extinto1}`
-    
-           )
+        `${animal5.nome.toLocaleUpperCase()} 
+        Tempo de vida media: ${animal5.tempoMedioDeVida}
+        Qual a cor da aranha: ${animal5.arrayCores}
+        Ela esté extinta? ${animal5.extinto}`
+            
+                   )
 console.log(
 
-`${animal2.nome2.toLocaleUpperCase()} 
-Tempo de vida media: ${animal2.tempoMedioDeVida2}
-Qual a cor da aranha: ${animal2.arrayCor2}
-Ela esté extinta? ${animal2.extinto2}`
-    
-           )
+        `${animal6.nome.toLocaleUpperCase()} 
+        Tempo de vida media: ${animal6.tempoMedioDeVida}
+        Qual a cor da aranha: ${animal6.arrayCores}
+        Ela esté extinta? ${animal6.extinto}`
+            
+                   )
 console.log(
 
-`${animal3.nome3.toLocaleUpperCase()} 
-Tempo de vida media: ${animal3.tempoMedioDeVida3}
-Qual a cor da aranha: ${animal3.arrayCor3}
-Ela esté extinta? ${animal3.extinto3}`
-    
-           )
+        `${animal7.nome.toLocaleUpperCase()} 
+        Tempo de vida media: ${animal7.tempoMedioDeVida}
+        Qual a cor da aranha: ${animal7.arrayCores}
+        Ela esté extinta? ${animal7.extinto}`
+            
+                   )
+console.log(
 
-const arrayAnimais = []
+        `${animal1.nome.toLocaleUpperCase()} 
+        Tempo de vida media: ${animal1.tempoMedioDeVida}
+        Qual a cor da aranha: ${animal1.arrayCores}
+        Ela esté extinta? ${animal1.extinto}`
+            
+                   )
+ console.log(
+        
+        `${animal2.nome.toLocaleUpperCase()} 
+        Tempo de vida media: ${animal2.tempoMedioDeVida}
+        Qual a cor da aranha: ${animal2.arrayCores}
+        Ela esté extinta? ${animal2.extinto}`
+            
+                   )
+ console.log(
+        
+        `${animal3.nome.toLocaleUpperCase()} 
+        Tempo de vida media: ${animal3.tempoMedioDeVida}
+        Qual a cor da aranha: ${animal3.arrayCores}
+        Ela esté extinta? ${animal3.extinto}`
+            
+                   )
+// semana 3
+//enviando quase todos os objetos pra dentro do array
+let arrayAnimais = []
 
-
-arrayAnimais.push(animal1 , animal2 , animal3)
+arrayAnimais.push(animal1 , animal2 , animal3 , animal5 , animal6, animal7)
 
 console.log(arrayAnimais)
 
-
-
-arrayAnimais.push({nome4: "Aranha de Jardim" , 
-tempoMedioDeVida4: 2,
-arrayCor4: [ "Marrom" ],
-extinto4: false})
-
+//semana 4
 
 const aranha4 = {
-    nome4: "Aranha de Jardim" , 
-    tempoMedioDeVida4: 2,
-    arrayCor4: [ "Marrom" ],
-    extinto4: false}
+    nome: "Uraraneida (Aptostichusararaneida)" , 
+    imagem: "imagens/ancient-spider-like-creature.jpg" ,
+    link:"https://pt.wikipedia.org/wiki/Aptostichusararaneida",
+    tempoMedioDeVida4: 0,
+    arrayCores: [ "Amarelada" ],
+    extinto: true,    
+}
 
-if(aranha4.extinto4){
+
+//enviando aranha 4 pro array 
+
+if(aranha4.extinto === true){
     arrayAnimais.push(aranha4)
 }else{
     console.log("o item não foi adicionado")
@@ -94,107 +176,112 @@ if(aranha4.extinto4){
 
 
 
+console.log(`semana 5`)
 
-// for(const arrayCores of clientes){
-//     console.log(cliente)
-//     for(const cliente2 of cliente.empreendimento){
-//       console.log(cliente2)
-//     }
-//   }
+
+console.log(arrayAnimais)
 
 
 
+console.log('semana6')
+// funçao passando dentro de todas as informaçoes 
 
+function funcaoRetornar(arrayAnimais, valorString){
 
+    let objRetornando = {}
 
-const devolver = (relatorio)=>{
+for(let i=0; i<arrayAnimais.length; i++){
+
+   if(arrayAnimais[i].nome === valorString){
+    objRetornando.nome = arrayAnimais[i].nome
+    objRetornando.imagem = arrayAnimais[i].imagem
+    objRetornando.link = arrayAnimais[i].link
+    objRetornando.tempoMedioDeVida = arrayAnimais[i].tempoMedioDeVida
+    objRetornando.arrayCores = arrayAnimais[i].arrayCores
+    objRetornando.extinto = arrayAnimais[i].extinto
     
-    console.log(animal1, animal2, animal3)
-   
 
+
+   }
 }
 
-devolver()
-
-
-let nomes1 = [animal1.nome1 , animal2.nome2 , animal3.nome3]
-
-
-const nomes = (array) =>{
-
-[{nomes1}]
-
-if(nomes1){
-
-    console.log(nomes1)
-    
+if(objRetornando.nome !== valorString){
+    alert("Nenhum item foi encontrado")
 }else{
-    console.log("o item não foi adicionado")
-    alert("o item não foi adicionado")
+    return objRetornando
+}
 }
 
+
+
+// const buscando = funcaoRetornar(arrayAnimais, 'Aranha armadeira')
+// console.log(buscando)
+
+
+
+// semana 7 no html
+
+// semana 8 no html
+
+// semana 9 no css
+
+// semana 10 no css
+
+// semana 11
+
+const listaAranhas = document.createElement("ul")
+//criando lista
+const container = document.getElementById("sectionPrincipal")
+//atribuindo o ultimo lugar pra lista dentro da lista aranhas
+container.insertAdjacentElement('beforeend', listaAranhas)
+//passando id e pra lista criada
+listaAranhas.setAttribute("id", "lista-Aranhas")
+// dando sentido pro meu elemento lista aranhas
+const elementoDeLista = document.getElementById("lista-Aranhas")
+//for pegando todos os objetos e imprimindo no html com suas propriedades
+for (let i = 0; i < arrayAnimais.length; i++) {
+    elementoDeLista.innerHTML += `
+    
+                      <article class="container">
+                           <h2><a href="${arrayAnimais[i].link}" target="_blank">${arrayAnimais[i].nome} </a></h2>
+    
+                           <ul>
+                            <li>Tempo medio de vida: ${arrayAnimais[i].tempoMedioDeVida}</li>
+                            <li>Cor: ${arrayAnimais[i].arrayCores}</li>
+                            <li>Extinto: ${arrayAnimais[i].extinto}</li>
+                           </ul>
+                           <img src="${arrayAnimais[i].imagem}" alt="">
+                        
+                       </article>
+               `
 }
 
-nomes(nomes)
+// Semana12
 
-   
+console.log("semana12")
+//funçao buscar e substituindo
+function buscarAranhas(){
+    const buscarAranhaDigitada = document.getElementById("pesquisa")
+    console.log(buscarAranhaDigitada.value)
+    const aranhaRetornada =  funcaoRetornar(arrayAnimais, buscarAranhaDigitada.value)
+    console.log(aranhaRetornada)
 
+    const elementoDeLista = document.getElementById("sectionPrincipal")
+    elementoDeLista.innerHTML=
+    `<section>
+    <article class="container">
+    <h2><a href="${aranhaRetornada.link}" target="_blank">${aranhaRetornada.nome}</a></h2>
 
-
-
-// 2. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado
-
-
-// //TRAZ TODO MUNDO DO ARRAY
-// const top1 = pokemons.map( (item, indice, array) => {
-//   return item * 3 //traz todos vezes 3
-// })
-
-
-// //TRAZ O ARRAY FILTRADO
-// const top2 = pokemons.filter( (item) => {
-//   return item % 2 ===0 //traz so os pares
-// })
-
-
-
-
-
-// console.log(top2)
-// console.log(top1)
-
-
-
-
-
-
-//1. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
-
-
-
-
-
-
-
-
-
-// for(let valor of array){
-//     valor.cores
-// }
-
-// console.log(array)
-
-// if (maioresPaises.length === 5) {
-//     for (let i in maioresPaises) {
-//       let sorteio = `Sorteio ${+i + 1}: `
-//       for (let j of maioresPaises[i]) {
-//         sorteio += `${j} `
-//       }
-//       console.log(sorteio)
-//     }
-//   } else {
-//     console.log('É necessário alterar o número de itens do array')
-//   }
+             <ul>
+                            <li>Tempo medio de vida: ${aranhaRetornada.tempoMedioDeVida} </li>
+                            <li>Cor: ${aranhaRetornada.arrayCores}</li>
+                            <li>Extinto: ${aranhaRetornada.extinto}</li>
+                            <img src="${aranhaRetornada.imagem}" alt="">
+             </ul> 
+     </article> 
+     </section>
+`
+}
 
 
 
@@ -206,13 +293,3 @@ nomes(nomes)
 
 
 
-
-
-// //1. Reescrevendo o relatório da semana 2, altere a forma que a característica de array, criada no item 1 da semana 2, faça um laço que guarde todos os valores da propriedade array do objeto em uma mesma string. Utilize esta string no relatório.
-// 💡 Chamamos este processo de reescrever um código já escrito, de refatoração
-// Exemplo:
-// //ANTES ["Projeto de HTML", "Projeto de CSS", "Projeto React"]
-// //DEPOIS "Projeto de HTML,Projeto de CSS,Projeto React" 
-// 2. Ainda no relatório, altere-o para que ele seja criado utilizando um laço. Ou seja, você não deve mais imprimir individualmente cada item do relatório. Cada item deve ser exibido a partir de uma iteração do laço. Para testar, adicione mais um item ao array de objetos, e verifique se ele é exibido corretamente.
-
- 
