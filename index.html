@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Receitas de Risotos</title>
 </head>
 
@@ -14,75 +14,21 @@
 
     <header>Receitas de Risotos</header>
 
-    <main>
+    <main id="container">
         <div class="botao-input">
-            <input class="inpu" type="text" name="" id="" placeholder="Pesquise aqui">
-            <button class="button" type="submit">Buscar</button>
+            <input class="input" type="text" value="" name="" id="input" placeholder="Pesquise aqui">
+            <button onclick="clique(event)" class="button" type="submit">Buscar</button>
         </div>
-        <div class="div-listas">
-            <section class="section1">
-                <img src="./Imagens/Risoto Toscano.jpg" alt="">
-                <ul class="lista">
-                    <li>Nome: <a target="_blank" href="https://pt.wikipedia.org/wiki/Risotto">RISOTO TOSCANO</a></li>
-                    <li>Tempo de Preparo: 30min</li>
-                    <li>Ingredientes: cebola, alho, caldo, arroz tipo arbóreo, linguiça, vinho tinto, manteiga e queijo
-                        parmesão.</li>
-                </ul>
-            </section>
-            <section class="section2">
-                <img src="./Imagens/Risoto Cogumelos.jpg" alt="">
-                <ul class="lista">
-                    <li>Nome: <a target="_blank" href="https://pt.wikipedia.org/wiki/Risotto">RISOTO COGUMELO</a></li>
-                    <li>Tempo de Preparo: 35min</li>
-                    <li>Ingredientes: cebola, alho, caldo, arroz tipo arbóreo, vinho branco, cog shimeji, cog shitake e cog paris.</li>
-                </ul>
-            </section>
-            <section class="section3">
-                <img src="./Imagens/Risoto Caprese.jpg" alt="">
-                <ul class="lista">
-                    <li>Nome: <a target="_blank" href="https://pt.wikipedia.org/wiki/Risotto">RISOTO CAPRESE</a></li>
-                    <li>Tempo de Preparo: 30min</li>
-                    <li>Ingredientes: cebola, alho, caldo, arroz tipo arbóreo, vinho branco, tomate seco, mussarela de
-                        bufala, manjericão, manteiga e queijo parmesão.</li>
-                </ul>
-            </section>
-            <section class="section4">
-                <img src="./Imagens/Risoto Frutos do Mar.jpg" alt="">
-                <ul class="lista">
-                    <li>Nome: <a target="_blank" href="https://pt.wikipedia.org/wiki/Risotto">RISOTO FRUTOS DO MAR</a>
-                    </li>
-                    <li>Tempo de Preparo: 40min</li>
-                    <li>Ingredientes: cebola, alho, caldo, arroz tipo arbóreo, vinho branco, alho poró, lula, camarão,
-                        mexilhão, polvo, manteiga e queijo parmesão.</li>
-                </ul>
-            </section>
-            <section class="section5">
-                <img src="./Imagens/Risoto Gorgonzola.jpg" alt="">
-                <ul class="lista">
-                    <li>Nome: <a target="_blank" href="https://pt.wikipedia.org/wiki/Risotto">RISOTO GORGONZOLA</a>
-                    </li>
-                    <li>Tempo de Preparo: 30min</li>
-                    <li>Ingredientes: cebola, alho, caldo, arroz tipo arbóreo, vinho branco, gorgonzola, pera, manteiga e queijo parmesão.</li>
-                </ul>
-            </section>
-            <section class="section6">
-                <img src="./Imagens/Risoto Vegetariano.jpg" alt="">
-                <ul class="lista">
-                    <li>Nome: <a target="_blank" href="https://pt.wikipedia.org/wiki/Risotto">RISOTO VEGETARIANO</a>
-                    </li>
-                    <li>Tempo de Preparo: 30min</li>
-                    <li>Ingredientes: cebola, alho, caldo, arroz tipo arbóreo, vinho branco, alho poró, palmito,
-                        brocolhes, tomate cereja e aspargos.</li>
-                </ul>
-            </section>
+        <div id="div-listas" class="div-listas">
+
         </div>
 
     </main>
 
     <footer>
         <ul class="lista-footer">
-            <li>Daniel Ferraz Righetti</li>
-            <li>GitHub danielrighetti</li>
+            <p>Daniel Ferraz Righetti &copy;</p>
+            <p>GitHub danielrighetti</p>
         </ul>
     </footer>
 </body>

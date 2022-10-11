@@ -1,45 +1,57 @@
 //* Objetos
 
 const risoto1 = {
-    nome: 'RISOTO TOSCANO',
+    nome: 'risoto toscano',
     tempoPreparo: 30,
-    ingredientes: ['cebola', 'alho', 'caldo', 'arroz tipo arbóreo', 'linguiça', 'vinho tinto', 'manteiga', 'queijo parmesão'],
-    vegan: false
+    ingredientes: ['cebola', ' alho', ' caldo', ' arroz tipo arbóreo', ' linguiça', ' vinho tinto', ' manteiga', ' queijo parmesão.'],
+    vegan: false,
+    img: "./Imagens/Risoto Toscano.jpg",
+    link: "https://pt.wikipedia.org/wiki/Lingui%C3%A7a"
 }
 
 const risoto2 = {
-    nome: 'RISOTO COGUMELO',
+    nome: 'risoto cogumelo',
     tempoPreparo: 35,
-    ingredientes: ['cebola', 'alho', 'caldo', 'arroz tipo arbóreo', 'vinho branco', 'cog shimeji', 'cog shitake', 'cog paris'],
-    vegan: true
+    ingredientes: ['cebola', ' alho', ' caldo', ' arroz tipo arbóreo', ' vinho branco', ' cog shimeji', ' cog shitake', ' cog paris.'],
+    vegan: true,
+    img: "./Imagens/Risoto Cogumelos.jpg",
+    link: "https://pt.wikipedia.org/wiki/Cogumelo"
 }
 
 const risoto3 = {
-    nome: 'RISOTO CAPRESE',
+    nome: 'risoto caprese',
     tempoPreparo: 30,
-    ingredientes: ['cebola', 'alho', 'caldo', 'arroz tipo arbóreo', 'vinho branco', 'tomate seco', 'mussarela de bufala', 'manjericão', 'manteiga', 'queijo parmesão'],
-    vegan: false
+    ingredientes: ['cebola', ' alho', ' caldo', ' arroz tipo arbóreo', ' vinho branco', ' tomate seco', ' mussarela de bufala', ' manjericão', ' manteiga', ' queijo parmesão.'],
+    vegan: false,
+    img: "./Imagens/Risoto Caprese.jpg",
+    link: "https://en.wikipedia.org/wiki/Caprese_salad"
 }
 
 const risoto4 = {
-    nome: 'RISOTO FRUTOS DO MAR',
+    nome: 'risoto frutos do mar',
     tempoPreparo: 40,
-    ingredientes: ['cebola', 'alho', 'caldo', 'arroz tipo arbóreo', 'vinho branco', 'alho poró', 'lula', 'camarão', 'mexilhão', 'polvo', 'manteiga', 'queijo parmesão'],
-    vegan: false
+    ingredientes: ['cebola', ' alho', ' caldo', ' arroz tipo arbóreo', ' vinho branco', ' alho poró', ' lula', ' camarão', ' mexilhão', ' polvo', ' manteiga', ' queijo parmesão.'],
+    vegan: false,
+    img: "./Imagens/Risoto Frutos do Mar.jpg",
+    link: "https://pt.wikipedia.org/wiki/Fruto_do_mar"
 }
 
 const risoto5 = {
-    nome: 'RISOTO GORGONZOLA',
+    nome: 'risoto gorgonzola',
     tempoPreparo: 30,
-    ingredientes: ['cebola', 'alho', 'caldo', 'arroz tipo arbóreo', 'vinho branco', 'gorgonzola', 'pera', 'manteiga', 'queijo parmesão'],
-    vegan: false
+    ingredientes: ['cebola', ' alho', ' caldo', ' arroz tipo arbóreo', ' vinho branco', ' gorgonzola', ' pera', ' manteiga', ' queijo parmesão.'],
+    vegan: false,
+    img: "./Imagens/Risoto Gorgonzola.jpg",
+    link: "https://pt.wikipedia.org/wiki/Gorgonzola"
 }
 
 const risoto6 = {
-    nome: 'RISOTO VEGETARIANO',
+    nome: 'risoto vegetariano',
     tempoPreparo: 30,
-    ingredientes: ['cebola', 'alho', 'caldo', 'arroz tipo arbóreo', 'vinho branco', 'alho poró', 'palmito', 'brocolhes', 'tomate cereja', 'aspargos'],
-    vegan: true
+    ingredientes: ['cebola', ' alho', ' caldo', ' arroz tipo arbóreo', ' vinho branco', ' alho poró', ' palmito', ' brocolhes', ' tomate cereja', ' aspargos.'],
+    vegan: true,
+    img: "./Imagens/Risoto Vegetariano.jpg",
+    link: "https://pt.wikipedia.org/wiki/Vegetarianismo"
 }
 
 const arrayObjetos = []
@@ -59,12 +71,12 @@ console.log('Todos as opções são veganas? ', verificaEhVegan)
 
 const cardapioVegano = []
 
-risoto1.vegan ? cardapioVegano.push(risoto1) : alert("O risoto1 não foi adicionado")
-risoto2.vegan ? cardapioVegano.push(risoto2) : alert("O risoto2 não foi adicionado")
-risoto3.vegan ? cardapioVegano.push(risoto3) : alert("O risoto3 não foi adicionado")
-risoto4.vegan ? cardapioVegano.push(risoto4) : alert("O risoto4 não foi adicionado")
-risoto5.vegan ? cardapioVegano.push(risoto5) : alert("O risoto5 não foi adicionado")
-risoto6.vegan ? cardapioVegano.push(risoto6) : alert("O risoto6 não foi adicionado")
+// risoto1.vegan ? cardapioVegano.push(risoto1) : alert("O risoto1 não foi adicionado")
+// risoto2.vegan ? cardapioVegano.push(risoto2) : alert("O risoto2 não foi adicionado")
+// risoto3.vegan ? cardapioVegano.push(risoto3) : alert("O risoto3 não foi adicionado")
+// risoto4.vegan ? cardapioVegano.push(risoto4) : alert("O risoto4 não foi adicionado")
+// risoto5.vegan ? cardapioVegano.push(risoto5) : alert("O risoto5 não foi adicionado")
+// risoto6.vegan ? cardapioVegano.push(risoto6) : alert("O risoto6 não foi adicionado")
 
 console.log('No cardápio vegano, temos as seguintes opções', cardapioVegano)
 
@@ -112,7 +124,6 @@ for (i in arrayObjetos) {
     console.log(`Nome: ${arrayObjetos[i].nome}\n Tempo de Preparo: ${arrayObjetos[i].tempoPreparo}\n Ingredientes: ${arrayObjetos[i].ingredientes}\n É vegano? ${arrayObjetos[i].vegan}`)
 }
 
-
 //semana 6
 
 const relatorio = (obj) => {
@@ -124,19 +135,87 @@ for (i of arrayObjetos) {
     relatorio(i)
 }
 
-const buscaString = (array, string) => {
-    string = string.toUpperCase().trim()
-    const arrayBusca = array.filter((array) => {
-        return array.nome === string
-    })
-
-    if (arrayBusca.length === 1) {
-        return arrayBusca[0]
-    } else {
-        alert("O risoto não foi encontrado")
+function busca(arrayObjetos, string) {
+    for (i in arrayObjetos) {
+        for (j in arrayObjetos[i]) {
+            if (arrayObjetos[i][j] === string) {
+                let main = document.getElementById("container")
+                let div = document.createElement("div")
+                div.setAttribute("id", "div-listas")
+                div.setAttribute("class", "div-listas")
+                let section = document.createElement("section")
+                section.setAttribute("class", "section1")
+                let img = document.createElement("img")
+                img.src = arrayObjetos[i].img
+                let ul = document.createElement("ul")
+                let liNome = document.createElement("li")
+                let liTempo = document.createElement("li")
+                liTempo.innerHTML = `Tempo de preparo: ${arrayObjetos[i].tempoPreparo}`
+                let liIngred = document.createElement("li")
+                liIngred.innerHTML = `Ingredientes: ${arrayObjetos[i].ingredientes}`
+                let a = document.createElement("a")
+                a.setAttribute("href", arrayObjetos[i].link)
+                a.setAttribute("target", "_blank")
+                a.innerHTML = arrayObjetos[i].nome.toUpperCase()
+                div.appendChild(section)
+                section.appendChild(img)
+                section.appendChild(ul)
+                ul.appendChild(liNome)
+                ul.appendChild(liTempo)
+                ul.appendChild(liIngred)
+                liNome.appendChild(a)
+                main.appendChild(div)
+            }
+        }
     }
 }
 
-buscaString(arrayObjetos, "Risoto Caprese")
-console.log(buscaString(arrayObjetos, "Risoto Cogumelo"))
+// DOM
+
+for (i in arrayObjetos) {
+    let div = document.getElementById("div-listas")
+    let section = document.createElement("section")
+    section.setAttribute("class", "section1")
+    let img = document.createElement("img")
+    img.src = arrayObjetos[i].img
+    let ul = document.createElement("ul")
+    let liNome = document.createElement("li")
+    let liTempo = document.createElement("li")
+    liTempo.innerHTML = `Tempo de preparo: ${arrayObjetos[i].tempoPreparo}`
+    let liIngred = document.createElement("li")
+    liIngred.innerHTML = `Ingredientes: ${arrayObjetos[i].ingredientes}`
+    let a = document.createElement("a")
+    a.setAttribute("href", arrayObjetos[i].link)
+    a.setAttribute("target", "_blank")
+    a.innerHTML = arrayObjetos[i].nome.toUpperCase()
+
+
+    div.appendChild(section)
+    section.appendChild(img)
+    section.appendChild(ul)
+    ul.appendChild(liNome)
+    ul.appendChild(liTempo)
+    ul.appendChild(liIngred)
+    liNome.appendChild(a)
+}
+
+function clique(event) {
+    event.preventDefault()
+    let input = document.getElementById("input").value.toLowerCase()
+    if (input === ``) {
+        alert("Digite algo")
+    } else {
+        document.getElementById("div-listas").remove()
+        busca(arrayObjetos, input)
+    }
+}
+
+
+
+
+
+
+
+
+
 

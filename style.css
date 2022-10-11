@@ -14,6 +14,12 @@ header {
     padding: 2%;
 }
 
+main{
+    display: grid;
+    justify-items: center;
+    background-color: lightgrey;
+}
+
 .botao-input {
     display: flex;
     height: 10vh;
@@ -47,13 +53,11 @@ img {
 }
 
 .div-listas {
-    display: grid;
+    display: flex;
     background-color: lightgray;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    flex-direction: column;
     row-gap: 2vh;
     padding: 2vh;
-    justify-items: center;
 }
 
 .section1 {
@@ -61,66 +65,6 @@ img {
     display: grid;
     grid-column: 2/3;
     grid-row: 1/2;
-    grid-template-columns: 1fr 2fr;
-    height: 20vh;
-    justify-items: center;
-    align-items: center;
-    width: 40vw;
-}
-
-.section2 {
-    background-color: orange;
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    grid-template-columns: 1fr 2fr;
-    height: 20vh;
-    justify-items: center;
-    align-items: center;
-    width: 40vw;
-}
-
-.section3 {
-    background-color: orange;
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 3/4;
-    grid-template-columns: 1fr 2fr;
-    height: 20vh;
-    justify-items: center;
-    align-items: center;
-    width: 40vw;
-}
-
-.section4 {
-    background-color: orange;
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 4/5;
-    grid-template-columns: 1fr 2fr;
-    height: 20vh;
-    justify-items: center;
-    align-items: center;
-    width: 40vw;
-}
-
-.section5 {
-    background-color: orange;
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 5/6;
-    grid-template-columns: 1fr 2fr;
-    height: 20vh;
-    justify-items: center;
-    align-items: center;
-    width: 40vw;
-}
-
-.section6 {
-    background-color: orange;
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 6/7;
     grid-template-columns: 1fr 2fr;
     height: 20vh;
     justify-items: center;
@@ -147,6 +91,6 @@ footer {
     list-style: none;
 }
 
-.lista-footer {
+li {
     list-style-type: none;
 }
