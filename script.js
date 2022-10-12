@@ -194,7 +194,7 @@ for (author of authorsLive) {
 
 //CARDS
 let keller = document.getElementById('author-1')
-keller.innerHTML = ` <img src="assets/Timothy Keller.png"
+keller.innerHTML = ` <img src="assets/keller.png"
 height="200px">
 <ul>
 <li>
@@ -301,8 +301,10 @@ function buscar(event) {
     let filtro = filtrar(authorsLive);
 
     const pesquisa = document.getElementById('authorsrc')
-    pesquisa.style.visibility =  'visible';
-    
+    pesquisa.style.visibility = 'visible';
+
+    const valor = document.getElementById('busca').value;
+
     document.getElementById('author-1').style.visibility = 'hidden';
     document.getElementById('author-1').style.width = '0';
     document.getElementById('author-1').style.width = '0';
@@ -320,25 +322,92 @@ function buscar(event) {
     document.getElementById('author-4').style.width = '0';
 
     pesquisa.style.width = '40%';
-    pesquisa.style.height= '300px';
-    pesquisa.style.background = 'blue';
+    pesquisa.style.height = '300px';
+    pesquisa.style.background = '#154cf2';
 
-    function hover(){
-        const pesquisa = document.getElementById('authorsrc');
-        return pesquisa.style.background = 'yellow'
+
+    pesquisa.addEventListener('mouseenter', function hover() {
+        return pesquisa.style.background = '#ffd42b'
+    })
+
+    pesquisa.addEventListener('mouseleave', function hover() {
+        return pesquisa.style.background = '#154cf2'
+    })
+
+    if (valor === 'John Piper') {
+        pesquisa.innerHTML = ` <img src="assets/piper.png"
+        height="200px">
+        <ul>
+        <li>
+            <h2><a href="https://en.wikipedia.org/wiki/John_Piper_(theologian)" target="_blank">${filtro.author}</a></h2>
+        </li>
+        <li>Age: ${filtro.age}</li>
+        <li>Number of Books: ${filtro.numberBooks}</li>
+        <li>Is living: ${filtro.live}</li>
+        </ul>
+        `
+    } else if (valor === 'Timothy Keller') {
+        pesquisa.innerHTML = ` <img src="assets/keller.png"
+        height="200px">
+        <ul>
+        <li>
+            <h2><a href="https://en.wikipedia.org/wiki/John_Piper_(theologian)" target="_blank">${filtro.author}</a></h2>
+        </li>
+        <li>Age: ${filtro.age}</li>
+        <li>Number of Books: ${filtro.numberBooks}</li>
+        <li>Is living: ${filtro.live}</li>
+        </ul>
+        `
+    } else if(valor === 'Patrick Rothfuss'){
+        pesquisa.innerHTML = ` <img src="assets/rothfuss.png"
+        height="200px">
+        <ul>
+        <li>
+            <h2><a href="https://en.wikipedia.org/wiki/John_Piper_(theologian)" target="_blank">${filtro.author}</a></h2>
+        </li>
+        <li>Age: ${filtro.age}</li>
+        <li>Number of Books: ${filtro.numberBooks}</li>
+        <li>Is living: ${filtro.live}</li>
+        </ul>
+        ` 
+    } else if(valor === 'Neil Gaiman'){
+        pesquisa.innerHTML = ` <img src="assets/gaiman.png"
+        height="200px">
+        <ul>
+        <li>
+            <h2><a href="https://en.wikipedia.org/wiki/John_Piper_(theologian)" target="_blank">${filtro.author}</a></h2>
+        </li>
+        <li>Age: ${filtro.age}</li>
+        <li>Number of Books: ${filtro.numberBooks}</li>
+        <li>Is living: ${filtro.live}</li>
+        </ul>
+        `
+    } else{
+        const pesquisa = document.getElementById('authorsrc')
+        pesquisa.style.visibility = 'hidden';
+    
+        //const valor = document.getElementById('busca').value;
+    
+        document.getElementById('author-1').style.visibility = 'visible';
+        document.getElementById('author-1').style.width = '39.06vw';
+        document.getElementById('author-1').style.width = '46.58vh';
+    
+        document.getElementById('author-2').style.visibility = 'visible';
+        document.getElementById('author-2').style.width = '39.06vw';
+        document.getElementById('author-2').style.width = '46.58vh';
+    
+        document.getElementById('author-3').style.visibility = 'visible';
+        document.getElementById('author-3').style.width = '39.06vw';
+        document.getElementById('author-3').style.width = '46.58vh';
+    
+        document.getElementById('author-4').style.visibility = 'visible';
+        document.getElementById('author-4').style.width = '39.06vw';
+        document.getElementById('author-4').style.width = '46.58vh';
+    
+        pesquisa.style.width = '0';
+        pesquisa.style.height = '0';
+
     }
-        
-    pesquisa.innerHTML = ` <img src="assets/piper.png"
-    height="200px">
-    <ul>
-    <li>
-        <h2><a href="https://en.wikipedia.org/wiki/John_Piper_(theologian)" target="_blank">${filtro.author}</a></h2>
-    </li>
-    <li>Age: ${filtro.age}</li>
-    <li>Number of Books: ${filtro.numberBooks}</li>
-    <li>Is living: ${filtro.live}</li>
-    </ul>
-    `
 }
 
 buscar()

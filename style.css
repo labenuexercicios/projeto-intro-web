@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+h4{
+  cursor: pointer;
+}
+
 body {
   font-family: helvetica;
   width: 100%;
