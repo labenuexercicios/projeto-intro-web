@@ -49,19 +49,25 @@ item1 = {
   nome: 'Bife de Ancho',
   preco: 88,
   contemGlutem: true,
-  acompanhamento: ['Arroz Branco', 'Batata Rústica', 'Farofa']
+  acompanhamentos: ['Arroz Branco', 'Batata Rústica', 'Farofa'],
+  imagem: './ancho.jpeg',
+  href: 'https://www.sociedadedacarne.com.br/blog/conheca-origem-do-verdadeiro-bife-ancho/'
 }
 item2 = {
   nome: 'Bife de Chorizo',
   preco: 80,
   contemGlutem: true,
-  acompanhamento: ['Arroz Branco', 'Batata Rústica', 'Farofa']
+  acompanhamentos: ['Arroz Branco', 'Batata Rústica', 'Farofa'],
+  imagem: './chorizo.jpeg',
+  href: 'https://www.emporio481.com.br/carnes-cortes/o-que-e-bife-de-chorizo/'
 }
 item3 = {
   nome: 'Assado de Tira',
   preco: 88,
   contemGlutem: true,
-  acompanhamento: ['Arroz Branco', 'Batata Rústica', 'Farofa']
+  acompanhamentos: ['Arroz Branco', 'Batata Rústica', 'Farofa'],
+  imagem: './assado.jpeg',
+  href: 'https://es.wikipedia.org/wiki/Asado_de_tira'
 }
 
 const cardapio = [] //CRIAÇÃO DO CARDAPIO
@@ -82,17 +88,17 @@ if (item3.contemGlutem === true) {
   alert(`O item ${item3.nome} não foi adicionado`)
 }
 
-cardapio.push(
-  (item3 = {
-    nome: 'Linguiça Parrillera',
-    preco: 30.0,
-    contemGlutem: true,
-    acompanhamento: ['Farofa', 'Limão Siciliano']
-  })
-)
+cardapio.push({
+  nome: 'Linguiça Parrillera',
+  preco: 30.0,
+  contemGlutem: true,
+  acompanhamentos: ['Farofa', 'Limão Siciliano'],
+  imagem: './parrillera.jpeg',
+  href: 'https://pt.wikipedia.org/wiki/Lingui%C3%A7a'
+})
 
-for (var i = 0; i < cardapio.length; i++) {
-  console.log('=====================================================')
+for (i in cardapio) {
+  let card = `Acompanhamentos: `
   console.log(cardapio[i].nome.toUpperCase())
   console.log(`R$ ${cardapio[i].preco.toFixed(2)}`)
   if (cardapio[i].contemGlutem) {
@@ -100,8 +106,96 @@ for (var i = 0; i < cardapio.length; i++) {
   } else {
     console.log('Gluten Free')
   }
-  console.log('ACOMPANHAMENTOS')
-  for (var j = 0; j < cardapio[i].acompanhamento.length; j++) {
-    console.log('- ' + cardapio[i].acompanhamento[j])
+  for (j in cardapio[i].acompanhamentos) {
+    card += `${cardapio[i].acompanhamentos[j]}${
+      j < cardapio[i].acompanhamentos.length - 1 ? ', ' : '.'
+    }`
+  }
+  console.log(card)
+}
+
+function listarProdutos() {
+  let campoBusca = document.getElementById('busca-item')
+  // let resultadoBusca = campoBusca.value
+  console.log(campoBusca.value)
+  const listarProdutos = cardapio.filter(
+    item => item.nome.toUpperCase() === campoBusca.value.toUpperCase()
+  )
+  if (listarProdutos.length) {
+    imprimeCard(listarProdutos)
+  } else {
+    imprimeCard(cardapio)
+    alert('Objeto não encontrado.')
   }
 }
+
+function imprimeCard(cardapio) {
+  let acessaLista = document.getElementById('lista-resultados')
+  acessaLista.innerHTML = ''
+  for (let k = 0; k < cardapio.length; k++) {
+    let newItem = document.createElement('div')
+    newItem.classList.add('lista-item')
+    newItem.setAttribute('id', `item-${[k + 1]}`)
+    acessaLista.insertAdjacentElement('beforeend', newItem)
+
+    let acessaItem = document.getElementById(`item-${[k + 1]}`)
+    let newImage = document.createElement('img')
+    newImage.classList.add('imagem-produto')
+    newImage.setAttribute('src', `${cardapio[k].imagem}`)
+    acessaItem.insertAdjacentElement('beforeend', newImage)
+
+    let newDetalhe = document.createElement('div')
+    newDetalhe.classList.add('detalhe-produto')
+    newDetalhe.setAttribute('id', `detalhe-produto-${[k + 1]}`)
+    acessaItem.insertAdjacentElement('beforeend', newDetalhe)
+
+    let newItemDetalhe = document.getElementById(`detalhe-produto-${[k + 1]}`)
+    let newNome = document.createElement('a')
+    newNome.classList.add('nome-produto')
+    newNome.setAttribute('href', `${cardapio[k].href}`)
+    newNome.setAttribute('id', `nome-produto-${[k + 1]}`)
+    newNome.setAttribute('target', '_blank')
+    newItemDetalhe.insertAdjacentElement('afterbegin', newNome)
+    newNome = document.getElementById(`nome-produto-${[k + 1]}`)
+    newNome.innerHTML = cardapio[k].nome
+
+    let newPreco = document.createElement('p')
+    newPreco.classList.add('preco-produto')
+    newPreco.setAttribute('id', `preco-produto-${[k + 1]}`)
+    newItemDetalhe.insertAdjacentElement('beforeend', newPreco)
+    newPreco = document.getElementById(`preco-produto-${[k + 1]}`)
+    newPreco.innerHTML = `R$ ${cardapio[k].preco.toFixed(2)}`
+
+    let gluten = ''
+    if (cardapio[k].contemGlutem) {
+      gluten = 'Contém Gluten'
+    } else {
+      gluten = 'Gluten Free'
+    }
+
+    let newContemGluten = document.createElement('p')
+    newContemGluten.classList.add('glutem-produto')
+    newContemGluten.setAttribute('id', `glutem-produto-${[k + 1]}`)
+    newItemDetalhe.insertAdjacentElement('beforeend', newContemGluten)
+    newContemGluten = document.getElementById(`glutem-produto-${[k + 1]}`)
+    newContemGluten.innerHTML = gluten
+
+    let card = `Acompanhamentos: `
+    for (l in cardapio[k].acompanhamentos) {
+      card += `${cardapio[k].acompanhamentos[l]}${
+        l < cardapio[k].acompanhamentos.length - 1 ? ', ' : '.'
+      }`
+    }
+
+    let newAcompanhamento = document.createElement('p')
+    newAcompanhamento.classList.add('acompanhamento-produto')
+    newAcompanhamento.setAttribute('id', `acompanhamento-produto-${[k + 1]}`)
+    newItemDetalhe.insertAdjacentElement('beforeend', newAcompanhamento)
+    newAcompanhamento = document.getElementById(
+      `acompanhamento-produto-${[k + 1]}`
+    )
+    newAcompanhamento.innerHTML = card
+  }
+}
+
+imprimeCard(cardapio)

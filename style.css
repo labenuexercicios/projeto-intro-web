@@ -1,92 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+* {padding: 0; margin: 0;}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
+html {font-family: Inter, sans-serif;}
 
-body {
-  font-size: 100%;
-  background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
-}
+body { background-color: lightgrey;
+  position: relative;}
 
-.header {
-  position: fixed;
-  display: flex;
-  flex-direction: row;
+header {display: flex;
+        align-items: center;
+        background-color: black;
+        height: 6.25rem;
+        color: white;
+        font-size: 1.75rem;
+        padding-left: 3.5rem;}
+
+main {padding: 3rem;}
+
+.busca {display:flex;
+  justify-content: center;
+  gap: 0.0625rem;}
+
+.busca input {width: 21.125rem;}
+
+.busca button {width: 5.8125rem;}
+
+.lista-resultados {display: flex;
+  flex-direction: column;
+  margin: 0 auto;
   align-items: center;
-  justify-content: space-around;
-  padding: 24px;
-  width: 100%;
 }
 
-.logo {  font-family: 'Sarala', sans-serif;
-  color: #FFF2E7;
-  font-weight: 400;
-  font-size: 18px}
+.lista-item { display: grid;
+              grid-template-columns: 1fr 1fr;
+              width: 27rem;
+              height: 14.375rem;
+              max-width: 27rem;
+              max-height: 14.375rem;
+              border-radius: 10px;
+              align-items: center;
+              background-color: orange;
+              margin-top: 2rem;}
 
-.logo span {font-family: 'Sarala', sans-serif;
-color: #cf8e58;
-font-weight: 400;
-font-size: 18px}
+.imagem-produto { columns: 1;
+                display: flex;
+                width: 11.25rem; 
+                height:11.25rem;
+                min-width: 11.25rem; 
+                min-height:11.25rem;
+                align-items: center;
+                justify-content: center;
+                padding: 1.5625rem 0.75rem;
+                border-radius: 45px;
+                }
 
-nav {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  gap: 0.25rem;
-}
+.detalhe-produto {columns: 2;
+            display: grid;
+            height: 7.5rem;
+            font-size: 16px;
+            font-weight: 400;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            text-align: center;
+            padding: 1.5625rem 0.75rem;
+          }
 
-nav a {
-  display: flex;
-  gap: 1.25rem;
-  font-family: 'Sarala', sans-serif;
-  color: #FFF2E7;
-  font-weight: 400;
-  font-size: 18px;
-}
+.nome-produto, .link-github {color: white;
+                    text-decoration: none;
+                    font-weight: 700;}
 
-.conteudo-home-video {
-  height: 800px;
-  width: 100%;
-  object-fit: cover;
-  }
+.glutem-produto {font-weight: 700;}
 
-.conteudo-home-titulo {
-    position: relative;
-    width: 35%;
-    font-family: 'Sarala', sans-serif;
-    line-height: 1;
-    color: #FFF2E7;
-    font-weight: 400;
-    font-size: 60px;
-    margin-left: 3rem;
-    margin-top: -400px;
-    z-index: 10;
-  }
+footer {background-color: black;
+  color: white;
+  position: sticky;
+  bottom: 0;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 1.75rem;}
 
-.conteudo-home-description {
-    position: relative;
-    width: 35%;
-    font-family: 'Sarala', sans-serif;
-    line-height: 1;
-    color: whitesmoke;
-    font-weight: 400;
-    font-size: 24px;
-    margin-left: 3rem;
-    margin-top: 10px;
-    z-index: 10;
-  }
-
-.conteudo-about-titulo {
-    position: relative;
-    font-family: 'Sarala', sans-serif;
-    line-height: 1;
-    color: #FFF2E7;
-    font-weight: 400;
-    font-size: 40px;
+@media screen and (max-width: 800px) {
+  header {height: 4rem;
+    font-size: 1rem;
     justify-content: center;
+    padding-left: 0rem;}
+
+  main {padding: 1rem;}
+
+  .lista-item { margin-top: 1rem;
+                width: 94vw;}
+
+  .detalhe-produto {font-size: 12px;
+                    line-height: 14px;}
+
+  footer {
+    font-size: 0.75rem;
+    padding: 1rem;}
+
   }
-                                                                                                                            
+
+

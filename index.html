@@ -4,40 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto Intro Web</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- STYLES -->
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <title>Projeto Introdução Web</title>
   </head>
   <body>
-    <header class="header">
-      <a class="logo" href="#">parrila<span>stakehouse</span>
-      <nav class="menu">
-            <a class="menu-item" href="#home">Home</a>
-            <a class="menu-item" href="#about">Sobre Nós</a>
-            <a class="menu-item" href="#products">Produtos</a>
-            <a class="menu-item" href="#contact">Contato</a>
-       </nav>
+    <header>
+      <h1>Lista de Produtos</h1>
     </header>
-    <main class="conteudo">
-      <section class="conteudo-home" name="home">
-        <video class="conteudo-home-video" src="Fire_55___45s___4k_res.mp4" autoplay loop alt="video de labaredas de fogo em uma churrasqueira"></video>
-        <aside class="conteudo-home-titulo">O VERDADEIRO SABOR ARGENTINO MAIS PERTO DE VOCÊ!</aside>
-        <aside class="conteudo-home-description">As melhores carnes do pampa argentino, combinadas com assadores apaixonados pela arte do churrasco, juntos, para trazer una experiência única para a sua casa.</aside>  
-    </section>
-      <section class="conteudo-about" name="about">
-        <div>
-          <h2 class="conteudo-about-titulo">About</h2>
-          <p  class="conteudo-about-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sed dolor voluptatem hic deserunt aliquam beatae dolores possimus atque facere sit, eos alias doloremque repellendus nisi eum at ab incidunt!</p>
-        </div>
+    <main>
+      <section class="busca">
+        <input type="text" id="busca-item" placeholder="Digite aqui..." />
+        <button onclick="listarProdutos()">Buscar</button>
+      </section>
+      <section class="lista-resultados" id="lista-resultados">
       </section>
     </main>
-  </div>
+    <footer>
+      <p>Criado com 🧡 na Labenu</p>
+      <p>por <strong><a class="link-github" href="http://www.github.com/danielmenna">Daniel Menna</strong></p>
+    </footer>
   </body>
 </html>
