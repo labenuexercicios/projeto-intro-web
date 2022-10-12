@@ -300,41 +300,42 @@ function buscar(event) {
     event.preventDefault();
     let filtro = filtrar(authorsLive);
 
-    const pesquisa = document.getElementById('authorsrc')
-    pesquisa.style.visibility = 'visible';
-
     const valor = document.getElementById('busca').value;
 
-    document.getElementById('author-1').style.visibility = 'hidden';
-    document.getElementById('author-1').style.width = '0';
-    document.getElementById('author-1').style.width = '0';
-
-    document.getElementById('author-2').style.visibility = 'hidden';
-    document.getElementById('author-2').style.width = '0';
-    document.getElementById('author-2').style.width = '0';
-
-    document.getElementById('author-3').style.visibility = 'hidden';
-    document.getElementById('author-3').style.width = '0';
-    document.getElementById('author-3').style.width = '0';
-
-    document.getElementById('author-4').style.visibility = 'hidden';
-    document.getElementById('author-4').style.width = '0';
-    document.getElementById('author-4').style.width = '0';
-
-    pesquisa.style.width = '40%';
-    pesquisa.style.height = '300px';
-    pesquisa.style.background = '#154cf2';
-
-
-    pesquisa.addEventListener('mouseenter', function hover() {
-        return pesquisa.style.background = '#ffd42b'
-    })
-
-    pesquisa.addEventListener('mouseleave', function hover() {
-        return pesquisa.style.background = '#154cf2'
-    })
 
     if (valor === 'John Piper') {
+
+        const pesquisa = document.getElementById('authorsrc')
+        pesquisa.style.visibility = 'visible';
+        document.getElementById('author-1').style.visibility = 'hidden';
+        document.getElementById('author-1').style.width = '0';
+        document.getElementById('author-1').style.width = '0';
+
+        document.getElementById('author-2').style.visibility = 'hidden';
+        document.getElementById('author-2').style.width = '0';
+        document.getElementById('author-2').style.width = '0';
+
+        document.getElementById('author-3').style.visibility = 'hidden';
+        document.getElementById('author-3').style.width = '0';
+        document.getElementById('author-3').style.width = '0';
+
+        document.getElementById('author-4').style.visibility = 'hidden';
+        document.getElementById('author-4').style.width = '0';
+        document.getElementById('author-4').style.width = '0';
+
+        pesquisa.style.width = '40%';
+        pesquisa.style.height = '300px';
+        pesquisa.style.background = '#154cf2';
+
+
+        pesquisa.addEventListener('mouseenter', function hover() {
+            return pesquisa.style.background = '#ffd42b'
+        })
+
+        pesquisa.addEventListener('mouseleave', function hover() {
+            return pesquisa.style.background = '#154cf2'
+        })
+
         pesquisa.innerHTML = ` <img src="assets/piper.png"
         height="200px">
         <ul>
@@ -347,6 +348,36 @@ function buscar(event) {
         </ul>
         `
     } else if (valor === 'Timothy Keller') {
+        const pesquisa = document.getElementById('authorsrc')
+        pesquisa.style.visibility = 'visible';
+        document.getElementById('author-1').style.visibility = 'hidden';
+        document.getElementById('author-1').style.width = '0';
+        document.getElementById('author-1').style.width = '0';
+
+        document.getElementById('author-2').style.visibility = 'hidden';
+        document.getElementById('author-2').style.width = '0';
+        document.getElementById('author-2').style.width = '0';
+
+        document.getElementById('author-3').style.visibility = 'hidden';
+        document.getElementById('author-3').style.width = '0';
+        document.getElementById('author-3').style.width = '0';
+
+        document.getElementById('author-4').style.visibility = 'hidden';
+        document.getElementById('author-4').style.width = '0';
+        document.getElementById('author-4').style.width = '0';
+
+        pesquisa.style.width = '40%';
+        pesquisa.style.height = '300px';
+        pesquisa.style.background = '#154cf2';
+
+
+        pesquisa.addEventListener('mouseenter', function hover() {
+            return pesquisa.style.background = '#ffd42b'
+        })
+
+        pesquisa.addEventListener('mouseleave', function hover() {
+            return pesquisa.style.background = '#154cf2'
+        })
         pesquisa.innerHTML = ` <img src="assets/keller.png"
         height="200px">
         <ul>
@@ -358,7 +389,37 @@ function buscar(event) {
         <li>Is living: ${filtro.live}</li>
         </ul>
         `
-    } else if(valor === 'Patrick Rothfuss'){
+    } else if (valor === 'Patrick Rothfuss') {
+        const pesquisa = document.getElementById('authorsrc')
+        pesquisa.style.visibility = 'visible';
+        document.getElementById('author-1').style.visibility = 'hidden';
+        document.getElementById('author-1').style.width = '0';
+        document.getElementById('author-1').style.width = '0';
+
+        document.getElementById('author-2').style.visibility = 'hidden';
+        document.getElementById('author-2').style.width = '0';
+        document.getElementById('author-2').style.width = '0';
+
+        document.getElementById('author-3').style.visibility = 'hidden';
+        document.getElementById('author-3').style.width = '0';
+        document.getElementById('author-3').style.width = '0';
+
+        document.getElementById('author-4').style.visibility = 'hidden';
+        document.getElementById('author-4').style.width = '0';
+        document.getElementById('author-4').style.width = '0';
+
+        pesquisa.style.width = '40%';
+        pesquisa.style.height = '300px';
+        pesquisa.style.background = '#154cf2';
+
+
+        pesquisa.addEventListener('mouseenter', function hover() {
+            return pesquisa.style.background = '#ffd42b'
+        })
+
+        pesquisa.addEventListener('mouseleave', function hover() {
+            return pesquisa.style.background = '#154cf2'
+        })
         pesquisa.innerHTML = ` <img src="assets/rothfuss.png"
         height="200px">
         <ul>
@@ -369,8 +430,38 @@ function buscar(event) {
         <li>Number of Books: ${filtro.numberBooks}</li>
         <li>Is living: ${filtro.live}</li>
         </ul>
-        ` 
-    } else if(valor === 'Neil Gaiman'){
+        `
+    } else if (valor === 'Neil Gaiman') {
+        const pesquisa = document.getElementById('authorsrc')
+        pesquisa.style.visibility = 'visible';
+        document.getElementById('author-1').style.visibility = 'hidden';
+        document.getElementById('author-1').style.width = '0';
+        document.getElementById('author-1').style.width = '0';
+
+        document.getElementById('author-2').style.visibility = 'hidden';
+        document.getElementById('author-2').style.width = '0';
+        document.getElementById('author-2').style.width = '0';
+
+        document.getElementById('author-3').style.visibility = 'hidden';
+        document.getElementById('author-3').style.width = '0';
+        document.getElementById('author-3').style.width = '0';
+
+        document.getElementById('author-4').style.visibility = 'hidden';
+        document.getElementById('author-4').style.width = '0';
+        document.getElementById('author-4').style.width = '0';
+
+        pesquisa.style.width = '40%';
+        pesquisa.style.height = '300px';
+        pesquisa.style.background = '#154cf2';
+
+
+        pesquisa.addEventListener('mouseenter', function hover() {
+            return pesquisa.style.background = '#ffd42b'
+        })
+
+        pesquisa.addEventListener('mouseleave', function hover() {
+            return pesquisa.style.background = '#154cf2'
+        })
         pesquisa.innerHTML = ` <img src="assets/gaiman.png"
         height="200px">
         <ul>
@@ -382,31 +473,6 @@ function buscar(event) {
         <li>Is living: ${filtro.live}</li>
         </ul>
         `
-    } else{
-        const pesquisa = document.getElementById('authorsrc')
-        pesquisa.style.visibility = 'hidden';
-    
-        //const valor = document.getElementById('busca').value;
-    
-        document.getElementById('author-1').style.visibility = 'visible';
-        document.getElementById('author-1').style.width = '39.06vw';
-        document.getElementById('author-1').style.width = '46.58vh';
-    
-        document.getElementById('author-2').style.visibility = 'visible';
-        document.getElementById('author-2').style.width = '39.06vw';
-        document.getElementById('author-2').style.width = '46.58vh';
-    
-        document.getElementById('author-3').style.visibility = 'visible';
-        document.getElementById('author-3').style.width = '39.06vw';
-        document.getElementById('author-3').style.width = '46.58vh';
-    
-        document.getElementById('author-4').style.visibility = 'visible';
-        document.getElementById('author-4').style.width = '39.06vw';
-        document.getElementById('author-4').style.width = '46.58vh';
-    
-        pesquisa.style.width = '0';
-        pesquisa.style.height = '0';
-
     }
 }
 
