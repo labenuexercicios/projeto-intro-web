@@ -33,12 +33,15 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 16vh auto;
+  margin: 16vh 0px 20vh 0px;
   font-family: arial;
   font-size: 25px;
 }
 
+/*----------------------------------------------------------------*/
 /* botão de pesquisa*/
+/*----------------------------------------------------------------*/
+
 #divBusca {
   display: flex;
   margin: 20px auto;
@@ -86,7 +89,10 @@ main {
   height: 48px;
 }
 
+/*----------------------------------------------------------------*/
 /*blocos*/
+/*----------------------------------------------------------------*/
+
 .bloco {
   display: flex;
   margin: 30px auto;
@@ -118,7 +124,10 @@ main {
   color: red;
 }
 
+/*----------------------------------------------------------------*/
 /*links*/
+/*----------------------------------------------------------------*/
+
 a:link {
   color: white;
 }
@@ -141,7 +150,10 @@ footer {
   height: 15vh;
 }
 
+/*----------------------------------------------------------------*/
 /* para as imagens no footer*/
+/*----------------------------------------------------------------*/
+
 .imagem-insta {
   height: 5vh;
   width: auto;
@@ -172,7 +184,10 @@ footer {
   width: auto;
 }
 
+/*----------------------------------------------------------------*/
 /*imagens dos blocos*/
+/*----------------------------------------------------------------*/
+
 .dimension {
   float: left;
   width: auto;
@@ -195,7 +210,49 @@ footer {
   height: 210px;
 }
 
+/*----------------------------------------------------------------*/
+/*apaga*/
+/*----------------------------------------------------------------*/
+
+#apaga
+{
+  display:none;
+} 
+
+/*----------------------------------------------------------------*/
+/*botão retornar*/
+/*----------------------------------------------------------------*/
+
+.sec-retornar
+{
+  display:none
+}
+
+#btnRetorna
+{
+  border: none;
+  float: right;
+  height: 48px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+  width: 122px;
+  font-weight: bold;
+  background: #5F9EA0;
+  font-size: 25px;
+}
+
+#btnRetorna:hover {
+  font-size: 26px;
+}
+
+#btnRetorna:active {
+  background-color: white;
+  font-size: 25px;
+}
+
+/*----------------------------------------------------------------*/
 /* responsividade*/
+/*----------------------------------------------------------------*/
 
 @media screen and (max-device-width: 600px) {
   header {
@@ -220,22 +277,27 @@ footer {
     font-size: 5vw;
   }
 
+  /*----------------------------------------------------------------*/
   /*barra de pesquisa*/
+  /*----------------------------------------------------------------*/
+
   #divBusca {
     display: flex;
+    justify-content:space-between;
     margin: 20px auto;
     background-color: #E0EEEE;
     border: solid 1px #5F9EA0;
-    border-radius: 10px;
-    width: 350px;
-    height: 50px;
+    border-radius: 7px;
+    width: 99vw;
+    height: 40px;
   }
   
   #txtBusca {
     float: left;
     background-color: transparent;
     padding-left: 5px;
-    font-size: 20px;
+    padding-bottom: 15px;
+    font-size: 15px;
     border: none;
     height: 50px;
     width: 191px;
@@ -243,37 +305,39 @@ footer {
   
   #btnBusca {
     border: none;
-    float: right;
-    height: 48px;
-    border-radius: 10px;
-    width: 122px;
+    height: 40px;
+    border-radius: 7px;
+    width: 40vw;
     font-weight: bold;
     background: #5F9EA0;
-    font-size: 25px;
+    font-size: 15px;
   }
   
   #btnBusca:hover {
-    font-size: 26px;
+    font-size: 17px;
   }
   
   #btnBusca:active {
     background-color: white;
-    font-size: 25px;
+    font-size: 17px;
   }
   
   #divBusca img {
-    border-radius: 10px;
+    border-radius: 7px;
     float: left;
-    width: 55px;
-    height: 48px;
+    width: auto;
+    height: 40px;
   }  
 
+/*----------------------------------------------------------------*/
   /*blocos*/
+  /*----------------------------------------------------------------*/
 
   .bloco {
     align-items: center;
     margin: 2vw auto;
     padding: 1vw 1vw 1vw 1vw;
+    border-radius: 15px;
   }
 
   #bloco-1 {
@@ -355,10 +419,96 @@ footer {
     width: auto;
   }
 
+  #btnRetorna
+{
+  height: 40px;
+  border-radius: 7px;
+  width: 40vw;
+  font-size: 15px;
+}
+
+#btnRetorna:hover {
+  font-size: 16px;
+}
+
+#btnRetorna:active {
+  background-color: white;
+  font-size: 16px;
+}
 
 }
 
-#apaga
+@media screen and (max-device-width: 400px) {
+/*barra de pesquisa*/
+#divBusca {
+  display: flex;
+  justify-content:space-between;
+  margin: 20px auto;
+  background-color: #E0EEEE;
+  border: solid 1px #5F9EA0;
+  border-radius: 3px;
+  width: 99vw;
+  height: 10vw;
+}
+
+#txtBusca {
+  float: left;
+  background-color: transparent;
+  padding: 0px 0px 0px 0px;
+  padding-left: 5px;
+  font-size: 3vw;
+  border: none;
+  height: auto;
+  width: auto;
+}
+
+#btnBusca {
+  border: none;
+  height: 10vw;
+  border-radius: 3px;
+  width: 40vw;
+  font-weight: bold;
+  background: #5F9EA0;
+  font-size: 3vw;
+}
+
+#btnBusca:hover {
+  font-size: 4vw;
+}
+
+#btnBusca:active {
+  background-color: white;
+  font-size: 4vw;
+}
+
+#divBusca img {
+  border-radius: 3px;
+  float: left;
+  width: auto;
+  height: 10vw;
+}  
+
+
+.bloco {
+  border-radius: 10px;
+}
+
+#btnRetorna
 {
-  display:none;
-} 
+  height: 10vw;
+  border-radius: 3px;
+  width: 40vw;
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+#btnRetorna:hover {
+  font-size: 16px;
+}
+
+#btnRetorna:active {
+  background-color: white;
+  font-size: 16px;
+}
+
+}

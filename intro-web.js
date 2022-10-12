@@ -1,5 +1,7 @@
+/*----------------------------------------------------------------*/
 // time semana 1
 //item 1 e 2 
+/*----------------------------------------------------------------*/
 const time_1 = "flamengo"
 const maiorRival_1 = "vasco"
 const temMundial_1 = true
@@ -40,9 +42,10 @@ const copaDoBrasil_4 = 1
 const titulos_4 = ["libertadores: 0", "brasileirão: 1", "copa do brasil: 1"] //=> na ordem: liberta, brasileirão e copa do brasil 
 const imagem_4 = "./midia/CAP.png"
 
-
+/*----------------------------------------------------------------*/
 //semana 1 item 3
 //total de títulos
+/*----------------------------------------------------------------*/
 const total_1 = libertadores_1 + brasileirao_1 + copaDoBrasil_1
 const total_2 = libertadores_2 + brasileirao_2 + copaDoBrasil_2
 const total_3 = libertadores_3 + brasileirao_3 + copaDoBrasil_3
@@ -53,7 +56,9 @@ const media = (total_1 + total_2 + total_3 + total_4) / 4
 console.log("SEMANA 1 ITEM 3:")
 console.log("a média de títulos dos times é: ", media)
 
+/*----------------------------------------------------------------*/
 // semana 1 item 4
+/*----------------------------------------------------------------*/
 console.log("SEMANA 1 ITEM 4:")
 //verifica se todos já foram rebaixados
 const todosRebaixados = (foiRebaixado_1 && foiRebaixado_2 && foiRebaixado_3 && foiRebaixado_4)
@@ -106,8 +111,10 @@ console.log(
         "\nquantas copas do brasil o time tem? " + copaDoBrasil_4 +
         "\nresumo de títulos time: " + titulos_4)    
 
+/*----------------------------------------------------------------*/
 //// transformar em objeto 
 //semana 2 item 1
+/*----------------------------------------------------------------*/
 const objeto_1 =
 {
     time: "flamengo",
@@ -117,8 +124,8 @@ const objeto_1 =
     libertadores: 2,
     brasileirao: 8,
     copaDoBrasil: 3,
-    //titulos: ["libertadores: 2", "brasileirão: 8", "copa do brasil: 3"],
-    //imagem: "./midia/Flamengo_braz_logo.svg.png"
+    titulos: ["libertadores: 2", "brasileirão: 8", "copa do brasil: 3"],
+    imagem: "./midia/Flamengo_braz_logo.svg.png"
 }
 
 const objeto_2 =
@@ -160,9 +167,9 @@ const objeto_4 =
     imagem: "./midia/CAP.png"
 }
 
-
+/*----------------------------------------------------------------*/
 // semana 2 item 2
-
+/*----------------------------------------------------------------*/
 const arrayObjetos = [] // = [...objeto_1.titulos , ...objeto_2.titulos , ...objeto_3.titulos]
 // semana 2 item 3
 console.log("SEMANA 2 ITEM 3:")
@@ -172,8 +179,10 @@ arrayObjetos.push(objeto_3)
 arrayObjetos.push(objeto_4)
 console.log(arrayObjetos)
 
+/*----------------------------------------------------------------*/
 // condição tem mundial
 // semana 2 item 4 e 5
+/*----------------------------------------------------------------*/
 console.log("SEMANA 2 ITEM 4 e 5:")
 let arrayObjetosIfElse = []
 console.log("adicione somente os times que tem mundial: ")
@@ -212,8 +221,10 @@ else {
 console.log("informações dos times que possuem mundial: ")
 console.log(arrayObjetosIfElse)
 
+/*----------------------------------------------------------------*/
 /////semana 3 
 ////item 1 loop que guarda os array dos objetos em uma única variável
+/*----------------------------------------------------------------*/
 console.log("SEMANA 3 ITEM 1:")
 let i = 0 
 let novaTitulos_1 = "" //variavel que vai receber os arrays no loop
@@ -282,11 +293,11 @@ function arrayObjetosToStrings(arrayObjetosFunction, stringFunction)
     pesquisa = +0
     for(i=0; i<arrayObjetosFunction.length; i++) 
     {    
-        if(arrayObjetosFunction[i].time === stringFunction.toLowerCase())
+        if(arrayObjetosFunction[i].time === stringFunction.toLowerCase().trim())
         {
             pesquisa = Number(1)
             console.log("o resultado da pesquisa foi: ", arrayObjetosFunction[i])
-            return resultadoNaTela(i) 
+            return resultadoNaTela(i) //declarada na parte do DOM
         }
     }
     if(pesquisa !== 1)
@@ -295,39 +306,47 @@ function arrayObjetosToStrings(arrayObjetosFunction, stringFunction)
     }
 }
 
+/*----------------------------------------------------------------*/
+///////DOM 
+/*----------------------------------------------------------------*/
+
 //let string = prompt("digite a string que será pesquisada")
 var string
 //clique no botão
-function pesquisaItem()
+function pesquisaItem() //Pega o valor recebido na barra de pesquisa
 {
 string = document.getElementById("txtBusca").value
-return arrayObjetosToStrings(arrayObjetos, string)
+return arrayObjetosToStrings(arrayObjetos, string) //chama a função que vai pesquisar o objeto
 }
 
-//enter
+//enter: serve apenas para acrescentar o enter como botão de busca também
 function digitou(e) 
 {
     if (e.keyCode == 13) {
       // AO PRESSIONAR A TECLA "ENTER"
-      return pesquisaItem()
+      return pesquisaItem() //funciona como botão de busca
     }
 }
-///////DOM esconde itens
+
+// insere os itens do objeto na lista do html. Preferi fazer manualmente
 //function insereItem()
 //{ 
-    for (let elementos in objeto_1) ////// se for para fazer a iteração apenas pro array
-    {
-        lista = document.getElementById("list-lateral-fla")
-        item = document.createElement("ul")
-        item.innerHTML = `${elementos}: ${objeto_1[elementos]}`
-        lista.appendChild(item)
-    }
+    // for (let elementos in objeto_1) ////// se for para fazer a iteração apenas pro array
+    // {
+    //     lista = document.getElementById("list-lateral-fla")
+    //     item = document.createElement("ul")
+    //     item.innerHTML = `${elementos}: ${objeto_1[elementos]}`
+    //     lista.appendChild(item)
+    // }
 //}
 
+/*----------------------------------------------------------------*/
 //////Funcao pra aparecer o time pesquisado na tela
+//display: none em todos os itens, menos o que foi pesquisado
+/*----------------------------------------------------------------*/
 function resultadoNaTela(i)
 {
-    for(j=0; j<=arrayObjetos.length;j++)
+    for(j=0; j<arrayObjetos.length;j++)
     {
         if(j !== i)
         {
@@ -335,6 +354,15 @@ function resultadoNaTela(i)
             apagar.setAttribute("id", "apaga")
         }
     }
+    //Chama o botão "retornar" que manda de volta para o início
+    classSecRetornar = document.getElementById("retornar")
+    classSecRetornar = classSecRetornar.classList.remove("sec-retornar")
+}
 
-//}
+/*----------------------------------------------------------------*/
+//////ao pressionar o botão retornar, volta para o início
+/*----------------------------------------------------------------*/
+function retornaInicio(e) 
+{
+    document.location.reload(true); //atualiza a página
 }
