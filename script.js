@@ -194,12 +194,11 @@ for (author of authorsLive) {
 
 //CARDS
 let keller = document.getElementById('author-1')
-keller.innerHTML = ` <img src="assets/keller.png"
+keller.innerHTML = ` <img src="assets/Timothy Keller.png"
 height="200px">
 <ul>
 <li>
-    <h2><a href="https://en.wikipedia.org/wiki/Tim_Keller_(pastor)" target="_blank">Timothy
-            Keller</a></h2>
+    <h2><a href="https://en.wikipedia.org/wiki/Tim_Keller_(pastor)" target="_blank">${authorsLive[1].author}</a></h2>
 </li>
 <li>Age: ${authorsLive[1].age}</li>
 <li>Number of Books: ${authorsLive[1].numberBooks}</li>
@@ -255,6 +254,11 @@ height="200px">
 
 //PESQUISA DE FILTRO
 function filtrar(obj) {
+    let keller = document.getElementById('author-1');
+    let piper = document.getElementById('author-2');
+    let rothfuss = document.getElementById('author-3');
+    let gaiman = document.getElementById('author-4')
+
     const busca = document.getElementById('busca');
     let str = busca.value;
 
@@ -268,13 +272,73 @@ function filtrar(obj) {
         const notFound = alert('Autor não encontrado')
         return notFound;
     }
+
+
+    // if (str === obj[0].author) {
+    //     keller.remove();
+    //     rothfuss.remove();
+    //     gaiman.remove();
+
+    //     let piper1 = document.createElement('article');
+    //     piper1.innerHTML = `scsdcsdc`
+    // } else if (str === obj[1].author) {
+    //     piper.remove();
+    //     rothfuss.remove();
+    //     gaiman.remove()
+    // }
+
+    // if (str !== obj[0].author && str !== obj[1].author && str !== obj[2].author && str !== obj[3].author) {
+    //     const notFound = alert('Autor não encontrado')
+    //     return notFound;
+    // }
+
+
 }
 
 
 function buscar(event) {
     event.preventDefault();
-    let filtro = filtrar(authorsLive)
-    console.log(filtro)
+    let filtro = filtrar(authorsLive);
+
+    const pesquisa = document.getElementById('authorsrc')
+    pesquisa.style.visibility =  'visible';
+    
+    document.getElementById('author-1').style.visibility = 'hidden';
+    document.getElementById('author-1').style.width = '0';
+    document.getElementById('author-1').style.width = '0';
+
+    document.getElementById('author-2').style.visibility = 'hidden';
+    document.getElementById('author-2').style.width = '0';
+    document.getElementById('author-2').style.width = '0';
+
+    document.getElementById('author-3').style.visibility = 'hidden';
+    document.getElementById('author-3').style.width = '0';
+    document.getElementById('author-3').style.width = '0';
+
+    document.getElementById('author-4').style.visibility = 'hidden';
+    document.getElementById('author-4').style.width = '0';
+    document.getElementById('author-4').style.width = '0';
+
+    pesquisa.style.width = '40%';
+    pesquisa.style.height= '300px';
+    pesquisa.style.background = 'blue';
+
+    function hover(){
+        const pesquisa = document.getElementById('authorsrc');
+        return pesquisa.style.background = 'yellow'
+    }
+        
+    pesquisa.innerHTML = ` <img src="assets/piper.png"
+    height="200px">
+    <ul>
+    <li>
+        <h2><a href="https://en.wikipedia.org/wiki/John_Piper_(theologian)" target="_blank">${filtro.author}</a></h2>
+    </li>
+    <li>Age: ${filtro.age}</li>
+    <li>Number of Books: ${filtro.numberBooks}</li>
+    <li>Is living: ${filtro.live}</li>
+    </ul>
+    `
 }
 
 buscar()

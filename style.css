@@ -86,10 +86,20 @@ main {
   border-radius: 10px;
   font-family: "Lato", sans-serif;
   color: white;
-   transition: 0.5s;
+  transition: 0.5s;
 }
 
 .author:hover {
+  background-color: #ffd42b;
+}
+
+#authorsrc{
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+#authorsrc:hover{
   background-color: #ffd42b;
 }
 
