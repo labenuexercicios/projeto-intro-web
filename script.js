@@ -237,9 +237,9 @@ function buscaTitulo(array, str) {
         li1.innerHTML += `nome: `;
         li1.appendChild(ancora);
         li2.innerHTML += `Genero: ${arrayComObjSerie[i].genero}`;
-        li3.innerHTML += arrayComObjSerie[i].totTemporadas;
-        li4.innerHTML += arrayComObjSerie[i].elenco;
-        li5.innerHTML += arrayComObjSerie[i].sinopse;
+        li3.innerHTML += `Total de temporadas: ${arrayComObjSerie[i].totTemporadas}`;
+        li4.innerHTML += `Elenco ${arrayComObjSerie[i].elenco}`;
+        li5.innerHTML += `Sinopse: ${arrayComObjSerie[i].sinopse}`;
 
         main.appendChild(div);
         div.appendChild(section);
@@ -249,6 +249,7 @@ function buscaTitulo(array, str) {
         ul.appendChild(li2);
         ul.appendChild(li3);
         ul.appendChild(li4);
+        ul.appendChild(li5);
       }
     }
   }
@@ -311,7 +312,7 @@ function btnBusca(event) {
   event.preventDefault();
   let input = document.getElementById("input").value.toLowerCase();
   if (input == " ") {
-    console.log("Seriado não encontrado");
+    arlet("Seriado não encontrado");
   } else {
     document.getElementById("container").remove();
     buscaTitulo(arrayComObjSerie, input);

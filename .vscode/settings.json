@@ -1,4 +1,4 @@
 {
-    "editor.columnSelection": true,
+    "editor.columnSelection": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
