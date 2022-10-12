@@ -223,12 +223,12 @@ console.log(recebeArrayObjetos(todosPets, "BRISA"))
 
 //DOM INSERIR OBJETOS
 
-const valoresObjeto = ["Nome", "Idade", "Espécie", "Raça", "Vacina", "Brinquedos", ""]
+const valoresObjeto = ["Idade", "Espécie", "Raça", "Vacina", "Brinquedos", "", ""]
 const tabela = document.getElementsByClassName("listaPet")
 
 let c = 0
 for (let i in nomePet1) {
-    if (i !== "imagem") {
+    if (i !== "imagem" && i !== "nome") {
         let linha = document.createElement("li")
         const conteudoNovo = document.createTextNode(`${valoresObjeto[c]}: ${nomePet1[i]}`)
         linha.appendChild(conteudoNovo)
@@ -240,7 +240,7 @@ for (let i in nomePet1) {
 
 let c1 = 0
 for (let i in nomePet2) {
-    if (i !== "imagem") {
+    if (i !== "imagem" && i !== "nome") {
         let linha = document.createElement("li")
         const conteudoNovo = document.createTextNode(`${valoresObjeto[c1]}: ${nomePet2[i]}`)
         linha.appendChild(conteudoNovo)
@@ -252,7 +252,7 @@ for (let i in nomePet2) {
 
 let c2 = 0
 for (let i in nomePet3) {
-    if (i !== "imagem") {
+    if (i !== "imagem" && i !== "nome") {
         let linha = document.createElement("li")
         const conteudoNovo = document.createTextNode(`${valoresObjeto[c2]}: ${nomePet3[i]}`)
         linha.appendChild(conteudoNovo)
@@ -264,7 +264,7 @@ for (let i in nomePet3) {
 
 let c3 = 0
 for (let i in nomePet4) {
-    if (i !== "imagem") {
+    if (i !== "imagem" && i !== "nome") {
         let linha = document.createElement("li")
         const conteudoNovo = document.createTextNode(`${valoresObjeto[c3]}: ${nomePet4[i]}`)
         linha.appendChild(conteudoNovo)
