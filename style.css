@@ -1,249 +1,85 @@
-*,
-*::before,
-*::after {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(0.5em, 0.7em + 1vw, 1em);
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
+}
+#header{
+    background-color: #225930;;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+    position: sticky;
+    top: 0;
+}
+#main{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 87.5%;
+}
+.pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1/2;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+}
+#input{
+    margin-right: 1em;
+    width: 25em;
+    padding: 0.5em;
+    border-radius:  5% solid black;
+    text-align: center;
+    background-color: whitesmoke
+}
+#btnPesquisa{
+    height: 2.5em;
+    padding: 0.4em;
+    background-color: rgb(30, 30, 241);
+    border:  solid ;
+
+}
+#btnPesquisa:hover{
+    display: block;
+    
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-self: center;
+    
+    
+}
+.card{
+    display: flex;
+    border: 1em solid #225930;
+    margin-bottom: 1em;
+    background-color: #225930;
+    color: aliceblue;
+    border-radius: 0.7em;
+    text-align: left;
+}
+.img{
+    width: 9em;
+    height: 10em;
+    border-radius: 1em solid transparent;
+}
+.listaInformacoes{
     list-style: none;
+    margin-left: 1em;
 }
 a{
     text-decoration: none;
-    color: blanchedalmond;
-}   
-
-
-
-body {
-    display: grid;
-    grid-template-rows: auto, 1fr, auto;
-    place-items: center;
+    color: antiquewhite;
 }
-#header {
-    background-color: #225930;
-    grid-row: -1;
-    padding: 1.5%;
+#footer{
     display: flex;
-    flex-direction: row;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    color: white;
-    justify-content: center;
-    height: 3vh;
-}
-#footer {
-    display: flex;
-    grid-row: 3/4;
     background-color: #225930;
-    width: 100vw;
-    color: white;
-    height: auto;
-    position: sticky;
-    bottom: 0px;
     flex-direction: column;
-    align-items: center;
-    padding: 1em;
+    position: absolute;
+    width: 100%;
     
-}
-@media screen and (min-width:1023px) and (max-width: 2559px) {
-
-
-    #main {
-        grid-row: 2/3;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        justify-content: flex-start;
-        align-items: center;
-        margin-top: 4em;
-    }
-
-
-    .pesquisa {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        align-items: center;
-    }
-
-    #input {
-        width: 50%;
-        border: 0.1em solid black;
-        border-radius: 0.2em;
-        text-align: center;
-        padding: 0.2em;
-        margin: 1em;
-        height: 2em;
-    }
-
-    #btnPesquisa {
-        font-size: 0.7rem;
-        margin-left: 1em;
-        border-radius: 0.2em;
-        border: 0.1em solid black;
-        padding: 0.2em;
-        height: 2em;
-    }
-    .card {
-        display: flex;
-        flex-direction: row;
-        margin: 1em;
-        border: 1px solid 0C261D;
-        background-color: #225930;
-        border-radius: 10px 40px 30px;
-        border-right: 10px solid #0C261D;
-        /* justify-content: center; */
-        width: 60vw;
-        align-items: center;
-    }
-}
-
-.listaInformacoes {
-    margin-top: 1.3em;
-    margin-left: 2em;
-    margin-bottom: 1em;
-    line-height: 150%;
-    width: 90%;
-    color: white;
-}
-
-.img {
-    height: 10em;
-    width: 10em;
-    margin: 1em;
-    border-radius: 10em;
-}
-
-.card {
-    display: flex;
-    flex-direction: row;
-    margin: 1em;
-    border: 1px solid 0C261D;
-    background-color: #225930;
-    border-radius: 10px 40px 30px;
-    border-right: 10px solid #0C261D;
-    width: 80vw;
-    align-items: center;
-}
-
-@media screen and (min-width:427px) and (max-width: 1022px) {
-    #main{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 3.7em;
-    }
-    .pesquisa {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        align-items: center;
-        margin: 1em;
-    }
-    .card {
-        display: flex;
-        flex-direction: row;
-        margin: 1em;
-        border: 1px solid 0C261D;
-        background-color: #225930;
-        border-radius: 10px 40px 30px;
-        border-right: 10px solid #0C261D;
-        width: 80vw;
-        align-items: center;
-    }
-}
-@media screen and (max-width:426px) {
-    #main{
-        display: flex;
-        flex-direction: column;
-        margin-top: 2em;
-        align-items: center;
-        grid-row: 2/3;
-
-    }
-    .card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 65%;
-    }
-    .pesquisa {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        align-items: center;
-        margin: 1em;
-    }
-    .img {
-        height: 10em;
-        width: 10em;
-        margin: 1em;
-        border-radius: 1em;
-    }
-    #input {
-        width: 50%;
-        border: 0.1em solid black;
-        border-radius: 0.2em;
-        text-align: center;
-        padding: 0.2em;
-        margin: 1em;
-        height: 2em;
-    }
-
-    #btnPesquisa {
-        font-size: 0.7rem;
-        margin-left: 1em;
-        border-radius: 0.2em;
-        border: 0.1em solid black;
-        padding: 0.2em;
-        height: 2em;
-    }
-}
-
-@media screen and (min-width:2560px) {
-    *{
-        font-size: clamp(1em, 0.5em + 0.5vw, 2em);
-
-    }
-    #main{
-        margin-top: 10em;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        
-
-    }
-    .card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 25%;
-    }
-    .pesquisa {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        align-items: center;
-        margin: 1em;
-
-    }
-    #input {
-        width: 50%;
-        border: 0.1em solid black;
-        border-radius: 0.2em;
-        text-align: center;
-        padding: 0.2em;
-        margin: 1em;
-        height: 2em;
-    }
-    #btnPesquisa {
-        font-size: 0.7rem;
-        margin-left: 1em;
-        border-radius: 0.2em;
-        border: 0.1em solid black;
-        padding: 0.2em;
-        height: 2em;
-    }
 }
