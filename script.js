@@ -254,11 +254,6 @@ height="200px">
 
 //PESQUISA DE FILTRO
 function filtrar(obj) {
-    let keller = document.getElementById('author-1');
-    let piper = document.getElementById('author-2');
-    let rothfuss = document.getElementById('author-3');
-    let gaiman = document.getElementById('author-4')
-
     const busca = document.getElementById('busca');
     let str = busca.value;
 
@@ -272,27 +267,6 @@ function filtrar(obj) {
         const notFound = alert('Autor não encontrado')
         return notFound;
     }
-
-
-    // if (str === obj[0].author) {
-    //     keller.remove();
-    //     rothfuss.remove();
-    //     gaiman.remove();
-
-    //     let piper1 = document.createElement('article');
-    //     piper1.innerHTML = `scsdcsdc`
-    // } else if (str === obj[1].author) {
-    //     piper.remove();
-    //     rothfuss.remove();
-    //     gaiman.remove()
-    // }
-
-    // if (str !== obj[0].author && str !== obj[1].author && str !== obj[2].author && str !== obj[3].author) {
-    //     const notFound = alert('Autor não encontrado')
-    //     return notFound;
-    // }
-
-
 }
 
 
@@ -382,7 +356,7 @@ function buscar(event) {
         height="200px">
         <ul>
         <li>
-            <h2><a href="https://en.wikipedia.org/wiki/John_Piper_(theologian)" target="_blank">${filtro.author}</a></h2>
+            <h2><a href="https://en.wikipedia.org/wiki/Tim_Keller_(pastor)" target="_blank">${filtro.author}</a></h2>
         </li>
         <li>Age: ${filtro.age}</li>
         <li>Number of Books: ${filtro.numberBooks}</li>
@@ -424,7 +398,7 @@ function buscar(event) {
         height="200px">
         <ul>
         <li>
-            <h2><a href="https://en.wikipedia.org/wiki/John_Piper_(theologian)" target="_blank">${filtro.author}</a></h2>
+            <h2><a href="https://en.wikipedia.org/wiki/Patrick_Rothfuss" target="_blank">${filtro.author}</a></h2>
         </li>
         <li>Age: ${filtro.age}</li>
         <li>Number of Books: ${filtro.numberBooks}</li>
@@ -454,7 +428,6 @@ function buscar(event) {
         pesquisa.style.height = '300px';
         pesquisa.style.background = '#154cf2';
 
-
         pesquisa.addEventListener('mouseenter', function hover() {
             return pesquisa.style.background = '#ffd42b'
         })
@@ -466,7 +439,7 @@ function buscar(event) {
         height="200px">
         <ul>
         <li>
-            <h2><a href="https://en.wikipedia.org/wiki/John_Piper_(theologian)" target="_blank">${filtro.author}</a></h2>
+            <h2><a href="https://en.wikipedia.org/wiki/Neil_Gaiman" target="_blank">${filtro.author}</a></h2>
         </li>
         <li>Age: ${filtro.age}</li>
         <li>Number of Books: ${filtro.numberBooks}</li>
