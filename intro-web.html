@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grandes times do futebol brasileiro 2022</title>
+    <script src="intro-web.js" defer></script>
+    <link rel="stylesheet" href="intro-web.css">
+</head>
+
+<body>
+    <header>
+        <h1> Grandes times do Brasil</h1>
+    </header>
+
+    <main>
+        <section id="divBusca">
+            <img src="./midia/lupa.jpg" alt="Buscar..." />
+            <input type="text" id="txtBusca" onkeydown="digitou(event)" placeholder="Pesquise um time..." />
+            <button id="btnBusca" onclick="pesquisaItem(event)">Buscar</button>
+        </section>
+
+        <section class="sec-bloc">
+
+            <article class="bloco" id="bloco-1">
+                <img class="dimension" id="img-fla" src="./midia/Flamengo_braz_logo.svg.png" alt="Flamengo">
+                <ol class="list-lateral" id="list-lateral-fla">
+                    <ul>Time:<strong> <a href="https://pt.wikipedia.org/wiki/Clube_de_Regatas_do_Flamengo"
+                                style="color: black" target="_blank"> Flamengo</a></strong> </ul>
+                    <ul>Maior Rival: <strong>Vasco</strong></ul>
+                    <ul>Tem Mundial: <strong>true</strong></ul>
+                    <ul>Foi Rebaixado: <strong>false</strong></ul>
+                    <ul>Libertadores: <strong>2</strong></ul>
+                    <ul>Brasileirao: <strong>8</strong></ul>
+                    <ul>Copa do Brasil: <strong>3</strong></ul>
+                    <!-- <ul>titulos: <strong>["libertadores: 2", "brasileirão: 8", "copa do brasil: 3"]</strong></ul> -->
+                    <!-- <ul><a href="https://pt.wikipedia.org/wiki/Clube_de_Regatas_do_Flamengo" target="_blank"> Página do wikipedia</a></ul>-->
+                </ol>
+            </article>
+
+            <article class="bloco" id="bloco-2">
+                <img class="dimension" id="img-pal" src="./midia/Palmeiras.svg.png" alt="Palmeiras">
+                <ol class="list-lateral">
+                    <ul>Time:<strong><a href="https://pt.wikipedia.org/wiki/Sociedade_Esportiva_Palmeiras"
+                                style="color: white" target="_blank"> Palmeiras</a></strong> </ul>
+                    <ul>Maior Rival: <strong>Corinthians</strong></ul>
+                    <ul>Tem Mundial: <strong>false</strong></ul>
+                    <ul>Foi Rebaixado: <strong>true</strong></ul>
+                    <ul>Libertadores: <strong>3</strong></ul>
+                    <ul>Brasileirao: <strong>10</strong></ul>
+                    <ul>Copa do Brasil: <strong>4</strong></ul>
+                    <!-- <ul><a href="https://pt.wikipedia.org/wiki/Sociedade_Esportiva_Palmeiras" target="_blank"> Página do wikipedia</a></ul> -->
+                    <!-- <ul>titulos: <strong>["libertadores: 3", "brasileirão: 10", "copa do brasil: 4"]</strong></ul> -->
+                </ol>
+            </article>
+
+            <article class="bloco" id="bloco-3">
+                <img class="dimension" id="img-cru" src="./midia/CruzeiroEC2021.png" alt="Cruzeiro">
+                <ol class="list-lateral">
+                    <ul>Time:<strong><a href="https://pt.wikipedia.org/wiki/T%C3%ADtulos_do_Cruzeiro_Esporte_Clube"
+                                style="color: white" target="_blank"> Cruzeiro</a></ul></strong> </ul>
+                    <ul>Maior Rival: <strong>Atlético MG</strong></ul>
+                    <ul>Tem Mundial: <strong>false</strong></ul>
+                    <ul>Foi Rebaixado: <strong>true</strong></ul>
+                    <ul>Libertadores: <strong>2</strong></ul>
+                    <ul>Brasileirao: <strong>4</strong></ul>
+                    <ul>Copa do Brasil: <strong>6</strong></ul>
+                    <!-- <ul>titulos: <strong>["libertadores: 3", "brasileirão: 10", "copa do brasil: 4"]</strong></ul> -->
+                    <!-- <ul><a href="https://pt.wikipedia.org/wiki/Club_Athletico_Paranaense" target="_blank"> Página do wikipedia</a></ul> -->
+                </ol>
+            </article>
+
+            <article class="bloco" id="bloco-4">
+                <img class="dimension" id="img-cap" src="./midia/180px-Club_Athletico_Paranaense_2019.png" alt="CAP">
+                <ol class="list-lateral" id="list-lateral-cap">
+                    <ul>Time:<strong><a href="https://pt.wikipedia.org/wiki/Club_Athletico_Paranaense"
+                                style="color: red" target="_blank"> Athletico Paranaense</a></ul></strong> </ul>
+                    <ul>Maior Rival: <strong>Coritiba</strong></ul>
+                    <ul>Tem Mundial: <strong>false</strong></ul>
+                    <ul>Foi Rebaixado: <strong>true</strong></ul>
+                    <ul>Libertadores: <strong>0</strong></ul>
+                    <ul>Brasileirao: <strong>1</strong></ul>
+                    <ul>Copa do Brasil: <strong>1</strong></ul>
+                    <!-- <ul>titulos: <strong>["libertadores: 3", "brasileirão: 10", "copa do brasil: 4"]</strong></ul> -->
+                    <!-- <ul><a href="https://pt.wikipedia.org/wiki/Club_Athletico_Paranaense" target="_blank"> Página do wikipedia</a></ul> -->
+                </ol>
+            </article>
+        </section>
+        <!-- ficará invisível até algum item ser pesquisado-->
+        <section class="sec-retornar" id="retornar">
+            <button id="btnRetorna" onclick="retornaInicio(event)">Retornar</button>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <h3>Criado por Luiz Henrique Marinho</h3>
+        <p><a href="https://www.instagram.com/luiz_marinho97/" target="_blank"><img class="imagem-insta"
+                    src="./midia/Instagram_icon.png.webp" /></a>
+            <a href="https://www.linkedin.com/in/luiz-henrique-marinho-23456019b" target="_blank"><img
+                    class="imagem-linkedin" src="./midia/linkedin.png" /></a>
+            <a href="https://github.com/LuizHenriqueMarinho" target="_blank"><img class="imagem-git"
+                    src="./midia/github.jpg" /></a>
+        </p>
+    </footer>
+</body>
+
+</html>
