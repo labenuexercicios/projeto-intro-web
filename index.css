@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: var(--warning);
+    display: grid;
+    justify-items: center;
+}
+    
+:root{ 
+    --warning: #ffc107;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+
+}
+
+main{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    justify-items: center;
+
+}
+/* .search-botton: active{
+        color:orange;
+        .botton:houver; 
+        background-color: orange;*/
+/* } */
+
+.tituloSuco1, .tituloSuco2, .tituloSuco3{
+    font-size: 1em;
+    background-color:var(indigo);  
+    display: grid;
+    justify-items: start;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+li{
+    font-size: 1em;    
+    list-style: none;
+    display: grid;
+    justify-items: center;
+}
+
+#img-1{
+    background-color:var(#28a745);
+}
+
+
+
+#img-2{
+    background-color: var(#007bff);   
+}
+
+
+#img-3{
+    background-color:var(#007bff)
+}
