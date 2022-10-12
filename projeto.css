@@ -25,9 +25,10 @@ background-color: white;
 }
 
 section {
+display: grid;
+grid-template-columns: 1fr 1fr;
 padding: 5vh 5vw ;
 background-color: rgba(0, 0, 0, 0.144); 
-text-align: justify;
 margin: 2vh 2vw;
 
 }
@@ -40,8 +41,8 @@ section:hover{
 footer {
     background-color: black;
     color: white;
-    text-align: center;
-    position: relative;
+    text-align: space-around;
+    display: flex;
     bottom: 0%;
 }
 
@@ -77,3 +78,8 @@ input {
 ul {
     list-style-type: none;
 }
+
+@font-face {
+    font-family: "courier new";
+    src: url(./media/courier-new.ttf);
+ }
