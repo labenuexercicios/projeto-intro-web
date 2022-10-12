@@ -17,7 +17,7 @@ header {
     font-family: fantasy;
     height: 8vh;
     background-image: url(./asset/PataDogTransparente.png);
-    background-position-y: 33vh;
+    background-position-y: 330px;
     background-size: 40rem;
     color: white;
     text-shadow: 1px 1px black;
@@ -136,9 +136,9 @@ footer {
     height: 8vh;
     background-image: url(/asset/patacat20.png);
     background-repeat: repeat;
-    background-position-y: 39vh;
-    background-position-x: 50vw;
-    background-size: 60em;
+    background-position-y: 340px;
+    background-position-x: 730px;
+    background-size: 55em;
     font-size: 16px;
 }
 
@@ -174,16 +174,12 @@ footer {
     font-size: 20px;
 }
 
-@media screen and (max-device-width: 1440px) and (min-device-width: 1000px) {
-    
-    header{
-        background-position-y: 24vh;
-    }
+@media screen and (max-device-width: 1440px) and (min-device-width: 1220px) {
     
     #buscador {
         height: 5vh;
-        width: 26vw;
-        border-radius: 2rem;
+        width: 30vw;
+        border-radius: 14px;
         margin-top: 2rem;
         padding: 1rem;
         
@@ -191,10 +187,15 @@ footer {
 
     button {
         width: 8vw;
+        border-radius: 10px;
+    }
+
+    ::-webkit-input-placeholder{
+        font-size: 12px;
     }
 
     #nome {
-        width: 25vh;
+        width: 24vh;
         height: 3vh;
     }
 
@@ -203,29 +204,23 @@ footer {
     }
 
     .todosPets {
-        height: 75vh;
+        height: 72vh;
         width: 24vw;
     }
     .imagem {
-        width: 20vw;
+        width: 15vw;
         height: 28vh;
     }
 
     .listaPet {
-        font-size: 24px;
+        font-size: 18px;
     }
-
-    footer{
-        background-position-y: 27vh;
-    }
-
 }
-@media screen and (max-device-width: 1000px) and (min-device-width: 750px) {
+
+@media screen and (max-device-width: 1219px) and (min-device-width: 750px) {
 
     header{
-        background-position-y: 47vh;
         height: 10vh;
-        background-size: 35rem;
         font-size: 14px;
     }
 
@@ -238,7 +233,7 @@ footer {
     }
 
     ::-webkit-input-placeholder{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     #nome {
@@ -290,18 +285,15 @@ footer {
     }
 
     footer{
-        background-position-y: 32vh;
-        background-size: 30rem;
+        background-position-x: 470px;
     }
 }
 
-@media screen and (max-device-width: 750px) and (min-device-width: 350px) {
+@media screen and (max-device-width: 749px) and (min-device-width: 440px) {
 
 
     header{
         font-size: 10px;
-        background-position-y: 38vh;
-        background-size: 29rem;
     }
 
     #buscador {
@@ -322,7 +314,7 @@ footer {
     }
 
     button {
-        width: 16vw;
+        width: 12vw;
         border-radius: 6px;
     }
 
@@ -345,7 +337,7 @@ footer {
     }
 
     .imagem {
-        width: 25vw;
+        width: 20vw;
         height: 16vh;
         grid-column: 3/4;
         grid-row: 1/3;
@@ -364,18 +356,17 @@ footer {
 
     footer{
         font-size: 10px;
-        background-position-y: 31vh;
-        background-size: 30rem;
+        background-position-y: 2975px;
+        background-position-x: 900px;
+
     }
 }
 
-@media screen and (max-device-width: 350px) {
+@media screen and (max-device-width: 439px) {
 
 
     header{
         font-size: 10px;
-        background-position-y: 34vh;
-        background-size: 25rem;
     }
 
     #buscador {
@@ -387,7 +378,7 @@ footer {
     }
 
     ::-webkit-input-placeholder{
-        font-size: 6px;
+        font-size: 8px;
     }
 
     #nome {
@@ -396,8 +387,8 @@ footer {
     }
 
     button {
-        width: 20vw;
-        border-radius: 6px;
+        width: 10vw;
+        border-radius: 4px;
         font-size: 10px;
     }
 
@@ -439,8 +430,8 @@ footer {
 
     footer{
         font-size: 10px;
-        background-position-y: 27vh;
-        background-size: 25rem;
+        background-position-y: 2975px;
+        background-position-x: 760px;
     }
 }
 
