@@ -17,7 +17,7 @@ header {
     font-family: fantasy;
     height: 8vh;
     background-image: url(./asset/PataDogTransparente.png);
-    background-position-y: 36vh;
+    background-position-y: 33vh;
     background-size: 40rem;
     color: white;
     text-shadow: 1px 1px black;
@@ -41,8 +41,8 @@ main {
     gap: 1rem;
     background-color: #ff8c0072;
     height: 6vh;
-    width: 26vw;
-    border-radius: 2rem;
+    width: 31vw;
+    border-radius: 16px;
     margin-top: 2rem;
     font-size: 16px;
 }
@@ -52,7 +52,7 @@ main {
 }
 
 #nome {
-    width: 35vh;
+    width: 32vh;
     height: 3vh;
     background: none;
     border: 0;
@@ -66,7 +66,7 @@ button {
     align-items: center;
     background-color: white;
     color: black;
-    border-radius: 2rem;
+    border-radius: 16px;
     border: 0;
     height: 3.5vh;
     width: 5vw;
@@ -77,7 +77,7 @@ button {
 button:active {
     background-color: #f75216bd;
     color: white;
-    border-radius: 2rem;
+    border-radius: 16px;
 }
 
 .geralPets {
@@ -91,7 +91,7 @@ button:active {
     background-color: #ff8c0072;
     border-radius: 8px;
     box-shadow: 2px 2px black;
-    height: 77vh;
+    height: 73vh;
     width: 24vw;
     padding: 1rem;
     display: grid;
@@ -105,12 +105,12 @@ button:active {
     font-family: fantasy;
     text-shadow: 1px 1px black;
     grid-row: 1 / 2;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .imagem {
     width: 20vw;
-    height: 40vh;
+    height: 30vh;
     border-radius: 50%;
     border: 2px solid white;
     box-shadow: 1px 1px black;
@@ -125,7 +125,6 @@ button:active {
     grid-row: 3 / 4;
     display: flex;
     flex-direction: column;
-    font-size: 16px;
 }
 
 footer {
@@ -137,7 +136,7 @@ footer {
     height: 8vh;
     background-image: url(/asset/patacat20.png);
     background-repeat: repeat;
-    background-position-y: 40vh;
+    background-position-y: 39vh;
     background-position-x: 50vw;
     background-size: 60em;
     font-size: 16px;
@@ -173,44 +172,6 @@ footer {
 
 .listaPet {
     font-size: 20px;
-}
-
-@media screen and (min-device-width: 1440px){
-    
-    header{
-        background-position-y: 24vh;
-    }
-
-    #buscador {
-        height: 6vh;
-        width: 30vw;
-        border-radius: 2rem;
-        margin-top: 2rem;
-        padding: 1rem;
-        
-    }
-
-    ::-webkit-input-placeholder{
-        font-size: 16px;
-    }
-
-    #nome {
-        width: 20vh;
-        height: 3vh;
-    }
-
-    .imagem {
-        width: 20vw;
-        height: 30vh;
-    }
-
-    .listaPet {
-        font-size: 22px;
-    }
-
-    footer{
-        background-position-y: 27vh;
-    }
 }
 
 @media screen and (max-device-width: 1440px) and (min-device-width: 1000px) {
@@ -262,30 +223,34 @@ footer {
 @media screen and (max-device-width: 1000px) and (min-device-width: 750px) {
 
     header{
-        background-position-y: 24vh;
+        background-position-y: 47vh;
+        height: 10vh;
+        background-size: 35rem;
+        font-size: 14px;
     }
 
     #buscador {
-        height: 6vh;
-        width: 60vw;
-        border-radius: 2rem;
+        height: 8vh;
+        width: 50vw;
         margin-top: 2rem;
         padding: 1rem;
         
     }
 
     ::-webkit-input-placeholder{
-        font-size: 18px;
+        font-size: 12px;
     }
 
     #nome {
-        width: 25vh;
+        width: 30vh;
         height: 3vh;
     }
 
     button {
         width: 11vw;
-        font-size: 18px;
+        height: 5vh;
+        font-size: 16px;
+        border-radius: 10px;
     }
 
     .geralPets {
@@ -301,13 +266,13 @@ footer {
     }
 
     .tituloH2 {
-        font-size: 16px;
+        font-size: 12px;
         grid-row: 1/2;
         grid-column: 2/3;
     }
 
     .imagem {
-        width: 32vw;
+        width: 20vw;
         height: 25vh;
         grid-column: 3/4;
         grid-row: 1/3;
@@ -321,11 +286,12 @@ footer {
     }
 
     .listaPet {
-        font-size: 20px;
+        font-size: 12px;
     }
 
     footer{
-        background-position-y: 28vh;
+        background-position-y: 32vh;
+        background-size: 30rem;
     }
 }
 
@@ -333,30 +299,31 @@ footer {
 
 
     header{
-        font-size: 16px;
-        background-position-y: 24vh;
+        font-size: 10px;
+        background-position-y: 38vh;
+        background-size: 29rem;
     }
 
     #buscador {
         height: 5vh;
         width: 60vw;
-        border-radius: 2rem;
+        border-radius: 10px;
         margin-top: 2rem;
         padding: 1rem;
-        
     }
 
     ::-webkit-input-placeholder{
-        font-size: 16px;
+        font-size: 10px;
     }
 
     #nome {
-        width: 20vh;
+        width: 25vh;
         height: 3vh;
     }
 
     button {
         width: 16vw;
+        border-radius: 6px;
     }
 
     .geralPets {
@@ -372,13 +339,13 @@ footer {
     }
 
     .tituloH2 {
-        font-size: 16px;
+        font-size: 10px;
         grid-row: 1/2;
         grid-column: 2/3;
     }
 
     .imagem {
-        width: 30vw;
+        width: 25vw;
         height: 16vh;
         grid-column: 3/4;
         grid-row: 1/3;
@@ -392,12 +359,88 @@ footer {
     }
 
     .listaPet {
-        font-size: 16px;
+        font-size: 8px;
     }
 
     footer{
-        font-size: 16px;
+        font-size: 10px;
+        background-position-y: 31vh;
+        background-size: 30rem;
+    }
+}
+
+@media screen and (max-device-width: 350px) {
+
+
+    header{
+        font-size: 10px;
+        background-position-y: 34vh;
+        background-size: 25rem;
+    }
+
+    #buscador {
+        height: 5vh;
+        width: 60vw;
+        border-radius: 10px;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    ::-webkit-input-placeholder{
+        font-size: 6px;
+    }
+
+    #nome {
+        width: 16vh;
+        height: 3vh;
+    }
+
+    button {
+        width: 20vw;
+        border-radius: 6px;
+        font-size: 10px;
+    }
+
+    .geralPets {
+        flex-direction: column;
+    }
+
+    .todosPets {
+        height: 20vh;
+        width: 80vw;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 50px 1fr;
+        align-items: unset;
+    }
+
+    .tituloH2 {
+        font-size: 10px;
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    .imagem {
+        width: 25vw;
+        height: 14vh;
+        grid-column: 3/4;
+        grid-row: 1/3;
+        align-self: center;
+    }
+
+    .tabelaLista {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        align-self: center;
+    }
+
+    .listaPet {
+        font-size: 7px;
+    }
+
+    footer{
+        font-size: 10px;
         background-position-y: 27vh;
+        background-size: 25rem;
     }
 }
 
