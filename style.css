@@ -171,7 +171,48 @@ footer {
     font-size: 20px;
 }
 
-@media screen and (max-device-width: 1200px) and (min-device-width : 801px) {
+@media screen and (min-device-width : 1441px) {
+
+    #buscador {
+        height: 5vh;
+        width: 25vw;
+        border-radius: 12px;
+        margin-top: 2rem;
+        padding: 1rem;
+
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 16px;
+    }
+
+    button {
+        height: 25px;
+        width: 60px;
+        font-family: fantasy;
+        font-size: 14px;
+    }
+
+    .tituloH2 {
+        font-size: 16px;
+    }
+
+    .todosPets {
+        height: 72vh;
+        width: 24vw;
+    }
+
+    .imagem {
+        width: 18vw;
+        height: 32vh;
+    }
+
+    .listaPet {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-device-width: 1200px) and (min-device-width : 901px) {
 
     #buscador {
         height: 5vh;
@@ -204,7 +245,7 @@ footer {
     }
 
     .imagem {
-        width: 15vw;
+        width: 20vw;
         height: 28vh;
     }
 
@@ -213,7 +254,7 @@ footer {
     }
 }
 
-@media screen and (max-device-width: 800px) and (min-device-width: 481px) {
+@media screen and (max-device-width: 900px) and (min-device-width: 481px) {
 
     header {
         height: 10vh;
@@ -221,7 +262,7 @@ footer {
     }
 
     #buscador {
-        width: 60vw;
+        width: 55vw;
         margin-top: 2rem;
         padding: 1rem;
         border-radius: 12px;
@@ -284,10 +325,14 @@ footer {
     }
 
     #buscador {
-        width: 80vw;
+        width: 70vw;
         border-radius: 12px;
         margin-top: 2rem;
         padding: 1rem;
+    }
+
+    #nome{
+        width: 180px;
     }
 
     button {
@@ -338,7 +383,7 @@ footer {
     }
 
     footer{
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
