@@ -9,33 +9,31 @@ body {
 }
 
 .containerBody {
-  display: grid;
-  grid-column: auto;
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
 
-header {
-  margin-top: 1px;
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   border-style: groove;
   border-top: 0.2vw solid black;
   border-bottom: 0.2vw solid black;
-  text-align: center;
   background-color: tomato;
 }
 
-.buscadorPizza{
-  margin-top: 1vh;
-  margin-bottom: 2vh;
-  background-color: black;
-  color: white;
-}
 
 main {
   display:flex;
+  flex-grow: 1;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-image: url(./mídiasparasite/vecteezy_repeated-slice-of-pizza-with-a-blue-background_.jpg);
   background-size: cover;
@@ -43,51 +41,15 @@ main {
   border-style: dashed;
 }
 
-
-.pizzaSalgadas{
-  display: grid;
-  grid-template-rows: 2fr;
-  grid-template-columns: 1fr;
-  margin-left: 2px;  
-  justify-content: center;
-  align-items: center; 
-  padding: 1rem;
-  gap: 1rem;
-}
-
-.padraoContainerPizzas
-{display: grid;
-  grid-template-rows: 2fr 1fr 1fr 2fr;
-  grid-template-columns: 2fr;
-  border: 1px;
-  background-color: rgba(245, 245, 220, 0.699);
-  justify-items: center;
-  align-items: center;
-  border: 1px;
-  border-color: chocolate;
-  border-style: dashed;
-  padding-bottom: 1rem;
-}
-
-.imagensPizza{
-  grid-row: 1/2;
-}
-
-.tituloPizza{
-  grid-row: 2/3;
-}
-
-.ingredientePizza{
-  grid-row: 3/4;
-}
-
-.ajusteIngredientes{
-  justify-self: flex-start;
-  margin-left: 2rem;
-  list-style-type: none;
-  align-self: flex-start;
-  grid-row: 4/5;
-
+.buscadorPizza {
+  display: flex;
+  flex-direction: column;
+  font-size:xx-large;
+  width: 30vw;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  background-color: black;
+  color: white;
 }
 
 .buscadorPizza-button:active {
@@ -95,37 +57,73 @@ main {
   background-color: gray;
   color: white;
   font-family: serif;
-  font-size: large;
+
 } 
 
-.tituloPizza{
+/* verificar a necessidade de usar ou não medidas relativas*/
+.buscar {
+  text-align: center;
+}
+
+.botao {
+  font-size: xx-large;
+  gap: 6px;
+  padding: 6px;
+}
+
+.input{
+  text-align: center;
+  font-size: larger;
+  height: 4vh;
+  gap: 6px;
+  padding: 6px;
+}
+
+
+.paiDasPizzas {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  gap: 10px;
+}
+
+.padraoContainerPizzas {
+  display: flex;
+  flex-direction: column;
+  border: 1px;
+  background-color: rgba(245, 245, 220, 0.699);
+  justify-items: center;
+  align-items: center;
+  border: 1px;
+  border-color: black;
+  border-style: dashed;
+  padding-bottom: 1rem;
+}
+
+.ajusteIngredientes {
+  justify-self: flex-start;
+  margin-left: 2rem;
+  list-style-type: none;
+  align-self: flex-start;
+} 
+
+.tituloPizza {
   display: flex;
   justify-content: center;
 }
 
-.imagensPizza{
+.imagensPizza {
   display: flex;
   justify-content: center;
 }
 
 footer {
-  bottom: 0;
   background-color: black;
   color: white;
   height: 6vh;
   width: 100%;
 }
 
-#pizza01{
-  grid-row: 1/2;
-}
 
-#pizza02{
-  grid-row: 1/2;
-}
 
-#pizza03{
-  grid-row: 1/2;
-}
-
-@media only screen and (max-width: 480px) {  img {    width: 100%;  }}
+@media only screen and (max-width: 480px) {  img {    width: 100vw;  }}

@@ -12,25 +12,24 @@
 
 <body>
     <div class="containerBody">
-        <header>
+        <header class="header">
             <h1>Festival de Pizzas</h1>
-            <br>
             <h2>Pizzas salgadas</h2>
         </header>
 
         <main>
 
-            <section class="buscadorPizza">
-                <p> Encontre a pizza que você deseja do nosso cardápio:</p>
-                <button>Pesquisar</button>
-                <input></input>
-            </section>
+            <div class="buscadorPizza">
+                <label class="buscar" for="pizza">Use nosso buscador!</label>
+                <input class="input" type="text" name="pizza" id="pizza" placeholder="Digite a pizza que deseja"> 
+                <button class="botao">Pesquisar</button>
+            </div>
 
-            <sections class="pizzaSalgadas">
-                <section class="padraoContainerPizzas" id="pizza01">
+            <div class="paiDasPizzas">
+                <div class="padraoContainerPizzas" id="pizza01">
                     <p class="imagensPizza"><img src="./mídiasparasite/Pizza-calabresaemozarela.png"></p>
                     <h2 class="tituloPizza">Pizza de calabresa com mozarela</h2>
-            
+
                     <h3 class="ingredientePizza">📔Ingredientes</h3>
                     <ul class="ajusteIngredientes">
                         <li>🍕 1 receita de massa para pizza de forno</li>
@@ -40,12 +39,12 @@
                         <li>⏲️Tempo de preparo: 60min</li>
                     </ul>
 
-                </section>
+                </div>
 
-                <section class="padraoContainerPizzas" id="pizza02">
+                <div class="padraoContainerPizzas" id="pizza02">
                     <p class="imagensPizza"><img src="./mídiasparasite/Pizza-quatroqueijos.png"></p>
                     <h2 class="tituloPizza">Pizza de quatro queijos</h2>
-                
+
                     <h3 class="ingredientePizza">📔Ingredientes</h3>
                     <ul class="ajusteIngredientes">
                         <li>🍕 1 receita de massa para pizza de forno</li>
@@ -57,12 +56,12 @@
                         <li>⏲️Tempo de preparo: 60min</li>
                     </ul>
 
-                </section>
+                </div>
 
-                <section class="padraoContainerPizzas" id="pizza03">
+                <div class="padraoContainerPizzas" id="pizza03">
                     <p class="imagensPizza"><img src="./mídiasparasite/Pizza-abobrinhacomqueijo.png"></p>
                     <h2 class="tituloPizza">Pizza de abobrinha</h2>
-                    
+
                     <h3 class="ingredientePizza">📔Ingredientes</h3>
                     <ul class="ajusteIngredientes">
                         <li> 🍕 1 receita de massa para pizza de forno</li>
@@ -75,13 +74,13 @@
                         <li> ⏲️Tempo de preparo: 50min</li>
                     </ul>
 
-                </section>
+                </div>
 
-            </sections>
+            </div>
 
         </main>
         <footer>
-           <p>footer</p> 
+            <p>Eu sou um footer</p>
         </footer>
     </div>
 </body>
