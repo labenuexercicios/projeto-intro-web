@@ -26,6 +26,9 @@ main{
     display: grid;
     align-items: center;
     justify-items: center;
+    background-image: url(./imagens/vingadores-infinita-grande.webp);
+    background-repeat: no-repeat;
+    background-size:cover
 }
 div {
     display: flex;
@@ -40,7 +43,7 @@ div {
 #section1 {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-color: orange;
+    background-color: rgb(190, 141, 50, 0.75);
     width: 50vw;
 }
 
