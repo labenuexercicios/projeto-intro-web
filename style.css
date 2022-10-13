@@ -367,7 +367,7 @@ footer {
     }
 
     #buscador {
-        width: 70vw;
+        width: 75vw;
         border-radius: 12px;
         margin-top: 2rem;
         padding: 1rem;
@@ -437,14 +437,14 @@ footer {
     }
 
     #buscador {
-        width: 75vw;
+        width: 80vw;
         border-radius: 12px;
         margin-top: 2rem;
         padding: 1rem;
     }
 
     #nome{
-        width: 180px;
+        width: 150px;
     }
 
     button {
@@ -497,5 +497,3 @@ footer {
         font-size: 8px;
     }
 }
-
-
