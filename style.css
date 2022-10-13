@@ -30,7 +30,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-repeat: repeat;
     width: 100vw;
+    min-height: 85vh;
 }
 
 #buscador {
