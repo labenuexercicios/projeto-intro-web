@@ -1,4 +1,3 @@
-//* Objetos
 
 const risoto1 = {
     nome: 'risoto toscano',
@@ -71,12 +70,12 @@ console.log('Todos as opções são veganas? ', verificaEhVegan)
 
 const cardapioVegano = []
 
-// risoto1.vegan ? cardapioVegano.push(risoto1) : alert("O risoto1 não foi adicionado")
-// risoto2.vegan ? cardapioVegano.push(risoto2) : alert("O risoto2 não foi adicionado")
-// risoto3.vegan ? cardapioVegano.push(risoto3) : alert("O risoto3 não foi adicionado")
-// risoto4.vegan ? cardapioVegano.push(risoto4) : alert("O risoto4 não foi adicionado")
-// risoto5.vegan ? cardapioVegano.push(risoto5) : alert("O risoto5 não foi adicionado")
-// risoto6.vegan ? cardapioVegano.push(risoto6) : alert("O risoto6 não foi adicionado")
+risoto1.vegan ? cardapioVegano.push(risoto1) : alert("O risoto1 não foi adicionado")
+risoto2.vegan ? cardapioVegano.push(risoto2) : alert("O risoto2 não foi adicionado")
+risoto3.vegan ? cardapioVegano.push(risoto3) : alert("O risoto3 não foi adicionado")
+risoto4.vegan ? cardapioVegano.push(risoto4) : alert("O risoto4 não foi adicionado")
+risoto5.vegan ? cardapioVegano.push(risoto5) : alert("O risoto5 não foi adicionado")
+risoto6.vegan ? cardapioVegano.push(risoto6) : alert("O risoto6 não foi adicionado")
 
 console.log('No cardápio vegano, temos as seguintes opções', cardapioVegano)
 
@@ -118,10 +117,10 @@ for (i in risoto6.ingredientes) {
 }
 console.log(string6)
 
-console.log(`Nome: ${risoto1.nome}\n Tempo de Preparo: ${risoto1.tempoPreparo}\n Ingredientes: ${string1}\n É vegano? ${risoto1.vegan}`)
+console.log(`Nome: ${risoto1.nome.toUpperCase()}\n Tempo de Preparo: ${risoto1.tempoPreparo}\n Ingredientes: ${string1}\n É vegano? ${risoto1.vegan}`)
 
 for (i in arrayObjetos) {
-    console.log(`Nome: ${arrayObjetos[i].nome}\n Tempo de Preparo: ${arrayObjetos[i].tempoPreparo}\n Ingredientes: ${arrayObjetos[i].ingredientes}\n É vegano? ${arrayObjetos[i].vegan}`)
+    console.log(`Nome: ${arrayObjetos[i].nome.toUpperCase()}\n Tempo de Preparo: ${arrayObjetos[i].tempoPreparo}\n Ingredientes: ${arrayObjetos[i].ingredientes}\n É vegano? ${arrayObjetos[i].vegan}`)
 }
 
 //semana 6
@@ -188,8 +187,6 @@ for (i in arrayObjetos) {
     a.setAttribute("href", arrayObjetos[i].link)
     a.setAttribute("target", "_blank")
     a.innerHTML = arrayObjetos[i].nome.toUpperCase()
-
-
     div.appendChild(section)
     section.appendChild(img)
     section.appendChild(ul)
