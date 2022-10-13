@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+ :root{
+    --cor0: #02060D;
+    --cor1: #152126;
+    --cor2: #455359;
+    --cor3: #A67951;
+    --cor4: #8C5549;
+    --cor5: #D8DAD9;
+}
+body{
+    background-color: var(--cor1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    
+}
+
+h1 > {
+    
+    background-image: linear-gradient(var(--cor2), var(--cor5) );
+}
+header{
+    background-image: linear-gradient(var(--cor2), var(--cor1) );
+    color: var(--cor5);
+    text-align: center; 
+    padding: 1.5%;
+}
+
+article{
+    width: 70%;
+    margin: auto;
+    background-color: var(--cor3);
+}
+
+
+section{
+    padding: 10%;
+    margin: 2%;
+}
+a{
+    color: blue;
+    background-color: #8C5549;
+}
+
+#buscador{
+    display: flex;
+    padding: 0.1%;
+    margin: 1%;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+img{
+    width: 70%;
+    height: 85%;
+    margin: auto;
+        
+}
+
+
+#arcos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: center;
+    align-items: start; 
+    row-gap: 20px;
+    
+}
+/* Telas de Desktops */
+@media screen and (min-width: 901px ) {
+    /* .newStyle{  
+       width: 70vw;
+       height: 80vh;
+       background: rgba(255, 255, 255, 0.1);
+       backdrop-filter: blur(10px);
+       -webkit-backdrop-filter: blur(10px);
+    } */
+    
+    .imagemSolo{
+        height: 65vh;
+        width: 26vw;
+        margin: 6%;
+        align-items: center;
+        justify-items: start;     
+    }
+    .listNoOrdem:hover{
+        background-color: var(--cor1);
+        color: var(--cor5);  
+        width: 70%;
+        height: 70%;
+        margin-right: 30%;
+        margin-top: 7%;
+    }
+    .listNoOrdem{
+        margin-right: 30%;
+        margin-top: 5%;
+        padding: 10%; 
+        width: 70%;
+        height: 65vh;
+        transition-duration: 0.8s; 
+    }
+    .listNoOrdem > li, ol{
+        display: inline;  
+    }
+    ol > li{
+        width: 160%;
+        margin-left: 5%;
+    }
+}
+
+/* Telas para tabletes e semelhantes */
+@media screen and (min-width: 501px) and (max-width: 900px) {
+    /* .newStyle{  
+        width: 90vw;
+        height: 80vh;
+        background: rgba(255, 255, 255, 0.1);
+       backdrop-filter: blur(10px);
+       -webkit-backdrop-filter: blur(10px);
+     } */
+     .imagemSolo{
+         height: 65vh;
+         width: 42vw;
+         margin: 7%;
+              
+     }
+    
+     .listNoOrdem{
+         margin-top: 8%;
+         margin-right: 35%; 
+         padding: 1%; 
+         width: 60%;
+         transition-duration: 0.8s; 
+     }
+     .listNoOrdem > li, ol{
+         display: inline;  
+         
+     }
+     ol > li{
+         width: 160%;
+         font-size: 11pt;
+     }
+}
+
+/* Telas de celulares e mobiles */
+@media screen and (min-width: 475px) and (max-width: 500px ) {
+    /* .newStyle{  
+        width: 90vw;
+        height: 80vh;
+        background: rgba(255, 255, 255, 0.1);
+       backdrop-filter: blur(10px);
+       -webkit-backdrop-filter: blur(10px);
+     } */
+     .imagemSolo{
+         height: 60vh;
+         width: 40vw;
+         margin: 7%;       
+     }
+     
+     .listNoOrdem{
+         margin-top: 6%;
+         margin-left: -5%;
+         width: 95%; 
+         
+     }
+     .listNoOrdem > li, ol{
+         display: inline;  
+         font-size: 11pt;
+         height: 90%;
+     }
+     
+}
+
+/* ----------------------------------- */
+#arco1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: end;
+    transition-duration: 0.8s;
+}
+
+#arco1:hover{
+    background-color: var(--cor1);
+    color: var(--cor5);  
+} 
+/* ----------------------------------- */
+#arco2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: start;
+    transition-duration: 0.8s;
+}
+#arco2:hover{
+    background-color: var(--cor1);
+    color: var(--cor5);
+    
+    
+} 
+/* ----------------------------------- */
+
+#arco3{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: end;
+    transition-duration: 0.8s;
+}
+#arco3:hover{
+    background-color: var(--cor1);
+    color: var(--cor5);  
+}
+/* ----------------------------------- */
+#arco4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: start;
+    transition-duration: 0.8s;
+}
+#arco4:hover{
+    background-color: var(--cor1);
+    color: var(--cor5);  
+}
+/* ----------------------------------- */
+#arco5{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-self: end;
+    transition-duration: 0.8s;
+}
+#arco5:hover{
+    background-color: var(--cor1);
+    color: var(--cor5);  
+}
+ /* ----------------------------------- */
+#arco6{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: start;
+    transition-duration: 0.8s;
+}
+#arco6:hover{
+    background-color: var(--cor1);
+    color: var(--cor5);  
+}
+/* ----------------------------------- */
+#arco7{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    justify-self: end;
+    transition-duration: 0.8s;
+}
+#arco7:hover{
+    background-color: var(--cor1);
+    color: var(--cor5);  
+}
+/* ----------------------------------- */
+#arco8{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: start;
+    transition-duration: 0.8s;
+}
+#arco8:hover{
+    background-color: var(--cor1);
+    color: var(--cor5);  
+}
+/* ----------------------------------- */
+#arco9{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    justify-self: end;
+    transition-duration: 0.8s;
+}
+#arco9:hover{
+    background-color: var(--cor1);
+    color: var(--cor5);  
+}
+/* ----------------------------------- */
+#arco10{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    justify-self: start;
+    transition-duration: 0.8s;
+}
+#arco10:hover{
+    background-color: var(--cor1);
+    color: var(--cor5);  
+}
+/* ----------------------------------- */
+#arco11{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    align-items: end;
+    justify-self: end;
+    transition-duration: 0.8s;
+}
+#arco11:hover{
+    background-color: var(--cor1);
+    color: var(--cor5);  
+}
+/* ----------------------------------- */
+
+footer{
+    position: sticky;
+    font-weight: bold;
+    bottom: 0;
+    background-image: linear-gradient(var(--cor1), var(--cor2) );
+    color: var(--cor5);
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+}
