@@ -22,13 +22,18 @@ img {
     list-style-type: none;
     padding: 10px;
 }
+body {
+    background-image: url(./imagens/vingadores-infinita-grande.webp);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
 main{
     display: grid;
     align-items: center;
     justify-items: center;
-    background-image: url(./imagens/vingadores-infinita-grande.webp);
+    /* background-image: url(./imagens/vingadores-infinita-grande.webp);
     background-repeat: no-repeat;
-    background-size:cover
+    background-size: auto; */
 }
 div {
     display: flex;
@@ -39,11 +44,19 @@ div {
     margin-bottom: 2vh;
     width: 40vw;
 }
+a {
+    text-decoration: none;
+    /* color: black; */
+    
+}
+a:hover {
+    color: blue;
+}
 
 #section1 {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-color: rgb(190, 141, 50, 0.75);
+    background-color: rgb(190, 141, 50, 0.8);
     width: 50vw;
 }
 

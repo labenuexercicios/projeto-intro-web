@@ -165,6 +165,7 @@ funcBusca = (arrayObjetos, string) => {
             let li5 = document.createElement("li")
             let a = document.createElement("a")
             let imagem = document.createElement("img")
+            div.setAttribute("id", "div-sections")
             section.setAttribute("id", "section1")
             imagem.setAttribute("id", "imagem1")
             ul.setAttribute("id", "lista1")
