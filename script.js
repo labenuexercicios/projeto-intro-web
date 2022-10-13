@@ -59,7 +59,7 @@ const animal5 = {
 }
 
 const animal6 = { 
-    nome: "Aranha de alçapão de cabeça vermelha",
+    nome: "Aranha de alçapão de cabeça vermelha (Missulena)",
     imagem: "imagens/aranha-rato.jpg",
     tempoMedioDeVida: 25 ,
     arrayCores: [ "Preta" ],
@@ -276,8 +276,8 @@ function buscarAranhas(){
                             <li>Tempo medio de vida: ${aranhaRetornada.tempoMedioDeVida} </li>
                             <li>Cor: ${aranhaRetornada.arrayCores}</li>
                             <li>Extinto: ${aranhaRetornada.extinto}</li>
-                            <img src="${aranhaRetornada.imagem}" alt="">
              </ul> 
+             <img src="${aranhaRetornada.imagem}" alt="">
      </article> 
      </section>
 `
