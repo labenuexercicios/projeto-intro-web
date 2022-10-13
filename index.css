@@ -1,20 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 
 body {
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
     background-color: var(--warning);
-    display: grid;
-    justify-items: center;
 }
-    
-:root{ 
+
+
+:root {
     --warning: #ffc107;
     --blue: #007bff;
     --indigo: #6610f2;
@@ -39,45 +34,90 @@ body {
 
 }
 
-main{
+main {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: grid;
-    justify-items: center;
+    /* display: grid;
+    justify-items: center; */
 
 }
-/* .search-botton: active{
-        color:orange;
-        .botton:houver; 
-        background-color: orange;*/
-/* } */
 
-.tituloSuco1, .tituloSuco2, .tituloSuco3{
+h1 {
+    font-size: 5em;
+    display: grid;
+    justify-items: center;
+    height: 25%;
+    width: 100%;
+    border: solid rgb(112, 40, 175) 5px;
+}
+
+.search-box {
+    font-size: 2em;
+    display: grid;
+    justify-items: center;
+    border: solid rgb(45, 29, 59) 5px;
+}
+
+li {
+    border: solid blueviolet 5px;
     font-size: 1em;
-    background-color:var(indigo);  
+}
+
+.tituloSuco1,
+.tituloSuco2,
+.tituloSuco3 {
+    font-size: 1.5em;
     display: grid;
     justify-items: start;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    border: solid black 5px;
 }
 
-li{
-    font-size: 1em;    
+li {
+    font-size: 1em;
     list-style: none;
     display: grid;
     justify-items: center;
 }
 
-#img-1{
-    background-color:var(#28a745);
+#img-1 {
+    height: 20%;
+    width: 100%;
+    border: solid red 5px;
+    background-color: #28a745;
+
+}
+
+#img-2 {
+    height: 20%;
+    width: 100%;
+    border: solid royalblue 5px;
+
 }
 
 
-
-#img-2{
-    background-color: var(#007bff);   
+#img-3 {
+    height: 20%;
+    width: 100%;
+    border: solid forestgreen 5px;
 }
 
+/* .sucoBeterraba {
+    background-color: var(#28a745);
+}
 
-#img-3{
-    background-color:var(#007bff)
+.sucoPepino {
+    background-color: var(#007bff);
+}
+
+.sucoCouveEMaca {
+    background-color: var(#343a40);
+} */
+
+Footer {
+    height: 10%;
+    width: 100%;
+    justify-content: space-evenly;
+    position: absolute;
+    border: solid rgb(211, 28, 28) 5px;
 }
