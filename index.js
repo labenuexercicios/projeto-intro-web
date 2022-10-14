@@ -76,7 +76,7 @@ if(novotitulo4.ebook == true){
     objetos.push(novotitulo4)
     console.log(objetos)
 } else{
-    alert("O Livro 4 não foi adicionado a pasta de Livros com ebook.")
+    //alert("O Livro 4 não foi adicionado a pasta de Livros com ebook.")
     for(let i in livro4){
         console.log(`Livro sem e-book: ${i}`)
         console.log(`Título: ${livro4[i].titulo}, Páginas: ${livro4[i].paginas}, Gênero: ${livro4[i].genero}`)
@@ -112,7 +112,7 @@ function retornaIgual(todosOsLivros){
         if(titulo1 === todosOsLivros){
             igual.push(todosOsLivros[i])
             }else{
-                alert = "Nenhum item foi encontrado"
+                //alert = "Nenhum item foi encontrado"
             }
     }
     return igual
