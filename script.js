@@ -172,7 +172,21 @@ for (let i = 0; i < todosOsDestinos.length; i++) {
     <div class="article">
       <div class="cards"> 
         <img src="${todosOsDestinos[i].imagem}" />
-        <ul > <b> <a href="${todosOsDestinos[i].link}" target="_blank">${todosOsDestinos[i].nome}</a>  </b> </br> </br> Avaliação Crítica: ${todosOsDestinos[i].avaliacaoCritica} </br> Possui litoral: ${todosOsDestinos[i].litoral} </br> <ol>Lugares a visitar: ${todosOsDestinos[i].lugares}</ol></ul> 
+        <ul > 
+          <li> 
+            <b> <a href="${todosOsDestinos[i].link}" target="_blank">${
+    todosOsDestinos[i].nome
+  }</a>  </b>
+          </li>  
+          <li> 
+            Avaliação Crítica: ${todosOsDestinos[i].avaliacaoCritica}
+          </li> 
+          <li>
+            Possui litoral: ${todosOsDestinos[i].litoral ? "Sim" : "Não"} 
+          </li>
+          <li>
+            Lugares a visitar: ${todosOsDestinos[i].lugares}</li>
+        </ul> 
       </div>
     </div>
   </div>`;
@@ -197,10 +211,22 @@ function buscaDestino() {
       <div class="article">
         <div class="card-retornado"> 
           <img src="${destinoRetornado.imagem}" />
-          <ul > <b> <a href="${destinoRetornado.link}" target="_blank">${destinoRetornado.nome}</a> </b> </br> </br> Avaliação Crítica: 
-          ${destinoRetornado.avaliacaoCritica} </br> Possui litoral: 
-          ${destinoRetornado.litoral} </br> <ol>Lugares a visitar: 
-          ${destinoRetornado.lugares}</ol></ul> 
+          <ul > 
+            <li> 
+              <b> <a href="${destinoRetornado.link}" target="_blank">${
+      destinoRetornado.nome
+    }</a> </b>
+            </li> 
+            <li> 
+              Avaliação Crítica: ${destinoRetornado.avaliacaoCritica} 
+            </li> 
+            <li>
+              Possui litoral: ${destinoRetornado.litoral ? "Sim" : "Não"} 
+            </li> 
+            <li>
+              Lugares a visitar: ${destinoRetornado.lugares}
+            </li>
+          </ul> 
         </div>
       </div>
     </div>`;

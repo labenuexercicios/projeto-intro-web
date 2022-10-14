@@ -3,6 +3,19 @@
   padding: 0;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f0e098;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(247, 247, 247);
+  border-radius: 20px;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -46,7 +59,6 @@ main {
   align-items: center;
 
   width: 100%;
-  height: 300vh;
 }
 
 .article {
@@ -81,7 +93,7 @@ main {
   border-radius: 10px;
   width: 52%;
   height: 10%;
-  border: 2px solid #ff6e01;
+  border: 2px solid #f05929;
   padding: 10px;
   font-family: "Raleway";
   font-size: 14px;
@@ -123,7 +135,6 @@ main {
 
   width: 60%;
   height: 40%;
-  margin-top: -118%;
 
   border-radius: 20px;
   text-align: center;
@@ -143,14 +154,14 @@ main {
 
   list-style: none;
   border-radius: 20px;
-  border: 2px solid #ff6e01;
+  border: 2px solid #f05929;
   padding: 20px;
 
   width: 40%;
 }
 
 .card-retornado:hover {
-  background-color: #ff6e01;
+  background-color: #f05929;
   color: #fff;
 
   -webkit-transition: background-color 0.3s ease;
@@ -158,12 +169,7 @@ main {
 
 .card-retornado ul:hover {
   border: 2px solid #fff;
-  background-color: #ff6e01;
-}
-
-.card-retornado li:hover {
-  border: 2px solid #fff;
-  border-radius: 20px;
+  background-color: #f05929;
 }
 
 .card-retornado a:hover {
@@ -202,10 +208,13 @@ main {
 
   list-style: none;
   border-radius: 20px;
-  border: 2px solid #ff6e01;
+  border: 2px solid #f05929;
   padding: 20px;
 
   width: 40%;
+  min-height: 200px;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 li {
@@ -218,7 +227,7 @@ a {
 }
 
 .cards:hover {
-  background-color: #ff6e01;
+  background-color: #f05929;
   color: #fff;
 
   -webkit-transition: background-color 0.3s ease;
@@ -226,16 +235,11 @@ a {
 
 .cards ul:hover {
   border: 2px solid #fff;
-  background-color: #ff6e01;
+  background-color: #f05929;
 }
 
 .cards a:hover {
   color: #fff;
-}
-
-.cards li:hover {
-  border: 2px solid #fff;
-  border-radius: 20px;
 }
 
 @media screen and (max-width: 800px) {
