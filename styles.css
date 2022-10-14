@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-size: 16pt arial;
     list-style: none;
+    
 }
 body{
     display: flex;
