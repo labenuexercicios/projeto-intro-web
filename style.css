@@ -5,8 +5,65 @@
 .img{
     height: 15vh;
     width: 10vw;
+    margin: 1em;
+    object-fit: contain;
+    border-radius: 20px;
+
 }
 .id-body{
     display: grid;
     grid-template-rows: auto 1 fr auto;
+}
+#container{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.card{
+    display: flex;
+    margin-bottom: 2vh;
+    background-color: orange;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+#header{
+    color: white;
+    background-color: #222;
+    grid-row: 1/2;
+}
+.pesquisa{
+    margin-top: 1em;
+    margin-bottom: 2em;
+    display:  flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70vw;
+    justify-content: center;
+}
+#footer{
+    grid-row: 3/4;
+    background-color: #222;
+    color: aliceblue;
+}
+.listaInformacoes{
+    list-style: none;
+    height: auto;
+    width: 70vw;
+    object-fit: contain;
+    margin-left: 1em;
+    object-fit: contain;
+}
+#input{
+    width: 40vw;
+    margin-left: auto;
+    height: 4vh;
+    padding: 1em;
+}
+#btnPesquisa{
+    height: 4vh;
+    padding: 0.5em;
+    margin-left: 0.5em;
 }
