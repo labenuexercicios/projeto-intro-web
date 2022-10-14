@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: georgia;
+}
+
+header{
+    margin: 15px;
+    border: 1px solid gray;
+    padding: 10px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.288);
+}
+
+main{
+    margin: 15px;
+    border: 1px solid gray;
+    padding: 10px;
+    height: 70vh;
+    color: gray;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.288);
+}
+
+.busca{
+    margin: 15px;
+    border: 1px solid #0F4C5C
+}
+
+.card{
+    margin: 10px;
+    border: 1px solid #FB8B24;
+    padding: 10px;
+    color: #FB8B24;
+    width: 100%;
+    color: white;
+}
+
+#card-1{
+    border: solid rgb(48, 92, 128) 7px;
+    background-color: white;
+    color: #0F4C5C;
+    height: 60vh;
+}
+
+#card-2{
+    border: solid rgb(74, 172, 150) 7px;
+    background-color: white;
+    color: rgb(247, 44, 77);
+    height: 60vh;
+}
+
+#card-3{
+    border: solid rgb(250, 164, 52) 7px;
+    background-color: white;
+    color: #FB8B24;
+    height: 60vh;
+}
+
+#card-4{
+    border: solid rgb(252, 10, 10) 7px;
+    background-color: white;
+    color: black;
+    height: 60vh;
+}
+
+#card-5{
+    border: solid black 7px;
+    background-color: white;
+    color: rgb(185, 3, 3);
+    height: 60vh;
+}
+
+footer{
+    margin: 15px;
+    border: 1px solid gray;
+    padding: 10px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.288);
+}
