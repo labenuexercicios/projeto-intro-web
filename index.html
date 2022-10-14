@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="carregar()">
+
+    <header>
+        <h1>Arcos de Sandman</h1>
+    </header>
+
+    <section id="buscador">
+        <form>
+            <label for="search" hidden>Pesquisar</label>
+            <input type="text" id="search" placeholder="Digite aqui o nome do arco">
+            <button type="submit" onclick="procurar(event)">Buscar</button>
+            <button onclick="carregar()">Recarregar</button>
+        </form>
+    </section>
+    
+    <article id="arcos">
+        <!-- Criando uma lista não ordenada com as informações do obj1 criado no JS. E adicionando uma imagem -->
+        <section id="arco1">
+            <img src="imagens/capa-arco-1.jpg" onmouseover="this.src='imagens-alternativas/capa-alternativa-1.jpg'" onmouseout="this.src='imagens/capa-arco-1.jpg'" width="20%" alt="capa do primeiro arco de sandman">
+            <ul id="lista1">
+                
+            </ul> 
+        </section>
+
+        <section id="arco2">
+            <img src="imagens/capa-arco-2.jpg" onmouseover="this.src='imagens-alternativas/capa-alternativa-2.jpg'" onmouseout="this.src='imagens/capa-arco-2.jpg'" width="20%" alt="Capa do segundo arco de Sandman">
+            <ul id="lista2">
+               
+            </ul>
+        </section>
+
+        <section id="arco3">
+            <img src="imagens/capa-arco-3.jpg" onmouseover="this.src='imagens-alternativas/capa-alternativa-3.jpg'" onmouseout="this.src='imagens/capa-arco-3.jpg'" width="20%" alt="Capa do terceiro arco de Sandman">
+            <ul id="lista3">
+                
+            </ul>
+        </section>
+
+        <section id="arco4">
+            <img src="imagens/capa-arco-4.jpg" onmouseover="this.src='imagens-alternativas/capa-alternativa-4.jpg'" onmouseout="this.src='imagens/capa-arco-4.jpg'" width="20%" alt="capa do quarto arco de sandman ">
+            <ul id="lista4">
+                
+            </ul>
+        </section>
+
+        <section id="arco5">
+            <img src="imagens/capa-arco-5.jpg" onmouseover="this.src='imagens-alternativas/capa-alternativa-5.jpg'" onmouseout="this.src='imagens/capa-arco-5.jpg'" width="20%" alt="capa do quinto arco de sandman">
+            <ul id="lista5">
+                
+            </ul>
+        </section>
+
+        <section id="arco6">
+            <img src="imagens/capa-arco-6.jpg" onmouseover="this.src='imagens-alternativas/capa-alternativa-6.jpg'" onmouseout="this.src='imagens/capa-arco-6.jpg'" width="20%" alt="capa do sexto arco de sandman">
+            <ul id="lista6">
+                
+            </ul>
+        </section>
+
+        <section id="arco7">
+            <img src="imagens/capa-arco-7.jpg" onmouseover="this.src='imagens-alternativas/capa-alternativa-7.jpg'" onmouseout="this.src='imagens/capa-arco-7.jpg'" width="20%" alt="capa do setimo arco de sandman">
+            <ul id="lista7">
+              
+            </ul>
+        </section>
+
+        <section id="arco8">
+            <img src="imagens/capa-arco-8.jpg" onmouseover="this.src='imagens-alternativas/capa-alternativa-8.jpg'" onmouseout="this.src='imagens/capa-arco-8.jpg'" width="20%" alt="capa do oitavo arco de sandman">
+            <ul id="lista8">
+               
+            </ul>
+        </section>
+
+        <section id="arco9">
+            <img src="imagens/capa-arco-9.jpg" onmouseover="this.src='imagens-alternativas/capa-alternativa-9.jpg'" onmouseout="this.src='imagens/capa-arco-9.jpg'" width="20%" alt="capa do nono arco de sandman">
+            <ul id="lista9">
+                
+            </ul>
+         </section>
+
+         <section id="arco10">
+            <img src="imagens/capa-arco-10.jpg" onmouseover="this.src='imagens-alternativas/capa-alternativa-10.jpg'" onmouseout="this.src='imagens/capa-arco-10.jpg'" width="20%" alt="capa do decimo arco de sandman">
+            <ul id="lista10">
+                
+            </ul>
+         </section>
+
+         <section id="arco11">
+            <img src="imagens/capa-arco-14.jpg" onmouseover="this.src='imagens-alternativas/capa-alternativa-11.jpg'" onmouseout="this.src='imagens/capa-arco-14.jpg'" width="20%" alt="capa do decimo-primeiro arco de sandman">
+            <ul id="lista11">
+                
+            </ul>
+         </section>
+
+        
+    </article>
+
+    <footer>
+        <p>Desenvolvido por Adriano Silva <a href="https://github.com/AdrianoSilva42" target="_blank">(Github)</a> <a href="https://www.linkedin.com/in/adriano-silva-9a1874242/" target="_blank">(Linkedin)</a></p>
+    </footer>
+</body>
+</html>
