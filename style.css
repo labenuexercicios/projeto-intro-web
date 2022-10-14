@@ -25,15 +25,14 @@ img {
 body {
     background-image: url(./imagens/vingadores-infinita-grande.webp);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+    background-position: center center;
 }
 main{
     display: grid;
     align-items: center;
     justify-items: center;
-    /* background-image: url(./imagens/vingadores-infinita-grande.webp);
-    background-repeat: no-repeat;
-    background-size: auto; */
+    min-height: 75vh;
 }
 div {
     display: flex;
@@ -46,8 +45,6 @@ div {
 }
 a {
     text-decoration: none;
-    /* color: black; */
-    
 }
 a:hover {
     color: blue;
@@ -56,9 +53,13 @@ a:hover {
 #section1 {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-color: rgb(190, 141, 50, 0.8);
+    background-color: rgb(190, 141, 50, 0.75);
     width: 50vw;
 }
+/* #section1:hover{
+    background-image: url(./imagens/vingadores-ultimato.jpeg);
+} */
+
 
 
 footer {
