@@ -14,7 +14,7 @@ header {
     padding: 2%;
 }
 
-main{
+main {
     display: grid;
     justify-items: center;
     background-color: lightgrey;
@@ -93,4 +93,17 @@ footer {
 
 li {
     list-style-type: none;
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width : 800px) {
+    .section1 {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .section1 {
+        width: 100vw;
+        height: 40vh;
+    }
 }
