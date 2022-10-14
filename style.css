@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    font-family: arial;
+    color: white;
+    height: 10vh;
+    display: grid;
+    font-size: 2rem;
+    align-items: center;
+    padding: 2%;
+}
+
+main {
+    display: grid;
+    justify-items: center;
+    background-color: lightgrey;
+}
+
+.botao-input {
+    display: flex;
+    height: 10vh;
+    background-color: lightgray;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1vw;
+}
+
+.input {
+    border: 1px solid gray;
+    text-align: center;
+    width: 30vw;
+    height: 3vh;
+    border-radius: 15px;
+}
+
+.button {
+    border: 1px solid grey;
+    background-color: lightgray;
+    width: 8vw;
+    height: 4vh;
+    border-radius: 15px;
+}
+
+img {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+}
+
+.div-listas {
+    display: flex;
+    background-color: lightgray;
+    flex-direction: column;
+    row-gap: 2vh;
+    padding: 2vh;
+}
+
+.section1 {
+    background-color: orange;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    grid-template-columns: 1fr 2fr;
+    height: 20vh;
+    justify-items: center;
+    align-items: center;
+    width: 40vw;
+}
+
+.lista {
+    display: grid;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: black;
+    font-family: arial;
+    color: white;
+    height: 10vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    list-style: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width : 800px) {
+    .section1 {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .section1 {
+        width: 100vw;
+        height: 40vh;
+    }
+}
