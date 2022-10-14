@@ -12,7 +12,7 @@
 }
 .id-body{
     display: grid;
-    grid-template-rows: auto 1 fr auto;
+    grid-template-rows: auto 1fr auto;
 }
 #container{
     display:  flex;
@@ -33,6 +33,10 @@
     color: white;
     background-color: #222;
     grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    
 }
 .pesquisa{
     margin-top: 1em;
@@ -47,6 +51,10 @@
     grid-row: 3/4;
     background-color: #222;
     color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
 }
 .listaInformacoes{
     list-style: none;
@@ -66,4 +74,5 @@
     height: 4vh;
     padding: 0.5em;
     margin-left: 0.5em;
+    font-size: clamp(1rem, 1.3rem + 1 1vh, 2rem) ;
 }
