@@ -176,8 +176,74 @@ function pesquisa(arrayDeObjetos, valorString){
     }
 }
 
-const objetoDoJogo = pesquisa(jogos, "Mortal Kombat 11")
-console.log(objetoDoJogo)
+// const objetoDoJogo = pesquisa(jogos, "Mortal Kombat 11")
+// console.log(objetoDoJogo)
+
+// SEMANA 11: #################################################################################################################
+
+function criarJogos (array){
+
+    const secaoJogo= document.getElementById("lista-de-cachorros")
+    
+    secaoJogo.innerHTML=""
+    
+    for(i=0; i<array.length; i++){
+        secaoJogo += `<section id="jogo" class="jogos">
+                
+        <img class="imagem" src="${array[i].img}" alt="imagem">
+        <video class="video" src="${array[i].video}" controls>Trailer</video>
+    
+    <ul>
+        <li id="titulo">
+        <a href="${array[i].href}" target="_blank">Título:${array[i].Titulo}</a>
+        </li>
+        <li>Gênero:${array[i].Genero}</li>
+        <li>Preço: ${array[i].Preco}</li>
+        <li>Multiplayer: ${array[i].Multiplayer}</li>
+        <li>Marcadores: ${array[i].Marcadores}</li>
+    </ul>
+</section> `
+        }
+    
+    }
+    criarJogos(jogos)
+
+// SEMANA 12: #################################################################################################################
+
+ function buscaJogo() {
+    
+    const elementoDeCampo = document.getElementById("pesquisa");
+
+    
+    const textoABuscar = elementoDeCampo.value;
+
+    const jogoRetornado = pesquisa(jogos, textoABuscar);
+
+    if (jogoRetornado.Titulo) {
+
+        const secaoJogo = document.getElementById("container-de-jogos");
+
+        secaoJogo.innerHTML = `<section id="jogo" class="jogos">
+               
+                   <img class="imagem" src="${jogoRetornado.img}" alt="Mortal Kombat 11">
+                   <video class="video" src="${jogoRetornado.video}"
+               <ul>
+                   <li id="titulo">
+                   <a href="${jogoRetornado.href}" target="_blank">Título:"${jogoRetornado.Titulo}"</a>
+                   </li>
+                   <li>Gênero: ${jogoRetornado.Genero}</li>
+                   <li>Preço: ${jogoRetornado.Preco}</li>
+                   <li>Multiplayer: ${jogoRetornado.Multiplayer}</li>
+                   <li>Marcadores: ${jogoRetornado.Marcadores}</li>
+               </ul>
+           </section>`
+        
+    }else{
+        alert("Jogo naõ encontrado");
+    }
+
+}
+
 
 
 

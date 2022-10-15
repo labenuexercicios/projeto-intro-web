@@ -1,49 +1,10 @@
-.mortal{
+.imagem{
     height: 350px;
     width: 250px;
     border: 5px solid black;
 }
 
-.resident{
-    height: 350px;
-    width: 250px;
-    border: 5px solid black;
-}
-
-.f1{
-    height: 350px;
-    width: 250px;
-    border: 5px solid black;
-}
-
-.god{
-    height: 350px;
-    width: 250px;
-    border: 5px solid black;
-}
-
-.mortal-trailer{
-    height: 40vh;
-    width: 30vw;
-    position: relative;
-    right: -35px;
-}
-
-.resident-trailer{
-    height: 40vh;
-    width: 30vw;
-    position: relative;
-    right: -35px;
-}
-
-.f1-trailer{
-    height: 40vh;
-    width: 30vw;
-    position: relative;
-    right: -35px;
-}
-
-.god-trailer{
+.video{
     height: 40vh;
     width: 30vw;
     position: relative;
@@ -59,7 +20,7 @@
 
 .jogos{
     color: white;
-    background-color: rgb(22, 22, 62);
+    background-image: url("./Midia/background2.jpg");
     margin-bottom: 20px;
     border: 10px solid black;
     width: 50vw;
@@ -67,26 +28,37 @@
 }
 
 header{
+    font-size: larger;
     border: 10px solid black;
-    background-color: rgb(22, 22, 62);
+    background-image: url("./Midia/background2.jpg");
     color: white;
 }
 
 main{
-    background-color: rgb(37, 29, 107);
+    background-image: url("./Midia/background.jpg");
     border: 10px solid black;
 }
 
 .pesquisa{
-    margin-bottom: 100px;
-    justify-content: center;
+    
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        height: 30px;
+        align-items: center;
+        margin-top: 10px;
+    
 }
 
 footer{
-    background-color: rgb(22, 22, 62);
+    font-size: large;
+    background-image: url("./Midia/background2.jpg");
     color: white;
     border: 10px solid black;
 }
+
+
 
 
 
