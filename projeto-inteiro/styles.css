@@ -1,0 +1,309 @@
+/* SEMANA 7 */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(19, 19, 19);
+    color: white;
+    /* display:flex; */
+    display: grid;
+}
+main{
+    color: white;
+    
+}
+header{
+    color: white;
+    border: 20px rgb(194, 50, 50)outset;
+    background-color: rgb(7, 7, 7);
+    /*colocar umas fotos dentro do header */
+}
+#bot{
+    height: 40px;
+    width: 90px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 4px rgb(216, 120, 120) outset;
+}
+/* COLANDO AS BORDAS DAS SECTIONS NAS EXTREMIDADES*/
+/* .section1{
+    margin: 0;
+    padding: 0;
+}  */
+
+#botão{
+    color: rgb(146, 94, 32);
+    font-family: 'Courier New', Courier, monospace;
+}
+#inputS{
+    color:  rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+}
+/* section{
+    display: grid;
+} */
+/*div com o input e o button*/
+
+/* .botaoEclique{
+    border: 10px rgb(65, 62, 82) solid;
+} */
+
+#botão:hover{
+    background-color: rgb(200, 213, 213);
+}
+.imagem{
+    height: 8em;
+    width: 9em;
+}
+.coleção{
+    color: rgb(111, 121, 121);
+    font-family: monospace;
+    font-size: 40px;
+    text-align: center;
+}
+#cabeçalho{
+    color: rgb(143, 151, 151);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    padding: 1em;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    border: 15px rgb(255, 255, 255) groove;   
+    
+}
+#Dom1{
+    position: relative;
+    top: 150px; left: 890px;
+    color: rgb(231, 219, 219);
+    font-size: 25px;
+} 
+#Dom2{
+    position: relative;
+    top: 150px; left: 890px;
+    color: rgb(231, 219, 219);
+    font-size: 25px;
+} 
+#Dom3{
+    position: relative;
+    top: 150px; left: 890px;
+    color: rgb(231, 219, 219);
+    font-size: 25px;
+} 
+#Dom4{
+    position: relative;
+    top: 150px; left: 890px;
+    color: rgb(231, 219, 219);
+    font-size: 25px;
+} 
+#Dom5{
+    position: relative;
+    top: 150px; left: 890px;
+    color: rgb(231, 219, 219);
+    font-size: 25px;
+} 
+/*the last kingdom*/
+.título-TLK{
+    font-family: Helvetica;
+    position: relative;
+    top: 40px; left: 260px;
+    color: rgb(255, 255, 255) outset;
+    font-size: 40px;
+}
+.the-last-kingdon{
+    width:250px;
+    height:310px;
+    position: relative;
+    top: -70px; left: 295px;
+}
+.link-para-página-tlk{
+    position: relative;
+    top: 0px; left: 260px;
+    color: rgb(255, 5, 5);
+    font-size: 25px;
+}
+/*----------------------*/
+/*the wwalking dead*/
+.link-para-pagina-twd{
+    position: relative;
+    top: 40px; left: 260px;
+    color: rgb(255, 5, 5);
+    font-size: 25px;
+}
+.título-TWD{
+    font-family:Helvetica;
+    position: relative;
+    top: 40px; left: 260px;
+    color: rgb(255, 255, 255) outset;
+    font-size: 40px;
+}
+.The-walking-dead{
+    width: 250px;
+    height:310px;
+    position: relative;
+    top: -60px; left: 295px;
+}
+/*------------------------*/
+/*clube da luta*/
+.link-para-página-cluube-da-luta{
+    position: relative;
+    top: 0px; left: 260px;
+    color: rgb(255, 5, 5);
+    font-size: 25px;
+}
+.título-clube-da-luta{
+    font-family: Helvetica;
+    position: relative;
+    top: 40px; left: 260px;
+    color: rgb(255, 255, 255) outset;
+    font-size: 40px;
+}
+.clube-da-luta{
+    width:250px;
+    height: 310px;
+    position: relative;
+    top: -80px; left: 295px;
+}
+/*---------------------------*/
+/*Rambo: até o fim*/
+.link-para-página-até-o-fim{
+    position: relative;
+    top: 0px; left: 260px;
+    color: rgb(255, 5, 5);
+    font-size: 25px;
+}
+.titulo-rambo-até-o-fim{
+    font-family: Helvetica;
+    position: relative;
+    top: 40px; left: 260px;
+    color: rgb(255, 255, 255) outset;
+    font-size: 40px;
+}
+.ramboA{
+    width:250px;
+    height: 310px;
+    position: relative;
+    top: -180px; left: 295px;
+}
+/*----------------------------------*/
+/*vikings*/
+.link-para-página-vikings{
+    position: relative;
+    top: 0px; left: 260px;
+    color: rgb(255, 5, 5);
+    font-size: 25px;
+}
+.título-vikings{
+    font-family: Helvetica;
+    position: relative;
+    top: 40px; left: 260px;
+    color: rgb(255, 255, 255) outset;
+    font-size: 40px;
+}
+.vikings-fotos{
+    width:250px;
+    height: 310px;
+    position: relative;
+    top: -150px; left: 295px;
+}
+footer{
+  border: 20px rgb(125, 113, 113)outset;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  position: static;
+  height: 40vh;
+  width: 12vw;
+  background-color:black;
+  right:180px;
+  color: white;
+  position: relative;
+  top: 0px; left: 40%;
+}
+
+@media screen and (max-device-width : 2000px) {
+    .divConteudo{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #botão{
+        position: fixed;
+    }
+    .informacoes-de-contato{
+        
+        grid-template-columns: repeat(1fr);
+    }
+}
+@media screen and (min-device-width : 200px){
+    footer{
+        grid-template-columns: 1fr;
+    }  
+}
+/* @media screen and (min-device-width:200px){
+    .divConteudo{
+        flex-wrap: wrap;
+    }
+} */
+
+.informacoes-de-contato{
+    font-family: Helvetica;
+    text-align:center;
+    border:0;
+    color: rgb(255, 255, 255);
+    border: 6px rgb(235, 36, 36)outset;
+}
+footer:hover{
+    background-color: rgb(253, 4, 4);
+    
+}
+
+/*cartão do foooter*/
+.nome-de-usuário{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+.GithubLink{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px;
+}
+.linkedlnLink{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 28px;
+}
+.nomeDoLinkedln{
+    font-size: 20px;
+}
+.nomeDoGit{
+    font-size:20px;
+}
+.informacoes-de-contato:hover{
+    background: blue;
+    color: aquamarine;
+}
+img{
+    justify-content: center;
+    height:130px;
+    width:130px;
+
+}
+#inputS{
+    font-size: 30px;
+    height: 2rem;
+    position: relative;
+    top: 0px; left: 790px;
+    /* bottom: 2px; */
+    border: 10px rgb(196, 196, 221) outset;
+}
+#botão{
+    font-size: 30px;
+    height: 3rem;
+    position: relative;
+    top: 0px; left: 800px;
+    border: 10px rgb(196, 196, 221) outset
+}
+
+
+
+
+
