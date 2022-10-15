@@ -31,9 +31,7 @@ const satelites8= 14;
 const orbitaLimpa8 = true;
 
 
-const media = ((satelites+ satelites2 + satelites3 + satelites4 + satelites5 + satelites6 + satelites7 + satelites8)/2)
-
-// console.log(media) //102.5
+const media = ((satelites+ satelites2 + satelites3 + satelites4 + satelites5 + satelites6 + satelites7 + satelites8)/8)
 
 const todosTemOrbitaLimpa = orbitaLimpa && orbitaLimpa2 && orbitaLimpa3 && orbitaLimpa4 && orbitaLimpa5 && orbitaLimpa6 && orbitaLimpa7 && orbitaLimpa8;
 console.log(todosTemOrbitaLimpa) //true
