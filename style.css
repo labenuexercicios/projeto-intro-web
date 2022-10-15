@@ -1,0 +1,195 @@
+body{
+    background-image: url(/img/background.png);
+    height: 100%;
+}
+
+
+
+header{
+    width: 100%;
+    height: 13vh;
+    background-color: rgb(80, 7, 7);
+}
+
+
+figure img{
+    width: 16vh;
+    margin: 0 0 0 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.barra-de-navegacao img{
+    width: 7vh;
+}
+
+nav{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+}
+
+nav li{
+    display: inline;
+}
+
+.lista-dos-filmes{
+    margin: 100px 0;
+}
+
+main{
+    margin: 15vh 0 0 0;
+    width: 100%;
+}
+
+.barra-de-pesquisa{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.barra-de-pesquisa input{
+    border: 1px solid white;
+    background-color: rgb(80, 7, 7);
+    color: white;
+}
+
+.barra-de-pesquisa button{
+    background-color: rgb(80, 7, 7);
+    border: 1px solid white;
+    color: white;
+}
+
+
+h2{
+    color: black;
+    margin: 0 0 80px 0;
+    display: grid;
+    justify-items: center;
+    -webkit-text-stroke: 0.5px white;
+}
+
+.barra-de-navegacao a{
+    text-decoration: none;
+}
+
+section img{
+    width: 19vw;
+    padding: 1vh;
+    border-radius: 15px;
+}
+
+.caixa-dos-filmes1,.caixa-dos-filmes2,.caixa-dos-filmes3,.caixa-dos-filmes4,.caixa-dos-filmes5,.caixa-dos-filmes6,
+.caixa-dos-filmes7,.caixa-dos-filmes8,.caixa-dos-filmes9,.caixa-dos-filmes10,.caixa-dos-filmes11,.caixa-dos-filmes12,
+.caixa-dos-filmes13,.caixa-dos-filmes14,.caixa-dos-filmes15,.caixa-dos-filmes16,.caixa-dos-filmes17{
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+section ul{
+    background-color: rgb(80, 7, 7);
+    border: 3px solid white;
+    border-radius: 15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row; 
+}
+
+@media screen and (max-width: 800px) {
+    h2{
+        font-size: 10vw;
+    }
+    section ul{
+        font-size: 15px;
+        width: 70%;  
+        height: 26vh;
+    }
+
+    .barra-de-pesquisa input{
+        height: 30px;
+        width: 50vw;
+    }
+
+    footer a{
+        font-size: 5vw;
+    }
+
+    #nome{
+        font-size: 5vw;
+    }
+}
+
+@media screen and (min-width: 800px){
+    h2{
+        font-size: 8vw;
+    }
+    section ul{
+        font-size: 20px;
+        width: 50%;
+    }
+
+    .barra-de-pesquisa input{
+        height: 30px;
+        width: 40vw;
+    }
+
+    footer a{
+        font-size: 2vw;
+    }
+
+    #nome{
+        font-size: 2vw;
+    }
+}
+
+section div{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    margin: 80px 0 0 0;
+    height: 20vh;
+    background-color: rgb(80, 7, 7);
+}
+
+footer div{
+    position: relative;
+    top: 3vh;
+    font-size: 20px;
+    padding: 1vw;
+}
+
+footer p{
+    display: grid;
+    justify-items: center;
+}
+
+#nome{
+    color: white;
+    justify-items: center;
+    
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    display: grid;
+    justify-items: center;
+    
+}
+
+.titulo-invisivel,.invisivel1,.invisivel2,.invisivel3,.invisivel4,.invisivel5,.invisivel6,.invisivel7,.invisivel8,.invisivel9,
+.invisivel10,.invisivel11,.invisivel12,.invisivel13,.invisivel14,.invisivel15,.invisivel16,.invisivel17{
+
+    display: none;
+}

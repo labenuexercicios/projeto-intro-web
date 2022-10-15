@@ -60,3 +60,7 @@ A página consiste em um HTML, ligado a um ou mais arquivos CSS, e um ou mais ar
 - Entregue o **link do repo** no [Formulário de entrega](https://forms.gle/Q1mXTJFxwVUgUnrZA).
 
 **Opcional**: Tente utilizar o **Github pages** para fazer o deploy do seu projeto.
+
+**Link do Projeto finalizado:**
+
+- Link do Projeto: http://halting-event.surge.sh/

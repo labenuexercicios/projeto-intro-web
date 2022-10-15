@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>MarvelFlix</title>
+</head>
+
+<body> 
+    
+    <header>
+
+        <figure>
+            <img src="/img/FLIX_1.png" alt="">
+        </figure>
+
+        <nav>
+            
+            <ul>
+
+                <li class="barra-de-navegacao">
+                    <a href="index.html">
+                        <img src="/img/inicio.png" alt="">
+                    </a>
+                </li>
+
+                <li class="barra-de-navegacao">
+                    <a href="index.html" >
+                        <img src="/img/user.png" alt="">
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+        
+
+    </header> 
+
+    <main class="lista">
+
+         <div class="barra-de-pesquisa">
+
+            <label for="texto"></label>
+            <input type="text" id="texto" placeholder="Busca">
+            <button onclick="verificacaoDeTitulo()">Buscar</button>
+
+        </div>
+
+        <div class="lista-dos-filmes">
+
+            <section> 
+                
+                
+                <h2 class="titulo">Filmes assistidos</h2>
+                
+                
+                
+
+                <section class="caixa-dos-filmes1">
+                    
+                     <ul id="conteiner1">
+                        <!-- <img src="/img/Homem de Ferro 2008.jpg" alt="Homem de Ferro">
+                        
+                        <div>
+                            <li>
+                                <a href="https://pt.wikipedia.org/wiki/Homem_de_Ferro_(filme)" target="_blank">Homem de Ferro</a>
+                            </li>
+                            <li>Duração: 2h 06min</li>
+                            <li >Lançado: 2018</li>
+                        </div>  -->
+                       
+                        
+                    </ul> 
+                </section>
+
+                <section class="caixa-dos-filmes2">
+                    <ul id="conteiner2">
+                         <!-- <img src="/img/Homem de Ferro  2010.jpg" alt="Homem de Ferro 2">
+                        <div>
+                            <li>
+                                <a href="https://pt.wikipedia.org/wiki/Homem_de_Ferro_2" target="_blank">Homem de Ferro 2</a>
+                            </li>
+                            <li>Duração: 2h 05min</li>
+                            <li>Lançado: 2010</li>
+                        </div>  -->
+                    </ul>
+                </section>
+
+                <section class="caixa-dos-filmes3">
+                    <ul id="conteiner3">
+                         <!-- <img src="/img/Homem de Ferro 3 2013.jpg" alt="Homem de Ferro 3">
+                        <div>
+                            <li>
+                                <a href="https://pt.wikipedia.org/wiki/Homem_de_Ferro_3" target="_blank">Homem de Ferro 3</a> 
+                            </li>
+                            <li>Duração: 2h 11min</li>
+                            <li>Lançado: 2013</li>
+                        </div>  -->
+                    </ul>
+                </section>
+
+                <section class="caixa-dos-filmes4">
+                    <ul id="conteiner4">
+                         <!-- <img src="/img/Thor  2011.jpg" alt="">
+                        <div>
+                            <li>
+                                <a href="https://pt.wikipedia.org/wiki/Thor_(filme)" target="_blank">Thor</a>
+                            </li>
+                            <li>Duração: 1h 54min</li>
+                            <li>Lançado: 2011</li>
+                        </div>  -->
+                    </ul>
+                </section>
+
+                <section class="caixa-dos-filmes5">
+                     <ul id="conteiner5">
+                        <!-- <img src="/img/Thor O Mundo Sombrio  2013 .jpg" alt="">
+                        <div>
+                            <li>
+                                <a href="https://pt.wikipedia.org/wiki/Thor:_The_Dark_World" target="_blank">Thor: O Mundo Sombrio</a> 
+                            </li>
+                            <li>Duração: 1h 52min</li>
+                            <li>Lançado: 2013</li>
+                        </div> -->
+                    </ul> 
+                </section>
+                    
+                <section class="caixa-dos-filmes6">
+                    <ul id="conteiner6">  
+                         <!-- <img src="/img/Thor Ragnarok - 2017 .jpg" alt="">
+                        <div>
+                            <li>
+                                <a href="https://pt.wikipedia.org/wiki/Thor:_Ragnarok" target="_blank">Thor: Ragnarok</a> 
+                            </li>
+                            <li>Duração: 2h 11min</li>
+                            <li>Lançado: 2017</li>
+                        </div>  -->
+                    </ul>
+                </section>
+
+                <section class="caixa-dos-filmes7">
+                    <ul id="conteiner7">
+                         <!-- <img src="/img/Thor Amor e Trovao - 2022.png" alt="">
+                        <div>
+                            <li>
+                                <a href="https://pt.wikipedia.org/wiki/Thor:_Amor_e_Trov%C3%A3o" target="_blank">Thor: Amor e Trovão</a> 
+                            </li>
+                            <li>Duração: 1h 59min</li>
+                            <li>Lançado: 2022</li>
+                        </div>  -->
+                    </ul>
+                </section>
+
+                <section class="caixa-dos-filmes8">
+                    <ul id="conteiner8">
+                         <!-- <img src="/img/Os Vingadores – The Avengers  2012.jpg" alt="">
+                        <div>
+                            <li>
+                                <a href="https://pt.wikipedia.org/wiki/The_Avengers_(2012)" target="_blank">Os Vingadores – The Avengers</a>
+                            </li>
+                            <li>Duração: 2h 23min</li>
+                            <li>Lançado: 2012</li>
+                        </div>  -->
+                    </ul>
+                </section>
+
+                <section class="caixa-dos-filmes9">
+                    <ul id="conteiner9">
+                         <!-- <img src="/img/Vingadores Era de Ultron - 2015.jpg" alt="">
+                        <div>
+                            <li>
+                                <a href="https://pt.wikipedia.org/wiki/Avengers:_Age_of_Ultron" target="_blank">Vingadores: Era de Ultron</a>
+                            </li>
+                            <li>Duração: 2h 21min</li>
+                            <li>Lançado: 2015</li>
+                        </div>  -->
+                    </ul>
+                </section>
+
+                <section class="caixa-dos-filmes10">
+                    <ul id="conteiner10">
+                         <!-- <img src="/img/Vingadores Guerra Infinita - 2018 ‧.jpg" alt="">
+                        <div>
+                            <li>
+                                <a href="https://pt.wikipedia.org/wiki/Avengers:_Infinity_War" target="_blank">Vingadores: Guerra Infinita</a>
+                            </li>
+                            <li>Duração: 2h 29min</li>
+                            <li>Lançado: 2018</li>
+                        </div>  -->
+                    </ul>
+                </section>
+
+                <section class="caixa-dos-filmes11">
+                    <ul id="conteiner11">
+                         <!-- <img src="/img/Vingadores Ultimato - 2019.png" alt="">
+                        <div>
+                            <li>
+                                <a href="https://pt.wikipedia.org/wiki/Avengers:_Endgame" target="_blank">Vingadores: Ultimato</a>
+                            </li>
+                            <li>Duração: 3h 02min</li>
+                            <li>Lançado: 2019</li>
+                        </div>  -->
+                    </ul>
+                </section>
+
+                <section class="caixa-dos-filmes12">
+                    <ul id="conteiner12">
+                         <!-- <img src="/img/Homem-Aranha De Volta ao Lar - 2017.jpg" alt="">
+                        <div>
+                            <li>
+                                <a href="https://pt.wikipedia.org/wiki/Spider-Man:_Homecoming" target="_blank">Homem-Aranha: De Volta ao Lar</a>
+                            </li>
+                            <li>Duração: 2h 13min</li>
+                            <li>Lançado: 2017</li>
+                        </div>  -->
+                    </ul>
+                </section>
+
+                <section class="caixa-dos-filmes13">
+                    <ul id="conteiner13">
+                         <!-- <img src="/img/Homem-Aranha Longe de Casa - 2019.jpg" alt="">
+                        <div>
+                            <li>
+                                <a href="https://pt.wikipedia.org/wiki/Homem-Aranha:_Longe_de_Casa" target="_blank">Homem-Aranha: Longe de Casa</a>
+                            </li>
+                            <li>Duração: 2h 11min</li>
+                            <li>Lançado: 2019</li>
+                        </div>  -->
+                    </ul>
+                </section>
+
+                <section class="caixa-dos-filmes14">
+                    <ul id="conteiner14">
+                         <!-- <img src="/img/Homem-Aranha Sem Volta para Casa - 2021.jpg" alt="">
+                        <div>
+                            <li>
+                                <a href="https://pt.wikipedia.org/wiki/Spider-Man:_No_Way_Home" target="_blank">Homem-Aranha: Sem Volta para Casa</a>
+                            </li>
+                            <li>Duração: 2h 28min</li>
+                            <li>Lançado: 2021</li>
+                        </div>  -->
+                    </ul>
+                </section>
+
+                <section class="caixa-dos-filmes15">
+                    <ul id="conteiner15">
+                         <!-- <img src="/img/Pantera Negra - 2018 .jpg" alt="">
+                        <div class="item-da-lista">
+                            
+                             <li>
+                                <a href="https://pt.wikipedia.org/wiki/Black_Panther_(filme)" target="_blank">Pantera Negra</a>
+                            </li>
+                            <li>Duração: 2h 15min</li>
+                            <li>Lançado: 2018</li>
+                            
+                        </div>  -->
+                    </ul>
+                </section>
+
+                <section class="caixa-dos-filmes16">
+                    <ul id="conteiner16">
+                         <!-- <img src="/img/Viuva Negra - 2021.jpg" alt="">
+                        <div>
+                            <li>
+                                <a href="https://pt.wikipedia.org/wiki/Vi%C3%BAva_Negra_(filme)" target="_blank">Viúva Negra</a>
+                            </li>
+                            <li>Duração: 2h 13min</li>
+                            <li>Lançado: 2021</li>
+                        </div>  -->
+                    </ul>
+                </section>
+
+                <section class="caixa-dos-filmes17">
+                    <ul id="conteiner17">
+                         <!-- <img src="/img/Doutor Estranho no Multiverso da Loucura (2022).jpeg" alt="">
+                        <div>
+                            <li>
+                                <a href="https://pt.wikipedia.org/wiki/Doutor_Estranho_no_Multiverso_da_Loucura" target="_blank">Doutor Estranho no Multiverso da Loucura</a>
+                            </li>
+                            <li>Duração: 2h 06min</li>
+                            <li>Lançado: 2022</li>
+                        </div>  -->
+                    </ul>
+                </section>
+
+            </section>
+
+        </div>
+         
+    </main>
+
+    <footer>
+
+        <div>
+            <p id="nome">Desenvolvido por Raphaela Ferrari Delgado</p>
+            <a href="https://github.com/raphaelaferrari" target="_blank">GitHub: https://github.com/raphaelaferrari</a>
+            
+        </div>
+        
+    </footer>
+   
+</body>
+</html>
