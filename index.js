@@ -1,22 +1,22 @@
-const filamento1 = {
-  tipo: "3d prime ht branco",
+const pacote1 = {
+  tipo: "bustos",
   valor: 120.0,
   estoque: true,
-  pecas: ["Munny", "Walter", "Caveira"],
+  pecas: ["Batman", "Walter", "CR7"],
 };
 
-const filamento2 = {
-  tipo: "voolt preto padrão",
+const pacote2 = {
+  tipo: "brinquedos",
   valor: 115.0,
   estoque: true,
-  pecas: ["Alien", "Munny", "Batman"],
+  pecas: ["salamandra", "polvo", "cobra"],
 };
 
-const filamento3 = {
-  tipo: "3d lab dual color azul/roxo",
+const pacote3 = {
+  tipo: "decorativo",
   valor: 180.0,
   estoque: false,
-  pecas: ["Dragao", "Salamandra", "Cobra"],
+  pecas: ["porta retraro", "vaso", "cinzeiro"],
 };
 // if (filamento1.estoque === true) {
 //   filamentos.push(filamento1);
@@ -36,17 +36,17 @@ const filamento3 = {
 //   alert("Comprar filamento dual color azul/roxo");
 // }
 
-const filamentos = [];
+const pacotes = [];
 
-filamento1.estoque
-  ? filamentos.push(filamento1)
-  : alert("Comprar Filamentom 3D Prime HT Branco");
-filamento2.estoque
-  ? filamentos.push(filamento2)
-  : alert("Comprar Filamento Voolt Preto");
-filamento3.estoque
-  ? filamentos.push(filamento3)
-  : alert("Comprar Filamento 3D Lab Dual Color Azul e Roxo");
+pacote1.estoque
+  ? pacotes.push(pacote1)
+  : alert("Reserva de Bustos está vazia");
+pacote2.estoque
+  ? pacotes.push(pacote2)
+  : alert("Reserva de Brinquedos está vazia");
+pacote3.estoque
+  ? pacotes.push(pacote3)
+  : alert("Reserva de Decorativas está vazia");
 
 // console.log(filamentos);
 
@@ -86,6 +86,7 @@ filamento3.estoque
 // `);
 
 filamentos.push("filamentos")
+
 function relatorio() {
   for (fill of filamentos) {
     console.log(fill)
