@@ -107,5 +107,13 @@ for (let index of MugiwarasBando) {
     console.log(`Pirata: ${index.Pirata}, \n Idade: ${index.idade}, \n ${index.procurado}, \n Recompensa: ${index.Recompensa}, \n Atributos: ${index.Atributos} `)
 }
 
+// Semana 6 
 
-//------------------------------------------------------------------
+const stringPirata = MugiwarasBando.map(p => p.Pirata);
+console.log(stringPirata)
+
+const Capitão = MugiwarasBando.filter((objeto)=>{return objeto.Pirata==="Monkey D. Luffy"})
+console.log(`${Capitão}`? Capitão : alert ("tripulante não encontrado"))
+
+
+//------------------------------------------------------------------ 
