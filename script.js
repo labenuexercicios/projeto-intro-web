@@ -208,98 +208,68 @@ console.log("");
 console.log("Semana 6");
 console.log("");
 
-function buscaTitulo(array, str) {
-  for (let i in array) {
-    for (let j in array[i]) {
-      if (array[i][j] === str) {
-        const main = document.getElementById("main");
-        const div = document.createElement("div");
-        const section = document.createElement("section");
-        const imagem = document.createElement("img");
-        const ancora = document.createElement("a");
-        const ul = document.createElement("ul");
-        const li1 = document.createElement("li");
-        const li2 = document.createElement("li");
-        const li3 = document.createElement("li");
-        const li4 = document.createElement("li");
-        const li5 = document.createElement("li");
-
-        div.setAttribute("id", "container");
-        imagem.setAttribute("class", "img");
-        ancora.setAttribute("href", arrayComObjSerie[i].linkTitulo);
-        ancora.innerHTML += arrayComObjSerie[i].titulo;
-        section.setAttribute("class", "card");
-        ul.setAttribute("class", "listaInformacoes");
-
-        imagem.src = arrayComObjSerie[i].thumbnail;
-        ancora.setAttribute("target", "_blank");
-
-        li1.innerHTML += `nome: `;
-        li1.appendChild(ancora);
-        li2.innerHTML += `Genero: ${arrayComObjSerie[i].genero}`;
-        li3.innerHTML += `Total de temporadas: ${arrayComObjSerie[i].totTemporadas}`;
-        li4.innerHTML += `Elenco ${arrayComObjSerie[i].elenco}`;
-        li5.innerHTML += `Sinopse: ${arrayComObjSerie[i].sinopse}`;
-
-        main.appendChild(div);
-        div.appendChild(section);
-        section.appendChild(imagem);
-        section.appendChild(ul);
-        ul.appendChild(li1);
-        ul.appendChild(li2);
-        ul.appendChild(li3);
-        ul.appendChild(li4);
-        ul.appendChild(li5);
-      }
+function buscaRefatorada(string) {
+  let novoObj = {}
+  for (obj in arrayComObjSerie) {
+    if (arrayComObjSerie[obj].titulo == string) {
+      novoObj = { ...arrayComObjSerie[obj] }
+      return novoObj
     }
-    // return alert("Seriado não encontrado");
   }
+  location.reload()
+  return alert('Seriado não encontrado')
 }
+
 
 // Semana 11
 console.log("");
 console.log("Semana 11");
 console.log("");
 
-function criaObj(array) {
-  for (i in arrayComObjSerie) {
-    const div = document.getElementById("container");
-    const section = document.createElement("section");
-    const imagem = document.createElement("img");
-    const ancora = document.createElement("a");
-    const ul = document.createElement("ul");
-    const li1 = document.createElement("li");
-    const li2 = document.createElement("li");
-    const li3 = document.createElement("li");
-    const li4 = document.createElement("li");
-    const li5 = document.createElement("li");
+function card(obj) {
+  // 1 - PEGAR TAG DE REFERENCIA;
+  const div = document.getElementById('container');
 
-    imagem.setAttribute("class", "img");
-    ancora.setAttribute("href", arrayComObjSerie[i].linkTitulo);
-    ancora.innerHTML += arrayComObjSerie[i].titulo;
-    section.setAttribute("class", "card");
-    ul.setAttribute("class", "listaInformacoes");
+  // 2 - CRIAR A SECTION COM CLASSE CARD;
+  const section = document.createElement('section');
+  section.setAttribute('class', 'card')
+  section.setAttribute('id', 'card')
 
-    imagem.src = arrayComObjSerie[i].thumbnail;
-    ancora.setAttribute("target", "_blank");
+  // 3 - CRIAR TAG IMG E A;
+  const link = document.createElement('a');
+  link.setAttribute("href", obj.linkTitulo);
+  link.setAttribute("target", 'blank');
 
-    li1.innerHTML += `nome: `;
-    li1.appendChild(ancora);
-    li2.innerHTML += `Genero: ${arrayComObjSerie[i].genero}`;
-    li3.innerHTML += `Total de temporadas: ${arrayComObjSerie[i].totTemporadas}`;
-    li4.innerHTML += `Elenco ${arrayComObjSerie[i].elenco}`;
-    li5.innerHTML += `Sinopse: ${arrayComObjSerie[i].sinopse}`;
+  const imagem = document.createElement('img');
+  imagem.setAttribute('src', obj.thumbnail)
+  imagem.setAttribute('class', 'img')
+  // 4 - INSERIR SECTION DENTRO DA TAG DIV, COM CLASSE CONTAINER;
+  div.insertAdjacentElement('beforeend', section)
+  section.insertAdjacentElement('beforeend', imagem)
 
-    main.appendChild(div);
-    div.appendChild(section);
-    section.appendChild(imagem);
-    section.appendChild(ul);
-    ul.appendChild(li1);
-    ul.appendChild(li2);
-    ul.appendChild(li3);
-    ul.appendChild(li4);
-    ul.appendChild(li5);
-  }
+  // 5 -CRIANDO TAG UL
+  const ul = document.createElement('ul')
+  ul.setAttribute("class", "listaInformacoes");
+  section.insertAdjacentElement('beforeend', ul)
+
+  // CRIANDO TAG LI
+  const li = document.createElement('li')
+  ul.insertAdjacentElement('beforeend', li)
+  li.insertAdjacentElement("beforeend", link)
+  link.innerHTML += obj.titulo;
+
+  const liGenero = document.createElement('li')
+  ul.insertAdjacentElement('beforeend', liGenero)
+  liGenero.innerHTML += `Gênero: ${obj.genero}`
+
+  const liElenco = document.createElement('li')
+  ul.insertAdjacentElement('beforeend', liElenco)
+  liElenco.innerHTML += `Elenco: ${obj.elenco}`
+
+  const liSinopse = document.createElement('li')
+  ul.insertAdjacentElement('beforeend', liSinopse)
+  liSinopse.innerHTML += `Sinopse: ${obj.sinopse}`
+
 }
 
 // Semana 12
@@ -307,20 +277,30 @@ console.log("");
 console.log("Semana 12");
 console.log("");
 
-function btnBusca(event) {
-  event.preventDefault();
-  let input = document.getElementById("input").value.toLowerCase();
-  if (input == " ") {
-    // alert("Seriado não encontrado");
-  } else {
-    document.getElementById("container").remove();
-    buscaTitulo(arrayComObjSerie, input);
+function exibirTodosOsCards(array) {
+  for (let i = 0; i < array.length; i++) {
+    card(array[i])
   }
 }
+exibirTodosOsCards(arrayComObjSerie)
 
-const btnRefresh = document.getElementById('refresh');
-btnRefresh.addEventListener('click',()=>{
-  location.reload()
+const btnBusca = document.getElementById('btnPesquisa');
+btnBusca.addEventListener('click', (event) => {
+  event.preventDefault()
+  const input = document.getElementById('input').value.toLowerCase()
+  let novoCard = buscaRefatorada(input)
+  if (novoCard.titulo.toLowerCase() == input) {
+    for(let i = 0; i < arrayComObjSerie.length; i++){
+
+    const section = document.querySelector('.card')
+    section.remove();
+    }
+    card(novoCard)
+  }
 })
 
-criaObj(arrayComObjSerie);
+const btnRefresh = document.getElementById('refresh');
+btnRefresh.addEventListener('click', () => {
+  location.reload();
+})
+
