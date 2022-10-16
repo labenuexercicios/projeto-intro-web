@@ -1,0 +1,13 @@
+<svg width="24px" height="24px" viewBox="0 0 24 24" id="_24x24_On_Light_Facebook" data-name="24x24/On Light/Facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="0.991" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4e69a2"/>
+      <stop offset="1" stop-color="#3b5998"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <path id="Shape" d="M11.193,19.929h0V13.159h2.358l.354-2.667H11.193v-1.7c0-.779.231-1.3,1.356-1.3H14V5.106A19.937,19.937,0,0,0,11.887,5,3.269,3.269,0,0,0,8.365,8.525v1.966H6v2.667H8.365v6.709a10,10,0,1,1,2.83.062Z" transform="translate(2 2)" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <rect id="view-box" width="24" height="24" fill="none"/>
+  <path id="Shape-2" data-name="Shape" d="M11.193,19.929h0V13.159h2.358l.354-2.667H11.193v-1.7c0-.779.231-1.3,1.356-1.3H14V5.106A19.937,19.937,0,0,0,11.887,5,3.269,3.269,0,0,0,8.365,8.525v1.966H6v2.667H8.365v6.709a10,10,0,1,1,2.83.062Z" transform="translate(2 2)" fill="url(#linear-gradient)"/>
+</svg>
