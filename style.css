@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 1200px) {
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+}
+
+@media screen and (min-width: 800px)and (max-width:1199px) {
+    * {
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+}
+
+@media screen and (min-width: 480px) {
+    * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+}
+
+header {
+    background-color: black;
+    color: bisque;
+    display: grid;
+    justify-items: center;
+
+}
+
+main {
+    background-color: #ffe4c4;
+
+}
+
+
+
+
+
+.barraPesquisa {
+    text-align: center;
+}
+
+#buscar {
+    width: 250px;
+    color: black;
+    font-size: 20px;
+    user-select: none;
+}
+
+#btn {
+    width: 75px;
+    user-select: none;
+    font-size: 20px;
+}
+
+section {
+    background-color: #ffe4c4;
+    color: black;
+    display: grid;
+    justify-items: center;
+
+}
+
+li#ingredientes {
+    width: 300px;
+    text-align: center;
+    font-size: 4mm;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.979);
+    color: #ffe4c4;
+    display: grid;
+    justify-items: center;
+
+}
+#receitas-listas{
+    background-color: #ffe4c4;
+    color: black;
+    display: grid;
+    justify-items: center;
+}
