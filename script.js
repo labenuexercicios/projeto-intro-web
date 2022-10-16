@@ -84,7 +84,7 @@ const MugiwarasBando = [{
 //semana 4//
 
 const Mugiwaras ={
-    nome: "Yamato",
+    Pirata: "Yamato",
     idade: 18,
     procurado: false,
     Recompensa: "B$: 1.100.000,00",
@@ -97,7 +97,15 @@ if (Mugiwaras.procurado){
     alert ("Yamato está cuidando de Wano, ainda não faz parte do bando")
 }
 
+// Semana 5 
+
+// for (let indexM of MugiwarasBando){
+//     console.log(`"${indexM.Atributos}"`)
+// }
+
+for (let index of MugiwarasBando) {
+    console.log(`Pirata: ${index.Pirata}, \n Idade: ${index.idade}, \n ${index.procurado}, \n Recompensa: ${index.Recompensa}, \n Atributos: ${index.Atributos} `)
+}
+
 
 //------------------------------------------------------------------
-
-//Todas as semanas estão em commits no link da Labenu//
