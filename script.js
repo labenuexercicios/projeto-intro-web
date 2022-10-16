@@ -320,7 +320,7 @@ function btnBusca(event) {
 
 const btnRefresh = document.getElementById('refresh');
 btnRefresh.addEventListener('click',()=>{
-  location.reload();
+  location.reload()
 })
 
 criaObj(arrayComObjSerie);
