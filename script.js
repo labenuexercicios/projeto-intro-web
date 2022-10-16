@@ -1,5 +1,3 @@
-const Mugiwaras = []
-
 const MugiwarasBando = [{
     Pirata: "Monkey D. Luffy",
     idade: 19,
@@ -72,9 +70,34 @@ const MugiwarasBando = [{
     Atributos: ["Homem-Peixe", "Gyojin Karatê", "Super força"]
 }]
 
-Mugiwaras.push(MugiwarasBando)
-console.log(MugiwarasBando)
+// const Mugiwaras = MugiwarasBando.slice()
+// Mugiwaras.push({
+//     nome: "Yamato",
+//     idade: 18,
+//     procurado: false,
+//     Recompensa: "B$: 1.100.000,00",
+//     Atributos: ["Super força", "Agilidade", "Inteligência"]
 
+// })
+// console.log(Mugiwaras)
+
+//semana 4//
+
+const Mugiwaras ={
+    nome: "Yamato",
+    idade: 18,
+    procurado: false,
+    Recompensa: "B$: 1.100.000,00",
+    Atributos: ["Super força", "Agilidade", "Inteligência"]
+
+}
+if (Mugiwaras.procurado){
+    MugiwarasBando.push(Mugiwaras)
+} else {
+    alert ("Yamato está cuidando de Wano, ainda não faz parte do bando")
+}
 
 
 //------------------------------------------------------------------
+
+//Todas as semanas estão em commits no link da Labenu//
