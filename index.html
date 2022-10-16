@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Digital Pet</title>
+  <title>LabePet</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -93,59 +93,151 @@
       <span id="informacoe"></span>
       <h1 class="informacoes-titulo">Curiosidades sobre sua raça preferida!</h1>
 
-      <input id="listaDog"  type="text" name="search" placeholder="." class="pesquisa-informacoes">
+      <input id="listaDog" type="text" name="search" placeholder="." class="pesquisa-informacoes">
       <button onclick="verificaDog()" id="btn" class="bnt-infor link-infor">Pesquisar</button>
+      <button onclick="verificaDog()" id="btn" class="bnt-infor link-infor">voltar</button>
 
       <div id="list"></div>
 
-      <div class="imagens-informacoes">
+      <ul class="imagens-informacoes">
 
-        <div class="imagem" id="listadog">
+        <li class="imagem" id="listadog">
           <img src="img/cachorrinho.jpeg" class="informacao-img" />
           <h3 class="nome-raca">Golden retriever</h3>
-        </div>
+          <details>
+            <summary></summary>
+            <p class="img-infor">
+              GOLDEN RETRIEVER <br>
+              Origem: Escócia<br>
+              Peso: 25-34 kg<br>
+              Altura: 56-60 cm<br>
+              Expectativa de vida: 10-12 anos
+            </p>
+          </details>
+        </li>
 
-        <div class="imagem" id="listadog">
+        <li class="imagem" id="listadog">
           <img src="img/cachorrinho1.jpeg" class="informacao-img" />
           <h3 class="nome-raca">Buldogue Inglês</h3>
-        </div>
+          <details>
+            <summary></summary>
+            <p class="img-infor">
+              Raça: BULDOGUE INGLÊS <br>
+              Origem: Inglaterra <br>
+              Peso: 18-22 kg <br>
+              Altura: 35-38 cm <br>
+              Expectativa de vida: 8-10 anos
+            </p>
+          </details>
+        </li>
 
-        <div class="imagem" id="listadog">
+        <li class="imagem" id="listadog">
           <img src="img/cachorrinho7.jpeg" class="informacao-img" />
           <h3 class="nome-raca">Basset hound</h3>
-        </div>
+          <details>
+            <summary></summary>
+            <p class="img-infor">
+              Raça: BASSET HOUND <br>
+              Origem: França <br>
+              Peso: 18-30 kg <br>
+              Altura: 58-68 kg <br>
+              Expectativa de vida: 12-13 anos
+            </p>
+          </details>
+        </li>
 
-        <div class="imagem" id="listadog">
+        <li class="imagem" id="listadog">
           <img src="img/cachorrinho3.jpeg" class="informacao-img" />
           <h3 class="nome-raca">Pug</h3>
-        </div>
+          <details class="lista-infor">
+            <summary></summary>
+            <p class="img-infor">
+              Raça: PUG <br>
+              Origem: China <br>
+              Peso: 6-8 kg <br>
+              Altura: 25-30 cm <br>
+              Expectativa de vida: 13-15 anos.
+            </p>
+          </details>
 
-        <div class="imagem" id="listadog">
+        </li>
+
+        <li class="imagem" id="listadog">
           <img src="img/cachorrinho4.jpeg" class="informacao-img" />
           <h3 class="nome-raca">Beagle</h3>
-        </div>
+          <details>
+            <summary></summary>
+            <p class="img-infor">
+              Raça: BEAGLE <br>
+              Origem: Inglaterra e Estados Unidos <br>
+              Peso: 9-13,5 kg <br>
+              Altura: 33-38 cm <br>
+              Expectativa de vida: 10-15 anos.
+            </p>
+          </details>
+        </li>
 
-        <div class="imagem" id="listadog">
+        <li class="imagem" id="listadog">
           <img src="img/cachorrinho5.jpeg" class="informacao-img" />
           <h3 class="nome-raca">Cocker spaniel inglês</h3>
-        </div>
+          <details>
+            <summary></summary>
+            <p class="img-infor">
+              Raça: COCKER SPANIEL INGLES <br>
+              Origem: Inglaterra <br>
+              Peso: 11-15 kg <br>
+              Altura: 38-43 cm <br>
+              Expectativa de vida: 12-14 anos.
+            </p>
+          </details>
+        </li>
 
-        <div class="imagem" id="listadog">
+        <li class="imagem" id="listadog">
           <img src="img/cachorrinho6.jpeg" class="informacao-img" />
           <h3 class="nome-raca">Shih tzu</h3>
-        </div>
+          <details>
+            <summary></summary>
+            <p class="img-infor">
+              Raça: SHIH TZU <br>
+              Origem: China <br>
+              Peso médio do shi tzu: 4-7 kg <br>
+              Altura média do shi tzu: 20-28 cm <br>
+              Expectativa de vida do shi tzu: 10-16 anos.
+            </p>
+          </details>
+        </li>
 
-        <div class="imagem" id="listadog">
+        <li class="imagem" id="listadog">
           <img src="img/cachorrinho2.jpeg" class="informacao-img" />
           <h3 class="nome-raca">Jack russell terrier</h3>
-        </div>
+          <details>
+            <summary></summary>
+            <p class="img-infor">
+              Raça: JACK RUSSELL TERRIER <br>
+              Origem: Inglaterra <br>
+              Peso: 9-13 kg <br>
+              Altura: 30-35 cm <br>
+              Expectativa de vida: 12-14 anos.
+            </p>
+          </details>
+        </li>
 
-        <div class="imagem" id="listadog">
+        <li class="imagem" id="listadog">
           <img src="img/labrador.jpeg" class="informacao-img" />
           <h3 class="nome-raca">Labrador</h3>
-        </div>
+          <details>
+            <summary></summary>
+            <p class="img-infor">
+              Raça: LABRADOR <br>
+              Origem: Reino Unido e Canadá <br>
+              Peso: 25–36 kg <br>
+              Altura: 54,5–62 cm <br>
+              Expectativa de vida: 10-12 anos.
+            </p>
+          </details>
+        </li>
         <button onclick="voltarListaDogs()" id="btn-2" class="bnt-infor">voltar</button>
-      </div>
+      </ul>
     </section>
 
     <section class="banner2">

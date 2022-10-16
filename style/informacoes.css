@@ -48,6 +48,10 @@
     border-radius: 10px;
 }
 
+.bnt-infor:hover {
+    background-color: var(--laranja-claro);
+}
+
 .pesquisa-informacoes::placeholder {
     color: var(--cinza);
     background: url(../img/lupa.svg) no-repeat;
@@ -69,11 +73,20 @@
 
 .imagem {
     width: 300px;
-    height: 340px;
+    height: 360px;
     border: 10px solid var(--laranja);
     background: var(--cinza-claro);
     cursor: pointer;
-    overflow: hidden;
+    margin-bottom: 50px;
+   
+}
+
+.img-infor {
+    background-color: var(--cinza-claro);
+    color: var(--laranja);
+    font-family: var(--font-secundaria);
+    line-height: 1.2em;
+    padding-bottom: 20px;
 }
 
 .informacao-img {
@@ -81,13 +94,7 @@
     height: 310px;
     object-fit: cover;
     transition: .2s linear;
-
-
-}
-
-.informacao-img:hover {
-    transform: scale(1.2);
-
+    
 }
 
 .nome-raca {
@@ -107,7 +114,7 @@
 
     .imagem {
         width: 250px;
-        height: 285px;
+        height: 315px;
     }
 
     .informacao-img {

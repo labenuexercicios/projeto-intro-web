@@ -49,7 +49,46 @@ const dog5 = {
     expectativaDeVidaAno: 10 + ' a ' + 15 + ' anos',
     racaParaApartamento: true,
     porteDaRaca: ['Grande porte', ' Medio porte', ' Pequeno porte']
+
 }
+
+const dog6 = {
+    raca: 'Beagle',
+    origem: 'Inglaterra e Estados Unidos',
+    pesoKg: 9 + ' a ' + 13.5 + ' kg',
+    alturaCm: 33 + ' a ' + 38 + ' cm',
+    expectativaDeVidaAno: 10 + ' a ' + 15 + ' anos',
+    racaParaApartamento: true,
+    porteDaRaca: ['Grande porte', ' Medio porte', ' Pequeno porte']
+}
+const dog7 = {
+    raca: 'Beagle',
+    origem: 'Inglaterra e Estados Unidos',
+    pesoKg: 9 + ' a ' + 13.5 + ' kg',
+    alturaCm: 33 + ' a ' + 38 + ' cm',
+    expectativaDeVidaAno: 10 + ' a ' + 15 + ' anos',
+    racaParaApartamento: true,
+    porteDaRaca: ['Grande porte', ' Medio porte', ' Pequeno porte']
+}
+const dog8 = {
+    raca: 'Beagle',
+    origem: 'Inglaterra e Estados Unidos',
+    pesoKg: 9 + ' a ' + 13.5 + ' kg',
+    alturaCm: 33 + ' a ' + 38 + ' cm',
+    expectativaDeVidaAno: 10 + ' a ' + 15 + ' anos',
+    racaParaApartamento: true,
+    porteDaRaca: ['Grande porte', ' Medio porte', ' Pequeno porte']
+}
+const dog9 = {
+    raca: 'Beagle',
+    origem: 'Inglaterra e Estados Unidos',
+    pesoKg: 9 + ' a ' + 13.5 + ' kg',
+    alturaCm: 33 + ' a ' + 38 + ' cm',
+    expectativaDeVidaAno: 10 + ' a ' + 15 + ' anos',
+    racaParaApartamento: true,
+    porteDaRaca: ['Grande porte', ' Medio porte', ' Pequeno porte']
+}
+
 
 const listaDeDogs = [];
 
@@ -109,8 +148,8 @@ function buscaPorDog(arrayDeObj, valorString) {
             dogARetrornar.origem = arrayDeObj[i].origem;
             dogARetrornar.pesoKg = arrayDeObj[i].pesoKg;
             dogARetrornar.alturaCm = arrayDeObj[i].alturaCm;
-            dogARetrornar.expectativaDeVidaAno = arrayDeObj[i].expectativaDeVidaAno
-            dogARetrornar.racaParaApartamento = arrayDeObj[i].racaParaApartamento
+            dogARetrornar.expectativaDeVidaAno = arrayDeObj[i].expectativaDeVidaAno;
+            dogARetrornar.racaParaApartamento = arrayDeObj[i].racaParaApartamento;
 
             // ou usar dogARetornar = {...areyDeObjeto[i]};
         }
@@ -123,66 +162,40 @@ function buscaPorDog(arrayDeObj, valorString) {
     // }
 
 }
-const objDoDog = buscaPorDog(listaDeDogs, "PUG")
+// const objDoDog = buscaPorDog(listaDeDogs, "PUG")
 
-console.log(objDoDog)
+// console.log(objDoDog)
 
 
 //-----------------------------------------------
 
 function verificaDog() {
-     let input = document.getElementById('listaDog').value
-     document.getElementById('listaDog').value = "";
+    let input = document.getElementById('listaDog').value
+    document.getElementById('listaDog').value = "";
     input = input.toLowerCase();
     let x = document.getElementsByClassName('imagem');
-    
+
     for (i = 0; i < x.length; i++) {
         if (!x[i].innerHTML.toLowerCase().includes(input)) {
             x[i].style.display = "none";
-        
 
-        }else {
+
+        } else {
             x[i].style.display = "list-item";
-    }
+
         }
-       
+ }
 
-        if(input === ""){
+        if (input === "") {
             document.getElementById('list').innerHTML = 'Digite o nome da raça desejada!'
-             }  else {
-              list.remove()
-           }
-           return alert("raça não encontrada")
-    }
+        } else {
+            list.remove();
 
-//    if(x.length !== input){
-//         lista.innerHTML = 'Raça não cadastrada!'}
+        }
 
 
- 
-// 
-
-
-    // buttonPesquisa.addEventListener('click', () => {
-    // const inputValue = "";
-    // if()
-    // alert("Raça não cadastrada");});
- 
-     
-
-//   const searchButton = document.getElementById('btn');
-//   const searchInput = document.getElementById('listaDog');
-  
-
-  
-
-
-       
-
-
-
-
-
+   
+}
 
 
 
