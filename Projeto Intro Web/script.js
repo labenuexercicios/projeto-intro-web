@@ -188,6 +188,7 @@ function criarJogos (array){
     secaoJogo.innerHTML=""
     
     for(i=0; i<array.length; i++){
+        
         secaoJogo += `<section id="jogo" class="jogos">
                 
         <img class="imagem" src="${array[i].img}" alt="imagem">
@@ -243,6 +244,9 @@ function criarJogos (array){
     }
 
 }
+
+
+
 
 
 
