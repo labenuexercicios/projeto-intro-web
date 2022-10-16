@@ -1,215 +1,109 @@
-/* Layout que vai funcionar em telas com no minimo 1024px e no maximo 1439px */
-@media screen and (min-width:1024px){
-    .id-body{
-        /* Classe que estiliza corpo/body da pagina com telas 1024x1439 */
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.id-body {
+    /* Classe que estiliza corpo/body da pagina com telas 1024x1439 */
+    display: grid;
+   grid-template-rows: auto 1fr auto;
+}
 
-    #header{
-        /* Cabeçalho da pagina */
-        display: flex;
-        justify-content: center;
-        background-color: #225930;
-        color: whitesmoke;
-    }
-    #titulo-header{
-        /* Titulo que esta no cabeçalho */
-        font-size: 3em;
-        margin: 0.10em;
-        font-weight: 500;
-    }
-    #main{
-        /* conteudo principal da pagina */
-        display: grid;
-        grid-template-rows: auto 1fr;
-        gap: 1em;
-        justify-items: center;
-    }
-    .pesquisa{
-        /* Campo da pagina que está do dentro do main, e contem a caixa de pesquisa e o botao de buscar serie */
-        display: flex;
-        flex-direction: row;
-    }
-    #input{
-        width: 50vw;
-        margin-top: 1em;
-        margin-right:1.2em ;
-        height: 5vh;
-        padding: 1em ;
-    }
-    #btnPesquisa{
-        height: 5vh;
-        margin-top: 1em;
-        padding: 0.3em;
-    }
-    #container{
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .card{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        border: 1px solid black;
-        margin-bottom: 2em;
-        width: 70%;
-        align-self: center;
-        background-color: #225930;
-        border-radius: 3em;
+#header {
+    /* Cabeçalho da pagina */
+    display: flex;
+    justify-content: center;
+    background-color: #225930;
+    color: whitesmoke;
+}
+
+#refresh {
+    /* Titulo que esta no cabeçalho */
+    font-size: 1.7em;
+    color: white;
+    background-color: #225930;
+    border: #225930 ;
+}
+
+#main {
+    /* conteudo principal da pagina */
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1em;
+    justify-items: center;
+}
+
+.pesquisa {
+    /* Campo da pagina que está do dentro do main, e contem a caixa de pesquisa e o botao de buscar serie */
+    display: flex;
+    flex-direction: row;
+}
+
+#input {
+    width: 50vw;
+    margin-top: 1em;
+    margin-right: 1.2em;
+    height: 5vh;
+    padding: 1em;
+}
+
+#btnPesquisa {
+    height: 5vh;
+    margin-top: 1em;
+    padding: 0.3em;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    margin-bottom: 2em;
+    width: 70vw;
+    background-color: #225930;
+    border-radius: 13px;
+    align-items: center;
+    padding: 1em;
+}
+
+.img {
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+    height: 23vh;
+    width: 15vw;
+    border-radius: 15px;
+    object-fit: contain;
+    box-sizing: border-box;
+}
+
+.listaInformacoes {
+    list-style: none;
+    line-height: 1.5em;
+    color: white;
+    font-size: clamp(1vw , 0.5vw + 1vh , 2vw);
+    height: 20vh;
+    width: 90vw;
+    margin: 1em;
     
-    }
-    .img{
-        margin: 1em;
-        height: 25vh;
-        width: 15vw;
-        border-radius: 5%;
-    }
-    .listaInformacoes{
-        list-style: none;
-        margin :1em ;
-        line-height: 1.5em;
-        color: white;
-    }
-    #footer{
-        background-color: #225930;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: aliceblue;
-        /* position: absolute; */
-        /* bottom: 0; */
-    }
-    h4{
-        margin: 0.5em;
-    }
-}
-@media screen and (min-width:768px) and (max-width:1023px) {
-    .id-body{
-        display: flex;
-        flex-direction: column;
-    }
-    #header{
-        background-color: #225930;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        color: aliceblue;
-    }
-    #main{
-        display: grid;
-        grid-template-rows: auto 1fr;
-        flex-direction: column; 
-        width: 100vw;
-    }
-    .pesquisa{
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-        margin: 1em;
-        width: 100vw;
-    }
-    #input{
-        width: 75vw;
-        align-self: center;
-        padding: 0.5em;
-    }
-    #btnPesquisa{
-        width: 25vw;
-        align-self: center;
-        padding: 0.5em;
-        margin-top: 0.6em;
-       }
 
-    .img{
-        height: 30vh;
-        width: 20vw;
-        margin: 1em;
-        border-radius: 1em;
-    }
-    #container{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100vw;
-    }
-    .card{
-        background-color: #225930;
-        display: flex;
-        margin-bottom: 2em;
-        color: antiquewhite;
-        align-self: center;
-        width: 75vw;
-        border-radius: 1em;
-    }
-    .listaInformacoes{
-        list-style: none;
-        margin: 1em;
-    }
-    #footer{
-        background-color: #225930;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: aliceblue;
-    }
 }
 
-@media screen and (max-width:767px) and (min-width:425px){
-    .id-body{
-        display: flexbox;
-        flex-direction: column;
-        border: 2px solid black;
-    }
-    #header{
-        background-color: #225930;
-        display: flex;
-        flex-direction: row;
-        width: 100vw;
-        justify-content: center;
-        color: antiquewhite;
-    }
-    .img{
-        height: 100%;
-        width: 30vw;
-    }
-    #container{
-        display: flex;
-        flex-direction: column;
-    }
-    .card{
-        display: flex;
-        flex-direction: row;
-        background-color: #225930;
-        margin-bottom: 1em;
-        border-radius: 1vw;
-        color: aliceblue;
-        padding: 1em;
-    }
-    .pesquisa{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 1em;
-    }
-    #input{
-        width: 60vw;
-        margin-right: 0.5em;
-    }
-    .listaInformacoes{
-        list-style: none;
-        margin-left: 1em;
-    }
-    #footer{
-        background-color: #225930;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: white;
-        padding: 1em;
-    }
+#footer {
+    background-color: #225930;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    position: sticky;
 }
 
-
+a{
+    text-decoration: none;
+    color: white;
+}

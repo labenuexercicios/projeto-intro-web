@@ -252,8 +252,8 @@ function buscaTitulo(array, str) {
         ul.appendChild(li5);
       }
     }
+    // return alert("Seriado não encontrado");
   }
-  // return alert("Seriado não encontrado");
 }
 
 // Semana 11
@@ -264,7 +264,6 @@ console.log("");
 function criaObj(array) {
   for (i in arrayComObjSerie) {
     const div = document.getElementById("container");
-
     const section = document.createElement("section");
     const imagem = document.createElement("img");
     const ancora = document.createElement("a");
@@ -312,11 +311,16 @@ function btnBusca(event) {
   event.preventDefault();
   let input = document.getElementById("input").value.toLowerCase();
   if (input == " ") {
-    arlet("Seriado não encontrado");
+    // alert("Seriado não encontrado");
   } else {
     document.getElementById("container").remove();
     buscaTitulo(arrayComObjSerie, input);
   }
 }
+
+const btnRefresh = document.getElementById('refresh');
+btnRefresh.addEventListener('click',()=>{
+  location.reload();
+})
 
 criaObj(arrayComObjSerie);
