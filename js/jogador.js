@@ -29,17 +29,17 @@ lider = []
 if (jogador1.capitão == true) {
     lider.push(jogador1) 
 } else {
-//    alert('Patrick Verhon não entrou') 
+   alert('Patrick Verhon não entrou') 
 }
 if (jogador2.capitão == true) {
     lider.push(jogador2.nome) 
 } else {
-//    alert('Patrick de Lucca não entrou') 
+  alert('Patrick de Lucca não entrou') 
 }
 if (jogador3.capitão == true) {
     lider.push(jogador3) 
 } else {
-//    alert('Emerson Santos não entrou') 
+  alert('Emerson Santos não entrou') 
 }
 
 console.log("o lider é: " + lider);
