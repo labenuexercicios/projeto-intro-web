@@ -1,0 +1,65 @@
+.imagem{
+    height: 350px;
+    width: 250px;
+    border: 5px solid black;
+}
+
+.video{
+    height: 40vh;
+    width: 30vw;
+    position: relative;
+    right: -35px;
+}
+
+.container-de-jogos{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jogos{
+    color: white;
+    background-image: url("./Midia/background2.jpg");
+    margin-bottom: 20px;
+    border: 10px solid black;
+    width: 50vw;
+    height: 30%;
+}
+
+header{
+    font-size: larger;
+    border: 10px solid black;
+    background-image: url("./Midia/background2.jpg");
+    color: white;
+}
+
+main{
+    background-image: url("./Midia/background.jpg");
+    border: 10px solid black;
+}
+
+.pesquisa{
+    
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        height: 30px;
+        align-items: center;
+        margin-top: 10px;
+    
+}
+
+footer{
+    font-size: large;
+    background-image: url("./Midia/background2.jpg");
+    color: white;
+    border: 10px solid black;
+}
+
+
+
+
+
+
