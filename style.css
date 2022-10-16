@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+header{
+    background: linear-gradient( #ffffff, #87ceeb, black);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 10vh;
+    display: grid;
+    font-size: 2 rem;
+    align-items: center;
+    padding: 2%;
+}
+
+.botaopesquisa{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.input{
+    border: 1px solid lightgrey;
+     border-radius: 15px;
+    text-align: center;
+    width: 30vw;
+    height: 5vh;
+
+}
+
+.button{
+    border: 1px solid lightgrey;
+    width: 8vw;
+    height: 5vh;
+    border-radius: 15px;
+}
+
+img{
+    display: grid;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    
+}
+    #corpo{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    padding-bottom: 2vh;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+#secao1{
+    display: grid;
+    color: white;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    grid-template-columns: 1fr 2fr;
+    background-color: #87cefa;  
+    
+    justify-items: center;
+    align-items: center;
+    width: 40vw;
+    border-radius: 20px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+li{
+    list-style: none;
+    text-align: center;
+    font-size: 20px;
+    
+ }
+
+a:any-link{
+    text-decoration: none;
+    color: white
+}
+a:hover{
+    color: black;
+}
+
+
+
+
+footer{
+    background: linear-gradient( #ffffff, #87ceeb, black);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 10vh;
+    display: grid;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    padding: 2%;
+   
+}
+.social-list{
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+}
+
+.lista{
+    list-style: none;
+    display: grid;
+    align-items: center;
+    
+}
+
+
+
+
+
+
+
+
