@@ -77,7 +77,6 @@ function imprimeObjeto(referencia){
 }
 
 imprimeObjeto(item1)
-//itrem1?
 
 
 const funcaoBusca = (array, input) => {
@@ -99,7 +98,7 @@ const funcaoBusca = (array, input) => {
             link.setAttribute("href",array[i].link);
             link.setAttribute("target","_blank");
             link.innerHTML += array[i].nome.toUpperCase();
-            li1.innerHTML += "Nome: ";
+            li1.innerHTML += "";
             li2.innerHTML += `Quantidade de Proteínas (100g.): ${array[i].quantidadeProteina}`;
             li3.innerHTML += `Sugestões de Pratos: ${array[i].sugestoesPratos}`;
             section.setAttribute("id", "section1");
@@ -143,7 +142,7 @@ const funcaoBusca = (array, input) => {
             link.setAttribute("href",arrayObjetos[i].link);
                 link.setAttribute("target","_blank");
                 link.innerHTML += arrayObjetos[i].nome.toUpperCase();
-                li1.innerHTML += "Nome: ";
+                li1.innerHTML += "";
                 li2.innerHTML += `Quantidade de Poteínas (100g): ${arrayObjetos[i].quantidadeProteina}`;
                 li3.innerHTML += `Sugestões de Pratos: ${arrayObjetos[i].sugestoesPratos}`;
             section.setAttribute("id", "section1");
@@ -155,6 +154,6 @@ const funcaoBusca = (array, input) => {
             ul.appendChild(li2);
             ul.appendChild(li3);
         }
-    /* }
-        
-    criaObj(arrayObjetos) */  
+    
+
+    //criaObj(arrayObjetos) 

@@ -3,30 +3,26 @@
     margin: 3px;
     padding: 3px;
     border: 0;
-    /*box-sizing: bordex-box; */
 }
 
 .header{
     display: grid;
-    grid-template-columns: 83% 1fr ;
+    grid-template-columns: 88% 1fr ;
     grid-template-rows: 1fr 10vh;
     border-width: medium;
-    border-color: rgb(5, 49, 5);
-    border: 1px rgb(5, 49, 5) solid;
+    border: 3px rgb(13, 87, 13) solid;
 }
 
 #titulo{
     background-color: rgb(71, 194, 71);
     display: grid;
-    vertical-align: 10vh;
+    
 }
 #sub-titulo{
-    color: rgb(48, 35, 124)
-}
-#vaquinhaFeliz{
     display: grid;
-    justify-items: flex-end;
+    color: rgb(25, 90, 36);
 }
+
 main{
     display: grid;
     background-color: rgb(113, 194, 113);
@@ -60,17 +56,21 @@ main{
     width: 15vw;
     height: 5vh;
     border: solid 1px black;
+    
+}
+
+.button:active{
+    background-color: rgb(47, 124, 60) ;
 }
 
 img {
     width: 150px;
     height: 150px;
-    border-radius: 100%;
+    border-radius: 20%;
+
 }
 #div-sections {
     display: flex;
-    /* grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: 1fr 2fr 1fr; */
     row-gap: 2vh;
     padding-bottom: 2vh;
     justify-items: center;
@@ -78,7 +78,7 @@ img {
     flex-direction: column;
 }
 
-#section1 {
+ #section1 {
     background-color: rgb(230, 230, 210);
     display: grid;
     grid-column: 2/3;
@@ -89,39 +89,11 @@ img {
     width: 40vw;
     padding-top: 2vh;
     padding-bottom: 2vh;
-}
-
-/* #section2 {
-    background-color: orange;
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    grid-template-columns: 1fr 2fr;
-   align-items: center;
-    justify-items: center;
-    width: 40vw;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-}
-
-#section3 {
-    background-color: orange;
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 3/4;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    justify-items: center;
-    width: 40vw;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-} */
-
+} 
 
 li {
-    text-align: center;
     list-style: none;
-}
+} 
 
 footer {
     background-color: black;
@@ -131,5 +103,10 @@ footer {
     align-items: center;
     justify-content: center;
 }
-/* border-top-right-radius: 20px;
-border-bottom-right-radius: 20px; */
+
+.a-footer{
+    display: grid;
+    color:rgb(13, 87, 13);
+    margin-left: 10vh;
+}
+
