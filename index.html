@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+    <title>Cardápio de verão Consulado Café</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="primeiraDiv">
+        <img src="/midias/folha1.png" alt="folhagem" id="folha1">
+        <img src="/midias/boneca.png" alt="Logo Consulado do Café" id="boneca">
+        <img src="/midias/folha2.png" alt="folhagem" id="folha2">
+    </div>
+
+    <header>
+        <h1>Cardápio de Verão Consulado do Café</h1>
+    </header>
+
+    <nav>
+        <span></span>
+        <input type="text" placeholder="☕🤎" list="faixa" id="input">
+        <datalist id="faixa">
+            <option value="Frozen Café Tradicional"></option>
+            <option value="Frozen Café Doce de Leite"></option>
+            <option value="Frozen Café Limão"></option>
+        </datalist>
+
+        <button id="botaoBusca" onclick="buscaItem(arrayDeObjetos)" class="estiloBotao">BUSCAR</button>
+
+        <button id="botaoHome" onclick="pagInicial(event)" class="estiloBotao">HOME</button>
+    </nav>
+
+    <main>
+        <section class="section">
+            <ul class="ul" id="lista1" onclick="abreTradicional(arrayDeObjetos)">
+            </ul>
+            <ul class="ul" id="lista2" onclick="abreDoceDeLeite(arrayDeObjetos)">
+
+            </ul>
+            <ul class="ul" id="lista3" onclick="abreLimao(arrayDeObjetos)">
+
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img src="./icons/whatsapp-fill.svg" alt="telefone para contato" class="icon">
+            <a href="" class="text">(51)992183683</a>
+
+            <img src="./icons/instagram-fill.svg" alt="instagram" class="icon">
+            <a href="https://www.instagram.com/consuladodocafe/" target="_blank" class="text">@Consuladodocafe</a>
+
+            <img src="./icons/map-pin-fill.svg" alt="endereco" class="icon">
+            <span href="" class="text">Lima e silva 989, Cidade Baixa - Porto Alegre RS</span>
+        </div>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.8540311070556!2d-51.22073138255615!3d-30.041045299999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951978544ba7ec7d%3A0xa9332cd3c2dd1542!2sConsulado%20do%20Caf%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1665694464621!5m2!1spt-BR!2sbr"
+            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+    </footer>
+
+</body>
+
+</html>
