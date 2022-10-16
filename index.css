@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+header, footer{
+    background-color: rgb(47, 119, 116);
+    width: 100%;
+    color: white;  
+    position: static     ;
+}
+
+#campobusca{
+
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2vh;
+}
+
+
+section{
+    background-color: rgb(108, 230, 228);
+    
+    border: 5px solid rgb(7, 71, 7);
+    text-align: end;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 40vw;
+    height: 12vw;
+    
+    
+}
+
+section > div {
+   text-align: left;
+   height: 12vw;
+   width: 50vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   font-size: 1.2rem;
+   
+}
+
+
+section > p {
+    flex-direction: column;
+    
+}
+
+
+
+section > img {
+    
+    border: 3px solid rgb(29, 58, 174);
+    border-radius: 70%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+    max-width: 100%;
+    
+}
+
+main {
+    min-height: 100%;
+}
+
+#listaJogos{
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 3vh;
+
+}
+
+section>div {
+    
+}
+
+header{
+    height: 5vh;
+    margin-bottom: auto;
+}
+header h2{
+    text-align: center;
+    align-items: center;
+}
+
+section img{
+    margin-right: 1px;
+}
+
+footer{ 
+    margin-top: auto;
+    height: 5vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h2{
+
+}
+
+@media(max-width: 725px ){
+    section>div{
+        font-size:67%;
+    }
+
+}
