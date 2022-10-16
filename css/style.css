@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.cabecalho {
+    background-color:red ;
+    width: 100vw;
+    padding: 2%;
+    text-align: center;
+    color: white;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+
+.main{
+     background-color: blue;
+     padding: 2%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     /* justify-content: center; */
+
+}
+
+footer{ 
+    background-color: white;
+
+}
+.exporCard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px;
+    width: 20vw;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.card ul{
+    list-style: none;
+    padding: 0;
+    
+} 
+.card li{
+    text-align: left;
+    /* margin-left: 0; */
+}
+.card a {
+    text-decoration: none;
+    color: white;
+    
+}
+.jogador img {
+   width: 20vw; 
+  height: 25vw;
+} 
+
+.pesquise {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.pesquise label{
+    grid-row: 1/span 1;
+    grid-column: 1/span 2;
+    color: white;
+}
+
+.invisivel {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .exporCard{
+        margin: auto 90px;
+    }       
+}
+
+@media screen and (max-width: 500px) {
+    .cabecalho {
+        text-align: start;
+        font-size: 12px;
+    }
+
+    .pesquise label {
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 20px;
+        height: 10px;
+    }
+
+    .pesquise input {
+        margin-left: 60px;
+    }
+
+    .pesquise button {
+        width: 100px;
+        padding-left: 10px;
+    }
+
+    .exporCard {
+        flex-direction: column;
+    }
+
+    .card {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
