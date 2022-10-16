@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    color: rgb(0, 0, 0);
+    padding: 3%;
+    text-align: center;
+    font-family: 'One Piece', sans-serif;
+}
+body {
+    background-image: url(https://images4.alphacoders.com/616/616945.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+section{
+    font-family: 'One Piece', sans-serif;
+}
+
+#image {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+main {
+    width: 500px;
+    margin: auto;
+    align-items: center;
+}
+
+button {
+    background-color: aquamarine;
+    color: black;
+    border: 1.5px;
+    font-weight: bold;
+    align-items: center;
+    font-family: 'One Piece', sans-serif;
+}
+
+
+
+
+footer {
+    color: black;
+    background-color: aquamarine;
+    width: 100vw;
+    height: 50px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
