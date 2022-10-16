@@ -1,0 +1,100 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+
+}
+
+.filter{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 50rm;
+    margin-top: 30px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+#catsImge{
+    height:200px;
+    border-radius: 50%;
+    gap: 20px;
+    border: 2px solid salmon;
+    margin: 10px;
+}
+
+html, body{
+    height: 100vh;
+    width: 100%;
+}
+
+header{
+    height: 8vh;
+    text-decoration: dashed;
+    color: cornflowerblue;
+    border-radius: solid 10px;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;    
+}
+
+main{
+    border: 1px solid red;
+    flex-grow: 1;
+    background-image: url("imagens/14710.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#cats{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    text-decoration: wavy;
+}
+
+footer {
+    position: fixed;
+    color: cornflowerblue;
+    background-color: black;
+    width: 100%;
+    bottom: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.flex{
+    text-align: center;
+    gap: 10px;
+    margin-top: 30px;
+    
+}
+
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    header{
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+     .filter{
+            display: flex;
+            flex-wrap: wrap;
+            min-width: 50rm;
+            margin-top: 30px;
+            justify-content: center;
+            flex-direction: column;            
+    }
+}
