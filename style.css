@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+
+}
+
+body {
+    height: 100vh;
+    display: grid;
+}
+
+
+
+.pesquisa {
+    height: 30px;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    margin: 15px; 
+}
+
+
+.jogadores {
+    font-size: small;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+
+
+#messi {
+    align-items: center;
+    justify-items: center;
+    grid-column: 1;
+    text-align: justify;
+}
+
+#neymar {
+    align-items: center;
+    justify-items: center;
+    grid-column: 1;
+    text-align: justify;
+}
+
+#mbappe {
+    align-items: center;
+    justify-items: center;
+    grid-column: 1;
+    text-align: justify;
+}
+
+.messiLista {
+    grid-column: 2;
+
+}
+
+.neymarLista {
+    grid-column: 2;
+
+}
+
+.mbappeLista {
+    grid-column: 2;
+
+}
+
+
+header {
+    font-size: larger;
+    border-radius: 10px;
+    border: 5px solid darkred;
+    color: white;
+    background: rgb(22, 28, 45);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100vh;
+    text-align: center;
+}
+
+footer {
+    display: grid;
+    text-align: right;
+    bottom: 0;
+    height: 10vh;
+    width: 1000px;
+    position: fixed;
+}
+
+
+.imgMessi {
+    border-radius: 10px;
+    border: 5px solid darkred;
+}
+
+.imgNeymar {
+    border-radius: 10px;
+    border: 5px solid darkred;
+
+}
+
+.imgMbappe {
+    border-radius: 10px;
+    border: 5px solid darkred;
+}
+
+section {
+    padding: 20px;
+    gap: 10px;
+    display: grid;
+    background: rgb(22, 28, 45);
+    color: white;
+    border-radius: 10px;
+    border: 5px solid darkred;
+}
+
+
+.jogadores {
+    display: grid;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+section {
+    text-align: center;
+}
+
+#messi {
+    border-radius: 10px;
+}
+
+#neymar {
+
+    border-radius: 10px;
+}
+
+#mbappe {
+
+    border-radius: 10px;
+}
+
+@media screen and (max-device-width : 800px) {
+    .imgMessi {
+        height: 100px;
+        width: 75px;
+    }
+
+    .imgNeymar {
+        height: 100px;
+        width: 75px;
+    }
+
+    .imgMbappe {
+
+        height: 100px;
+        width: 75px;
+    }
+
+    .jogadores {
+        grid-template-columns: 400px;
+        grid-template-rows: 1fr;
+        max-width: 800px;
+    }
+
+    #messi {
+        grid-column: 1;
+        width: 1fr;
+        height: 20vh;
+    }
+
+    #neymar {
+        grid-column: 1;
+        width: 1fr;
+        height: 20vh;
+    }
+
+    #mbappe {
+        grid-column: 1;
+        width: 1fr;
+        height: 20vh;
+    }
+
+}
+
+@media screen and (min-device-width : 801px) and (max-device-width : 1000px) {
+    .imgMessi {
+        height: 100px;
+        width: 75px;
+    }
+
+    .imgNeymar {
+        height: 100px;
+        width: 75px;
+    }
+
+    .imgMbappe {
+
+        height: 100px;
+        width: 75px;
+    }
+
+    .jogadores {
+        grid-template-columns: 400px;
+        grid-template-rows: 1fr;
+        max-width: 800px;
+    }
+
+    #messi {
+        grid-column: 1;
+        width: 1fr;
+        height: 20vh;
+    }
+
+    #neymar {
+        grid-column: 1;
+        width: 1fr;
+        height: 20vh;
+    }
+
+    #mbappe {
+        grid-column: 1;
+        width: 1fr;
+        height: 20vh;
+    }
+
+}
+
+@media screen and (min-device-width : 1001px) {
+    .imgMessi {
+        height: 100px;
+        width: 75px;
+    }
+
+    .imgNeymar {
+        height: 100px;
+        width: 75px;
+    }
+
+    .imgMbappe {
+
+        height: 100px;
+        width: 75px;
+    }
+
+    .jogadores {
+        grid-template-columns: 400px;
+        grid-template-rows: 1fr;
+        max-width: 800px;
+    }
+
+    #messi {
+        grid-column: 1;
+        width: 1fr;
+        height: 20vh;
+    }
+
+    #neymar {
+        grid-column: 1;
+        width: 1fr;
+        height: 20vh;
+    }
+
+    #mbappe {
+        grid-column: 1;
+        width: 1fr;
+        height: 20vh;
+    }
+
+}
+
+
+/* @media screen and (min-device-width : 801px) and (max-device-width : 1000px) {
+    .jogadores {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        height: 60vh;
+        max-width: 1000px;
+    }
+
+    #messi {
+        width: 1fr;
+        grid-row: 1;
+        grid-column: 2;
+
+    }
+
+    #neymar {
+        width: 1fr;
+        grid-row: 1;
+        grid-column: 1;
+
+    }
+
+    #mbappe {
+        width: 1fr;
+        grid-row: 1;
+        grid-column: 3;
+    }
+}
+
+@media screen and (min-device-width : 1001px) {
+    .jogadores {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        height: 60vh;
+        max-width: 1200px;
+    }
+
+    #messi {
+        width: 1fr;
+        grid-row: 1;
+        grid-column: 2;
+
+    }
+
+    #neymar {
+        width: 1fr;
+        grid-row: 1;
+        grid-column: 1;
+
+    }
+
+    #mbappe {
+        width: 1fr;
+        grid-row: 1;
+        grid-column: 3;
+    }
+} */
