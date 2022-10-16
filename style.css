@@ -55,8 +55,7 @@ main{
     border: none;
     width: 15vw;
     height: 5vh;
-    border: solid 1px black;
-    
+    border: solid 1px black; 
 }
 
 .button:active{
@@ -67,8 +66,8 @@ img {
     width: 150px;
     height: 150px;
     border-radius: 20%;
-
 }
+
 #div-sections {
     display: flex;
     row-gap: 2vh;
