@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin:0;
+    font-family: Graphik-Semibold-Web,sans-serif;
+} 
+
+header{
+    color: white;
+    background-color: #202830;
+    vertical-align: sub;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 55px; 
+    height: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    color: #99aabb;
+    background-color: #14181c;
+}
+    
+
+.abr {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    padding-top: 10px;
+    
+}
+
+#campo {
+    width: 250px;
+    border-radius: 5px;
+    height: 19px;
+    outline: none;
+}
+
+#botao {
+    width: 80px;
+    border-radius: 4px;
+    height: 27.3px;
+    color: black;
+    background-color: #99aabb;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#botao:hover {
+    background-color: white;
+    color: black;
+}
+
+#botao:active {
+    background-color: #99aabb;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+#filme, #filme2, #filme3, #filme4, #filme5, #filme6 {
+     height: 550px;
+    /* background-color: #2c3440; */
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    flex-direction: column;
+    gap: 5px;
+    background: linear-gradient(90deg, rgba(44,52,64,1) 42%, rgba(10,10,19,1) 65%);
+   
+}
+
+
+footer{
+    background-color: #2c3440;
+    height: 80px;
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+   
+  
+    
+}
+
+@media screen and (max-width:600px) {
+    #filme, #filme2, #filme3, #filme4, #filme5, #filme6 {
+        height: 520px;
+       width: 300px;
+       
+      
+   }
+    
+   #campo {
+    width: 200px;
+   }
+}
+
+/* PLACEHOLDER TRANSPARENTE */
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+ }
+ input:focus:-moz-placeholder { /* Firefox 18- */
+    color: transparent;  
+ }
+ input:focus::-moz-placeholder {  /* Firefox 19+ */
+    color: transparent;  
+ }
+ input:focus:-ms-input-placeholder {  
+    color: transparent;  
+ }
+
+ input[type=text] {
+    padding: 3px 0px 3px 12px;
+
+    
+  }
+
+.sinopse {
+    width: 80%;
+    padding-left: 62px;
+}
