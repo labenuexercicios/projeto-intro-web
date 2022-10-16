@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <base target="_blank">
+   <title>Lista de Cantoras e Cantores</title>
+   <script src="script.js" defer> </script>
+</head>
+
+<body class="total">
+   <header>
+      <h1>Cantores e Cantoras</h1>
+     
+   </header>
+
+   <main id="container">
+      
+      <article class="buscador">
+         <form action="#">
+          
+            <input type="text" id="nome" onkeyup="exibeValorDoCampo()" placeholder="Digite o nome do cantor" required >
+            <button id="botao" type="button" onclick="buscaCantor()"> Buscar</button>
+           <br> <button type="button" id="atualizar" onClick="voltaListaCompleta()">Voltar à lista</button><br>
+         </form>
+      </article>
+
+      <article id="lista">
+         
+       
+       
+
+            
+    
+
+
+         </article>
+
+
+
+
+      
+   </main>
+   <footer class="rodape">
+      <p>Criado por Ana </p>
+      <p><a href="mailto:anajosil@gmail.com">Enviar email</a></p>
+
+   </footer>
+
+</body>
+
+</html>
