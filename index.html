@@ -12,16 +12,16 @@
     <header>
         <h1>Bando dos chapéus de palha</h1>
     </header>
-    <main>
+    <main class="container">
         <br>
-        <article>
-            <label for="name">Procurar Mugiwara:</label>
-            <br>
+        <div class="barra-busca">           
             <input type="search" nome="" id="search" placeholder="Insira sua busca aqui" required>
-            <button type="submit">Buscar</button>
+            <button type="submit" class="search-b" onclick="procuraMugiwara()">Buscar</button>
+        </div>
         </article>
         <article>
-            <section>
+        <section>
+            <section id="Pirata">
             
                 <ul>
                     <li><a href="https://onepiece.fandom.com/pt/wiki/Monkey_D._Luffy" target="_blank">Monkey D. Luffy</a></li>
@@ -122,6 +122,7 @@
             </ul>
 
             </section>
+        </section>
 
         </article>
     </main>

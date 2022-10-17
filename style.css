@@ -1,55 +1,125 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'One Piece', sans-serif;
 }
-
-header{
+ header{
     color: rgb(0, 0, 0);
-    padding: 3%;
+    height: 60px;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aquamarine;
+    padding-left: 20px;
+    opacity: 0.7;
     text-align: center;
     font-family: 'One Piece', sans-serif;
-}
-body {
-    background-image: url(https://images4.alphacoders.com/616/616945.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
+    font-size: 1.5rem;
 
-section{
-    font-family: 'One Piece', sans-serif;
-}
-
-#image {
-    position: fixed;
-    right: 0;
-    bottom: 0;
 }
 
 main {
-    width: 500px;
+    background-image:url(https://images4.alphacoders.com/616/616945.png);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    /* width: px;
     margin: auto;
+    align-items: center; */
+
+}
+.barra-busca{
+    width: 380px;
+    display: flex;
     align-items: center;
 }
+
+input{
+    width: 380px;
+    height: 35px;
+    color: aquamarine;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+ul{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    border-radius: 30px;
+    filter: drop-shadow(0 0 0.em rgb(11, 175, 216));
+    background-color: aquamarine;
+    padding: 40px;
+    text-align: left;
+}
+li{
+    list-style: none;
+    color: black;
+    padding: 5px;
+    text-align: left;
+}
+
+img{
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 5%;
+}
+
+/* #pirata{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+} */
+
+#pirata-container{
+    height: 200x;
+    width: 400px;
+    background-color: aquamarine;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+     
+}
+section{
+    font-family: 'One Piece', sans-serif;
+    max-width: 700px;
+    text-align: left;
+}
+
 
 button {
     background-color: aquamarine;
+    border-radius: 10px;
     color: black;
     border: 1.5px;
     font-weight: bold;
+    padding: 10px;
     align-items: center;
     font-family: 'One Piece', sans-serif;
 }
-
-
-
-
+button:active{
+    color: orange;
+}
 footer {
     color: black;
     background-color: aquamarine;
     width: 100vw;
     height: 50px;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-family: 'One Piece', Courier, monospace;
 }
 
+@media screen and (max-whidth:600px) and (min-width: 300px) {
+    ul{
+        display: flex;
+    }}
