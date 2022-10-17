@@ -261,7 +261,7 @@ function gatoEscolhido(input) {
   const gatoEscolhido = gatos.filter((item) => {
     return item.nomeGato === input.value.toUpperCase();
   });
-  console.log(`${gatoEscolhido}` ? gatoEscolhido : alert("Gato não MIou"));
+  console.log(`${gatoEscolhido}` ? gatoEscolhido : alert("Gato não Miou"));
   if (gatoEscolhido.length >= 1) {
     return gatoEscolhido;
   } else {
