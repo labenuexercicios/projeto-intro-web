@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Travel List</title>
+    <link rel="shortcut icon" href="./assets/plane.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <section>
+        <h1>Travel List</h1>
+      </section>
+    </header>
+
+    <nav>
+      <img src="/assets/bg5-480w.png" alt="" />
+    </nav>
+    <section class="search">
+      <input
+        id="campo"
+        type="text"
+        placeholder="Busque aqui sua próxima aventura..."
+        onkeyup="exibeValorDoCampo(event)"
+      />
+      <button id="botao" type="button" onclick="buscaDestino()">
+        <img src="/assets/search.ico" alt="" />
+      </button>
+    </section>
+
+    <main id="container">
+      <div class="travel-list"></div>
+    </main>
+
+    <footer>
+      <p>
+        Feito com ♥ pela
+        <a href="https://github.com/AnaaKaroliny" target="_blank">Karol</a>
+      </p>
+    </footer>
+  </body>
+</html>
