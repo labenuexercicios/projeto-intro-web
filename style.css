@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style:none;
+}
+
+header{
+    display: flex;
+    background-color: green;
+    /* border: 1px black solid; */
+    justify-content: center;
+}
+.site{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* border: 1px black solid; */
+    height: 100vh;
+   
+}
+main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    /* border: 1px black solid; */
+    background-color: lightseagreen;
+}
+itens{
+    display: flex;
+    /* border: 1px black solid; */
+    background-color: blanchedalmond;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 2;
+}
+img{
+    height: 350px;
+    width: 350px;
+}
+topo{
+    display: flex;
+    justify-content: center;
+}
+section{
+    
+    /* border: 1px black solid; */
+    background-color: lightsalmon;
+    
+}
+footer{
+    display:flex;
+    justify-content: space-around;
+    background-color: lightgreen;
+}
+.jogo1{
+    display: grid;
+    justify-items: center;
+    max-width: 350px;
+}
+.jogo2{
+    display: grid;
+    justify-items: center;
+    max-width: 350px;
+}
+.jogo3{
+    display: grid;
+    justify-items: center;
+    max-width: 350px;
+}
+ul{
+    font-size: large;
+}

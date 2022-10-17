@@ -88,31 +88,31 @@ if (jogo1.temNaSteam) {
   superJogos.push(jogo1);
 } else {
   naoTemNaSteam.push(jogo1)
-  alert("O jogo " + jogo1.nome + " não tem na steam!");
+ // alert("O jogo " + jogo1.nome + " não tem na steam!");
 }
 if (jogo2.temNaSteam) {
   superJogos.push(jogo2);
 } else {
   naoTemNaSteam.push(jogo2)
-  alert("O jogo " + jogo2.nome + " não tem na steam!");
+  //alert("O jogo " + jogo2.nome + " não tem na steam!");
 }
 if (jogo3.temNaSteam) {
   superJogos.push(jogo3);
 } else {
   naoTemNaSteam.push(jogo3)
-  alert("O jogo " + jogo3.nome + " não tem na steam!");
+  // alert("O jogo " + jogo3.nome + " não tem na steam!");
 }
 //  console.log(superJogos)
 //  console.log(naoTemNaSteam)
 
 //semana 3
 for (let i in superJogos) {
-  superJogos[i].premios = superJogos[i].premios.toString()
+  superJogos[i].premios = superJogos[i].premios.toString() + ","
 }
 //console.log(superJogos)
 
 for (let i in naoTemNaSteam) {
-  naoTemNaSteam[i].premios = naoTemNaSteam[i].premios.toString()
+  naoTemNaSteam[i].premios = naoTemNaSteam[i].premios.toString() + ","
 }
 //console.log(naoTemNaSteam)
 //. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
@@ -125,8 +125,11 @@ busca(jogo2)
 function buscaNoObjeto(arrayObjetos, string) {
   for (let i in arrayObjetos) {
     if (arrayObjetos[i].nome === string) {
-       return console.log(arrayObjetos[i])
-    } 
+      return console.log(arrayObjetos[i])
+    }
   }
   return alert("Não foi possivel encontrar o item buscado!")
 }
+console.log(jogo2)
+console.log(jogo1)
+console.log(jogo3)
