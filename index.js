@@ -106,7 +106,7 @@ console.log("SEMANA 3 - ITEM 1")
 
 const brigadeiro = [
     {
-        sabor: "Chocolate",
+        sabor: "chocolate",
         preco: 3.50,
         contemLactose: true,
         ingredientes: ["Chocolate ao leite em pó", "leite condensado", "creme de leite", "manteiga"],
@@ -114,7 +114,7 @@ const brigadeiro = [
     },
 
     {
-        sabor: "Cajuzinho",
+        sabor: "cajuzinho",
         preco: 3.50,
         contemLactose: true,
         ingredientes: ["Chocolate Meio Amargo", "amendoim", "leite condensado", "creme de leite", "manteiga"],
@@ -122,7 +122,7 @@ const brigadeiro = [
     },
 
     {
-        sabor: "Beijinho",
+        sabor: "beijinho",
         preco: 3.20,
         contemLactose: true,
         ingredientes: ["Coco ralado", "leite condensado", "creme de leite", "manteiga"],
@@ -170,12 +170,11 @@ console.log("SEMANA 3 - ITEM 4")
 
 function buscaSite(listaDeDoces, buscaCliente) {
     const retornoBusca = listaDeDoces.filter((item) => {
-        if (item.sabor === buscaCliente) {
-            return item
-        } else {
-            alert("Item não encontrado.")
-        }
+        if (item.sabor.toLowerCase() === buscaCliente.toLowerCase()) {
+            return true
+        } 
     })
+    console.log(retornoBusca)
     return retornoBusca
 }
 buscaSite(brigadeiro, itemBuscado)
