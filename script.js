@@ -19,7 +19,7 @@ const palmeiras = {
   const atletico = {
     nome: "atlético",
     pontos: 58,
-    hokage: false,
+    mundial: false,
     jogadores: ["Hulk", " Nacho Fernandez", " Nathan"],
     img: "./midia/atl.png",
     site: "https://atletico.com.br/"
