@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  display: flex;
+  background-color: rgb(28, 28, 28);
+  height: 16vh;
+  width: 100vw;
+  color: white;
+  grid-row: 1/1;
+}
+
+.main {
+  min-height: 1050px;
+  grid-row: 2/2;
+}
+
+#caixa {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+#caixa[type="text"] {
+  transition: width 0.4s ease-in-out;
+}
+
+#caixa[type="text"]:focus {
+  width: 95vw;
+}
+
+.btn {
+  background: url(https://s3.amazonaws.com/solomid-resources/probuilds/s2.png)
+    no-repeat 50% 50% transparent;
+  border: none;
+  background-size: 27px;
+  padding: 15px;
+  color: transparent;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: rgb(54, 54, 54);
+  color: rgb(212, 144, 24);
+  height: 100vh;
+  width: 100vw;
+}
+
+#Personagens {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100vw;
+}
+
+.P000 {
+  margin: 30px;
+  padding: 1vw;
+  height: 150px;
+  width: 125px;
+}
+
+footer {
+  background-color: rgb(79, 79, 79);
+  color: white;
+  margin: 0;
+  text-align: center;
+  height: 8vh;
+  width: 100vw;
+  grid-row: 4/4;
+}
+
+.git {
+  padding-left: 10px;
+  height: 4vh;
+  width: 2vw;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  header {
+    width: 100%;
+  }
+  .main {
+    min-height: 2400px;
+  }
+  #Personagens {
+    padding-left: 20px;
+    margin-top: -50px;
+    font-size: 80%;
+  }
+  #caixa[type="text"]:focus {
+    width: 79%;
+  }
+  .P000 {
+    margin: 8vh;
+    height: 50px;
+    width: 1vw;
+  }
+  .P000 img {
+    height: 50px;
+    width: 50px;
+  }
+  .git {
+    height: 5vh;
+    width: 6vw;
+  }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+  header {
+    width: 100%;
+  }
+  .main {
+    min-height: 2130px;
+  }
+  #Personagens {
+    padding-left: 20px;
+    padding-top: 0px;
+    font-size: 80%;
+    gap: 100px;
+  }
+  #caixa[type="text"]:focus {
+    width: 90%;
+  }
+  .P000 {
+    margin: 5vh;
+    height: 50px;
+    width: 50px;
+  }
+}
