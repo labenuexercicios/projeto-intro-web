@@ -50,7 +50,7 @@ const palmeiras = {
   const arrayMundial = [];
     
   const verificaMundial = (obj) => {
-    if (obj.hokage) {
+    if (obj.mundial) {
       arrayMundial.push(obj);
     } else {
       console.log(`Erro!`);
@@ -73,7 +73,7 @@ const palmeiras = {
   }
 
   const relatorio = (obj) => {
-    let string = `Nome: ${obj.nome.toUpperCase()}\nIdade: ${obj.idade}\nCampeão mundial? ${obj.hokage}\nJogadores: ${obj.jogadores}`;
+    let string = `Nome: ${obj.nome.toUpperCase()}\nIdade: ${obj.idade}\nCampeão mundial? ${obj.mundial}\nJogadores: ${obj.jogadores}`;
     console.log(string);
   };
   
