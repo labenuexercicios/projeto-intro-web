@@ -2,7 +2,17 @@
     padding: 0px;
     margin: 0px;
     list-style: none;
+   
+}
+@font-face {
+    font-family: "CustomFont";
+    src: url('../projeto-intro-web/fonts/IBMPlexSans-Bold.ttf');
 
+}
+
+.search-txt  {
+    font-family: "CustomFont";
+    font-weight: bold;
 }
 
 .filter{
@@ -12,6 +22,7 @@
     margin-top: 30px;
     justify-content: center;
     margin-top: 100px;
+    font-family: ("./CustomFont/fonts/IBMPlexSans-Bold.ttf") !important;
 }
 
 
@@ -21,11 +32,13 @@
     gap: 20px;
     border: 2px solid salmon;
     margin: 10px;
+    font-family: ("./CustomFont/fonts/IBMPlexSans-Bold.ttf") !important;
 }
 
 html, body{
     height: 100vh;
     width: 100%;
+    font-family: ("./CustomFont/fonts/IBMPlexSans-Bold.ttf") !important;
 }
 
 header{
@@ -39,7 +52,8 @@ header{
     display: flex;
     flex-direction: column;
     position: fixed;
-    width: 100%;    
+    width: 100%;
+    font-family: ("./CustomFont/fonts/IBMPlexSans-Bold.ttf") !important;  
 }
 
 main{
@@ -49,6 +63,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    font-family: ("./CustomFont/fonts/IBMPlexSans-Bold.ttf") !important;
 }
 
 #cats{
@@ -59,6 +74,7 @@ main{
     flex-wrap: wrap;
     padding: 10px;
     text-decoration: wavy;
+    font-family: ("./CustomFont/fonts/IBMPlexSans-Bold.ttf") !important;
 }
 
 footer {
@@ -70,6 +86,7 @@ footer {
     left: 0%;
     display: flex;
     justify-content: center;
+    font-family: ("./CustomFont/fonts/IBMPlexSans-Bold.ttf") !important;
 }
 
 
@@ -77,6 +94,10 @@ footer {
     text-align: center;
     gap: 10px;
     margin-top: 30px;
+    font-family: ("./CustomFont/fonts/IBMPlexSans-Bold.ttf") !important;
+    color: rgb(3, 27, 72);
+    font-size: 18px;
+    font-weight: bold;
     
 }
 
@@ -87,6 +108,7 @@ footer {
         text-align: center;
         display: flex;
         flex-direction: column;
+        font-family: ("./CustomFont/fonts/IBMPlexSans-Bold.ttf") !important;
     }
 
      .filter{
@@ -95,6 +117,7 @@ footer {
             min-width: 50rm;
             margin-top: 30px;
             justify-content: center;
-            flex-direction: column;            
+            flex-direction: column;  
+            font-family: ("./CustomFont/fonts/IBMPlexSans-Bold.ttf") !important;          
     }
 }
