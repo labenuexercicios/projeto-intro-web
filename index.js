@@ -46,6 +46,7 @@ function strObj(objeto) {
     return objeto.desenho
 }
 
+
 //4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
 function busca(array, string) {
     for (let i in array) {
@@ -56,7 +57,7 @@ function busca(array, string) {
     return alert(`Seu produto ${string} não foi encontrado.`)
 }
 
-console.log(busca(itens, "Sailor Moon"))
+console.log(busca(itens, "Salor Moon"))
 
 
 // const desenho1 = "Hora de Aventura";
