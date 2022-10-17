@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Filmes</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="tetin">
+        <h1>Lista de Filmes</h1>
+    </header>
+
+    <article id="campodebusca">
+        
+        <section id="entrada">
+
+            <label for="nome" id="pergunta">Sobre que filme gostaria de saber mais?</label>
+            <input type="text" name="nome" id="campofilme">
+            <button id="botaodebusca" type="submit" onclick="buscaFilminho()">Buscar</button>
+
+        </section>
+
+    </article>
+    
+    <main id="main">
+        
+
+ 
+    </main>
+
+    <footer class="pezin">
+        <h1 class="nomenopezin">Projeto Aluno: Diogo Vinícius Rodrigues dos Santos</h1>
+        <h1 class="gitnopezin">GitHub: DioguinhoSantos</h1>
+    </footer>
+ 
+</body>
+</html>
+
+       <!-- <section id="filme1">
+            <ul>
+                <a href="https://www.imdb.com/title/tt0118715/?ref_=nv_sr_srsg_0" target="_blank"><h2>Título: THE BIG LEBOWSKI</h2></a> 
+                
+                <li>Sinopse: Jeff The Dude Lebowski, foi confundido por um milionário do mesmo nome e procurará restituçao com a ajuda do seus amigos.</li>
+                <li>Duração: 117 minutos</li>
+                <li>Lançamento: 1998</li>
+                <li>Gênero: Comédia.</li>
+                <li>Elenco: Jeff Bridges, John Goodman, Juliane Moore.</li>
+                <li>É um remake? Não é um remake!</li>
+
+            </ul>
+            
+        </section>
+
+        <section id="filme2">
+            <ul>
+                <a href="https://www.imdb.com/title/tt0034583/?ref_=nv_sr_srsg_0" target="_blank"><h2>Título: CASABLANCA</h2></a> 
+
+                <li>Sinopse: O proprietário cético de uma boate protege um antigo amor e seu marido dos nazistas no Marrocos.</li>
+                <li>Duração: 102 minutos</li>
+                <li>Lançamento: 1942</li>
+                <li>Gênero: Romance, Policial, Guerra.</li>
+                <li>Elenco: Humphrey Bogart, Ingrid Bergman, Paul Henreid.</li>
+                <li>É um remake? Não é um remake!</li>
+
+            </ul>
+        </section>
+
+        <section id="filme3">
+            <ul>
+                <a href="https://www.imdb.com/title/tt0816692/?ref_=nv_sr_srsg_1" target="_blank"><h2>Título: INTERESTELLAR</h2></a> 
+                
+                <li>Sinopse: Uma equipe de exploradores viaja através de um buraco de minhoca no espaço, na tentativa de garantir a sobrevivência da humanidade.</li>
+                <li>Duração: 169 minutos</li>
+                <li>Lançamento: 2014</li>
+                <li>Gênero: Aventura, Drama, Scifi.</li>
+                <li>Elenco: Matthew McConaughey, Anne Hathaway, Jessica Chastain.</li>
+                <li>É um remake? Não é um remake!</li>
+
+            </ul>
+        </section>
+
+        <section id="filme4">
+            <ul>
+                <a href="https://www.imdb.com/title/tt1160419/?ref_=nv_sr_srsg_1" target="_blank"><h2>Título: DUNE: PART ONE</h2></a> 
+                
+                <li>Sinopse: Adaptação do romance de ficção científica de Frank Herbert, sobre o filho de uma família nobre encarregada de proteger um planeta temperado.</li>
+                <li>Duração: 155 minutos</li>
+                <li>Lançamento: 2021</li>
+                <li>Gênero: Ação, Aventura, Drama.</li>
+                <li>Elenco: Timothée Chalamet, Rebecca Ferguson, Oscar Isaac.</li>
+                <li>É um remake? É um remake!</li>
+
+            </ul>
+        </section>
+
+        <section id="filme5">
+            <ul>
+                <a href="https://www.imdb.com/title/tt0110912/?ref_=nv_sr_srsg_0" target="_blank"><h2>Título: PULP FICTION</h2></a> 
+                
+                <li>Sinopse: As vidas de dois assassinos da máfia, um boxeador, um gângster e sua esposa, e um par de bandidos se entrelaçam em quatro histórias de violência e redenção.</li>
+                <li>Duração: 154 minutos</li>
+                <li>Lançamento: 1994</li>
+                <li>Gênero: Policial, Drama.</li>
+                <li>Elenco: Samuel L. Jackson, John Travolta, Uma Thurman.</li>
+                <li>É um remake? Não é um remake!</li>
+
+            </ul>
+        </section>
+
+        <section id="filme6">
+            <ul>
+                <a href="https://www.imdb.com/title/tt1125849/?ref_=nv_sr_srsg_0" target="_blank"><h2>Título: THE WRESTLER</h2></a> 
+                
+                <li>Sinopse: Um lutador profissional deve se aposentar, mas acha que sua procura por uma nova vida fora do ringue é uma luta desanimadora.</li>
+                <li>Duração: 109 minutos</li>
+                <li>Lançamento: 2008</li>
+                <li>Gênero: Drama, Esportes.</li>
+                <li>Elenco: Mickey Rourke, Marisa Tomei, Evan Rachel Wood.</li>
+                <li>É um remake? Não é um remake!</li>
+
+            </ul>
+        </section>
+            
+        <section id="filme7">
+            <ul>
+                <a href="https://www.imdb.com/title/tt3460252/?ref_=nv_sr_srsg_0" target="_blank"><h2>Título: THE HATEFUL EIGHT</h2></a> 
+                
+                <li>Sinopse: No inverno de Wyoming, um caçador de recompensas e seu prisioneiro encontram refúgio em uma cabana atualmente habitada por uma coleção de personagens infames.</li>
+                <li>Duração: 168 minutos</li>
+                <li>Lançamento: 2015</li>
+                <li>Gênero: Policial, Drama, Mistério.</li>
+                <li>Elenco: Samuel L. Jackson, Kurt Russel, Jennifer Jason Leigh.</li>
+                <li>É um remake? Não é um remake!</li>
+
+            </ul>
+        </section>
+
+        <section id="filme8">
+            <ul>
+                <a href="https://www.imdb.com/title/tt2245084/?ref_=nv_sr_srsg_0" target="_blank"><h2>Título: BIG HERO 6</h2></a> 
+                
+                <li>Sinopse: A ligação especial que se desenvolve entre o robô Baymax e o prodígio Hiro Hamada, que se juntam a um grupo de amigos para formar uma banda de heróis tecnologicos.</li>
+                <li>Duração: 102 minutos</li>
+                <li>Lançamento: 2014</li>
+                <li>Gênero: Animação, Ação, Aventura.</li>
+                <li>Elenco: Ryan Potter, Scott Adsit, Jamie Chung.</li>
+                <li>É um remake? Não é um remake!</li>
+
+            </ul>
+        </section>
+
+        <section id="filme9">
+            <ul>
+                <a href="https://www.imdb.com/title/tt0137523/?ref_=nv_sr_srsg_0" target="_blank"><h2>Título: FIGHT CLUB</h2></a> 
+                
+                <li>Sinopse: Um trabalhador de escritório e um fabricante de sabonetes que cuidam do diabo formam um clube de luta clandestino que evolui para algo muito maior.</li>
+                <li>Duração: 139 minutos</li>
+                <li>Lançamento: 1999</li>
+                <li>Gênero: Drama.</li>
+                <li>Elenco: Edward Norton, Brad Pitt, Helena Bonham Carter.</li>
+                <li>É um remake? Não é um remake!</li>
+
+            </ul>
+        </section>
+
+        <section id="filme10">
+            <ul>
+                <a href="https://www.imdb.com/title/tt0032138/?ref_=nv_sr_srsg_1" target="_blank"><h2>Título: THE WIZARD OF OZ</h2></a> 
+                
+                <li>Sinopse: A Dorothy Gale é levada por um tornado até a mágica cidade de Oz e vá numa viagem com novos amigos que la ajudar a voltar para casa.</li>
+                <li>Duração: 102 minutos</li>
+                <li>Lançamento: 1939</li>
+                <li>Gênero: Aventura, Família, Fantasia.</li>
+                <li>Elenco: Judy Garland, Frank Morgan, Ray Bolger.</li>
+                <li>É um remake? Não é um remake!</li>
+
+            </ul>
+        </section> -->
