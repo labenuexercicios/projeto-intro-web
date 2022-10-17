@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    height: 100px;
+    width: 1350px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+
+#botao{
+   width: 70px
+
+
+}
+
+
+.pesquisa{
+    display: flex;
+    gap: 5px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+
+section{
+    background-color:#ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 450px;
+    height: 300px;
+}
+
+.card-outlander , .card-the-hands , .card-greys{
+    border-radius: 10px
+    
+}
+
+#img-outlander , #img-hands , #img-greys{
+    border-radius: 10px;
+    padding-top: 8px;
+
+}
+
+#img-outlander:hover , #img-hands:hover , #img-greys:hover{
+    position: relative;
+    top: -5px;
+    box-shadow:0 10px 10px #666
+}
+
+
+
+footer{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    background-color: black;
+    height: 50px;
+    width: 1350px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
