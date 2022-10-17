@@ -38,9 +38,9 @@ const palmeiras = {
     }
   }
     
-  const mediaIdade = (palmeiras.pontos + flamengo.pontos + atletico.pontos) / 6;
+  const mediaPontos = (palmeiras.pontos + flamengo.pontos + atletico.pontos) / 6;
   
-  console.log("Média de pontos: ", mediaIdade);
+  console.log("Média de pontos: ", mediaPontos);
 
   
   const mundial = palmeiras.mundial && flamengo.mundial && atletico.mundial;
@@ -67,13 +67,13 @@ const palmeiras = {
     for (j of arrayMundial[i].jogadores) {
       str += `${j},`;
     }
-    console.log(`Nome: ${arrayMundial[i].nome.toUpperCase()} \nIdade: ${arrayMundial[i].pontos}\nCampeão mundial? ${arrayMundial[i].mundial
+    console.log(`Nome: ${arrayMundial[i].nome.toUpperCase()} \nPontos: ${arrayMundial[i].pontos}\nCampeão mundial? ${arrayMundial[i].mundial
       }\nJogadores: ${str}`
     );
   }
 
   const relatorio = (obj) => {
-    let string = `Nome: ${obj.nome.toUpperCase()}\nIdade: ${obj.idade}\nCampeão mundial? ${obj.mundial}\nJogadores: ${obj.jogadores}`;
+    let string = `Nome: ${obj.nome.toUpperCase()}\Pontos: ${obj.pontos}\nCampeão mundial? ${obj.mundial}\nJogadores: ${obj.jogadores}`;
     console.log(string);
   };
   
