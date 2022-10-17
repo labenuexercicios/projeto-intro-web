@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: whitesmoke;
+  width: 98.5vw;
+  height: 300vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-color: #9d600f;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: sticky;
+  top: 0;
+  height: 15vh;
+  width: 98.5vw;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between; 
+  z-index: 9;
+}
+
+.titulo {
+  text-decoration: none;
+  color: currentColor;
+
+}
+
+nav {
+  height: 10vh;
+  width: 30vw;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  letter-spacing: 1px;
+}
+
+.navegacao1,
+.navegacao2,
+.navegacao3 {
+  text-decoration: none;
+  color: currentColor;
+}
+
+main {
+  background-color: whitesmoke;
+  margin: 0 auto;
+  text-align: center;
+  width: 98.5vw;
+  height: 100%;
+  min-height: 100%;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+}
+
+button {
+  background-color: whitesmoke;
+  color: #9d600f;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid #9d600f;
+}
+
+.campodepesquisa {
+  border: 1px solid #9d600f;
+}
+
+#imagemprincipal {
+  background: url(./assets/Imagem\ principal_3\ \(800\ ×\ 500\ px\).png) no-repeat center center;
+  width: 98.5vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  padding: 20px;
+  height: 80vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  color: brown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#produtos {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+#quemsomos {
+  height: 80vh;
+  width: 90vw;
+  background-color: rgb(241, 235, 235);
+  color: #9d600f;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.textoquemsomos {
+  grid-column: 2 / 5;
+  grid-row: 3 / 6;
+}
+
+.imagemquemsomos {
+  grid-column: 5 / 8;
+  grid-row: 2 / 7;
+  transform: rotate(5deg);
+}
+
+article {
+  flex-grow: 3;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.chocolate,
+.cajuzinho,
+.beijinho {
+  display: flex;
+  width: 250px;
+  height: 400px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.imagem1,
+.imagem2,
+.imagem3 {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.rodape {
+  height: 12vh;
+  width: 100%;
+  background-image: linear-gradient(white, #9d600f);
+  color: brown;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.criacao {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+#logo {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+
+@media screen and (min-device-width : 815px) and ((max-device-width : 1000px)) {
+
+  .container {
+    height: 360vh;
+  }
+
+  #quemsomos {
+    font-size: 1.7em;
+  }
+
+  .imagemquemsomos {
+    height: 95%;
+  }
+
+  #produtos {
+    font-size: 3em;
+  }
+
+  .imagem1,
+  .imagem2,
+  .imagem3 {
+    width: 80%;
+  }
+
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width : 814px) {
+
+  .container {
+    height: 450vh;
+    width: 100vw;
+  }
+
+  ul{
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .nav-list{
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    justify-content: space-between;
+  }
+
+  #imagemprincipal{
+    width: 85vw;    
+  }
+
+  #quemsomos {
+    font-size: 1.3em;
+  }
+
+  .imagemquemsomos {
+    height: 60%;
+  }
+
+  #produtos {
+    font-size: 2em;
+  }
+
+  .imagem1,
+  .imagem2,
+  .imagem3 {
+    width: 70%;
+  }
+
+  .rodape{
+    grid-template-columns: 1fr 2fr 1fr;
+        
+  }
+}
+
+
+@media screen and (max-device-width : 480px) {
+
+  .container {
+    height: 460vh;
+  }
+
+  header{
+    align-items: center;
+  }
+
+  .logo-pagina{
+    width: 95%;
+       
+  }
+
+ 
+  .nav-list{
+    font-size: 0.6em;
+    letter-spacing: 2px;
+    
+  }
+
+  #imagemprincipal {
+    background-image: url(./assets/Imagemprincipal5.png);
+    width: 100vw;
+  }
+
+  #quemsomos {
+    font-size: 1em;
+  }
+
+  .imagemquemsomos {
+    height: 40%;
+  }
+
+  #produtos {
+    font-size: 1.5em;
+  }
+
+  .imagem1,
+  .imagem2,
+  .imagem3 {
+    width: 60%;
+  }
+  .rodape{
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+        
+  }
+}
