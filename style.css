@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 1;
+    /* box-sizing: border-box; */
+}
+
+header.tetin {
+    border: 1px solid purple;
+    height: 50x;
+    background-color: purple;
+    color: white;
+    /* margin-bottom: 30px; */
+}
+
+header.tetin > h1 {
+    /* border: 1px solid yellowgreen; */
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+/* #id e .class */
+#entrada{
+    background-color: blueviolet;;
+}
+
+#campodebusca {
+    text-align: center;
+    padding: 10px;
+    background-color: blueviolet;
+    font-size: 20px;
+    color: white;;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: green; */    
+}
+
+#main > section > ul {
+    margin: 10px 10px;
+    padding: 20px;
+    border: 1px solid black;
+    /* background-color: red; */
+}
+
+section > ul > a {
+    /* text-decoration: none; */
+    color: black;
+}
+
+a:hover {
+    color: yellow;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* .main > section.entrada { */
+
+footer {
+    font-size: 20px;
+    padding: 5px;
+}
+
+footer.pezin{
+    border: 1px solid purple;
+    background-color: purple;
+    /* background-color: red; */
+}
+
+footer.pezin > h1{
+    background-color: purple;
+    font-size: 18px;
+    color: white;
+}
+/* header.tetin{
+
+} */
+
+
