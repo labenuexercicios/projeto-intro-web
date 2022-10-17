@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Times</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <img id="titulo" src="./midia/Campeonato_Brasileiro.png" alt="titulo" />
+    </header>
+    <main id="main">
+      <div class="pesquisa">
+        <label for="busca"></label>
+        <input id="input" type="text" name="busca" placeholder="Insira o time desejado" value="" required/>
+        <button id="botao" type="submit" onclick="buscar(event)">Buscar</button>
+      </div>
+
+      <div id="times"></div>
+    </main>
+    <footer>
+      <p>Gustavo Xavier</p>
+      <p>
+        Github:
+        <a href="https://github.com/Gustaxr26" target="_blank">Gustavo Xavier</a>
+      </p>
+    </footer>
+  </body>
+</html>
