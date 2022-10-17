@@ -67,13 +67,13 @@ const palmeiras = {
     for (j of arrayMundial[i].jogadores) {
       str += `${j},`;
     }
-    console.log(`Nome: ${arrayMundial[i].nome.toUpperCase()} \nIdade: ${arrayMundial[i].pontos}\nCampeão mundial? ${arrayDosHokages[i].hokage
+    console.log(`Nome: ${arrayMundial[i].nome.toUpperCase()} \nIdade: ${arrayMundial[i].pontos}\nCampeão mundial? ${arrayMundial[i].mundial
       }\nJogadores: ${str}`
     );
   }
 
   const relatorio = (obj) => {
-    let string = `Nome: ${obj.nome.toUpperCase()}\nIdade: ${obj.idade}\nCampeão mundial? ${obj.hokage}\nJogadores: ${obj.principaisJutsus}`;
+    let string = `Nome: ${obj.nome.toUpperCase()}\nIdade: ${obj.idade}\nCampeão mundial? ${obj.hokage}\nJogadores: ${obj.jogadores}`;
     console.log(string);
   };
   
