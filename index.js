@@ -22,9 +22,9 @@ const PedroSampaio = {
 
 }
 
-const MediaAlbuns = 24 / 3
+let MediaAlbuns = 24 / 3
 console.log(MediaAlbuns)
-const ArmarioArtistas = []
+let ArmarioArtistas = []
 
 
 
@@ -87,28 +87,34 @@ for(i = 0; i<=(ArmarioArtistas.length-1); i++){
     console.log(ArmarioArtistas[i])
 }
 
+for(let artistass of ArmarioArtistas){
+    console.log(`${artistass.Artista.toUpperCase()},\n ${artistass.isArtista}, \n ${artistass.TemMaisDe5anos}, \n ${artistass.AlgunsAlbuns}`);
+}
 
 // faça uma função para que o objeto pedido seja encontrado com a string do relatorio com os dados do objt
-function encontrarBanda (nome){
-    for(i = 0; i <= (ArmarioArtistas.length-1); i++){
-        if ( nome == ArmarioArtistas[i].Artista){
-            console.log(`Nome Artista/Banda:${ArmarioArtistas[i].Artista}\n Quantos Albuns: ${ArmarioArtistas[i].QuantosAlbuns}\n Alguns Albuns: ${ArmarioArtistas[i].AlgunsAlbuns}`)
-        }
-        }
-        return (nome)
+function encontrarBanda (){
+    for(let artistass of ArmarioArtistas){
+        console.log(`${artistass.Artista.toUpperCase()},\n ${artistass.isArtista}, \n ${artistass.TemMaisDe5anos}, \n ${artistass.AlgunsAlbuns}`);
     }
+}
+
+    console.log(encontrarBanda())
 //
-//const arrayobjt = [BandaZimbra, Miley, ImagineDragons, PedroSampaio]
+//const arrayobjt = [{BandaZimbra, Miley, ImagineDragons, PedroSampaio}]
 
-    /*function objetostring (string){
-    for(let i = 0; i <= (arrayobjt.Artista.length-1); i++){
-        if (string !== arrayobjt[i].Artista){
-            alert("Não encontrado no nosso sistema")
-
-        }
+function arrayAramarioDeBandas(array, titulo) {
+    let resultado = array.filter(arm => {
+        return arm.Artista.toUpperCase().includes(titulo.toUpperCase())
+    })
+    if(resultado.length >= 1){
+        return resultado
+    }else{
+        alert("Banda ou Artista não encontrado!")
     }
-    return string*///TRAVOU NA PARTE 4
+}
+
+arrayAramarioDeBandas(ArmarioArtistas, "Banda Zimbra")
 
 //4//
 
-encontrarBanda(prompt("Qual banda/artista deseja encontrar?"))
+// encontrarBanda(prompt("Qual banda/artista deseja encontrar?"))

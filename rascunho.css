@@ -1,103 +1,228 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Display:wght@700&family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Bebas+Neue&family=Noto+Sans+Display:wght@700&family=Rubik+Dirt&display=swap');
+
+
+
 
 .titulo{
-    text-align: center;
-    background-image: linear-gradient(135deg, #f7f4f3 0, #e0e9eb 12.5%, #c8dee4 25%, #aed2dd 37.5%, #92c4d7 50%, #76b6d2 62.5%, #5aa9ce 75%, #3e9ccb 87.5%, #1e90c8 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-image: linear-gradient(135deg, #fffff3 0, #fffff0 8.33%, #ffffee 16.67%, #ffffea 25%, #fbffe5 33.33%, #ebfadf 41.67%, #dbead7 50%, #cddace 58.33%, #c3cbc5 66.67%, #bbbfbd 75%, #b5b4b5 83.33%, #b1acae 91.67%, #afa6a8 100%); */
     border-radius: 10px;
-    margin-right: 10fr;
-    border: thick double aqua;
+    /* margin-right: 10fr;  */
+    border-bottom: solid rgb(2, 2, 2);
+    border-top: solid black;
+    border-width: 1px;
+    /* width: 500px; */
+    
+    
 
-    color: white;
+    color: rgb(3, 3, 3);
+}
+a{
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+a:hover{
+    background-color:rgb(144, 180, 206); 
+    border: 0.5px solid black;
+}
+.titulo1{
+    color: rgb(0, 0, 0);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    display: flex;
 }
 .botao{
-    background-image: linear-gradient(135deg, #f7f4f3 0, #e0e9eb 12.5%, #c8dee4 25%, #aed2dd 37.5%, #92c4d7 50%, #76b6d2 62.5%, #5aa9ce 75%, #3e9ccb 87.5%, #1e90c8 100%);
+    /* background-image: linear-gradient(135deg, #ffffdc 0, #ffffda 8.33%, #ffffd7 16.67%, #f4fcd4 25%, #e4f1cf 33.33%, #d4e4c9 41.67%, #c5d4c1 50%, #b8c4b8 58.33%, #adb6b0 66.67%, #a6aaa7 75%, #a09fa0 83.33%, #9c9799 91.67%, #999193 100%); */
     margin-left: 70vh;
     margin-right: 60vh;
     margin-bottom: 0.5vh;
     margin-top: 00.5vh;
     margin: auto;
     border-radius: 5px;
-    
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+    display: flex;
     
     
     
     
 }
+.procurar{
+    background-color: #bbbfbd;
+    border-radius: 5px;
+    border-style:outset;
 
+}
 
-.all{
-    background-image: linear-gradient(180deg, #ebf5f0 0, #deefe9 12.5%, #d0e9e3 25%, #c0e2dc 37.5%, #afdbd7 50%, #9dd4d3 62.5%, #8ccdd0 75%, #7bc6cf 87.5%, #6bc0ce 100%);
-    display: block;
+body{
     display: flex;
-    display: grid;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
-    justify-content: space-evenly;
+    /* min-height: 100vh; */
+    flex-wrap: wrap;
+    max-width: 800px;
+    min-width: 320px;
+    margin: auto;
+    
 
+    
+}
+.all{
+    /*background-image: linear-gradient(135deg, #fffff3 0, #fffff0 8.33%, #ffffee 16.67%, #ffffea 25%, #fbffe5 33.33%, #ebfadf 41.67%, #dbead7 50%, #cddace 58.33%, #c3cbc5 66.67%, #bbbfbd 75%, #b5b4b5 83.33%, #b1acae 91.67%, #afa6a8 100%);*/
+    background-color: white;
+    display: grid;
+    display: flex;
+    border-radius: 5px;
+    font-family:'Asap', sans-serif;
+    font-weight: bold;
+    max-width: 800px; /*deixou meu site responsivo*/
+    min-width: 166px;
+    padding: 20px;
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    box-shadow: 2px 20px 25px rgb(6, 6, 7);
+
+    
+    
+    
+    
+    
+
+    
     
     
 
 }
 
-h1{
+h2{
     color: white;
     text-align: center;
+    background-color: white;
+    border-bottom: thick double black;
+    border-top: thick double black;
+    
+    
+    
     
 }
 
 .b1{
-    background-image: linear-gradient(180deg, #9ab3bc 0, #99acb1 12.5%, #97a4a6 25%, #969b9b 37.5%, #949191 50%, #928788 62.5%, #8f7e81 75%, #8c767c 87.5%, #896f79 100%);
+    background-color: rgb(8, 41, 63);
     border-radius: 10px;
-    margin: 10px; 
-    border: thick double aqua;
+    margin: 20px 20px; 
+    border: thick double rgb(10, 10, 10);
     text-align: center;
+    border-width: 1px;
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    margin:20px;
+    overflow: hidden;
+    transition: 0.5s;
+
+   
    
     
 
 }
 .b2{
-    background-image: linear-gradient(180deg, #9ab3bc 0, #99acb1 12.5%, #97a4a6 25%, #969b9b 37.5%, #949191 50%, #928788 62.5%, #8f7e81 75%, #8c767c 87.5%, #896f79 100%);
+    background-color: rgb(8, 41, 63);
     border-radius: 10px;
-    margin: 10px;
-    border: thick double aqua;
+    margin: 20px 20px;
+    border: thick double rgb(14, 13, 13);
     text-align: center;
+    border-width: 1px;
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    margin:20px;
+    overflow: hidden;
+    transition: 0.5s;
    
 }
 .b3{
-    background-image: linear-gradient(180deg, #9ab3bc 0, #99acb1 12.5%, #97a4a6 25%, #969b9b 37.5%, #949191 50%, #928788 62.5%, #8f7e81 75%, #8c767c 87.5%, #896f79 100%);
+    background-color: rgb(8, 41, 63);
     border-radius: 10px;
-    margin:10px;
-    border: thick double aqua;
+    margin:20px 20px;
+    border: thick double rgb(10, 10, 10);
     text-align: center;
+    border-width: 1px;
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    margin:20px;
+    overflow: hidden;
+    transition: 0.5s;
 }
 .b4{
-    background-image: linear-gradient(180deg, #9ab3bc 0, #99acb1 12.5%, #97a4a6 25%, #969b9b 37.5%, #949191 50%, #928788 62.5%, #8f7e81 75%, #8c767c 87.5%, #896f79 100%);
-    border-radius: 10px;
-    border: thick double aqua;
+    background-color: rgb(8, 41, 63);
+    border-radius: 20px 20px;
+    border: thick double rgb(10, 10, 10);
     text-align: center;
+    border-width: 1px;
+    margin: 20px;
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    margin:20px;
+    overflow: hidden;
+    transition: 0.5s;
     
 }
 
+.b5{
+    background-color: rgb(8, 41, 63);
+    border-radius: 10px;
+    border: thick double rgb(10, 10, 10);
+    text-align: center;
+    text-align: center;
+    border-width: 1px;
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    margin:20px;
+    overflow: hidden;
+    transition: 0.5s;
+    
+    
+}
+
+
 footer{
-    background-image: linear-gradient(180deg, #ebf5f0 0, #deefe9 12.5%, #d0e9e3 25%, #c0e2dc 37.5%, #afdbd7 50%, #9dd4d3 62.5%, #8ccdd0 75%, #7bc6cf 87.5%, #6bc0ce 100%);
+    /* background-image: linear-gradient(135deg, #fffff3 0, #fffff0 8.33%, #ffffee 16.67%, #ffffea 25%, #fbffe5 33.33%, #ebfadf 41.67%, #dbead7 50%, #cddace 58.33%, #c3cbc5 66.67%, #bbbfbd 75%, #b5b4b5 83.33%, #b1acae 91.67%, #afa6a8 100%); */
     border-radius: 5px;
+    border-bottom: solid black;
+    border-top: solid black;
     display: flex;
     justify-items: center;
     justify-content: center;
-    color: rgb(91, 79, 133);
+    color: rgb(0, 0, 0);
     text-decoration: underline;
+    border-width: 1px;
 }   
 .botao2{
-    background-image: linear-gradient(180deg, #97ccbe 0, #86c7ba 12.5%, #74c0b7 25%, #5fb9b4 37.5%, #44b2b2 50%, #19aab1 62.5%, #00a3b0 75%, #009cb1 87.5%, #0096b2 100%);
-    border-radius: 10px;
+    /* background-image: linear-gradient(135deg, #fffff3 0, #fffff0 8.33%, #ffffee 16.67%, #ffffea 25%, #fbffe5 33.33%, #ebfadf 41.67%, #dbead7 50%, #cddace 58.33%, #c3cbc5 66.67%, #bbbfbd 75%, #b5b4b5 83.33%, #b1acae 91.67%, #afa6a8 100%);  */
+    background-color: white;
     margin-bottom: 3px;
     margin-top: 1px;
     text-decoration: none;
+    border-radius: solid rgb(7, 7, 7) ;
+    border-radius: 10px;
+    border: 5px;
     padding: 3px 3px 3px 3px;
 }
 .botao2:hover{
-    background-image: linear-gradient(135deg, #ffffff 0, #ffffff 12.5%, #f5fdff 25%, #daf1f8 37.5%, #bfe3f1 50%, #a4d5eb 62.5%, #8bc7e7 75%, #75bae3 87.5%, #62aee0 100%);
-    padding: 3px 3px 3px 3px
+    /* background-image: linear-gradient(135deg, #ffffff 0, #ffffff 12.5%, #f5fdff 25%, #daf1f8 37.5%, #bfe3f1 50%, #a4d5eb 62.5%, #8bc7e7 75%, #75bae3 87.5%, #62aee0 100%); */
+    padding: 3px 3px 3px 3px;
+    background-color: #afafaff3;
 }
+
