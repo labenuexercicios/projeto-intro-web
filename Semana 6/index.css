@@ -1,0 +1,364 @@
+body,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: 'Podkova', sans-serif;
+    max-width: 100%;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+
+
+.header {
+    /* background: linear-gradient(247.27deg, #00fff0 -33.61%, #0f92ff 70%) !important; */
+    background-color: #FA8BFF;
+background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+
+
+}
+
+.imghe {
+    width: 150px;
+    height: 150px;
+
+}
+
+.titi {
+    color: rgb(0, 101, 186);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+.botão {
+    display: flex;
+    order: 4;
+    margin-right: 1px;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.type {
+    display: flex;
+    height: 70px;
+    width: 500px;
+    font-size: 1.6rem;
+    padding: 0px 0px 0px 20px;
+
+}
+
+.material-icons.md-48 {
+    font-size: 64px;
+}
+
+
+.a1{
+    border-radius: 20px 20px 0px 0px;
+    /* margin-top: 16px; */
+
+}
+
+.a
+ {
+    border-radius: 0px 0px 10px 50px;
+    margin-bottom: 120px;
+
+
+}
+
+.main {
+
+    /* background: linear-gradient(247.27deg,#37bbb253 -33.61%,#75b6eb 70%)!important;*/
+
+
+    display: table;
+    width: 100vw;
+    height: 85vh;
+    padding: 20px 0;
+    text-align: center;
+    color: black;
+    background-color: #D9AFD9;
+    background-color: #FA8BFF;
+background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+
+    /* background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+     */
+   
+    /* url("/pexels-mikhail-nilov-7699052.jpg")no-repeat bottom center scroll; */
+
+    background-position: 50% 40%;
+    background-size: cover;
+
+}
+
+.mae {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    /* color: green; */
+
+
+
+
+}
+
+.mae3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.mae>ul {
+    list-style-type: none;
+    max-width: 400px;
+    max-height: 200px;
+
+
+
+}
+
+.mae p {
+
+    font-size: 2.7rem;
+    line-height: 80px;
+    text-align: center;
+    background: linear-gradient(247.27deg, #37bbb253 -33.61%, #75b6eb 70%) !important;
+    ;
+}
+
+.mae img {
+    /* border-radius: 50px 50px 50px 7px; */
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50px 50px 20px 20px;
+
+
+
+}
+
+.camburi {
+    border-style: hidden;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    /* background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%); */
+    /* background: linear-gradient(247.27deg, #00fff0 -33.61%, #0f92ff 70%) !important; */
+}
+
+.imginst {
+    height: 150px;
+}
+
+.imglink {
+    height: 150px;
+
+}
+
+.imggit {
+    height: 150px;
+
+}
+.f1{
+    color: black;
+}
+
+.imgfooter {
+    display: flex;
+    justify-content: center;
+   
+
+}
+
+.frase {
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.7rem;
+}
+
+h3 {
+    display: flex;
+    justify-content: flex-end;
+    color: rgba(0, 0, 0, 0.734);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    margin-top: 0;
+
+}
+
+
+@media screen and (max-device-width: 850px) {
+    .frase {
+        display: flex;
+        justify-content: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2.1rem;
+    }
+
+}
+
+@media screen and (max-device-width: 792px) {
+    .type {
+        display: flex;
+        height: 70px;
+        width: 430px;
+        font-size: 1.6rem;
+        padding: 0px 0px 0px 20px;
+
+    }
+}
+
+@media screen and (max-device-width: 763px) {
+    .type {
+        display: flex;
+        height: 70px;
+        width: 390px;
+        font-size: 1.6rem;
+        padding: 0px 0px 0px 20px;
+
+    }
+}
+
+@media screen and (max-device-width: 685px) {
+    .type {
+        display: flex;
+        height: 70px;
+        width: 400px;
+        font-size: 1.6rem;
+        padding: 0px 0px 0px 20px;
+
+    }
+
+    .imghe {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .imginst {
+        height: 100px;
+    }
+
+    .imglink {
+        height: 100px;
+
+    }
+
+    .imggit {
+        height: 100px;
+
+    }
+}
+
+@media screen and (max-device-width: 650px) {
+    .frase {
+        display: flex;
+        justify-content: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.8rem;
+    }
+
+    .type {
+        display: flex;
+        height: 70px;
+        width: 300px;
+        font-size: 1.6rem;
+        padding: 0px 0px 0px 20px;
+
+    } }
+
+    @media screen and (max-device-width: 530px) {
+        .frase {
+            display: flex;
+            justify-content: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.3rem;
+        }
+
+        .type {
+            display: flex;
+            height: 70px;
+            width: 220px;
+            font-size: 1.6rem;
+            padding: 0px 0px 0px 20px;
+
+        } }
+
+        @media screen and (max-device-width: 496px) {
+            .type {
+                display: flex;
+                height: 70px;
+                width: 190px;
+                font-size: 1.6rem;
+                padding: 0px 0px 0px 20px;
+
+            } }
+
+            @media screen and (max-device-width: 424px) {
+                .type {
+                    display: flex;
+                    height: 70px;
+                    width: 139px;
+                    font-size: 1.6rem;
+                    padding: 0px 0px 0px 20px;
+
+                }
+ }
+                @media screen and (max-device-width: 496px) {
+                    .frase {
+                        display: flex;
+                        justify-content: center;
+                        font-family: 'Courier New', Courier, monospace;
+                        font-size: 1.1rem;
+                    }
+
+                    .type {
+                        display: flex;
+                        height: 70px;
+                        width: 150px;
+                        font-size: 1.6rem;
+                        padding: 0px 0px 0px 20px;
+
+                    } }
+
+                    @media screen and (max-device-width: 384px) {
+                        .frase {
+                            display: flex;
+                            justify-content: center;
+                            font-family: 'Courier New', Courier, monospace;
+                            font-size: 1rem;
+                        }
+
+                        .type {
+                            display: flex;
+                            height: 70px;
+                            width: 120px;
+                            font-size: 1.6rem;
+                            padding: 0px 0px 0px 20px;
+
+                        }
+
+                    }
+                
+            

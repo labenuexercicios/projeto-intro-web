@@ -1,0 +1,88 @@
+/* 💡 Recomendamos adicionar imagens a seus itens agora. Ao fazer isso, lembre-se de criar mais uma propriedade String nos seus objetos, para guardar o caminho do link até a imagem.
+Se baseando no nosso exemplo de estilização, crie a identidade da sua página seguindo os passos abaixo:
+
+
+
+3. Estilize a lista criada na semana passada, seguindo o padrão enviado;
+Você não precisa seguir exatamente os mesmos tamanhos, fontes e cores da página de exemplo, mas é importante que os elementos estejam presentes (cabeçalho, rodapé, barra de pesquisa etc). */
+
+
+/* 1. Estilize o cabeçalho da sua página com o mesmo título que está no <title>; */
+*{
+    margin: 0;
+    padding:0;
+}
+header{
+    background-color:rgb(86, 86, 129)  ;
+    border: 4px solid black; 
+
+    /* Alterar header */
+
+   
+   
+ 
+    
+}
+section{
+    background-color:white;
+    border: 4px solid black; 
+    height: 100%;
+    width: 500px;
+}
+
+.botão{
+    text-align: center;
+    height: 2rem;
+    margin-top: 16px;
+    
+}
+.praias{
+    margin: 20px 20px;
+    display: grid;
+    gap:20px;
+    
+}
+main{
+   
+    display: table;
+  width: 100vw;
+  height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+  color: black;
+  background: url("/Semana\ 4/background.jpg")no-repeat bottom center scroll;
+ 
+  background-position: 50% 40%;
+ 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+
+
+/* .container{
+    background-color: blue;
+    display:flex;
+    width: 40vw;
+    height: 40vh;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+} */
+/* obs:background-image: url("./assets/Background-main/Background.png");
+background-repeat: no-repeat;
+background-position: cover; (talvez a qualidade fique péssima) */
+
+
+/* 2. Estilize o rodapé para sua página, e nele, coloque suas informações de contato (nome e github); */
+
+
+
+
+
+
+
+
+

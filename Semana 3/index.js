@@ -176,10 +176,10 @@ console.log("item 2:")
  
 console.log("item 3:")
  const funcaoObjeto = (objeto) =>{
-    for(i of praias){
+    for(i of praias){  
         for(objeto in i){
-            console.log(`${i[objeto]}`)
-            console.log("---------------------")
+            console.log(`${objeto}: ${i[objeto]}`)
+            // console.log("---------------------")
         }
  } 
 
