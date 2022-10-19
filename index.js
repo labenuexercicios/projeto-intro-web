@@ -15,7 +15,7 @@ const pacote2 = {
 const pacote3 = {
   tipo: "decorativo",
   valor: 180.0,
-  estoque: false,
+  estoque: true,
   pecas: ["porta retraro", "vaso", "cinzeiro"],
 };
 // if (filamento1.estoque === true) {
