@@ -279,6 +279,7 @@ function buscar(event) {
 
     if (valor === 'John Piper') {
 
+
         const pesquisa = document.getElementById('authorsrc')
         pesquisa.style.visibility = 'visible';
         document.getElementById('author-1').style.visibility = 'hidden';
@@ -297,10 +298,11 @@ function buscar(event) {
         document.getElementById('author-4').style.width = '0';
         document.getElementById('author-4').style.width = '0';
 
+        document.getElementById("myFrt").style.marginTop = "136px";
+
         pesquisa.style.width = '40%';
         pesquisa.style.height = '300px';
         pesquisa.style.background = '#154cf2';
-
 
         pesquisa.addEventListener('mouseenter', function hover() {
             return pesquisa.style.background = '#ffd42b'
@@ -449,4 +451,31 @@ function buscar(event) {
     }
 }
 
-buscar()
+function voltar(){
+
+    const src = document.getElementById('busca')
+    src.value = ''
+
+    const pesquisa = document.getElementById('authorsrc')
+    pesquisa.style.visibility = 'hidden';
+
+
+    document.getElementById('author-1').style.visibility = 'visible';
+    document.getElementById('author-1').style.width = '40%';
+    //document.getElementById('author-1').style.width = '0';
+
+    document.getElementById('author-2').style.visibility = 'visible';
+    document.getElementById('author-2').style.width = '40%';
+    //document.getElementById('author-2').style.width = '0';
+
+    document.getElementById('author-3').style.visibility = 'visible';
+    document.getElementById('author-3').style.width = '40%';
+    //document.getElementById('author-3').style.width = '0';
+
+    document.getElementById('author-4').style.visibility = 'visible';
+    document.getElementById('author-4').style.width = '40%';
+    //document.getElementById('author-4').style.width = '0';
+
+    pesquisa.style.width = '0';
+    pesquisa.style.height = '0';
+}

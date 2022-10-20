@@ -70,6 +70,7 @@ a {
 
 main {
   margin-top: 20px;
+  width:98%;
 }
 
 .content {
@@ -81,7 +82,7 @@ main {
 }
 
 .author {
-  width: 39.06vw;
+  width: 40%;
   height: 46.58vh;
   display: flex;
   justify-content: center;
