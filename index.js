@@ -4,6 +4,7 @@
 // * uma característica String;
 // * uma característica Number;
 // * uma característica Boolean;
+
 let Himym= {
  nome:"How I met your mother",
  AnoDeLancamento: 2005,
@@ -38,8 +39,8 @@ let blackMirror= {
     AnoDeLancamento: 2011,
     episodios: 22,
     continuaLancando: true,
-    genero:[" Distopia", " Ficção científica", " Suspense", " Drama", " Sátira", " Ficção especulativa"],
-    NotaPessoal:9
+    genero:["Distopia", " Ficção científica", " Suspense", " Drama", " Sátira", " Ficção especulativa"],
+    NotaPessoal:9,
 }
 // console.log(`nome:${nomeBlackMirror}
 // ano de lancamento:${AnoDeLancamentoBlackMirror}
@@ -48,7 +49,7 @@ let blackMirror= {
 
 //ideia posso tamber criar outro boolean "continua no ar?" ou seja continua na tv aberta ou em programas de streaming.
 
-//3. Faça um cálculo de média, entre os valores numéricos respectivos de cada item. Imprima o valor da média utilizando um console.log. Guarde este valor em uma const.
+//semana 1, exercicio 3. Faça um cálculo de média, entre os valores numéricos respectivos de cada item. Imprima o valor da média utilizando um console.log. Guarde este valor em uma const.
 const media= (blackMirror.episodios + Himym.episodios + Friends.episodios)/3;
 console.log("A media de episodios das 3 series e de: "+ media) 
 
@@ -74,9 +75,10 @@ for (const i in blackMirror) {
 
 // Crie pelo menos mais uma característica para o item que você criou. Esta característica deve ser um array. Mantenha o tipo de dado do array criado sempre o mesmo, isto é,
 //  se é um array de strings, só deve receber strings.
+//crie uma array para guardar os objetos
 const array= []
 
-//crie uma array para guardar os objetos
+
 if(Friends.continuaLancando===true){
     array.push(Friends)
 }else{
@@ -109,10 +111,40 @@ ArrayParaString=(array) =>{
 }
 ArrayParaString(array)
 
-///semana 4
+//semana 3 exercicio 3. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
+function mostrarProps(obj) {
+    var resultado = "";
+    for (var i in obj) {
+      if (obj.hasOwnProperty(i)) {
+          resultado += i + " = " + obj[i] + "\n";
+      }
+    }
+    return resultado;
+}
 
 
+const ObejetoTeste={ 
+Nome: 'victor',
+Idade: 18,
+Cidade: 'Londrina'
+}
 
+console.log(mostrarProps(blackMirror))
 
+const Series= [Himym, Friends, blackMirror]
+console.log(Series)
+ 
+
+const buscaNome = (Series, string) => {
+    const resultado= Series.filter((objeto) =>{
+        return objeto.genero === string || objeto.nome === string
+    })
+    
+    if(resultado.lenght > 0){
+        console.log(resultado)
+    }else{
+        alert('Nenhum item encontrado.')
+    }
+}
 
 
