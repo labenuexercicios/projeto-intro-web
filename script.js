@@ -143,3 +143,22 @@ console.log(guardarObjetos)
 //     }
 // }
 // verify(verify(prompt("Digite um filme")))
+
+//Semana 6
+
+function myFunction() {
+    var input, filter, ul, a, i, txtValue;
+    input = document.getElementById("id-nome");
+    filter = input.value.toUpperCase();
+    ul = document.getElementsByClassName("filmes");
+    for (i = 0; i < ul.length; i++) { 
+        a = ul[i].getElementsByTagName("a")[0];
+        txtValue = a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            ul[i].style.display = "";
+        } else {
+            ul[i].style.display = "none";
+        }
+    }
+}
+

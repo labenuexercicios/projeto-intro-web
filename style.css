@@ -3,36 +3,70 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
-header{
-    background-color: rgb(104, 4, 4);
-    color: beige;
-    font-family:'Courier New', Courier, monospace;
-    border: 4px solid rgb(141, 32, 32);
-    justify-content:center;
-    display: flex;
-    height: 50px;
+body{
+    background-color: rgba(224, 224, 215, 0.295);
+}
+#imagem{
+    border-radius: 50%;
+    border: 2px solid rgb(46, 37, 37);
+    object-fit:cover;
+    
+}
+.Cabeçalho{
+    display: grid;
+    background: linear-gradient(180deg, rgb(145, 18, 18), rgb(197, 39, 39));    display:grid;
+    grid-template-columns: 1% 1fr 1%;
+    align-items: center;
+    text-align:center;
+    border: 1px solid rgb(46, 37, 37);
+    border-radius: 3px;
+    color: rgb(241, 241, 234);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    width: 100%;
+    position: relative;
 }
 
 .Rodapé{
-    background-color: rgb(36, 35, 35);
+    background: linear-gradient(180deg, rgb(29, 23, 23), rgb(7, 0, 0));
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: 1px solid gray;
-    color:blanchedalmond;
+    color:rgba(231, 231, 223, 0.726);
     position: static;
     bottom: 0px;
-    width: 1390px;
+    width: auto;
     text-align: center;
 }
 
-.container{
-    display:flex;
-    align-content: center;
-    justify-content: center;
-    background-color: beige;      
-    border: 2px rgb(104, 4, 4) solid; 
-    margin: 10px 20px 15px 10px;
+.filmes{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display:grid;
+    width: 50%;
+    height: 660px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+    border: 5px solid rgb(161, 0, 0);
+    border-radius: 15px;
+    margin:5px;
+    align-content: stretch;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    left: 27%;
+    background-color:rgb(46, 37, 37);
+    color: rgb(255, 255, 255);
+    font-size: larger;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+.filmes:hover{
+    background-color: rgb(104, 4, 4);
+    color: beige;
 }
 
 .Busca{
@@ -49,14 +83,143 @@ header{
     color: rgb(241, 241, 234);
     height: auto;
     width: auto;
+    
 }
 
-.Cartaz{
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 3vh;
-    width: 100px;
-    justify-content: center;
+form:has(button:active){
+    color: rgb(104, 4, 4);
 }
+
+button{
+      background-color: rgb(3, 3, 3);
+      color: white;
+      font-family: serif;
+      cursor:pointer;
+}
+  
+button:active{
+      background-color: rgb(104, 4, 4);
+      color: rgb(240, 239, 239)
+}
+
+aside{
+    background-color: whitesmoke;
+    width: 180px;
+    border: 1px solid black;
+    position: absolute;
+    right:196px;
+    text-align: center;
+    bottom: 540px;
+    height: 155px;
+  }
+
+.direita:hover{
+    background-color: rgba(0, 0, 0, 0.699);
+    color: beige;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .container{
+  display: flex;
+  flex-wrap: wrap;
+    }
+
+    .Cabeçalho{
+    width: 100%;
+    text-align:center;
+    }
+
+    section img {
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      height: 80%;
+      border: 5px solid rgb(161, 0, 0);
+      border-radius: 10px;
+      margin:5px;
+      object-fit:cover;
+    }
+
+    .filmes{
+        display: block;
+        height: 92%;
+        left: 102px;
+    }
+
+    .filmes h4{
+        margin-bottom: 20px;
+
+    }
+    
+    header img{
+      width: 20%;
+      height: 10%;
+      justify-content: center;
+    }
+
+    aside{
+      display: flex;
+      width: 45%;
+      height: 18%;
+      position:inherit;
+      margin-left: 85px;
+      margin-bottom: -96px;
+      text-align: center;
+      flex-direction: column;
+      left: -25px;
+    }
+
+    .Busca{
+        margin-left: -98px;
+        margin-bottom: 210px;
+        right:190px;
+    }
+
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width:820px) {
+    aside{
+    display: flex;
+    width: 180px;
+    height: 155px;
+    right:360px;
+    text-align: center;
+    margin-bottom: -210px;
+    margin-top: 400px;
+    height: 155px;
+    flex-direction: column;
+    }
+
+    .filmes{
+    width: 50%;
+    height: 600px;
+    left: 160px;
+ 
+    }
+
+    .Cabeçalho{
+        width: 120%;
+        
+    }
+    
+    .Busca{
+        margin-left: -92px;
+        margin-bottom: 210px;
+    }
+
+}
+
+ @media screen and (min-device-width : 1200px) {
+    .filmes{
+        width: 45%;
+        height: 600px;
+        object-fit:cover;
+        font-size: large;
+    }
+    }
+
+    aside{
+        bottom: 81%;
+        position: absolute;
+        font-size: large;
+        height: 170px;
+} 
