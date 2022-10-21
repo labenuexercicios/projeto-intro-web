@@ -12,7 +12,7 @@ header{
     align-items: center;
     font-size: 3rem;
     padding-top: 30px;
-    background: url("../imagens/anel.jpg")no-repeat bottom center scroll;
+    background: url("./imagens/anel.jpg")no-repeat bottom center scroll;
     background-position: 50% 50%;
     background-size: cover;
 }
@@ -39,7 +39,7 @@ body {
     color: white;
     font: normal 18pt Arial;
     line-height: 50px;
-    background: url("../imagens/background.webp")no-repeat bottom center scroll;
+    background: url("./imagens/background.webp")no-repeat bottom center scroll;
     background-position: 50% 50%;
     background-size: cover;
 }
