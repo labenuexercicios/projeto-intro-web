@@ -9,24 +9,25 @@ header{
     text-align: center;
 }
 .pesquisa {
-   margin-left: 37rem;
-   margin-top: 20px;
+ display: flex;
+ justify-content: center;
+ margin-top: 20px;
 
 }
 .container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+  
 }
 .carta{
     align-items: center;
     justify-content: center;
    border: 2px solid yellow;
-   margin: 20px;
    width: 600px;
    height: 200px;
-
+   margin : 20px
 }
 .carta h3 {
     text-align: center;
@@ -38,3 +39,60 @@ header{
 footer{
     background-color: yellowgreen;
 }
+
+
+@media screen and (max-device-width: 1200px){
+      .container {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            align-items: center;
+            justify-content: center; 
+}
+.carta{
+    align-items: center;
+    justify-content: center;
+   border: 2px solid yellow;
+   width: 500px;
+   height: 180px;
+   margin : 20px
+}
+}
+
+@media screen and (max-device-width: 1000px) {
+    .carta{
+        align-items: center;
+        justify-content: center;
+       border: 2px solid yellow;
+       width: 400px;
+       height: 180px;
+       margin : 20px
+    }
+    }
+
+    @media screen and (max-device-width: 800px) {
+        .container {
+            display: grid;
+            grid-template-columns: repeat(1, 2fr);
+            align-items: center;
+            justify-content: center;    
+        }
+        .carta{
+            align-items: center;
+            justify-content: center;
+           border: 2px solid yellow;
+           width: 600px;
+           height: 200px;
+           margin : 20px
+        }
+        }
+        @media screen and (max-device-width: 600px) {
+            .carta{
+                align-items: center;
+                justify-content: center;
+               border: 2px solid yellow;
+               width: 400px;
+               height: 200px;
+               margin : 20px
+            }
+    
+        }
