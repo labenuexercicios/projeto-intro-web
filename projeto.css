@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+    font-size: 3rem;
+    padding-top: 30px;
+    background: url("./imagens/anel.jpg")no-repeat bottom center scroll;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.titulo{
+    font-family: 'Shalimar', cursive;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    text-shadow: 1px 2px 2px brown;
+}
+
+.busca{
+    gap: 30px;
+    text-align: center;
+}
+
+.pesquisa{
+    width: 300px;
+    height: 20px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font: normal 18pt Arial;
+    line-height: 50px;
+    background: url("./imagens/background.webp")no-repeat bottom center scroll;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 700px;
+    border-radius: 20px;
+    background-color: rgba(165, 42, 42, 0.377)
+}
+
+.card:hover{
+    background-color: rgba(165, 42, 42, 0.678)
+}
+
+.card img{
+    height: 250px;
+    width: 300px;
+    border-radius: 50px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+}
+
+a:hover{
+    color: yellow;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 150px;
+    height: 60px;
+    margin-top: 30px;
+}
+
+.esconde-objetos{
+    display: none;
+}
