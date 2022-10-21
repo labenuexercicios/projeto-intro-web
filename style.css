@@ -1,0 +1,40 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: yellowgreen;
+    text-align: center;
+}
+.pesquisa {
+   margin-left: 37rem;
+   margin-top: 20px;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.carta{
+    align-items: center;
+    justify-content: center;
+   border: 2px solid yellow;
+   margin: 20px;
+   width: 600px;
+   height: 200px;
+
+}
+.carta h3 {
+    text-align: center;
+}
+.carta p {
+    margin: 10px;
+}
+
+footer{
+    background-color: yellowgreen;
+}
