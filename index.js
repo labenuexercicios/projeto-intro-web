@@ -223,17 +223,17 @@ let titulo = document.getElementsByClassName("tituloH2")
 
 
 //Evento 1
-    const criarTagH1 = document.createElement("h2")
-    const novoConteudo1 = document.createTextNode(evento1.nome)
-    criarTagH1.appendChild(novoConteudo1)
-    titulo[0].insertAdjacentElement("afterbegin", criarTagH1)
+const criarTagH1 = document.createElement("h2")
+const novoConteudo1 = document.createTextNode(evento1.nome)
+criarTagH1.appendChild(novoConteudo1)
+titulo[0].insertAdjacentElement("afterbegin", criarTagH1)
 
 //Evento 2
 
-    const criarTagH2 = document.createElement("h2")
-    const novoConteudo2 = document.createTextNode(evento2.nome)
-    criarTagH2.appendChild(novoConteudo2)
-    titulo[1].insertAdjacentElement("afterbegin", criarTagH2)
+const criarTagH2 = document.createElement("h2")
+const novoConteudo2 = document.createTextNode(evento2.nome)
+criarTagH2.appendChild(novoConteudo2)
+titulo[1].insertAdjacentElement("afterbegin", criarTagH2)
 
 //Evento 3
 
@@ -252,7 +252,7 @@ titulo[3].insertAdjacentElement("afterbegin", criarTagH4)
 
 //DOM BUSCADOR
 
-let input = document.getElementById ("nome")
+let input = document.getElementById("nome")
 const todosEventosHtml = document.querySelectorAll(".todosEventos")
 const listaEvento = document.querySelectorAll(".listaEvento")
 const imagemEvento = document.querySelectorAll(".imagem")
@@ -268,38 +268,38 @@ const paiEvento3 = removerEvento3.parentNode
 const removerEvento4 = document.querySelector("#removerEvento4")
 const paiEvento4 = removerEvento4.parentNode
 
-function selecionarEvento (){
-    if(evento1.nome === input.value){
+function selecionarEvento() {
+    if (evento1.nome === input.value) {
         paiEvento2.removeChild(removerEvento2)
         paiEvento3.removeChild(removerEvento3)
         paiEvento4.removeChild(removerEvento4)
         input.value = ""
-    } else if(evento2.nome === input.value){
+    } else if (evento2.nome === input.value) {
         removerEvento1.parentNode.removeChild(removerEvento1)
         removerEvento3.parentNode.removeChild(removerEvento3)
         removerEvento4.parentNode.removeChild(removerEvento4)
         input.value = ""
-    } else if(evento3.nome === input.value){
+    } else if (evento3.nome === input.value) {
         removerEvento1.parentNode.removeChild(removerEvento1)
         removerEvento2.parentNode.removeChild(removerEvento2)
         removerEvento4.parentNode.removeChild(removerEvento4)
         input.value = ""
-    } else if (evento4.nome === input.value){
+    } else if (evento4.nome === input.value) {
         removerEvento1.parentNode.removeChild(removerEvento1)
         removerEvento2.parentNode.removeChild(removerEvento2)
         removerEvento3.parentNode.removeChild(removerEvento3)
         input.value = ""
-    } else{
+    } else {
         alert("Nenhum Evento encontrado")
     }
 }
 
-function devolverPesquisaEvento (){
-    if (input.value === ""){
+function devolverPesquisaEvento() {
+    if (input.value === "") {
         paiEvento1.appendChild(removerEvento1)
         paiEvento2.appendChild(removerEvento2)
         paiEvento3.appendChild(removerEvento3)
-        paiEvento4.appendChild(removerEvento4)
+        paiEvento4.appendChild(removerEvento4)    
     }
 }
 
