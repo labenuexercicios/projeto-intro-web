@@ -9,74 +9,227 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <div id="fakeBody">
     <header>
-        <h1>Lista dos Pets Vacinados</h1>
+        <img id="logoLivePlus" src="./asset/01.LOGOTRANSPARENCIA.png" alt= "Logo Live Plus"/>
+        <nav>
+            <ul id="menuNav">
+              <li><a class="itemNav" id="nav1" href="#">Página inicial</a></li>
+              <li><a class="itemNav" id="nav2" href="#">Eventos</a></li>
+              <li><a class="itemNav" id="nav3" href="#">Sobre</a></li>
+              <li><a class="itemNav" id="nav4" href="#">Contato</a></li>
+            </ul>
+          </nav>
+        <div id="buscador">
+            <input type="text" id="nome" onclick="devolverPesquisaEvento ()" placeholder="Pesquise o evento(CAPS LOCK)...">
+        </div>
+        <button id="botaoPesquisa" onclick="selecionarEvento()">
+            <img id="lupa"src="./asset/icone-loupe-orange-removebg-preview.png" alt="lupa">
+        </button>
+        <div id="usuarioTodo">  
+            <img id="imagemUsuario" src="./asset/Untitled_design__1_-removebg-preview.png" alt="usuario"/>
+            <h3 id="boasVindas">Boas vindas!</h3>
+        </div>
     </header>
     <main>
-        <div id="buscador">
-            <!-- <label id="label" for="nome"></label> -->
-            <input type="text" id="nome" onclick="devolverPesquisaPet ()" placeholder="Pesquise o pet(CAPS LOCK)...">
-            <button onclick="selecionarPet()">Buscar</button>
+        <div id="tituloPg">
+            <h1>Eventos</h1>
+            <div id="linhaVertical"></div>
         </div>
-    <div class="geralPets">    
-        <section class="todosPets" id="removerPet1">
-            <h2 class="tituloH2"></h2>
-            <img class="imagem" src="./asset/WhatsApp Image 2021-04-16 at 21.59.22 (43).jpeg" alt="Imagem da Brisa"/>
-                <article class="tabelaLista">
-                    <ul class="listaPet">
-                        <!-- <li>Nome: <a href="https://pt.wikipedia.org/wiki/Pastor-alem%C3%A3o">Brisa</a></li>
-                        <li>Idade: 9 anos</li>
-                        <li>Espécie: Canina</li>
-                        <li>Raça: Pastor Alemão</li>
-                        <li>Vacina: Sim.</li>
-                        <li>Briquedos: Bolinha, orelha de boi, ossinho.</li> -->
-                     </ul>
-                </article>
+         <div class="geralEventos">    
+            <section class="todosEventos" id="removerEvento1">
+            <div class="flipCard">
+
+                <div class="flipCardFront">
+                    <h2 class="tituloH2"></h2>
+                    <img class="imagem" src="./asset/Francisco-El-Hombre1.jpeg" alt="Imagem da Brisa"/>
+
+                     <article class="tabelaLista">
+                        <ul class="listaEvento">
+                            <!-- Esta no JS -->
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="flipCardBack">
+                    <h2 class="tituloH2Back">FRANCISCO EL HOMBRE</h2>
+                    <video src="/asset/francisco, el hombre - La Pachanga! (Videoclipe OFICIAL - 2015).mp4" controls class="videoBack"></video>
+                        
+                <div class="listaIngressoVenda">
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Online: R$50,00</label> <br>
+                    </div>
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Pista: R$100,00</label> <br>
+                    </div>
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Pista Vip: R$500,00</label> <br>
+                    </div>
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Arquibancada: R$120,00</label> <br>
+                    </div>
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Camarote: R$150,00</label>     
+                    </div>  
+
+                </div>
+                    <div>  
+                     <button class="botaoComprar">Comprar Ingresso</button>
+                    </div>  
+                </div>
+
+            </div>
+            </section>
+            <section class="todosEventos" id="removerEvento1">
+            <div class="flipCard">
+
+                <div class="flipCardFront">
+                    <h2 class="tituloH2"></h2>
+                    <img class="imagem" src="./asset/IMG_3350.jpg" alt="Imagem da Brisa"/>
+
+                     <article class="tabelaLista">
+                        <ul class="listaEvento">
+                            <!-- Esta no JS -->
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="flipCardBack">
+                    <h2 class="tituloH2Back">GUITAURA MEDIEVAL</h2>
+                    <video src="/asset/GUITAURA MEDIEVAL - SOLOMON'S FIRE (OFFICIAL MUSIC VIDEO).mp4" controls class="videoBack"></video>
+
+                <div class="listaIngressoVenda">
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Online: R$50,00</label> <br>
+                    </div>
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Pista: R$100,00</label> <br>
+                    </div>
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Pista Vip: R$500,00</label> <br>
+                    </div>
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Arquibancada: R$120,00</label> <br>
+                    </div>
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Camarote: R$150,00</label>     
+                    </div>  
+
+                </div>   
+                    <div>  
+                        <button class="botaoComprar">Comprar Ingresso</button>
+                    </div>                 
+                </div>
+
+            </div>
+            </section>
+            <section class="todosEventos" id="removerEvento1">
+            <div class="flipCard">
+
+                <div class="flipCardFront">
+                    <h2 class="tituloH2"></h2>
+                    <img class="imagem" src="./asset/plutao01.jpeg" alt="Imagem da Brisa"/>
+
+                     <article class="tabelaLista">
+                        <ul class="listaEvento">
+                            <!-- Esta no JS -->
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="flipCardBack">
+                    <h2 class="tituloH2Back">PLUTÃO JÁ FOI PLANETA</h2>
+                    <video src="/asset/Plutão Já Foi Planeta - Você Não É Mais Planeta (Som Sem Plugs).mp4" controls class="videoBack"></video>
+
+                <div class="listaIngressoVenda">
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Online: R$50,00</label> <br>
+                    </div>
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Pista: R$100,00</label> <br>
+                    </div>
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Pista Vip: R$500,00</label> <br>
+                    </div>
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Arquibancada: R$120,00</label> <br>
+                    </div>
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Camarote: R$150,00</label>     
+                    </div>  
+
+                </div>   
+                    <div>  
+                        <button class="botaoComprar">Comprar Ingresso</button>
+                    </div> 
+                </div>
+
+            </div>
+            </section>
+            <section class="todosEventos" id="removerEvento1">
+            <div class="flipCard">
+
+                <div class="flipCardFront">
+                    <h2 class="tituloH2"></h2>
+                    <img class="imagem" src="./asset/emicida-grid.webp" alt="Imagem da Brisa"/>
+
+                     <article class="tabelaLista">
+                        <ul class="listaEvento">
+                            <!-- Esta no JS -->
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="flipCardBack">
+                    <h2 class="tituloH2Back">FRANCISCO EL HOMBRE</h2>
+                    <video src="/asset/Emicida - AmarElo (Sample- Belchior - Sujeito de Sorte) part. Majur e Pabllo Vittar.mp4" controls class="videoBack"></video>
+
+                <div class="listaIngressoVenda">
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Online: R$50,00</label> <br>
+                    </div>
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Pista: R$100,00</label> <br>
+                    </div>
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Pista Vip: R$500,00</label> <br>
+                    </div>
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Arquibancada: R$120,00</label> <br>
+                    </div>
+                    <div class="labelInput">
+                        <input type="number" id="radioButton"/> 
+                        <label from="radioButton">Camarote: R$150,00</label>     
+                    </div>  
+
+                </div>   
+                    <div>  
+                        <button class="botaoComprar">Comprar Ingresso</button>
+                    </div> 
+                </div>
+
+            </div>
         </section>
-        <section class="todosPets" id="removerPet2">
-            <h2 class="tituloH2"></h2>
-            <img class="imagem" src="./asset/20220315_204709.jpg" alt="Imagem da Janis"/>
-                <article class="tabelaLista">
-                    <ul class="listaPet">
-                        <!-- <li>Nome: <a href="https://pt.wikipedia.org/wiki/Gato_preto">Janis Joplin</a></li>
-                        <li>Idade: 8 anos</li>
-                        <li>Espécie: Felina</li>
-                        <li>Raça: SRD</li>
-                        <li>Vacina: Não.</li>
-                        <li>Briquedos: Caixa de papelão, arranhador de tecido, ervinha de gato.</li> -->
-                    </ul>
-                </article>
-        </section>
-        <section class="todosPets" id="removerPet3">
-            <h2 class="tituloH2"></h2>
-            <img class="imagem" src="./asset/marilyn.jpeg" alt="Imagem da Marilyn"/>
-                <article class="tabelaLista">
-                    <ul class="listaPet">
-                        <!-- <li>Nome: <a href="https://pt.wikipedia.org/wiki/Gato">Marilyn Monroe</a></li>
-                        <li>Idade: 7 anos</li>
-                        <li>Espécie: Felina</li>
-                        <li>Raça: SRD</li>
-                        <li>Vacina: Sim.</li>
-                        <li>Briquedos: Caixa de papelão, barbante enrolado, erva de gato, bolinha de lã.</li> -->
-                     </ul>
-                </article>
-        </section>
-        <section class="todosPets" id="removerPet4">
-            <h2 class="tituloH2"></h2>
-            <img class="imagem" src="./asset/IMG_2112.jpeg" alt="Imagem da Lua"/>
-                <article class="tabelaLista">
-                    <ul class="listaPet">
-                        <!-- <li>Nome: <a href="https://pt.wikipedia.org/wiki/Shih-tzu">Lua</a></li>
-                        <li>Idade: 2 anos</li>
-                        <li>Espécie: Canina</li>
-                        <li>Raça: Shih Tzu</li>
-                        <li>Vacina: Não.</li>
-                        <li>Briquedos: Bolinha, ossinho, orelha de boi, ursinho.</li> -->
-                    </ul>
-                </article>
-        </section>
-    </div>
+        </div>
     </main>
     <footer>
         <div id="nomeMarina">Marina Rosas Rachid Jaudy</div>

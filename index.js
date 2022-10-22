@@ -1,137 +1,122 @@
 // Título ---------------------------
-console.log("Lista de Pets da Casa")
+console.log("Eventos Disponíveis")
 
-// Brisa ----------------------------
-const nomePet1 = {
-    nome: "brisa".toUpperCase(),
-    idade: 9,
-    especie: "Canina",
-    raca: "Pastor Alemão",
-    vacina: true, //confirm(`Brisa tomou vacina?`),
-    arrayBriquedos: ["Bolinha", " orelha de boi", " ossinho", " bichinho de pelúcia", " bolinha."],
-    imagem: `./asset/WhatsApp Image 2021-04-16 at 21.59.22 (43).jpeg`
+// Francisco El Hombre ----------------------------
+const evento1 = {
+    nome: "Francisco El Hombre".toUpperCase(),
+    diaDoEvento: "9/11/22",
+    estiloMusical: "Pop",
+    tempoDoEvento: 40,
+    tipoDeEvento: "Híbrido",
+    chatComIdolo: true,
+    musicasTocadas: ["Calor na Rua", " Triste, Louco ou Má", " Batida do Amor", " O Tempo é sua Morada", " La Pachanga!"],
+    imagem: `./asset/Francisco-El-Hombre1.jpeg`
 };
 
-console.log(nomePet1)
+console.log(evento1)
 
-// Janis ----------------------------
-const nomePet2 = {
-    nome: "janis".toUpperCase(),
-    idade: 8,
-    especie: "Felina",
-    raca: "SRD",
-    vacina: true, //confirm(`Janis tomou vacina?`),
-    arrayBriquedos: ["Caixa de papelão", " arranhador de tecido", " ervinha de gato."],
-    imagem: `./asset/20220315_204709.jpg`
+// Guitaura Medieval ----------------------------
+const evento2 = {
+    nome: "Guitaura Medieval".toUpperCase(),
+    diaDoEvento: "15/11/22",
+    estiloMusical: "Folk Musical",
+    tempoDoEvento: 50,
+    tipoDeEvento: "Online",
+    chatComIdolo: true,
+    musicasTocadas: ["Solomon's Fire", "Running Up That Hill", " What's your legacy", " This is Guitaura."],
+    imagem: `./asset/IMG_3350.jpg`
 };
 
-console.log(nomePet2)
+console.log(evento2)
 
-// Lua ----------------------------
-const nomePet3 = {
-    nome: "marilyn".toUpperCase(),
-    idade: 7,
-    especie: "Felina",
-    raca: "SRD",
-    vacina: true, //confirm(`Lua tomou vacina?`),
-    arrayBriquedos: ["Caixa de papelão", " barbante enrolado", " erva de gato", " bolinha de lã."],
-    imagem: `./asset/IMG_2112.jpeg`,
+// Plutão Já Foi Planeta ----------------------------
+const evento3 = {
+    nome: "Plutão Já Foi Planeta".toUpperCase(),
+    diaDoEvento: "7/12/22",
+    estiloMusical: "Pop",
+    tempoDoEvento: 30,
+    tipoDeEvento: "Online",
+    chatComIdolo: false,
+    musicasTocadas: ["Você Não É Mais Planeta", " Viagem Perdida", " Daqui pra Lá", " O Ficar e o Ir da Gente."],
+    imagem: `./asset/plutao01.jpeg`,
 };
 
-console.log(nomePet3)
+console.log(evento3)
 
-// Marilyn ----------------------------
-const nomePet4 = {
-    nome: "lua".toUpperCase(),
-    idade: 2,
-    especie: "Canina",
-    raca: "Shih Tzu",
-    vacina: true, //confirm(`Marilyn tomou vacina?`), 
-    arrayBriquedos: ["Bolinha", " ossinho", " orelha de boi", " ursinho", " plantas da mamãe"],
-    imagem: `./asset/IMG_4864.jpeg`
+// Emicida ----------------------------
+const evento4 = {
+    nome: "Emicida".toUpperCase(),
+    diaDoEvento: "15/12/22",
+    estiloMusical: "Hip-Hop/Rap",
+    tempoDoEvento: 40,
+    tipoDeEvento: "Híbrido",
+    chatComIdolo: true,
+    musicasTocadas: ["Passarinhos", " AmarElo", " A Ordem Natural das Coisas", " Pequenas Alegrias da Vida Adulta", " Principia"],
+    imagem: `./asset/emicida-grid.webp`
 };
 
-console.log(nomePet4)
+console.log(evento4)
 
 //média
-let mediaPets = (nomePet1.idade + nomePet2.idade + nomePet3.idade + nomePet4.idade) / 4
+let mediaTemporEvento = (evento1.tempoDoEvento + evento2.tempoDoEvento + evento3.tempoDoEvento + evento4.tempoDoEvento) / 4
 
-console.log(`Média de Idade dos meus pets: ${mediaPets}`)
+console.log(`Média de tempo dos eventos disponíveis: ${mediaTemporEvento} minutos`)
 
 //verificar booleanos
-const verificarVacinas = nomePet1.vacina && nomePet2.vacina && nomePet3.vacina && nomePet4.vacina
-console.log(`Todas vacinadas? ${verificarVacinas}`)
+const verificarchatComIdolos = evento1.chatComIdolo && evento2.chatComIdolo && evento3.chatComIdolo && evento4.chatComIdolo
+console.log(`Todos os eventos iram bater papo com o Ídolo? ${verificarchatComIdolos}`)
 
 //array pra guardar os objetos
 
-const todosPets = []
+const todosEventos = []
 
-if (nomePet1.vacina) {
-    todosPets.push(nomePet1)
-    //console.log(`Brisa está vacinada.`)
+if (evento1.chatComIdolo) {
+    todosEventos.push(evento1)
+    //console.log(`Francisco El Hombre aceitou fazer o Chat com o Ídolo!`)
 } else {
-    alert(`Brisa não foi vacinada!`)
+    alert(`Francisco El Hombre não aceitou fazer o Chat com o Ídolo!`)
 }
 
-if (nomePet2.vacina) {
-    todosPets.push(nomePet2)
-    //console.log(`Janis está vacinada.`)
+if (evento2.chatComIdolo) {
+    todosEventos.push(evento2)
+    //console.log(`Guitaura Medieval aceitou fazer o Chat com o Ídolo!`)
 } else {
-    alert(`Janis não foi vacinada!`)
+    alert(`Guitaura Medieval não aceitou fazer o Chat com o Ídolo!`)
 }
 
-if (nomePet3.vacina) {
-    todosPets.push(nomePet3)
-    //console.log(`Lua está vacinada.`)
+if (evento3.chatComIdolo) {
+    todosEventos.push(evento3)
+    //console.log(`Plutão Já Foi Planeta aceitou fazer o Chat com o Ídolo!`)
 } else {
-    alert(`Lua não foi vacinada!`)
+    alert(`Plutão Já Foi Planeta não aceitou fazer o Chat com o Ídolo!`)
 }
 
-if (nomePet4.vacina) {
-    todosPets.push(nomePet4)
-    //console.log(`Marilyn está vacinada.`)
+if (evento4.chatComIdolo) {
+    todosEventos.push(evento4)
+    //console.log(`Emicida aceitou fazer o Chat com o Ídolo!`)
 } else {
-    alert(`Marilyn não foi vacinada!`)
+    alert(`Emicida não aceitou fazer o Chat com o Ídolo!`)
 }
 
-console.log(todosPets)
+console.log(`Eventos que irão utilizar o Chat com o Ídolo:`)
+console.log(todosEventos)
 
 //valores da propriedade array do objeto em uma mesma string
 
 console.log("=====EX01 - NOVO ARRAY STRING=====")
 
-// let stringPet1 = nomePet1.arrayBriquedos.join()
-// let stringPet2 = nomePet2.arrayBriquedos.join()
-// let stringPet3 = nomePet3.arrayBriquedos.join()
-// let stringPet4 = nomePet4.arrayBriquedos.join()
+let arrayStringEventos = []
 
-// console.log(stringPet1)
-// console.log(stringPet2)
-// console.log(stringPet3)
-// console.log(stringPet4)
-
-
-// for (let i = 0; i< todosPets.length; i++){
-//     console.log(todosPets[i].nome)
-//     console.log(todosPets[i].idade)
-//     console.log(todosPets[i].especie)
-//     console.log(todosPets[i].raca)
-//     console.log(todosPets[i].vacina)
-//     console.log(todosPets[i].arrayBriquedos.join())
-// }
-
-let arrayStringPets = []
-
-for (let i = 0; i < todosPets.length; i++) {
-    arrayStringPets.push(todosPets[i].nome)
-    arrayStringPets.push(todosPets[i].idade)
-    arrayStringPets.push(todosPets[i].especie)
-    arrayStringPets.push(todosPets[i].raca)
-    arrayStringPets.push(todosPets[i].vacina)
-    arrayStringPets.push(todosPets[i].arrayBriquedos.join())
+for (let i = 0; i < todosEventos.length; i++) {
+    arrayStringEventos.push(todosEventos[i].nome)
+    arrayStringEventos.push(todosEventos[i].diaDoEvento)
+    arrayStringEventos.push(todosEventos[i].estiloMusical)
+    arrayStringEventos.push(todosEventos[i].tipoDeEvento)
+    arrayStringEventos.push(todosEventos[i].chatComIdolo)
+    arrayStringEventos.push(todosEventos[i].musicasTocadas.join())
 }
 
-console.log(arrayStringPets)
+console.log(arrayStringEventos)
 
 console.log("=====EX02 - LOOP ARRAY STRING=====")
 
@@ -139,45 +124,24 @@ console.log("=====EX02 - LOOP ARRAY STRING=====")
 // individualmente cada item do relatório. Cada item deve ser exibido a partir de uma iteração do laço. 
 // Para testar, adicione mais um item ao array de objetos, e verifique se ele é exibido corretamente.
 
-for (pet of todosPets) {
-    for (let i in pet) {
-        console.log(`${i}: ${pet[i]}`)
+for (let evento of todosEventos) {
+    for (let i in evento) {
+        console.log(`${i}: ${evento[i]}`)
     }
-    //console.log("----------------------");
 }
-
-// let stringPets = []
-
-//     for (let i in todosPets){
-//         stringPets.push(`${Number(i)+1}: ${todosPets[i].arrayBriquedos}`)
-//         console.log("Nome:",todosPets[i].nome.toUpperCase(),"\nIdade:", 
-//         todosPets[i].idade, "\nEspécie:",todosPets[i].especie,"\nRaça:", 
-//         todosPets[i].raca,"\nBrinquedos:", todosPets[i].arrayBriquedos.join())
-//     }
 
 //Crie uma função que receba como parâmetro um objeto, e devolva a string 
 //do relatório com os dados do objeto.
 
 console.log("=====EX03 - FUNÇÃO RECEBE OBJETO=====")
 
-//         console.log("Nome:",todosPets[i].nome.toUpperCase(),"\nIdade:", 
-//         todosPets[i].idade, "\nEspécie:",todosPets[i].especie,"\nRaça:", 
-//         todosPets[i].raca,"\nBrinquedos:", todosPets[i].arrayBriquedos.join())
-//     }
-
-// const comMap = copiaTodosPets.map((novoPetz) => {
-//     return novoPetz.join()
-// })
-
-// console.log(copiaTodosPets(todosPets))
-
-const funcaoPets = (novoPets) => {
-    for (let i = 0; i < todosPets.length; i++) {
-        console.log(`${novoPets[i].nome}, ${novoPets[i].idade}, ${novoPets[i].especie}, ${novoPets[i].raca}, ${novoPets[i].vacina}, ${novoPets[i].arrayBriquedos}`)
+const funcaoEventos = (novoEventos) => {
+    for (let i = 0; i < todosEventos.length; i++) {
+        console.log(`${novoEventos[i].nome}, ${novoEventos[i].diaDoEvento}, ${novoEventos[i].estiloMusical}, ${novoEventos[i].tipoDeEvento}, ${novoEventos[i].chatComIdolo}, ${novoEventos[i].musicasTocadas}`)
     }
 }
 
-funcaoPets(todosPets)
+funcaoEventos(todosEventos)
 
 //Crie uma função que recebe um array de objetos e uma string. 
 //Esta função deve retornar um objeto, e o objeto 
@@ -195,42 +159,22 @@ const recebeArrayObjetos = (arrayInformado, stringInformada) => {
     if (resultado.length > 0) {
         console.log(resultado)
     } else {
-        alert("Nenhum pet encontrado")
+        alert("Nenhum Evento encontrado")
     }
 }
 
-console.log(recebeArrayObjetos(todosPets, "BRISA"))
-// const funcaoDupla = (objeto, buscaItem) =>{
-//     for (let i in todosPets){
-//         if (todosPets[i].nome === buscaItem){
-//             return objeto[i]
-//             // Vazio
-//         // }else if(todosPets[i].idade === buscaItem){
-//         //     //Vazio
-//         // }else if(todosPets[i].especie === buscaItem){ 
-//         //     //Vazio
-//         // }else if(todosPets[i].raca === buscaItem){
-//         //     //Vazio
-//         // }else if(todosPets[i].vacina === buscaItem){
-//         //     //Vazio
-//         // }else if(todosPets[i].arrayBriquedos === buscaItem){
-//         //     //Vazio
-//         // }else{
-
-//         }}
-//         return alert(`Nenhum pet foi encontrado!`) 
-//     }
+console.log(recebeArrayObjetos(todosEventos, "GUITAURA MEDIEVAL"))
 
 //DOM INSERIR OBJETOS
 
-const valoresObjeto = ["Idade", "Espécie", "Raça", "Vacina", "Brinquedos", "", ""]
-const tabela = document.getElementsByClassName("listaPet")
+const valoresObjeto = ["Data", "Estilo Musical", "Tempo de Show(min)", "Tipo de Evento", "Chat com o Ídolo", "Playlist Principal", "", ""]
+const tabela = document.getElementsByClassName("listaEvento")
 
 let c = 0
-for (let i in nomePet1) {
+for (let i in evento1) {
     if (i !== "imagem" && i !== "nome") {
         let linha = document.createElement("li")
-        const conteudoNovo = document.createTextNode(`${valoresObjeto[c]}: ${nomePet1[i]}`)
+        const conteudoNovo = document.createTextNode(`${valoresObjeto[c]}: ${evento1[i]}`)
         linha.appendChild(conteudoNovo)
         tabela[0].insertAdjacentElement("beforeend", linha)
         console.log(i)
@@ -239,10 +183,10 @@ for (let i in nomePet1) {
 }
 
 let c1 = 0
-for (let i in nomePet2) {
+for (let i in evento2) {
     if (i !== "imagem" && i !== "nome") {
         let linha = document.createElement("li")
-        const conteudoNovo = document.createTextNode(`${valoresObjeto[c1]}: ${nomePet2[i]}`)
+        const conteudoNovo = document.createTextNode(`${valoresObjeto[c1]}: ${evento2[i]}`)
         linha.appendChild(conteudoNovo)
         tabela[1].insertAdjacentElement("beforeend", linha)
         console.log(i)
@@ -251,10 +195,10 @@ for (let i in nomePet2) {
 }
 
 let c2 = 0
-for (let i in nomePet3) {
+for (let i in evento3) {
     if (i !== "imagem" && i !== "nome") {
         let linha = document.createElement("li")
-        const conteudoNovo = document.createTextNode(`${valoresObjeto[c2]}: ${nomePet3[i]}`)
+        const conteudoNovo = document.createTextNode(`${valoresObjeto[c2]}: ${evento3[i]}`)
         linha.appendChild(conteudoNovo)
         tabela[2].insertAdjacentElement("beforeend", linha)
         console.log(i)
@@ -263,10 +207,10 @@ for (let i in nomePet3) {
 }
 
 let c3 = 0
-for (let i in nomePet4) {
+for (let i in evento4) {
     if (i !== "imagem" && i !== "nome") {
         let linha = document.createElement("li")
-        const conteudoNovo = document.createTextNode(`${valoresObjeto[c3]}: ${nomePet4[i]}`)
+        const conteudoNovo = document.createTextNode(`${valoresObjeto[c3]}: ${evento4[i]}`)
         linha.appendChild(conteudoNovo)
         tabela[3].insertAdjacentElement("beforeend", linha)
         console.log(i)
@@ -275,134 +219,164 @@ for (let i in nomePet4) {
 }
 
 //DOM INSERIR TÍTULO
+let titulo = document.getElementsByClassName("tituloH2")
 
-// const conteinerPet = document.getElementsByClassName("todosPets")
-// let elementoNovo = document.createElement("h2")
-// const tituloNovo = document.createTextNode(nomePet1.nome)
-// elementoNovo.appendChild(tituloNovo)
-// conteinerPet.insertAdjacentElement("afterbegin", elementoNovo)
 
-for (let i in todosPets) {
-    let titulo = document.getElementsByClassName("tituloH2")
-    const criarTagH = document.createElement("h2")
-    const novoConteudo = document.createTextNode(todosPets[i].nome)
-    criarTagH.appendChild(novoConteudo)
-    titulo[i].insertAdjacentElement("afterbegin", criarTagH)
-    console.log(i)
-}
+//Evento 1
+    const criarTagH1 = document.createElement("h2")
+    const novoConteudo1 = document.createTextNode(evento1.nome)
+    criarTagH1.appendChild(novoConteudo1)
+    titulo[0].insertAdjacentElement("afterbegin", criarTagH1)
+
+//Evento 2
+
+    const criarTagH2 = document.createElement("h2")
+    const novoConteudo2 = document.createTextNode(evento2.nome)
+    criarTagH2.appendChild(novoConteudo2)
+    titulo[1].insertAdjacentElement("afterbegin", criarTagH2)
+
+//Evento 3
+
+const criarTagH3 = document.createElement("h2")
+const novoConteudo3 = document.createTextNode(evento3.nome)
+criarTagH3.appendChild(novoConteudo3)
+titulo[2].insertAdjacentElement("afterbegin", criarTagH3)
+
+//Evento 2
+
+const criarTagH4 = document.createElement("h2")
+const novoConteudo4 = document.createTextNode(evento4.nome)
+criarTagH4.appendChild(novoConteudo4)
+titulo[3].insertAdjacentElement("afterbegin", criarTagH4)
+
 
 //DOM BUSCADOR
 
 let input = document.getElementById ("nome")
-const todosPetsHtml = document.querySelectorAll(".todosPets")
-const listaPet = document.querySelectorAll(".listaPet")
-const imagemPet = document.querySelectorAll(".imagem")
-const tituloPet = document.querySelectorAll(".tituloH2")
-const geralPets = document.querySelectorAll(".geralPets")
+const todosEventosHtml = document.querySelectorAll(".todosEventos")
+const listaEvento = document.querySelectorAll(".listaEvento")
+const imagemEvento = document.querySelectorAll(".imagem")
+const tituloEvento = document.querySelectorAll(".tituloH2")
+const geralEventos = document.querySelectorAll(".geralEventos")
 
-const removerPet1 = document.querySelector("#removerPet1")
-const paiPet1 = removerPet1.parentNode
-const removerPet2 = document.querySelector("#removerPet2")
-const paiPet2 = removerPet2.parentNode
-const removerPet3 = document.querySelector("#removerPet3")
-const paiPet3 = removerPet3.parentNode
-const removerPet4 = document.querySelector("#removerPet4")
-const paiPet4 = removerPet4.parentNode
+const removerEvento1 = document.querySelector("#removerEvento1")
+const paiEvento1 = removerEvento1.parentNode
+const removerEvento2 = document.querySelector("#removerEvento2")
+const paiEvento2 = removerEvento2.parentNode
+const removerEvento3 = document.querySelector("#removerEvento3")
+const paiEvento3 = removerEvento3.parentNode
+const removerEvento4 = document.querySelector("#removerEvento4")
+const paiEvento4 = removerEvento4.parentNode
 
-function selecionarPet (){
-    if(nomePet1.nome === input.value){
-        paiPet2.removeChild(removerPet2)
-        paiPet3.removeChild(removerPet3)
-        paiPet4.removeChild(removerPet4)
+function selecionarEvento (){
+    if(evento1.nome === input.value){
+        paiEvento2.removeChild(removerEvento2)
+        paiEvento3.removeChild(removerEvento3)
+        paiEvento4.removeChild(removerEvento4)
         input.value = ""
-    } else if(nomePet2.nome === input.value){
-        removerPet1.parentNode.removeChild(removerPet1)
-        removerPet3.parentNode.removeChild(removerPet3)
-        removerPet4.parentNode.removeChild(removerPet4)
+    } else if(evento2.nome === input.value){
+        removerEvento1.parentNode.removeChild(removerEvento1)
+        removerEvento3.parentNode.removeChild(removerEvento3)
+        removerEvento4.parentNode.removeChild(removerEvento4)
         input.value = ""
-    } else if(nomePet3.nome === input.value){
-        removerPet1.parentNode.removeChild(removerPet1)
-        removerPet2.parentNode.removeChild(removerPet2)
-        removerPet4.parentNode.removeChild(removerPet4)
+    } else if(evento3.nome === input.value){
+        removerEvento1.parentNode.removeChild(removerEvento1)
+        removerEvento2.parentNode.removeChild(removerEvento2)
+        removerEvento4.parentNode.removeChild(removerEvento4)
         input.value = ""
-    } else if (nomePet4.nome === input.value){
-        removerPet1.parentNode.removeChild(removerPet1)
-        removerPet2.parentNode.removeChild(removerPet2)
-        removerPet3.parentNode.removeChild(removerPet3)
+    } else if (evento4.nome === input.value){
+        removerEvento1.parentNode.removeChild(removerEvento1)
+        removerEvento2.parentNode.removeChild(removerEvento2)
+        removerEvento3.parentNode.removeChild(removerEvento3)
         input.value = ""
     } else{
-        alert("Nenhum pet encontrado")
+        alert("Nenhum Evento encontrado")
     }
 }
 
-function devolverPesquisaPet (){
+function devolverPesquisaEvento (){
     if (input.value === ""){
-        paiPet1.appendChild(removerPet1)
-        paiPet2.appendChild(removerPet2)
-        paiPet3.appendChild(removerPet3)
-        paiPet4.appendChild(removerPet4)
+        paiEvento1.appendChild(removerEvento1)
+        paiEvento2.appendChild(removerEvento2)
+        paiEvento3.appendChild(removerEvento3)
+        paiEvento4.appendChild(removerEvento4)
     }
 }
 
 
-// function selecionarPet (){
-//     if(nomePet1.nome === input.value){
-//         delete(nomePet2)
-//         listaPet[1].classList.remove("listaPet")
-//         listaPet[2].classList.remove("listaPet")
-//         listaPet[3].classList.remove("listaPet")
-//         geralPets[1].classList.remove(".geralPets")
-//         geralPets[2].classList.remove(".geralPets")
-//         geralPets[3].classList.remove(".geralPets")
-//         imagemPet[1].classList.remove(".imagem")
-//         imagemPet[2].classList.remove(".imagem")
-//         imagemPet[3].classList.remove(".imagem")
-//         tituloPet[1].classList.remove(".tituloH2")
-//         tituloPet[2].classList.remove(".tituloH2")
-//         tituloPet[3].classList.remove(".tituloH2")
-//         todosPetsHtml[1].classList.remove("todosPets")
-//         todosPetsHtml[2].classList.remove("todosPets")
-//         todosPetsHtml[3].classList.remove("todosPets")
-//     } else if (nomePet2.nome === input.value){
-//         listaPet[0].classList.remove("listaPet")
-//         listaPet[2].classList.remove("listaPet")
-//         listaPet[3].classList.remove("listaPet")
-//         imagemPet[0].classList.remove(".imagem")
-//         imagemPet[2].classList.remove(".imagem")
-//         imagemPet[3].classList.remove(".imagem")
-//         tituloPet[0].classList.remove(".tituloH2")
-//         tituloPet[2].classList.remove(".tituloH2")
-//         tituloPet[3].classList.remove(".tituloH2")
-//         todosPetsHtml[0].classList.remove("todosPets")
-//         todosPetsHtml[2].classList.remove("todosPets")
-//         todosPetsHtml[3].classList.remove("todosPets")
-//     } else if (nomePet3.nome === input.value){
-//         listaPet[0].classList.remove("listaPet")
-//         listaPet[1].classList.remove("listaPet")
-//         listaPet[3].classList.remove("listaPet")
-//         imagemPet[0].classList.remove(".imagem")
-//         imagemPet[1].classList.remove(".imagem")
-//         imagemPet[3].classList.remove(".imagem")
-//         tituloPet[0].classList.remove(".tituloH2")
-//         tituloPet[1].classList.remove(".tituloH2")
-//         tituloPet[3].classList.remove(".tituloH2")
-//         todosPetsHtml[0].classList.remove("todosPets")
-//         todosPetsHtml[1].classList.remove("todosPets")
-//         todosPetsHtml[3].classList.remove("todosPets")
-//     } else if (nomePet4.nome === input.value){
-//         listaPet[0].classList.remove("listaPet")
-//         listaPet[1].classList.remove("listaPet")
-//         listaPet[2].classList.remove("listaPet")
-//         imagemPet[0].classList.remove(".imagem")
-//         imagemPet[1].classList.remove(".imagem")
-//         imagemPet[2].classList.remove(".imagem")
-//         tituloPet[0].classList.remove(".tituloH2")
-//         tituloPet[1].classList.remove(".tituloH2")
-//         tituloPet[2].classList.remove(".tituloH2")
-//         todosPetsHtml[0].classList.remove("todosPets")
-//         todosPetsHtml[1].classList.remove("todosPets")
-//         todosPetsHtml[2].classList.remove("todosPets")
-//     } else{
-//         alert("Nenhum pet encontrado")
-//     }
+//DOM ADD LADO BOTÃO COMPRAR
+
+// const dadosIngressos1 = {
+//     online: 'R$50,00',
+//     pista: 'R$100,00',
+//     arquibancada: 'R$120,00',
+//     camarote: 'R$150,00',
+//     alaVip: 'R$300,00',
+// }
+
+// const dadosIngressos2 = {
+//     online: 'R$50,00',
+//     pista: 'R$100,00',
+//     arquibancada: 'R$120,00',
+//     camarote: 'R$150,00',
+//     alaVip: 'R$300,00',
+// }
+
+// const dadosIngressos3 = {
+//     online: 'R$50,00',
+//     pista: 'R$100,00',
+//     arquibancada: 'R$120,00',
+//     camarote: 'R$150,00',
+//     alaVip: 'R$300,00',
+// }
+
+// const dadosIngressos4 = {
+//     online: 'R$50,00',
+//     pista: 'R$100,00',
+//     arquibancada: 'R$120,00',
+//     camarote: 'R$150,00',
+//     alaVip: 'R$300,00',
+// }
+
+// const valoresObjetoIngressos = ["Online", "Pista", "Arquibancada", "Camarote", "Área Vip"]
+// const tabelaIngressos = document.getElementsByClassName("listaIngressoVenda")
+
+// let e = 0
+// for (let i in dadosIngressos1) {
+//         let linha = document.createElement("li")
+//         const conteudoNovo = document.createTextNode(`${valoresObjetoIngressos[e]}: ${dadosIngressos1[i]}`)
+//         linha.appendChild(conteudoNovo)
+//         tabela[0].insertAdjacentElement("beforeend", linha)
+//         console.log(i)
+//         e++
+// }
+
+// let f = 0
+// for (let i in dadosIngressos2) {
+//         let linha = document.createElement("li")
+//         const conteudoNovo = document.createTextNode(`${valoresObjetoIngressos[f]}: ${dadosIngressos2[i]}`)
+//         linha.appendChild(conteudoNovo)
+//         tabela[0].insertAdjacentElement("beforeend", linha)
+//         console.log(i)
+//         f++
+// }
+
+// let g = 0
+// for (let i in dadosIngressos3) {
+//         let linha = document.createElement("li")
+//         const conteudoNovo = document.createTextNode(`${valoresObjetoIngressos[g]}: ${dadosIngressos3[i]}`)
+//         linha.appendChild(conteudoNovo)
+//         tabela[0].insertAdjacentElement("beforeend", linha)
+//         console.log(i)
+//         g++
+// }
+
+// let h = 0
+// for (let i in dadosIngressos4) {
+//         let linha = document.createElement("li")
+//         const conteudoNovo = document.createTextNode(`${valoresObjetoIngressos[h]}: ${dadosIngressos4[i]}`)
+//         linha.appendChild(conteudoNovo)
+//         tabela[0].insertAdjacentElement("beforeend", linha)
+//         console.log(i)
+//         h++
 // }
