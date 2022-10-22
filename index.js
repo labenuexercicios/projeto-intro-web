@@ -1,96 +1,250 @@
-const pacote1 = {
-  tipo: "bustos",
-  valor: 120.0,
-  estoque: true,
-  pecas: ["Batman", "Walter", "CR7"],
+// Livros
+
+const livro1 = {
+  titulo: "Fundação",
+  genero: "Ficção Cientifica ",
+  sequecias: 2,
+  adquirido: true,
+  lido: false,
+  autor: "Isaac Azimov",
+  imagem: "./img/fundacao.png"
 };
 
-const pacote2 = {
-  tipo: "brinquedos",
-  valor: 115.0,
-  estoque: true,
-  pecas: ["salamandra", "polvo", "cobra"],
+const livro2 = {
+  titulo: "Duna",
+  genero: "Ficção Cientifica",
+  sequecias: 4,
+  adquirido: true,
+  lido: false,
+  autor: "Frank Herbet",
+  imagem: "./img/fundacao.png"
 };
 
-const pacote3 = {
-  tipo: "decorativo",
-  valor: 180.0,
-  estoque: true,
-  pecas: ["porta retraro", "vaso", "cinzeiro"],
+const livro3 = {
+  titulo: "Jurassic Park",
+  genero: "Ficção Cientifica ",
+  sequecias: 1,
+  adquirido: false,
+  lido: false,
+  autor: "Michael Crichton",
+  imagem: "./img/jurasic.png"
 };
-// if (filamento1.estoque === true) {
-//   filamentos.push(filamento1);
-// } else {
-//   alert("comprar filamento 3d prime ht branco");
-// }
 
-// if (filamento2.estoque === true) {
-//   filamentos.push(filamento2);
-// } else {
-//   alert("comprar filamento voolt preto padrão");
-// }
+const livro4 = {
+  titulo: "A Guerra do Velho",
+  genero: "Ficção Cientifica",
+  sequecias: 2,
+  adquirido: true,
+  lido: true,
+  autor: "John Scalzi",
+  imagem: "./img/fundacao.png"
+};
 
-// if (filamento3.estoque === true) {
-//   filamentos.push(filamento3);
-// } else {
-//   alert("Comprar filamento dual color azul/roxo");
-// }
+const livro5 = {
+  titulo: "Bhagavad-Gita: Como Ele É",
+  genero: "Filosofia",
+  valor: 80,
+  adquirido: true,
+  lido: true,
+  autor: "A. C. Bhaktivedanta Swami Prabhupada",
+  imagem: "./img/gita.png"
+};
 
-const pacotes = [];
+const livro6 = {
+  titulo: "Jaiva Dharma",
+  genero: "Filosofia",
+  valor: 80,
+  adquirido: true,
+  lido: true,
+  autor: "Śrīla Bhaktivinoda Ṭhākura",
+  imagem: "./img/jaiva.jpg"
+};
 
-pacote1.estoque
-  ? pacotes.push(pacote1)
-  : alert("Reserva de Bustos está vazia");
-pacote2.estoque
-  ? pacotes.push(pacote2)
-  : alert("Reserva de Brinquedos está vazia");
-pacote3.estoque
-  ? pacotes.push(pacote3)
-  : alert("Reserva de Decorativas está vazia");
+const livro7 = {
+  titulo: "Joias do Coração",
+  genero: "Filosofia",
+  valor: 80,
+  adquirido: true,
+  lido: false,
+  autor: "Srila Bhaktivedanta Vana Gosvami Maharaj",
+  imagem: "./img/joias.jpg",
+}
 
-// console.log(filamentos);
+const livro8 = {
+  titulo: "Srimad Bhagavatam, Canto 1, Parte 1",
+  genero: "Filosofia",
+  valor: 80,
+  adquirido: false,
+  lido: false,
+  autor: "A. C. Bhaktivedanta Swami Prabhupada"
+}
 
-// for (i = 0; i < filamentos.length; i += 1) {
-//   console.log(filamentos[i].pecas.toString());
-// }
+const livro9 = {
+  titulo: "Srimad Bhagavatam, Canto 1, Parte 1",
+  genero: "Filosofia",
+  valor: 80,
+  adquirido: false,
+  lido: false,
+  autor: "A. C. Bhaktivedanta Swami Prabhupada"
+}
 
-// filamentos.map((item, index, array) => {
-//   const { tipo, valor, estoque, pecas } = item;
-//   return console.log({
-//     tipo,
-//     valor,
-//     estoque,
-//     pecas: pecas.join(", "),
-//   });
-// });
+const livro10 = {
+  titulo: "Srimad Bhagavatam, Canto 1, Parte 1",
+  genero: "Filosofia",
+  valor: 80,
+  adquirido: false,
+  lido: false,
+  autor: "A. C. Bhaktivedanta Swami Prabhupada"
+}
 
-// console.log(`
-//   tipo: ${filamento1.tipo}
-//   valor: ${filamento1.valor}
-//   estoque: ${filamento1.estoque}
-//   pecas: ${filamento1.pecas.join(", ")}
-// `);
+const livro11 = {
+  titulo: "Srimad Bhagavatam, Canto 1, Parte 1",
+  genero: "Filosofia",
+  valor: 80,
+  adquirido: false,
+  lido: false,
+  autor: "A. C. Bhaktivedanta Swami Prabhupada"
+}
 
-// console.log(`
-//   tipo: ${filamento2.tipo}
-//   valor: ${filamento2.valor}
-//   estoque: ${filamento2.estoque}
-//   pecas: ${filamento2.pecas.join(", ")} 
-// `);
+const livro12 = {
+  titulo: "Srimad Bhagavatam, Canto 1, Parte 1",
+  genero: "Filosofia",
+  valor: 80,
+  adquirido: false,
+  lido: false,
+  autor: "A. C. Bhaktivedanta Swami Prabhupada"
+}
 
-// console.log(`
-//   tipo: ${filamento3.tipo}
-//   valor: ${filamento3.valor}
-//   estoque: ${filamento3.estoque}
-//   pecas: ${filamento3.pecas.join(", ")}
-// `);
+// Acervo
+const acervo = [];
 
-filamentos.push("filamentos")
+livro1.adquirido
+  ? acervo.push(livro1)
+  : alert("Fundação ainda não adquirido");
+livro2.adquirido
+  ? acervo.push(livro2)
+  : alert("Duna ainda não adquirido");
+livro3.adquirido
+  ? acervo.push(livro3)
+  : alert("Jurassic Park ainda não adquirido");
+livro4.adquirido
+  ? acervo.push(livro4)
+  : alert("Guerra do Velho ainda não adquirido");
+livro5.adquirido
+  ? acervo.push(livro5)
+  : alert("Jaiva Dharma ainda não adquirido");
+livro6.adquirido
+  ? acervo.push(livro6)
+  : alert("Joias do Coração ainda não adquirido");
+  livro7.adquirido
+  ? acervo.push(livro7)
+  : alert("Fundação ainda não adquirido");
+livro8.adquirido
+  ? acervo.push(livro8)
+  : alert("Duna ainda não adquirido");
+livro9.adquirido
+  ? acervo.push(livro9)
+  : alert("Jurassic Park ainda não adquirido");
+livro10.adquirido
+  ? acervo.push(livro10)
+  : alert("Guerra do Velho ainda não adquirido");
+livro11.adquirido
+  ? acervo.push(livro11)
+  : alert("Jaiva Dharma ainda não adquirido");
+livro12.adquirido
+  ? acervo.push(livro12)
+  : alert("Joias do Coração ainda não adquirido");
+
+
+
+console.log(acervo)
+
+
+// Livros lidos
+const lidos = [];
+
+livro1.lido
+  ? lidos.push(livro1)
+  : alert("Fundação ainda não lido");
+livro2.lido
+  ? lidos.push(livro2)
+  : alert("Duna ainda não lido");
+livro3.lido
+  ? lidos.push(livro3)
+  : alert("Jurassic Park ainda não lido");
+livro4.lido
+  ? lidos.push(livro4)
+  : alert("A Guerra do Velho ainda não lido");
+livro5.lido
+  ? lidos.push(livro5)
+  : alert("Bhagavad-Gita: Como Ele É ainda não lido");
+livro6.lido
+  ? lidos.push(livro6)
+  : alert("Jaiva Dharma ainda não lido");
+livro7.lido
+  ? lidos.push(livro7)
+  : alert("Joias do Coração ainda não lido");
+  livro8.lido
+  ? lidos.push(livro8)
+  : alert("Joias do Coração ainda não lido");
+console.log(lidos);
+livro9.lido
+  ? lidos.push(livro9)
+  : alert("Fundação ainda não lido");
+livro10.lido
+  ? lidos.push(livro10)
+  : alert("Duna ainda não lido");
+livro11.lido
+  ? lidos.push(livro11)
+  : alert("Jurassic Park ainda não lido");
+livro12.lido
+  ? lidos.push(livro12)
+  : alert("A Guerra do Velho ainda não lido");
 
 function relatorio() {
-  for (fill of filamentos) {
-    console.log(fill)
+  for (unidade of acervo) {
+    console.log(unidade)
   }
 }
 
 relatorio()
+
+// DOM
+function limpaInput() {
+  document.getElementById('buscador').value= '';
+}
+
+// Função para buscar no array de objetos
+function buscarArrayPeloNome(array, name) {
+  const total = array.filter((acervo)=> acervo.titulo.toLowerCase().includes(titulo.toLowerCase()));
+
+  if(acervo.length){
+    return acervo;
+  } else {
+    return array;
+  }
+}
+
+// Função que pega o valor do input e chama a função que busca os objetos
+function buscarExpansao(event){
+  event.preventDefault()
+
+  const input = document.getElementById('buscador').value;
+  const expansaoFiltro = buscarArrayPeloNome(todasAsExpansoes, input);
+  const footer = document.getElementById('footer');
+  const container = document.getElementsByClassName('container')[0];
+
+  if(input === ''){
+    alert('Digite um nome de uma expansão válida!');
+    criarObjetosNoHtml(todasAsExpansoes);
+    footer.classList.remove('footer-fixado');
+    container.removeAttribute('id', 'container');
+  } else {
+    console.log(expansaoFiltro);
+    criarObjetosNoHtml(expansaoFiltro);
+    footer.classList.add('footer-fixado');
+    container.setAttribute('id', 'container');
+  }
+  console.log(expansaoFiltro.includes(input)); 
+  limpaInput()
+}
