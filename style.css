@@ -96,6 +96,7 @@ main {
 
 .author:hover {
   background-color: #ffd42b;
+  filter: drop-shadow(0 0 2em #154cf2);
 }
 
 .found{

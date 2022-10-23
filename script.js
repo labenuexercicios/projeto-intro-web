@@ -279,42 +279,10 @@ function buscar(event) {
 
     if (valor === 'John Piper') {
 
-
-        const pesquisa = document.getElementById('authorsrc')
-        pesquisa.style.visibility = 'visible';
-        document.getElementById('author-1').style.visibility = 'hidden';
-        document.getElementById('author-1').style.width = '0';
-        document.getElementById('author-1').style.width = '0';
-
-        document.getElementById('author-2').style.visibility = 'hidden';
-        document.getElementById('author-2').style.width = '0';
-        document.getElementById('author-2').style.width = '0';
-
-        document.getElementById('author-3').style.visibility = 'hidden';
-        document.getElementById('author-3').style.width = '0';
-        document.getElementById('author-3').style.width = '0';
-
-        document.getElementById('author-4').style.visibility = 'hidden';
-        document.getElementById('author-4').style.width = '0';
-        document.getElementById('author-4').style.width = '0';
-
-        document.getElementById("myFrt").style.marginTop = "136px";
-
-        pesquisa.style.width = '40%';
-        pesquisa.style.height = '300px';
-        pesquisa.style.background = '#154cf2';
-
-        pesquisa.addEventListener('mouseenter', function hover() {
-            return pesquisa.style.background = '#ffd42b'
-        })
-
-        pesquisa.addEventListener('mouseleave', function hover() {
-            return pesquisa.style.background = '#154cf2'
-        })
-
-        pesquisa.innerHTML = ` <img src="assets/piper.png"
+        const content = document.getElementById('content');
+        content.innerHTML = ` <img src="assets/piper.png"
         height="200px">
-        <ul>
+        <ul style="color: white">
         <li>
             <h2><a href="https://en.wikipedia.org/wiki/John_Piper_(theologian)" target="_blank">${filtro.author}</a></h2>
         </li>
@@ -323,43 +291,18 @@ function buscar(event) {
         <li>Is living: ${filtro.live}</li>
         </ul>
         `
-    } else if (valor === 'Timothy Keller') {
-        const pesquisa = document.getElementById('authorsrc')
-        pesquisa.style.visibility = 'visible';
-        document.getElementById('author-1').style.visibility = 'hidden';
-        document.getElementById('author-1').style.width = '0';
-        document.getElementById('author-1').style.width = '0';
-
-        document.getElementById('author-2').style.visibility = 'hidden';
-        document.getElementById('author-2').style.width = '0';
-        document.getElementById('author-2').style.width = '0';
-
-        document.getElementById('author-3').style.visibility = 'hidden';
-        document.getElementById('author-3').style.width = '0';
-        document.getElementById('author-3').style.width = '0';
-
-        document.getElementById('author-4').style.visibility = 'hidden';
-        document.getElementById('author-4').style.width = '0';
-        document.getElementById('author-4').style.width = '0';
-
-        document.getElementById("myFrt").style.marginTop = "136px";
-
         const main = document.getElementById('main');
-        const content = document.getElementById('content');
 
         main.style.width = '100%';
-        // main.style = `
-        //     display: flex;
-        //     justify-content: center;
-        // `
         main.style.display = 'flex';
         main.style.justifyContent = 'center'
+
+        content.style.fontFamily = "Lato"
         content.style.width = '40%';
         content.style.height = '300px';
         content.style.background = '#154cf2';
-        content.style.transition = '0.2s';
+        content.style.transition = '0.5s';
         content.style.borderRadius = '10px'
-        
 
         content.addEventListener('mouseenter', function hover() {
             return content.style.background = '#ffd42b'
@@ -369,9 +312,14 @@ function buscar(event) {
             return content.style.background = '#154cf2'
         })
 
+        document.getElementById("myFrt").style.marginTop = "141px";
+
+    } else if (valor === 'Timothy Keller') {
+
+        const content = document.getElementById('content');
         content.innerHTML = ` <img src="assets/keller.png"
         height="200px">
-        <ul>
+        <ul style="color: white">
         <li>
             <h2><a href="https://en.wikipedia.org/wiki/Tim_Keller_(pastor)" target="_blank">${filtro.author}</a></h2>
         </li>
@@ -380,42 +328,37 @@ function buscar(event) {
         <li>Is living: ${filtro.live}</li>
         </ul>
         `
+        const main = document.getElementById('main');
+
+        main.style.width = '100%';
+        main.style.display = 'flex';
+        main.style.justifyContent = 'center'
+
+        content.style.fontFamily = "Lato"
+        content.style.width = '40%';
+        content.style.height = '300px';
+        content.style.background = '#154cf2';
+        content.style.transition = '0.5s';
+        content.style.borderRadius = '10px'
+
+        content.addEventListener('mouseenter', function hover() {
+            return content.style.background = '#ffd42b'
+        })
+
+        content.addEventListener('mouseleave', function hover() {
+            return content.style.background = '#154cf2'
+        })
+
+
+        document.getElementById("myFrt").style.marginTop = "141px";
+
+
     } else if (valor === 'Patrick Rothfuss') {
-        const pesquisa = document.getElementById('authorsrc')
-        pesquisa.style.visibility = 'visible';
-        document.getElementById('author-1').style.visibility = 'hidden';
-        document.getElementById('author-1').style.width = '0';
-        document.getElementById('author-1').style.width = '0';
 
-        document.getElementById('author-2').style.visibility = 'hidden';
-        document.getElementById('author-2').style.width = '0';
-        document.getElementById('author-2').style.width = '0';
-
-        document.getElementById('author-3').style.visibility = 'hidden';
-        document.getElementById('author-3').style.width = '0';
-        document.getElementById('author-3').style.width = '0';
-
-        document.getElementById('author-4').style.visibility = 'hidden';
-        document.getElementById('author-4').style.width = '0';
-        document.getElementById('author-4').style.width = '0';
-
-        document.getElementById("myFrt").style.marginTop = "136px";
-
-        pesquisa.style.width = '40%';
-        pesquisa.style.height = '300px';
-        pesquisa.style.background = '#154cf2';
-
-
-        pesquisa.addEventListener('mouseenter', function hover() {
-            return pesquisa.style.background = '#ffd42b'
-        })
-
-        pesquisa.addEventListener('mouseleave', function hover() {
-            return pesquisa.style.background = '#154cf2'
-        })
-        pesquisa.innerHTML = ` <img src="assets/rothfuss.png"
+        const content = document.getElementById('content');
+        content.innerHTML = ` <img src="assets/rothfuss.png"
         height="200px">
-        <ul>
+        <ul style="color: white">
         <li>
             <h2><a href="https://en.wikipedia.org/wiki/Patrick_Rothfuss" target="_blank">${filtro.author}</a></h2>
         </li>
@@ -424,41 +367,35 @@ function buscar(event) {
         <li>Is living: ${filtro.live}</li>
         </ul>
         `
+        const main = document.getElementById('main');
+
+        main.style.width = '100%';
+        main.style.display = 'flex';
+        main.style.justifyContent = 'center'
+
+        content.style.fontFamily = "Lato"
+        content.style.width = '40%';
+        content.style.height = '300px';
+        content.style.background = '#154cf2';
+        content.style.transition = '0.5s';
+        content.style.borderRadius = '10px'
+
+        content.addEventListener('mouseenter', function hover() {
+            return content.style.background = '#ffd42b'
+        })
+
+        content.addEventListener('mouseleave', function hover() {
+            return content.style.background = '#154cf2'
+        })
+
+        document.getElementById("myFrt").style.marginTop = "141px";
+
+
     } else if (valor === 'Neil Gaiman') {
-        const pesquisa = document.getElementById('authorsrc')
-        pesquisa.style.visibility = 'visible';
-        document.getElementById('author-1').style.visibility = 'hidden';
-        document.getElementById('author-1').style.width = '0';
-        document.getElementById('author-1').style.width = '0';
-
-        document.getElementById('author-2').style.visibility = 'hidden';
-        document.getElementById('author-2').style.width = '0';
-        document.getElementById('author-2').style.width = '0';
-
-        document.getElementById('author-3').style.visibility = 'hidden';
-        document.getElementById('author-3').style.width = '0';
-        document.getElementById('author-3').style.width = '0';
-
-        document.getElementById('author-4').style.visibility = 'hidden';
-        document.getElementById('author-4').style.width = '0';
-        document.getElementById('author-4').style.width = '0';
-
-        document.getElementById("myFrt").style.marginTop = "136px";
-
-        pesquisa.style.width = '40%';
-        pesquisa.style.height = '300px';
-        pesquisa.style.background = '#154cf2';
-
-        pesquisa.addEventListener('mouseenter', function hover() {
-            return pesquisa.style.background = '#ffd42b'
-        })
-
-        pesquisa.addEventListener('mouseleave', function hover() {
-            return pesquisa.style.background = '#154cf2'
-        })
-        pesquisa.innerHTML = ` <img src="assets/gaiman.png"
+        const content = document.getElementById('content');
+        content.innerHTML = ` <img src="assets/gaiman.png"
         height="200px">
-        <ul>
+        <ul style="color: white">
         <li>
             <h2><a href="https://en.wikipedia.org/wiki/Neil_Gaiman" target="_blank">${filtro.author}</a></h2>
         </li>
@@ -467,36 +404,122 @@ function buscar(event) {
         <li>Is living: ${filtro.live}</li>
         </ul>
         `
+        const main = document.getElementById('main');
+
+        main.style.width = '100%';
+        main.style.display = 'flex';
+        main.style.justifyContent = 'center'
+
+        content.style.fontFamily = "Lato"
+        content.style.width = '40%';
+        content.style.height = '300px';
+        content.style.background = '#154cf2';
+        content.style.transition = '0.5s';
+        content.style.borderRadius = '10px'
+
+        content.addEventListener('mouseenter', function hover() {
+            return content.style.background = '#ffd42b'
+        })
+
+        content.addEventListener('mouseleave', function hover() {
+            return content.style.background = '#154cf2'
+        })
+
+        document.getElementById("myFrt").style.marginTop = "141px";
     }
 }
 
-function voltar(){
+function voltar() {
+
+    const content = document.getElementById('content');
+
+    content.style.width = '100%';
+    content.style.height = '100%';
+    content.style.background = 'white';
+    content.style.transition = '0';
+    content.style.borderRadius = '0';
+
+    content.addEventListener('mouseenter', function hover() {
+        return content.style.background = '#fff'
+    })
+
+    content.addEventListener('mouseleave', function hover() {
+        return content.style.background = '#fff'
+    })
+
+    content.innerHTML = `
+    <article class="author" id="author-1"></article>
+
+    <article id="author-2" class="author"></article>
+
+    <article id="author-3" class="author"></article>
+
+    <article id="author-4" class="author"></article>`
+
+
+    ////////////////////////////////////////////////
+    let keller = document.getElementById('author-1')
+
+    keller.innerHTML = ` <img src="assets/keller.png"
+    height="200px">
+    <ul>
+    <li>
+        <h2><a href="https://en.wikipedia.org/wiki/Tim_Keller_(pastor)" target="_blank">${authorsLive[1].author}</a></h2>
+    </li>
+    <li>Age: ${authorsLive[1].age}</li>
+    <li>Number of Books: ${authorsLive[1].numberBooks}</li>
+    <li>Is living: ${authorsLive[1].live}</li>
+    </ul>
+    `
+
+    /////////////////////////////////////////////////
+
+    let piper = document.getElementById('author-2')
+    piper.innerHTML = ` <img src="assets/piper.png"
+    height="200px">
+    <ul>
+    <li>
+        <h2><a href="https://en.wikipedia.org/wiki/John_Piper_(theologian)" target="_blank">${authorsLive[0].author}</a></h2>
+    </li>
+    <li>Age: ${authorsLive[0].age}</li>
+    <li>Number of Books: ${authorsLive[0].numberBooks}</li>
+    <li>Is living: ${authorsLive[0].live}</li>
+    </ul>
+    `
+
+    /////////////////////////////////////////////////
+
+    let rothfuss = document.getElementById('author-3')
+    rothfuss.innerHTML = ` <img src="assets/rothfuss.png"
+    height="200px">
+    <ul>
+    <li>
+        <h2><a href="https://en.wikipedia.org/wiki/Patrick_Rothfuss" target="_blank">${authorsLive[2].author}</a></h2>
+    </li>
+    <li>Age: ${authorsLive[2].age}</li>
+    <li>Number of Books: ${authorsLive[2].numberBooks}</li>
+    <li>Is living: ${authorsLive[2].live}</li>
+    </ul>
+    `
+
+    //////////////////////////////////////////////////
+
+    let gaiman = document.getElementById('author-4')
+    gaiman.innerHTML = ` <img src="assets/gaiman.png"
+    height="200px">
+    <ul>
+    <li>
+        <h2><a href="https://en.wikipedia.org/wiki/Neil_Gaiman" target="_blank">${authorsLive[3].author}</a></h2>
+    </li>
+    <li>Age: ${authorsLive[3].age}</li>
+    <li>Number of Books: ${authorsLive[3].numberBooks}</li>
+    <li>Is living: ${authorsLive[3].live}</li>
+    </ul>
+    `
+
+    document.getElementById("myFrt").style.marginTop = "53px";
 
     const src = document.getElementById('busca')
     src.value = ''
 
-    const pesquisa = document.getElementById('authorsrc')
-    pesquisa.style.visibility = 'hidden';
-
-
-    document.getElementById('author-1').style.visibility = 'visible';
-    document.getElementById('author-1').style.width = '40%';
-    //document.getElementById('author-1').style.width = '0';
-
-    document.getElementById('author-2').style.visibility = 'visible';
-    document.getElementById('author-2').style.width = '40%';
-    //document.getElementById('author-2').style.width = '0';
-
-    document.getElementById('author-3').style.visibility = 'visible';
-    document.getElementById('author-3').style.width = '40%';
-    //document.getElementById('author-3').style.width = '0';
-
-    document.getElementById('author-4').style.visibility = 'visible';
-    document.getElementById('author-4').style.width = '40%';
-    //document.getElementById('author-4').style.width = '0';
-
-    document.getElementById("myFrt").style.marginTop = "53px";
-
-    pesquisa.style.width = 0;
-    pesquisa.style.height = 0;
 }
