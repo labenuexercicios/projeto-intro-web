@@ -1,47 +1,65 @@
+
+// document.querySelector('.brigadeiros').click(function(){
+//     document.querySelector('.menuLateral ul .itensBrigadeiro').toggleClass('mostra');
+// });
+// document.querySelector('.btnAbre').click(function(){
+//     document.querySelector('.menuLateral').toggleClass('mostra');
+// });
+
+
 //const listaProdutos = []
 const listaProdutos = [ // lista de produtos adicionados os produtos a uma array, onde cada produto é um
+    
+    
+
     // objeto
     {
         nome: "brigadeiro",
-        descricao: "docinho",
+        categoria: "docinho",
         estoque: false,
-        valor: 1,
-        ingredientes: ["Chocolate em pó", "Leite Condensado", "Chocolate Granulado"]
+        valor: 2.50,
+        ingredientes: ["Chocolate em pó", "Leite Condensado", "Chocolate Granulado"],
+        imagem: "./img/brigadeiro2.jpg"
     },
     {
-        nome: "CupCake",
-        descricao: "Bolos",
+        nome: "cupcake",
+        categoria: "Bolos",
+        estoque: true,
+        valor: 4.5,
+        ingredientes: ["Farinha de Trigo", "Açucar", "Fermento", "Chocolate"],
+        imagem: "./img/cup4.jpg"
+    },
+    {
+        nome: "cone",
+        categoria: "Cones",
+        estoque: true,
+        valor: 7,
+        ingredientes: ["Cone", "Confete", "Ganache", "Leite em pó"],
+        imagem: "./img/cone3.jpg"
+    },
+    {
+        nome: "trufa",
+        categoria: "Trufas",
         estoque: true,
         valor: 3,
-        ingredientes: ["Farinha de Trigo", "Açucar", "Fermento", "Chocolate"]
+        ingredientes: ["Chocolate", "Leite Condensado"],
+        imagem: "./img/trufa.jpeg"
     },
     {
-        nome: "Cone",
-        descricao: "Cones",
-        estoque: true,
-        valor: 5,
-        ingredientes: ["Cone", "Confete", "Ganache", "Leite em pó"]
-    },
-    {
-        nome: "Trufa",
-        descricao: "Trufas",
-        estoque: true,
-        valor: 2,
-        ingredientes: ["Chocolate", "Leite Condensado"]
-    },
-    {
-        nome: "Beijinho",
-        descricao: "docinho",
+        nome: "beijinho",
+        categoria: "docinho",
         estoque: false,
-        valor: 2,
-        ingredientes: ["Leite Condensado", "Leite em pó", "coco granulado"]
+        valor: 2.5,
+        ingredientes: ["Leite Condensado", "Leite em pó", "coco granulado"],
+        imagem: "./img/beijinho.jpg"
     },
     {
-        nome: "Nozinho",
-        descricao: "panificados",
+        nome: "nozinho",
+        categoria: "panificados",
         estoque: false,
-        valor: 5,
-        ingredientes: ["Farinha de Trigo", "Óleo", "Açúcar", "Leite", "Ovo"]
+        valor: 8,
+        ingredientes: ["Farinha de Trigo", "Óleo", "Açúcar", "Leite", "Ovo"],
+        imagem: "./img/nozinho.jpeg"
     }
 ]
 // checando se o produto constar em estoque é adicionado ao array
@@ -54,7 +72,67 @@ function checarEstoque(produtosLista) { // função que inclue no array produtos
         }
     } return produtosEmFalta
 }
+//função para adicionar os produtos na página
+{/* <div class="produtoListado"><img src="${listaProdutos[i].imagem}" /> </div> */}
+const produtosGeral = document.querySelector('.produtosGeral')
+function listarItens (){
+    for(let i in listaProdutos){
+    
+         produtosGeral.innerHTML+=`
+    <div class="produtoListado">
+    <p>Nome: ${listaProdutos[i].nome}</p>
+    <p>Categoria: ${listaProdutos[i].categoria}</p>
+    
+    <p>Ingredientes: ${listaProdutos[i].ingredientes}</p>
+    <img src="${listaProdutos[i].imagem}"/>
+    
+    </div>
+    `
+    }
+    
+       
+}
+listarItens()
+const buscaDigitada2 = document.querySelector('#buscaDigitada')
+// 
+let produtoDigitado
+function buscaProdutos(){
+    console.log (buscaDigitada2.value)
+     produtoDigitado = listaProdutos.filter(produto=>{
+        
+        if(buscaDigitada2.value === produto.nome){
+            return produto
+        }else{
+            produtoNaoEncontrado()
+        }
+        
+        })
+        mostraProduto(produtoDigitado)
+}
 
+function mostraProduto(prodAExibir){
+    const boxProdutoProcurado = document.querySelector('.produtoPesquisado')
+    console.log (prodAExibir[0].imagem)
+    boxProdutoProcurado.innerHTML=`
+
+    <div><img src="${prodAExibir[0].imagem}"/> </div>
+    <div class="produto">
+    <p>Nome: ${prodAExibir[0].nome}</p>
+    <p>Categoria: ${prodAExibir[0].categoria}</p>
+   
+    <p>Ingredientes: ${prodAExibir[0].ingredientes}</p>
+    </div>
+    
+    `
+    }
+    function produtoNaoEncontrado(){
+        const prodNaoEncontrado = document.querySelector('.produtoPesquisado')
+        prodNaoEncontrado.innerHTML=`
+        <div class="produto">
+        <p><h3>Que pena, não encontramos o que procura, </br>tem mais doces por ai, que tal refazer a busca? :)</h3></p>
+        </div>
+        `
+    }
 //console.log(checarEstoque(listaProdutos))
 
 // segunda maneira de adicionar o produto utilizando o if ternario
@@ -83,14 +161,15 @@ const alteraParaString = (arrayEnviado) => {
     return string
 
 }
-console.log(alteraParaString(listaProdutos))
-console.log(listaProdutos)
+// console.log(alteraParaString(listaProdutos)) voltar console
+// console.log(listaProdutos) voltar console
 for (let i of listaProdutos) {
-    console.log(i)
+    // console.log(i) voltar console
 }
 
 for (let i in listaProdutos) {
-    console.log(listaProdutos[i].nome.toUpperCase(), listaProdutos[i].descricao, listaProdutos[i].estoque, listaProdutos[i].valor, listaProdutos[i].ingredientes)
+    // console.log(listaProdutos[i].nome.toUpperCase(), listaProdutos[i].categoria, listaProdutos[i].estoque, listaProdutos[i].valor, listaProdutos[i].ingredientes)
+  //  voltar console
 }
 
 // function devolveString (parametro){
@@ -115,14 +194,14 @@ function objetoString (listaOjetosEnviada){
     let juntaTudo = " "
     for(let itens of listaOjetosEnviada){
         for(let k in itens){
-            console.log(itens[k])
+            // console.log(itens[k]) voltar console
             juntaTudo += (itens[k] + " ")
         }
     }
     return juntaTudo
     }
 
-console.log(objetoString(listaProdutos))
+// console.log(objetoString(listaProdutos)) voltar console
 
 // objeto listaProdutos, dentro deste objeto na propriedade ingredientes tenho um array
 
@@ -144,11 +223,33 @@ const recebeArrayObjetos = (arrayInformado, stringInformada) => {
         return item.nome === stringInformada
     })
     if (resultado.length > 0) {
-        console.log(resultado)
+        // console.log(resultado) voltar console
     } else {
         alert("Nenhum ingrediente encontrado")
     }
 }
 
- recebeArrayObjetos(listaProdutos, "Cone")
-
+//  recebeArrayObjetos(listaProdutos, "Cone")
+// const botaoTeste = document.getElementById("botao2")
+// botaoTeste.addEventListener("click", teste)
+//  function teste  (){
+//     alert ("Não é que deu certo")
+//  }
+// let produtosBusca =[area1, area2,area3,area4,area5]
+//  function buscaInput () {
+//     let input = document.getElementById('buscaDigitada').value ;
+    
+//     alert (`Valor capturado ${input}`)
+//     input = input.toLowerCase();
+//     let produtosBusca = document.getElementsByClassName('produtosLista');
+//     for (i in produtosBusca){
+//         console.log(produtosBusca[i])
+//         if(!produtosBusca[i].innerHTML.toLowerCase().includes(input)){
+//             produtosBusca[i].style.display = "none";
+//         }
+//         else {
+//             produtosBusca[i].style.display = "list-item";
+//         }
+//         }
+    // }
+ 
