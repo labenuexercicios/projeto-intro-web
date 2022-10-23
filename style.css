@@ -98,6 +98,12 @@ main {
   background-color: #ffd42b;
 }
 
+.found{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 #authorsrc{
   visibility: hidden;
   width: 0;

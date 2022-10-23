@@ -342,19 +342,34 @@ function buscar(event) {
         document.getElementById('author-4').style.width = '0';
         document.getElementById('author-4').style.width = '0';
 
-        pesquisa.style.width = '40%';
-        pesquisa.style.height = '300px';
-        pesquisa.style.background = '#154cf2';
+        document.getElementById("myFrt").style.marginTop = "136px";
 
+        const main = document.getElementById('main');
+        const content = document.getElementById('content');
 
-        pesquisa.addEventListener('mouseenter', function hover() {
-            return pesquisa.style.background = '#ffd42b'
+        main.style.width = '100%';
+        // main.style = `
+        //     display: flex;
+        //     justify-content: center;
+        // `
+        main.style.display = 'flex';
+        main.style.justifyContent = 'center'
+        content.style.width = '40%';
+        content.style.height = '300px';
+        content.style.background = '#154cf2';
+        content.style.transition = '0.2s';
+        content.style.borderRadius = '10px'
+        
+
+        content.addEventListener('mouseenter', function hover() {
+            return content.style.background = '#ffd42b'
         })
 
-        pesquisa.addEventListener('mouseleave', function hover() {
-            return pesquisa.style.background = '#154cf2'
+        content.addEventListener('mouseleave', function hover() {
+            return content.style.background = '#154cf2'
         })
-        pesquisa.innerHTML = ` <img src="assets/keller.png"
+
+        content.innerHTML = ` <img src="assets/keller.png"
         height="200px">
         <ul>
         <li>
@@ -383,6 +398,8 @@ function buscar(event) {
         document.getElementById('author-4').style.visibility = 'hidden';
         document.getElementById('author-4').style.width = '0';
         document.getElementById('author-4').style.width = '0';
+
+        document.getElementById("myFrt").style.marginTop = "136px";
 
         pesquisa.style.width = '40%';
         pesquisa.style.height = '300px';
@@ -425,6 +442,8 @@ function buscar(event) {
         document.getElementById('author-4').style.visibility = 'hidden';
         document.getElementById('author-4').style.width = '0';
         document.getElementById('author-4').style.width = '0';
+
+        document.getElementById("myFrt").style.marginTop = "136px";
 
         pesquisa.style.width = '40%';
         pesquisa.style.height = '300px';
@@ -476,6 +495,8 @@ function voltar(){
     document.getElementById('author-4').style.width = '40%';
     //document.getElementById('author-4').style.width = '0';
 
-    pesquisa.style.width = '0';
-    pesquisa.style.height = '0';
+    document.getElementById("myFrt").style.marginTop = "53px";
+
+    pesquisa.style.width = 0;
+    pesquisa.style.height = 0;
 }
