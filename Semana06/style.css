@@ -5,27 +5,28 @@
 }
 
 body {
-  
+ 
 }
 
 .containerBody {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
 }
 
-.header {
+.header01 {
   display: flex;
   flex-direction: column;
-  height: 10vh;
-  justify-content: center;
+  height: 6vh;
+  justify-content:space-evenly;
+  /* padding-top: 1vh;
+  padding-bottom: 1vh; */
   align-items: center;
   text-align: center;
   border-style: groove;
   border-top: 0.2vw solid black;
   border-bottom: 0.2vw solid black;
-  background-color: tomato;
+  background-color: #ec472ada;
 }
 
 
@@ -35,7 +36,7 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-image: url(./mídiasparasite/vecteezy_repeated-slice-of-pizza-with-a-blue-background_.jpg);
+  background-image: url(./mídiasparasite/pizza-fundoescuro.jpg);
   background-size: cover;
   border-color: black;
   border-style: dashed;
@@ -48,8 +49,8 @@ main {
   width: 30vw;
   margin-top: 1vh;
   margin-bottom: 2vh;
-  background-color: black;
-  color: white;
+  background-color: gray;
+  color: rgba(233, 233, 30, 0.919);
 }
 
 .buscadorPizza-button:active {
@@ -66,24 +67,24 @@ main {
 }
 
 .botao {
-  font-size: xx-large;
-  gap: 6px;
-  padding: 6px;
+  font-size: x-large;
+  gap: 4px;
+  padding: 4px;
 }
 
 .input{
   text-align: center;
-  font-size: larger;
-  height: 4vh;
-  gap: 6px;
-  padding: 6px;
+  font-size: medium;
+  height: 3vh;
+  gap: 4px;
+  padding: 4px;
 }
 
 
 .paiDasPizzas {
   display: flex;
-  flex-wrap: wrap;
-  /* flex-direction: column; */
+  flex-direction: column;
+  flex-flow: wrap;
   gap: 10px;
 }
 
@@ -118,12 +119,45 @@ main {
 }
 
 footer {
+  display: flex;
   background-color: black;
   color: white;
   height: 6vh;
-  /* width: 100%; */
+  align-items: center;
+  justify-content: space-evenly;
 }
 
+#linksDoFooter {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
 
+#nomePedro {
+  margin-left: 1rem;
+  grid-column: 1/2;
+  align-self: center;
+  justify-self: flex-start;
+  font-size: 16px;
+  font-family: fantasy;
+}
 
-/* @media only screen and (max-width: 480px) {  img {    width: 100vw;  }} */
+#projeto {
+  margin-right: 10px;
+  grid-column: 3/4;
+  align-self: center;
+  justify-self: flex-end;
+  font-size: 16px;
+  font-family: fantasy;
+}
+
+#github {
+  max-height: 4.5vh;
+  
+}
+
+#likendin {
+  max-height: 4.5vh;
+}
+
+ @media only screen and (max-width: 480px) {  img {    width: 100vw;  }}
