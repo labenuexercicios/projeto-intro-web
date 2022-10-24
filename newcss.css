@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+    a:link {
+    color: black;
+    text-decoration: none;
+   }
+   
+   a:hover {
+    color: white;
+    text-decoration: underline;
+   }
+   
+
 header {
     background-color: #A52502;
     font-family: "Game of Thrones";
@@ -31,15 +42,21 @@ nav {
 }
 
 
-section {
+ul {
 
+    list-style-type: none;
     background-color: #9b9090;
-    font-family: "Arial";
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 5vh 2vw ;
     margin: 2vh 2vw;
+    text-align: justify;
 
+}
+
+ul:hover{
+
+    background-color: #390D02;
+    color:white;
 }
 
 footer {
@@ -50,7 +67,7 @@ footer {
     display: flex;
     flex-direction: column;
     font-family: "Arial";
-    align-content: space-between;
+    justify-content: space-around;
 }
 
 button{
@@ -84,10 +101,6 @@ input {
     box-sizing: border-box;
 }
 
-ul {
-    list-style-type: none;
-}
-
 @font-face {
     font-family: "Game of Thrones";
     src: url(./fonte/Game\ of\ Thrones.ttf);
@@ -107,6 +120,17 @@ ul {
         padding: 0;
         box-sizing: border-box;
     } 
+
+    a:link {
+        color: black;
+        text-decoration: none;
+       }
+       
+       a:hover {
+        color: white;
+        text-decoration: underline;
+       }
+       
 
     header {
         background-color: #A52502;
@@ -166,6 +190,7 @@ ul {
         display: flex;
         flex-direction: column;
         text-align: center;
+        justify-content: space-around;
     }
     
     button{
