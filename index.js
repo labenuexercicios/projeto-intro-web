@@ -168,17 +168,15 @@ function buscarItens (arrayObj, string) {
     let container = document.getElementById("todos");
 
     for(objeto of arrayObj){
-        if(objeto.nome === string){
+        if(objeto.nome === string ){
             return container.innerHTML = objeto.html.innerHTML
         }
     }
     return alert(`Seu produto ${string} não foi encontrado!`)
 
-    if(!string) {
-        return alert("Faça uma busca valida")
-    }
+  
+}
 
-} 
 buscarItens(arrayAramarioDeBandas, "Banda Zimbra")
 
 
