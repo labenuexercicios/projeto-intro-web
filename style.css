@@ -4,33 +4,33 @@
     box-sizing: border-box;
 }
 
-#fakeBody{
+#fakeBody {
     display: flex;
     flex-direction: column;
-    background-image: url(./asset/billie-eilish-ingressos-header.png);   
+    background-image: url(./asset/billie-eilish-ingressos-header.png);
 }
 
 /* HEADER */
 
-header{
+header {
     display: grid;
     grid-template-columns: 200px 500px 100px repeat(3, 1fr);
     align-items: center;
     background-color: #000000;
-    font-family: fantasy;
+    font-family: damascus;
     height: 8vh;
     color: white;
     max-width: 100vw;
 }
 
-#logoLivePlus{
+#logoLivePlus {
     height: 7.5vh;
     width: 12vw;
     grid-column: 1/2;
     justify-self: center;
 }
 
-#menuNav{
+#menuNav {
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -39,11 +39,11 @@ header{
     font-size: 14px;
 }
 
-#nav2{
+#nav2 {
     text-decoration: underline;
 }
 
-.itemNav:link{
+.itemNav:link {
     text-decoration: none;
     color: white;
 }
@@ -52,8 +52,8 @@ header{
     grid-column: 4/5;
     justify-self: flex-end;
     align-items: center;
-    font-family: fantasy;
-    background-color: #F24F00 ;
+    font-family: damascus;
+    background-color: #F24F00;
     height: 4vh;
     width: 18vw;
     border-radius: 20px;
@@ -63,7 +63,7 @@ header{
 }
 
 ::-webkit-input-placeholder {
-    font-family: fantasy;
+    font-family: damascus;
     color: white;
 }
 
@@ -78,7 +78,7 @@ header{
     margin: 1rem;
 }
 
-#lupa{
+#lupa {
     width: 1.5vw;
     height: 2.5vh;
 }
@@ -98,10 +98,10 @@ header{
     background-color: #CCFF33;
     border-radius: 50%;
     height: 4vh;
-    width: 2.5vw;
+    width: 2.3vw;
 }
 
-#usuarioTodo{
+#usuarioTodo {
     grid-column: 6/7;
     justify-self: flex-end;
     padding-right: 1rem;
@@ -113,11 +113,11 @@ header{
     padding-left: 1rem;
 }
 
-#boasVindas{
+#boasVindas {
     font-size: 14px;
 }
 
-#imagemUsuario{
+#imagemUsuario {
     height: 25px;
     width: 27px;
 }
@@ -125,22 +125,22 @@ header{
 /* PRINCIPAL */
 
 
-main{
+main {
     min-height: 84vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#tituloPg{
+#tituloPg {
     color: white;
-    font-family: fantasy;
+    font-family: damascus;
     font-size: 16px;
     margin-top: 1rem;
     width: 91vw;
 }
 
-#linhaVertical{
+#linhaVertical {
     width: 30vw;
     border: 1px solid #CCFF33;
 }
@@ -155,10 +155,6 @@ main{
 /* CARD EVENTO BLOCO PRETO  */
 
 .todosEventos {
-    background-color: #000000ae;
-    border-radius: 8px;
-    height: 70vh;
-    width: 22vw;
     padding: 1rem;
     display: grid;
     grid-template-rows: 1fr 4fr 4fr 1fr;
@@ -167,7 +163,11 @@ main{
     perspective: 1000px;
 }
 
-.flipCard{
+.flipCard {
+    background-color: #000000ae;
+    border-radius: 8px;
+    height: 70vh;
+    width: 22vw;
     position: relative;
     width: 100%;
     height: 100%;
@@ -178,22 +178,24 @@ main{
 
 .todosEventos:hover .flipCard {
     transform: rotateY(180deg);
-  }
+}
 
-  .flipCardFront, .flipCardBack {
+.flipCardFront,
+.flipCardBack {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
+    /* Safari */
     backface-visibility: hidden;
-  }
+}
 
 
 /* CARD FRONT */
 
-  .tituloH2 {
+.tituloH2 {
     color: #F24F00;
-    font-family: fantasy;
+    font-family: damascus;
     grid-row: 1/2;
     font-size: 12px;
     margin: 1rem;
@@ -210,7 +212,7 @@ main{
 }
 
 .listaEvento {
-    font-family: fantasy;
+    font-family: damascus;
     color: white;
     text-align: center;
     list-style-type: none;
@@ -223,25 +225,25 @@ main{
 
 /* CARD BACK */
 
-  .flipCardBack{
-        color: white;
-        transform: rotateY(180deg);
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        gap: 1rem;
-  }
+.flipCardBack {
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+}
 
-.tituloH2Back{
+.tituloH2Back {
     color: #CCFF33;
-    font-family: fantasy;
+    font-family: damascus;
     font-size: 16px;
     margin: 1rem;
     padding-top: 0.5rem;
 }
 
-.videoBack{
+.videoBack {
     height: 20vh;
     width: 20vw;
     align-self: center;
@@ -249,8 +251,8 @@ main{
     padding-bottom: 2rem;
 }
 
-.listaIngressoVenda{
-    font-family: fantasy;
+.listaIngressoVenda {
+    font-family: damascus;
     font-size: 14px;
     padding-top: 2rem;
     padding-bottom: 1rem;
@@ -258,16 +260,16 @@ main{
     flex-direction: column;
     justify-self: flex-start;
     align-items: center;
-    
+
 }
 
-.botaoComprar{
- width: 10vw;
- height: 5vh;
- border-radius: 8px;
- background-color: #F24F00;
- font-size: 14px;
- border: 0;
+.botaoComprar {
+    width: 10vw;
+    height: 5vh;
+    border-radius: 8px;
+    background-color: #F24F00;
+    font-size: 14px;
+    border: 0;
 }
 
 .botaoComprar:active {
@@ -278,13 +280,13 @@ main{
     border: 0;
 }
 
-#radioButton{
+#radioButton {
     width: 2.5vw;
 }
 
 /* FOOTER */
 
-footer{
+footer {
     display: grid;
     grid-template-columns: 4fr 1fr 4fr;
     align-items: center;
@@ -299,7 +301,7 @@ footer{
     align-self: center;
     justify-self: flex-start;
     font-size: 12px;
-    font-family: fantasy;
+    font-family: damascus;
 }
 
 #ano2022 {
@@ -308,7 +310,7 @@ footer{
     align-self: center;
     justify-self: flex-end;
     font-size: 12px;
-    font-family: fantasy;
+    font-family: damascus;
 }
 
 #imagemFooter {
@@ -325,20 +327,20 @@ footer{
     max-height: 4.5vh;
 }
 
-@media screen and (max-device-width : 1370px) and (min-device-width : 1250px){
-    
-/* HEADER */
-    header{
+@media screen and (max-device-width : 1370px) and (min-device-width : 1250px) {
+
+    /* HEADER */
+    header {
         grid-template-columns: 100px 500px 100px repeat(3, 1fr);
     }
 
-    #logoLivePlus{
+    #logoLivePlus {
         height: 7vh;
         width: 12vw;
         margin-left: 4rem;
     }
 
-    #menuNav{
+    #menuNav {
         margin-left: 7rem;
         font-size: 14px;
     }
@@ -346,150 +348,154 @@ footer{
     ::-webkit-input-placeholder {
         font-size: 12px;
     }
-    
+
     #botaoPesquisa {
         height: 3.7vh;
         width: 2.3vw;
     }
-    
+
     #botaoPesquisa:active {
         height: 3.7vh;
         width: 2.3vw;
     }
 
-/* PRINCIPAL */
+    /* PRINCIPAL */
 
-    #tituloPg{
-    font-size: 14px;
+    #tituloPg {
+        font-size: 14px;
     }
 
-    #linhaVertical{
-    width: 27vw;
+    #linhaVertical {
+        width: 27vw;
     }
 
-/* CARD EVENTO BLOCO PRETO  */
+    /* CARD EVENTO BLOCO PRETO  */
 
     .todosEventos {
-    height: 62vh;
+        height: 62vh;
     }
 
-/* CARD FRONT */
+    /* CARD FRONT */
 
     .imagem {
-    height: 20vh;
+        height: 20vh;
     }
 
-/* CARD BACK */
+    /* CARD BACK */
 
-    .botaoComprar{
- height: 4vh;
- width: 9vw;
- font-size: 13px;
- border: 0;
+    .botaoComprar {
+        height: 4vh;
+        width: 9vw;
+        font-size: 13px;
+        border: 0;
     }
 
     .botaoComprar:active {
-    width: 9vw;
-    height: 4vh;
+        width: 9vw;
+        height: 4vh;
     }
 
-    #radioButton{
-    width: 2.3vw;
+    #radioButton {
+        width: 2.3vw;
     }
 }
 
-@media screen and (max-device-width : 1250px) and (min-device-width : 750px){
-    
+@media screen and (max-device-width : 1250px) and (min-device-width : 750px) {
+
     /* HEADER */
-    
-        header{
-            grid-template-columns: 1fr 250px repeat(2, 1fr);
-            margin: 0;
-        }
-    
-        #logoLivePlus{
-            height: 6vh;
-            width: 12vw;
-            margin-left: 0;
-        }
 
-        #menuNav{
-            margin-left: 2rem;
-            font-size: 10px;
-            justify-content: space-between;
-        }
+    header {
+        grid-template-columns: 1fr 250px repeat(2, 1fr);
+        margin: 0;
+    }
 
-        ::-webkit-input-placeholder {
-          font-size: 7px;
-        }
+    #logoLivePlus {
+        height: 5.5vh;
+        width: 12vw;
+        margin-left: 0;
+    }
 
-        #nome {
-            margin: 1rem;
-            padding-bottom: 0.3rem;
-        }
-        
-        #lupa{
-            width: 1.4vw;
-            height: 2.2vh;
-        }
-        
-        #botaoPesquisa {
-            height: 3vh;
-            width: 2.3vw;
-            margin-right: 3rem;
-        }
-        
-        #botaoPesquisa:active {
-            height: 3.5vh;
-            width: 2.3vw;
-        }
+    #menuNav {
+        margin-left: 2rem;
+        font-size: 10px;
+        justify-content: space-between;
+    }
 
-        #boasVindas{
-            font-size: 9px;
-        }
+    #buscador {
+        font-size: 8px;
+        height: 4vh;
+    }
 
-        #imagemUsuario{
-            height: 19px;
-            width: 20px;
-            margin-right: 1rem;
-        }
+    ::-webkit-input-placeholder {
+        font-size: 7px;
+    }
+
+    #nome {
+        margin: 1rem;
+        padding-bottom: 0.2rem;
+        font-size: 8px;
+    }
+
+    #lupa {
+        width: 1.4vw;
+        height: 2.1vh;
+    }
+
+    #botaoPesquisa {
+        height: 3.1vh;
+        width: 2.3vw;
+        margin-right: 3rem;
+    }
+
+    #botaoPesquisa:active {
+        height: 3.5vh;
+        width: 2.3vw;
+    }
+
+    #boasVindas {
+        font-size: 9px;
+    }
+
+    #imagemUsuario {
+        height: 19px;
+        width: 20px;
+        margin-right: 1rem;
+    }
 
     /* PRINCIPAL */
 
-    main{
+    main {
         height: 200vh;
         display: flex;
     }
 
-        #tituloPg{
+    #tituloPg {
         font-size: 12px;
-        }
-    
-        #linhaVertical{
-            width: 30vw;
-            }
-            
-    .geralEventos {
-    flex-direction: column;
     }
-        
-    /* CARD EVENTO BLOCO PRETO  */ 
 
-        .todosEventos {
-        height: 40vh;
-        width: 80vw;
+    #linhaVertical {
+        width: 30vw;
+    }
+
+    .geralEventos {
+        flex-direction: column;
+    }
+
+    /* CARD EVENTO BLOCO PRETO  */
+
+    .todosEventos {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        }
+    }
 
-        .flipCard{
-            width: 80vw;
-            height: 40vh;
-        }
-                      
+    .flipCard {
+        width: 80vw;
+        height: 40vh;
+    }
+
     /* CARD FRONT */
 
-    .flipCardFront{
+    .flipCardFront {
         width: 80vw;
         height: 40vh;
         display: grid;
@@ -497,36 +503,36 @@ footer{
         grid-template-rows: 50px 1fr;
     }
 
-    
-        .tituloH2 {
+
+    .tituloH2 {
         font-size: 10px;
         grid-row: 1/2;
         grid-column: 1/4;
-        }
-        
-        .imagem {
+    }
+
+    .imagem {
         width: 25vw;
         height: 21vh;
         grid-column: 3/4;
         grid-row: 1/3;
         justify-self: center;
         align-self: center;
-        margin-right: 3rem;
-        }
+        margin-right: 2rem;
+    }
 
-        .tabelaLista {
+    .tabelaLista {
         grid-column: 1/3;
         grid-row: 1/3;
         align-self: center;
-        }
-        
-        .listaEvento {
-            font-size: 12px;
-        }
-    
+    }
+
+    .listaEvento {
+        font-size: 12px;
+    }
+
     /* CARD BACK */
 
-    .flipCardBack{
+    .flipCardBack {
         width: 80vw;
         height: 40vh;
         display: grid;
@@ -534,236 +540,28 @@ footer{
         grid-template-rows: 50px 1fr;
         margin-top: 0;
         gap: 0;
-  }
-
-  .tituloH2Back{
-    margin: 0;
-    padding-top: 0;
-    grid-row: 1/2;
-    grid-column: 1/4;
-}
-
-.videoBack{
-    height: 25vh;
-    width: 25vw;
-    padding-bottom: 0;
-    grid-column: 3/4;
-    grid-row: 1/3;
-    justify-self: center;
-    align-self: center;
-    margin-right: 1rem;
-    margin-top: 2rem;
-}
-
-.listaIngressoVenda{
-    font-size: 12px;
-    padding-top: 0;
-    padding-bottom: 0;
-    grid-column: 1/3;
-    grid-row: 2/3;
-    justify-self: center;
-    align-self: center;
-}
-
-.botaoComprar{
-     height: 5vh;
-     width: 13vw;
-     font-size: 10px;
-     grid-column: 1/3;
-    grid-row: 3/4;
-    justify-self: center;
-    align-self: center;
-    margin-bottom: 2rem;
-    margin-left: 8rem;
-        }
-    
-        .botaoComprar:active {
-        width: 9vw;
-        height: 4vh;
-        }
-    
-        #radioButton{
-        width: 2.3vw;
-        }
     }
 
-    @media screen and (max-device-width : 749px) and (min-device-width : 321px){
-    
-        /* HEADER */
-        
-            header{
-                grid-template-columns: 1fr 100px repeat(2, 1fr);
-                margin: 0;
-            }
-        
-            #logoLivePlus{
-                height: 5vh;
-                width: 20vw;
-                margin-left: 0;
-            }
-    
-            #menuNav{
-                margin-left: 0.5rem;
-                font-size: 5px;
-                justify-content: space-between;
-            }
-    
-            ::-webkit-input-placeholder {
-              font-size: 5px;
-            }
-
-            #buscador {
-                width: 22vw;
-                height: 3vh;
-                border-radius: 14px;
-                display: flex;
-                margin-right: 0.3rem;
-            
-            }
-    
-            #nome {
-                margin: 0.6rem;
-                padding-bottom: 0.3rem;
-            }
-            
-            #lupa{
-                width: 2.2vw;
-                height: 2vh;
-            }
-            
-            #botaoPesquisa {
-                height: 2.6vh;
-                width: 3.6vw;
-                margin-right: 0;
-            }
-            
-            #botaoPesquisa:active {
-                height: 3.5vh;
-                width: 2.3vw;
-            }
-    
-            #boasVindas{
-                font-size: 6px;
-            }
-    
-            #imagemUsuario{
-                height: 15px;
-                width: 16px;
-                margin-right: 0;
-            }
-    
-        /* PRINCIPAL */
-    
-        main{
-            height: 190vh;
-            display: flex;
-        }
-    
-            #tituloPg{
-            font-size: 10px;
-            }
-        
-            #linhaVertical{
-                width: 40vw;
-                }
-                
-        .geralEventos {
-        flex-direction: column;
-        }
-            
-        /* CARD EVENTO BLOCO PRETO  */ 
-    
-            .todosEventos {
-            height: 40vh;
-            width: 90vw;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-            }
-    
-            .flipCard{
-                width: 90vw;
-                height: 40vh;
-                grid-column: 1/2;
-                grid-row: 1/2;
-           
-            }
-                          
-        /* CARD FRONT */
-    
-        .flipCardFront{
-            grid-column: 1/2;
-            grid-row: 1/2;
-            width: 90vw;
-            height: 40vh;
-            display: grid;
-            grid-template-columns: 2fr 1fr 2fr;
-            grid-template-rows: 50px 1fr;
-            padding-right: 2rem;
-            
-        }
-    
-            .tituloH2 {
-            font-size: 8px;
-            grid-row: 1/2;
-            grid-column: 1/4;
-            }
-            
-            .imagem {
-            width: 28vw;
-            height: 15vh;
-            grid-column: 3/4;
-            grid-row: 1/3;
-            justify-self: center;
-            align-self: center;
-            margin-right: 1rem;
-            }
-    
-            .tabelaLista {
-            grid-column: 1/3;
-            grid-row: 1/3;
-            align-self: center;
-            }
-            
-            .listaEvento {
-                font-size: 10px;
-            }
-        
-        /* CARD BACK */
-    
-        .flipCardBack{
-            grid-column: 1/2;
-            grid-row: 1/2;
-            width: 90vw;
-            height: 40vh;
-            display: grid;
-            grid-template-columns: 2fr 1fr 2fr;
-            grid-template-rows: 50px 1fr;
-            margin-top: 0;
-            gap: 0;
-            padding-right: 2rem;
-      }
-    
-      .tituloH2Back{
+    .tituloH2Back {
         margin: 0;
         padding-top: 0;
         grid-row: 1/2;
         grid-column: 1/4;
-        font-size: 12px;
     }
-    
-    .videoBack{
+
+    .videoBack {
         height: 25vh;
-        width: 30vw;
+        width: 25vw;
         padding-bottom: 0;
         grid-column: 3/4;
         grid-row: 1/3;
         justify-self: center;
         align-self: center;
-        margin-right: 1.6rem;
-        margin-top: 1rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
     }
-    
-    .listaIngressoVenda{
+
+    .listaIngressoVenda {
         font-size: 12px;
         padding-top: 0;
         padding-bottom: 0;
@@ -772,248 +570,451 @@ footer{
         justify-self: center;
         align-self: center;
     }
-    
-    .botaoComprar{
-         height: vh;
-         width: 22vw;
-         font-size: 10px;
-         grid-column: 1/3;
+
+    .botaoComprar {
+        height: 5vh;
+        width: 13vw;
+        font-size: 10px;
+        grid-column: 1/3;
+        grid-row: 3/4;
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 2rem;
+        margin-left: 8rem;
+    }
+
+    .botaoComprar:active {
+        width: 13vw;
+        height: 5vh;
+    }
+
+    #radioButton {
+        width: 3vw;
+    }
+}
+
+@media screen and (max-device-width : 749px) and (min-device-width : 321px) {
+
+    /* HEADER */
+
+    header {
+        grid-template-columns: 1fr 110px repeat(2, 1fr);
+        margin: 0;
+    }
+
+    #logoLivePlus {
+        height: 5vh;
+        width: 20vw;
+        margin-left: 0;
+    }
+
+
+    #menuNav {
+        margin-left: 0.5rem;
+        font-size: 6px;
+        justify-content: space-between;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 5px;
+    }
+
+    #buscador {
+        width: 22vw;
+        height: 3vh;
+        border-radius: 14px;
+        display: flex;
+        margin-right: 0.3rem;
+        font-size: 6px;
+    }
+
+    #nome {
+        margin: 0.6rem;
+        padding-bottom: 0.2rem;
+        font-size: 6px;
+    }
+
+    #lupa {
+        width: 2.1vw;
+        height: 1.8vh;
+    }
+
+    #botaoPesquisa {
+        height: 2.5vh;
+        width: 3.5vw;
+        margin-right: 0;
+    }
+
+    #botaoPesquisa:active {
+        height: 2.5vh;
+        width: 3.5vw;
+    }
+
+    #boasVindas {
+        font-size: 6px;
+    }
+
+    #imagemUsuario {
+        height: 15px;
+        width: 16px;
+        margin-right: 0;
+    }
+
+    /* PRINCIPAL */
+
+    main {
+        height: 200vh;
+        display: flex;
+    }
+
+    #tituloPg {
+        font-size: 10px;
+    }
+
+    #linhaVertical {
+        width: 40vw;
+    }
+
+    .geralEventos {
+        flex-direction: column;
+    }
+
+    /* CARD EVENTO BLOCO PRETO  */
+
+    .todosEventos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .flipCard {
+        width: 90vw;
+        height: 40vh;
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+    }
+
+    /* CARD FRONT */
+
+    .flipCardFront {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 90vw;
+        height: 40vh;
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 50px 1fr;
+        padding-right: 2rem;
+
+    }
+
+    .tituloH2 {
+        font-size: 8px;
+        grid-row: 1/2;
+        grid-column: 1/4;
+    }
+
+    .imagem {
+        width: 28vw;
+        height: 15vh;
+        grid-column: 3/4;
+        grid-row: 1/3;
+        justify-self: center;
+        align-self: center;
+        margin-right: 1rem;
+    }
+
+    .tabelaLista {
+        grid-column: 1/3;
+        grid-row: 1/3;
+        align-self: center;
+    }
+
+    .listaEvento {
+        font-size: 10px;
+    }
+
+    /* CARD BACK */
+
+    .flipCardBack {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 90vw;
+        height: 40vh;
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 50px 1fr;
+        margin-top: 0;
+        gap: 0;
+        padding-right: 2rem;
+    }
+
+    .tituloH2Back {
+        margin: 0;
+        padding-top: 0;
+        grid-row: 1/2;
+        grid-column: 1/4;
+        font-size: 12px;
+    }
+
+    .videoBack {
+        height: 25vh;
+        width: 30vw;
+        padding-bottom: 0;
+        grid-column: 3/4;
+        grid-row: 1/3;
+        justify-self: center;
+        align-self: center;
+        margin-right: 1rem;
+        margin-top: 1rem;
+    }
+
+    .listaIngressoVenda {
+        font-size: 12px;
+        padding-top: 0;
+        padding-bottom: 0;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .botaoComprar {
+        height: 4vh;
+        width: 22vw;
+        font-size: 10px;
+        grid-column: 1/3;
         grid-row: 3/4;
         justify-self: center;
         align-self: center;
         margin-bottom: 2rem;
         margin-left: 4rem;
-            }
-        
-            .botaoComprar:active {
-            width: 9vw;
-            height: 4vh;
-            }
-        
-            #radioButton{
-            width: 6vw;
-            }
-        }
-    
-        @media screen and (max-device-width : 320px){
-    
-            /* HEADER */
-            
-                header{
-                    grid-template-columns: repeat(3, 1fr) 5px 10px;
-                    margin: 0;
-                }
-            
-                #logoLivePlus{
-                    height: 4vh;
-                    width: 20vw;
-                    margin-left: 0;
-                }
-        
-                #menuNav{
-                    margin-left: 0;
-                    font-size: 4px;
-                    justify-content: space-between;
-                }
-        
-                ::-webkit-input-placeholder {
-                  font-size: 3.5px;
-                }
-    
-                #buscador {
-                    width: 20vw;
-                    height: 2.5vh;
-                    border-radius: 14px;
-                    display: flex;
-                    margin-right: 0.3rem;
-                
-                }
-        
-                #nome {
-                    margin: 0.3rem;
-                    padding-bottom: 0.4rem;
-                }
-                
-                #lupa{
-                    width: 2vw;
-                    height: 1.6vh;
-                }
-                
-                #botaoPesquisa {
-                    height: 2.1vh;
-                    width: 3.8vw;
-                    margin-right: 0;
-                }
-                
-                #botaoPesquisa:active {
-                    height: 3.5vh;
-                    width: 2.3vw;
-                }
-        
-                #boasVindas{
-                    font-size: 6px;
-                }
-        
-                #imagemUsuario{
-                    height: 10px;
-                    width: 11px;
-                    margin-right: 0;
-                }
-        
-            /* PRINCIPAL */
-        
-            main{
-                height: 160vh;
-                display: flex;
-            }
-        
-                #tituloPg{
-                font-size: 8px;
-                }
-            
-                #linhaVertical{
-                    width: 40vw;
-                    }
-                    
-            .geralEventos {
-            flex-direction: column;
-            }
-                
-            /* CARD EVENTO BLOCO PRETO  */ 
-        
-                .todosEventos {
-                height: 35vh;
-                width: 90vw;
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr;
-                padding: 0;
-                }
-        
-                .flipCard{
-                    width: 90vw;
-                    height: 40vh;
-                    grid-column: 1/2;
-                    grid-row: 1/2;              
-                }
-                              
-            /* CARD FRONT */
-        
-            .flipCardFront{
-                grid-column: 1/2;
-                grid-row: 1/2;
-                width: 90vw;
-                height: 40vh;
-                display: grid;
-                grid-template-columns: 2fr 1fr 2fr;
-                grid-template-rows: 50px 1fr;
-                padding-right: 0.5rem;
-                
-                
-            }
-        
-                .tituloH2 {
-                font-size: 8px;
-                grid-row: 1/2;
-                grid-column: 1/4;
-                }
-                
-                .imagem {
-                width: 35vw;
-                height: 15vh;
-                grid-column: 3/4;
-                grid-row: 1/3;
-                justify-self: center;
-                align-self: center;
-                margin-right: 1rem;
-                }
-        
-                .tabelaLista {
-                grid-column: 1/3;
-                grid-row: 1/3;
-                align-self: center;
-                }
-                
-                .listaEvento {
-                    font-size: 8px;
-                }
-            
-            /* CARD BACK */
-        
-            .flipCardBack{
-                grid-column: 1/2;
-                grid-row: 1/2;
-                width: 90vw;
-                height: 40vh;
-                display: grid;
-                grid-template-columns: 2fr 1fr 2fr;
-                grid-template-rows: 50px 1fr;
-                margin-top: 0;
-                gap: 0;
-                padding-right: 0;
-          }
-        
-          .tituloH2Back{
-            margin: 0;
-            padding-top: 0;
-            grid-row: 1/2;
-            grid-column: 1/4;
-            font-size: 12px;
-        }
-        
-        .videoBack{
-            height: 25vh;
-            width: 40vw;
-            padding-bottom: 0;
-            grid-column: 3/4;
-            grid-row: 1/3;
-            justify-self: center;
-            align-self: center;
-            margin-right: 1rem;
-            margin-top: 1rem;
-        }
-        
-        .listaIngressoVenda{
-            font-size: 10px;
-            padding-top: 0;
-            padding-bottom: 0;
-            grid-column: 1/3;
-            grid-row: 2/3;
-            justify-self: center;
-            align-self: center;
-        }
-        
-        .botaoComprar{
-             height: 4vh;
-             width: 30vw;
-             font-size: 10px;
-             grid-column: 1/3;
-            grid-row: 3/4;
-            justify-self: center;
-            align-self: center;
-            margin-bottom: 3rem;
-            margin-left: 1.6rem;
-                }
-            
-                .botaoComprar:active {
-                width: 9vw;
-                height: 4vh;
-                }
-            
-                #radioButton{
-                width: 6vw;
-                }
-/* FOOTER */
+    }
 
-                #nomeMarina {
-                    font-size: 8px;
-                }
-                
-                #ano2022 {
-                    font-size: 8px;
-                }
-            }
+    .botaoComprar:active {
+        width: 22vw;
+        height: 4vh;
+    }
+
+    #radioButton {
+        width: 6vw;
+    }
+}
+
+@media screen and (max-device-width : 375px) {
+
+    /* HEADER */
+
+    header {
+        grid-template-columns: repeat(3, 1fr) 5px 10px;
+        margin: 0;
+    }
+
+    #logoLivePlus {
+        height: 4vh;
+        width: 20vw;
+        margin-left: 0;
+    }
+
+    #menuNav {
+        margin-left: 0;
+        font-size: 4.5px;
+        justify-content: space-between;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 4px;
+    }
+
+    #buscador {
+        width: 18vw;
+        height: 2.3vh;
+        border-radius: 14px;
+        display: flex;
+        margin-right: 0.3rem;
+        font-size: 4px;
+    }
+
+    #nome {
+        margin: 0.3rem;
+        padding-bottom: 0.1rem;
+        font-size: 4px;
+    }
+
+    #lupa {
+        width: 2vw;
+        height: 1.5vh;
+    }
+
+    #botaoPesquisa {
+        height: 2.1vh;
+        width: 3.6vw;
+        margin-right: 0;
+    }
+
+    #botaoPesquisa:active {
+        height: 3.5vh;
+        width: 2.3vw;
+    }
+
+    #boasVindas {
+        font-size: 6px;
+    }
+
+    #imagemUsuario {
+        height: 10px;
+        width: 11px;
+        margin-right: 0;
+    }
+
+    /* PRINCIPAL */
+
+    main {
+        height: 190vh;
+        display: flex;
+    }
+
+    #tituloPg {
+        font-size: 8px;
+    }
+
+    #linhaVertical {
+        width: 40vw;
+    }
+
+    .geralEventos {
+        flex-direction: column;
+    }
+
+    /* CARD EVENTO BLOCO PRETO  */
+
+    .todosEventos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding: 0;
+    }
+
+    .flipCard {
+        width: 90vw;
+        height: 40vh;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    /* CARD FRONT */
+
+    .flipCardFront {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 90vw;
+        height: 40vh;
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 50px 1fr;
+        padding-right: 0.5rem;
 
 
+    }
 
+    .tituloH2 {
+        font-size: 8px;
+        grid-row: 1/2;
+        grid-column: 1/4;
+    }
 
+    .imagem {
+        width: 35vw;
+        height: 15vh;
+        grid-column: 3/4;
+        grid-row: 1/3;
+        justify-self: center;
+        align-self: center;
+        margin-right: 1rem;
+    }
 
+    .tabelaLista {
+        grid-column: 1/3;
+        grid-row: 1/3;
+        align-self: center;
+    }
+
+    .listaEvento {
+        font-size: 8px;
+    }
+
+    /* CARD BACK */
+
+    .flipCardBack {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 90vw;
+        height: 40vh;
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 50px 1fr;
+        margin-top: 0;
+        gap: 0;
+        padding-right: 0;
+    }
+
+    .tituloH2Back {
+        margin: 0;
+        padding-top: 0;
+        grid-row: 1/2;
+        grid-column: 1/4;
+        font-size: 12px;
+    }
+
+    .videoBack {
+        height: 25vh;
+        width: 40vw;
+        padding-bottom: 0;
+        grid-column: 3/4;
+        grid-row: 1/3;
+        justify-self: center;
+        align-self: center;
+        margin-right: 1rem;
+        margin-top: 1rem;
+    }
+
+    .listaIngressoVenda {
+        font-size: 10px;
+        padding-top: 0;
+        padding-bottom: 0;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .botaoComprar {
+        height: 4vh;
+        width: 30vw;
+        font-size: 10px;
+        grid-column: 1/3;
+        grid-row: 3/4;
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 3rem;
+        margin-left: 1.6rem;
+    }
+
+    .botaoComprar:active {
+        width: 30vw;
+        height: 4vh;
+    }
+
+    #radioButton {
+        width: 6vw;
+    }
+
+    /* FOOTER */
+
+    #nomeMarina {
+        font-size: 8px;
+    }
+
+    #ano2022 {
+        font-size: 8px;
+    }
+}

@@ -268,29 +268,31 @@ const paiEvento3 = removerEvento3.parentNode
 const removerEvento4 = document.querySelector("#removerEvento4")
 const paiEvento4 = removerEvento4.parentNode
 
+
 function selecionarEvento() {
-    if (evento1.nome === input.value) {
+    if (evento1.nome.toLowerCase() === input.value.toLowerCase()) {
         paiEvento2.removeChild(removerEvento2)
         paiEvento3.removeChild(removerEvento3)
         paiEvento4.removeChild(removerEvento4)
         input.value = ""
-    } else if (evento2.nome === input.value) {
+    } else if (evento2.nome.toLowerCase() === input.value.toLowerCase()) {
         removerEvento1.parentNode.removeChild(removerEvento1)
         removerEvento3.parentNode.removeChild(removerEvento3)
         removerEvento4.parentNode.removeChild(removerEvento4)
         input.value = ""
-    } else if (evento3.nome === input.value) {
+    } else if (evento3.nome.toLowerCase() === input.value.toLowerCase()) {
         removerEvento1.parentNode.removeChild(removerEvento1)
         removerEvento2.parentNode.removeChild(removerEvento2)
         removerEvento4.parentNode.removeChild(removerEvento4)
         input.value = ""
-    } else if (evento4.nome === input.value) {
+    } else if (evento4.nome.toLowerCase() === input.value.toLowerCase()) {
         removerEvento1.parentNode.removeChild(removerEvento1)
         removerEvento2.parentNode.removeChild(removerEvento2)
         removerEvento3.parentNode.removeChild(removerEvento3)
         input.value = ""
     } else {
         alert("Nenhum Evento encontrado")
+        input.value = ""
     }
 }
 
@@ -299,7 +301,7 @@ function devolverPesquisaEvento() {
         paiEvento1.appendChild(removerEvento1)
         paiEvento2.appendChild(removerEvento2)
         paiEvento3.appendChild(removerEvento3)
-        paiEvento4.appendChild(removerEvento4)    
+        paiEvento4.appendChild(removerEvento4)  
     }
 }
 
