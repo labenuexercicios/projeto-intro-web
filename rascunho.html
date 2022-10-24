@@ -4,27 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./rascunho.css">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" type ="text/css" href="./rascunho.css" media="screen">
     <title>Artistas e Músicas</title>
-    <script src="index.js"></script>
+    
+    
 </head>
+    
 <body>
-    <div class="maedetodos">
-    <section class="titulo">
+    <div class="container">
+
+    <header class="titulo">
         <h1 class="titulo1">
             <img src="./fotos/logomusica.jpg" width="100" height="45" alt="PedroSampaio">
            Meu Portal De Artistas & Bandas
         </h1>
-        <div class="botao">
-        <label for= "Search" >Qual Banda ou Artistas você deseja encontrar?</label>
-        <input type = "text" name="Search" id="ArtistasBandas">
-        <button class="procurar" type= "submit">procurar</button>
-            </div>  
-    </section>
-    <main >
-        <section class="all">
-            <article class="b1">
-            <h2><a href="https://pt.wikipedia.org/wiki/Zimbra_(banda)">Banda Zimbra</a></h2>
+    </header>
+
+    <main>
+        <section class="busca">
+        <form class="botao">
+        <label id="label-nome" for= "nome" >Qual Banda ou Artistas você deseja encontrar?</label>
+        <input type="text"
+         id="nome" 
+         name="nome"  
+         placeholder="busque um artista..." 
+          />
+        <button id="busca" type="button" onclick="buscarItens(ArmarioArtistas, busca)" >Buscar</button>
+            </form>  
+        </section>
+    
+    
+        <section class="all" id="todos">
+            <section  id="b1" class="b1">
+            <h2><a  href="https://pt.wikipedia.org/wiki/Zimbra_(banda)">Banda Zimbra</a></h2>
             
             <img src="./fotos/avatars-000083257927-bqusih-t500x500.jpg" width="120" height="105" alt="BandZIMBRA">
             
@@ -33,8 +46,8 @@
                 <li>Tem mais de 5 anos de Carreira, possuindo ao total de 12 anos.</li>
                 <li>Alguns dos Albuns: Azul, Sala Dois, Verniz, O tudo o Nada e o Mundo </li>
             </p>
-                </article>
-            <article class="b2">
+                </section>
+            <section   id="b2" class="b2" >
             <h2><a href="https://pt.wikipedia.org/wiki/Miley_Cyrus#:~:text=Miley%20Ray%20Cyrus%20(Nashville%2C%2023,do%20Disney%20Channel%20Hannah%20Montana."> Miley Cyrus</a></h2>
             <img src="./fotos/Miley-Cyrus-doing-her-makeup-in-June-2021.jpg" width="120" height="170" alt="MileyCyrus">
             <p>
@@ -42,8 +55,8 @@
                 <li>Ela tem mais de 5 anos de carreira, possuindo ao total de 21 anos.</li>
                 <li>Alguns de seus Albuns: Bangerz, Can't Be Tamed, Plastic Hearts</li>
             </p>
-                </article>
-            <article class="b3">
+                </section>
+            <section  id="b3" class="b3">
             <h2><a href="https://pt.wikipedia.org/wiki/Pedro_Sampaio">Pedro Sampaio</a></h2>
             <img src="./fotos/pedro sampaio.jpg" width="120" height="105" alt="PedroSampaio">
             <p>
@@ -53,10 +66,10 @@
                 <li>REMIXES</li>
                 
             </p>
-             </article>
-             <article class="b4">
+             </section>
+             <section  id="b4" class="b4">
             <h2><a href="https://pt.wikipedia.org/wiki/Imagine_Dragons"> Imagine Dragons</a></h2>
-            <img src="./fotos/14831730df19f827d1fc7bac7f012a81.jpg" width="220" height="105" alt="Imagine Dragons">
+            <img  src="./fotos/14831730df19f827d1fc7bac7f012a81.jpg" width="220" height="105" alt="Imagine Dragons">
             <p>
                 <p> Imagine Dragons é uma banda de pop rock formada em Las Vegas nos Estados Unidos, consistindo do vocalista Dan Reynolds, do guitarrista Wayne Sermon, do baixista Ben McKee e do baterista Daniel Platzman</p>
                 <p>Possuem mais de 5 anos de carreira possuindo ao todo 12. Eles tem Origem de LAS VEGAS, Nevada dos Estados Unidos. Seus gêneros são POP, ElectroPop, Indie Pop e PopRock. </p>
@@ -68,8 +81,8 @@
                     <li>It's Time.</li>
                 </p>
                 </p>
-             </article>
-            <article class="b5">
+             </section>
+            <section  id="b5" class="b5">
                 <h2><a href="https://pt.wikipedia.org/wiki/Djonga_(rapper)"> Djonga</a></h2>
                 <img src="./fotos/download.jpg" width="220" height="155" alt="Imagine Dragons">
                 <p>
@@ -83,17 +96,19 @@
                         <li>O Menino Que Queria Ser Deus.</li>
                     </p>
                 </p>
-            </article>
+            </section>
         
         </section>
 
     </main>
     <footer>
         <div class="botao2">
-        <p><a href="https://github.com/slvgs">Gabriella Silverio, contato github: slvgs_</a></p>
+        <p> Gabriella Silverio Santana, Labenu  ღ</p>
+        <p><a href="https://github.com/slvgs"> contato github: slvgs_</a></p>
     </div>
     </footer>
 </div>
-    
 </body>
 </html>
+
+ 
