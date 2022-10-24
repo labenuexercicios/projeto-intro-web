@@ -1,30 +1,37 @@
 //Como estava na semana 02(concluída):
 
 objetoPizzaSal01 = {
+    // foto: ''
+    // fonte:
     pizza: "Pizza de calabresa com mozarela",
+    codigo: "01",
     tempoPreparo: 60,
     pizzaSalgada: true,
-    ingredientes: ["* 1 receita de massa para pizza de forno","* 1 receita de molho básico de tomate","* 300g de calabresa fatiada","* 400g de queijo mozarela fatiado"]
+    ingredientes: ["🍕 1 receita de massa para pizza de forno","🍕 1 receita de molho básico de tomate","🍕 300g de calabresa fatiada","🍕 400g de queijo mozarela fatiado"]
 }
 //console.log(objetoPizzaSal01)
 //console.table(objetoPizzaSal01)
 
 //Pizza 02:
 objetoPizzaSal02 = {
+    // foto:
     pizza: "Pizza de quatro queijos",
+    codigo: "02",
     tempoPreparo: 60,
     pizzaSalgada: true,
-    ingredientes: ["* 1 receita de massa para pizza de forno","* 1 receita de molho básico de tomate","* 100g de queijo parmesão","* 150g de queijo provolone","* 150g de queijo mozarela","* 100g de queijo gorgonzola"]
+    ingredientes: ["🍕 1 receita de massa para pizza de forno","🍕 1 receita de molho básico de tomate","🍕 100g de queijo parmesão","🍕 150g de queijo provolone","🍕 150g de queijo mozarela","🍕 100g de queijo gorgonzola"]
 }
 //console.log(objetoPizzaSal02)
 //console.table(objetoPizzaSal02)
 
 //Pizza 03:
 objetoPizzaSal03 = {
+    // foto:
     pizza: "Pizza de abobrinha",
+    codigo: "03",
     tempoPreparo: 50,
     pizzaSalgada: true,
-    ingredientes: ["* 1 receita de massa para pizza de forno","* 1 receita de molho básico de tomate","* 2 abobrinhas cortadas em rodelas finas","* 300g de queijo mozarela de búfala ralada ou cortada em fatias","* 1 dente de alho amassado","* 4 colheres de sopa de azeite","* Sal a gosto"]    
+    ingredientes: ["🍕 1 receita de massa para pizza de forno","🍕 1 receita de molho básico de tomate","🍕 2 abobrinhas cortadas em rodelas finas","🍕 300g de queijo mozarela de búfala ralada ou cortada em fatias","🍕 1 dente de alho amassado","🍕 4 colheres de sopa de azeite","🍕 Sal a gosto"]    
 }
 //console.log(objetoPizzaSal03)
 //console.table(objetoPizzaSal03)
@@ -32,10 +39,12 @@ objetoPizzaSal03 = {
 //Pizza 04:
 //Tipos de pizza doces:
 objetoPizzaDoce01 = {
+    // foto:
     pizza: "Pizza de chocolate",
+    codigo: "04",
     tempoPreparo: 60,
     pizzaSalgada: false,
-    ingredientes: ["* 2 xícaras (de chá) de chocolate forneável ao leite","* 1 disco de massa doce para pizza - pré assado","* 1 colher de sopa de chocolate em pó","* 1/2 xícara (de chá) de chocolate granulado (para povilhar)","* 1/2 xícara (de chá) de cereja em calda (para decorar)"]
+    ingredientes: ["🍕 2 xícaras (de chá) de chocolate forneável ao leite","🍕 1 disco de massa doce para pizza - pré assado","🍕 1 colher de sopa de chocolate em pó","🍕 1/2 xícara (de chá) de chocolate granulado (para povilhar)","🍕 1/2 xícara (de chá) de cereja em calda (para decorar)"]
 }
 //console.log(objetoPizzaDoce01)
 //console.table(objetoPizzaDoce01)
@@ -139,7 +148,7 @@ console.log(pizzaArraySaborosas0)
 // }
 // console.log(pizzaArraySaborosas0)
 
-//ESSE É O QUE VALE DE VERDADE! SEGUE ABAIXO:(PESQUISAR SOBRE - NÃO ENTENDI DIREITO ESSE PONTO)
+//ESSE É O QUE VALE DE VERDADE! SEGUE ABAIXO:
 console.log("Exercício 2")
 for(pizzaString of pizzaArraySaborosas0){
     for (propriedadeObjeto in pizzaString){
@@ -172,20 +181,60 @@ const pizzasSalgadas = (saborosasSalgadas) => {
 //Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
 //Como fiz:
 console.log("Exercício 4")
-const recebeArrayObjetos = (arrayInformado, stringInformada) => {
-    const resultado = arrayInformado.filter((pizzaArraySaborosas0) => {
-
-        return pizzaArraySaborosas0.pizza === stringInformada
+const inputPizza = document.getElementById("pizzaBuscador")
+const inputCodigoPizza = inputPizza.value
+function clicadoPesquisar () {console.log(inputPizza.value)
+     recebeArrayObjetos(pizzaArraySaborosas0, inputPizza.value)
+}
+const recebeArrayObjetos = (arrayInformado, codigoInformado) => {
+    const resultado = arrayInformado.filter((pizza) => {
+        console.log(codigoInformado)
+        return pizza.codigo === codigoInformado
     })
     if (resultado.length > 0) {
         console.log(resultado[0])
     } else {
-        // alert("Nenhuma pizza de anchovas encontrada")
+        //  alert("Nenhuma pizza de anchovas encontrada")
     }
     
 }
-recebeArrayObjetos(pizzaArraySaborosas0, "Pizza de quatro queijos")
-recebeArrayObjetos(pizzaArraySaborosas0, "pizza de anchovas")
+
+
+// recebeArrayObjetos(pizzaArraySaborosas0,"pizza de anchovas")
 
 
 //----------------------------------------------------------------------------------------------------------------------------------------------//
+// SEMANA 06 - PASSANDO TUDO POR MEIO DO DOM
+
+// const minhasPizzas = document.getElementsByClassName("ajusteIngredientes")
+
+// console.log(minhasPizzas)
+// for( let i in pizzaArraySaborosas0) {
+// for(let j in pizzaArraySaborosas0[i].ingredientes){
+//     const criandoLi = document.createElement("li")
+//     const conteudoNovo = document.createTextNode(pizzaArraySaborosas0[i].j)
+//     console.log(pizzaArraySaborosas0[0].ingredientes[j])
+//     criandoLi.innerText= pizzaArraySaborosas0[0].ingredientes[j]
+//     minhasPizzas[0].insertAdjacentElement('beforeend', criandoLi)}
+    
+// }
+// console.log("A")
+
+// Criando os elementos:
+// const criandoDivPaiDasPizzas = document.createElement('div')
+// const criandoDivPadraoContainerPizzas = document.createElement('div')
+// const criandoImg = document.createElement("img")
+// const criandoH2 = document.createElement("h2")
+// const criandoH3 = document.createElement("h3")
+// const criandoUl = document.createElement("ul")
+
+
+// const elementosCriados = [criandoDivPaiDasPizzas, criandoDivPaiDasPizzas, 
+//     criandoImg, criandoH2, criandoH3, criandoUl, criandoLi]
+// console.log(elementosCriados)
+
+
+
+
+
+
