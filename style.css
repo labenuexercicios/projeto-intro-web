@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    background-image: url(./biblioteca\ 14.jpg);
+    font-weight: bold;
+    background-image: center;
+    width: 100%;
+}
+
+header{
+    border-bottom: 5px solid gray;
+    padding: 15px;
+    color: gray;
+    background-color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+main{
+    margin: 15px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-rows: 1fr 1fr;
+    min-height: 80vh;
+    background-color: rgba(255, 255, 255, 0.514);
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+
+
+.busca{
+    padding-top: 105px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    margin: 00.5rem 0;
+    text-align:left;
+    padding: 5px;
+    border-bottom: solid 1.5px gray;
+    border-left: solid 4px gray;
+    list-style: none;
+    font-size: 14px;
+}
+li:hover{
+    background-color: rgba(187, 184, 184, 0.527);
+}
+
+.card{
+    display: grid;
+    border-radius: 10px;
+    padding: 10px;
+    width: 20vw;
+    background-color: rgba(255, 255, 255, 0.849);
+    border:solid 5px gray;
+    color: gray;
+    justify-items: center;
+    align-items: center;
+}
+
+.botao{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.botao:hover{
+    background-color: rgb(87, 84, 84);
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    height: 10vh;
+    margin-top: 15px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-top: 5px solid gray;
+    padding: 15px;
+    color: gray;
+    background-color: white;
+}
