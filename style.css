@@ -1,80 +1,106 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: georgia;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    background-image: url(./biblioteca\ 14.jpg);
+    font-weight: bold;
+    background-image: center;
+    width: 100%;
 }
 
 header{
-    margin: 15px;
-    border: 1px solid gray;
-    padding: 10px;
-    color: white;
-    background-color: rgba(128, 128, 128, 0.288);
+    border-bottom: 5px solid gray;
+    padding: 15px;
+    color: gray;
+    background-color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 main{
     margin: 15px;
-    border: 1px solid gray;
-    padding: 10px;
-    height: 70vh;
-    color: gray;
-    display: flex;
-    background-color: rgba(128, 128, 128, 0.288);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-rows: 1fr 1fr;
+    min-height: 80vh;
+    background-color: rgba(255, 255, 255, 0.514);
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
+
+
 .busca{
+    padding-top: 105px;
     margin: 15px;
-    border: 1px solid #0F4C5C
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    margin: 00.5rem 0;
+    text-align:left;
+    padding: 5px;
+    border-bottom: solid 1.5px gray;
+    border-left: solid 4px gray;
+    list-style: none;
+    font-size: 14px;
+}
+li:hover{
+    background-color: rgba(187, 184, 184, 0.527);
 }
 
 .card{
-    margin: 10px;
-    border: 1px solid #FB8B24;
+    display: grid;
+    border-radius: 10px;
     padding: 10px;
-    color: #FB8B24;
+    width: 20vw;
+    background-color: rgba(255, 255, 255, 0.849);
+    border:solid 5px gray;
+    color: gray;
+    justify-items: center;
+    align-items: center;
+}
+
+.botao{
+    display: block;
     width: 100%;
+    text-align: center;
+    background-color: gray;
     color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
 }
-
-#card-1{
-    border: solid rgb(48, 92, 128) 7px;
-    background-color: white;
-    color: #0F4C5C;
-    height: 60vh;
+.botao:hover{
+    background-color: rgb(87, 84, 84);
 }
-
-#card-2{
-    border: solid rgb(74, 172, 150) 7px;
-    background-color: white;
-    color: rgb(247, 44, 77);
-    height: 60vh;
-}
-
-#card-3{
-    border: solid rgb(250, 164, 52) 7px;
-    background-color: white;
-    color: #FB8B24;
-    height: 60vh;
-}
-
-#card-4{
-    border: solid rgb(252, 10, 10) 7px;
-    background-color: white;
-    color: black;
-    height: 60vh;
-}
-
-#card-5{
-    border: solid black 7px;
-    background-color: white;
-    color: rgb(185, 3, 3);
-    height: 60vh;
+.link{
+    text-decoration: none;
+    color: white;
 }
 
 footer{
-    margin: 15px;
-    border: 1px solid gray;
-    padding: 10px;
-    color: white;
-    background-color: rgba(128, 128, 128, 0.288);
+    height: 10vh;
+    margin-top: 15px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-top: 5px solid gray;
+    padding: 15px;
+    color: gray;
+    background-color: white;
 }

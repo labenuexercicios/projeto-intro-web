@@ -52,9 +52,16 @@ const novotitulo5 = {
     genero: ["Romance" , "Terror" , "Ficção gótica"] ,
 }
 
+const novotitulo6 = {
+    titulo: "'A Cidade de Bronze' - S. A. Chakraborty" ,
+    paginas: 608,
+    ebook: true, 
+    genero: ["Romance" , " Alta Fantasia" , " Ficção Política"] ,
+}
+
 //semana 3
 const objetos = []
-objetos.push(novotitulo1 , novotitulo2 , novotitulo3, novotitulo5)
+objetos.push(novotitulo1 , novotitulo2 , novotitulo3, novotitulo5, novotitulo6)
 //console.log("Livros com ebook:" , objetos)
 for(let i in objetos){
     console.log(`Livro ${i}: `)
