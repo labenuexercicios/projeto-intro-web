@@ -45,7 +45,7 @@ align-items: center;
 .btnHEADER{
   display: flex;
   justify-content:center;
-  background-color: white;    
+  background-color: white;
 }
 .btnHEADER1{
   display: flex;
@@ -89,15 +89,15 @@ margin-left: 15px;
 
 /*AGORA COMEÇA O MAIN*/
 main{
-  
+
   display: grid;
   display: flex;
   /* flex-wrap: wrap; */
   background-image: url(../midia/15.jpg);
-  height:60vw ;
+  /* height:60vw ; */
   background-size: cover ;
   background-repeat: no-repeat;
-} 
+}
 
 form{
   width: 400px;
@@ -107,14 +107,14 @@ form{
   background-color: rgb(231, 126, 161);
   padding: 10px;
   border-radius: 20px;
- 
+
 }
 input{
   display: block;
   margin: 10px auto;
   width: 250px;
   height: 30px;
-  
+
 }
 
 /*AQUI COMEÇA O FOOTER*/
