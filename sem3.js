@@ -89,18 +89,18 @@ function listarItens (){
     </div>
     `
     }
-    
        
 }
-listarItens()
+
+listarItens() //chamada da função para adicionar os produtos
+
 const buscaDigitada2 = document.querySelector('#buscaDigitada')
-// 
+
 let produtoDigitado
 function buscaProdutos(){
-    console.log (buscaDigitada2.value)
      produtoDigitado = listaProdutos.filter(produto=>{
         
-        if(buscaDigitada2.value === produto.nome){
+        if(buscaDigitada2.value === produto.nome.toLowerCase()){
             return produto
         }else{
             produtoNaoEncontrado()
@@ -112,7 +112,7 @@ function buscaProdutos(){
 
 function mostraProduto(prodAExibir){
     const boxProdutoProcurado = document.querySelector('.produtoPesquisado')
-    console.log (prodAExibir[0].imagem)
+    //console.log (prodAExibir[0].imagem)
     boxProdutoProcurado.innerHTML=`
 
     <div><img src="${prodAExibir[0].imagem}"/> </div>
