@@ -1,34 +1,54 @@
 
 
-const allAgentes = []
+let allAgentes = []
 
 reyna = {
-    nome: ("Reyna"),
-    idade: (25),
-    classe: ("Duelista"),
-    existe: (true),
-    habilidades: ["Comedora de Alma", "Intagibilidade", "Olho que cega", "Eles vão temer"]
+    nome: "reyna",
+    idade: 25,
+    classe: "Duelista",
+    existe: true,
+    habilidades: ["Comedora de Alma", "Intagibilidade", "Olho que cega", "Eles vão temer"],
+    imagem: "./img/personagens/reyna_thumbnail-min.png",
+    link: "https://playvalorant.com/pt-br/agents/reyna/",
+    posicao: 1,
 }
 
 viper = {
-    nome: ("Viper"),
-    idade: (30),
-    classe: ("Controlador"),
-    existe: (true),
+    nome: "viper",
+    idade: 30,
+    classe: "Controlador",
+    existe: true,
     habilidades: ["Peido Tenebroso", "Parede de fumaça", "Veneninho Slime", "Bob Marley"],
+    imagem: "./img/personagens/viper.png",
+    link: "https://playvalorant.com/pt-br/agents/viper/",
+    posicao: 2,
+}
+
+phoenix = {
+    nome: "phoenix",
+    idade: 26,
+    classe: "Duelista",
+    existe: true,
+    habilidades: ["Bola curva", "Batata quente", "Parede de fogo", "Phoenix Negra"],
+    imagem: "./img/personagens/phoenix_thumbnail-min.png",
+    link: "https://playvalorant.com/pt-br/agents/phoenix/",
+    posicao: 3,
 }
 
 sova = {
-    nome: ("Sova"),
-    idade: (33),
-    classe: ("Iniciador"),
-    existe: (true),
-    habilidades: ["Flecha ricochete", "Flecha (não vai subir ninguém)", "Drone Abelha", "Não Existe Fusca!!!"]
+    nome: "sova",
+    idade: 33,
+    classe: "Iniciador",
+    existe: true,
+    habilidades: ["Flecha ricochete", "Flecha Rastreadora", "Drone Abelha", "Não Existe Fusca!"],
+    imagem: "./img/personagens/sova_thumbnail-min.png",
+    link: "https://playvalorant.com/pt-br/agents/sova/",
+    posicao: 4,
 }
 
 
-const media = (sova.idade + reyna.idade + viper.idade) / 3
-const existe = (sova.existe && reyna.existe && viper.existe)
+let media = (sova.idade + reyna.idade + viper.idade) / 3
+let existe = (sova.existe && reyna.existe && viper.existe)
 
 console.log(media)
 console.log(existe)
@@ -48,6 +68,12 @@ if (reyna.existe) {
 }
 if (viper.existe) {
     allAgentes.push(sova)
+} else {
+    alert("Não foi adicionado ao array porque o agente não existe.")
+}
+
+if (phoenix.existe) {
+    allAgentes.push(phoenix)
 } else {
     alert("Não foi adicionado ao array porque o agente não existe.")
 }
@@ -81,82 +107,97 @@ console.log(stringAgentes3)
 // console.log(nome.toUpperCase(), idade3, classe3, existe3, habilidade3)
 
 // SEMANA 5.2 
-const agentes = []
-agentes.push(reyna,sova,viper)
+let agentes = []
+agentes.push(reyna, sova, viper)
 
-for(let i in allAgentes){
-    for (j in allAgentes[i]){
+for (let i in allAgentes) {
+    for (j in allAgentes[i]) {
         console.log(allAgentes[i][j])
     }
-    
+
 }
 
 // SEMANA 6.1 
 
-function imprimiAgente (objeto){
-    let stringObjeto = ``
-    stringObjeto = objeto
-    console.log(stringObjeto)
-}
- 
-imprimiAgente(reyna)
+// function imprimiAgente(objeto) {
+//     let stringObjeto = ``
+//     stringObjeto = objeto
+//     console.log(stringObjeto)
+// }
+
+// imprimiAgente(reyna)
 
 // SEMANA 6.2
 
-function retornaAgente (allAgentes,string){
-    let retornaAgente = {}
-    for(let i in allAgentes){
-        for(let j in allAgentes[i]){
-            if(allAgentes[i][j]===string){
+function retornaAgente(allAgentes, string) {
+    let retornaAgente;
+    for (let i in allAgentes) {      
+            if (allAgentes[i].nome === string) {
                 retornaAgente = allAgentes[i]
             }
         }
+        return retornaAgente
     }
-    console.log(retornaAgente)
-} 
-
-retornaAgente(allAgentes,"")
 
 
+retornaAgente(allAgentes, "")
+
+// SEMANA 11
+// Puxar o local do html que queremos alterar(adicionar ou retirar)
+
+const main = document.getElementById("main")
+const div = document.createElement("div")
+div.setAttribute("id", "divSections")
+div.setAttribute("class", "div-sections")
+
+function imprimeObjeto(objeto, div){
+    const section1 = document.createElement("section")
+    section1.setAttribute("id", `section`)
+    section1.innerHTML += `<img src= ${objeto.imagem}>`
+    const ul1 = document.createElement("ul")
+    ul1.innerHTML += `<li class="texto">Nome: <a target="_blank" href=${objeto.link}>${objeto.nome}</a></li>`
+    ul1.innerHTML += `<><li class="texto">Idade: ${objeto.idade}</li>`
+    ul1.innerHTML += `<><li class="texto">Classe: ${objeto.classe}</li>`
+    ul1.innerHTML += `<><li class="texto">Habilidades: ${objeto.habilidades.join(", ")}`
+    section1.appendChild(ul1)
+    section1.insertAdjacentElement("beforeend", ul1)
+    div.appendChild(section1)
+    div.insertAdjacentElement("afterbegin", section1)
+}
 
 
 
+// ESSA FUNÇÃO RECEBE UM ARRAY DE OBJETOS E RETORNA A IMPRESSÃO DE TODOS OS OBJETOS NA TELA. 
+
+function imprimeItems(div, main) {
+    for (i of allAgentes) {
+        imprimeObjeto(i, div)
+        
+    }
+    main.appendChild(div)
+    main.insertAdjacentElement("beforeend", div)
+}
+addEventListener(onload,imprimeItems(div, main))
 
 
-
-
-
-
-
-// const verificaExiste = (objeto, array) => {
-//     if (objeto.existe) {
-//         array.push(objeto)
-//     } else {
-//         alert("Não foi adicionado ao array porque o booleano é falso.")
-//     }
-// }
-// verificaExiste(reyna, allAgentes);
-// verificaExiste(sova, allAgentes);
-// verificaExiste(viper, allAgentes);
-
-// for (i in allAgentes) {
-//     let stringsAgentes = ` Nome: ${allAgentes[i].nome.toUpperCase()}\n Idade: ${allAgentes[i].idade}\n Classe: ${allAgentes[i].classe}\n Existe: ${allAgentes[i].existe}\n`
-
-//     for (j of allAgentes[i].habilidades) {
-//         stringsAgentes += ` ${j},`
-//     }
-//     console.log(stringsAgentes)
-// }
-
-// // A função recebe um objeto e devolve a string do relátorio.
-
-// const stringObjeto = (objeto) => {
-//     let string = ""
-//     for (i in objeto) {
-//         string += i + ":" + objeto[i] + "\n"
-//     }return string
-
-// }
-
-// console.log(stringObjeto(sova)) 
+function busca(event){
+    event.preventDefault()
+    const main = document.querySelector("main")
+    const input = document.querySelector("input")
+    const string = input.value.toLowerCase().trim()
+    if (string.length === 0){
+        alert("Digite um agente válido")
+        hideAlert()
+         //esconde o alerta para não ficar popando na tela.
+    }
+    document.querySelector("#divSections").remove()
+    const objeto = retornaAgente(allAgentes, string)
+    const divBusca = document.createElement("div")
+    divBusca.setAttribute("class", "divBusca")
+    divBusca.setAttribute("id", "divSections")
+    imprimeObjeto(objeto, divBusca)
+    main.appendChild(divBusca)
+    main.insertAdjacentElement("afterend", divBusca)
+    main.appendChild(divSections)
+}
 

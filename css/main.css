@@ -5,7 +5,7 @@
 
 
 header {
-   background-color: rgb(246, 62, 62);
+   background-color: rgb(181, 26, 26);
    font-family: 'Courier New', Courier, monospace;
    color: rgb(0, 0, 0);
    height: 10vh;
@@ -13,6 +13,18 @@ header {
    font-size: 3rem;
    align-items: center;
    padding-left: 2%;
+
+}
+
+body {
+   background-image: url(../img/background/cool-geometric-triangular-figure-in-a-neon-laser-light-great-for-backgrounds-and-wallpapers.jpg);
+   background-size: cover;
+}
+
+.home{
+   border: 10;
+   width: 5vw;
+   
 
 }
 
@@ -45,61 +57,68 @@ img {
 }
 
 .div-sections {
-   display: grid;
-   grid-template-rows: repeat(3, 1fr);
-   grid-template-columns: 1fr 2fr 1fr;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    row-gap: 4vh;
    padding-bottom: 2vh;
    justify-items: center;
   
 }
 
-.section{
-   background-color: red;
-   width: 30vw;
-   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(64,24,1,0);
-   border-radius: 2%;
-
+#main {
+   min-height: 38vw;
+   
 }
 
-#section1 {
-   display: grid;
-   grid-column: 2/3;
-   grid-row: 1/2;
-   grid-template-columns: 1fr 2fr;
+section{
+   display: flex;
+   flex-direction: row;
+   background-color: #000000;
+   width: 30vw;
+   height: 15vw;
+   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(64,24,1,0);
+   border-radius: 2%;
+   align-items: center;
    justify-items: center;
+}
 
+ /* #section1 {
+   
 }
 
 #section2 {
-   display: grid;
-   grid-column: 2/3;
-   grid-row: 2/3;
-   grid-template-columns: 1fr 2fr;
-   justify-items: center;
+  
 }
 
 #section3 {
-   display: grid;
-   grid-column: 2/3;
-   grid-row: 3/4;
-   grid-template-columns: 1fr 2fr;
-   justify-items: center;
-}
+   
+}  */
 
 .lista {
    display: grid;
    list-style: none;
 }
 
+.divBusca {
+   display: grid;
+   justify-items: center;
+}
 
+.texto {
+   text-decoration: none;
+   list-style-type: none;
+   font-size: 1rem;
+   font-family: 'Courier New', Courier, monospace;
+   color: antiquewhite;
+}
 
 
 footer {
    background-color: black;
    color: white;
    height: 15vh;
-   display: grid;
+   display: flex;
    justify-content: center;
    align-items: center;
 }

@@ -6,53 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <script src="./JS/script.js"></script>
-    <title>Valorant - Manual Sincero</title>
+    <script src="./JS/script.js" defer></script>
+    <title>Agentes - Valorant</title>
 </head>
 
 <body>
     <header>
-        <h6>Valorant - Manual Sincero</h6>
+        <h6>Agentes - Valorant</h6>
     </header>
-    <main>
+    <main id="main">
         <div class="div-pesquisa">
+            <button onclick="home(event)" class="home"> Home </button>
             <input class="input" placeholder="Pesquise o Agente!" type="text">
-            <button class="button" type="enviar">Buscar</button>
-        </div>
-        <div class="div-sections">
-            <section class="section" id="section1">
-                <img src="./img/personagens/reyna_thumbnail-min.png">
-                <ul class="lista">
-                    <li>Nome: <a target="_blank" href="https://playvalorant.com/pt-br/agents/reyna/">Reyna</a></li>
-                    <li>Idade: 25 </li>
-                    <li>Classe: Duelista</li>
-                    <li>Habilidades: Comedora de Alma, Intangibilidade, Olho que cega, Eles vão temer </li>
-                </ul>
-            </section>
-            <section class="section" id="section2">
-                <img src="./img/personagens/viper.png">
-                <ul class="lista">
-                    <li>Nome: <a target="_blank" href="https://playvalorant.com/pt-br/agents/viper/">Viper</a></li>
-                    <li>Idade: 30</li>
-                    <li>Classe: Controladora</li>
-                    <li>Habilidades:, Parede de fumaça, Veneninho Slime, Peido Tenebroso</li>
-                </ul>
-            </section>
-            <section class="section" id="section3">
-                <img src="./img/personagens/sova_thumbnail-min.png">
-                <ul class="lista">
-                    <li>Nome: <a target="_blank" href="https://playvalorant.com/pt-br/agents/sova/">Sova</a></li>
-                    <li>Idade: 33</li>
-                    <li>Classe: Iniciador</li>
-                    <li>Habilidades: Flecha ricochete, Flecha (não vai subir ninguém), Drone Abelha, Não Existe Fusca
-                    </li>
-                </ul>
-            </section>
+            <button onclick="busca(event)" class="button" >Buscar</button>
         </div>
     </main>
 
     <footer>
-        <h1>Bem-vindo ao Manual Sincero de Valorant</h1>
+        <h3>Criado por Gabriel Max - Labenu - Barbosa A </p></h3>
     </footer>
 </body>
 
