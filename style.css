@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Bookman;
+  color: beige;
+
+
+}
+
+
+.page {
+display: grid;
+height: 100vh;
+grid-template-columns: 1fr;
+grid-template-rows: 75px 1fr 75px ;
+}
+
+header {
+
+
+  background-image: radial-gradient(circle at 87.5% 12.5%, #aa76fc 0, #815de9 25%, #4d42d4 50%, #002bbf 75%, #001bad 100%);
+  text-align: center;
+  color: rgb(10, 8, 8);
+  padding: 16px 0;
+
+  background-color: blueviolet;
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+main {
+
+  padding: 16px 32px;
+  background-image: url('imagem.jpg');
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+article {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  backdrop-filter: blur(1.5rem);
+
+  font-family: Helvetica;
+  color: azure;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 8px;
+  text-align: center;
+  transition: transform 0.2s;
+  max-width: 400px;
+  max-height: 350px;
+
+}
+
+section:hover {
+  transform: scale(1.1);
+}
+
+img {
+  height: 256px;
+}
+
+footer {
+  background-color: #242424;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+
+.titulo1 {
+  max-width: 32ch;
+
+  padding: 3px;
+  height: 6vh;
+  text-align: center;
+  justify-content: center;
+
+}
+
+p {
+  max-width: 32ch;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
+}
+button {
+  margin: 3px;
+  background-color: rgb(238, 8, 96);
+  color: rgb(218, 169, 207);
+  font-family: serif;
+
+}
+
+aside:has(button:active) {
+  color: rgb(211, 50, 50);
+  background-color: rgb(7, 7, 7);
+}
+
+button:active {
+  background-color: rgb(139, 63, 221);
+  color: rgb(243, 149, 149);
+}
+
+.botao{
+  display: flex;
+ 
+
+}
+form{
+  display: flex;
+  flex-direction: column;
+  
+}
