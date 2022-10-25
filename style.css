@@ -3,21 +3,16 @@
   padding: 0;
   font-family: Bookman;
   color: beige;
-
-
 }
 
-
 .page {
-display: grid;
-height: 100vh;
-grid-template-columns: 1fr;
-grid-template-rows: 75px 1fr 75px ;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 75px 1fr 75px ;
 }
 
 header {
-
-
   background-image: radial-gradient(circle at 87.5% 12.5%, #aa76fc 0, #815de9 25%, #4d42d4 50%, #002bbf 75%, #001bad 100%);
   text-align: center;
   color: rgb(10, 8, 8);
@@ -30,7 +25,6 @@ header {
 }
 
 main {
-
   padding: 16px 32px;
   background-image: url('imagem.jpg');
   display: flex;
@@ -39,7 +33,6 @@ main {
 }
 
 article {
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -53,12 +46,12 @@ section {
   color: azure;
   border: 2px solid black;
   border-radius: 8px;
-  margin: 8px;
+  margin: 16px;
+  padding: 8px 0;
   text-align: center;
   transition: transform 0.2s;
   max-width: 400px;
-  max-height: 350px;
-
+  min-height: 380px;
 }
 
 section:hover {
@@ -76,7 +69,7 @@ footer {
   color: white;
 }
 
-.titulo1 {
+.titulo {
   max-width: 32ch;
 
   padding: 3px;
@@ -88,10 +81,8 @@ footer {
 
 p {
   max-width: 32ch;
-  /* overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; */
 }
+
 button {
   margin: 3px;
   background-color: rgb(238, 8, 96);
@@ -112,11 +103,8 @@ button:active {
 
 .botao{
   display: flex;
- 
-
 }
 form{
   display: flex;
   flex-direction: column;
-  
 }
