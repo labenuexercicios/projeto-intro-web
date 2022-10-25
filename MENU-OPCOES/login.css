@@ -1,0 +1,152 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Helvetica;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+/*AQUI COMEÇA TUDO DO HEADER*/
+header{
+  display: grid;
+  width: 100%;
+  border-top: 35px solid black;
+  border-left: 35px solid black ;
+  border-right: 35px solid black;
+  height: 23vh;
+  grid-template-columns: 1fr 1fr 1fr ;
+  color: #dc143c;
+}
+.sectionHeade1{
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.sectionHeade2{
+margin: 0 auto;
+}
+.sectionHeade2 img{
+width: 100%;
+height:85px;
+}
+.sectionHeade3{
+display: flex;
+align-items: center;
+
+}
+.btnHEADER{
+  display: flex;
+  justify-content:center;
+  background-color: white;    
+}
+.btnHEADER1{
+  display: flex;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+ }
+.btnHEADER2{
+ display: flex;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ color: black;
+ text-decoration: none;
+}
+.btnHEADER1 h3{
+  margin: 0 14px 0 2px;
+}
+
+/*AQUI VAI COMEÇAR O MENU DE OPÇÕES*/
+
+.sectionMenu{
+  display: flex;
+  align-items: center;
+  height: 7vh;
+  background-color: black;
+  position: sticky;
+  top:0;
+  padding: 0 35px;  /**/
+  justify-content: space-between;
+}
+#navMenuOpcoes{
+justify-content: left; /*alterei esse aqui depois q tirei o contato*/
+margin-left: 15px;
+;
+}
+.pesquisa{
+  text-decoration: none;
+  color:white;
+  font-size: 15px;
+  margin-right: 50px;
+}
+
+/*AGORA COMEÇA O MAIN*/
+main{
+  
+  display: grid;
+  display: flex;
+  background-image: url(../midia/10.jpg);
+  background-size: cover ;
+  background-repeat: no-repeat;
+}
+form{
+  width: 400px;
+  margin: 200px;
+  text-align: center;
+  background-color: rgb(231, 126, 161);
+  padding: 10px;
+  border-radius: 20px; 
+}
+input{
+  display: block;
+  margin: 10px auto;
+  width: 250px;
+  height: 30px;
+  
+}
+
+/*AQUI COMEÇA O FOOTER*/
+footer{
+display: grid;
+width: 100%;
+color: white;
+border: 1px solid blueviolet;
+height: 10vh;
+background-color: black;
+justify-content: center;
+}
+
+footer a{
+text-align: center;
+color: #dc143c;
+background-color: black;
+}
+footer p{
+margin-bottom: 8px;
+}
+.footerIcones{
+text-align: center;
+}
+.icone{
+width: 18px;
+height: 18px;
+}
+.icone-git{
+width: 20px;
+height: 20px;
+}
+
+@media screen and (max-device-width: 870px){
+.btnHEADER{
+  display: block;
+  justify-content:center;
+  background-color: white;
+}
+}

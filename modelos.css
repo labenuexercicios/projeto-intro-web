@@ -1,17 +1,53 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 header{
-    border-bottom: 1px solid black;
-    height: 100px;       
-    width: 100vw;
-   
-    text-align:center;
-    background-image: url(./pexels-anilha.jpg);
-    background-size: 50%;
-                  
-  } 
+  background-color: rgb(37, 32, 32);      
+  color: white;
+  padding: 18px 18px;   
+  /*position: sticky;*/      
+  width: 100%; 
+  height: 210px;  
+}
+
+.navPrincipal {
+  width: 100%;
+  height: 80%;
+  background: #DC661F;
+  margin-top: 20px;
+  
+}
+
+.navPrincipal ul {
+    float: left;
+    margin: 0;
+}
+
+.navPrincipal ul li {
+    display: inline-block;
+    list-style: none;
+
+}
+
+.navPrincipal ul li a {
+    color: white;
+    font-family: 'Josefin Sans', 'Franklin Gothic Medium';
+    text-decoration: none;
+    font-size: 23px;
+    display: block;
+    padding: 140px 15px;
+
+}
+      
+    
+    .gym{
+      text-align: center;
+      padding: 10px;
+      font-size: 50px;
+      color: white;
+    }
   #menu{
     margin-top: 66px;
     background-color: black;
@@ -28,13 +64,16 @@ header{
     
   } 
   main{
-    width:center;
+    width: 100%;
     text-align:center; 
-    height: 1400px;   
-    padding:18px ;
-    /* display:flex; */
-            
-  } 
+    height: 1200px;   
+    padding:70px;
+    color: black; 
+    margin: 0 auto;
+    
+    background-color:pink;  
+      
+  }
  
   #Comprar{
     background-color:darkmagenta;
@@ -70,73 +109,85 @@ header{
   } 
         
    .leg{
+    margin: 0 auto;
     width: 25%;
     margin-top: 50px;
     padding-top: 40%;
     border-radius: 20px;
     border: 2px solid black;
-    background-image: url(./pexels-miriam-alonso-LegPretoTopCinza.jpg);
+    background-image: url(./midia/pexels-miriam-alonso-LegPretoTopCinza.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     color: black;
     text-align: center;
   }
   .leg:hover{
+    margin: 0 auto;
     width: 25%;
     margin-top: 50px;
     padding-top: 40%;
     border-radius: 20px;
     background-image: url(./midia/pexels-legpreta.jpg);
     background-size: 100%;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
+    color: black;
+    text-align: center;  
     
     }
    
   .top{
-        width: 30%;
-        margin-top: 10px;
-        padding-top: 40%;
-        border-radius: 20px;
-        border: 2px solid black;
+    margin: 0 auto;
+    width: 25%;
+    margin-top: 10px;
+    padding-top: 36%;
+    border-radius: 20px;
+    border: 2px solid black;
         background-image: url(./pexels-topNike.jpg);
-        background-size: 80%;
+        background-size: 100%;
         background-repeat: no-repeat;
         color: black;
         text-align: center;
         
   }
-  .top:hover{   
-    width: 30%;
+  .top:hover{  
+    margin: 0 auto; 
+    width: 25%;
     margin-top: 10px;
-    padding-top: 40%;
+    padding-top: 36%;
     border-radius: 20px;
     background-image: url(./pexels-topNiiikkkke.jpg);
-    background-size: 80%;
+    background-size: 100%;
     background-repeat: no-repeat;
-    
+    color: black;
+    text-align: center;
   }
-  /*n esta lendo essas linhas de butom*/
- /* #comprar{  
-    background-color: orangered;
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
-  #comprar{
-    background-color: rgb(223, 214, 214);
-    color: black;        
-  }
-  #comprar:active{  
-    background-color: white;
-    color: black;      
-  }
-*/
-  footer{
-    background-color: black;
-    color: white;
-    padding: 18px;   
-    /*position: sticky;*/
-    bottom: 0; 
-  }
+  
+button{
+  background-color:black ;
+  color: white;
+  font-family: monospace;
+}
+#clicada{
+  background-color: rgb(223, 214, 214);
+  color: black;        
+}
+#clicada:active{  
+  background-color: white;
+  color: black;      
+}
+footer{
+  background-color: black;
+  color: white;
+  padding: 18px;   
+  /*position: sticky;*/
+  bottom: 0; 
+  width: 100%;       
+}
+footer a{
+  color: crimson;
+  text-decoration: none;
+
+} 
   .icone{
     width: 18px;
     height: 18px;

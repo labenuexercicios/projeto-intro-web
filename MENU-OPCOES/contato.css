@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Helvetica;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+/*AQUI COMEÇA TUDO DO HEADER*/
+header{
+  display: grid;
+  width: 100%;
+  border-top: 35px solid black;
+  border-left: 35px solid black ;
+  border-right: 35px solid black;
+  height: 20vh;
+  grid-template-columns: 1fr 1fr 1fr ;
+}
+.sectionHeade1{
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.sectionHeade2{
+background-image: url(../midia/logoOficial-removebg-preview.png);
+background-size: cover;
+background-size: 50%;
+background-repeat: no-repeat;
+background-position: center;
+}
+.sectionHeade3{ 
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+  padding-right: 50px;
+}
+.btnHEADER{
+  display: flex;
+  justify-content:center;
+  background-color: white;
+}
+.btnHEADER1{
+  display: flex;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+ }
+.btnHEADER2{
+ display: flex;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ color: black;  
+ text-decoration: none;
+}
+.btnHEADER1 h3{
+  margin: 0 14px 0 2px;
+}
+
+/*AQUI VAI COMEÇAR O MENU DE OPÇÕES*/
+
+.sectionMenu{
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 6vh;
+  background-color: black;
+  position: sticky;
+  top:0;
+  padding: 0 35px;  
+  /* justify-content: flex-end; */
+}
+#navMenuOpcoes{
+  border: 1px solid teal;
+ 
+}
+.pesquisa{
+  text-decoration: none;
+  color:white;
+  font-size: 15px;
+  margin-right: 50px;   
+}
+/*AGORA COMEÇA O BOTÃO DE PESQUISA*/
+
+/*Aqui começa o main*/
+main{
+  width: 100%;
+  border: 1px solid salmon;
+  height: 110vh;
+}
+
+
+/*Aqui começao footer*/
+footer{
+display: grid;
+width: 100%;
+color: white;
+border: 1px solid blueviolet;
+height: 10vh;
+background-color: black;
+justify-content: center;
+margin-top: 50px;
+}
+
+footer a{
+text-align: center;
+color: #dc143c;
+background-color: black;
+}
+footer p{
+margin-bottom: 8px;
+}
+.footerIcones{
+text-align: center;
+}
+.icone{
+width: 18px;
+height: 18px;  
+}
+.icone-git{
+width: 20px;
+height: 20px;
+}

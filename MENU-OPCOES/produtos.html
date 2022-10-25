@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index2.js" defer></script>
+    <link rel="stylesheet" href="produtos.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <section class="sectionHeade1">
+                <h3 id="pDoPreco" style="color:black"> 10% de desconto via pix ou boleto </h3>
+
+            </section>
+
+            <section class="sectionHeade2">
+                <img src="../midia/logoOficial-removebg-preview.png" alt="">
+                 
+             </section>
+           
+            <section class="sectionHeade3">
+                <div class="btnHEADER">
+                    <a class="btnHEADER1"  href="./cadastrar.html"><h3>Cadastre-se</h3> <h3>|</h3> </a>
+                    <a class="btnHEADER2"  href="login.html"  > <h3>Login</h3></a>
+                </div>   
+                
+                <!-- Começa o carrinho -->
+                <section class="carrinho-principal">
+                  <div class="carrinho">
+                      <div class="notificacao2"><span id="valor2">1</span></div>
+                  </div>
+                  <div class="comprar">
+                      <button class="comprando">Finalizar</button>
+                  </div>
+                  <!-- <div class="finalizandoCompra" id="finalizandoCompra">
+                       <h3 id="h3-finalizarCompra">Vazio</h3>
+                      <div><span>R$<span id="spanValorTotal"> </span></span></div>   comentei p n ficar aparecendo o botão limpar
+                  </div>
+                  </section> -->
+            </section>
+
+        </header>
+        <section class="sectionMenu">
+            <nav id="navMenuOpcoes">
+                <a class="pesquisa" href="../index.html">HOME</a>        
+                <a class="pesquisa" href="../MENU-OPCOES/empresa.html">EMPRESA</a>
+                <a class="pesquisa" href="../MENU-OPCOES/produtos.html">PRODUTOS</a>
+                <!-- <a class="pesquisa" href="../MENU-OPCOES/contato.html">CONTATO</a> -->
+            </nav>
+                <div id="contener-pesquisa">
+                    <input type="text" id="searchTxt"  class="search-txt" placeholder="Digite o que procura">  <!--para o digite aqui aparecer dentro da caixinha -->
+                   <a href="#" id="searchBtn" class="search-btn">
+                       <img src="../midia/lupa-pesquisa.svg" alt="lupa" height="20px" width="20px">
+                   </a>
+                </div>
+        </section>
+
+
+        <main>
+            
+        <!-- Chamar função Leg-->
+        <section id="section1">
+            <aside class ="leg">
+            <button onclick="leg ()" id="Comprar">Ver Mais</button><!--chamando a função leg-->
+             <p>LEGGING/CALÇA</p>
+            </aside>
+            </section>
+
+            <section class="legCarrinho1">
+              <aside class ="leg1">
+                 <button onclick="chamando()" id="Comprar">Comprar</button>
+                 <p>LEGGING/CALÇA R$:89,90</p>
+                </aside>
+            </section>
+             
+            <section class="legCarrinho2" >
+              <aside class ="leg2">
+               <button onclick="chamando()" id="Comprar">Comprar</button> 
+              <p>LEGGING/CALÇA R$:89,90</p> 
+              </aside>
+           </section>
+           
+           <section class="legCarrinho3">
+            <aside class ="leg3">
+              <button onclick="chamando()" id="Comprar">Comprar</button> 
+            <p>LEGGING/CALÇA R$:89,90</p> 
+            </aside>
+         </section>
+    
+         <section class="legCarrinho4" >
+          <aside class ="leg4">
+             <button onclick="chamando()" id="Comprar">Comprar</button>
+            <p>LEGGING/CALÇA R$:89,90</p> 
+            </aside>
+         </section>
+         
+         <!-- Chamar função short-->
+         
+        <section id="section2">
+          <aside class="short">
+            <button onclick="short()" id="Comprar">Ver Mais</button> 
+          <p>SHORT </p> 
+          </aside>
+       </section>
+       
+       <section class="shortCarrinho1" >
+        <aside class ="short1">
+          <button onclick="chamando()" id="Comprar">Comprar</button> 
+           <p>SHORT 49,90</p>
+          </aside>
+      </section>
+       
+      <section class="shortCarrinho2" >
+        <aside class ="short2">
+          <button onclick="chamando()" id="Comprar">Comprar</button>
+        <p>SHORT 49,90</p> 
+        </aside>
+     </section>
+     
+     <section class="shortCarrinho3" >
+      <aside class ="short3">
+        <button onclick="chamando()" id="Comprar">Comprar</button> 
+      <p>SHORT 49,90</p> 
+      </aside>
+   </section>
+
+   <section class="shortCarrinho4" >
+    <aside class ="short4">
+      <button onclick="chamando()" id="Comprar">Comprar</button> 
+      <p>SHORT R$: 49,90</p> 
+      </aside>
+   </section>
+
+
+<!-- Chamar a função Top/Cropped-->
+
+            <section id="section3">
+              <aside class="topCropped">
+                <button onclick="topCropped ()" id="Comprar">Ver Mais</button><!--chamando a função topCropped-->
+              <p>TOP/CROPPED</p> 
+              </aside>
+            </section>              
+
+              <section class="topCarrinho1" >
+              <aside class ="top1">
+                <button onclick="chamando()" id="Comprar">Comprar</button> 
+                <p>TOP/CROPPED R$:39,90</p> 
+                </aside>
+              </section>
+
+              <section class="topCarrinho2" >
+                <aside class ="top2">
+                  <button onclick="chamando()" id="Comprar">Comprar</button>
+                <p>TOP/CROPPED  R$:39,90 </p> 
+                </aside>
+              </section>
+
+              <section class="topCarrinho3" >
+                <aside class ="top3">
+                    <button onclick="chamando()" id="Comprar">Comprar</button> 
+                <p>TOP/CROPPED 39,90</p> 
+                </aside>
+              </section>
+
+              <section class="topCarrinho4" >
+                <aside class ="top4">
+                  <button onclick="chamando()" id="Comprar">Comprar</button> 
+                <p>TOP/CROPPED R$: 39,90</p> 
+                </aside>
+              </section>
+
+
+      
+    <!-- Chamar função Conjunto-->
+
+    
+
+            <section id="section4">
+              <aside class="conjunto">
+                <button onclick="conjunto()" id="Comprar">Ver Mais</button><!--chamando a função conjunto-->
+              <p>CONJUNTO </p> 
+              </aside>
+          </section>
+
+          <section class="conjuntoCarrinho1" >
+            <aside class ="conjunto1">
+              <button onclick="chamando()" id="Comprar">Comprar</button> 
+              <p>CONJUNTO R$:169,90</p>
+              </aside>
+            </section>
+
+            <section class="conjuntoCarrinho2" >
+              <aside class ="conjunto2">
+                <button onclick="chamando()" id="Comprar">Comprar</button>
+              <p>CONJUNTO R$:169,90</p> 
+              </aside>
+            </section>
+
+            <section class="conjuntoCarrinho3" >
+              <aside class ="conjunto3">
+                  <button onclick="chamando()" id="Comprar">Comprar</button> 
+              <p>CONJUNTO R$:169,90</p> 
+              </aside>
+            </section>
+
+            <section class="conjuntoCarrinho4" >
+              <aside class ="conjunto4">
+                <button onclick="chamando()" id="Comprar">Comprar</button> 
+              <p>CONJUNTOR$:169,90</p> 
+              </aside>
+            </section>
+
+
+
+
+
+          
+        </main>
+
+
+
+        <footer>     
+            <section style="background-color: black;">
+                <p>
+                    Feito por Aureana Santos. ❤️ Todos os direitos reservados.
+                </p>
+            <div class="footerIcones">
+    
+                <img  class="icone" src="../midia/linkedin.png"/>
+                <a href="https://www.linkedin.com/in/aureana-santos-a7091b21b">LinkedIn</a>
+        
+                <img  class="icone-git" src="../midia/github2.png"/> 
+                <a href="https://github.com/Aureana">Github</a>
+            </div>
+            </section>        
+          </footer>  
+
+    </div>
+    
+</body>
+</html>

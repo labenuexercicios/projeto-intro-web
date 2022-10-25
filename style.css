@@ -1,53 +1,61 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
     header{
-        border-bottom: 1px solid black;
-        height: 100px;       
-        width: 100vw;
-        text-align:center;
-        background-image: url(./pexels-anilha.jpg);
-        background-size: 50%;
-        padding: 50px;        
-        /*background-repeat: no-repeat;*/
-        
-      } 
+      background-color: rgb(37, 32, 32);      
+      color: white;
+      padding: 18px 18px;   
+      /*position: sticky;*/      
+      width: 100%; 
+      height: 210px;  
+    }
+
+    .navPrincipal {
+      width: 100%;
+      height: 80%;
+      background: #DC661F;
+      margin-top: 20px;
+      
+  }
+  
+  .navPrincipal ul {
+      float: left;
+      margin: 0;
+  }
+  
+  .navPrincipal ul li {
+      display: inline-block;
+      list-style: none;
+  
+  }
+  
+  .navPrincipal ul li a {
+      color: white;
+      font-family: 'Josefin Sans', 'Franklin Gothic Medium';
+      text-decoration: none;
+      font-size: 23px;
+      display: block;
+      padding: 140px 15px;
+  
+  }
+
       .gym{
         text-align: center;
         padding: 10px;
         font-size: 50px;
         color: white;
       }
-      #menu{
-        margin-top: 74px;
-        background-color: black;
-        color: white;
-        /* justify-content: space-between; */
-        /* align-items: center; */
-        /* position: relative; */
-        
-        height: 50px;       
-        /* width: 100vw; */
-        border: 1px solid black;
-        font-family: Courier, monospace;
-        text-align: left;
-        
-      } 
-
-      /* .bloco-tela-inteira{
-        border: 1px solid black;
-        margin: 0 auto;
-        width: 500px;
-      } */
+     
       main{
         width: 100%;
         text-align:center; 
         height: 800px;   
-        padding:70px ;
+        padding:70px;
         color: black; 
         margin: 0 auto;
-        margin-top: 29px;  
+       
         background-color:pink;  
           
       }
@@ -74,6 +82,7 @@
       }
       
       ul{
+
         list-style-type: none;
     }
     
@@ -102,18 +111,31 @@
       footer{
         background-color: black;
         color: white;
-        padding: 18px;   
-        /*position: sticky;*/
-        bottom: 0; 
+        height: 60px;  
+        padding: 30px 0;
+        width: 100%; 
+        text-align: center;      
+      }
+      a{
+        color: crimson;
+        text-decoration: none;
       } 
+      footer a{
+        
+        background-color: black;
+      }
+      footer p{
+        margin-bottom: 8px;
+
+      }
       .icone{
         width: 18px;
         height: 18px;
+        
       }
       .icone-git{
         width: 20px;
         height: 20px;
-
       }
      
       
