@@ -1,45 +1,87 @@
-// ##########    Semana 1 do projeto intro web #####################
+// ##########    Semana 2 do projeto intro web #####################
 
 
-// *********  Exercicio One  ********
+
+// ********** Exercicio One *********************
+
+const playerOne = {
+ 
+    foto: "./img-nba/michael.jpg",
+    name: "Michael Jordan",
+    height: 198,
+    still: false,
+ 
+}
 
 
-const namePlayerOne = ("Michael Jordan")
-const heigthPlayerOne = 198;
-const stillPlayOne = false;
+const playerTwo = {
 
-// console.log(nameplayer, heigthplayer, playerOne);
+    foto: "./img-nba/james.png",
+    name: "Lebron James",
+    heigth: 206,
+    still: true,
+
+}
+
+const playerThree = {
+
+    foto: "./img-nba/oneal.png" ,
+    name: "Shanquille O'Neal",
+    heigth: 216,
+    still: false,
+
+}
+
+const playerFour = {
+        
+    foto: "./img-nba/iverson.png" ,
+    name: "Allen Iverson",
+    height: 183,
+    still: true,
+
+} 
+
+// ********** Exercicio Two e Three *********************
 
 
-// *********  Exercicio Two  ********
+playerNba = []
+playerNba.push(playerOne, playerTwo, playerThree, playerFour)
+console.log(playerNba)
 
 
-const nameplayerTwo = ("Lebron James")
-const heightplayerTwo = 206 ;
-const stillPlayTwo = true;
+// ********** Exercicio Four e Five *********************
 
-const nameplayerThree = ("Shaquille O'Neal")
-const heigthplayerThree = 216;
-const stillPlayThree = false;
+playerNbaAction = []
 
-const nameplayerFour = ("Allen Iverson")
-const heigthplayerFour = 183;
-const stillPlayFour = true;
+if(playerOne.still ===  true){
+    playerNbaAction.push(playerOne)
+}else{
+    alert("Item não adicionado")
+}
 
-// *********  Exercicio Three  ********
-const heightStandard = 185
+if(playerTwo.still ===  true){
+    playerNbaAction.push(playerTwo)
+}else{
+    alert("Item não adicionado")
+}
 
-const comparingHeightOne = heigthPlayerOne >= heightStandard
-console.log(` ${namePlayerOne.toUpperCase()} é maior que 185 ? ${comparingHeightOne}`);
 
-const comparingHeightTwo = heigthPlayerOne >= heightStandard
-console.log(comparingHeightTwo);
+if(playerThree.still ===  true){
+    playerNbaAction.push(playerThree)
+}else{
+    alert("Item não adicionado")
+}
 
-const comparingHeightThree = heigthPlayerOne >= heightStandard
-console.log(comparingHeightThree);
 
-const comparingHeightFour = heigthPlayerOne >= heightStandard
-console.log(comparingHeightFour);
+if(playerFour.still ===  true){
+    playerNbaAction.push(playerFour)
+}else{
+    alert("Item não adicionado")
+}
+
+console.log(playerNbaAction);
+
+
 
 
 
