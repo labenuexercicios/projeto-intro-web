@@ -39,7 +39,6 @@ main {
   /* A imagem de fundo possui uma pizza que não está aparecendo - corrigir */
   background-image: url(./mídiasparasite/pizza-fundoescuro.jpg);
   background-size: cover;
-  background-position: center;
   border-color: black;
   border-style: dashed;
 }
