@@ -3,11 +3,12 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     list-style:none;
+    text-decoration: none;
 }
 
 header{
     display: flex;
-    background-color: green;
+    background-color:lightseagreen;
     /* border: 1px black solid; */
     justify-content: center;
 }
@@ -24,9 +25,9 @@ main{
     flex-direction: column;
     flex-grow: 2;
     /* border: 1px black solid; */
-    background-color: lightseagreen;
+    background-color: lightgreen;
 }
-itens{
+.container{
     display: flex;
     /* border: 1px black solid; */
     background-color: blanchedalmond;
@@ -37,6 +38,7 @@ itens{
 img{
     height: 350px;
     width: 350px;
+    
 }
 topo{
     display: flex;
@@ -53,21 +55,28 @@ footer{
     justify-content: space-around;
     background-color: lightgreen;
 }
-.jogo1{
+.jogo{
     display: grid;
     justify-items: center;
     max-width: 350px;
 }
-.jogo2{
-    display: grid;
-    justify-items: center;
-    max-width: 350px;
+
+section:hover{
+    background-color: lightblue;
 }
-.jogo3{
-    display: grid;
-    justify-items: center;
-    max-width: 350px;
-}
+
 ul{
     font-size: large;
+}
+.titulo{
+    color: darkslategrey;
+}
+#buscador{
+    height: 25px;
+}
+
+#nomejogo{
+    text-decoration: none;
+    color: darkslategrey;
+    font-size: 40px;
 }
