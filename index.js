@@ -42,6 +42,15 @@ let blackMirror= {
     genero:["Distopia", " Ficção científica", " Suspense", " Drama", " Sátira", " Ficção especulativa"],
     NotaPessoal:9,
 }
+
+let theBoys={
+    nome:"The Boys",
+    AnoDeLancamento: 2019,
+    episodios: 24,
+    continuaLancando: true,
+    genero:[" Super-herói", " Suspense"," Drama", " Humor ácido", " Ação"],
+    NotaPessoal:9,
+}
 // console.log(`nome:${nomeBlackMirror}
 // ano de lancamento:${AnoDeLancamentoBlackMirror}
 // Continua sendo lancado novos episodios? ${continuaLancandoBlackMirror}
@@ -50,13 +59,13 @@ let blackMirror= {
 //ideia posso tamber criar outro boolean "continua no ar?" ou seja continua na tv aberta ou em programas de streaming.
 
 //semana 1, exercicio 3. Faça um cálculo de média, entre os valores numéricos respectivos de cada item. Imprima o valor da média utilizando um console.log. Guarde este valor em uma const.
-const media= (blackMirror.episodios + Himym.episodios + Friends.episodios)/3;
-console.log("A media de episodios das 3 series e de: "+ media) 
+const media= (blackMirror.episodios + Himym.episodios + Friends.episodios+ theBoys.episodios)/4;
+console.log("A media de episodios das series e de: "+ media) 
 
 
 // 4. Com um console.log, imprima o resultado de uma operação lógica que checa se todos os valores de variáveis booleanas criadas até aqui são verdadeiras.
 
-const continuamLancando= (Friends.continuaLancando && Himym.continuaLancando && blackMirror.continuaLancando);
+const continuamLancando= (Friends.continuaLancando && Himym.continuaLancando && blackMirror.continuaLancando && theBoys.continuaLancando);
 console.log(`Checa se todos os valores de variáveis booleanas criadas até aqui são verdadeiras: ${continuamLancando}`)
 
 
@@ -71,6 +80,9 @@ for (const i in Himym) {
 }
 for (const i in blackMirror) {
     console.log(`${i}: ${blackMirror[i]}`)
+}
+for (const i in theBoys) {
+    console.log(`${i}: ${theBoys[i]}`)
 }
 
 // Crie pelo menos mais uma característica para o item que você criou. Esta característica deve ser um array. Mantenha o tipo de dado do array criado sempre o mesmo, isto é,
@@ -92,7 +104,12 @@ if(Himym.continuaLancando===true){
 if(blackMirror.continuaLancando===true){
     array.push(blackMirror)
 }else{
-    alert('objeto nao foi adcionado na array')
+    alert('objeto "Black Mirror" nao foi adcionado na array')
+}
+if(theBoys.continuaLancando===true){
+    array.push(theBoys)
+}else{
+    alert('objeto "The Boys" nao foi adcionado na array')
 }
 
 for (const i in array) {
@@ -131,7 +148,7 @@ Cidade: 'Londrina'
 
 console.log(mostrarProps(blackMirror))
 
-const Series= [Himym, Friends, blackMirror]
+const Series= [Himym, Friends, blackMirror, theBoys]
 console.log(Series)
  
 

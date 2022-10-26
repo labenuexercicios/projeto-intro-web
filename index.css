@@ -2,23 +2,23 @@
     margin: 0;
     padding: 0;
 }
-body{
+.body{
     margin: 0;
 }
 header{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex;
     justify-content: space-between;
     padding: 20px;
     background-color: black;
-    height: 10vh;
-}
+    height: 12vh;
+    width: 100%;
+} 
 main{
-    background-color: gainsboro;
     height: 90vh;
-    display: grid; 
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    display: flex; 
+   flex-direction: row;
 }
 
 .Titulo{
@@ -28,60 +28,112 @@ main{
     color: white;
     height: 100vh;
     padding: 1%;
-}
-.friends{
+} 
+
+
+
+/* .friends{
+    background-color: white;
+    color: black;
     width: 20vw;
-    /* background-color: white; */
+   height: 65vh;
     margin: 3rem;
-    grid-column: 1/4;
-    grid-row: 3/4;
-    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .himym{
+    background-color: white;
+    color: black;
     width: 20vw;
-    /* background-color: white; */
-    /* border: 1px solid black; */
+   height: 65vh;
     margin: 3rem;
-    grid-column: 3/5;
-    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .blackMirror{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* background-color: white; */
-    /* border: 1px solid black; */
+    background-color: ;
+    color: black;
+    width: 20vw;
+   height: 65vh;
     margin: 3rem;
-    grid-column: 5/7;
-    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.theBoys{
+    background-color: white;
+    color: black;
+    width: 20vw;
+   height: 65vh;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
 footer{
     background-color: black;
     color: white;
-    height: 5vh;
+    height: 3vh;
     text-align: center;
-    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 .textoFooter{
     padding-top: 10px;
     color: red;
     font-family: sans-serif;
 }
-.buttonLogIn{
+/* .buttonLogIn{
     
-}
-.imagem{
-
-    display: flex;
-    justify-content: center;
-    width: auto;
-    height: auto;
-}
+} */
 form{
     border-radius: 0.3em;
     padding: 0.3em;
 }
 form input, form button{
     font-size: 1em;
+}
+section{
+    color: black;
+    width: 20vw;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.imagem{
+    width: 100%;
+}
+@media screen and (max-width: 1500px) {
+    main{
+        display: flex; 
+        flex-direction: column;
+        height: 90%;
+        width: 100%;
+    }
+    section{
+        background-color: yellow;
+        width: 70%;
+    }
+    .imagem{
+        
+    }
+    footer{
+        height:5%;
+    }
+}
+@media screen and (max-device-width: 800px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }    
 }
