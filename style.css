@@ -36,8 +36,10 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  /* A imagem de fundo possui uma pizza que não está aparecendo - corrigir */
   background-image: url(./mídiasparasite/pizza-fundoescuro.jpg);
   background-size: cover;
+  background-position: center;
   border-color: black;
   border-style: dashed;
 }
@@ -46,7 +48,7 @@ main {
   display: flex;
   flex-direction: column;
   font-size:xx-large;
-  width: 30vw;
+  min-width: 30vw;
   margin-top: 1vh;
   margin-bottom: 2vh;
   background-color: gray;
@@ -84,8 +86,9 @@ main {
 .paiDasPizzas {
   display: flex;
   flex-direction: column;
-  flex-flow: wrap;
-  gap: 10px;
+  /* mexer nesse debaixo para ver posição das pizzas no site */
+  flex-flow:column;
+  gap: 4px;
 }
 
 .padraoContainerPizzas {
@@ -93,7 +96,7 @@ main {
   flex-direction: column;
   border: 1px;
   background-color: rgba(245, 245, 220, 0.699);
-  justify-items: center;
+  justify-items:center;
   align-items: center;
   border: 1px;
   border-color: black;
@@ -130,7 +133,7 @@ footer {
 
 #nomePedro {
   margin-left: 1rem;
-  grid-column: 1/2;
+  /* grid-column: 1/2; */
   align-self: center;
   justify-self: flex-start;
   font-size: 16px;
@@ -139,7 +142,7 @@ footer {
 
 #projeto {
   margin-right: 10px;
-  grid-column: 3/4;
+  /* grid-column: 3/4; */
   align-self: center;
   justify-self: flex-end;
   font-size: 16px;
@@ -147,14 +150,15 @@ footer {
 }
 
 #github {
-  
-  max-height: 4.5vh;
+  max-width: 24px;
+  max-height: 24px; 
   
 }
 
 #likendin {
- 
-  max-height: 4.5vh;
+  max-width: 24px;
+  max-height: 24px; 
+  
 }
 
  @media only screen and (max-width: 480px) {  img {width: 100vw}}
