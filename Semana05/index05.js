@@ -171,35 +171,46 @@ const pizzasSalgadas = (saborosasSalgadas) => {
 //e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. 
 //Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
 //Como fiz:
-console.log("Exercício 4")
-const recebeArrayObjetos = (arrayInformado, stringInformada) => {
-    const resultado = arrayInformado.filter((pizzaArraySaborosas0) => {
+// console.log("Exercício 4")
+// const recebeArrayObjetos = (arrayInformado, stringInformada) => {
+//     const resultado = arrayInformado.filter((pizzaArraySaborosas0) => {
 
-        return pizzaArraySaborosas0.pizza === stringInformada
+//         return pizzaArraySaborosas0.pizza === stringInformada
+//     })
+//     if (resultado.length > 0) {
+//         console.log(resultado[0])
+//     } else {
+//         // alert("Nenhuma pizza de anchovas encontrada")
+//     }
+    
+// }
+// recebeArrayObjetos(pizzaArraySaborosas0, "Pizza de quatro queijos")
+// recebeArrayObjetos(pizzaArraySaborosas0, "pizza de anchovas")
+
+console.log("Exercício 4")
+const inputPizza = document.getElementById("pizzaBuscador")
+const inputCodigoPizza = inputPizza.value
+function clicadoPesquisar () {
+    console.log(inputPizza.value)
+     recebeArrayObjetos(pizzaArraySaborosas0, inputPizza.value)
+}
+const recebeArrayObjetos = (arrayInformado, codigoInformado) => {
+    const resultado = arrayInformado.filter((pizza) => {
+        console.log(codigoInformado)
+        return pizza.codigo === codigoInformado
     })
     if (resultado.length > 0) {
         console.log(resultado[0])
     } else {
-        // alert("Nenhuma pizza de anchovas encontrada")
+        //  alert("Nenhuma pizza de anchovas encontrada")
     }
     
 }
-recebeArrayObjetos(pizzaArraySaborosas0, "Pizza de quatro queijos")
-recebeArrayObjetos(pizzaArraySaborosas0, "pizza de anchovas")
+
+
+// recebeArrayObjetos(pizzaArraySaborosas0,"pizza de anchovas")
 
 
 
-// Exemplo do Carlos, tentar aplicar no exercício 4
-// const retornaBlack = personagens.filter((possuiBlackNoNome) => {
-//     if(possuiBlackNoNome.identidade === personagemUsuario) {
-//         console.log(possuiBlackNoNome.identidade)
-//     } else {
-//         alert("nenhum item foi encontrado.")
-//     }
-// //Adicionar o ALERT que ficou faltando
-//     return possuiBlackNoNome.identidade === "Black Widow"
-// })
-
-// console.log(retornaBlack)
 
 //----------------------------------------------------------------------------------------------------------------------------------------------//

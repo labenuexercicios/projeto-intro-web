@@ -113,11 +113,6 @@ main {
   justify-content: center;
 }
 
-.imagensPizza {
-  display: flex;
-  justify-content: center;
-}
-
 footer {
   display: flex;
   background-color: black;
@@ -152,12 +147,17 @@ footer {
 }
 
 #github {
+  
   max-height: 4.5vh;
   
 }
 
 #likendin {
+ 
   max-height: 4.5vh;
 }
 
- @media only screen and (max-width: 480px) {  img {    width: 100vw;  }}
+ @media only screen and (max-width: 480px) {  
+  
+  img {width: 100vw}
+}
