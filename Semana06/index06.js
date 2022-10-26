@@ -255,13 +255,13 @@ console.log(minhasPizzas)
 
 let linhasIngrendientes03 = document.createElement("li")
 const novoConteudoPizza03 = document.createTextNode(`⏲️Tempo de preparo:${objetoPizzaSal03.tempoPreparo}min`)
-linhasIngrendientes03.appendChild(novoConteudoPizza02)
+linhasIngrendientes03.appendChild(novoConteudoPizza03)
 minhasPizzas[2].insertAdjacentElement("beforeend", linhasIngrendientes03)
 console.log(minhasPizzas)
 
 let linhasIngrendientes04 = document.createElement("li")
 const novoConteudoPizza04 = document.createTextNode(`⏲️Tempo de preparo:${objetoPizzaDoce01.tempoPreparo}min`)
-linhasIngrendientes04.appendChild(novoConteudoPizza02)
+linhasIngrendientes04.appendChild(novoConteudoPizza04)
 minhasPizzas[3].insertAdjacentElement("beforeend", linhasIngrendientes04)
 console.log(minhasPizzas)
 
