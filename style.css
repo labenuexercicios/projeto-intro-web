@@ -36,7 +36,7 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-image: url(./mídiasparasite/pizza-fundoescuro.jpg);
+  background-image: url(../projeto-intro-web/Semana06/mídiasparasite/pizza-fundoescuro.jpg);
   background-size: cover;
   border-color: black;
   border-style: dashed;
