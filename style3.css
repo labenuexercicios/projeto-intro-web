@@ -9,7 +9,6 @@
 }
 
 .line{
-    /* padding: 3px; */
     width: 100vw;
     height: 0.4rem;
     background-color: #370C59;
@@ -697,7 +696,7 @@
   @media (max-width:352px){
 
     .banner span{
-      font-size: 2rem;
+      font-size: 1rem;
     }
     footer img{
    
@@ -706,6 +705,7 @@
     }
 
     .containerHeader{
+
       grid-template-columns: 1fr 5fr 2fr;
       margin-bottom: 3rem;
       justify-content: space-around;
@@ -764,11 +764,21 @@
     margin-left: 0rem;
 
   }
+  .banner span{
+    font-size: 2rem;
+  }
   
   }
   @media (max-width:425px){
     .centralHeader h1{
       font-size: 2rem;
+    }
+    .banner span{
+      font-size: 1rem;
+      align-self: flex-end;
+    }
+    .banner h1{
+      font-size: 1.5rem;
     }
   }
 
@@ -778,8 +788,13 @@
     }
     .direitaHeader input{
       margin-left: -2rem;
-      padding-right: 0rem;
+      padding-right: 5rem;
       width: 5rem;
        
     }
-  }
+    .direitaHeader #botao2{
+      margin-left: 2px;
+    }
+    }
+
+   

@@ -1,12 +1,5 @@
 
-// document.querySelector('.brigadeiros').click(function(){
-//     document.querySelector('.menuLateral ul .itensBrigadeiro').toggleClass('mostra');
-// });
-// document.querySelector('.btnAbre').click(function(){
-//     document.querySelector('.menuLateral').toggleClass('mostra');
-// });
-
-
+//Primeiro Projeto com a graça de Deus
 //const listaProdutos = []
 const listaProdutos = [ // lista de produtos adicionados os produtos a uma array, onde cada produto é um
     
@@ -14,47 +7,47 @@ const listaProdutos = [ // lista de produtos adicionados os produtos a uma array
 
     // objeto
     {
-        nome: "brigadeiro",
+        nome: "BRIGADEIRO",
         categoria: "docinho",
         estoque: false,
         valor: 2.50,
-        ingredientes: ["Chocolate em pó", "Leite Condensado", "Chocolate Granulado"],
+        ingredientes: ["Chocolate em pó", " Leite Condensado", " Chocolate Granulado"],
         imagem: "./img/brigadeiro2.jpg"
     },
     {
-        nome: "cupcake",
+        nome: "CUPCAKE",
         categoria: "Bolos",
         estoque: true,
         valor: 4.5,
-        ingredientes: ["Farinha de Trigo", "Açucar", "Fermento", "Chocolate"],
+        ingredientes: ["Farinha de Trigo", " Açucar", " Fermento", " Chocolate"],
         imagem: "./img/cup4.jpg"
     },
     {
-        nome: "cone",
+        nome: "CONE",
         categoria: "Cones",
         estoque: true,
         valor: 7,
-        ingredientes: ["Cone", "Confete", "Ganache", "Leite em pó"],
+        ingredientes: ["Cone", " Confete", " Ganache", " Leite em pó"],
         imagem: "./img/cone3.jpg"
     },
     {
-        nome: "trufa",
+        nome: "TRUFA",
         categoria: "Trufas",
         estoque: true,
         valor: 3,
-        ingredientes: ["Chocolate", "Leite Condensado"],
+        ingredientes: ["Chocolate", " Leite Condensado"],
         imagem: "./img/trufa.jpeg"
     },
     {
-        nome: "beijinho",
+        nome: "BEIJINHO",
         categoria: "docinho",
         estoque: false,
         valor: 2.5,
-        ingredientes: ["Leite Condensado", "Leite em pó", "coco granulado"],
+        ingredientes: ["Leite Condensado", " Leite em pó", " coco granulado"],
         imagem: "./img/beijinho.jpg"
     },
     {
-        nome: "nozinho",
+        nome: "NOZINHO",
         categoria: "panificados",
         estoque: false,
         valor: 8,
@@ -99,8 +92,8 @@ const buscaDigitada2 = document.querySelector('#buscaDigitada')
 let produtoDigitado
 function buscaProdutos(){
      produtoDigitado = listaProdutos.filter(produto=>{
-        
-        if(buscaDigitada2.value === produto.nome.toLowerCase()){
+        //if(produto.nome.toLowerCase().includes(buscaDigitada2.value.toLowerCase())){
+        if(buscaDigitada2.value.toLowerCase() === produto.nome.toLowerCase()){
             return produto
         }else{
             produtoNaoEncontrado()
@@ -117,7 +110,7 @@ function mostraProduto(prodAExibir){
 
     <div><img src="${prodAExibir[0].imagem}"/> </div>
     <div class="produto">
-    <p>Nome: ${prodAExibir[0].nome}</p>
+    <p>Nome: ${prodAExibir[0].nome[0]+prodAExibir[0].nome.substring(1).toLowerCase()}</p>
     <p>Categoria: ${prodAExibir[0].categoria}</p>
    
     <p>Ingredientes: ${prodAExibir[0].ingredientes}</p>
@@ -133,22 +126,6 @@ function mostraProduto(prodAExibir){
         </div>
         `
     }
-//console.log(checarEstoque(listaProdutos))
-
-// segunda maneira de adicionar o produto utilizando o if ternario
-
-//produto2.estoque ? listaProdutos.push(produto2):alert("Produto em falta")
-// array listaProdutos está com produtos que constam em estoque
-//console.log (produto2.nome)
-//console.log(listaProdutos)
-
-// for(let i of produto1.ingredientes){
-//     let junta = i.ingredientes
-//     junta += i.ingredientes
-//     console.log(i.ingredientes)
-//     console.log(junta)
-// }
-// console.log (listaProd)
 
 
 // comando para alterar para string os ingredientes
@@ -161,47 +138,29 @@ const alteraParaString = (arrayEnviado) => {
     return string
 
 }
-// console.log(alteraParaString(listaProdutos)) voltar console
-// console.log(listaProdutos) voltar console
+console.log(alteraParaString(listaProdutos)) 
+console.log(listaProdutos) 
 for (let i of listaProdutos) {
-    // console.log(i) voltar console
+    console.log(i) 
 }
 
 for (let i in listaProdutos) {
-    // console.log(listaProdutos[i].nome.toUpperCase(), listaProdutos[i].categoria, listaProdutos[i].estoque, listaProdutos[i].valor, listaProdutos[i].ingredientes)
-  //  voltar console
+    console.log(listaProdutos[i].nome.toUpperCase(), listaProdutos[i].categoria, listaProdutos[i].estoque, listaProdutos[i].valor, listaProdutos[i].ingredientes)
 }
 
-// function devolveString (parametro){
-//     let  stringDevolvida 
-//     for(let i in parametro){
-//         for(let k of i){
-//             console.log(k.parametro[i])
-//             stringDevolvida += (`${String(k.parametro[i])}`) 
-//            }}
-//     return stringDevolvida
-// }
-// console.log(devolveString(listaProdutos))
-// function devolveString (parametro){
-//     for(const i of parametro){
-//         for(const j in i){
-//             console.log (parametro[i][j])
-//         }
-
-//  }}
 // Ex.03 recebe um array de objetos e transforma tudo em string
 function objetoString (listaOjetosEnviada){
     let juntaTudo = " "
     for(let itens of listaOjetosEnviada){
         for(let k in itens){
-            // console.log(itens[k]) voltar console
+            console.log(itens[k]) 
             juntaTudo += (itens[k] + " ")
         }
     }
     return juntaTudo
     }
 
-// console.log(objetoString(listaProdutos)) voltar console
+console.log(objetoString(listaProdutos))
 
 // objeto listaProdutos, dentro deste objeto na propriedade ingredientes tenho um array
 
@@ -223,11 +182,79 @@ const recebeArrayObjetos = (arrayInformado, stringInformada) => {
         return item.nome === stringInformada
     })
     if (resultado.length > 0) {
-        // console.log(resultado) voltar console
+        console.log(resultado) 
     } else {
         alert("Nenhum ingrediente encontrado")
     }
 }
+
+ 
+//Media dos valores
+let soma= 0
+function mediaProdutos(listaProdutos){
+for(i of listaProdutos){
+    
+    soma += i.valor
+}
+soma = soma/listaProdutos.length
+console.log(" A média dos valores dos produtos é: ",soma)
+
+}
+
+mediaProdutos(listaProdutos) // exibindo media do valor dos produtos na tela
+
+function checarProdutoEstoque (listaProdutos){
+    for(i of listaProdutos){
+        if(i.estoque === false){
+            console.log(`Produto ${i.nome} está em falta, pois seu status é: ${i.estoque}`)
+        }else{
+            console.log(`Produto ${i.nome} consta em estoque, pois seu status é: ${i.estoque}`)
+        }
+    }
+}
+
+checarProdutoEstoque(listaProdutos)
+
+
+
+// Códigos não utilizados no momento, retirados da sequência
+
+//console.log(checarEstoque(listaProdutos))
+
+// segunda maneira de adicionar o produto utilizando o if ternario
+
+//produto2.estoque ? listaProdutos.push(produto2):alert("Produto em falta")
+// array listaProdutos está com produtos que constam em estoque
+//console.log (produto2.nome)
+//console.log(listaProdutos)
+
+// for(let i of produto1.ingredientes){
+//     let junta = i.ingredientes
+//     junta += i.ingredientes
+//     console.log(i.ingredientes)
+//     console.log(junta)
+// }
+// console.log (listaProd)
+
+
+// function devolveString (parametro){
+//     let  stringDevolvida 
+//     for(let i in parametro){
+//         for(let k of i){
+//             console.log(k.parametro[i])
+//             stringDevolvida += (`${String(k.parametro[i])}`) 
+//            }}
+//     return stringDevolvida
+// }
+// console.log(devolveString(listaProdutos))
+// function devolveString (parametro){
+//     for(const i of parametro){
+//         for(const j in i){
+//             console.log (parametro[i][j])
+//         }
+
+//  }}
+
 
 //  recebeArrayObjetos(listaProdutos, "Cone")
 // const botaoTeste = document.getElementById("botao2")
@@ -252,4 +279,6 @@ const recebeArrayObjetos = (arrayInformado, stringInformada) => {
 //         }
 //         }
     // }
- 
+
+
+
