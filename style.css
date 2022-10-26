@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    background-color: yellow;
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+main{
+    background-color: orange;
+    height: 80rem;
+
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.tenista1, .tenista2, .tenista3, .tenista4{
+    border: 2px solid blue;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    width: 40rem;
+}
+img{
+    width: 12rem;
+    height: 9rem;
+    border-radius: 50%;
+}
+
+li{
+    list-style: none; /*tirar pontos*/
+}
+
+footer{
+   text-align: center;
+   width: 100%;
+    height: 3rem;
+    padding: 2px;
+    
+    
+}
+
+footer img{
+    width: 2.5rem;
+    height: 2.5rem;
+   
+}
+
+/* @media screen and (min-device-width: 667px) and (max-device-width: 800px){}
+ipad */
+
+
+
+
+@media screen and (min-device-width : 320px) and (max-device-width : 667px) {
+    /* celulares */
+
+    header{
+        font-size:12px ;
+    }
+
+    .tenista1, .tenista2, .tenista3, .tenista4{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr ;
+        height:25rem;
+        width:20rem ;
+       
+    }
+    main{
+        height: 116rem;
+    }
+
+    footer{
+        font-size: 14px;
+    }
+
+
+
+    
+   
+}
+
