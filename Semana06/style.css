@@ -50,8 +50,9 @@ main {
   min-width: 30vw;
   margin-top: 1vh;
   margin-bottom: 2vh;
-  background-color: gray;
-  color: rgba(233, 233, 30, 0.919);
+  background-color: rgb(184, 50, 50);
+  color: #e9e91eea;
+  font-weight: bold;
 }
 
 .buscadorPizza-button:active {
@@ -59,8 +60,18 @@ main {
   background-color: gray;
   color: white;
   font-family: serif;
-
 } 
+
+#pizzaBuscador{
+display: flex;
+background-color: white;
+min-width: 30vw;
+min-height: 5vh;
+color: black;
+font-style: normal;
+font-display: 16px;
+font-weight: bold;
+}
 
 /* verificar a necessidade de usar ou não medidas relativas*/
 .buscar {
@@ -84,7 +95,7 @@ main {
 
 .paiDasPizzas {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   /* mexer nesse debaixo para ver posição das pizzas no site */
   flex-flow:column;
   gap: 4px;
