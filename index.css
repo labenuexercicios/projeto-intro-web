@@ -112,7 +112,7 @@ section{
 .imagem{
     width: 100%;
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1200px) {
     main{
         display: flex; 
         flex-direction: column;
@@ -121,7 +121,9 @@ section{
     }
     section{
         background-color: yellow;
-        width: 70%;
+        width: 40%;
+        
+        align-self: center;
     }
     .imagem{
         
