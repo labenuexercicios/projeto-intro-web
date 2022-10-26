@@ -157,7 +157,4 @@ footer {
   max-height: 4.5vh;
 }
 
- @media only screen and (max-width: 480px) {  
-  
-  img {width: 100vw}
-}
+ @media only screen and (max-width: 480px) {  img {width: 100vw}}
