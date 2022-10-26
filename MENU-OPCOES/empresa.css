@@ -5,6 +5,7 @@
 }
 body{
   font-family: Helvetica;
+  height: 100%;
 }
 
 .container{
@@ -94,8 +95,9 @@ main{
   display: flex;
   /* flex-wrap: wrap; */
   background-image: url(../midia/21.jpg);
-  background-size: cover;
-  background-size: 100%;
+  background-size: contain;
+  background-size: 100% 100%;
+  height: 100%;
   
   background-repeat: no-repeat;
   grid-template-columns: 1fr 1fr;
@@ -141,11 +143,6 @@ color: #dc143c
 }
 
 
-
-
-
-
-
 footer{
 display: grid;
 width: 100%;
@@ -182,4 +179,15 @@ height: 20px;
   justify-content:center;
   background-color: white;
 }
+}
+@media screen and (max-device-width: 1357px){
+  main{
+    display:block;
+    height: 172vh;
+    justify-content: center;
+  }
+ 
+  #H3-SobreEmpresa{
+    margin-top: 120px;
+  }
 }

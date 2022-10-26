@@ -238,7 +238,27 @@ footer p{
   width: 20px;
   height: 20px;
 }
-@media screen and (max-device-width: 425px){
-  
-  
+
+
+
+@media screen and (max-device-width: 1074px){
+  #sobreCartao-texto{
+    height: 50%;
+    max-height: 460px;
+    padding: 8vh;
+  }
+  #sobreCartao{
+    height: 90vh;  
+    margin-bottom: 70px;
+  }
+  #sobreCartao-img img{
+    height: 55vh;
+    max-height: 550px;
 }
+main{
+  height: 140vh;
+}
+
+
+}
+

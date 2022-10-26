@@ -92,9 +92,7 @@ main{
 
   display: grid;
   display: flex;
-  /* flex-wrap: wrap; */
   background-image: url(../midia/15.jpg);
-  /* height:60vw ; */
   background-size: cover ;
   background-repeat: no-repeat;
 }
@@ -153,5 +151,8 @@ height: 20px;
   display: block;
   justify-content:center;
   background-color: white;
+}
+main{
+  height: 160vh;
 }
 }

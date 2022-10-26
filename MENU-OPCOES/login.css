@@ -102,6 +102,7 @@ form{
   text-align: center;
   background-color: rgb(231, 126, 161);
   padding: 10px;
+  max-height: 200px;
   border-radius: 20px; 
 }
 input{
@@ -148,5 +149,11 @@ height: 20px;
   display: block;
   justify-content:center;
   background-color: white;
+}
+main{
+  height: 160vh;
+}
+form{
+  max-height: 200px;
 }
 }
