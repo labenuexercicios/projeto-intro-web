@@ -26,7 +26,7 @@ body {
   border-style: groove;
   border-top: 0.2vw solid black;
   border-bottom: 0.2vw solid black;
-  background-color: #ec472ada;
+  background-color: #ec9e2ada;
 }
 
 
@@ -37,10 +37,11 @@ main {
   justify-content: space-around;
   align-items: center;
   /* A imagem de fundo possui uma pizza que não está aparecendo - corrigir */
-  background-image: url(./mídiasparasite/pizza-fundoescuro.jpg);
+  background-image: url(./mídiasparasite/vecteezy_repeated-slice-of-pizza-with-a-blue-background_.jpg);
   background-size: cover;
   border-color: black;
-  border-style: dashed;
+  border-style:groove;
+  border: 2px;
 }
 
 .buscadorPizza {
@@ -50,9 +51,12 @@ main {
   min-width: 30vw;
   margin-top: 1vh;
   margin-bottom: 2vh;
-  background-color: rgb(184, 50, 50);
-  color: #e9e91eea;
+  background-color: rgba(41, 166, 208, 0.826);
+  color: rgb(246, 246, 10);
   font-weight: bold;
+  border: 2px;
+  border-style: groove;
+  border-color: black;
 }
 
 .buscadorPizza-button:active {
