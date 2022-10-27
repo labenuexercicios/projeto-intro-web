@@ -152,16 +152,20 @@ const Series= [Himym, Friends, blackMirror, theBoys]
 console.log(Series)
  
 
-const buscaNome = (Series, string) => {
-    const resultado= Series.filter((objeto) =>{
-        return objeto.genero === string || objeto.nome === string
-    })
+// const buscaNome = (Series, string) => {
+//     const resultado= Series.filter((objeto) =>{
+//         return objeto.genero === string || objeto.nome === string
+//     })
     
-    if(resultado.lenght > 0){
-        console.log(resultado)
-    }else{
-        alert('Nenhum item encontrado.')
-    }
-}
+//     if(resultado.lenght > 0){
+//         console.log(resultado)
+//     }else{
+//         alert('Nenhum item encontrado.')
+//     }
+// }
+const search = document.querySelector('#busca');
+
+function searchInKeyUp(){};
 
 
+search.addEventListener('keyup', searchInKeyUp);
