@@ -6,19 +6,41 @@
 }
 
 header{
-    background-color: yellow;
     display: flex;
-    height: 20vh;
+    height: 35vh;
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    background-image: url("Assets/img/tenis-11-448x306-1.jpg");
+    
+}
+
+.tituloHeader{
+    display: grid;
+    color:white;
+    font-size: 5rem;
+    text-shadow:2px 2px 3px black;
+
+}
+.subtituloHeader{
+    display: grid;
+    padding: 2rem;
+    justify-items: center;
+    font-size: 2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow:2px 2px 3px white; /*acrescenta sombra ao texto*/
 }
 
 
 main{
-    background-color: orange;
-    height: 80rem;
+    background-color:coral;
+    height: 95rem;
 
+}
+
+.nomeTenista{
+    font-size: 25px;
+    padding: 1rem;
 }
 
 .principal{
@@ -29,16 +51,22 @@ main{
 }
 
 .tenista1, .tenista2, .tenista3, .tenista4{
-    border: 2px solid blue;
+    border: 5px solid burlywood ;
+    border-radius: 3%;
     margin-top: 10%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 2rem;
     width: 40rem;
+    background-color:burlywood;
+    font-size: 17px;
+    
+    
 }
+
 img{
-    width: 12rem;
-    height: 9rem;
+    width: 15rem;
+    height: 12rem;
     border-radius: 50%;
 }
 
@@ -51,48 +79,51 @@ footer{
    width: 100%;
     height: 3rem;
     padding: 2px;
-    
-    
+    font-size: 14px;    
 }
 
 footer img{
     width: 2.5rem;
     height: 2.5rem;
-   
+    
 }
-
-/* @media screen and (min-device-width: 667px) and (max-device-width: 800px){}
-ipad */
-
-
-
 
 @media screen and (min-device-width : 320px) and (max-device-width : 667px) {
     /* celulares */
 
-    header{
-        font-size:12px ;
+header{
+    font-size:12px ;
     }
 
-    .tenista1, .tenista2, .tenista3, .tenista4{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 2fr ;
-        height:25rem;
-        width:20rem ;
-       
-    }
-    main{
-        height: 116rem;
+.tenista1, .tenista2, .tenista3, .tenista4{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr ;
+    height:30rem;
+    width:20rem ;
     }
 
-    footer{
-        font-size: 14px;
-    }
-
-
-
-    
-   
+main{
+    height: 145rem;
 }
 
+footer{
+    font-size: 14px;
+    }
+
+.tituloHeader{
+    display: grid;
+    color:white;
+    font-size: 3.5rem;
+    text-shadow:2px 2px 3px black;
+
+}
+.subtituloHeader{
+    display: grid;
+    padding: 2rem;
+    justify-items: center;
+    font-size: 1.5rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow:2px 2px 3px white; /*acrescenta sombra ao texto*/
+    }
+    
