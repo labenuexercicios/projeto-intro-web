@@ -2,116 +2,59 @@
     margin: 0;
     padding: 0;
 }
-.body{
-    margin: 0;
+ul{
+    list-style: none;
 }
 header{
     display: flex;
     flex-direction: column;
-    align-items: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 30px;
     background-color: black;
-    height: 12vh;
-    width: 100%;
 } 
-main{
-    height: 90vh;
-    display: flex; 
-   flex-direction: row;
-}
-
-.Titulo{
-    padding: 0;
-    margin: 0;
-    background-color: black;
-    color: white;
-    height: 100vh;
-    padding: 1%;
-} 
-
-
-
-/* .friends{
-    background-color: white;
-    color: black;
-    width: 20vw;
-   height: 65vh;
-    margin: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.himym{
-    background-color: white;
-    color: black;
-    width: 20vw;
-   height: 65vh;
-    margin: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.blackMirror{
-    background-color: ;
-    color: black;
-    width: 20vw;
-   height: 65vh;
-    margin: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.theBoys{
-    background-color: white;
-    color: black;
-    width: 20vw;
-   height: 65vh;
-    margin: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
 footer{
     background-color: black;
-    color: white;
-    height: 3vh;
+    height: 40px;
     text-align: center;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 .textoFooter{
     padding-top: 10px;
-    color: red;
-    font-family: sans-serif;
+
 }
-/* .buttonLogIn{
-    
-} */
-form{
+.form{
     border-radius: 0.3em;
     padding: 0.3em;
 }
-form input, form button{
+form input{
     font-size: 1em;
 }
 section{
+    padding-left: 20px;
+    padding-top: 40px;
+    border: 1px black solid;
     color: black;
-    width: 20vw;
-    margin: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
+    width: 90%;
+    height: 90%;
+    margin: 3%;
+    justify-content: center;
 }
-.imagem{
-    width: 100%;
+.programas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows:repeat(6, 60px) ;
 }
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+#streaming{
+    width: 235px;
+    height: 80px;
+}
+
 @media screen and (max-width: 1200px) {
     main{
         display: flex; 
@@ -123,9 +66,6 @@ section{
         width: 40%;
         
         align-self: center;
-    }
-    .imagem{
-        
     }
     footer{
         height:5%;
@@ -142,7 +82,7 @@ section{
     .main{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        
     }    
     section{
         width: 70%;
@@ -150,5 +90,5 @@ section{
         display: flex;
         flex-direction: column;
         justify-content:center;
-    }
+    } 
 }
