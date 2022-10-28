@@ -1,0 +1,258 @@
+:root{
+    --cor1: #2f2c2b ;
+    --cor2: #413726;
+    --cor5: #79451d ;
+    --cor3:  #d7621a ;
+    --cor4:  #fd8d32 ;
+}
+
+
+*{
+    font-family: fantasy;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* global */
+
+
+/*corpo*/
+
+.conteiner{
+    display:flex;
+    flex-direction: column;
+    height: 120vh;
+}
+
+/*cabeca*/
+
+header{
+    background-color: var(--cor5);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 20vh;
+
+}
+#foto1, #foto2{
+    min-width: 10px;
+    min-height: 10px;
+    max-height: 15vh;
+    max-width: 15vw;
+}
+
+#foto2:hover{
+    transform: scale3d(1.3,1.3,1);
+}
+#foto1:hover{
+    transform: scale3d(1.3,1.3,1);
+} 
+
+#topcentro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vmin;
+    text-shadow: black 0.1em 0.1em;
+}
+#texto1{
+    color: var(--cor3);
+}
+#texto1:hover{
+    transform: scale3d(1.1,1.1,1);
+    text-shadow: black 0.2em 0.2em;
+}
+/*navegação*/
+nav{
+    background-color: var(--cor2);
+    height: 15vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao{
+    background-color: var(--cor4);
+    font-size: 2vmax;
+    border-radius: 1px 10px 1px 10px;
+    width: 50vmin;
+    height: 3vmax;
+    border: 2px solid black;
+    box-shadow: 1px 1px 1px 1px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#icone{
+    height: 4vmin;
+    width: 4vmin;
+    background-color: var(--cor3);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+#icone:hover{
+    transform: scale3d(1.1,1.1,1);
+
+}
+#faca{
+    width: 25vmin;
+    height: 15vmin;
+}
+
+/*corpo*/
+
+main{
+    background-color: var(--cor3);
+    display: flex; 
+    flex-direction: column;
+    height: 150vh;
+}
+#questio{
+    background-color: var(--cor4);
+    flex-grow: 0.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black ;
+}
+#cartao{
+    background-color: var(--cor3);
+    width: 55vmin;
+    height: 12vmin;
+    border-radius: 20px;
+    border: 1px solid var(--cor5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 2px 4px rgb(35, 35, 35);
+}
+#painel{
+    background-color: var(--cor3);
+    flex-grow: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: auto;
+    margin-top: 2vmin;
+    align-items: center;
+    justify-content: center;
+}
+#olho, #olho2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+/*Banner*/
+.banner{
+    height: 50vmin;
+    width: 30vmin;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 1px 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner:hover{
+    transform: scale3d(1.1,1.1,1);
+    box-shadow: 2px 1px 1px 1px black;
+
+}
+#produto1{
+    height: 25vmin;
+    width: 25vmin;
+    margin-top: 5px;
+    border: 2px solid black;
+
+}
+#valor{
+    background-color: var(--cor1);
+    width: 30vmin;
+    height: 5vmin;
+    color: var(--cor4);
+    border-radius: 0px 0px 5px 5px;
+    border: 1px solid black;
+    font-size: 3vmin;
+    text-align: center;
+}
+#nomeProduto1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor3);
+    width: 29.7vmin;
+    height: 12vmin;
+    font-size: 4vmin;
+}
+#estilo{
+    height: 3vmin;
+    width: 29.7vmin;
+    text-align: center; 
+    font-size: 2.5vmin;
+    font-family: Arial, Helvetica, sans-serif
+}
+/*input*/
+
+label{
+    background-color: var(--cor3);
+    border-radius: 10px;
+}
+#textoBusca{
+    font-size: 4vmin;
+    text-align: center;
+    text-shadow: red 0.1em 0.1em;
+}
+#Input{
+    color: red;
+    width: 35vmin;
+    border-radius: 10px;
+    height: 6vmin;
+    font-size: 2rem;
+
+}
+button{
+    width: 15vmin;
+    border-radius: 10px;
+    height: 5vmin;
+}
+button:hover{
+    background-color: var(--cor4);
+}
+
+/*footer*/
+footer{
+    background-color: var(--cor2);
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+}
+
+#footerFoto1{
+    width: 15vmin;
+    height: 10vmin;
+}
+
+#face, #wpp, #instagram{
+    width: 50px;
+    height: 50px;
+    padding: 1vmin;
+}
+
+#redeS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor2)
+}
+
+#textoFooter{
+    font-size: 2rem;
+    color: var(--cor3);
+}
+#zombie{
+    width: 10vmin;
+    height: 10vmin;
+}
+
