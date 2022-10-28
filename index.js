@@ -72,7 +72,6 @@ const buscar = (event) => {
         } else {
             todasSections[i].classList.remove("invisible")
         }
-
     }
     
     if(!jogos[0].jogo.toLowerCase().includes(inputBusca.value.toLowerCase()) && !jogos[1].jogo.toLowerCase().includes(inputBusca.value.toLowerCase()) && !jogos[2].jogo.toLowerCase().includes(inputBusca.value.toLowerCase())){
