@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: rgb(185, 178, 178);
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho{
+    margin: 5px;
+    color: aliceblue;
+    background-color: black;
+}
+
+.pesquisa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.corpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 86vh;
+}
+
+img{
+    float: left;
+}
+
+.frostpunk{
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: rgb(221, 188, 80);
+    width: 35vw;
+    height: 12vh;
+    text-align: center;
+    align-items: center;
+}
+
+.hunt{
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: rgb(221, 188, 80);
+    width: 35vw;
+    height: 12vh;
+    text-align: center;
+    align-items: center;
+}
+
+.wow{
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: rgb(221, 188, 80);
+    width: 35vw;
+    height: 12vh;
+    text-align: center;
+    align-items: center;
+}
+
+.rodape{
+    margin: 5px;
+    color: aliceblue;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 5vh;
+    align-items: center;
+}
+
+@media screen and (max-device-width: 1130px){
+    
+    .frostpunk{
+        margin: 5px;
+        padding: 5px;
+        border: 2px solid black;
+        background-color: rgb(221, 188, 80);
+        width: 90vw;
+        height: 12vh;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .hunt{
+        margin: 5px;
+        padding: 5px;
+        border: 2px solid black;
+        background-color: rgb(221, 188, 80);
+        width: 90vw;
+        height: 12vh;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .wow{
+        margin: 5px;
+        padding: 5px;
+        border: 2px solid black;
+        background-color: rgb(221, 188, 80);
+        width: 90vw;
+        height: 12vh;
+        text-align: center;
+        align-items: center;
+    }
+}
