@@ -146,12 +146,6 @@ Footer {
 
     }
 
-    .search-txt {
-
-        padding: 10px;
-
-    }
-
     .tituloSuco1,
     .tituloSuco2,
     .tituloSuco3 {
@@ -230,7 +224,7 @@ Footer {
         }
 
         h1 {
-            font-size: 2em;
+            font-size: 1em;
         }
 
         .tituloSuco1,
