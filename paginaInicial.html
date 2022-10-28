@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Stock</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="mostarCarrosInicial()">
+    <Header>
+        <h1 class="titulo">Cars Stock</h1>
+        <h3>Inicio</h3>
+        <a class="caracteristicas" href="./caracteristicas.html" onclick="">
+            <h3>Caracteristicas</h3>
+        </a>
+        <label for="pesquisa">
+            <input class="botao" type="text" id="pesquisa" placeholder="Nome do carro">
+            <button id="botao" onclick="retornaCarro()" class="botao">Pesquisar</button>
+        </label>
+    </Header>
+    <main id="main">
+        <div id="div-inicial" class="geralInicial">
+            <!-- <section>
+                <img id="imagemAudi" class="imagem" alt="Imagem AudiR8">
+                <div class="card-body">
+                    <a id="linkAudi" target="_blank">
+                        <h3 id="audiNome"></h3>
+                    </a>
+                </div>
+            </section>
+            <section>
+                <img id="imagemMaserati" class="imagem" alt="Imagem Maserati">
+                <div class="card-body">
+                    <a id="linkMaserati" target="_blank">
+                        <h3 id="maseratiNome"></h3>
+                    </a>
+
+                </div>
+            </section>
+            <section>
+                <img id="imagemMercedes" class="imagem" alt="Imagem Mercedes-Benz">
+                <div class="card-body">
+                    <a id="linkMercedes" target="_blank">
+                        <h3 id="mercedesNome"></h3>
+                    </a>
+
+                </div>
+            </section>
+            <section>
+                <img id="imagemLambo" class="imagem" alt="Imagem Huracán">
+                <div class="card-body">
+                    <a id="linkLambo" target="_blank">
+                        <h3 id="lamboNome"></h3>
+
+                </div>
+                </a>
+            </section>
+            <section>
+                <img id="imagemMustang" class="imagem" alt="Imagem Mustang">
+                <div class="card-body">
+                    <a id="linkMustang" target="_blank">
+                        <h3 id="mustangNome"></h3>
+                    </a>
+
+                </div>
+            </section>
+            <section>
+                <img id="imagemP1" class="imagem" alt="Imagem McLaren P1">
+                <div class="card-body">
+                    <a id="linkP1" target="_blank">
+                        <h3 id="p1Nome"></h3>
+                    </a>
+
+                </div>
+            </section>
+            <section>
+                <img id="imagemPorsche" class="imagem" alt="Imagem Porsche">
+                <div class="card-body">
+                    <a id="linkPorsche" target="_blank">
+                        <h3 id="porscheNome"></h3>
+                    </a>
+                </div>
+            </section>
+        </div> -->
+    </main>
+    <footer>
+        <p>Site criado por Luiz Fernando Kessler<a href="https://github.com/77nando77" target="_blank"> Meu github</a></p>
+    </footer>
+</body>
+
+</html>
