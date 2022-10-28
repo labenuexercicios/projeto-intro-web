@@ -33,13 +33,13 @@ const comparingHeightOne = heigthPlayerOne >= heightStandard
 console.log(` ${namePlayerOne.toUpperCase()} é maior que 185 ? ${comparingHeightOne}`);
 
 const comparingHeightTwo = heigthPlayerOne >= heightStandard
-console.log(comparingHeightTwo);
+console.log(` ${nameplayerTwo.toLocaleUpperCase()} é maior que 185? ${comparingHeightTwo}`);
 
 const comparingHeightThree = heigthPlayerOne >= heightStandard
-console.log(comparingHeightThree);
+console.log(` ${nameplayerThree.toLocaleUpperCase()} é maior que 185? ${comparingHeightTwo}`);
 
 const comparingHeightFour = heigthPlayerOne >= heightStandard
-console.log(comparingHeightFour);
+console.log(` ${nameplayerFour.toLocaleUpperCase()} é maior que 185? ${comparingHeightTwo}`);
 
 
 

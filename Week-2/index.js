@@ -10,7 +10,8 @@ const playerOne = {
     name: "Michael Jordan",
     height: 198,
     still: false,
- 
+    position: [ "Ala-Armador" , "Armador"]
+    
 }
 
 
@@ -20,7 +21,7 @@ const playerTwo = {
     name: "Lebron James",
     heigth: 206,
     still: true,
-
+    position: ["Ala-Armador","Armador","Ala-Pivô", "Ala"]
 }
 
 const playerThree = {
@@ -29,7 +30,7 @@ const playerThree = {
     name: "Shanquille O'Neal",
     heigth: 216,
     still: false,
-
+    position: [ "Pivô"]
 }
 
 const playerFour = {
@@ -38,7 +39,7 @@ const playerFour = {
     name: "Allen Iverson",
     height: 183,
     still: true,
-
+    position: [ "Ala-Armador" , "Armador"]
 } 
 
 // ********** Exercicio Two e Three *********************
