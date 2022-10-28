@@ -171,6 +171,8 @@ Footer {
     }
 
     Footer {
+
+        display: grid;
         width: 100%;
         font-size: 0.7em;
 
@@ -216,11 +218,11 @@ Footer {
 
     }
 
-    @media screen and (min-width: 480px) and (orientation: landscape) {
+    @media screen and (min-width: 510px) and (orientation: landscape) {
 
         main {
             height: 120em;
-           
+
         }
 
         h1 {
@@ -233,6 +235,8 @@ Footer {
             font-size: 1.5em;
             display: grid;
             justify-items: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
 
         }
 
