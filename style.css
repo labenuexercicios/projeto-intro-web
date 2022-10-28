@@ -126,7 +126,4 @@ footer{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-shadow:2px 2px 3px white; /*acrescenta sombra ao texto*/
     }
-img{
-    display: flex;
-    align-items: center;
-}
+    
