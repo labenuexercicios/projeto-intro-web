@@ -120,6 +120,7 @@ footer{
 
 .inputVazio{
     color: red;
+    font-family: Arial;
 }
 
 @media screen and (max-device-width: 900px) {
