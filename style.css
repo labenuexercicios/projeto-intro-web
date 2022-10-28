@@ -99,16 +99,16 @@ header{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 2fr ;
-    height:30rem;
+    height:38rem;
     width:20rem ;
     }
 
 main{
-    height: 145rem;
+    height: 175rem;
 }
 
 footer{
-    font-size: 14px;
+    font-size: 12px;
     }
 
 .tituloHeader{
