@@ -55,14 +55,15 @@
 
 // console.log ("Nome do Jogo: " + jogo3.toUpperCase() + "\nDesenvolvedora: " + desenvolvedora3 + "\nLançado em: " + lancamento3 + "\nO jogo esta na steam? " + temNaSteam3 + "\nPremios recebidos pelo jogo: ",  premios3)
 
-let superJogos = [jogo1 = {
+let superJogos = [
+jogo1 = {
   imagem: "https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/eEczyEMDd2BLa3dtkGJVE9Id.png",
   link: "https://pt.wikipedia.org/wiki/The_Last_of_Us",
   nome: "The Last of Us",
   desenvolvedora: "NaughtyDog",
   lancamento: 2013,
   temNaSteam: false,
-  premios: ["Melhor jogo", " Melhor Audio" , " Melhor História", " Desepenho"]
+  premios: ["Melhor jogo", " Melhor Audio", " Melhor História", " Desepenho"]
 },
 
 jogo2 = {
@@ -89,82 +90,84 @@ jogo3 = {
 // console.log(superJogos)
 if (jogo1.temNaSteam) {
   console.log(`${jogo1.nome} tem na Steam`);
-  
+
 } else {
-  jogo1.temNaSteam = "Não tem na Steam"
-  
-  if (jogo2.temNaSteam) {
+  console.log(`${jogo1.nome} não tem na Steam`);
+}
+
+if (jogo2.temNaSteam) {
     console.log(`${jogo2.nome} tem na Steam`);
-    
+
   } else {
-    jogo2.temNaSteam = "Não tem na Steam"
-    
+    console.log(`${jogo2.nome} não tem na Steam`);
+
   }
-  if (jogo3.temNaSteam) {
+ if (jogo3.temNaSteam) {
     console.log(`${jogo3.nome} tem na Steam`);
-    
+
   } else {
-    jogo3.temNaSteam = "Não tem na Steam"
-    
-  }}
-  // console.log(superJogos)
-let media = (jogo1.lancamento + jogo2.lancamento + jogo3.lancamento)/3
+    console.log(`${jogo3.nome} não tem na Steam`);
+
+  }
+
+// console.log(superJogos)
+let media = (jogo1.lancamento + jogo2.lancamento + jogo3.lancamento) / 3
 console.log(`A média entre os 3 anos de lançamento é ${media}`)
 
-  // semana 3
-  // for (let i in superJogos) {
-  //   superJogos[i].premios = superJogos[i].premios.toString() + ","
-  // }
-  // console.log(superJogos)
+// semana 3
+// for (let i in superJogos) {
+//   superJogos[i].premios = superJogos[i].premios.toString() + ","
+// }
+// console.log(superJogos)
 
-  // for (let i in superJogos) {
-  //   superJogos[i].temNaSteam = superJogos[i].temNaSteam.toString() + ","
-  // }
-  // console.log(superJogos)
-  // for (let i in naoTemNaSteam) {
-  //   naoTemNaSteam[i].premios = naoTemNaSteam[i].premios.toString() + ","
-  //}
-  //console.log(naoTemNaSteam)
-  //. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
-  // function busca(objeto1) {
-  //   return console.log(objeto1.nome)
-  // }
-  // busca(jogo2)
-  // 4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
-
-
-  console.log(jogo2)
-  console.log(jogo1)
-  console.log(jogo3)
-  const fazerABusca = (event) => {
-
-    event.preventDefault()
-
-    let nomeDoJogo = document.getElementById("buscador");
-    
-
-    // console.log(nomeDoJogo.value)
+// for (let i in superJogos) {
+//   superJogos[i].temNaSteam = superJogos[i].temNaSteam.toString() + ","
+// }
+// console.log(superJogos)
+// for (let i in naoTemNaSteam) {
+//   naoTemNaSteam[i].premios = naoTemNaSteam[i].premios.toString() + ","
+//}
+//console.log(naoTemNaSteam)
+//. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
+// function busca(objeto1) {
+//   return console.log(objeto1.nome)
+// }
+// busca(jogo2)
+// 4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
 
 
+console.log(jogo2)
+console.log(jogo1)
+console.log(jogo3)
+const fazerABusca = (event) => {
 
-    return buscaNoObjeto(superJogos, nomeDoJogo.value)
+  event.preventDefault()
 
-  };
-
-  // let lastOfUs = document.getElementById("nomeJogo1")
-  // lastOfUs.innerHTML = naoTemNaSteam[0].nome
-  // console.log(superJogos[0].nome)
-  // console.log(lastOfUs)
-  // console.log(superJogos)
+  let nomeDoJogo = document.getElementById("buscador");
 
 
-  let lista = document.getElementById("containerTotal")
+  // console.log(nomeDoJogo.value)
 
 
 
-  superJogos.filter(jogos => {
-    function listarJogos() {
-      lista.innerHTML += `<section>
+  return buscaNoObjeto(superJogos, nomeDoJogo.value)
+
+};
+
+// let lastOfUs = document.getElementById("nomeJogo1")
+// lastOfUs.innerHTML = naoTemNaSteam[0].nome
+// console.log(superJogos[0].nome)
+// console.log(lastOfUs)
+// console.log(superJogos)
+
+
+let lista = document.getElementById("containerTotal")
+
+
+
+superJogos.filter(jogos => {
+  function listarJogos() {
+    lista.innerHTML += `<section>
 
        <img src="${jogos.imagem}" alt="The last of Us" class="primeiraimagem">
 
@@ -185,18 +188,18 @@ console.log(`A média entre os 3 anos de lançamento é ${media}`)
         
     </section>`
 
-    }
-    listarJogos()
-  })
+  }
+  listarJogos()
+})
 
-  // console.log(superJogos)
+// console.log(superJogos)
 
-  function buscaNoObjeto(arrayObjetos, string) {
-    for (let i in arrayObjetos) {
-      string = string.toUpperCase()
-      if (arrayObjetos[i].nome.toUpperCase() === string) {
-        console.log(arrayObjetos[i])
-        return lista.innerHTML = `<section>
+function buscaNoObjeto(arrayObjetos, string) {
+  for (let i in arrayObjetos) {
+    string = string.toUpperCase()
+    if (arrayObjetos[i].nome.toUpperCase() === string) {
+      console.log(arrayObjetos[i])
+      return lista.innerHTML = `<section>
 
       <img src="${arrayObjetos[i].imagem}" alt="The last of Us" class="primeiraimagem">
 
@@ -216,12 +219,12 @@ console.log(`A média entre os 3 anos de lançamento é ${media}`)
        </ul>
        
    </section>`
-      }
     }
-    lista.innerHTML = ""
-    superJogos.filter(jogos => {
-      function listarJogos() {
-        lista.innerHTML += `<section>
+  }
+  lista.innerHTML = ""
+  superJogos.filter(jogos => {
+    function listarJogos() {
+      lista.innerHTML += `<section>
   
          <img src="${jogos.imagem}" alt="The last of Us" class="primeiraimagem">
   
@@ -242,8 +245,8 @@ console.log(`A média entre os 3 anos de lançamento é ${media}`)
           
       </section>`
 
-      }
-      listarJogos()
-    })
-    return alert("Não foi possivel encontrar o item buscado!")
-  }
+    }
+    listarJogos()
+  })
+  return alert("Não foi possivel encontrar o item buscado!")
+}
