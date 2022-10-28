@@ -1,0 +1,146 @@
+/* LAYOUT FEITO COM FLEXBOX */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    border-bottom: 5px solid black;
+    padding: 8px;
+    text-align: center;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);}
+
+.titulo {
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.container-pesquisa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 4px;
+}
+
+.input-pesquisa {
+    height: 32px;
+    width: 20vw;
+    border-radius: 16px;
+    text-align: center; 
+}
+
+.botao-pesquisa {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border-radius: 16px;
+}
+
+.listas {
+    padding: 16px;
+    display: flex;
+}
+
+.listas-classe {
+    border: 2px solid black;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px;
+    border-radius: 24px;
+    background-color: black;
+}
+
+.listas-classe:hover {
+    transform: scale(1.1);
+    rotate: 1deg;
+    border: 4px solid white;
+    transition-duration: .5s;
+}
+
+.imagem {
+    max-width: 200px;
+    border-radius: 24px;
+}
+
+.itens {
+    padding-right: 16px;
+    font-family: fantasy;
+    font-size: 1rem;
+    color: rgb(161,40,0);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.link {
+    color: red;
+}
+
+.link:hover {
+    color: white;
+    transition-duration: .5s;
+}
+
+.rodape {
+    text-align: center;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);    border-top: 5px solid black;
+}
+
+.imagem-icon {
+    max-height: 50px;
+}
+
+.texto-rodape {
+    font-family: fantasy;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: black;
+    text-transform: uppercase;
+}
+
+.texto-rodape:hover {
+    color: white;
+}
+
+.container-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+}
+
+@media screen and (max-width: 1000px) {
+    .input-pesquisa {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container-lista {
+        width: 100%;
+    }
+
+    .listas {
+        width: 100%;
+    }
+
+    .listas-classe {
+        width: 100%;
+        justify-content: center;
+    }
+}
