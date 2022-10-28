@@ -4,19 +4,31 @@
 <head>
     <meta charset="utf-8">
     <title>receitas Cardoso</title>
-    <!-- <script src="script.js"></script> comentar para nao ficar abrindo alertas por enquanto -->
+    <script src="script.js"></script> <!-- comentar para nao ficar abrindo alertas por enquanto  -->
     <link rel="stylesheet" href="style.css">
+    <script src="https://fontawesome.com/icons/magnifying-glass?s=solid&f=classic" crossorigin="anonymous"></script>
+    
 </head>
-<header>Receitas Cardoso</header>
+<header>Receitas Cardoso
+    <form>
+        <input type="text" placeholder="Digite uma receita..." id="user-input" onKeyUp="userInput()">
+
+
+<div id="receitas">
+  
+</div>
+        <button>Pesquisar</button>
+            </form>
+</header>
 <body>
     <main>
-    <input type="Confirm">
-    <button></button>
+   
     <div class="tamanhoSection">
     
     <ul id="moverUl1">
-        <section><a href="https://www.receitasnestle.com.br/receitas/strogonoff-de-carne">Strogonoff</a> </section>
+        <section><a href="https://www.receitasnestle.com.br/receitas/strogonoff-de-carne"><strong>Strogonoff de Carne</strong></a> </section>
     <section>Ingredientes: </section>
+    <div class ="styleIngredientes">
     
     <li>500g de carne</li>
     <li>1 pitada de pimenta-do-reino</li>
@@ -30,9 +42,12 @@
     <li>1 colher (sopa) de mostarda</li>
     <li>2 colheres (sopa) de ketchup</li>
     <li>1 lata Creme de Leite</li>
+</div>
 </ul>
+<ul id="moverImg1"> <div>
+    <img src="./strogonoff-de-carne.jpg" alt="fotoEstrogonoff" height="274px" width="374px"></div></ul>
 <ul id="moverUl2">
-    <section><a href="https://www.receitasnestle.com.br/receitas/lasanha-a-bolonhesa">Lasanha</a> 
+    <section><a href="https://www.receitasnestle.com.br/receitas/lasanha-a-bolonhesa"><strong>Lasanha a bolonhesa</strong></a> 
         
         <li>500g de massa de lasanha</li>
         <li>500g de carne moída</li>
@@ -41,11 +56,14 @@
         <li>500g de mussarela</li>
         <li>1 cebola</li>
         <li>1cx molho de tomate</li>
+        
     </ul>
+    <ul id="moverImg2"> <div>
+        <img src="./lasanha.jpg" alt="fotoLasanha" height="274px" width="374px"></div></ul>
 
     </section>
     <ul id="moverUl3">
-    <section><a href="https://www.receitasnestle.com.br/receitas/risoto-vegetariano">Risoto Vegetariano</a> 
+    <section><a href="https://www.receitasnestle.com.br/receitas/risoto-vegetariano"><strong>Risoto vegetariano</strong></a>
             <li>4 xícaras (chá) de água</li>
             <li>2 tabletes de Caldo Legumes</li>
             <li>3 colheres (sopa) de manteiga</li>
@@ -57,11 +75,25 @@
             <li>1 caixa de creme de leite</li>
     
         </ul>
+        <ul id="moverImg3"> <div>
+            <img src="./risoto-vegetariano.jpg" alt="fotoRisoto" height="274px" width="374px"></div></ul>
     </div>
 </main>
 
 </body>
 
-<footer>Contato : 999032119</footer>
+<footer>
+    <div class="footer1">Consulte Disponibilidade!</div> 
+    
+    <br>
+        <a href="">Whatsapp</a>
+
+    <br>
+        <a href="">Facebook</a>
+    <br>
+        <a href="">GitHub</a>
+   
+    
+</footer>
 
 </html>
