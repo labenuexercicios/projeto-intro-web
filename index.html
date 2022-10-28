@@ -14,25 +14,19 @@
         <h1>Acervo</h1>
       </div>
       <div class="buscador">
-        <label for="buscar"></label>
-        <input type="text" name="buscar" id="buscador" class="input" />
-        <button
-          type="submit"
-          class="botao-buscar"
-          id="botao-buscar"
-          onclick="buscarExpansao(event)"
-        >
-          BUSCAR
-        </button>
+        <div class="campo-busca">
+          <label for="buscar"></label>
+          <input type="text" name="buscar" id="campo-de-busca" class="input"/>
+          <button type="submit" class="botao-buscar" id="botao-buscar" onclick="buscarLivro(event)">BUSCAR</button>
       </div>
     </header>
-    <main>
+    <!-- <main>
       <h1>Ficção Cientifica</h1>
       <div class="container">
         <section class="card">
           <img src="./img/fundacao.png" />
           <ul>
-            <il>Titulo: Fundação</il>
+            <il class="imagem">Titulo: Fundação</il>
             <il>Autor: Isaac Azimov</il>
             <il>Adquirido: Sim</il>
             <il>Lido: Sim</il>
@@ -144,7 +138,12 @@
           </ul>
         </section>
       </div>
+    </main> -->
+    <main>
+      <div class="container">
+      </div>
     </main>
+
   </body>
   <footer id="footer">
     <p>Code by Juliano Amaral &#169; 2022</p>

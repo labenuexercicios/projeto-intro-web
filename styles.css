@@ -78,7 +78,7 @@ input {
 .card {
     height: 500px;
     width: 350px;
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 3px;
     display: flex;
     flex-direction: column;
