@@ -240,7 +240,7 @@ function buscarLivro(event){
 
   if(input === ''){
     alert('Digite por favor um titulo válido');
-    criarObjetosNoHtml(todasOsLivros);
+    criarObjetosNoHtml(acervo);
     footer.classList.remove('footer-fixado');
     container.removeAttribute('id', 'container');
   } else {
