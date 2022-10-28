@@ -158,27 +158,6 @@ const funcaoTodos = (carros) => {
 funcaoTodos(todosCarros)
 
 
-// const retornaCarro = (carros, escrita) =>{
-//     console.log(escrita)
-//     const achou = carros.find((carros) => carros.nome === escrita)
-//     if (!achou){
-//         alert ("Nenhum resultado encontrado")
-//     }
-//     return console.log(achou)
-// }
-// retornaCarro(todosCarros,document.getElementById("pesquisa").value)
-
-// const retornaCarro = () => {
-//     const pesquisa = document.getElementById("pesquisa").value
-//     const achou = todosCarros.find((carros) => carros.nome === pesquisa)
-//     if (achou) {
-//         document.querySelector("div.geral").style.visibility = 'hidden'
-//         return document.getElementById("").style.visibility = "visible"
-//     }
-
-//     return alert("Nenhum resultado encontrado")
-// }
-
 const retornaCarro = (pagina) => {
     const pesquisa = document.getElementById("pesquisa").value.toLowerCase()
     let achado = todosCarros.filter((carro) => carro.nome.toLowerCase().includes(pesquisa))
