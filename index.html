@@ -1,13 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="index.js"></script>
-</head>
-<body>
-    
-</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livros</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="cabecalho">
+        <h1>Acervo</h1>
+      </div>
+      <div class="buscador">
+        <div class="campo-busca">
+          <label for="buscar"></label>
+          <input type="text" name="buscar" id="campo-de-busca" class="input"/>
+          <button type="submit" class="botao-buscar" id="botao-buscar" onclick="buscarLivro(event)">BUSCAR</button>
+      </div>
+    </header>
+    <!-- <main>
+      <h1>Ficção Cientifica</h1>
+      <div class="container">
+        <section class="card">
+          <img src="./img/fundacao.png" />
+          <ul>
+            <il class="imagem">Titulo: Fundação</il>
+            <il>Autor: Isaac Azimov</il>
+            <il>Adquirido: Sim</il>
+            <il>Lido: Sim</il>
+          </ul>
+        </section>
+        <section class="card">
+          <img src="./img/duna.jpg" />
+          <ul>
+            <il>Titulo: Duna</il>
+            <il>Autor: Frank Herbet</il>
+            <il>Adquirido: Sim</il>
+            <il>Lido: Sim</il>
+          </ul>
+        </section>
+        <section class="card">
+          <img src="./img/jurasic.jpeg" />
+          <ul>
+            <il>Titulo: Jurassic Park</il>
+            <il>Autor: Frank Herbet</il>
+            <il>Adquirido: Não</il>
+            <il>Lido: Não</il>
+          </ul>
+        </section>
+        <section class="card">
+          <img src="./img/guerradovelho.jpg" />
+          <ul>
+            <il>Titulo: A Guerra do Velho</il>
+            <il>Autor: John Scalzi</il>
+            <il>Adquirido: Não</il>
+            <il>Lido: Sim</il>
+          </ul>
+        </section>
+      </div>
+      <h1>Devocional</h1>
+      <div class="container">
+        <section class="card">
+          <img src="./img/gita.jpg" />
+          <ul>
+            <il>Titulo: Bhagavad-Gita: Como ele é</il>
+            <il>Autor: A.C. Bhaktivedanta Swami Prabhupada</il>
+            <il>Adquirido: Sim</il>
+            <il>Lido: Sim</il>
+          </ul>
+        </section>
+        <section class="card">
+          <img src="./img/jaiva.jpg" />
+          <ul>
+            <il>Titulo: Jaiva Dharma</il>
+            <il>Autor: Śrīla Bhaktivinoda Ṭhākura</il>
+            <il>Adquirido: Sim</il>
+            <il>Lido: Sim</il>
+          </ul>
+        </section>
+        <section class="card">
+          <img src="./img/joias.jpg" />
+          <ul>
+            <il>Titulo: Joias do Coração</il>
+            <il>Autor: Srila Bhaktivedanta Vana Gosvami Maharaj</il>
+            <il>Adquirido: Sim</il>
+            <il>Lido: Não</il>
+          </ul>
+        </section>
+        <section class="card">
+          <img src="./img/srimad.jpg" />
+          <ul>
+            <il>Titulo: Srimad Bhagavatam, Canto 1, Parte 1</il>
+            <il>Autor: A. C. Bhaktivedanta Swami Prabhupada</il>
+            <il>Adquirido: Não</il>
+            <il>Lido: Não</il>
+          </ul>
+        </section>
+      </div>
+      <h1>Fantasia</h1>
+      <div class="container">
+        <section class="card">
+          <img src="./img/trono.jpg" />
+          <ul>
+            <il>Titulo: A Guerra do Trono</il>
+            <il>Autor: G. R. R. Martin</il>
+            <il>Adquirido: Sim</il>
+            <il>Lido: Sim</il>
+          </ul>
+        </section>
+        <section class="card">
+          <img src="./img/sociedade.jpg" />
+          <ul>
+            <il>Titulo: A Sociedade do Anel</il>
+            <il>Autor: J. R. R. Tolkien</il>
+            <il>Adquirido: Sim</il>
+            <il>Lido: Sim</il>
+          </ul>
+        </section>
+        <section class="card">
+          <img src="./img/blumas.jpg" />
+          <ul>
+            <il>Titulo: As Blumas de Avalon</il>
+            <il>Autor: Marion Zimmer Bradley</il>
+            <il>Adquirido: Não</il>
+            <il>Lido: Não</il>
+          </ul>
+        </section>
+        <section class="card">
+          <img src="./img/deuses.jpg" />
+          <ul>
+            <il>Titulo: Deuses Americanos</il>
+            <il>Autor: Neil Gaiman</il>
+            <il>Adquirido: Não</il>
+            <il>Lido: Não</il>
+          </ul>
+        </section>
+      </div>
+    </main> -->
+    <main>
+      <div class="container">
+      </div>
+    </main>
+
+  </body>
+  <footer id="footer">
+    <p>Code by Juliano Amaral &#169; 2022</p>
+    <div>
+      <a href="https://www.linkedin.com/in/juliano-amaral-costa-898a80241/" target="_blank" rel="noopener noreferrer">
+        <button class="botao-redes">LinkedIn</button></a>
+      <a href="https://github.com/JayGovinda13" target="_blank" rel="noopener noreferrer">
+        <button class="botao-redes">GitHub</button></a>
+    </div>
 </html>
