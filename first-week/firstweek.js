@@ -18,7 +18,7 @@ const nome2 = "Hunt: Showdown"
 const tempo2 = 213
 const massiveMultiplayer2 = false
 
-const nome3 = "Tibia"
+const nome3 = "World of Warcraft"
 const tempo3 = 500
 const massiveMultiplayer3 = true
 

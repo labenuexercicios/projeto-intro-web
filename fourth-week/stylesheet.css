@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: rgb(185, 178, 178);
+    position: absolute;
+}
+
+.cabecalho{
+    margin: 5px;
+    color: aliceblue;
+    background-color: black;
+}
+
+.pesquisa{
+    position: relative;
+    left: 45%;
+}
+
+.corpo{
+    position: relative;
+    left: 38%;
+}
+
+img{
+    float: left;
+}
+
+.frostpunk{
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: rgb(221, 188, 80);
+    width: 25vw;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+}
+
+.hunt{
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: rgb(221, 188, 80);
+    width: 25vw;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+}
+
+.wow{
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: rgb(221, 188, 80);
+    width: 25vw;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+}
+
+.rodape{
+    margin: 5px;
+    color: aliceblue;
+    background-color: black;
+    position: relative;
+    top: 515px;
+    width: 99vw;
+    text-align: center;
+}

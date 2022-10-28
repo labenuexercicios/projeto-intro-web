@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: rgb(234, 225, 225);
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho{
+    margin: 5px;
+    color: aliceblue;
+    background-color: black;
+}
+
+.pesquisa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.corpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 85vh;
+}
+
+img{
+    float: left;
+}
+
+.frostpunk{
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: rgb(50, 82, 245);
+    width: 35vw;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+}
+
+.hunt{
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: rgb(227, 34, 34);
+    width: 35vw;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+}
+
+.wow{
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: rgb(238, 123, 42);
+    width: 35vw;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+}
+
+.rodape{
+    color: aliceblue;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 8vh;
+    align-items: center;
+}
+
+.input{
+    padding-left: 15px;
+    background: url(https://toppng.com/uploads/preview/magnifying-glass-free-icon-magnifying-glass-icon-11562945594bjpcnqjfko.png) no-repeat left;
+    background-size: 15px;
+}
+
+@media screen and (max-device-width: 1130px){
+    
+    .frostpunk{
+        margin: 5px;
+        padding: 5px;
+        border: 2px solid black;
+        background-color: rgb(50, 82, 245);
+        width: 90vw;
+        height: 12vh;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .hunt{
+        margin: 5px;
+        padding: 5px;
+        border: 2px solid black;
+        background-color: rgb(227, 34, 34);
+        width: 90vw;
+        height: 12vh;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .wow{
+        margin: 5px;
+        padding: 5px;
+        border: 2px solid black;
+        background-color: rgb(238, 123, 42);
+        width: 90vw;
+        height: 12vh;
+        text-align: center;
+        align-items: center;
+    }
+}

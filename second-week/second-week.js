@@ -18,7 +18,7 @@ favorito2 ={
     estilo: ["Terror","FPS","Online"]}
 
 favorito3 ={
-    nome: "Tibia",
+    nome: "World of Warcraft",
     tempo: 500,
     massiveMultiplayer: true,
     estilo: ["Aventura","RPG","Online"]}

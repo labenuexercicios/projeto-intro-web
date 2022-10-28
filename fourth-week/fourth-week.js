@@ -27,12 +27,10 @@ for (genero in favoritos){
 }return jogoString
 }
 
-//2. Ainda no relatório, altere-o para que ele seja criado utilizando laços. Ou seja, você não deve mais imprimir individualmente cada item do relatório. Cada item deve ser exibido a partir de uma iteração do laço. Para testar, adicione mais um item ao array de objetos, e verifique se ele é exibido corretamente.
 for (jogos of jogosFavoritos){
     console.log(jogos.nome +"\n"+ jogos.tempo +"\n"+ jogos.massiveMultiplayer +"\n"+ retorneString(jogos.estilo))
 }
 
-//3. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
 const retorneJogo = (jogoUm) => {
     let relatorioString = "";
     for (dados in jogoUm){
@@ -40,8 +38,6 @@ const retorneJogo = (jogoUm) => {
     } return console.log(relatorioString)
 }
 retorneJogo(favorito1)
-
-//4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
 
 const filtreJogosRts = (jogosFavoritos,string) =>{
     for (jogos of jogosFavoritos){
