@@ -4,10 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="index.js"></script>
+    <title>Lista de Jogos</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="container">
+    <header>
+        
+        <h1>JOGOS</h1>
+        <article id="busca">
+            <input type="search" name="buscar" id="buscar" placeholder="  Digite o nome do jogo">
+            <label for="buscar"><button class="botaoBusca"  id="botaoBusca" onclick="buscar(event)">Buscar🔎</button></label>
+            <p class="invisible inputVazio" id="inputvazio">Por favor insira o nome do jogo</p>
+        </article>
+    </header>
+    <main>
+        <h1 id="jogo-nao-encontrado" class="invisible">NENHUM JOGO ENCONTRADO</h1>
+        <article class="lista-jogos">
+            <section class="jogos" id="section-jogo-1">
+                <img src="img/logo-minecraft.png" alt="logo-minecraft" class="img-jogo" id="logo">
+                <ul>
+                    <a href="https://www.minecraft.net/pt-br" target="_blank" id="link-jogo1"></a>
+                    <li id="ano-lancamento-1"></li>
+                    <li id="jogo-gratuito-1"></li>
+                    <li id="plataformas-1"></li>
+                </ul>
+            </section>
+            <section class="jogos" id="section-jogo-2">
+                <img src="img/Gta_v_logo.jpg" alt="Logo GTA V" class="img-jogo">
+                <ul>
+                    <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" target="_blank" id="link-jogo2"></a>
+                    <li id="ano-lancamento-2"></li>
+                    <li id="jogo-gratuito-2"></li>
+                    <li id="plataformas-2"></li>
+                </ul>
+            </section>
+            <section class="jogos" id="section-jogo-3">
+                <img src="img/fortnite-logo.png" alt="Logo The Sims 4" class="img-jogo">
+                <ul>
+                    <a href="https://www.epicgames.com/fortnite/pt-BR/home" target="_blank" id="link-jogo3"></a>
+                    <li id="ano-lancamento-3"></li>
+                    <li id="jogo-gratuito-3"></li>
+                    <li id="plataformas-3"></li>
+                </ul>
+            </section>
+        </article>
+    </main>
+    <div class="footer-container">
+        <footer>Todos direitos reservados a Guilherme Sampaio</footer>
+    </div>
+</div>
 </body>
 </html>

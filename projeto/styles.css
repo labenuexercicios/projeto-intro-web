@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;;
+}
+a:hover{
+    color: rgb(0, 88, 84);
+}
+
+li{
+    list-style-type: none;
+}
+
+header{
+    font-family: cursive;
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+/* #busca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+} */
+
+.lista-jogos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: min(1.3rem, 3vw);
+}
+
+main{
+    height: 100vh;
+    /* background-image: url(img/Blue_Light_Background-Abstract_widescreen_wallpaper_1920x1080.jpg); */
+    background-size: cover;
+    padding-top: 20px;
+    background-color: rgb(82, 82, 82);
+    padding-bottom: 10px;
+    
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.jogos{
+    font-size: 2rem;
+    display: flex;
+    box-shadow: 1px 1px 10px black;
+    align-items: center;
+    border: 0.5px solid black;
+    border-radius: 8px;
+    width: 70vw;
+    height: 30vh;
+    background-color: white;
+}
+
+
+.img-jogo{
+    margin-left: 20px;
+    margin-right: 16px;
+    height: 24vh;
+    width: 14vw;
+    border-radius: 8px;
+    border: 2px solid gray;
+    box-shadow: 1px 1px 10px;
+}
+
+#buscar {
+    height: 4vh;
+    width: 16vw;
+    border-radius: 10px;
+    border: 0;
+}
+
+.botaoBusca{
+    height: 4vh;
+    width: 8vw;
+    border-radius: 10px;
+    border: 0;
+}
+
+.botaoBusca:hover{
+    background-color: rgb(198, 198, 198);
+}
+
+.invisible{
+    display: none;
+}
+
+.visible{
+    display: flex;
+}
+
+.botaoBusca:active{
+    background-color: rgb(153, 156, 243);
+}
+
+#jogo-nao-encontrado{
+    color: white;
+    text-align: center;
+}
+
+.inputVazio{
+    color: red;
+}
+
+@media screen and (max-device-width: 900px) {
+    .botaoBusca{
+        width: 10vw;
+    }
+
+    #buscar{
+        width: 24vw;
+    }
+    
+    .jogos{
+        width: 80vw;
+        font-size: 1.5rem;
+    }
+
+    .img-jogo{
+        width: 25vw;
+    }
+}
+
+@media screen and (max-device-width: 450px){
+    .jogos{
+        font-size: 1.2rem;
+    }
+
+    .botaoBusca{
+        width: 20vw;
+    }
+
+    .img-jogo{
+        height: 20vh;
+    }
+}
+
+@media screen and (max-device-height: 700px){
+    .jogos {
+        height: 25vh;
+        font-size: 1rem;
+    }
+    .botaoBusca, #buscar {
+        height: 5vh;
+    }
+}
+
