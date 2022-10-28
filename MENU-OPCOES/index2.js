@@ -74,7 +74,7 @@ const tipoRoupaAcademia3 = {
 
 const guardarObjeto = []
 
-
+/*
 if (tipoRoupaAcademia1.verificouMarca) {
     guardarObjeto.push(tipoRoupaAcademia1)
 } else (alert("Marca não é confiável, por isso não pode ser adicionado"))
@@ -87,7 +87,7 @@ if (tipoRoupaAcademia3.verificouMarca) {
     guardarObjeto.push(tipoRoupaAcademia3)
 } else //(alert("Marca não é confiável, por isso não pode ser adicionado"))
 
-  console.log(guardarObjeto)
+  console.log(guardarObjeto)*/
 
 //SEMANA 3
 
