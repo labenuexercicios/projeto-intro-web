@@ -256,13 +256,10 @@ function botaoProcura(){
         }
         else {
             x[i].style.display="block";
-
-        
-
         }
 
-      
-    
     }
+
 }
+
 
