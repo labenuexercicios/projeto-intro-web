@@ -193,7 +193,7 @@ footer {
 
     #icones {
         width: 2rem;
-        margin-left: 8px
+        margin: 0 8px;
     }
 
 }

@@ -115,8 +115,8 @@ function acheRetorneAnimalEncontrado(animais) {
                 location.href = `${animalPesquisadoComHifen}.html`
             }
             else {
-                location.href = `${animalPesquisado}.html`
                 haAnimalNaLista = true
+                location.href = `${animalPesquisado}.html`
             }
         }
     }
@@ -124,7 +124,6 @@ function acheRetorneAnimalEncontrado(animais) {
         alert(`O animal não foi encontrado na lista.`)
     }
 }
-
 
 document.getElementById("nome-shiba-inu-link").innerHTML = `${shibaInu.nome}`;
 document.getElementById("origem-shiba-inu").innerHTML = `Origem: ${shibaInu.origem}`;
