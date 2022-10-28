@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    align-items: center;
+}
+
+.texto-titulo{
+    background-image: linear-gradient(to bottom, rgb(187, 49, 21), rgb(95, 44, 37), rgb(17, 18, 18));
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* background-color: rgb(43, 161, 185);     */
+    font-size: 15vh;
+    /* color: black; */
+    margin: 0 0 0 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+}
+
+.botao{
+    text-align: center;
+    /* border: 2px solid black; */
+    /* right: 50vh; */
+    padding: 0px; 
+    align-items: center;
+}
+
+.bloco{
+    width: 280px;
+    border-radius: 10px 30px;
+    border: 5px solid darkgray;
+    background-color: gray;
+    display: inline-block;
+    align-items: center;
+    margin: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+footer{
+    margin-top: 20px;
+}
+
+.rodape{
+    text-align: center;
+    background-color: grey;
+    color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-image: linear-gradient( 45deg, red ,WHITE, lightgray, grey );
+    
+}
+
+.imagem-titulo{
+    width: 80px;
+    height: 100px;
+}
+
+.imagem-filmes{
+    width: 150px;
+    height: 200px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+@media screen and (max-device-width: 480px){
+
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+      }
+      header{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+      footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+      .container{
+        height: 100%;
+      }
+
+}      
