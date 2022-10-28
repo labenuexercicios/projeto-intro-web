@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('assets/img/Fundo.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+
+main {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    justify-items: center;
+
+}
+
+h1 {
+    font-size: 5em;
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    background-color: orangered;
+    color: rgb(22, 95, 4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 7px rgba(155, 76, 3, 0.8);
+    background-image: url('assets/img/Suco-detox-II.jpg');
+    border-radius: 40px;
+}
+
+.search-box {
+    display: flex;
+    justify-items: center;
+    font-size: 30px;
+    margin-top: 4.3em;
+    background: orangered;
+    height: 50px;
+    width: 280px;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 16px;
+    font-size: 16 px;
+    line-height: 40px;
+}
+
+.search-botton {
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    background: orange;
+    outline: none;
+    border: none;
+}
+
+input::placeholder {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tituloSuco1,
+.tituloSuco2,
+.tituloSuco3 {
+    font-size: 1.8em;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+li {
+    display: grid;
+    justify-items: center;
+    font-size: 1.5em;
+    list-style: none;
+}
+
+#img-1,
+#img-2,
+#img-3 {
+    display: grid;
+    height: 35em;
+    width: 50em;
+    background-color: rgb(255, 197, 8);
+    justify-items: center;
+    border-radius: 5%;
+    padding: 1em;
+    margin-top: 2em;
+    box-shadow: 0 -7px 7px rgba(202, 138, 77, 0.8);
+}
+
+.fotoSuco {
+    display: grid;
+    height: 20em;
+    width: 20em;
+    border-radius: 50%;
+    box-shadow: 0 -7px 7px rgba(155, 76, 3, 0.8);
+}
+
+img {
+    display: grid;
+    height: 3em;
+}
+
+Footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.7em;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 3em;
+    background: #fc7704;
+    box-shadow: 0 -7px 7px rgba(155, 76, 3, 0.8);
+}
+
+
+@media screen and (min-device-width : 300px) and (max-device-width : 767px) {
+
+
+
+    main {
+        height: 130em;
+    }
+
+    h1 {
+        font-size: 2em;
+
+    }
+
+    .tituloSuco1,
+    .tituloSuco2,
+    .tituloSuco3 {
+        font-size: 1.5em;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+
+    li {
+        display: grid;
+        justify-items: center;
+        font-size: 1.4em;
+        list-style: none;
+    }
+
+    .fotoSuco {
+        display: grid;
+        height: 18em;
+        width: 18em;
+    }
+
+    Footer {
+        width: 100%;
+        font-size: 0.7em;
+
+
+    }
+
+    #img-1,
+    #img-2,
+    #img-3 {
+        height: 35em;
+        width: 18em;
+        padding: 1em;
+        margin-top: 2em;
+    }
+
+
+    @media screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+
+        h1 {
+            font-size: 3em;
+        }
+
+
+        main {
+            height: 200em;
+        }
+
+        #img-1,
+        #img-2,
+        #img-3 {
+            height: 35em;
+            width: 20em;
+            padding: 1em;
+            margin-top: 2em;
+
+        }
+
+        footer {
+            width: 100%;
+            font-size: 1em;
+
+        }
+
+    }
+
+    @media screen and (min-width: 480px) and (orientation: landscape) {
+
+        main {
+            height: 120em;
+           
+        }
+
+        h1 {
+            font-size: 1em;
+        }
+
+        .tituloSuco1,
+        .tituloSuco2,
+        .tituloSuco3 {
+            font-size: 1.5em;
+            display: grid;
+            justify-items: center;
+
+        }
+
+
+        li {
+            display: grid;
+            justify-items: center;
+            font-size: 1.4em;
+            list-style: none;
+        }
+
+        .fotoSuco {
+            display: grid;
+            height: 15em;
+            width: 15em;
+        }
+
+        Footer {
+            display: grid;
+            width: 100%;
+            font-size: 1em;
+
+        }
+
+        #img-1,
+        #img-2,
+        #img-3 {
+            height: 30em;
+            width: 25em;
+            padding: 1em;
+            margin-top: 2em;
+        }
+
+    }
+
+
+}
