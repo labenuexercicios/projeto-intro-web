@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    color: white;
+    background-image: linear-gradient(to bottom, black, rgb(3, 37, 65));
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+}
+
+header a{
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+#filmes, #animaçoes, #documentarios{
+    width: 100%;
+    height: 80vh;
+    /* border: 1px solid black; */
+}
+
+.titulo-seçao{
+    margin: 20px 210px;
+}
+
+.link-seçao{
+    color: black;
+}
+
+.formulario{
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    justify-content: center;
+}
+
+.pesquisa{
+    width: 85%;
+    height: 100%;
+    background-image: url(../projeto-intro-web/midia/background-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pesquisa h1{
+    width: 100%;
+    height: 25%;
+    color: white;
+    margin: 0px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+}
+
+input{
+    height: 30%;
+    width: 80%;
+    font-size: 1.1em;
+    border-radius: 30px;
+}
+
+button{
+    height: 30%;
+    width: 8%;
+    font-size: 1em;
+    border-radius: 30px;
+    background-color: #2596be;
+    color: white;
+}
+
+#container-filmes{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img{
+    width: 100%;
+    height: 320px;
+    border-radius: 10px;
+}
+
+.card{
+    width: 230px;
+    border: 1px solid #e3e3e3;
+    height: 65vh;
+    border-radius: 10px;
+    font-size: 0.9em;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+    border: 1px solid rgba(var(--lightGrey), 1);
+    background-color: #fff;
+}
+
+.card h2{
+    text-align: center;
+}
+
+.card ul{
+    margin: 10px 20px
+}
+
+footer{
+    width: 100%;
+    height: 15vh;
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom, rgb(3, 37, 65), black);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.contato{
+    margin: 30px 30px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.centralizar{
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px
+}
+
+@media screen and (min-device-width: 580px) and (max-device-width: 1050px){
+    #container-filmes{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #filmes, #animaçoes, #documentarios{
+        width: 100%;
+        height: 150vh;
+        border: 1px solid black;
+    }
+
+    .pesquisa{
+        width: 100%;
+        font-size: 0.7em;
+    }
+
+    .card{
+        height: 50vh;
+    }
+
+    .pesquisa h1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header{
+        font-size: 70%;
+    }
+    
+}
+
+@media screen and (max-device-width: 580px){
+    header{
+        font-size: 1.5rem;
+    }
+
+    #filmes, #animaçoes, #documentarios{
+        width: 100%;
+        height: 50%;
+    }
+
+    #container-filmes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 20px;
+    }
+    
+    .pesquisa{
+        display: block;
+        width: 100%;
+    }
+
+    .card{
+        height: 30%;
+        border-radius: 10px;
+        font-size: 0.9em;
+    }
+
+    .titulo-seçao{
+        margin: 30px 0px;
+        text-align: center;
+    }
+
+    footer{
+        margin-top: 50px;
+    }
+
+    header{
+        font-size: 45%;
+    }
+
+    .formulario{
+        font-size: 60%;
+    }
+
+    button{
+        height: 30%;
+        width: 10%;
+        font-size: 8%;
+        border-radius: 30px;
+    }
+
+    input{
+        width: 70%;
+    }
+}
+

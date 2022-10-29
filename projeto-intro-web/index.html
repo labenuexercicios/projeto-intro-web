@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAWDB</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TAWDB</h1>
+            <a href="./filmes.html"><h3>Filmes</h3></a>
+            <a href="./documentarios.html"><h3>Documentários</h3></a>
+            <a href="./animaçoes.html"><h3>Animações</h3></a>
+        </header>
+    </div>
+    <main>
+        <div class="formulario">
+            <div class="pesquisa">
+            <h1>The Academy Awards Data Base</h1>
+            <h1>Explore por filmes, documentários e animações premiados com Oscar.</h1>
+            <form action="#">
+                <label for="meu-input"></label>
+                <input type="text" id="meu-input" name="busca" placeholder="Pesquise por filmes, documentários, animações...">
+                <button type="submit" onclick="return enviar()">Buscar</button>
+            </form>
+            </div>
+        </div>
+        <section id="filmes">
+            <a href="./filmes.html" class="link-seçao"><h2 class="titulo-seçao">Filmes</h2></a>
+            <div id="container-filmes">
+                <div class="card">
+                    <img src="" id="parasita" alt="Poster do filme Parasita">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2019</li>
+                        <li>Duração: 132 minutos</li>
+                        <li>Elenco: Song Kang-ho, Sun-kyun Lee, Cho Yeo-jeong</li> -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="" id="moonlight" alt="Poster do filme Moonlight">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2016</li>
+                        <li>Duração: 111 minutos</li>
+                        <li>Elenco: Mahersala Ali, Naomie Harris, Trevante Rhodes</li> -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="" alt="Poster do filme Green Book" id="green-book"> 
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2018</li>
+                        <li>Duração: 130 minutos</li>
+                        <li>Elenco: Viggo Mortensen, Mahersala Ali, Linda Cardellini</li> -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="" alt="Poster do filme No Ritmo do Coração" id="coda">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2021</li>
+                        <li>Duração: 111 minutos</li>
+                        <li>Elenco: Emilia Jones, Marlee Matlin, Troy Kotsur</li> -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="animaçoes">
+            <a href="./animaçoes.html" class="link-seçao"><h2 class="titulo-seçao">Animações</h2></a>
+            <div id="container-filmes">
+                <div class="card">
+                    <img src="" alt="Poster do filme Divertida Mente" id="divertida-mente">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2015</li>
+                        <li>Duração: 95 minutos</li>
+                        <li>Elenco: Amy Poehler, Bill Hader, Lewis Black</li> -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="" alt="Poster do filme Viva - A vida é uma festa" id="viva">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2017</li>
+                        <li>Duração: 105 minutos</li>
+                        <li>Elenco: Anthony Gonzalez, Gael García Bernal, Benjamin Bratt</li> -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="" alt="Poster do filme Toy Story 4" id="toy-story">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2019</li>
+                        <li>Duração: 100 minutos</li>
+                        <li>Elenco: Tom Hanks, Tim Allen, Annie Potts</li> -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="" alt="Poster do filme Soul" id="soul">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2020</li>
+                        <li>Duração: 100 minutos</li>
+                        <li>Elenco: Jamie Foxx, Tina Fey, Graham Norton</li> -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="documentarios">
+            <a href="./documentarios.html" class="link-seçao"><h2 class="titulo-seçao">Documentários</h2></a>
+            <div id="container-filmes">
+                <div class="card">
+                    <img src="" alt="Poster do documentário Industria Americana" id="industria-americana">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2019</li>
+                        <li>Duração: 90 minutos</li>
+                        <li>Elenco: Junming Wang, Sherrod Brown, Robert Allen</li> -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="" alt="Poster do documentário Summer of Soul" id="summer-of-soul">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2021</li>
+                        <li>Duração: 98 minutos</li>
+                        <li>Elenco: Dorinda Drake, Barbara Bland-Acosta, Darryl Lewis</li> -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="" alt="Poster do documentário Oj: Made In America" id="oj">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2016</li>
+                        <li>Duração: 467 minutos</li>
+                        <li>Elenco: OJ Simpson, Marcia Clark, F. Lee Bailey </li> -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="" alt="Poster do documentário Ícaro" id="icaro">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2017</li>
+                        <li>Duração: 120 minutos</li>
+                        <li>Elenco: Bryan Fogel, Dave Zabriskie, Don Catlin</li> -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul class="contato">
+            <li>Informações de Contato:</li>
+            <li>Git Hub: https://github.com/giovanatiburtino</li>
+        </ul>
+    </footer>
+</body>
+</html>
