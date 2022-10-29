@@ -3,7 +3,7 @@
 
 objetoPizzaSal01 = {
     pizza: "Pizza de calabresa com mozarela",
-    tempoPreparo: 60,
+    tempoPreparo: 30,
     pizzaSalgada: true,
     ingredientes: ["* 1 receita de massa para pizza de forno","* 1 receita de molho básico de tomate","* 300g de calabresa fatiada","* 400g de queijo mozarela fatiado"]
 }
@@ -13,9 +13,9 @@ objetoPizzaSal01 = {
 //Pizza 02:
 objetoPizzaSal02 = {
     pizza: "Pizza de quatro queijos",
-    tempoPreparo: 60,
+    tempoPreparo: 30,
     pizzaSalgada: true,
-    ingredientes: ["* 1 receita de massa para pizza de forno","* 1 receita de molho básico de tomate","* 100g de queijo parmesão","* 150g de queijo provolone","* 150g de queijo mozarela","* 100g de queijo gorgonzola"]
+    ingredientes: `* 1 receita de massa para pizza de forno,* 1 receita de molho básico de tomate,* 100g de queijo parmesão,* 150g de queijo provolone",* 150g de queijo mozarela, * 100g de queijo gorgonzola`
 }
 //console.log(objetoPizzaSal02)
 //console.table(objetoPizzaSal02)
@@ -23,9 +23,9 @@ objetoPizzaSal02 = {
 //Pizza 03:
 objetoPizzaSal03 = {
     pizza: "Pizza de abobrinha",
-    tempoPreparo: 50,
+    tempoPreparo: 30,
     pizzaSalgada: true,
-    ingredientes: ["* 1 receita de massa para pizza de forno","* 1 receita de molho básico de tomate","* 2 abobrinhas cortadas em rodelas finas","* 300g de queijo mozarela de búfala ralada ou cortada em fatias","* 1 dente de alho amassado","* 4 colheres de sopa de azeite","* Sal a gosto"]    
+    ingredientes: `"* 1 receita de massa para pizza de forno","* 1 receita de molho básico de tomate","* 2 abobrinhas cortadas em rodelas finas","* 300g de queijo mozarela de búfala ralada ou cortada em fatias","* 1 dente de alho amassado","* 4 colheres de sopa de azeite","* Sal a gosto"` 
 }
 //console.log(objetoPizzaSal03)
 //console.table(objetoPizzaSal03)
@@ -34,9 +34,9 @@ objetoPizzaSal03 = {
 //Tipos de pizza doces:
 objetoPizzaDoce01 = {
     pizza: "Pizza de chocolate",
-    tempoPreparo: 60,
+    tempoPreparo: 30,
     pizzaSalgada: false,
-    ingredientes: ["* 2 xícaras (de chá) de chocolate forneável ao leite","* 1 disco de massa doce para pizza - pré assado","* 1 colher de sopa de chocolate em pó","* 1/2 xícara (de chá) de chocolate granulado (para povilhar)","* 1/2 xícara (de chá) de cereja em calda (para decorar)"]
+    ingredientes: `"* 2 xícaras (de chá) de chocolate forneável ao leite","* 1 disco de massa doce para pizza - pré assado","* 1 colher de sopa de chocolate em pó","* 1/2 xícara (de chá) de chocolate granulado (para povilhar)","* 1/2 xícara (de chá) de cereja em calda (para decorar)"`
 }
 //console.log(objetoPizzaDoce01)
 //console.table(objetoPizzaDoce01)

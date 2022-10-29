@@ -7,13 +7,13 @@ console.log("Pizzas e molhos:");
 objetoPizzaSal01 = {
     pizza1: "Pizza de calabresa com mozarela",
     rendimento: 24,
-    tempoPreparo: 60,
+    tempoPreparo: 30,
     pizzaSalgada: true,
-    ingredientes: [`
+    ingredientes: `
     * 1 receita de massa para pizza de forno
     * 1 receita de molho básico de tomate
     * 300g de calabresa fatiada
-    * 400g de queijo mozarela fatiado`]    
+    * 400g de queijo mozarela fatiado`    
 }
 //console.log(objetoPizzaSal01)
 
@@ -33,15 +33,15 @@ objetoPizzaSal01 = {
 objetoPizzaSal02 = {
     pizza2: "Pizza de quatro queijos",
     rendimento: 24,
-    tempoPreparo: 60,
+    tempoPreparo: 30,
     pizzaSalgada: true,
-    ingredientes: [`
+    ingredientes: `
     * 1 receita de massa para pizza de forno
     * 1 receita de molho básico de tomate
     * 100g de queijo parmesão
     * 150g de queijo provolone
     * 150g de queijo mozarela
-    * 100g de queijo gorgonzola`]
+    * 100g de queijo gorgonzola`
 }
 //console.log(objetoPizzaSal02)
 
@@ -61,16 +61,16 @@ objetoPizzaSal02 = {
 objetoPizzaSal03 = {
     pizza3: "Pizza de abobrinha",
     rendimento: 24,
-    tempoPreparo: 50,
+    tempoPreparo: 30,
     pizzaSalgada: true,
-    ingredientes: [`
+    ingredientes: `
     * 1 receita de massa para pizza de forno
     * 1 receita de molho básico de tomate
     * 2 abobrinhas cortadas em rodelas finas
     * 300g de queijo mozarela de búfala ralada ou cortada em fatias
     * 1 dente de alho amassado
     * 4 colheres de sopa de azeite
-    * Sal a gosto`]    
+    * Sal a gosto`  
 }
 //console.log(objetoPizzaSal03)
 
@@ -204,23 +204,3 @@ if(pizzasSimouNao.toLowerCase() === "sim") {
 // ${ingredSal03}
 // ${totalIngrPizzaSal03}
 // `)
-
-
-
-
-// Trabalhar depois:
-//const pizzaDoces =
-// const rendimentoDoces =
-// const preparoDoces =
-
-// const pizzaMolhos =
-// const rendimentoMolhos =
-// const = preparoMolhos
-
-// 🍕 Comida
-// * Nome;
-// * Descrição;
-// * Ingredientes;
-// * Preço;
-// * Categoria (entrada, prato principal, sobremesa etc);
-//* É vegetariano?;
