@@ -44,6 +44,11 @@ main {
   border: 2px;
 }
 
+.botao:hover{
+  color: white;
+  background-color: olive;
+}
+
 .buscadorPizza {
   display: flex;
   flex-direction: column;
@@ -57,6 +62,7 @@ main {
   border: 2px;
   border-style: groove;
   border-color: black;
+
 }
 
 .buscadorPizza-button:active {
@@ -116,6 +122,7 @@ font-weight: bold;
   border-color: black;
   border-style: dashed;
   padding-bottom: 1rem;
+
 }
 
 .ajusteIngredientes {

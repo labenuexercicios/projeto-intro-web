@@ -31,9 +31,7 @@ body {
 
 
 main {
-  display:flex;
-  flex-grow: 1;
-  flex-direction: column;
+  display:grid;
   justify-content: space-around;
   align-items: center;
   /* A imagem de fundo possui uma pizza que não está aparecendo - corrigir */
@@ -82,11 +80,6 @@ font-weight: bold;
   text-align: center;
 }
 
-.botao:hover{
-  color: white;
-  background-color: olive;
-}
-
 .botao {
   font-size: x-large;
   gap: 4px;
@@ -103,16 +96,22 @@ font-weight: bold;
 
 
 .paiDasPizzas {
-  display: flex;
-  flex-direction: row;
-  /* mexer nesse debaixo para ver posição das pizzas no site */
-  flex-flow:column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(440px, 3fr));;
   gap: 4px;
+  
 }
 
+.imagensPizza{
+  border-radius: 30px;
+}
+
+
 .padraoContainerPizzas {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(440px, 3fr));;
   border: 1px;
   background-color: rgba(245, 245, 220, 0.699);
   justify-items:center;
@@ -121,6 +120,7 @@ font-weight: bold;
   border-color: black;
   border-style: dashed;
   padding-bottom: 1rem;
+  border-radius: 30px;
   
 }
 
@@ -137,7 +137,9 @@ font-weight: bold;
 }
 
 footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* grid-template-rows: repeat(auto-fill, minmax(440px, 1fr));; */
   background-color: black;
   color: white;
   height: 6vh;
