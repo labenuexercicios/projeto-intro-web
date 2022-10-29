@@ -4,64 +4,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vencedores do Oscar</title>
-    <script src="script.js"></script>
+    <title>TAWDB</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Lista de filmes premiados ao Oscar de melhor filme</h1>  
-    </header>
+    <div class="container">
+        <header>
+            <h1>TAWDB</h1>
+            <a href="./filmes.html"><h3>Filmes</h3></a>
+            <a href="./documentarios.html"><h3>Documentários</h3></a>
+            <a href="./animaçoes.html"><h3>Animações</h3></a>
+        </header>
+    </div>
     <main>
         <div class="formulario">
+            <div class="pesquisa">
+            <h1>The Academy Awards Data Base</h1>
+            <h1>Explore por filmes, documentários e animações premiados com Oscar.</h1>
             <form action="#">
-                <label for="filme">Pesquise um filme aqui</label>
-                <input type="text" id="filme" name="busca">
-                <button type="submit">Buscar</button>
+                <label for="meu-input"></label>
+                <input type="text" id="meu-input" name="busca" placeholder="Pesquise por filmes, documentários, animações...">
+                <button type="submit" onclick="return enviar()">Buscar</button>
             </form>
+            </div>
         </div>
-        <div class="filmes">
-            <section class="parasita">
-                <a href="https://www.imdb.com/title/tt6751668/?ref_=nv_sr_srsg_0"><h2>Parasita</h2></a>
-                <img src="./media/parasite.jpg" width="226px" height="320px" alt="Poster do filme Parasita">
-                <ul>
-                    <li>Duração: 132 minutos</li>
-                    <li>Elenco: Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong</li>
-                    <li>Vencedor do Oscar de Melhor Filme de 2019</li>
-                </ul>
-            </section>
-            <section class="moonlight">
-                <a href="https://www.imdb.com/title/tt4975722/?ref_=nv_sr_srsg_0"><h2>Moonlight</h2></a>
-                <img src="./media/Moonlight.jpg" width="226px" height="320px" alt="Poster do filme Moonlight">
-                <ul>
-                    <li>Duração: 111 minutos</li>
-                    <li>Elenco: Mahershala Ali, Naomie Harris, Trevante Rhodes</li>
-                    <li>Vencedor do Oscar de Melhor Filme de 2016</li>
-                </ul>
-            </section>
-            <section class="green-book">
-                <a href="https://www.imdb.com/title/tt6966692/?ref_=nv_sr_srsg_0"><h2>Green Book</h2></a>
-                <img src="./media/green book.jpg" width="226px" height="320px" alt="Poster do filme Green Book">
-                <ul>
-                    <li>Duração: 130 minutos</li>
-                    <li>Elenco: Viggo Mortensen, Mahershala Ali, Linda Cardellini</li>
-                    <li>Vencedor do Oscar de Melhor Filme de 2018</li>
-                </ul>
-            </section>
-            <section class="coda">
-                <a href="https://www.imdb.com/title/tt10366460/?ref_=nv_sr_srsg_0"><h2>No Ritmo do Coração</h2></a>
-                <img src="./media/codamovie.jpg" width="226px" height="320px" alt="Poster do filme no Ritmo do Coração">
-                <ul>
-                    <li>Duração: 111 minutos</li>
-                    <li>Elenco: Emilia Jones, Marlee Matlin, Troy Kotsur</li>
-                    <li>Vencedor do Oscar de Melhor Filme de 2021</li>
-                </ul>
-            </section>
-        </div>
+        <section id="filmes">
+            <a href="./filmes.html" class="link-seçao"><h2 class="titulo-seçao">Filmes</h2></a>
+            <div id="container-filmes">
+                <div class="card">
+                    <img src="" id="parasita" alt="Poster do filme Parasita">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2019</li>
+                        <li>Duração: 132 minutos</li>
+                        <li>Elenco: Song Kang-ho, Sun-kyun Lee, Cho Yeo-jeong</li> -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="" id="moonlight" alt="Poster do filme Moonlight">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2016</li>
+                        <li>Duração: 111 minutos</li>
+                        <li>Elenco: Mahersala Ali, Naomie Harris, Trevante Rhodes</li> -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="" alt="Poster do filme Green Book" id="green-book"> 
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2018</li>
+                        <li>Duração: 130 minutos</li>
+                        <li>Elenco: Viggo Mortensen, Mahersala Ali, Linda Cardellini</li> -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="" alt="Poster do filme No Ritmo do Coração" id="coda">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2021</li>
+                        <li>Duração: 111 minutos</li>
+                        <li>Elenco: Emilia Jones, Marlee Matlin, Troy Kotsur</li> -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="animaçoes">
+            <a href="./animaçoes.html" class="link-seçao"><h2 class="titulo-seçao">Animações</h2></a>
+            <div id="container-filmes">
+                <div class="card">
+                    <img src="" alt="Poster do filme Divertida Mente" id="divertida-mente">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2015</li>
+                        <li>Duração: 95 minutos</li>
+                        <li>Elenco: Amy Poehler, Bill Hader, Lewis Black</li> -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="" alt="Poster do filme Viva - A vida é uma festa" id="viva">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2017</li>
+                        <li>Duração: 105 minutos</li>
+                        <li>Elenco: Anthony Gonzalez, Gael García Bernal, Benjamin Bratt</li> -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="" alt="Poster do filme Toy Story 4" id="toy-story">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2019</li>
+                        <li>Duração: 100 minutos</li>
+                        <li>Elenco: Tom Hanks, Tim Allen, Annie Potts</li> -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="" alt="Poster do filme Soul" id="soul">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2020</li>
+                        <li>Duração: 100 minutos</li>
+                        <li>Elenco: Jamie Foxx, Tina Fey, Graham Norton</li> -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="documentarios">
+            <a href="./documentarios.html" class="link-seçao"><h2 class="titulo-seçao">Documentários</h2></a>
+            <div id="container-filmes">
+                <div class="card">
+                    <img src="" alt="Poster do documentário Industria Americana" id="industria-americana">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2019</li>
+                        <li>Duração: 90 minutos</li>
+                        <li>Elenco: Junming Wang, Sherrod Brown, Robert Allen</li> -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="" alt="Poster do documentário Summer of Soul" id="summer-of-soul">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2021</li>
+                        <li>Duração: 98 minutos</li>
+                        <li>Elenco: Dorinda Drake, Barbara Bland-Acosta, Darryl Lewis</li> -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="" alt="Poster do documentário Oj: Made In America" id="oj">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2016</li>
+                        <li>Duração: 467 minutos</li>
+                        <li>Elenco: OJ Simpson, Marcia Clark, F. Lee Bailey </li> -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="" alt="Poster do documentário Ícaro" id="icaro">
+                    <h2 class="titulo-filme"></h2>
+                    <ul>
+                        <!-- <li>Ano de Lançamento: 2017</li>
+                        <li>Duração: 120 minutos</li>
+                        <li>Elenco: Bryan Fogel, Dave Zabriskie, Don Catlin</li> -->
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>Olá, sou estudante da turma Ammal A da Labenu.</p>
-        <p>Meu nome é Giovana Ferreira Tiburtino<a href="https://github.com/giovanatiburtino"> e você pode acessar meu github clicando aqui.</p></a>
+        <ul class="contato">
+            <li>Informações de Contato:</li>
+            <li>Git Hub: https://github.com/giovanatiburtino</li>
+        </ul>
     </footer>
 </body>
 </html>
