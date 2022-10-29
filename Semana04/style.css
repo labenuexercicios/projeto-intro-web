@@ -65,6 +65,11 @@ main {
   text-align: center;
 }
 
+.botao:hover{
+  color: white;
+  background-color: olive;
+}
+
 .botao {
   font-size: xx-large;
   gap: 6px;
@@ -85,6 +90,16 @@ main {
   flex-wrap: wrap;
   /* flex-direction: column; */
   gap: 10px;
+}
+
+
+a {
+  color:black;
+  text-decoration: none;
+}
+
+a:hover{
+color: cadetblue;
 }
 
 .padraoContainerPizzas {

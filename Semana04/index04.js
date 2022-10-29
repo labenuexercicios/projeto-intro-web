@@ -180,26 +180,11 @@ const recebeArrayObjetos = (arrayInformado, stringInformada) => {
     if (resultado.length > 0) {
         console.log(resultado[0])
     } else {
-        // alert("Nenhuma pizza de anchovas encontrada")
+         alert("Nenhuma pizza de anchovas encontrada")
     }
     
 }
 recebeArrayObjetos(pizzaArraySaborosas0, "Pizza de quatro queijos")
 recebeArrayObjetos(pizzaArraySaborosas0, "pizza de anchovas")
-
-
-
-// Exemplo do Carlos, tentar aplicar no exercício 4
-// const retornaBlack = personagens.filter((possuiBlackNoNome) => {
-//     if(possuiBlackNoNome.identidade === personagemUsuario) {
-//         console.log(possuiBlackNoNome.identidade)
-//     } else {
-//         alert("nenhum item foi encontrado.")
-//     }
-// //Adicionar o ALERT que ficou faltando
-//     return possuiBlackNoNome.identidade === "Black Widow"
-// })
-
-// console.log(retornaBlack)
 
 //----------------------------------------------------------------------------------------------------------------------------------------------//
