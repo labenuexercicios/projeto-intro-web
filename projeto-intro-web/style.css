@@ -50,7 +50,7 @@ main{
 .pesquisa{
     width: 85%;
     height: 100%;
-    background-image: url(../projeto/midia/background-header.jpg);
+    background-image: url(../projeto-intro-web/midia/background-header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
