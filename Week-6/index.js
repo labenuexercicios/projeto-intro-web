@@ -17,7 +17,7 @@ const playerTwo = {
     fonte: "https://www.basketball-reference.com/players/j/jamesle01.html" ,
     foto: "./img-nba/james.png",
     name: "Lebron James",
-    heigth: 206,
+    height: 206,
     still: true,
     position: "Ala-Armador, Armador, Ala-Pivô, Ala",
     draft: "Cleveland Cavaliers",
@@ -29,7 +29,7 @@ const playerThree = {
 
     foto: "./img-nba/oneal.png" ,
     name: "Shanquille O'Neal",
-    heigth: 216,
+    height: 216,
     still: false,
     position:  "Pivô",
     draft: "Orlando Magic",
@@ -51,9 +51,9 @@ const playerFour = {
 
 const playerFive = {
   
-    foto: "./img-nba/oneal.png" ,
+    foto: "./img-nba/dominique.png" ,
     name: "Dominique Wilkins",
-    heigth: 203,
+    height: 203,
     still: false,
     position:  "Ala-Armador",
     draft: "Utah Jazz",
@@ -64,7 +64,7 @@ const playerFive = {
 
 const playerSix = {
 
-    foto: "./img-nba/michael.png",
+    foto: "./img-nba/abdul.png",
     name: "Kareem Abdul-Jabbar",
     height: 218,
     still: false,
@@ -76,9 +76,9 @@ const playerSix = {
 
 const playerSeven = {
 
-    foto: "./img-nba/james.png",
+    foto: "./img-nba/wilt.png",
     name: "Wilt Chamberlain",
-    heigth: 216,
+    height: 216,
     still: false,
     position: "Pivô",
     draft: "Philadelphia Warriors",
@@ -88,9 +88,9 @@ const playerSeven = {
 
 const playerEight = {
         
-    foto: "./img-nba/oneal.png" ,
+    foto: "./img-nba/nowitdi01.png" ,
     name: " Dirk Nowitzki",
-    heigth: 213,
+    height: 213,
     still: false,
     position:  "Ala-Pivô, Pivô",
     draft: "Milwaukee Bucks",
@@ -100,7 +100,7 @@ const playerEight = {
 
 const playerNine = {
 
-    foto: "./img-nba/iverson.png" ,
+    foto: "./img-nba/irving.png" ,
     name: "Kyrie Irving",
     height: 188,
     still: true,
@@ -112,9 +112,9 @@ const playerNine = {
 
 const playerTen = {
         
-    foto: "./img-nba/oneal.png" ,
+    foto: "./img-nba/curry.png" ,
     name: " Stephen Curry",
-    heigth: 188,
+    height: 188,
     still: true,
     position:  "Armador",
     draft: "Golden State Warriors",
@@ -124,7 +124,7 @@ const playerTen = {
 
 const playerEleven = {
 
-    foto: "./img-nba/iverson.png" ,
+    foto: "./img-nba/gianis.png" ,
     name: "Giannis Antetokounmpo",
     height: 213,
     still: true,
@@ -136,7 +136,7 @@ const playerEleven = {
 
 const playerTwelve = {
 
-    foto: "./img-nba/iverson.png" ,
+    foto: "./img-nba/bryan.png" ,
     name: "Kobe Bryant",
     height: 198,
     still: false,
@@ -227,7 +227,7 @@ function adicionaJogadores (cadaJogador, index, arr) {
     //Criando texto dos cards
     let conteudoNamePlayerNba = document.createTextNode(`Nome:  ${cadaJogador.name}`);
     let conteudoHeigthPlayerNba = document.createTextNode(`Altura: ${cadaJogador.height}`);
-    let conteudoStillPlayerNba = document.createTextNode(`Ainda em atividade: ${cadaJogador.still}`);
+    let conteudoStillPlayerNba = document.createTextNode(`Ainda em atividade: ${cadaJogador.still?"Sim":"Não"}`);
     let conteudoPositionPlayerNba = document.createTextNode(`Posição: ${cadaJogador.position}`);
     let conteudoDraftPlayerNba = document.createTextNode(`Draft: ${cadaJogador.draft}`);
     let conteudoOriginPlayerNba = document.createTextNode(`Origem: ${cadaJogador.origin}`);
