@@ -1,7 +1,7 @@
 const playerOne = {
     
     fonte: "https://www.basketball-reference.com/players/j/jordami01.html",
-    foto: "./img-nba/michael.jpg",
+    foto: "./img-nba/michael.png",
     name: "Michael Jordan",
     height: 198,
     still: false,
@@ -64,7 +64,7 @@ const playerFive = {
 
 const playerSix = {
 
-    foto: "./img-nba/michael.jpg",
+    foto: "./img-nba/michael.png",
     name: "Kareem Abdul-Jabbar",
     height: 218,
     still: false,
@@ -181,24 +181,35 @@ allPlayer.forEach(adicionaJogadores)
 
 function adicionaJogadores (cadaJogador, index, arr) {
     console.log(cadaJogador)
+
+    let linkJogador = document.createElement("a");
+    linkJogador.setAttribute("href", cadaJogador.fonte)  
+    linkJogador.setAttribute("target", "_blank")
+        
     
     //Criando referência para lista não ordenada
     let divReferenciaLista = document.getElementById("principal");
+    
     let paiJogadores = document.createElement("div");
     paiJogadores.setAttribute("class", "pai-jogadores");
     paiJogadores.setAttribute("id", `nba${index+1}`);
+    divReferenciaLista.insertAdjacentElement('beforeend', paiJogadores);
+
+
     let secaoAlinhamento = document.createElement("div");
     secaoAlinhamento.setAttribute("class", "alinhamento");
-    secaoAlinhamento.setAttribute("id", `box${index+1}`);
-    
-    divReferenciaLista.insertAdjacentElement('beforeend', paiJogadores);
+    secaoAlinhamento.setAttribute("id", `box${index+1}`);    
+
+    linkJogador.insertAdjacentElement('beforeend', secaoAlinhamento);
     paiJogadores.insertAdjacentElement('beforeend', secaoAlinhamento);
     
+
     let imagemJogadorNba = document.createElement("img");
     imagemJogadorNba.setAttribute("src", cadaJogador.foto);
     imagemJogadorNba.setAttribute("alt", cadaJogador.name);
     secaoAlinhamento.insertAdjacentElement('beforeend', imagemJogadorNba);
     let listaNaoOrdenadaAtributos = document.createElement("ul");    
+    listaNaoOrdenadaAtributos.setAttribute('class','listaElementos')
     secaoAlinhamento.insertAdjacentElement('beforeend', listaNaoOrdenadaAtributos);
         
     //Criando items da lista
@@ -212,18 +223,15 @@ function adicionaJogadores (cadaJogador, index, arr) {
     
     //Adicionando hiperlink
     namePlayerNba.setAttribute("id", `link${index+1}`)
-    let linkJogador = document.createElement("a");
-    linkJogador.setAttribute("href", cadaJogador.fonte)  
-    linkJogador.setAttribute("target", "_blank")
-        
+
     //Criando texto dos cards
     let conteudoNamePlayerNba = document.createTextNode(`Nome:  ${cadaJogador.name}`);
     let conteudoHeigthPlayerNba = document.createTextNode(`Altura: ${cadaJogador.height}`);
     let conteudoStillPlayerNba = document.createTextNode(`Ainda em atividade: ${cadaJogador.still}`);
     let conteudoPositionPlayerNba = document.createTextNode(`Posição: ${cadaJogador.position}`);
-    let conteudoDraftPlayerNba = document.createTextNode(`Posição: ${cadaJogador.draft}`);
-    let conteudoOriginPlayerNba = document.createTextNode(`Posição: ${cadaJogador.origin}`);
-    let conteudoTimePlayerNba = document.createTextNode(`Posição: ${cadaJogador.time}`);
+    let conteudoDraftPlayerNba = document.createTextNode(`Draft: ${cadaJogador.draft}`);
+    let conteudoOriginPlayerNba = document.createTextNode(`Origem: ${cadaJogador.origin}`);
+    let conteudoTimePlayerNba = document.createTextNode(`Tempo de : ${cadaJogador.time}`);
     
     //Adicionando conteúdos às tags
     namePlayerNba.appendChild(conteudoNamePlayerNba);
@@ -237,7 +245,7 @@ function adicionaJogadores (cadaJogador, index, arr) {
         
 
 
-    listaNaoOrdenadaAtributos.insertAdjacentElement('afterbegin', namePlayerNba);
+    listaNaoOrdenadaAtributos.insertAdjacentElement('beforeend', namePlayerNba);
     listaNaoOrdenadaAtributos.insertAdjacentElement('beforeend', linkJogador);
     listaNaoOrdenadaAtributos.insertAdjacentElement('beforeend', heigthPlayerNba);
     listaNaoOrdenadaAtributos.insertAdjacentElement('beforeend', stillPlayerNba);
@@ -247,7 +255,7 @@ function adicionaJogadores (cadaJogador, index, arr) {
     listaNaoOrdenadaAtributos.insertAdjacentElement('beforeend', timePlayerNba);
     //Posicionando âncora de link da fonte
 
-    linkJogador.insertAdjacentElement('beforeend', heigthPlayerNba)
+    // linkJogador.insertAdjacentElement('beforeend', heigthPlayerNba)
     listaNaoOrdenadaAtributos.insertAdjacentElement('beforeend', namePlayerNba);
       
     console.log(namePlayerNba);
@@ -260,7 +268,7 @@ function adicionaJogadores (cadaJogador, index, arr) {
 
 function NbaAction() {
     let input = document.getElementById("buscaJogador").value
-    console.log(NbaAction);
+    console.log(input);
 
     input = input.toLowerCase();
     let cadaJogador = document.getElementsByClassName("pai-jogadores");
@@ -277,10 +285,14 @@ function NbaAction() {
 
     }
 
-    if(input === "") {
-         alert("Digite algo, né mano!!")
+//     if(input === "") {
+//          alert("Digite algo, né mano!!")
 
-    }
+//     }
+}
+function cleanImput(){
+    document.getElementById("buscaJogador").value = ""
+    this.NbaAction()
 }
 
 
