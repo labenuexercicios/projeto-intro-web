@@ -4,14 +4,18 @@
 }
 
 main{
-    background-image: url("./img-nba/fundo.png");   
-    background-size: cover;
+    /* background-image: url("./img-nba/fundo.png");    */
+    background-image: url("./img-nba/fundo.png"), url("./img-nba/fundo.png");
+    background-repeat: no-repeat, repeat;
+    background-color: #cccccc;
+    
 }
 
 li{
     list-style: none;
 
 }
+
 
 header{
     border: 1px solid black;
@@ -63,13 +67,33 @@ img{
     border-radius: 100px;
 }
 
-
-.botao{
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start ;
-    justify-content: flex-start;
+.img{
+    width: 50px;
 }
+
+.idem {
+    padding: 15px;
+    border: 1px #DDD solid;
+  }
+  .idem:nth-child(1){
+    width: 300px;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .idem:nth-child(2){
+    width: 40px;
+    border-radius: 0px 10px 10px 0px;
+    text-align:left;
+    color: white;
+    background: black;
+    border: 1px black solid;
+    cursor: pointer;
+    text-indent: -1.3px;
+  }
+  .idem:nth-child(1):focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: 1px #DDD solid;
+  } 
 
 ul{
     color: white;
