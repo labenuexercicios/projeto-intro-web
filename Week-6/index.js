@@ -27,6 +27,7 @@ const playerTwo = {
 
 const playerThree = {
 
+    fonte: "https://www.basketball-reference.com/players/j/jordami01.html",
     foto: "./img-nba/oneal.png" ,
     name: "Shanquille O'Neal",
     height: 216,
@@ -39,6 +40,7 @@ const playerThree = {
 
 const playerFour = {
         
+    fonte: "https://www.basketball-reference.com/players/o/onealsh01.html",
     foto: "./img-nba/iverson.png" ,
     name: "Allen Iverson",
     height: 183,
@@ -51,6 +53,7 @@ const playerFour = {
 
 const playerFive = {
   
+    fonte: "https://www.basketball-reference.com/players/w/wilkido01.html",
     foto: "./img-nba/dominique.png" ,
     name: "Dominique Wilkins",
     height: 203,
@@ -64,6 +67,7 @@ const playerFive = {
 
 const playerSix = {
 
+    fonte: "https://www.basketball-reference.com/players/a/abdulka01.html",
     foto: "./img-nba/abdul.png",
     name: "Kareem Abdul-Jabbar",
     height: 218,
@@ -76,6 +80,7 @@ const playerSix = {
 
 const playerSeven = {
 
+    fonte: "https://www.basketball-reference.com/players/c/chambwi01.html",
     foto: "./img-nba/wilt.png",
     name: "Wilt Chamberlain",
     height: 216,
@@ -88,6 +93,7 @@ const playerSeven = {
 
 const playerEight = {
         
+    fonte: "https://www.basketball-reference.com/players/n/nowitdi01.html",
     foto: "./img-nba/nowitdi01.png" ,
     name: " Dirk Nowitzki",
     height: 213,
@@ -100,6 +106,7 @@ const playerEight = {
 
 const playerNine = {
 
+    fonte: "https://www.basketball-reference.com/players/i/irvinky01.html",
     foto: "./img-nba/irving.png" ,
     name: "Kyrie Irving",
     height: 188,
@@ -111,7 +118,8 @@ const playerNine = {
 }
 
 const playerTen = {
-        
+    
+    fonte: "https://www.basketball-reference.com/players/c/curryst01.html",
     foto: "./img-nba/curry.png" ,
     name: " Stephen Curry",
     height: 188,
@@ -124,6 +132,7 @@ const playerTen = {
 
 const playerEleven = {
 
+    fonte: "https://www.basketball-reference.com/players/a/antetgi01.html",
     foto: "./img-nba/gianis.png" ,
     name: "Giannis Antetokounmpo",
     height: 213,
@@ -136,6 +145,7 @@ const playerEleven = {
 
 const playerTwelve = {
 
+    fonte: "https://www.basketball-reference.com/players/b/bryanko01.html",
     foto: "./img-nba/bryan.png" ,
     name: "Kobe Bryant",
     height: 198,
