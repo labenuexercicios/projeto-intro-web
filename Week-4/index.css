@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    background-image: url("/Week-4/img-nba/fundo.png");   
+}
+
+li{
+    list-style: none;
+
+}
+
+header{
+    border: 1px solid black;
+    border-style: dotted;
+    border-color: white ;
+    display: flex;
+    align-items: center;
+    background-color: rgb(9, 9, 14);
+}
+
+h1{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(60, 148, 129);
+}
+
+
+.jogador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pai-jogadores{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+
+}
+
+
+.botao{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+    justify-content: flex-start;
+}
+
+ul{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.fundo{
+    background-image: url("/Week-4/img-nba/fundo.png");
+    color: rgb(185, 77, 77);
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    padding: 0 10px 0 10px;
+    border: 1px solid black;
+    border-style: dotted;
+    border-color: white ;
+}
