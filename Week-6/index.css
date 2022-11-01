@@ -89,7 +89,9 @@ img{
 }
 
 .img{
-    width: 50px;
+    width: 40px;
+    padding: 4px;
+    margin-left: 60%;
 }
 
 .idem {
@@ -134,7 +136,7 @@ ul{
     flex-direction:row;
     align-items:center;
     justify-content:space-between;
-    padding: 0 10px 0 10px;
+    padding: 0 120px 0 120px;
     height: 10vh;   
     box-sizing: content-box;
 
