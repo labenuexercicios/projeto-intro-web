@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto intro web</title>
+    <script src="projeto.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="titulo">
+            <h3 class="cesta">Cesta de frutas</h3>
+            <img src="./imagens/basket-love.png" alt="basket image" height="80" widht="80">
+        </div>
+        <div class="busca">
+            <input type="text" placeholder="Digite a fruta!" id="buscador">
+            <button class="botao" onclick="buscarFruta(event)">Buscar</button>
+            <button class="botao" onclick="retornarHome()">Retornar</button>
+        </div>
+    </header>
+    <main class="main">
+        <div class="conteudo" id="selecao"></div>
+    </main>
+    <footer class="footer">
+        Desenvolvido por Éverson Andrade!
+        <a href="https://github.com/everandrade"><img src="./imagens/github-icon-1.svg" alt="Github Icon" height="30"
+                widht="30"></a>
+    </footer>
+</body>
+
+</html>
