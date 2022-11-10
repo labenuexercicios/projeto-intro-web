@@ -34,7 +34,7 @@ if (variavel) {
     adc.push(cachorro)
     console.log(adc)
 } else {
-    alert("Itens não foram adcionados")
+    alert("Itens não foram adcionados"
 }
 
 // for (let i = 0; i < leao.array.length; i++) {
