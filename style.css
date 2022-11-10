@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    background-color: aqua;
+    color: #000000;
+    height: 10vh;
+    display: grid;
+    font-size: 2rem;
+    justify-content: center ;
+    align-items: center;
+    padding: 2%;
+}
+.butonImput{
+    padding: 15px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3px
+}
+.input{
+    width: 38vh;
+    height: 23px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding-left: 40px;
+}
+
+.botao{
+    height: 26px;
+    width: 9vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.lista1{
+    list-style-type: none;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.div-Listas{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 2vh;
+    border-bottom: 2cm;
+    justify-items: center;
+}
+
+.section1 {
+    display: grid;
+    background-color: orange;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    grid-template-columns: 1fr 2fr;
+    height: 20vh;
+    list-style: none;
+    align-items: center;
+    justify-items: center;
+    width: 50vh;
+}
+
+.section2 {
+    width: 100%;
+    display: grid;
+    background-color: orange;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    grid-template-columns: 1fr 2fr;
+    height: 20vh;
+    align-items: center;
+    justify-items: center;
+    width: 50vh;
+}
+
+.section3 {
+    display: grid;
+    background-color: orange;   
+    grid-column: 2/3;
+    grid-row: 3/4;
+    grid-template-columns: 1fr 2fr;
+    height: 20vh;
+    align-items: center;
+    text-decoration:none;
+    text-shadow: none;
+    justify-items: center;
+    width: 50vh;
+}
+
+.universal {
+    display: grid;
+    align-items: center;
+    list-style: none;
+}
+
+.universal li a{
+    text-decoration: none;
+    color:#000000;
+}
+
+footer{
+    width: 100%;
+    min-height: 100%;
+    background-color: aqua;
+    color: black;
+    height: 15vh;
+    display: grid;
+    font-size: 2rem;
+    justify-content:center;
+    align-items:center;
+    padding: 2%;
+}
+
+.Lista{
+    list-style: none;
+}
+
+.listasde a{
+    display: box;
+    text-decoration: none;
+    color: #000000;
+}
+
