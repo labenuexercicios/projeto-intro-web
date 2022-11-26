@@ -29,7 +29,7 @@ const usos3 = ["Suplementação alimentar", " Adubo para plantas", "Conservaçã
 const solubilidadeEmAgua3 = true
 
 const média = (massaMolar + massaMolar2 + massaMolar3) / 3
-console.log = `A média dos valores de massa molar é igual ${média}`
+console.log (`A média dos valores de massa molar é igual ${média}`)
 
 const solubilidadeEmAgua = (solubilidadeEmAgua1 === solubilidadeEmAgua2 === solubilidadeEmAgua3)
 console.log(solubilidadeEmAgua)
