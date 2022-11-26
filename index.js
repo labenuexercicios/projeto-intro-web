@@ -28,14 +28,14 @@ const massaMolar3 = 176.09
 const usos3 = ["Suplementação alimentar", " Adubo para plantas", "Conservação de alimentos industrializados"]
 const solubilidadeEmAgua3 = true
 
-const média = (massaMolar + massaMolar2 + massaMolar3) / 3
-console.log (`A média dos valores de massa molar é igual ${média}`)
+const media = (massaMolar + massaMolar2 + massaMolar3) / 3
+console.log (`A média dos valores de massa molar é igual ${media}`)
 
 const solubilidadeEmAgua = (solubilidadeEmAgua1 === solubilidadeEmAgua2 === solubilidadeEmAgua3)
 console.log(solubilidadeEmAgua)
 
 
-console.log(`Composto químico ${compostoQuimico1}`)
+console.log(`Composto químico ${compostoQuimico1.toUpperCase()}`)
 console.log("\n")
 console.log(`Nome mais conhecido ${nomeMaisConhecido}`)
 console.log("\n")
@@ -48,7 +48,7 @@ console.log("\n")
 console.log(`É solúvel em água? ${solubilidadeEmAgua1}`)
 console.log("\n")
 
-console.log(`Composto químico ${compostoQuimico2}`)
+console.log(`Composto químico ${compostoQuimico2.toUpperCase()}`)
 console.log("\n")
 console.log(`Nome mais conhecido ${nomeMaisConhecido2}`)
 console.log("\n")
@@ -61,7 +61,7 @@ console.log("\n")
 console.log(`É solúvel em água? ${solubilidadeEmAgua2}`)
 console.log("\n")
 
-console.log(`Composto químico ${compostoQuimico3}`)
+console.log(`Composto químico ${compostoQuimico3.toUpperCase()}`)
 console.log("\n")
 console.log(`Nome mais conhecido ${nomeMaisConhecido3}`)
 console.log("\n")
