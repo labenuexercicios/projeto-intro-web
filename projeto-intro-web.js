@@ -56,12 +56,31 @@ console.table(filme2)
 
 
 //MODO 2
-const filmes00 = [
-  {filme: "The Fast and The Furious", sinopse: "The Fast and the Furious é uma franquia de mídia e Universo Compartilhado" , duracao: 106, anoDoFilme: 2001, generoAcao: true , personagens: "Brian, Toretto, Mia, Letty, Vince, Leon, Jesse, Johnny"},
-  {filme: "Pets", sinopse: "Max, um cão da raça terrier, precisa aprender a conviver com Duke, o novo cão do seu dono." , duracao: 90, anoDoFilme: 2016, generoAcao: true , personagens: "Max, Duke, Gidget, Snowball, Chloe, Tiberius, Katie, Buddy, Mel, Pops, Norman"}
-]
-console.table(filmes00)
+const filmes00 = []
+let filme01 = 
+  {filme: "The Fast and The Furious",
+  sinopse: "The Fast and the Furious é uma franquia de mídia e Universo Compartilhado",
+  duracao: 106,
+  anoDoFilme: 2001,
+  generoAcao: true,
+  personagens: "Brian, Toretto, Mia, Letty, Vince, Leon, Jesse, Johnny"}
 
+ let filme02 =
+  {filme: "Pets",
+  sinopse: "Max, um cão da raça terrier, precisa aprender a conviver com Duke, o novo cão do seu dono.",
+  duracao: 90,
+  anoDoFilme: 2016,
+  generoAcao: true,
+  personagens: "Max, Duke, Gidget, Snowball, Chloe, Tiberius, Katie, Buddy, Mel, Pops, Norman"}
+
+if (filme01.generoAcao == true){
+  filmes00.push(filme01)
+} else {alert(`O filme ${filme01.filme} que não é de ação`)}
+
+if (filme02.generoAcao == true){
+  filmes00.push(filme02)
+} else {alert(`O filme ${filme02.filme} que não é de ação`)}
+console.log(filmes00)
 
 
 const mediaDuracao = ((duracao1+duracao2)/2)
