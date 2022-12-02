@@ -75,3 +75,34 @@ Marca: ${marca2}
 Ano: ${anofab2}
 Econômica: ${economia2}
 Cilindrada: ${cilind2}`)
+
+//Semana 2
+const informacoes = []
+
+informacoes.push( {
+  Nome: 'MOTO1',
+      Marca: 'Honda',
+      Ano: '2015',
+      Economica: true,
+      Cilindrada: '125'
+    },
+    { Nome: 'MOTO2',
+    Marca: 'Yamaha',
+    Ano: '2010',
+    Economica: true,
+    Cilindrada: '160'
+    },
+    {Nome: 'MOTO3',
+    Marca: 'Kawasaki',
+    Ano: '2018',
+    Economica: false,
+    Cilindrada: '400'
+}
+);
+console.log(informacoes)
+
+//Altere o item 3 “Adicione os novos objetos no array de objetos,
+//utilizando o push()”, para criar uma verificação antes de dar o push.
+//A caraterística booleana do objeto deve ser validada.
+// Isto é, o objeto só deve ser adicionado ao array 
+//se a propriedade booleana for true;
