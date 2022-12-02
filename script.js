@@ -1,3 +1,4 @@
+/*
 let filme1 = "De Repente Uma Família".toUpperCase();
 let genero1 = "comédia/drama";
 let anoDeLançamento1 = 2018;
@@ -40,6 +41,95 @@ console.log(`${filme2} \ngênero: ${genero2} \nano de lançamento: ${anoDeLança
 console.log("");
 
 console.log(`${filme3} \ngênero: ${genero3} \nano de lançamento: ${anoDeLançamento3} \nduração: ${duracaoEmMinutos3} minutos \nremake: ${ehRemake3} \nfilmes semelhantes: ${filmesSemelhantes3}`);
+*/
+
+
+
+//1. Transforme os itens que criamos nas últimas semanas em objetos.
+filme1 = {
+    nome: "De Repente Uma Família",
+    genero: "comédia/drama",
+    anoDeLançamento: 2018,
+    duracaoEmMinutos: 119,
+    ehRemake: true
+}
+
+filme2 = {
+    nome: "Tropa De Elite",
+    genero: "policial/ação",
+    anoDeLançamento: 2007,
+    duracaoEmMinutos: 115,
+    ehRemake: false
+}
+
+filme3 = {
+    nome: "O Sorriso Da Morte",
+    genero: "terror",
+    anoDeLançamento: 2022,
+    duracaoEmMinutos: 115,
+    ehRemake: false
+}
+
+//2. Crie um array para guardar os objetos. Este array deve estar vazio, por enquanto;
+const meusFilmes = [];
+
+//3. Adicione os objetos criados no item 1, ao array de objetos criado no item 2, utilizando o push() .
+
+/*meusFilmes.push(filme1, filme2, filme3);
+console.log(meusFilmes);*/
+
+//4. Altere o item 3 “Adicione os novos objetos no array de objetos, utilizando o push()”, para criar uma verificação antes de dar o push. A caraterística booleana do objeto deve ser validada. Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for true;
+
+function verificando (meusFilmes){
+
+    if(filme1.ehRemake && filme2.ehRemake && filme3.ehRemake === true){
+     meusFilmes.push(filme1, filme2,filme3); 
+    }
+
+    else if(filme1.ehRemake && filme2.ehRemake === true){
+        meusFilmes.push(filme1, filme2);
+        console.log("O filme " + filme3.nome + " é falso, portanto não será impresso no console");
+    }
+
+    else if(filme1.ehRemake && filme3.ehRemake === true){
+        meusFilmes.push(filme1, filme3);
+        console.log("O filme: " + filme2.nome + " é falso, portanto não será impresso no console");
+    }
+
+    else if(filme2.ehRemake && filme3.ehRemake === true){
+        meusFilmes.push(filme2, filme3);
+        console.log("O filme: " + filme1.nome + " é falso, portanto não será impresso no console");
+    }
+    
+    else if(filme1.ehRemake === true){
+        meusFilmes.push(filme1);
+        console.log("Os filmes: " + filme2.nome + ", " + filme3.nome + " são falsos, portanto não serão impressos no console");
+    }
+
+    else if(filme2.ehRemake === true){
+        meusFilmes.push(filme2);
+        console.log("Os filmes: " + filme1.nome + ", " + filme3.nome + " são falsos, portanto não serão impressos no console");
+    }
+
+    else if(filme3.ehRemake === true){
+        meusFilmes.push(filme3);
+        console.log("Os filmes: " + filme1.nome + ", " + filme2.nome + " são falsos, portanto não serão impressos no console");
+    }
+
+    else{
+        alert("O item não foi adicionado")
+    }
+
+}
+verificando(meusFilmes);
+console.table(meusFilmes);
+
+
+
+
+
+
+
 
 
 
