@@ -3,7 +3,7 @@
 const cardapio = [];
 
 const comida1 = {
-  nome: "Pizza",
+  nome: "pizza",
   descricao: "Uma massa com 'recheio' em cima",
   ingredientes:
     "Farinha de trigo, Água, Sal, Açucar, Fermento biológico, +Recheio opicional",
@@ -13,7 +13,7 @@ const comida1 = {
 };
 
 const comida2 = {
-  nome: "Coxinha de frango",
+  nome: "coxinha de frango",
   descricao: "Uma massa com 'recheio' dentro de frango",
   ingredientes:
     "Farinha de trigo, leite, Caldo de frango, Margarina, +Recheio de frango",
@@ -23,7 +23,7 @@ const comida2 = {
 };
 
 const comida3 = {
-  nome: "Pastel",
+  nome: "pastel",
   descricao: "Uma massa com recheio dentro",
   ingredientes:
     "Farinha de trigo, Água, sal, Óleo, aguardente, +Recheio opicional",
@@ -32,9 +32,7 @@ const comida3 = {
   sabores: "frango, queijo, carne, outros",
 };
 
-cardapio.push(comida1);
-cardapio.push(comida2);
-cardapio.push(comida3);
+cardapio.push(comida1, comida2, comida3);
 
 const mediaDosPreços =
   (cardapio[0].preço + cardapio[1].preço + cardapio[2].preço) / 3;
@@ -45,9 +43,8 @@ const vegetariano =
 console.log("Os três tem opção vegetariano?", vegetariano);
 
 //Para adicionar novos valores:
-
 const add = confirm(
-  "você deseja adicionar uma nova comida no cardapio? (sim ou não)"
+  "você deseja adicionar uma nova comida no cardapio? (ok ou cancel)"
 );
 cardapio.push(adicionarNovaComida(add));
 
@@ -79,8 +76,40 @@ function adicionarNovaComida(add) {
   }
 }
 
-function RetornarIngredientesSabores() {}
+//retorna o array de objeto e uma string
+const pesquisa = prompt("Qual item você deseja pesquisar?")
+  .toLowerCase()
+  .trim();
 
-for (let indice of cardapio) {
-  console.log(indice);
+function retornoPesquisa(cardapio, nome) {
+  if (nome == cardapio.nome) {
+    alert(
+      `A comida pesquisada é o: ${cardapio.nome[0].toUpperCase()}${cardapio.nome.substring(
+        1
+      )}`
+    );
+  }
+}
+
+//retorna os dois valores de um objeto
+function retornarIngredientesSabores(cardapio1, cardapio2) {
+  console.log("ingredientes :", cardapio1.ingredientes);
+  console.log("sabores:", cardapio2.sabores);
+}
+
+//console.log dos valores
+for (let indice = 0; indice <= cardapio.length - 1; indice++) {
+  //cardapio geral
+  console.log(`
+  
+  
+  
+  -------${cardapio[indice].nome}--------`);
+  console.log(cardapio[indice]);
+
+  //strigs com relatório do objeto
+  retornarIngredientesSabores(cardapio[indice], cardapio[indice]);
+
+  //chamada da função que retorna a pesquisa
+  retornoPesquisa(cardapio[indice], pesquisa);
 }
