@@ -66,7 +66,7 @@ for (let jogadores1 in arrayJogadores) {
 
 function pesquisa() {
   let input = document.getElementById('meu-input').value
-  input=input.toLowerCase();
+  input = input.toLowerCase();
   let x = document.getElementsByClassName('jog');
     
   for (i = 0; i < x.length; i++) { 
@@ -78,6 +78,3 @@ function pesquisa() {
       }
   }  
 }
-
-
-alert(`${input} não encontrado`) 
