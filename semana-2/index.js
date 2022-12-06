@@ -1,511 +1,533 @@
  /* Pizza Grandes=>
 Salgadas*/
 
-const pizzaDaCasa = {
+arraySabores = [pizzaDaCasa = {
     nome:"Da Casa",
     ingredientes: "Mucarela, Presunto, Bacon e Ovos",
     preco: 57.99,
     Categoria: "prato principal",
     Vegetariano: "sim"
-   }
+   },
    
     
    
-   const pizzaDoChefe = {
+   pizzaDoChefe = {
        nome:"Do Chefe",
        ingredientes: "Presunto, Champignon, Palmito, Ovos, Milho, Bacon e Mucarela",
        preco: 57.99,
        Categoria: "prato principal",
-       Vegetariano: confirm       
-   }
+       Vegetariano: false       
+   },
    
       
-   const pizzaDopizzaiolo = {
+   pizzaDopizzaiolo = {
        nome: "Do pizzaiolo",
        ingredientes: "Palmito, Ervilha, Milho, Mucarela e Bacon",
        preco: 57.99,
        Categoria: "prato principal",
-       Vegetariano: confirm             
-   }
+       Vegetariano: false             
+   },
  
 
-   const pizzaAlhoPoro = {
+   pizzaAlhoPoro = {
        nome: "Alho Poró",
        ingredientes: "Palmito, Champignon, Mucarela e Alho poro",
        preco: 57.99,
        Categoria: "prato principal",
-       Vegetariano: confirm             
-   }
+       Vegetariano: false             
+   },
    
      
-   const pizzaAmericana = {
+   pizzaAmericana = {
        nome: "Americana",
        ingredientes:" Presunto, Ovos, Tomate, Mucarela e Bacon",
        preco: 57.99,
        Categoria: "prato principal",
-       Vegetariano: confirm             
-   }
+       Vegetariano: false             
+   },
    
    
-   
-   const pizzaBacon = {
+   pizzaBacon = {
        nome: "Bacon |",
        ingredientes: "Bacon frito e Mucarela",
        preco: 57.99,
        Categoria: "prato principal",
-       Vegetariano: confirm                 
-   }
+       Vegetariano: false                 
+   },
    
    
-   const pizzaBaiacatu  = {
+   pizzaBaiacatu  = {
        nome: "Baiacatu |",
        ingredientes: "Calabresa molda, Requeijao, Cremoso e Bacon",
        preco: 57.99,
-       Categoria: "acompanhamento",
+       Categoria: "prato principal",
        Vegetariano: "sim"    
-   }
+   },
    
       
-   const pizzaBaiacatu2  = {
+   pizzaBaiacatu2  = {
        nome: "Baiacatu ||",
        ingredientes: "Calabresa moida, Cebola e Requeijao Cremoso",
        preco: 57.99,
-       Categoria: "sobremesa",
-       Vegetariano: confirm        
-   }
+       Categoria: "prato principal",
+       Vegetariano: false        
+   },
    
  
    
-   const pizzaBaiana = {
+   pizzaBaiana = {
     nome: "Baiana",
     ingredientes: "Calabresa moida, Ovos, Pimienta e Cebola",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
-const pizzaBrasileira = {
+pizzaBrasileira = {
     nome: "Brasileira",
     ingredientes: "Lombo canadense, Palmito e Mucarela",                
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
-
-const pizzaBrocolis = {
+pizzaBrocolis = {
     nome: "Brocolis",
     ingredientes: "Brocolis, Mucarela e Bacon",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
-const pizzaBrocolis2 = {
+pizzaBrocolis2 = {
     nome: "Brocolis ||",
     ingredientes: "Pelto de Peru, Brocolis, Cheddar, Parmesao e Alho frito",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
 
 
-const pizzaCaipira = {
+pizzaCaipira = {
     nome: "Caipira",
     ingredientes: "Frango, Milho e Requeijao Cremoso",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
-const pizzaCalabresa = {
+pizzaCalabresa = {
     nome: "Calabresa |",
     ingredientes: "Calbresa e Cebola",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
-const pizzaCalabresa2 = {
+pizzaCalabresa2 = {
     nome: "Calabresa ||",
     ingredientes: "Calabresa e Requeijao Cremoso",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
-const pizzaCananeia = {
+pizzaCananeia = {
     nome: "Cananeia", 
     ingredientes: "Peito de peru, Champignon",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
 
-const pizzaDoisQueijos = {
+pizzaDoisQueijos = {
     nome: "Dois Queijos",
     ingredienteS: "Mucarela e Requeijao Cremoso",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
-const pizzaEscarola = {
+pizzaEscarola = {
     nome: "Escarola |",
     ingredientes: "Escarola, Mucarela e Bacon",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
 
-const pizzaFrango1 = {
+pizzaFrango1 = {
     nome: "Frango |",
     ingredientes: "Peito de frango, Bacon e Mucarela",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
-const pizzaFrango3 = {
+pizzaFrango3 = {
     nome: "Frango |||",
     ingredientes: "Frango desfiado, Cheddar ee Batata-palha", 
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
-const pizzaFrango5 = {
+pizzaFrango5 = {
     nome: "Frango V",
     ingredientes: "Frango, Milho, Requeijao de copo e Mucarela",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
-const pizzaGigui = {
+pizzaGigui = {
     nome: "Gigui",
     ingredientes: "Peito de peru, Requeijao de copo, Parmesao e Bacon",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
-const pizzaGIGUI2 = {
+pizzaGIGUI2 = {
     nome: "GIGUI ||",
     ingredientes: "Peito de Peru, Frango desfiado, Cream cheese, Tomate e Alho frito",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
-const pizzaLigth = {
+pizzaLigth = {
     nome: "Ligth",
     ingredientes: "Frango, Brocolis, Palmito, Milho e Mucarela",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
-const pizzaLombo = {
+pizzaLombo = {
     nome: "Lombo |",
     ingredientes: "Lombo, Bacon, Palmito, Cebola e Mucarela",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
-const pizzaLombo2 = {
+pizzaLombo2 = {
     nome: "Lombo ||",
     ingredientes: "Lombo, Requeijao Cremoso e Bacon", 
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
-const pizzaMexicana = {
+pizzaMexicana = {
     nome: "Mexicana",
     ingredientes: "Calabresa moida, Pimentao, Tomate, Cebola, Mucarela e Pimienta seca",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
 
-const pizzaMilho = {
+pizzaMilho = {
     nome: "Milho |",
     ingredientes: "Milho e Mucarela", 
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
-const pizzaMilho2 = {
+pizzaMilho2 = {
     nome: "Milho ||",
     ingredientes: "Milho e Requeijao Cremoso",
     preco: 44.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
-const pizzaNamorado = {
+pizzaNamorado = {
     nome: "Namorado",
     ingredientes: "Mucarela, Palmito e Requeijao Cremoso",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
 
-const pizzaNapolitana = {
+pizzaNapolitana = {
     nome: "Napolitana",
     ingredientes: "Mucarela, Tomate, Parmasao e Molho de tomate",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
-const pizzaPalmito = {
+pizzaPalmito = {
     nome: "Palmito |",
     ingredientes: "Palmito e Mucarela",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
-const pizzaPortuguesa = {
+pizzaPortuguesa = {
     nome: "Portuguesa |",
     ingredientes: "Mucarela, Presunto, Ovos, Ervilha, Cebola e Palmito",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
 
-const pizzaPortuguesa2 = {
+pizzaPortuguesa2 = {
     nome: "Portuguesa ||",
     ingredientes: "Presunto Milho, Ervilha, Cebola, Ovos, Palmito, Mucarela e Bacon",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
-const pizzaQuatroQueijos = {
+pizzaQuatroQueijos = {
     nome: "Quatro Queijos",
     ingredientes: "Mucarela, Requieja Cremoso, Provolone e Permasao", 
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
-const pizzaVegetariano = {
+pizzaVegetariano = {
     nome: "Vegetariano |",
     ingredientes: "Escarola Milho, Ervilha, Palmito, Cebola, Mucarela e Champignon",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
-const pizzaVegetarian = {
+pizzaVegetarian = {
     nome: "Vegetarian ||",
     ingredientes: "Brocolis, Milho, Ervilha, Palmto e Mucarela",
     preco: 57.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
 
 //Linha Prime
-const pizzaCarneLouca = {
+pizzaCarneLouca = {
     nome: "Carne Louca",
     ingredientes: "Mucarela e Carne louca",
     preco: 74.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
 
-const pizzaJabaArretado = {
+pizzaJabaArretado = {
     nome: "Jaba Arretado", 
     ingredientes: "Carne seca, Calabresa, Mantelga de Garrafa, Cebola Roza, ,Provolene e Pimienta biquinho", 
     preco: 49.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
 
 ///Massa Intregal
-const pizzaMargueritaPrime = {
+pizzaMargueritaPrime = {
     nome:"Marguerita Prime",
     ingredientes: "adocada com suco natural de maca, mucarela de bufala, Molho, Manjericao e Tomate", 
     preco: 69.99, 
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"prato principal",
+    Vegetariano: false        
+},
 
 
 
 //Pizza Grandes Doces       
 
-const pizzaBanana = {
+pizzaBanana = {
     nome: "Banana", 
     ingredientes: "Banana, canela em po e leite condesado", 
     preco: 49.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"sobremesa",
+    Vegetariano: false        
+},
 
-const pizzaBananaEspecial = {
+pizzaBananaEspecial = {
     nome: "Banana Especial",
     ingredientes: "Banana con creme holandes",
     preco: 49.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"sobremesa",
+    Vegetariano: false        
+},
 
 
-
-
-const pizzaBanana2 = {
+pizzaBanana2 = {
     nome: "Banana||",
     ingredientes: "Banana, Mucarela, Azucar, Leite Condesado e Canela em po e leite condensado",
     preco: 49.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"sobremesa",
+    Vegetariano: false        
+},
 
 
-const pizzaChocobanana = {  
+pizzaChocobanana = {  
     nome: "Chocobanana",
     ingrendientes:" Chocolate e banana",
     preco: 49.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"sobremesa",
+    Vegetariano: false        
+},
 
 
 
-const pizzaChocolatecomMorango = {  
+pizzaChocolatecomMorango = {  
     nome: "Chocolate com morango", 
     ingredientes: "Chocolate com morango", 
     preco: 49.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"sobremesa",
+    Vegetariano: false        
+},
 
 
-const pizzaConfeti = {  
+pizzaConfeti = {  
     nome: "Confeti",
     ingredientes: "Chocolate e confeti",
     preco: 49.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"sobremesa",
+    Vegetariano: false        
+},
 
 
-const pizzaMinera = {  
+pizzaMinera = {  
     nome: "Minera",
     ingredientes: "Mucarela e doce de leite",
     preco: 49.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"sobremesa",
+    Vegetariano: false        
+},
 
-const pizzaFONDUE = {  
+pizzaFONDUE = {  
     nome: "FONDUE",
     ingredientes: "Nutella, morango, banana e uva verde sem caroco", 
     preco: 69.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"sobremesa",
+    Vegetariano: false        
+},
 
-const pizzaPrestigio = {  
+pizzaPrestigio = {  
     nome: "Prestigio",
     ingredientes: "Chocolate, coco rallado e leite condensado",
     preco: 49.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"sobremesa",
+    Vegetariano: false        
+},
 
 
-
-
-const pizzaPacoca = {  
+pizzaPacoca = {  
     nome: "Pacoca ||",
     ingrendientes: "Mucarela, Doce de leite especial e Pacoca",
     preco: 49.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"sobremesa",
+    Vegetariano: false        
+},
 
-const pizzaNUTELLA = {  
+pizzaNUTELLA = {  
     nome: "NUTELLA", 
     ingredientes: "Nutella, Leite em po, KitKat, Morango e Amendolm de Xerem", 
     preco: 69.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"sobremesa",
+    Vegetariano: false        
+},
 
 
-const pizzaRomeueJulieta = {  
+pizzaRomeueJulieta = {  
     nome: "Romeu e Julieta",
     ingredientes: "Golabada e mucarela", 
     preco: 49.99,
-    Categoria: "sobremesa",
-    Vegetariano: confirm        
-}
+    Categoria:"sobremesa",
+    saborVegetariano: false        
+} ]
+
 
    
    /**Altere o item 3 “Adicione os novos objetos no array de objetos, utilizando o push()”,
     *  para criar uma verificação antes de dar o push. A caraterística booleana do objeto deve ser validada. 
     * Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for true;*/
-   const verificacionVegetariano = Vegetariano && false;
+   /*let catPizza
+   isVegetariano = true
+   catPizza = (pizzaRomeueJulieta)=>{
+    // nao e vegetariana OJO false
+    pizzaRomeueJulieta.saborVegetariano == isVegetariano
+    // PIZA ROMEU E JULIETA NAO E VEGETARIANA && PERGUNTAR SE E VEGETARIana DA FALSO
+
+    //V && F = F
+   }
    console.log(verificacionVegetariano);  
+   */
+   arrayNovo = []
+
+    pizzaRomeueJulieta = [ ...arrayNovo, {  
+    nome: "Romeu e Julieta",
+    ingredientes: "Golabada e mucarela", 
+    preco: 49.99,
+    Categoria:"prato principal",
+    Vegetariano: false}]
+    console.log(pizzaRomeueJulieta)
+
+    pizzaNUTELLA = [...arrayNovo, {  
+        nome: "NUTELLA", 
+        ingredientes: "Nutella, Leite em po, KitKat, Morango e Amendolm de Xerem", 
+        preco: 69.99,
+        Categoria:"prato principal",
+        Vegetariano: false        
+    }]    
    
-   
+    console.log(pizzaNUTELLA)
+
+    pizzaPacoca = [...arrayNovo ,{ nome: "Pacoca ||",
+        ingrendientes: "Mucarela, Doce de leite especial e Pacoca",
+        preco: 49.99,
+        Categoria:"prato principal",
+        Vegetariano: false        
+    }]
+
+    console.log(pizzaPacoca)
 
 
-   //Crie uma condição else, que, em caso de valor false na condição acima, exiba um **ALERT** avisando
+    //Crie uma condição else, que, em caso de valor false na condição acima, exiba um **ALERT** avisando
    // para o usuário que o item não foi adicionado, e não faça o push
-    const pizza = [];
-  
-    const verificacionArray = pizza >= -1;
-    console.log(verificacionArray)
-
-    pizza.push()
-    console.log(pizza)
-
-    const arrayAtaqueDois = [...arrayAtaque, {nome: "Folha Navalha", dano:"45",precisao: "100", ataque:"Grama"}]
-    console.log(arrayAtaqueDois)
-
-
-/*     if(  ){
-       
+    
+    let pizzas = []
+    let categoria = "prato principal"
+    
+    if(categoria !== "sobremesa" ){
+        pizzas.push(...arraySabores, pizzaBacon)
      } else{
         alert("item não foi adicionado, e não faça o push")
      }
-*/     
+    
