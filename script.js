@@ -36,7 +36,7 @@ const possuisistemacontrasurto1 = true
 const itensamaisdokit1 = ["painel solar jinko", "inversor growat", "suporte de apoio", "sistema anti-surto"]
 const aumentaletra1 = marcadopainel1.toLocaleUpperCase()
 
-const marcadopainel2 = "Canadian"
+const marcadopainel2 = "canadian"
 const geracaopormes2 = 560
 const possuisistemacontrasurto2 = false
 const itensamaisdokit2 = ["painel solar canadian", "inversor fronius", "suporte de apoio"]
@@ -56,3 +56,62 @@ console.log(mediadegeracao.toFixed(2))
 console.log(verificacaodeseguranca)
 console.log(aumentaletra1,'\n', `Geração: ${geracaopormes1}\n`,`Possui sistema solar? ${possuisistemacontrasurto1}\n`, `Itens do kit: ${itensamaisdokit1}\n\n`,aumentaletra2,'\n', `Geração: ${geracaopormes2}\n`,`Possui sistema solar? ${possuisistemacontrasurto2}\n`, `Itens do kit: ${itensamaisdokit2}\n\n`, aumentaletra3,'\n', `Geração: ${geracaopormes3}\n`,`Possui sistema solar? ${possuisistemacontrasurto3}\n`, `Itens do kit: ${itensamaisdokit3}\n`,)
 //console.table(guardainformacoesdoskits)
+
+
+const objeto1 = {
+    nomedoobjeto1: "jinko",
+    geracaodoobjeto1: 450,
+    possuisistemaobjeto1: true 
+}
+
+const objeto2 = {
+    nomedoobjeto2: "canadian",
+    geracaodoobjeto2: 560,
+    possuisistemaobjeto2: false
+}
+
+const objeto3 = {
+    nomedoobjeto3: "first",
+    geracaodoobjeto3: 420, 
+    possuisistemaobjeto3: true
+}
+
+const arraypraguardaosobjeto = []
+
+arraypraguardaosobjeto.push(objeto1,objeto2,objeto3)
+console.log(arraypraguardaosobjeto)
+
+const alterar = confirm("Deseja alterar o objeto 3, pelo novo objeto que ja temos cadastrado?")
+//console.log(`O item que substituira é o: ${nomedonovoobjeto3.nomedonovoobjeto3}`)
+
+if(alterar){
+    arraypraguardaosobjeto.pop()
+    const novoobjeto3 = {
+        nomedonovoobjeto3 : "Growat",
+        geracaodonovoobjeto3 : 640,
+        possuisistemanovoobjeto3: true
+    }
+    arraypraguardaosobjeto.push(novoobjeto3)
+    alert("Item foi alterado.")
+}
+else{
+    alert("Item não foi alterado.")
+}
+
+const adicionar = confirm("Deseja adicionar 1 novo objeto?")
+
+if(adicionar){
+    const novoobjeto4 = {
+        nomedonovoobjeto4 : prompt("Digite o nome do novo objeto:"),
+        geracaodonovoobjeto4 : +(prompt("Digite a geração do novo objeto:")),
+        possuisistemanovoobjeto4: confirm("O novo objeto possui sistema contra surto?")
+    }
+    arraypraguardaosobjeto.push(novoobjeto4)
+    alert("Novo objeto foi adicionado.")
+}
+else{
+    alert("Não foi adicionado nada.")
+}
+
+
+
