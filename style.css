@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    header{
+      background-color: rgb(37, 32, 32);      
+      color: white;
+      padding: 18px 18px;   
+      /*position: sticky;*/      
+      width: 100%; 
+      height: 210px;  
+    }
+
+    .navPrincipal {
+      width: 100%;
+      height: 80%;
+      background: #DC661F;
+      margin-top: 20px;
+      
+  }
+  
+  .navPrincipal ul {
+      float: left;
+      margin: 0;
+  }
+  
+  .navPrincipal ul li {
+      display: inline-block;
+      list-style: none;
+  
+  }
+  
+  .navPrincipal ul li a {
+      color: white;
+      font-family: 'Josefin Sans', 'Franklin Gothic Medium';
+      text-decoration: none;
+      font-size: 23px;
+      display: block;
+      padding: 140px 15px;
+  
+  }
+
+      .gym{
+        text-align: center;
+        padding: 10px;
+        font-size: 50px;
+        color: white;
+      }
+     
+      main{
+        width: 100%;
+        text-align:center; 
+        height: 800px;   
+        padding:70px;
+        color: black; 
+        margin: 0 auto;
+       
+        background-color:pink;  
+          
+      }
+ 
+      #a{
+        margin-top: 50px;
+        margin-left: 150px;
+        margin-right: 150px;
+        width: 380px;
+        border: 1px solid black;
+        font-family: Courier, monospace;
+        text-align: left;
+        color: black;
+      } 
+      #b {
+        margin-top: 10px;
+        margin-left: 150px;
+        margin-right: 150px;        
+        width: 380px;
+        border: 1px solid black;
+        font-family: Courier, monospace;
+        text-align: left;
+        color: black;
+      }
+      
+      ul{
+
+        list-style-type: none;
+    }
+    
+      button{
+        background-color:black ;
+        color: white;
+        font-family: monospace;
+      }
+      #clicada{
+        background-color: rgb(223, 214, 214);
+        color: black;        
+      }
+      #clicada:active{  
+        background-color: white;
+        color: black;      
+      }
+      article, .d{
+        background-color: #dedede;
+        height: 25%;
+        width: 100%;
+        margin-top: 20px;
+        padding-top: 2%;
+        padding-left: 1%;
+      }
+    
+      footer{
+        background-color: black;
+        color: white;
+        height: 60px;  
+        padding: 30px 0;
+        width: 100%; 
+        text-align: center;      
+      }
+      a{
+        color: crimson;
+        text-decoration: none;
+      } 
+      footer a{
+        
+        background-color: black;
+      }
+      footer p{
+        margin-bottom: 8px;
+
+      }
+      .icone{
+        width: 18px;
+        height: 18px;
+        
+      }
+      .icone-git{
+        width: 20px;
+        height: 20px;
+      }
+     
+      
+   
