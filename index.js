@@ -1,64 +1,90 @@
+//lista de Objetos 
+const compostoQuimico = [
+    {
+        nome: "Hipoclorito de sódio",
+        nomeMaisConhecido: "Água Sanitária",
+        atomosDaFormula: ["Sódio", "Cloro", "Oxigênio"],
+        massaMolar: 74.44,
+        usos: ["Remoção de manchas de roupas sujas", "Desenfetar superfícies", "Desinfecção da água potável"],
+        solubilidadeEmAgua: true
+    },
+
+    {
+        nome: "Ácido acético",
+        nomeMaisConhecido: "Vinagre",
+        atomosDaFormula: ["Carbono", "Hidrogênio", "Oxigênio"],
+        massaMolar: 60.052,
+        usos: ["Condimentar saladas", "Produção da aspirina", "Síntese de perfumes e corantes"],
+        solubilidadeEmAgua: true
+    },
+    {
+        nome: "Ácido ascórbico",
+        nomeMaisConhecido: "Vitamina C",
+        atomosDaFormula: ["Carbono", "Hidrogênio", "Oxigênio"],
+        massaMolar: 176.09,
+        usos: ["Suplementação alimentar", "Adubo para plantas", "Conservação de alimentos industrializados"],
+        solubilidadeEmAgua: true
+    }]
+
+//Verificar se é true ou false 
+
 const especime = []
-const compostoQuimico1 = {
-    nome: "Hipoclorito de sódio",
-    nomeMaisConhecido: "Água Sanitária",
-    atomosDaFormula: [" Sódio", " Cloro", " Oxigênio"],
-    massaMolar: 74.44,
-    usos: [" Remoção de manchas de roupas sujas", " Desenfetar superfícies", " Desinfecção da água potável"],
-    solubilidadeEmAgua: true
-}
-
-const compostoQuimico2 = {
-    nome: "Ácido acético",
-    nomeMaisConhecido: "Vinagre",
-    atomosDaFormula: [" Carbono", " Hidrogênio", " Oxigênio"],
-    massaMolar: 60.052,
-    usos: [" Condimentar saladas", " Produção da aspirina", " Síntese de perfumes e corantes"],
-    solubilidadeEmAgua: true
-}
-const compostoQuimico3 = {
-    nome: "Ácido ascórbico",
-    nomeMaisConhecido: "Vitamina C",
-    atomosDaFormula: ["Carbono", " Hidrogênio", " Oxigênio"],
-    massaMolar: 176.09,
-    usos: [" Suplementação alimentar", " Adubo para plantas", " Conservação de alimentos industrializados"],
-    solubilidadeEmAgua: true
-}
-
-function verificar(compostoQuimico) {
-    if (compostoQuimico.solubilidadeEmAgua === true) {
-        especime.push(compostoQuimico)
-    }
-    else {
-        alert("Não é solúvel em água")
+function verificar(lista) {
+    for (const i in lista) {
+        if (lista[i].solubilidadeEmAgua === true) {
+            especime.push(lista)
+        }
+        else {
+            alert("Não é solúvel em água")
+        }
     }
 }
-verificar(compostoQuimico1)
-verificar(compostoQuimico2)
-verificar(compostoQuimico3)
+verificar(compostoQuimico)
 
+//cálculo das médias 
 let numerador = 0
-for (let index = 0; index < especime.length; index++) {
-    numerador += especime[index].massaMolar
-    console.log(`Composto químico: ${especime[index].nome.toUpperCase()}`)
+function calculoDaMedia(lista) {
+    for (const i in lista) {
+        numerador += lista[i].massaMolar
+        if (lista[i].massaMolar.length > 0) {
+            return numerador / lista[i].massaMolar.length
+        }
 
-    console.log(`Nome mais conhecido: ${especime[index].nomeMaisConhecido}`)
+    }
+}
+media = calculoDaMedia(compostoQuimico)
 
-    console.log(`Átomos da fórmula: ${especime[index].atomosDaFormula}`)
+console.log(`A média dos valores de massa molar é: ${media.toFixed(2)}`)
+console.log("\n")
 
-    console.log(`Massa molar em gramas por mol: ${especime[index].massaMolar}`)
+//refatoração 
+function impressao(array) {
+    for (const objeto in array) {
+        for (const propriedade of objeto) {
+            console.log(`${propriedade}: ${objeto.propriedade}`);
 
-    console.log(`Usos mais comuns: ${especime[index].usos}`)
-
-    console.log(`É solúvel em água? ${especime[index].solubilidadeEmAgua}`)
+        }
+    }
     console.log("\n")
+}
+impressao(compostoQuimico)
 
+// 4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
+function returnName(array, string) {
+    let busca
+
+    for (i in array) {
+        if (array[i].name.toUpperCase() === string.toUpperCase()) {
+            busca = array[i]
+            return (busca)
+        } else if (array[i].name.toUpperCase() !== string.toUpperCase()) {
+            busca = "Não encontrado."
+        }
+    }
+
+    if (busca === "Não encontrado.") {
+        alert(`${string} não foi encontrado.`)
+    }
 }
 
-if (especime.length > 0) {
-    const media = numerador / especime.length
-    console.log(`A média dos valores de massa molar é: ${media.toFixed(2)}`)
-    console.log("\n")
-
-}
-
+returnName(compostoQuimico, "Ácido acético")
