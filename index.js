@@ -19,12 +19,12 @@ let Miley = {
     html: document.getElementById("b2")
 }
 
-let PedroSampaio = {
-    nome : "Pedro Sampaio",
+let TashaETracie = {
+    Artista : "Tasha e Tracie",
     isArtista: true,
     QuantosAlbuns: 02,
     TemMaisDe5anos: 3 > 5,
-    AlgunsAlbuns: ["Chama meu Nome", "REMIXES"],
+    AlgunsAlbuns: ["Diretoria", "Rouff"],
     html: document.getElementById("b3")
 }
 
@@ -94,8 +94,8 @@ if(Miley.isArtista === true){
     alert(`O artista ${Miley.Artista} não foi adicionado `)
 }
 
-if(PedroSampaio.isArtista === true){
-    ArmarioArtistas.push(PedroSampaio)
+if(TashaETracie.isArtista === true){
+    ArmarioArtistas.push(TashaETracie)
 
 }else{
     alert(`O artista ${PedroSampaio.Artista} não foi adicionado`)
@@ -123,7 +123,7 @@ stringarray = ""
 for (let i = 0; i <= (PedroSampaio.AlgunsAlbuns.length); i++){
     stringarray += PedroSampaio.AlgunsAlbuns[i] + ","
 }
-PedroSampaio.AlgunsAlbuns = stringarray
+TashaETracie.AlgunsAlbuns = stringarray
 stringarray = ""
 
 
