@@ -31,14 +31,35 @@
 //Kit energia Solar comprado
 
 function recebearrayeobjeto(array, string){
-    for(let i = 0; i< array.length; i++){
-        for(let x = 0; x < array[i].itensdoobjeto.length; x++){
-            if(array[i].nomedoobjeto[x] === string){
-                console.log("Opa:", array[i].nomedoobjeto[x])
-                return array[i].nomedoobjeto[x]
-            }
+    let array2 = []
+
+    array.forEach(element => {
+        if(element.nomedoobjeto.toUpperCase().indexOf(string.toUpperCase()) > -1){
+            array2.push(element)
         }
-    }
+    })
+    return array2
+
+
+    // console.log(array.nomedoobjeto.indexof(string)
+    // cons
+    // for(let i = 0; i<array.length; i++){
+    //     if(string !== array[i].nomedoobjeto){
+    //         array.splice(i - 1, 1)
+    //         console.log("Posicao do i:", i)
+    //         console.log("Salve!")
+    //     }
+    // }
+    // return array
+
+    // for(let i = 0; i< array.length; i++){
+    //     for(let x = 0; x < array[i].itensdoobjeto.length; x++){
+    //         if(array[i].nomedoobjeto[x] === string){
+    //             console.log("Opa:", array[i].nomedoobjeto[x])
+    //             return array[i].nomedoobjeto[x]
+    //         }
+    //     }
+    // }
 }
 
 function recebeobjeto(objeto){//funcao pra salvar tudo em uma string
@@ -174,6 +195,8 @@ else{
     alert("Não foi adicionado nada.")
 }
 
-const objetocomarray = recebearrayeobjeto(arraypraguardaosobjeto, "Suporte de apoio")
-console.log(objetocomarray)
+const stringaserpassada = "first"
+
+let objetocomarray = recebearrayeobjeto(arraypraguardaosobjeto, stringaserpassada)
+console.log("Imprimindo o objeto:",objetocomarray)
 
