@@ -1,0 +1,103 @@
+
+header{
+    height: 25vh;
+    width: 100vw;
+    background-color: #22223b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+footer{
+    height: 25vh;
+    width: 100vw;
+    background-color: #22223b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #f2e9e4;
+}
+ul{
+    list-style-type: none; 
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 1% 1%;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.casas {
+    display: flex;
+    border-radius: 10px;
+    margin: 3vh 25vw;
+    padding: 1% 1%;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh 25vw;
+    background-color: #c9ada7;
+}
+
+.botao-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 30px;
+}
+
+
+
+.foto {
+    width: 20vw;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+.titulo{
+    text-transform: uppercase;
+    font-size: larger;
+    color: aliceblue;
+    padding-block-end: 5%;
+}
+
+@media screen and (max-width: 400px)
+ {
+    .foto{
+        width: 50vw;
+    }
+    .casas{
+        flex-direction: column;
+    }   
+        
+    
+}
+@media screen and (max-width: 800px) 
+{
+    .foto{
+        width: 40vw;
+        
+    }
+    .casas{
+        flex-direction: column;
+    }  
+}
+
+*{
+ font-family: Verdana, Geneva, Tahoma, sans-serif
+}
