@@ -1,0 +1,181 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16pt arial;
+
+}
+
+body {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    
+}
+
+header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    height: 80px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+footer{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+grid-row: 3 / 4;
+grid-column: 1 / 4;
+background-color: black;
+margin-top: 20px;
+height: 80px;
+position: relative;
+bottom: 0px;
+left: 0px;
+
+
+}
+
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+    text-align: center;
+    max-width: 50%;
+
+}
+
+.card-container {
+    background-color: orange;
+    border-radius: 20px;
+    display: flex;
+    
+    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    min-height: 100px;
+    float: left;
+  
+
+}
+
+form {
+    margin-top: 15px;
+}
+
+ul{
+    margin-left:5px;
+    width: 300px;
+    float: left;
+}
+
+li:first-child{
+    color: white;
+    font-size: 1.7em;
+    font-weight: bold
+}
+
+li{
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 5px;
+    word-wrap: break-word;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    color: white;
+    margin-left: 20px;
+}
+
+h2{
+    color: white;
+    font-size: 1.3rem;
+}
+
+h3 {
+    color: white;
+    font-size: 1rem;
+}
+
+
+img {
+    width: 20vw;
+    border: 5px solid lightgray;
+    border-radius: 20px; 
+    margin: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    .img{
+        width: 50vw;
+    }
+    .card-container{
+        flex-direction: column;
+        
+        width: 70vw;
+        
+    }   
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+
+    li {
+        word-wrap: break-word;
+        font-size: 0.8rem;
+    }
+    li:first-child{
+        color: white;
+        font-size: 1em;
+        font-weight: bold
+    }
+            
+}
+@media screen and (max-width: 800px) {
+    img{
+        width: 40vw;
+        
+    }
+    .card-container{
+        flex-direction: column;
+        width: 60vw;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+    }  
+}
