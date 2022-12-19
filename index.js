@@ -1,6 +1,7 @@
+//Declaração da lista de criaturas domésticas e lista total de criaturas
 let criaturasDomesticas = [];
-let totalCriaturas = [];
-
+let criaturas = [];
+//Criação dos objetos correspondentes às criaturas existentes na base de dados
 criatura1 = {
   nome: "Centauro",
   habitat: "Floresta Proibida",
@@ -57,19 +58,19 @@ criatura8 = {
   domesticavel: false,
   habilidades: ["Veneno mortal", "petrificação", "força"],
 };
-
-const insereListDomesticos = (criatura) => {
-  criatura.domesticavel === true
-    ? criaturasDomesticas.push(criatura)
-    : alert(
-        `Não domesticável, ${criatura.nome} não foi inserido na lista de criaturas domesticáveis!!`
-      );
+//Função que insere um a criatura na lista de criaturas,
+//além de transformar o array de habilidades em uma string (texto)
+const insereList = (criatura) => {
+  const habilidadesCopy = [...criatura.habilidades]
+  criatura.habilidades = "";
+  habilidadesCopy.forEach((habilidade, index) => {
+    index !== habilidadesCopy.length - 1
+      ? (criatura.habilidades += habilidade + ", ")
+      : (criatura.habilidades += habilidade + ".");
+  });
+  criaturas.push(criatura);
 };
-
-const insereListTotal = (criatura) => {
-  totalCriaturas.push(criatura);
-};
-
+//Função que recebe uma lista de criaturas e retorna um relatório com todas as criaturas da lista
 const textConstruct = (criaturas) => {
   let texto = "";
 
@@ -82,38 +83,41 @@ const textConstruct = (criaturas) => {
       ? (texto += "Domesticável? Sim.\nHabilidades: ")
       : (texto += "Domesticável? Não.\nHabilidades: ");
 
-    criatura.habilidades.forEach(function (habilidade, index) {
-      index !== criatura.habilidades.length - 1
-        ? (texto += habilidade + ", ")
-        : (texto += habilidade + ".");
-    });
-
-    texto += "\n\n";
+    texto += criatura.habilidades + "\n\n";
   });
 
   return texto;
 };
 
-insereListDomesticos(criatura1);
-insereListDomesticos(criatura2);
-insereListDomesticos(criatura3);
-insereListDomesticos(criatura4);
-insereListDomesticos(criatura5);
-insereListDomesticos(criatura6);
-insereListDomesticos(criatura7);
-insereListDomesticos(criatura8);
+//Função que recebe uma lista de objetos e uma entrada de texto e retorna o objeto que tiver uma de suas propriedades igual ao texto enviado para a função
+const search = (list, input) => {
+  for (object of list){
+    for (property in object){
+      if(object[property] == input){
+        return object
+      }
+    }
+  }
+  return 'Criatura não encontrada'
+}
 
-insereListTotal(criatura1);
-insereListTotal(criatura2);
-insereListTotal(criatura3);
-insereListTotal(criatura4);
-insereListTotal(criatura5);
-insereListTotal(criatura6);
-insereListTotal(criatura7);
-insereListTotal(criatura8);
+//Utiliza a função insereList para inserir cada criatura criada na lista de criaturas
+insereList(criatura1);
+insereList(criatura2);
+insereList(criatura3);
+insereList(criatura4);
+insereList(criatura5);
+insereList(criatura6);
+insereList(criatura7);
+insereList(criatura8);
 
-console.log(
-  "\n\nCriaturas Domesticáveis: \n\n" + textConstruct(criaturasDomesticas)
-);
+//Cria uma lista apenas das criaturas domesticáveis a partir da lista total de criaturas
+criaturasDomesticas = criaturas.filter(criatura => criatura.domesticavel)
 
-console.log("\n\nTotal de Criaturas: \n\n" + textConstruct(totalCriaturas));
+// console.log(
+//   "\n\nCriaturas Domesticáveis: \n\n" + textConstruct(criaturasDomesticas)
+// );
+
+// console.log("\n\nTotal de Criaturas: \n\n" + textConstruct(criaturas));
+
+console.log (search(criaturas, 'Elfo doméstico'))
