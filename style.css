@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    background-color: azure;
+  }
+
+header{
+    background-color: coral;
+    height: 50px;
+    width: 500px;
+    text-align: center;
+    
+    margin-left: 30%;  
+}
+
+section{
+    margin-bottom: 5%; 
+    position: static;
+    border: 5px solid black;
+    width: 250px;
+}
+
+#fixo{
+    position: sticky;
+    top: 0;
+    /* bottom: 10;
+    right: 10; */
+}
+
+/* .relative{
+    top: 20px;
+    left: 5000px;
+}
+
+.absolute{
+    position: relative;
+}  */
+
+footer{
+    text-align:end;
+}
