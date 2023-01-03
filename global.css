@@ -1,0 +1,205 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    background-color: black;
+    min-height: 90vh;
+}
+
+/* menu da página */
+
+.menu {
+    display: flex;
+    border: solid pink 5px;
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.icone_menu {
+    display: flex;
+    justify-content: space-evenly;
+    height: 10vh;
+    justify-items: center;
+    justify-content: center;
+
+}
+
+.menu_item {
+    text-decoration: none;
+    display: flex;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40%;
+    border: solid black 1px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.75vh;
+    margin: 0.75vw
+}
+
+.menu_link {
+    text-decoration: none;
+    color: black;
+}
+
+.botao {
+    justify-content: space-around;
+    justify-items: center;
+    justify-content: center;
+}
+
+
+.menu_item:hover {
+    background-color: pink;
+    color: black;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    padding: 0.50rem;
+}
+
+/* estilização dos cards */
+
+.container_card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cards_total {
+    justify-content: center;
+    padding: 1rem;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+.descricao_dm {
+    color: white;
+    list-style:none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.75rem;
+}
+
+/* card diverdida mente */
+#card_divertida{
+    text-align: center;
+    border: white solid 2px;
+    margin: 1%;
+}
+
+#card_divertida:hover {
+    transform: scale(1.1);
+    justify-content: center;
+    text-align: center;
+}
+
+.card_diverti {
+    margin: 1rem 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+/* card Luca */
+
+#card_luca {
+    text-align: center;
+    border: solid white 2px;
+    margin: 1%;
+}
+
+#card_luca:hover {
+    transform: scale(1.1);
+    justify-content: center;
+    text-align: center;
+}
+
+.card_luca {
+    margin: 1rem 2rem
+}
+
+/* card dois irmãos */
+
+#card_dois{
+    text-align: center;
+    border: solid white 2px;
+    margin: 1%; 
+}
+
+#card_dois:hover {
+    transform: scale(1.1);
+    justify-content: center;
+    text-align: center;
+}
+
+.card_dois {
+    margin: 1rem 2rem
+}
+
+/* cad viva */
+
+#card_viva {
+    text-align: center;
+    border: solid white 2px;
+    margin: 1%; 
+}
+
+#card_viva:hover{
+    transform: scale(1.1);
+    justify-content: center;
+    text-align: center;
+}
+
+.card_viva {
+    margin: 1rem 2rem;
+}
+
+footer >p{
+ text-align: center; 
+ background-color: pink;
+ text-transform: uppercase;
+
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    font-weight: bold;
+    cursor: pointer;
+    list-style:none;
+    
+}
+
+.icone_redes {
+    display: flex;
+    height: 5vh;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    margin: 0.20rem 1.5rem;
+}
+
+@media screen and (max-device-width: 600px) {
+    .icone_menu{
+        display: none;
+    }
+    .menu_item {
+    display: flex;
+    display: inline;
+    border-radius: 30%;
+    font-size: 14px;
+    border: none;
+    text-align: center;
+}
+    }
+
+
+
+
+

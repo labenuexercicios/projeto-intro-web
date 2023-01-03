@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    gap: gap;
+}
+
+.icone_top{
+    height: 20vh;
+}
+.menu{
+    grid-template-rows: 1fr;
+    background-color: black;
+}
+
+.container_top{
+    display: flex;
+    height: 41.8vh;
+    background-color: black;
+}
+
+.icone_video{
+    vertical-align: middle;
+    width: 3.5vh;
+}
+
+.icone_interno {
+    height: 40vh;
+    width: 40vw;
+    /* border: white solid 1px; */
+}
+
+.text {
+    border: solid white 2px;
+    margin: 1vh;
+    padding: 2%;
+    margin: 1rem 2rem;
+    color: white;
+}
+
+.icone_video {
+    margin-left: 1rem;
+}
+
+.video_trailer {    
+    justify-items: center;
+    justify-content: center;
+    margin: 2%;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+}
+
+.indicacao {
+    margin: 1rem 2rem;
+    color: white;
+}
+
+.container_button {
+    height: 35vh;
+    display: grid;
+    color: black;
+   grid-column: 1fr;
+   background-color: black;
+}
+
+.todos_os_personagens {
+    display: flex;
+    width: 25vw;
+    height: 25vh;
+    margin-left: 1rem;
+    margin-top: 0;
+
+}
+
+.personagem {
+    border: black 2px solid;
+    margin-right: 2vw;
+}
+
+.personagem:hover {
+    transform: scale(1.1);
+    border: 1px white solid;
+}
+
+.personagens {
+    margin: 0.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+   
+}
+
+
+footer{
+    flex: 10vh;
+    background-color: white;
+    
+}
+
