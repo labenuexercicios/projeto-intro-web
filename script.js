@@ -1,33 +1,3 @@
-// // //Noticias do dia
-
-// // //futebol dia 25/11
-// // const noticiafutebol = true
-// // const resultadodojogo = "3X2"
-// // const noticiasdojogo = "Neymar sofre contusão no tornoselo e fica afastado ate as quartas de final."
-// // const numerodegolsdobrasil = 3
-// // const numerodegolsdojapao = 2
-
-// // //futebol dia 26/11
-// // const noticiafutebol2 = false
-// // const resultadodojogo2 
-// // const noticiasdojogo2 = "Neymar sofre contusão no tornoselo e fica afastado ate as quartas de final."
-// // const numerodegolsdobrasil2  
-// // const numerodegolsdojapao2 
-
-// // //politica
-// // const noticiapolitica = true//possui noticia hj
-// // const noticiasdapolitica = "Russia cessa ataque contra Ucrania, e estabelecem acordo de paz."
-
-// // let noticiadodia = true //temos noticias importantes hj?
-// // let noticiadefutebol = false // hoje não tem jogo da copa do mundo
-// // let resultadojogododiatimebrasil = 3
-// // let resultadojogododiatimejapao = 0
-// // const noticiaimportantespolitica = "Russia cessa ataque contra Ucrania, e estabelecem acordo de paz."
-// // const noticiademercado
-// // const noticiadepolitica
-// // const noticia
-
-
 // //Kit energia Solar comprado
 
 // function recebearrayeobjeto(array, string){
