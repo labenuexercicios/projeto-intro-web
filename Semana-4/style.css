@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    color: white;
+    padding-left: 16px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: #dedede;
+    padding: 16px;
+    }
+
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 16px;
+    gap: 8px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 8px;
+}
+
+section{
+    background-color: #ec8f05;
+    border-radius: 5px;
+    display: flex;
+    width: 40vw;
+    height: 40vh;
+}
+
+#dadosArtista{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a{
+    color: white;
+
+}
+
+a:link{
+text-decoration: none;
+color: white;
+}
+
+
+aside{
+    display: flex;
+    flex-direction: row;
+}
+
+
+img{
+    border-radius: 50%;
+    display: flex;
+    align-self: center;
+    width: 120px;
+    height: 120px;
+    object-fit: fill;
+    padding: 8px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    height: 8vh;   
+}
+
+/* #redes { 
+    display: flex;
+    flex-direction: row;
+} */
+
+
+.info{
+    align-self: center;
+}
