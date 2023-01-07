@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.titulo{
+    position: sticky; /* aqui eu posso deixar fixo tanto com fixed quanto com sticky, mas eu quiser usar fixed preciso da um padding top na classe principal*/
+    top: 0;
+    z-index: 1; /*eu utilizo z-index onde eu quero que fique por cima de algo, aqui eu usei no header e coloquei 1 pra dizer que ele deve ficar por cima da main */
+    background: black;
+    color: white;
+    padding: 1%;
+    width: 100%;
+    display: flex;
+    border-top: 2px solid orangered;
+}
+
+h1{
+    color: orangered;
+    margin-right: 2%;
+    font-size: 3.5vh;
+    margin-top: 0.3%;
+}
+
+.cabecalho{
+    padding: 1rem;
+    font-size: 2.2vh;
+}
+
+.cabecalho:hover{
+    color: orangered;
+}
+
+.principal{ 
+    background: black;
+    opacity: .8;
+    height: 100%;
+    padding-bottom: 1.2%;
+    border-bottom: 2px solid orangered;
+    padding-bottom: 7%;
+}
+
+.busca-caixa{
+   text-align: center;
+   align-items: center;
+   margin-bottom: 1%;
+}
+
+.busca{
+    margin-top: 1.5vh;
+  /*  background: red;*/
+    height: 4vh;
+    width:25vh;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button-busca{
+    border-radius: 5px;
+    height: 3vh;
+    width: 8vh;
+  
+}
+
+button:hover{
+    border: 2px solid white;
+    /*box-shadow: 1px 1px 1px 1px orangered; testei um box shadow pra entender como usar*/
+    /*aqui eu fiz uma borda interna*/
+     color: black;
+    -webkit-box-shadow: inset 0 0 0 2px black;
+    -moz-box-shadow: inset 0 0 0 2px black;
+     box-shadow: inset 0 0 0 2px black; /*aqui eu fiz uma borda interna*/
+   
+}
+
+.filmes{
+    color: blue;
+    margin-top: 1vw;
+    border: 5px solid orangered;
+    padding: 2vh;
+    width: 30%;
+}
+
+li{
+    margin-bottom: .4vh;
+}
+
+.filmes:hover{
+    border: 4px solid white;
+    border-radius: 5px;
+}
+
+a{
+    color: white;
+}
+
+.filmes img{
+    width: 7vw;
+    height: 10vw;
+    border-radius: 6%;
+    margin-bottom: 5%;
+}
+
+.rodape{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: orangered;
+    height: 11%;
+    padding-top: 0.3%;
+}
+
+@media screen and (min-device-width: 280px) {
+   main {
+    align-items: center;
+    justify-content: center;
+   }
+
+   header {
+    text-align: center;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
