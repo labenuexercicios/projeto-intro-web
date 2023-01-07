@@ -17,8 +17,8 @@ main {
     background-color: white;
     justify-content: space-evenly;
     align-items: center;
-
 }
+
 
 .icone_menu {
     display: flex;
@@ -26,7 +26,10 @@ main {
     height: 10vh;
     justify-items: center;
     justify-content: center;
+}
 
+.inicio {
+    text-decoration: none;
 }
 
 .menu_item {
@@ -40,7 +43,7 @@ main {
     font-weight: bold;
     cursor: pointer;
     padding: 0.75vh;
-    margin: 0.75vw
+    margin: 0.75vw;
 }
 
 .menu_link {

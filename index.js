@@ -1,5 +1,5 @@
 const filmeLuca = {
-    titulo: "Filme: " + "Luca",
+    titulo:  "Luca",
     // sinopse: "Luca vive aventuras com seu novo melhor amigo, mas a diversão é ameaçada por um segredo: seu amigo é um monstro marinho de outro mundo que fica abaixo da superfície da água.",
     duracaoEmMinutos: "Duração: " + 101,
     anoLancamento: "Ano de lançamento: " +  2021,
@@ -11,7 +11,7 @@ const filmeLuca = {
 // console.log ("Filme: " , titulo.toLocaleUpperCase(), "\nSinopse: " , sinopse, "\nDuração:", duracaoEmMinutos, "\nAno de lançamento:", anoLancamento1, "\nGenêro:", genero, "\nEsse filme é um remake: ", remake1, "\nPrincipais personagens:", personagensPrincipais1)
 
 const filmeDivertida = {
-    titulo: "Filme:" + 'Divertida Mente',
+    titulo: 'Divertida Mente',
     // sinopse: "Com a mudança para uma nova cidade, as emoções de Riley, que tem apenas 11 anos de idade, ficam extremamente agitadas. Uma confusão na sala de controle do seu cérebro deixa a Alegria e a Tristeza de fora, afetando a vida de Riley radicalmente.",
     duracaoEmMinutos:"Duração: " + 94,
     anoLancamento:"Ano de lançamento: " +  2015,
@@ -24,7 +24,7 @@ const filmeDivertida = {
 
 
 const filmeViva = {
-    titulo: "Filme: " + "Viva a vida é uma festa",
+    titulo:  "Viva a vida é uma festa",
     // sinopse: "Apesar da proibição da música por gerações de sua família, o jovem Miguel sonha em se tornar um músico talentoso como seu ídolo Ernesto de la Cruz. Desesperado para provar seu talento, Miguel se encontra na deslumbrante e colorida Terra dos Mortos. Depois de conhecer um charmoso malandro chamado Héctor, os dois novos amigos embarcam em uma jornada extraordinária para desvendar a verdadeira história por trás da história da família de Miguel.",
     duracaoEmMinutos: "Duração: " + 104,
     anoLancamento: "Ano de lançamento: " +  2017,
@@ -37,7 +37,7 @@ const filmeViva = {
 // console.log ("\nFilme: " , titulo.toLocaleUpperCase(), "\nSinopse: " , sinopse, "\nDuração:", duracaoEmMinutos, "\nAno de lançamento:", anoLancamento, "\nGenêro:", genero, "\nEsse filme é um remake: ", remake, "\nPrincipais personagens:", personagensPrincipais)
 
 const filmeDoisIrmaos = {
-    titulo: "Filme: " +  "Dois Irmãos Uma jornada fantástica",
+    titulo: "Dois Irmãos Uma jornada fantástica",
     // sinopse: "Em um mundo transformado, no qual as criaturas não dependiam mais da magia para viver, dois irmãos elfos recebem um cajado de bruxo de seu falecido pai, capaz de trazê-lo de volta à vida. Inexperientes com qualquer tipo de magia, Ian e Barley não conseguem executar o feitiço e acabam gerando uma criatura sem cabeça. Para passar mais um dia com seu pai, eles embarcam em uma jornada fantástica. Ao perceber a ausência dos filhos, sua mãe se une à uma lendária manticora para encontrá-los.",
     duracaoEmMinutos: "Duração: " + 104,
     anoLancamento: "Ano de lançamento: " +  2017,
@@ -94,9 +94,14 @@ arrayComTodosOsFilmes.push(filmeDivertida, filmeDoisIrmaos, filmeLuca, filmeViva
 //altere a forma que a característica array dos itens seja escrista como string como um laço/loop
 // o array precisa ser transformado em string
 
+// lista com titulos
+
+listaTitulos = []
+
 for (let i in arrayComTodosOsFilmes) {
-    arrayComTodosOsFilmes[i].personagensPrincipais = arrayComTodosOsFilmes[i].personagensPrincipais.toString()
+    listaTitulos.push(arrayComTodosOsFilmes[i].titulo.toString())
 }
+// console.log ("lista de titulos",listaTitulos[0])
 
 // console.log('transformnado o array em string: \n', arrayComTodosOsFilmes)
 
@@ -108,27 +113,30 @@ for (objeto of arrayComTodosOsFilmes) {
     }
     // console.log("-----------------------------------------")
 }
+// console.log ("objeto array",objeto)
 
 // Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto
 
-function stringObj(objeto) {
-    return objeto.titulo
+function stringObj(listaTitulos) {
+    return listaTitulos.titulo
 }
+// console.log ("objeto",listaTitulos)
 
 // crie uma função que receba um objeto e uma string
 
 // console.log(buscarTodosOsfilmes("Diverti"))
 
-function buscarString(array, string) {
-    const buscarFilme = array.filter((elemento) => {
+function buscarString(listaTitulos, string) {
+    const buscarFilme = listaTitulos.filter((elemento) => {
         if (elemento.titulo === string) {
             return elemento
         }
+        console.log ("elemento",elemento)
     })
-    if (buscarFilme.length === 0) {
+    if (buscarFilme.length == 0) {
         alert("Filme não localizado")
     } else {
-        console.log(buscarFilme)
+        console.log("buscar filme",buscarFilme)
     }
 }
 
@@ -136,7 +144,7 @@ function buscarString(array, string) {
 
 arrayFilmes = [filmeDivertida, filmeDoisIrmaos, filmeLuca, filmeViva]
 
-console.log("teste", arrayFilmes)
+// console.log("teste", arrayFilmes)
 
 function inserirFilmes(objeto, id) {
     for (elemento in objeto) {
@@ -146,14 +154,15 @@ function inserirFilmes(objeto, id) {
         armazenarId.appendChild(criarLista)
     }
 }
+inserirFilmes (filmeDivertida, "idDivertida")
+inserirFilmes (filmeLuca, "idLuca")
+inserirFilmes (filmeDoisIrmaos, "idDois")
+inserirFilmes (filmeViva, "idViva")
 
+listaFilmesId = [{"idDivertida": filmeDivertida},{"idDois": filmeDoisIrmaos} ,{"idLuca": filmeLuca} ,{"idViva": filmeViva}]
 
-console.log(inserirFilmes)
+// console.log("filmes dom",listaFilmesId)
 
-inserirFilmes(filmeDivertida, "idDivertida")
-inserirFilmes(filmeLuca, "idLuca")
-inserirFilmes(filmeDoisIrmaos, "idDois")
-inserirFilmes(filmeViva, "idViva")
 
 function pesquisarFilme(event) {
     event.preventDefault()
@@ -164,7 +173,7 @@ function pesquisarFilme(event) {
         if (!pesquisarClasse[i].innerHTML.toLowerCase().includes(valorInput)) {
             pesquisarClasse[i].style.display = "none"
         } else {
-            pesquisarClasse[i].style.display = flex
+            pesquisarClasse[i].style.display = "grid"
         }
     }
 }
