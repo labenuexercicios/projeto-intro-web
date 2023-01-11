@@ -41,25 +41,25 @@ const partialShadePlant03 = true
 const nick03 = ["Coqueiro de Vênus"," Dracena vermelha"," Dracena rubra"]
 
 const medBuySize = (buySize01+buySize02+buySize03)/3
-console.log(medBuySize)
+console.log(`A média de altura das plantas compradas é: ${medBuySize}cm.`)
 
 const medSaleSize = (saleSize01+saleSize02+saleSize03)/3
-console.log(medSaleSize)
+console.log(`A média de altura das plantas vendidas é: ${ medSaleSize}cm.`)
 
 const medCostPrice = ((costPrice01+costPrice02+costPrice03)/3).toFixed(2)
-console.log(medCostPrice)
+console.log(`A média do preço de custo das platas é: R$${medCostPrice}`)
 
 const medSalePrice = ((salePrice01+salePrice02+salePrice03)/3).toFixed(2)
-console.log(medSalePrice)
+console.log(`A média do preço de venda das platas é: R$${medSalePrice}`)
 
 const verSunnyPlant = sunnyPlant01&&sunnyPlant02&&sunnyPlant03
-console.log(verSunnyPlant)
+console.log(`Todas as plantas são de sol pleno? ${verSunnyPlant}`)
 
 const verShadePlant = shadePlant01&&shadePlant02&&shadePlant03
-console.log(verShadePlant)
+console.log(`Todas as plantas são de sombra? ${verShadePlant}`)
 
 const verPartialShadePlant = partialShadePlant01&&partialShadePlant02&&partialShadePlant03
-console.log(verPartialShadePlant)
+console.log(`Todas as plantas são de meia-sombra? ${verPartialShadePlant}`)
 
 console.log(`${flora01.toUpperCase()}\n
 Também conhecida como: ${nick01}\n
@@ -90,3 +90,88 @@ Preço de venda: R$ ${salePrice03}\n
 É planta de sol pleno? ${sunnyPlant03}\n
 É planta de sombra? ${shadePlant03}\n
 É planta de meia-sombra? ${partialShadePlant03}`)
+
+console.log(" -- SEMANA 2 --")
+
+const podocarpo = {
+    flora: "Podocarpus macrophyllus",
+    nick: ["Pinheiro de Buda"," Podocarpo"],
+    buySize: 80,
+    saleSize: 100,
+    costPrice: 70.00,
+    salePrice: 140.00,
+    sunnyPlant: true,
+    shadePlant: false,
+    partialShadePlant: true,
+}
+
+const rafia = {
+    flora: "Rhapis excelsa",
+    nick: ["Ráfia"," Palmeira dama"],
+    buySize: 50,
+    saleSize: 120,
+    costPrice: 30.00,
+    salePrice: 200.00,
+    sunnyPlant: true,
+    shadePlant: true,
+    partialShadePlant: true,
+}
+
+const dracena = {
+    flora: "Cordyline fruticosa",
+    nick: ["Coqueiro de Vênus"," Dracena vermelha"," Dracena rubra"],
+    buySize: 20,
+    saleSize: 80,
+    costPrice: 15.00,
+    salePrice: 60.00,
+    sunnyPlant: true,
+    shadePlant: false,
+    partialShadePlant: true,
+}
+
+const allSunnyPlants = []
+const allShadePlants = []
+const allPartialShadePlants = []
+
+// allSunnyPlants.push(podocarpo,rafia,dracena)
+// allShadePlants.push(podocarpo,rafia,dracena)
+// allPartialShadePlants.push(podocarpo,rafia,dracena)
+// console.log(allSunnyPlants,allShadePlants,allPartialShadePlants)
+
+function isSunnyPlant(object){
+    if(object.sunnyPlant==true){
+        allSunnyPlants.push(object)
+    }else{
+        alert(`${object.flora} não é planta de sol pleno, portanto não foi adicionada à lista de plantas de sol pleno.`)
+    }
+}
+
+function isShadePlant(object){
+    if(object.shadePlant==true){
+        allShadePlants.push(object)
+    }else{
+        alert(`${object.flora} não é planta de sombra, portanto não foi adicionada à lista de plantas de sombra.`)
+    }
+}
+
+function isPartialShadePlant(object){
+    if(object.partialShadePlant==true){
+        allPartialShadePlants.push(object)
+    }else{
+        alert(`${object.flora} não é planta de meia-sombra, portanto não foi adicionada à lista de plantas de meia-sombra.`)
+    }
+}
+
+isSunnyPlant(podocarpo)
+isSunnyPlant(rafia)
+isSunnyPlant(dracena)
+
+isShadePlant(podocarpo)
+isShadePlant(rafia)
+isShadePlant(dracena)
+
+isPartialShadePlant(podocarpo)
+isPartialShadePlant(rafia)
+isPartialShadePlant(dracena)
+
+console.log(allSunnyPlants,allShadePlants,allPartialShadePlants)
