@@ -2,16 +2,49 @@
     margin: 0;
     padding: 0;
     font-family: 'Helvetica', sans-serif;
-    background-color: azure;
-  }
+    /* background-color: azure; */
+}
 
-header{
-    background-color: coral;
-    height: 50px;
-    width: 500px;
-    text-align: center;
+
+#cabeca{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1,10rem);
+    background-color: white;
+    /* height: 2fr; */
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+#marca{
+    display: grid;
+    grid-column: 1/2;
     
-    margin-left: 30%;  
+}
+
+#pesquisador{
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    height: 30%;
+    /* height: 80%; */
+    
+}
+
+#fixo{
+    display: grid;
+    grid-column: 4/5;
+    text-align: center;
+    border-bottom: 1px solid black;
+    /* grid-template-columns: repeat(5, 1fr); */
+    /* grid-template-columns: repeat(auto0fill, minmax(17rem,1fr)); */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* position: sticky; */
+    /* top: 0; */
+}
+
+#botao{
+    height: 10px;
 }
 
 section{
@@ -19,11 +52,6 @@ section{
     position: static;
     border: 5px solid black;
     width: 250px;
-}
-
-.fixed{
-    position: sticky;
-    top: 0;
 }
 
 
@@ -34,9 +62,9 @@ section{
 
 /* Aplicando flex box */
 
-.container2{
+/* .container2{
     display: flex;
-} 
+}  */
 
 /* Aplicando grid */
 
