@@ -171,3 +171,72 @@
 // console.log("Imprimindo o objeto:",objetocomarray)
 
 
+function setoradmin(event){
+   const nomedonovoobjeto4 : prompt("Digite o login");
+
+}
+
+function adicionaroskits(event){
+    const pegaidcorpo =  document.getElementById("corpo")
+    const newelementsection = document.createElement("section")
+    newelementsection.classList.add("section")
+    newelementsection.setAttribute("id", "section")
+
+    const pegaidimagem = document.querySelector(".section")
+    const newelementarticle = document.createElement("article")
+    newelementarticle.classList.add("article")
+    newelementarticle.setAttribute("id", "article")
+    newelementsection.append(newelementarticle)
+
+    const pegaidul = document.querySelector(".article")
+    const newelementul = document.createElement("ul")
+    newelementul.classList.add("ul")
+    newelementul.setAttribute("id", "ul")
+    newelementarticle.append(newelementul)
+
+    const pegaidh3 = document.querySelector(".ul")
+    const newelementh3 = document.createElement("h3")
+    newelementh3.classList.add("h3")
+    newelementh3.setAttribute("id", "h3")
+    newelementul.append(newelementh3)
+    const newtextul = document.createTextNode("Kit 4:");
+    newelementh3.appendChild(newtextul);
+
+    const img = document.createElement("img")
+    img.src = "/imagens/jinko.jpg";
+    img.alt = "Jinko";
+    newelementul.append(img)
+
+    const p = document.createElement("p")
+    newelementul.append(p)
+    const newtextp = document.createTextNode("Marca do Painel Solar: ");
+    p.appendChild(newtextp);
+    const b = document.createElement("b")
+    p.append(b)
+    const newtextb = document.createTextNode("Jinko");
+    b.appendChild(newtextb);
+
+    const p2 = document.createElement("p")
+    newelementul.append(p2)
+    const newtextp2 = document.createTextNode("Geração do módulo: ");
+    p2.appendChild(newtextp2);
+    const b2 = document.createElement("b")
+    p2.append(b2)
+    const newtextb2 = document.createTextNode("450w");
+    b2.appendChild(newtextb2);
+
+    const p3 = document.createElement("p")
+    newelementul.append(p3)
+    const newtextp3 = document.createTextNode("Obs.: ");
+    p3.appendChild(newtextp3);
+    const b3 = document.createElement("b")
+    p3.append(b3)
+    const newtextb3 = document.createTextNode("Possuí sistema anti-furto");
+    b3.appendChild(newtextb3);
+ 
+
+    pegaidcorpo.insertAdjacentElement('afterbegin' , newelementsection)
+    pegaidimagem.insertAdjacentElement('afterbegin', newelementarticle)
+    pegaidul.insertAdjacentElement('afterbegin', newelementul)
+    pegaidh3.insertAdjacentElement('afterend', newelementh3)
+}
