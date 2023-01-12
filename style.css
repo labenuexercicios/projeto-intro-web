@@ -1,129 +1,401 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: Open Sans,sans-serif;
+    }
 
-.titulo{
-    position: sticky; /* aqui eu posso deixar fixo tanto com fixed quanto com sticky, mas eu quiser usar fixed preciso da um padding top na classe principal*/
-    top: 0;
-    z-index: 1; /*eu utilizo z-index onde eu quero que fique por cima de algo, aqui eu usei no header e coloquei 1 pra dizer que ele deve ficar por cima da main */
-    background: black;
-    color: white;
-    padding: 1%;
-    width: 100%;
-    display: flex;
-    border-top: 2px solid orangered;
-}
+    .a-header {
+        font-size: 1.75rem;
+    }
 
-h1{
-    color: orangered;
-    margin-right: 2%;
-    font-size: 3.5vh;
-    margin-top: 0.3%;
-}
+    .a:hover{
+        color: orangered;
+    }
 
-.cabecalho{
-    padding: 1rem;
-    font-size: 2.2vh;
-}
+    .header {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        /*height: 10vh;*/
+        background-color: black;
+        padding: 2rem 2rem;
+        padding-top: 30px;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
 
-.cabecalho:hover{
-    color: orangered;
-}
+    .h1 {
+        color: orangered;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    
+    .a-do-footer, .a-header {
+        color: white;
+        text-decoration: none;
+    }
 
-.principal{ 
-    background: black;
-    opacity: .8;
-    height: 100%;
-    padding-bottom: 1.2%;
-    border-bottom: 2px solid orangered;
-    padding-bottom: 7%;
-}
+    .menu-ul {
+        margin-top: -15px;
+        display: flex;
+        align-items: center;
+        
+    }
 
-.busca-caixa{
-   text-align: center;
-   align-items: center;
-   margin-bottom: 1%;
-}
+    .li-header {
+        padding: 0 20px;
+    }
 
-.busca{
-    margin-top: 1.5vh;
-  /*  background: red;*/
-    height: 4vh;
-    width:25vh;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.button-busca{
-    border-radius: 5px;
-    height: 3vh;
-    width: 8vh;
-  
-}
-
-button:hover{
-    border: 2px solid white;
-    /*box-shadow: 1px 1px 1px 1px orangered; testei um box shadow pra entender como usar*/
-    /*aqui eu fiz uma borda interna*/
-     color: black;
-    -webkit-box-shadow: inset 0 0 0 2px black;
-    -moz-box-shadow: inset 0 0 0 2px black;
-     box-shadow: inset 0 0 0 2px black; /*aqui eu fiz uma borda interna*/
+    a {
+        text-decoration: none;
+    }
    
-}
+   .li-header:hover, 
+    h1:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        background-color: rgba (255,255,255,0.2);
+    }
 
-.filmes{
-    color: blue;
-    margin-top: 1vw;
-    border: 5px solid orangered;
-    padding: 2vh;
-    width: 30%;
-}
+    .button-nav {
+        /*height: 90px;*/
+        display: none;
+    }
 
-li{
-    margin-bottom: .4vh;
-}
+    .caixa-input {
+        padding-top: 120px;
+        display: flex;
+        justify-content: center;
+    }
 
-.filmes:hover{
-    border: 4px solid white;
-    border-radius: 5px;
-}
+    .input {
+       width: 35vw;
+       height: 30px;
+       text-align: center;
+    }
 
-a{
-    color: white;
-}
+    .button {
+        height: 4vh;
+        width: 5.5vw;
+    }
 
-.filmes img{
-    width: 7vw;
-    height: 10vw;
-    border-radius: 6%;
-    margin-bottom: 5%;
-}
+    .caixa-pai {
+        display: flex;
+        justify-content: center;
+        background: blue;
+    }
 
-.rodape{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
-    color: orangered;
-    height: 11%;
-    padding-top: 0.3%;
-}
+    .item-pai {
+        display: flex;
+        justify-content: center;
+        max-width: 80vw;
+        /*overflow-y: scroll;*/
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-top: 20px;
+        padding-bottom: 1vh;
+    }
 
-@media screen and (min-device-width: 280px) {
-   main {
-    align-items: center;
-    justify-content: center;
-   }
+    .item1 {
+        margin-bottom: 2vh;
+        display: flex;
+        max-width: 30%;
+        align-items: center;
+    }
 
-   header {
-    text-align: center;
-   }
-}
+    .item1:hover {
+        border: 1px solid orangered;
+        border-radius: 10px;
+        opacity: 0.8;
+    }
+
+    .ul-item1{
+        margin-left: 1vw;
+        max-width: 500px;
+    }
+
+    .item2 {
+        display: flex;
+        margin-bottom: 2vh;
+        max-width: 30%;
+        align-items: center;
+    }
+
+    .item2:hover {
+        border: 1px solid orangered;
+        border-radius: 10px;
+        opacity: 0.8;
+    }
+
+    .ul-item2{
+        margin-left: 1vw;
+        max-width: 500px;
+    }
+
+    .item3 {
+        display: flex;
+        margin-bottom: 2vh;
+        max-width: 30%;
+        align-items: center;
+    }
+
+    .item3:hover {
+        border: 1px solid orangered;
+        border-radius: 10px;
+        opacity: 0.8;
+    }
+
+    .ul-item3{
+        margin-left: 1vw;
+        max-width: 500px;
+    }
+
+    /*section > section > ul > li{
+        color: ;
+    }*/
+
+    .img-item {
+        width: 150px;
+        height: 200px;
+    }
+   
+    .rodape{
+        /*position: fixed;*/
+        bottom: 0px;
+        padding-bottom: 10px;
+        width: 100%;
+        background: black;
+        color: orangered;
+        height: 11%;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 500px){ 
+
+        .header {
+            flex-direction: column;
+            align-items: unset;
+        }
+
+        .menu-ul {
+            /*text-align: center;*/
+            margin: 0;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            flex-direction: column;
+            align-items: unset;
+            list-style: none;
+            padding: 0.4rem;
+            align-items: center;
+           /*aqui flex-wrap: wrap*/;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            width: 100%;
+            /*height: 30vh;*/
+            background-color: black;
+            padding: 0rem 1.5rem;
+            padding-top: 0px;
+            justify-content: space-between;
+            align-items: unset;
+            display: flex;
+        }
+
+        .li-header {
+            padding: 5px 0px;
+        }
+
+        .h1 {
+            margin: 0;
+            padding: 0px;
+            font-size: 1.8rem;
+        }
+
+        .a-header {
+            font-size: 1rem;
+        }
+
+        li {
+            padding: 5px 0px;
+            width: 100%;
+        }
+    
+        h1 {
+           margin-top: 23px;
+           margin-bottom: 9px;
+           /* padding-top: 25px;*/
+        }
+
+        .a {
+            font-size:1.1rem;
+        }
+
+        li:hover, 
+        h1:hover {
+            cursor: pointer;
+            opacity: 0.8;
+            background-color: rgba (255,255,255,0.2);
+        }
+
+        .button-nav {
+            display: flex;
+            margin-top: 34px;
+            font-size: 1.5rem;
+            border: none;
+            background-color: transparent;
+            color: white;
+            position: absolute;
+            right: 15px;
+            top: -8px;
+        }
+
+        .button-nav:hover {
+            border: transparent;
+            color: white;
+        }
+
+       /*
+        button:focus ~ ul{
+            height: 260px; /*aqui é pra quando o usuário clica aparecer o menu*/
+       /* }*/
+
+        .menu-ul.active {
+            height: 170px;
+        }
+
+        main {
+            background-color: cadetblue;
+        }
+
+        .caixa-input {
+            padding-top: 90px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .input {
+           width: 65%;
+           height: 30px;
+           text-align: center;
+        }
+
+        .button {
+            height: 25px;
+            width: 30%;
+        }
+
+        .item-pai {
+            display: flex;
+            max-width: 80vw;
+            flex-wrap: wrap;
+            padding-bottom: 1.5vh;
+        }
+
+        .item1 {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 100%;
+            align-items: unset;
+        }
+
+        .ul-item1{
+            margin-left: 0vw;
+        }
+
+        .item1:hover {
+            border: none;
+            border-radius: 10px;
+            opacity: 0.8;
+        }
+
+        .item2 {
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            max-width: 100%;
+            align-items: unset;
+        }
+
+        .ul-item2{
+            margin-left: 0vw;
+        }
+
+        .item2:hover {
+            border: none;
+            border-radius: 10px;
+            opacity: 0.8;
+        }
+
+        .item3 {
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            max-width: 100%;
+            align-items: unset;
+        }
+
+        .ul-item3{
+            margin-left: 0vw;
+        }
+
+        .item3:hover {
+            border: none;
+            border-radius: 0px;
+            opacity: 0.8;
+        }
+
+        /*section > section > ul > li{
+            color: ;
+        }*/
+
+        .caixa-img {
+            /*display: flex;
+            justify-content: center;*/
+        }
+
+        .img-item {
+            width: 150px;
+            /*justify-content: center;*/
+        }
+       
+        .rodape{
+            /*position: fixed;*/
+            bottom: 0px;
+            padding-bottom: 10px;
+            width: 100%;
+            background: black;
+            color: orangered;
+            height: 11%;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

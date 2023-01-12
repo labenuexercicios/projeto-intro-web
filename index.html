@@ -1,122 +1,332 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmes</title>
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/6541/6541434.png"> <!--Aqui eu coloquei um favicon-->
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
+
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="titulo">
-        <h1>Labenu Movies</h1> 
-        <p class="cabecalho">Início</p>
-        <p class="cabecalho">Filmes</p>
-        <p class="cabecalho">Explore</p>
-        <p class="cabecalho">Notificações</p>
-        <p class="cabecalho">Ajuda</p>
-    </header>
-
-    <main class="principal">
-
-        <div class="busca-caixa">
-            <input type="text" class="busca" placeholder="Faça uma busca">
-            <button type="submit" class="button-busca">Buscar</button>
-        </div>
-
-        <div>
-            <section class="filmes">
-                <ul>
-                    <img src="./filme de repente uma familia/download.jpeg" alt="de repente uma família(filme)">
-                    <li>
-                    
-                       Nome:
-                       <a href="https://cinemacomrapadura.com.br/criticas/521405/critica-de-repente-uma-familia-2018-equilibrio-perfeito-entre-humor-e-emocao/" target="_blank">De repente uma família</a> 
-                    </li>
-                    <li>
-                        Gênero: comédia/drama
-                    </li>
-                    <li>
-                        Ano de lançamento: 2018
-                    </li>
-                    <li>
-                        Duração: 1h 59m
-                    </li>
-                    <li>
-                        Filmes semelhantes: O que esperar quando você está esperando, Cartas  para Julieta, Ensinando a viver
-                    </li>
-                    <li>
-                        Possui uma nova versão: Não
-                    </li>
-                </ul>
+    <div class="div">
+        <header>
+            <nav  class="header">
+                <div>
+                    <h1><a class="h1" href="https://www.labenu.com.br/" target="_blank">Labenu Movies</a></h1>
+                    <button class="button-nav">&#9776</button>
+                </div>
+    
+                   <ul class="menu-ul">
+                        <li class="li-header"><a class="a-header" href="">Início</a></li>
+                        <li class="li-header"><a class="a-header" href="">Filmes</a></li>
+                        <li class="li-header"><a class="a-header" href="">Explore</a> </li>
+                        <li class="li-header"><a class="a-header" href="">Notificações</a></li>
+                        <li class="li-header"><a class="a-header" href="">Ajuda</a></li>
+                    </ul>
+            </nav>
+              
+          <main>
+            
+            <section class="caixa-input">
+                <form action="">
+                    <input id="input" type="text" placeholder="Faça uma busca">
+                    <button  class="button">Buscar</button>
+                </form>
             </section>
-
-            <section class="filmes">
-                <ul>
-                    <img src="./filme tropa de elite/download (1).jpeg" alt="tropa de elite(filme)">
-                    <li>
-                        Nome:
-                        <a href="https://pt.wikipedia.org/wiki/Tropa_de_Elite_(filme)" target="_blank">Tropa de elite</a> 
-                    </li>
-                    <li>
-                        Gênero: policial/ação
-                    </li>
-                    <li>
-                        Ano de lançamento: 2007
-                    </li>
-                    <li>
-                        Duração: 1h 55m
-                    </li>
-                    <li>
-                        Filmes semelhantes: O rei de Nova York, O resgate, Atraídos pelo crime
-                    </li>
-                    <li>
-                        Possui uma nova versão: Sim
-                    </li>
-                </ul>
-            </section>
-
-
-            <section class="filmes">
-                <ul>
-                    <img src="./filme sorria/download.jpeg" alt="sorria(filme)">
-                    <li>
-                        Nome:
-                        <a href="https://www.adorocinema.com/filmes/filme-304967/" target="_blank">Sorria</a> 
-                    </li>
-                    <li>
-                        Gênero: terror
-                    </li>
-                    <li>
-                        Ano de lançamento: 2022
-                    </li>
-                    <li>
-                        Duração: 1h 45m
-                    </li>
-                    <li>
-                        Filmes semelhantes: Mar do medo, Gritos do além, Predadores
-                    </li>
-                    <li>
-                        Possui uma nova versão: Não
-                    </li>
-                </ul>
-            </section>
-
-        </div>
-      
-    </main>
-
-     <div class="caixa-do-rodape"> 
-        <footer class="rodape">
-        <p class="p-do-footer">Contato <br> silvadesouzanalice92@gmail.com </p>
-        <br>
-        <p class="p-do-footer">Analice Silva </p>
-        <p class="p-do-footer"><a href="https://github.com/ANALYYY" target="_blank">https://github.com/ANALYYY</a><p> 
-          <!--MEU GITHUB AQUI-->
-        </footer>
+    
+            <div class="caixa-pai">
+                <section class="item-pai" id="pai">
+                <section class="item1">
+                    <img class="img-item" src="./capa de fundo/filme de repente uma familia/download.jpeg" alt="">
+                    <ul class="ul-item1">
+                        <li>Nome: De Repente Uma Família</li>
+                        <li>Gênero: comédia/drama</li>
+                        <li>Duração: 1h 59min</li>
+                        <li>Filmes semelhantes: O que esperar quando você está esperando, Cartas para Julieta, Ensinando a viver</li>
+                        <li>Remake: Não</li>
+                    </ul>
+                </section>
+                <section class="item2">
+                    <img class="img-item" src="./capa de fundo/filme tropa de elite/download (1).jpeg" alt="">
+                    <ul class="ul-item2">
+                        <li>Nome: Tropa de Elite</li>
+                        <li>Gênero: policial/ação</li>
+                        <li>Duração: 1h 55min</li>
+                        <li>Filmes semelhantes: O Rei De Nova York, O Resgate", "Atraídos Pelo Crime</li>
+                        <li>Remake: Sim</li>
+                    </ul>
+                </section>
+                <section class="item3">
+                    <img class="img-item" src="./capa de fundo/filme sorria/download.jpeg" alt="">
+                    <ul class="ul-item3">
+                        <li>Nome: Sorria</li>
+                        <li>Gênero: terror</li>
+                        <li>Duração: 1h 45min</li>
+                        <li>Filmes semelhantes: Mar Do Medo, Gritos Do Além, Predadores</li>
+                        <li>Remake: Não</li>
+                    </ul>
+                </section>
+                <section class="item1">
+                   <img class="img-item" src="./capa de fundo/filme de repente uma familia/download.jpeg" alt="">
+                   <ul class="ul-item1">
+                       <li>Nome: De Repente Uma Família</li>
+                       <li>Gênero: comédia/drama</li>
+                       <li>Duração: 1h 59min</li>
+                       <li>Filmes semelhantes: O que esperar quando você está esperando, Cartas para Julieta, Ensinando a viver</li>
+                       <li>Remake: Não</li>
+                   </ul>
+               </section>
+               <section class="item2">
+                   <img class="img-item" src="./capa de fundo/filme tropa de elite/download (1).jpeg" alt="">
+                   <ul class="ul-item2">
+                       <li>Nome: Tropa de Elite</li>
+                       <li>Gênero: policial/ação</li>
+                       <li>Duração: 1h 55min</li>
+                       <li>Filmes semelhantes: O Rei De Nova York, O Resgate", "Atraídos Pelo Crime</li>
+                       <li>Remake: Sim</li>
+                   </ul>
+               </section>
+               <section class="item3">
+                   <img class="img-item" src="./capa de fundo/filme sorria/download.jpeg" alt="">
+                   <ul class="ul-item3">
+                       <li>Nome: Sorria</li>
+                       <li>Gênero: terror</li>
+                       <li>Duração: 1h 45min</li>
+                       <li>Filmes semelhantes: Mar Do Medo, Gritos Do Além, Predadores</li>
+                       <li>Remake: Não</li>
+                   </ul>
+               </section>
+               <section class="item1">
+                   <img class="img-item" src="./capa de fundo/filme de repente uma familia/download.jpeg" alt="">
+                   <ul class="ul-item1">
+                       <li>Nome: De Repente Uma Família</li>
+                       <li>Gênero: comédia/drama</li>
+                       <li>Duração: 1h 59min</li>
+                       <li>Filmes semelhantes: O que esperar quando você está esperando, Cartas para Julieta, Ensinando a viver</li>
+                       <li>Remake: Não</li>
+                   </ul>
+               </section>
+               <section class="item2">
+                   <img class="img-item" src="./capa de fundo/filme tropa de elite/download (1).jpeg" alt="">
+                   <ul class="ul-item2">
+                       <li>Nome: Tropa de Elite</li>
+                       <li>Gênero: policial/ação</li>
+                       <li>Duração: 1h 55min</li>
+                       <li>Filmes semelhantes: O Rei De Nova York, O Resgate", "Atraídos Pelo Crime</li>
+                       <li>Remake: Sim</li>
+                   </ul>
+               </section>
+               <section class="item3">
+                   <img class="img-item" src="./capa de fundo/filme sorria/download.jpeg" alt="">
+                   <ul class="ul-item3">
+                       <li>Nome: Sorria</li>
+                       <li>Gênero: terror</li>
+                       <li>Duração: 1h 45min</li>
+                       <li>Filmes semelhantes: Mar Do Medo, Gritos Do Além, Predadores</li>
+                       <li>Remake: Não</li>
+                   </ul>
+               </section>
+               <section class="item1">
+                   <img class="img-item" src="./capa de fundo/filme de repente uma familia/download.jpeg" alt="">
+                   <ul class="ul-item1">
+                       <li>Nome: De Repente Uma Família</li>
+                       <li>Gênero: comédia/drama</li>
+                       <li>Duração: 1h 59min</li>
+                       <li>Filmes semelhantes: O que esperar quando você está esperando, Cartas para Julieta, Ensinando a viver</li>
+                       <li>Remake: Não</li>
+                   </ul>
+               </section>
+               <section class="item2">
+                   <img class="img-item" src="./capa de fundo/filme tropa de elite/download (1).jpeg" alt="">
+                   <ul class="ul-item2">
+                       <li>Nome: Tropa de Elite</li>
+                       <li>Gênero: policial/ação</li>
+                       <li>Duração: 1h 55min</li>
+                       <li>Filmes semelhantes: O Rei De Nova York, O Resgate", "Atraídos Pelo Crime</li>
+                       <li>Remake: Sim</li>
+                   </ul>
+               </section>
+               <section class="item3">
+                   <img class="img-item" src="./capa de fundo/filme sorria/download.jpeg" alt="">
+                   <ul class="ul-item3">
+                       <li>Nome: Sorria</li>
+                       <li>Gênero: terror</li>
+                       <li>Duração: 1h 45min</li>
+                       <li>Filmes semelhantes: Mar Do Medo, Gritos Do Além, Predadores</li>
+                       <li>Remake: Não</li>
+                   </ul>
+               </section>
+               <section class="item1">
+                   <img class="img-item" src="./capa de fundo/filme de repente uma familia/download.jpeg" alt="">
+                   <ul class="ul-item1">
+                       <li>Nome: De Repente Uma Família</li>
+                       <li>Gênero: comédia/drama</li>
+                       <li>Duração: 1h 59min</li>
+                       <li>Filmes semelhantes: O que esperar quando você está esperando, Cartas para Julieta, Ensinando a viver</li>
+                       <li>Remake: Não</li>
+                   </ul>
+               </section>
+               <section class="item2">
+                   <img class="img-item" src="./capa de fundo/filme tropa de elite/download (1).jpeg" alt="">
+                   <ul class="ul-item2">
+                       <li>Nome: Tropa de Elite</li>
+                       <li>Gênero: policial/ação</li>
+                       <li>Duração: 1h 55min</li>
+                       <li>Filmes semelhantes: O Rei De Nova York, O Resgate", "Atraídos Pelo Crime</li>
+                       <li>Remake: Sim</li>
+                   </ul>
+               </section>
+               <section class="item3">
+                   <img class="img-item" src="./capa de fundo/filme sorria/download.jpeg" alt="">
+                   <ul class="ul-item3">
+                       <li>Nome: Sorria</li>
+                       <li>Gênero: terror</li>
+                       <li>Duração: 1h 45min</li>
+                       <li>Filmes semelhantes: Mar Do Medo, Gritos Do Além, Predadores</li>
+                       <li>Remake: Não</li>
+                   </ul>
+               </section>
+               <section class="item1">
+                   <img class="img-item" src="./capa de fundo/filme de repente uma familia/download.jpeg" alt="">
+                   <ul class="ul-item1">
+                       <li>Nome: De Repente Uma Família</li>
+                       <li>Gênero: comédia/drama</li>
+                       <li>Duração: 1h 59min</li>
+                       <li>Filmes semelhantes: O que esperar quando você está esperando, Cartas para Julieta, Ensinando a viver</li>
+                       <li>Remake: Não</li>
+                   </ul>
+               </section>
+               <section class="item2">
+                   <img class="img-item" src="./capa de fundo/filme tropa de elite/download (1).jpeg" alt="">
+                   <ul class="ul-item2">
+                       <li>Nome: Tropa de Elite</li>
+                       <li>Gênero: policial/ação</li>
+                       <li>Duração: 1h 55min</li>
+                       <li>Filmes semelhantes: O Rei De Nova York, O Resgate", "Atraídos Pelo Crime</li>
+                       <li>Remake: Sim</li>
+                   </ul>
+               </section>
+               <section class="item3">
+                   <img class="img-item" src="./capa de fundo/filme sorria/download.jpeg" alt="">
+                   <ul class="ul-item3">
+                       <li>Nome: Sorria</li>
+                       <li>Gênero: terror</li>
+                       <li>Duração: 1h 45min</li>
+                       <li>Filmes semelhantes: Mar Do Medo, Gritos Do Além, Predadores</li>
+                       <li>Remake: Não</li>
+                   </ul>
+               </section>
+    
+               <section class="item1">
+                   <img class="img-item" src="./capa de fundo/filme de repente uma familia/download.jpeg" alt="">
+                   <ul class="ul-item1">
+                       <li>Nome: De Repente Uma Família</li>
+                       <li>Gênero: comédia/drama</li>
+                       <li>Duração: 1h 59min</li>
+                       <li>Filmes semelhantes: O que esperar quando você está esperando, Cartas para Julieta, Ensinando a viver</li>
+                       <li>Remake: Não</li>
+                   </ul>
+               </section>
+               <section class="item2">
+                   <img class="img-item" src="./capa de fundo/filme tropa de elite/download (1).jpeg" alt="">
+                   <ul class="ul-item2">
+                       <li>Nome: Tropa de Elite</li>
+                       <li>Gênero: policial/ação</li>
+                       <li>Duração: 1h 55min</li>
+                       <li>Filmes semelhantes: O Rei De Nova York, O Resgate", "Atraídos Pelo Crime</li>
+                       <li>Remake: Sim</li>
+                   </ul>
+               </section>
+               <section class="item3">
+                   <img class="img-item" src="./capa de fundo/filme sorria/download.jpeg" alt="">
+                   <ul class="ul-item3">
+                       <li>Nome: Sorria</li>
+                       <li>Gênero: terror</li>
+                       <li>Duração: 1h 45min</li>
+                       <li>Filmes semelhantes: Mar Do Medo, Gritos Do Além, Predadores</li>
+                       <li>Remake: Não</li>
+                   </ul>
+               </section>
+               <section class="item1">
+                   <img class="img-item" src="./capa de fundo/filme de repente uma familia/download.jpeg" alt="">
+                   <ul class="ul-item1">
+                       <li>Nome: De Repente Uma Família</li>
+                       <li>Gênero: comédia/drama</li>
+                       <li>Duração: 1h 59min</li>
+                       <li>Filmes semelhantes: O que esperar quando você está esperando, Cartas para Julieta, Ensinando a viver</li>
+                       <li>Remake: Não</li>
+                   </ul>
+               </section>
+               <section class="item2">
+                   <img class="img-item" src="./capa de fundo/filme tropa de elite/download (1).jpeg" alt="">
+                   <ul class="ul-item2">
+                       <li>Nome: Tropa de Elite</li>
+                       <li>Gênero: policial/ação</li>
+                       <li>Duração: 1h 55min</li>
+                       <li>Filmes semelhantes: O Rei De Nova York, O Resgate", "Atraídos Pelo Crime</li>
+                       <li>Remake: Sim</li>
+                   </ul>
+               </section>
+               <section class="item3">
+                   <img class="img-item" src="./capa de fundo/filme sorria/download.jpeg" alt="">
+                   <ul class="ul-item3">
+                       <li>Nome: Sorria</li>
+                       <li>Gênero: terror</li>
+                       <li>Duração: 1h 45min</li>
+                       <li>Filmes semelhantes: Mar Do Medo, Gritos Do Além, Predadores</li>
+                       <li>Remake: Não</li>
+                   </ul>
+               </section>
+               <section class="item1">
+                   <img class="img-item" src="./capa de fundo/filme de repente uma familia/download.jpeg" alt="">
+                   <ul class="ul-item1">
+                       <li>Nome: De Repente Uma Família</li>
+                       <li>Gênero: comédia/drama</li>
+                       <li>Duração: 1h 59min</li>
+                       <li>Filmes semelhantes: O que esperar quando você está esperando, Cartas para Julieta, Ensinando a viver</li>
+                       <li>Remake: Não</li>
+                   </ul>
+               </section>
+               <section class="item2">
+                   <img class="img-item" src="./capa de fundo/filme tropa de elite/download (1).jpeg" alt="">
+                   <ul class="ul-item2">
+                       <li>Nome: Tropa de Elite</li>
+                       <li>Gênero: policial/ação</li>
+                       <li>Duração: 1h 55min</li>
+                       <li>Filmes semelhantes: O Rei De Nova York, O Resgate", "Atraídos Pelo Crime</li>
+                       <li>Remake: Sim</li>
+                   </ul>
+               </section>
+               <section class="item3">
+                   <img class="img-item" src="./capa de fundo/filme sorria/download.jpeg" alt="">
+                   <ul class="ul-item3">
+                       <li>Nome: Sorria</li>
+                       <li>Gênero: terror</li>
+                       <li>Duração: 1h 45min</li>
+                       <li>Filmes semelhantes: Mar Do Medo, Gritos Do Além, Predadores</li>
+                       <li>Remake: Não</li>
+                   </ul>
+               </section> 
+            </div> 
+          </main>
+    
+    
+         <section class="caixa-do-rodape"> 
+            <footer class="rodape">
+                <p class="p-do-footer">Contato <br> silvadesouzanalice92@gmail.com </p>
+                <br>
+                <p class="p-do-footer">Analice Silva </p>
+                <p class="p-do-footer"><a class="a-do-footer" href="https://github.com/ANALYYY" target="_blank">https://github.com/ANALYYY</a><p> 
+                <!--MEU GITHUB AQUI-->
+            </footer>
+        </section>
+    </body>
+    </html>
+    
     </div>
    
 </body>
-</html>
+</tml
