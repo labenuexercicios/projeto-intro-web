@@ -1,0 +1,38 @@
+header{
+  padding: 20px;
+  background-color: grey;
+}
+.search {
+  width: 100px;
+  padding: 10px 0;
+  background: green;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  border: none;
+  border-radius: 25px;
+  transition: 1s all;
+}
+.input{
+  background-color: aliceblue;
+  padding: 20px 10px;
+}
+a{
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+
+}
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.container{
+
+  padding: 35px;
+  width: 30%;
+  margin: 15px;
+  border: solid black 5px
+}

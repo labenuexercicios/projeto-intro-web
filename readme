@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Curiosidades-Quimicas</title>
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <header>
-        <h1 class="main-title">Curiosidades Químicas</h1>
-    </header>
-    <main>
-        <div class="input">
-            <label for="search"></label>
-            <input id="search"></input>
-            <button id="searchValidated" onclick="printSearch()">Buscar</button>
-        </div>
-        <div>
-            <section>
-                <ul id="1" class="container">
+ <ul class="container">
                     <li> <a href="https://pt.wikipedia.org/wiki/Hipoclorito_de_s%C3%B3dio">Nome: Hipoclorito de
                             sódio</a></li>
                     <li> Nome mais conhecido: Água Sanitária</li>
@@ -33,7 +10,7 @@
                 </ul>
             </section>
             <section>
-                <ul id="2" class="container">
+                <ul class="container">
                     <li><a href="https://pt.wikipedia.org/wiki/%C3%81cido_etanoico">Nome: Ácido acético</a></li>
                     <li>Nome mais conhecido: Vinagre</li>
                     <li>Átomos da fórmula: Carbono, Hidrogênio, Oxigênio</li>
@@ -44,7 +21,7 @@
                 </ul>
             </section>
             <section>
-                <ul id="3" class="container">
+                <ul class="container">
                     <li><a href="https://pt.wikipedia.org/wiki/%C3%81cido_asc%C3%B3rbico">Nome: Ácido ascórbico</a></li>
                     <li>Nome mais conhecido: Vitamina C</li>
                     <li>Átomos da fórmula: Carbono, Hidrogênio, Oxigênio</li>
@@ -53,14 +30,3 @@
                     </li>
                     <li>Solubilida de em água: true</li>
                 </ul>
-            </section>
-        </div>
-    </main>
-    <footer>
-
-    </footer>
-
-</body>
-<script src="index.js"></script>
-
-</html>

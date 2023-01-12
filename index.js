@@ -1,11 +1,20 @@
-//lista de Objetos 
-const compostoQuimico = [
+
+let input = document.getElementById("search");
+console.log(input);
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    printSearch()
+  }
+});
+
+//list de objects 
+const chemicalCompound = [
     {
         nome: "Hipoclorito de sódio",
         nomeMaisConhecido: "Água Sanitária",
         atomosDaFormula: ["Sódio", "Cloro", "Oxigênio"],
         massaMolar: 74.44,
-        usos: ["Remoção de manchas de roupas sujas", "Desenfetar superfícies", "Desinfecção da água potável"],
+        usos: ["Remoção de manchas de roupas sujas", "desenfetar superfícies", "desinfecção da água potável"],
         solubilidadeEmAgua: true
     },
 
@@ -14,7 +23,7 @@ const compostoQuimico = [
         nomeMaisConhecido: "Vinagre",
         atomosDaFormula: ["Carbono", "Hidrogênio", "Oxigênio"],
         massaMolar: 60.052,
-        usos: ["Condimentar saladas", "Produção da aspirina", "Síntese de perfumes e corantes"],
+        usos: ["Condimentar saladas", "produção da aspirina", "síntese de perfumes e corantes"],
         solubilidadeEmAgua: true
     },
     {
@@ -22,69 +31,82 @@ const compostoQuimico = [
         nomeMaisConhecido: "Vitamina C",
         atomosDaFormula: ["Carbono", "Hidrogênio", "Oxigênio"],
         massaMolar: 176.09,
-        usos: ["Suplementação alimentar", "Adubo para plantas", "Conservação de alimentos industrializados"],
+        usos: ["Suplementação alimentar", "adubo para plantas", "conservação de alimentos industrializados"],
         solubilidadeEmAgua: true
     }]
 
 //Verificar se é true ou false 
 
-const especime = []
-function verificar(lista) {
-    for (const i in lista) {
-        if (lista[i].solubilidadeEmAgua === true) {
-            especime.push(lista)
+const specimen = []
+function verificar(list) {
+    for (const i in list) {
+        if (list[i].solubilidadeEmAgua === true) {
+            specimen.push(list)
         }
         else {
-            alert("Não é solúvel em água")
+            alert(`${list[i].nome} não é solúvel em água`)
+
         }
     }
 }
-verificar(compostoQuimico)
+verificar(chemicalCompound)
 
 //cálculo das médias 
-let numerador = 0
-function calculoDaMedia(lista) {
-    for (const i in lista) {
-        numerador += lista[i].massaMolar
-        if (lista[i].massaMolar.length > 0) {
-            return numerador / lista[i].massaMolar.length
-        }
 
+function averageCalculation(list) {
+    let numerator = 0
+    for (const i in list) {
+        numerator += list[i].massaMolar
     }
+    return numerator / list.length
 }
-media = calculoDaMedia(compostoQuimico)
 
-console.log(`A média dos valores de massa molar é: ${media.toFixed(2)}`)
+averageCalculation(chemicalCompound)
+
+console.log(`A média dos valores de massa molar é: ${averageCalculation(chemicalCompound).toFixed(2)}`)
 console.log("\n")
 
 //refatoração 
-function impressao(array) {
-    for (const objeto in array) {
-        for (const propriedade of objeto) {
-            console.log(`${propriedade}: ${objeto.propriedade}`);
-
+function print(array) {
+    for (const object of array) {
+        for (const property in object) {
+            if (Array.isArray(object[property])) {
+                console.log(`${property}: ${object[property].join(", ")}`)
+            } else {
+                console.log(`${property}: ${object[property]}`);
+            }
         }
+        console.log("\n")
     }
-    console.log("\n")
-}
-impressao(compostoQuimico)
 
-// 4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
+}
+print(chemicalCompound)
+
+//função de busca
 function returnName(array, string) {
     let busca
-
     for (i in array) {
-        if (array[i].name.toUpperCase() === string.toUpperCase()) {
+        if (array[i].nome.toUpperCase().includes(string.toUpperCase())) {
             busca = array[i]
-            return (busca)
-        } else if (array[i].name.toUpperCase() !== string.toUpperCase()) {
-            busca = "Não encontrado."
+            break
+        } else {
+            busca = null
         }
     }
+    return (busca)
+}
 
-    if (busca === "Não encontrado.") {
-        alert(`${string} não foi encontrado.`)
+function printSearch() {
+    let container = document.getElementsByClassName("container")
+    for (container of document.getElementsByClassName("container")) {
+        container.style.display="none"
+    }
+    let item = document.getElementById("search").value
+    const card = returnName(chemicalCompound, item)
+
+    if (card !== null){
+        container.style.display="block"
     }
 }
 
-returnName(compostoQuimico, "Ácido acético")
+
