@@ -20,10 +20,19 @@
     </header>
     <article id="pesquisador">
         <!-- <form action="https://www.google.com.br/"> -->
-        <input type="text" placeholder=" Pesquisar algo" name="pesquisa" id="pesquisador">
-        <button id="botao" onclick="adicionaroskits(event)">
-            <img src="/imagens/download.png" alt="pesquisa" id="lupa">
-        </button>
+        <form action="">
+            <input  type="text" placeholder=" Pesquise o nome do kit" name="nome" id="nome ">
+            <input type="submit" id="send" value="Enviar">
+            <button id="botao" id="sends" onclick="adicionaroskits(event)">
+                <img src="/imagens/download.png" alt="pesquisa" id="lupa">
+            </button>        
+        </form>
+
+    <form id="form">
+        <input type="text" id="campo">
+        <input onclick="confereitens(event)" type="submit" value="pegavalor" id="">
+    </form>
+
 
     <button id="admin" onclick="setoradmin(event)">
         <a href="http://127.0.0.1:5500/indexadmin.html" target="_blank" rel="noopener noreferrer">Área do funcionário</a>

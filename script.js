@@ -172,7 +172,7 @@
 
 
 function setoradmin(event){
-   const nomedonovoobjeto4 : prompt("Digite o login");
+//    const nomedonovoobjeto4 : prompt("Digite o login");
 
 }
 
@@ -240,3 +240,42 @@ function adicionaroskits(event){
     pegaidul.insertAdjacentElement('afterbegin', newelementul)
     pegaidh3.insertAdjacentElement('afterend', newelementh3)
 }
+
+function consultaitem() {
+    let valordoidpesq = document.getElementById("pesquisador").innerText
+
+    // let palavra = valordoidpesq;
+    // valordopesq.innerHTML = document.getElementById("pesquisador").value 
+    console.log(valordoidpesq.innerText)
+}
+
+function separaitens(array){
+
+}
+
+function confereitens(event){
+    pegaiddoform.addEventListener("submit", function(event){
+        event.preventDefault()
+        const input = campo.value
+    
+        console.log(input)
+    })
+
+    for(let x = 0; x < arraypraguardaosobjeto.length; x++){
+        if(arraypraguardaosobjeto[x].nomedoobjeto === input){
+
+        }
+    }
+
+    // if(input)
+}
+
+const pegaiddoform = document.querySelector("#form")
+const pegaiddocampo = document.querySelector("#campo")
+
+// pegaiddoform.addEventListener("submit", function(event){
+//     event.preventDefault()
+//     const input = campo.value
+
+//     console.log(input)
+// })
