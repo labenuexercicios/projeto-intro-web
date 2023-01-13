@@ -345,6 +345,7 @@ aside {
     z-index: 10;
     top: auto;
     bottom: 0;
+    opacity: 0.9;
   }
 
   .aside-menu {
@@ -355,6 +356,7 @@ aside {
     border: none;
     gap: 5vw;
     font-size: 4vw;
+    padding-right: 24px;
   }
 
   .aside-playlist {
