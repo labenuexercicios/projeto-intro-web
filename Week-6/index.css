@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;       
+}
+
+
+body{
+    display: flex;
+    height: 100vh;
+    margin: auto;
+
+    
+    background-image: url("./img-nba/fundo.png");
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+
+
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+main{
+    display: flex;
+    height: 80vh;
+    overflow-x: auto; /* Hide horizontal scrollbar */
+    overflow-y: scroll; /* Add vertical scrollbar */
+    flex-direction: column;
+}
+
+li{
+    list-style: none;
+
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: rgb(9, 9, 14);
+
+    height: 10vh;
+    
+}
+
+h1{
+    color: white;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(10, 7, 29);
+}
+
+
+.jogador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.pai-jogadores{
+
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height:230px;
+    width:500px;
+    left:250px;
+    top:273px;
+    padding-left:100px ;
+    margin:  10px 0 0px 0;
+}
+
+img{
+    border-radius: 100px;
+    
+}
+
+.img{
+    width: 40px;
+    padding: 4px;
+    margin-left: 60%;
+}
+
+.likedin{
+    width: 40px;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.nome{
+    text-align: center;
+    margin-left: 100px;
+}
+
+.bola{
+    width: 50px;
+}
+
+
+
+.idem {
+    padding: 15px;
+    border: 1px #DDD solid;
+  }
+  .idem:nth-child(1){
+    width: 300px;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .idem:nth-child(2){
+    width: 40px;
+    border-radius: 0px 10px 10px 0px;
+    text-align:left;
+    color: white;
+    background: black;
+    border: 1px black solid;
+    cursor: pointer;
+    text-indent: -1.3px;
+  }
+  .idem:nth-child(1):focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: 1px #DDD solid;
+  } 
+
+ul{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    justify-content: left;
+    margin-left: 10px;
+}
+
+
+.fundo{
+    background-color: rgb(40, 32, 41);
+    text-decoration: rgb(80, 62, 49);
+    color: rgb(184, 150, 98);
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    padding: 0 120px 0 120px;
+    height: 10vh;   
+    box-sizing: content-box;
+    
+
+}
+
+.alinhamento{
+    padding:  15px;
+    border: 1px solid #DDD;
+    width: 2000px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.425);
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+   
+}
+.alinhamento:hover {
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+
+.alinhamento img{
+    order: 5px solid #a7a7a7;
+}
+
+.listaElementos{
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+#buscaJogador{
+    margin-right: -5px;
+}
+
+#divBusca button{
+    border: 1px solid #CCCCCC;
+    text-align: center;
+    font-size: 14px;
+    padding: 14px;
+}
+
+main div{
+    
+    animation: fromTop .9s .2s backwards;
+    /* animation-delay: 1s; */
+}
+header div{
+    
+    animation: fromTop .9s .2s backwards;
+    /* animation-delay: 1s; */
+}
+h1 {
+    
+    animation: fromTop .9s .2s backwards;
+    /* animation-delay: 1s; */
+}
+
+img{
+    animation: fromTop .9s .2s backwards;
+    /* animation-delay: 1s; */
+}
+
+p{
+    animation: fromTop .9s .2s backwards; 
+}
+
+
+
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    top{
+        opacity: 1;
+        transform: translatey(0);
+    }
+
+
+}
+

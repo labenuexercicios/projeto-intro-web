@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="index.css">
+    <title>Seleção NBA</title>
+</head>
+
+<body>
+    <header>
+        <h1>Seleção NBA</h1>
+        <!-- <img src="./img-nba/icons8-basketball-hoop-64.png"> -->
+        <!-- <img src="./img-nba/icons8-basketball-hoop-64.png"> -->
+        <img src="./img-nba/icons8-basketball-68.png" class="bola">
+       
+   
+        <div class="jogador" id="divBusca">
+            <!-- <input  type="text" id="buscaJogador" id="txtBusca" placeholder="Digite aqui seu jogador">
+            <button id="btnBusca" onclick="NbaAction(event)">Buscar Jogador</button> -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+                rel="stylesheet" />
+                <div class="col-6 col-md-4">
+                    <div class="busca"><input type="text" id="buscaJogador" id="campo_busca"
+                            placeholder="Digite seu Jogador" class="idem"
+                            onkeydown="NbaAction(event)"
+                            onkeyup="NbaAction(event)"
+                            >
+                            <button type="submit" onclick="cleanImput()" class="buscar_produto idem">
+                                Limpar
+                            </button>
+                    </div>
+                </div>
+        </div>
+
+
+    </header>
+
+    <main id="principal">
+        
+
+        <!-- <div>
+            <section class="pai-jogadores" id="nba01">
+                <img src="./img-nba/michael.png"  alt="michael"><img/>
+            <ul>
+                    <li class="NamePlayer">🏀Nome: <a href="https://www.basketball-reference.com/players/j/jordami01.html"> Michael Jordan</a> </li> 
+                    <li class="heigthPlayer">🏀Altura: 198 cm</li>
+                    <li class="stillPlayer">🏀Ainda em atividade? Não</li>
+                    <li class="positionPlayer">🏀Posição: Ala-Armador, Armador</li>
+            </ul>
+            </section>
+            <section class="pai-jogadores" id="nba02">
+                <img src="./img-nba/james.png"  alt="James"><img/> 
+                <ul>
+                    <li>🏀Nome: <a href="https://www.basketball-reference.com/players/j/jamesle01.html">Lebron James</a></li> 
+                    <li>🏀Altura: 206 cm</li>
+                    <li>🏀Ainda em atividade? Sim</li>
+                    <li>🏀Posição: Ala-Armador, Armador, Ala-Pivô, Ala</li>
+                 </ul>
+            </section>
+            <section class="pai-jogadores" id="nba03 ">
+                <img src="./img-nba/oneal.png"  alt="Oneal"><img/>
+                <ul>
+                    <li>🏀Nome: <a href="https://www.basketball-reference.com/players/o/onealsh01.html">Shanquille O'Neal</a></li> 
+                    <li>🏀Altura: 216 cm</li>
+                    <li>🏀Ainda em atividade? Não</li>
+                    <li>🏀Posição:Pivô</li>
+                 </ul>
+            </section>
+
+            <section class="pai-jogadores">
+                <img src="./img-nba/iverson.png"  alt="Iverson"><img/> 
+                <ul>
+                    <li>🏀Nome: <a href="https://www.basketball-reference.com/players/i/iversal01.html"> Allen Iverson</a></li> 
+                    <li>🏀Altura: 183 cm</li>
+                    <li>🏀Ainda em atividade? Sim</li>
+                    <li>🏀Posição: Ala-Armador,Armador</li>
+                 </ul>
+            </section>
+        </div>
+        
+    -->
+
+
+    </main>
+
+    <footer class="fundo">
+        
+        <p class="link"> <a href="https://www.linkedin.com/in/carlos-bergson/">Linkedin</a></p>
+        <img src="img-nba/icons8-linkedin.gif" alt="Likedin" class="likedin">
+        <p class="nome">Projeto Feito na Labenu</p>
+        
+        <img src="./img-nba/icons8-github.gif" alt="github" class="img">
+        <p><a href="https://github.com/cblouzada">GitHub</a></p>
+        
+    </footer>
+    
+</body>
+<script src="index.js"></script>
+</html>
