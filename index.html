@@ -1,63 +1,39 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curiosidades-Quimicas</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@500&family=Mukta:wght@500&family=Noto+Serif+NP+Hmong:wght@700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- - [ ]  Cabeçalho na página -->
     <header>
         <h1 class="main-title">Curiosidades Químicas</h1>
     </header>
     <main>
+        <!-- - [*]  Área principal com barra de pesquisa e botão -->
         <div class="input">
             <label for="search"></label>
             <input id="search"></input>
             <button id="searchValidated" onclick="printSearch()">Buscar</button>
         </div>
         <div>
-            <section>
-                <ul id="1" class="container">
-                    <li> <a href="https://pt.wikipedia.org/wiki/Hipoclorito_de_s%C3%B3dio">Nome: Hipoclorito de
-                            sódio</a></li>
-                    <li> Nome mais conhecido: Água Sanitária</li>
-                    <li> Átomos da fórmula: Sódio, Cloro, Oxigênio</li>
-                    <li> MassaMolar: 74.44</li>
-                    <li> Usos: Remoção de manchas de roupas sujas, Desenfetar superfícies, desinfecção da água potável
-                    </li>
-                    <li> Solubilida de em água: true</li>
-                </ul>
-            </section>
-            <section>
-                <ul id="2" class="container">
-                    <li><a href="https://pt.wikipedia.org/wiki/%C3%81cido_etanoico">Nome: Ácido acético</a></li>
-                    <li>Nome mais conhecido: Vinagre</li>
-                    <li>Átomos da fórmula: Carbono, Hidrogênio, Oxigênio</li>
-                    <li>MassaMolar: 60.052</li>
-                    <li>Usos: Condimentar saladas, Produção da aspirina, Síntese de perfumes e corantes</li>
-                    <li>Solubilida de em água: true
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <ul id="3" class="container">
-                    <li><a href="https://pt.wikipedia.org/wiki/%C3%81cido_asc%C3%B3rbico">Nome: Ácido ascórbico</a></li>
-                    <li>Nome mais conhecido: Vitamina C</li>
-                    <li>Átomos da fórmula: Carbono, Hidrogênio, Oxigênio</li>
-                    <li>MassaMolar: 176.09</li>
-                    <li>Usos: Suplementação alimentar, Adubo para plantas, Conservação de alimentos industrializados
-                    </li>
-                    <li>Solubilida de em água: true</li>
-                </ul>
+            <!-- - [*]  Espaço para lista dos itens -->
+            <section id = "cards">
+
             </section>
         </div>
     </main>
+    <!--  - []  Rodapé na página com identificação -->
     <footer>
-
+        <p> Site educacional</p>
     </footer>
 
 </body>
