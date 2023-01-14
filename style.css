@@ -1,0 +1,588 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: Open Sans,sans-serif;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100vw;
+        background-image: url(./190943363-3d-illustration-of-a-halloween-concept-background-of-realistic-horror-house-and-creepy-street-with-m.webp);
+    }
+    
+    .a-header {
+        font-size: 1.75rem;
+    }
+
+    .a:hover{
+        color: orangered;
+    }
+
+    li {
+        color: white;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        /*height: 10vh;*/
+        background-color: black;
+        padding: 2rem 2rem;
+        padding-top: 30px;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+
+    .h1 {
+        color: orangered;
+        font-size: 2.3rem;
+        font-weight: 700;
+    }
+    
+    .a-do-footer, .a-header {
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu-ul {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .li-header {
+        padding: 0 20px;
+    }
+
+    .caixa-pai {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        min-width: 98vw;
+    } 
+
+    a {
+        text-decoration: none;
+    }
+   
+   .li-header:hover, 
+    h1:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        background-color: rgba (255,255,255,0.2);
+    }
+
+    .button-nav {
+        /*height: 90px;*/
+        display: none;
+    }
+
+    .caixa-input {
+        /*background-color: red;*/
+        margin-top: 115px;
+        padding-top: 0px;
+        width: 85vw;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input {
+       width: 40vw;
+       height: 37px;
+       text-align: center;
+       border: none;
+       border-radius: 5px;
+    }
+
+    .input:focus {
+        font-size: 1rem;
+        color: #ff8f01;
+        box-shadow: 1px .1px .2px 2px #ff8f01;
+        outline: 0; /*com esse outline eu remover a borda interna do input*/
+    }
+
+    .input:hover {
+        box-shadow: 1px .1px .2px 2px #ff8f01;
+        color: #ff8f01;
+    }
+
+    .button {
+        font-size: 1rem;
+        font-weight: 500;
+        height: 45px;
+        width: 120px;
+        border-radius: 5px;
+        outline: 0;
+        border: none;
+    }
+
+    .button:focus{
+        outline: none;
+        box-shadow: 1px .1px .2px 2px #ff8f01;
+        color: #ff8f01;
+    }
+
+    .button:hover {
+        box-shadow: 1px .1px .2px 2px #ff8f01;
+        color: #ff8f01;
+    }
+
+    .item-pai {
+        display: flex;
+        justify-content: center;
+        min-width: 98vw;
+        /*overflow-y: scroll;*/
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding-top: 10px;
+        padding-bottom: 1vh;
+    }
+   
+
+    .item1 {
+        max-width: 400px;
+        max-height: 44vh;
+    }
+
+    .item1:hover {
+        border: 4px solid orangered;
+        border-radius: 10px;
+        opacity: 0.8;   
+        transition: .2s; 
+    }
+
+    .ul-item1{
+        max-width: 200px;
+    }
+
+    .item2 {
+        display: flex;
+    }
+
+    .caixa-2 {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .item2:hover {
+        border: 4px solid orangered;
+        border-radius: 10px;
+        opacity: 0.8;
+    }
+
+    .ul-item2{
+        max-width: 90vw;
+    }
+
+    .item3 {
+        max-width: 400px;
+        /*max-height: 60vh;*/
+    }
+
+    .item3:hover {
+        border: 4px solid orangered;
+        border-radius: 10px;
+        opacity: 0.8;
+    }
+
+    .ul-item3{
+        max-width: 90vw
+    }
+
+    li{
+         /* Primeiro passo: definir um degradê como fundo */
+        background-image: linear-gradient(to bottom, #ff6900,  turquoise, #fcb900);
+
+  
+        /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+        background-clip: text;
+        -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+      
+        /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+        -webkit-text-fill-color: transparent;
+        /*color: linear-gradient(90deg, rgb(251, 2, 52), rgb(255, 143, 1));*/
+    }
+
+    .img-item {
+        width: 200px;
+        height: 250px;
+        border-radius: 10px;
+    }
+
+   
+    .ul-item1, .ul-item2, .ul-item3 > li {
+        line-height: 1.2rem;
+    }
+
+    section > ul > li{
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .item1, .item2, .item3 {
+        /*background: #222;*/
+       /* background: linear-gradient(90deg, rgb(251, 2, 52), rgb(255, 143, 1));*/
+        background: #110920;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 8px;
+        width: 408px;
+        padding: 1%;
+    }
+
+    .rodape{
+        /*position: fixed;*/
+        bottom: 0px;
+        padding-bottom: 10px;
+        width: 100%;
+        background: black;
+        color: orangered;
+        height: 11%;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 600px)  and (max-width: 1000px){
+
+        .header {
+            padding: 1.9rem 1rem;
+            padding-top: 0px;
+        }
+    
+        .h1 {
+            color: orangered;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+        }
+    
+        .menu-ul {
+            margin-top: 2rem;   
+        }
+    
+        .li-header {
+            padding: 0 10px;
+        }
+    
+        .caixa-pai {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            min-width: 98vw;
+           /* background-color: red;*/
+        } 
+    
+        .caixa-input {
+            /*background-color: red;*/
+            margin-top: 12vh;
+            padding-top: 15px;
+        }
+    
+        .item-pai {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            min-width: 98vw;
+        }
+
+        .input {
+            width: 400px;
+         }
+     
+         .button {
+             width: 100px;
+             height: 42px;
+             margin-left: 5px;
+         }
+
+         .a-header {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media screen and (max-width: 600px){ 
+        .caixa-pai {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        } 
+
+        .header {
+            flex-direction: column;
+            align-items: unset;
+            width: 99.4%;
+        }
+
+        .menu-ul {
+            /*text-align: center;*/
+            margin: auto;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            flex-direction: column;
+            align-items: unset;
+            list-style: none;
+            padding: 0.4rem;
+            align-items: center;
+           /*aqui flex-wrap: wrap*/;
+        }
+
+        .header {
+            padding: 0rem 1rem;
+            padding-top: 0px;
+            justify-content: space-between;
+            align-items: unset;
+            display: flex;
+        }
+
+        .li-header {
+            padding: 5px 0px;
+        }
+
+        .h1 {
+            margin: 0;
+            padding: 0px;
+            font-size: 1.8rem;
+        }
+
+        .a-header {
+            font-size: 1rem;
+        }
+
+        li {
+            padding: 5px 0px;
+            width: 100%;
+        }
+    
+        .h1 {
+           margin-top: 20px;
+           margin-bottom: 10px;
+           padding-top: 0px;
+        }
+
+        .a {
+            font-size:1.1rem;
+        }
+
+        .button-nav {
+            display: flex;
+            margin-top: 32px;
+            font-size: 1.5rem;
+            border: none;
+            background-color: transparent;
+            color: white;
+            position: absolute;
+            right: 15px;
+            top: -8px;
+        }
+
+        .button-nav:hover {
+            border: transparent;
+            color: white;
+        }
+
+       /*
+        button:focus ~ ul{
+            height: 260px; /*aqui é pra quando o usuário clica aparecer o menu*/
+       /* }*/
+
+        .menu-ul.active {
+            height: 170px;
+        }
+
+        .caixa-input {
+            padding-top: 0px;
+            display: flex;
+            justify-content: center;
+            height: 5vh;
+            width: 97vw;
+            /*background: red;*/
+            margin-top: 90px;
+        }
+
+        main {
+            width: 100vw;
+        }
+
+        .img-item {
+            max-width: 145px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .input {
+           width: 40vw;
+           height: 2rem;
+           text-align: center;
+        }
+
+        .button {
+            height: 4vh;
+            width: 20vw;
+        }
+
+        .item-pai {
+            display: flex;
+            width: 80vw;
+            flex-wrap: wrap;
+            padding-bottom: 1.5vh;
+        }
+
+        .item1 {
+            margin-top: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 100%;
+            align-items: unset;
+        }
+
+        .ul-item1{
+            margin-left: 0vw;
+        }
+
+        .item1:hover {
+            border: none;
+            border-radius: 10px;
+            opacity: 0.8;
+        }
+
+        .item2 {
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            max-width: 100%;
+            align-items: unset;
+        }
+
+        .ul-item2{
+            margin-left: 0vw;
+        }
+
+        .item2:hover {
+            border: none;
+            border-radius: 10px;
+            opacity: 0.8;
+        }
+
+        .item3 {
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            max-width: 100%;
+            align-items: unset;
+        }
+
+        .ul-item3{
+            margin-left: 0vw;
+        }
+
+        .item3:hover {
+            border: none;
+            border-radius: 0px;
+            opacity: 0.8;
+        }
+
+        .img-item {
+            width: 150px;
+            /*justify-content: center;*/
+        }
+       
+        .rodape{
+            /*position: fixed;*/
+            bottom: 0px;
+            padding-bottom: 10px;
+            width: 100%;
+            background: black;
+            color: orangered;
+            height: 11%;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*cores rgb, rgba
+        --dark-2: rgba(0,0,0,.2);
+    --dark-5: rgba(0,0,0,.5);
+    --light-1: rgba(255,255,255,.1);
+    --light-2: rgba(255,255,255,.2);
+    --light-7: rgba(255,255,255,.7);
+        --wp--preset--color--black: #000000;
+    --wp--preset--color--cyan-bluish-gray: #abb8c3;
+    --wp--preset--color--white: #ffffff;
+    --wp--preset--color--pale-pink: #f78da7;
+    --wp--preset--color--vivid-red: #cf2e2e;
+    --wp--preset--color--luminous-vivid-orange: #ff6900;
+    --wp--preset--color--luminous-vivid-amber: #fcb900;
+    --wp--preset--color--light-green-cyan: #7bdcb5;
+    --wp--preset--color--vivid-green-cyan: #00d084;
+    --wp--preset--color--pale-cyan-blue: #8ed1fc;
+    --wp--preset--color--vivid-cyan-blue: #0693e3;
+    --wp--preset--color--vivid-purple: #9b51e0;
+    --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
+    --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+    --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+    --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+    --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+    --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
+    --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+    --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
+    --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
+    --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
+    --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
+    --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

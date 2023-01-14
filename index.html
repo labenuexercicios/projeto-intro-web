@@ -1,13 +1,427 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./script.js"></script>
+    <title>Labenu Movies</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/6541/6541434.png"> <!--Aqui eu coloquei um favicon-->
+    <script src="./script.js" defer></script>
+
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="div">
+        <header>
+            <nav  class="header">
+                <div>
+                    <h1 class="h1">Labenu Movies</h1>
+                    <button class="button-nav">&#9776</button>
+                </div>
     
+                   <ul class="menu-ul">
+                        <li class="li-header"><a class="a-header" href="">Início</a></li>
+                        <li class="li-header"><a class="a-header" href="">Filmes</a></li>
+                        <li class="li-header"><a class="a-header" href="">Explore</a> </li>
+                        <li class="li-header"><a class="a-header" href="">Notificações</a></li>
+                        <li class="li-header"><a class="a-header" href="">Ajuda</a></li>
+                   </ul>
+            </nav>
+              
+          <main>
+                <section class="caixa-input">
+                    <form action="" autocomplete="off">
+                        <input class="input" id="input" type="text" placeholder="Faça uma busca" oninput="voltaFilmes()">
+                        <button onclick="limpaInput(event)" class="button">Buscar</button>
+                    </form>
+                </section>
+
+            <div class="caixa-pai">
+                <section class="item-pai" id="pai">
+
+                  <section class="item1">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/Avatar/mbYQLLluS651W89jO7MOZcLSCUw.jpg" alt="">
+                        <ul class="ul-item1">
+                            <li class="titulo"><b>Avatar: O Caminho da Água</b></li>
+                            <li><b>Gênero:</b> Ação, Aventura, Ficção científica</li>
+                            <li><b>Duração:</b> 3h 12min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li><b>Elenco:</b> Alex Lucas, Alicia Vela-Bailey, Andrew Arrabito, Anthony Ahern, Ava Diakhaby</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="item2">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/homem das saombras/dMX0JwFggsMKbl3StoNF3uqExuB.jpg" alt="">
+                        <ul class="ul-item2">
+                            <li class="titulo"><b>O Homem das Sombras</b></li>
+                            <li><b>Gênero:</b> Mistério, Terror</li>
+                            <li><b>Duração:</b> 1h 46min</li>
+                            <li><b>Lançamento:</b> 2012</li>
+                            <li><b>Elenco:</b> Colleen Wheeler, Eve Harlow, Ferne Downey, Garwin Sanford, Jakob Davies</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="item3">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/indecente/A5v6Wi7lYR3a9m6CzntZWAcGFGV.jpg" alt="">
+                        <ul class="ul-item3">
+                            <li class="titulo"><b>Indecente</b></li>
+                            <li><b>Gênero:</b> Drama, Mistério</li>
+                            <li><b>Duração:</b> 1h 34min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li><b>Elenco:</b> Alison Araya, Alyssa Milano, Barry W. Levy, Colleen Wheeler, Daniel Diemer</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="item1">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/odio/fXU6DJ7luOuXbbmvOpDv5JZreV4.jpg" alt="">
+                        <ul class="ul-item1">
+                            <li class="titulo"><b>Ódio</b></li>
+                            <li><b>Gênero:</b> Ação, Crime</li>
+                            <li><b>Duração:</b> 1h 59min</li>
+                            <li><b>Lançamento:</b> 2017</li>
+                            <li><b>Elenco:</b> Alcione Mazzeo, André Ramiro, Carlo Mossy, Deo Garcez, Edwin Luisi</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item2">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/lobo entre nos/43RUnOBA7VgEXzXw6Gx3lifullJ.jpg" alt="">
+                        <ul class="ul-item2">
+                            <li><b>O Lobo entre Nós</b></li>
+                            <li><b>Gênero:</b> Drama/Ficção científica</li>
+                            <li><b>Duração:</b> 1h 10min</li>
+                            <li><b>Lançamento:</b> 2019</li>
+                            <li><b>Elenco:</b> Alexey Dyachkov, Asya Oztyurk, Evgeny Dal, Evgeny Danchevsky, Fyodor Lavrov</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item3">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/mundoestranho.jpg" alt="">
+                        <ul class="ul-item3">
+                            <li><b>Mundo Estranho</b></li>
+                            <li><b>Gênero:</b> Animação, Ficção científica, Aventura, Família
+                            </li>
+                            <li><b>Duração:</b> 1h 42min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li><b>Elenco:</b> Jaboukie Young-White, Jake Gyllenhaal, Gabrielle Union, Dennis Quaid, Lucy Liu, Alan Tudyk</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item1">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/malfeitores.jpg" alt="">
+                        <ul class="ul-item1">
+                            <li><b>Os 4 Malfeitores</b></li>
+                            <li><b>Gênero:</b> Ação, Comédia, Crime
+                            </li>
+                            <li><b>Duração:</b> 2h 21min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li><b>Elenco:</b> Michelle Tahalea, Marthino Lio., Putri Marino, Kristo Immanuel, Arie Kriting</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item2">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/high heat.jpg" alt="">
+                        <ul class="ul-item2">
+                            <li><b>High Heat</b></li>
+                            <li><b>Gênero:</b> Ação, Comédia, Crime</li>
+                            <li><b>Duração:</b> 1h 24min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li><b>Elenco:</b> Eduardo Capetillo, Esmeralda Pimentel, Ana Jimena Villanueva, Iván Amozurrutia, Oka Giner</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item3">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/hex.jpg" alt="">
+                        <ul class="ul-item3">
+                            <li><b>Hex</b> </li>
+                            <li><b>Gênero:</b> Ação, Terror</li>
+                            <li><b>Duração:</b> 1h 28min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li><b>Elenco:</b> Christina Cole, Jemina Rooper, Laura Pyper, Michael, Amber Sainsbury, Jamie Davis</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item1">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/topgun.jpg" alt="">
+                        <ul class="ul-item1">
+                            <li><b>Top Gun: Maverick</b></li>
+                            <li><b>Gênero:</b> Ação, Drama
+                            </li>
+                            <li><b>Duração:</b> 2h 11min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li><b>Elenco:</b> Tom Cruise, Miles Teller, Val Kilmer, Gleen Powell, Jennifer Connelly, Jon Hamm</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item2">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/pinoquio.jpg" alt="">
+                        <ul class="ul-item2">
+                            <li><b>Pinóquio</b> </li>
+                            <li><b>Gênero:</b> Fantasia, Aventura, Família
+                            </li>
+                            <li><b>Duração:</b> 1h 51min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li><b>Elenco:</b> Tom Hanks, Cynthia Erivo, Luke Evans, Joseph Gordon-Levitt, Kyanne Lamaya, Sheila Atim</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item3">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/gemini.jpg" alt="">
+                        <ul class="ul-item3">
+                            <li><b>Gemini: O Planeta Sombrio</b></li>
+                            <li><b>Gênero:</b> Ficção científica
+                            </li>
+                            <li><b>Duração:</b> 1h 38min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li><b>Elenco:</b> Alyona Konstantinova, Egor Koreshkov, Dmitriy Frid, Viktor Potapeshkin, Pyotr Romanov, Nikita Dyuvbanov</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item1">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/gatodebotss.jpg" alt="">
+                        <ul class="ul-item1">
+                            <li><b>Gato de Botas</b> </li>
+                            <li><b>Gênero:</b> Comédia/Drama</li>
+                            <li><b>Duração:</b> 1h 59min</li>
+                            <li><b>Lançamento:</b> 2011</li>
+                            <li><b>Elenco:</b> Antonio Banderas, Salma Hayek, Chris Miller, Jessica Schulte, Guillermo Del Toro, Joshua Rush</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item2">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/sonic.jpg" alt="">
+                        <ul class="ul-item2">
+                            <li><b>Sonic 2 - O Filme</b> </li>
+                            <li><b>Gênero:</b> Ação, Aventura, Família, Comédia
+                            </li>
+                            <li><b></b> Duração: 2h 02min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li><b>Elenco:</b> Jim Carrey, Tika Sumpter, Ben Schwarts,James Marsden, Idris Elba, Shemar Moore</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item3">
+                    <div class="caixa-2">
+                        <img class="img-item" src=".//capa de fundo/menu.jpg" alt="">
+                        <ul class="ul-item3">
+                            <li><b>O Menu</b></li>
+                            <li><b>Gênero:</b> Comédia, Terror, Thriller
+                            </li>
+                            <li><b></b> Duração: 1h 47min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li><b>Elenco:</b> Anya Tayor-Joy, Ralph Fiennes, Nicholas Hoult, Janet Mc Teer, Hong Chau, Aimee Castro</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item1">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/megan.jpg" alt="">
+                        <ul class="ul-item1">
+                            <li><b>Megan</b> </li>
+                            <li><b>Gênero:</b> Ficção científica, Terror, Comédia
+                            </li>
+                            <li><b>Duração:</b> 1h 42min</li>
+                            <li><b>Lançamento:</b> 2023</li>
+                            <li><b>Elenco:</b> Amie Donald, Jenna Davis, Alisson Williams, Violet McGraw, Kimberley Crossman, Brian Jordan Alvarez</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item2">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/trool.jpg" alt="">
+                        <ul class="ul-item2">
+                            <li><b>O Troll da Montanha</b> </li>
+                            <li><b>Gênero:</b> Fantasia, Ação, Aventura
+                            </li>
+                            <li><b>Duração:</b> 1h 43min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li><b>Elenco:</b> Ine Marie, Billy Campbell, Dennis Storhoi, Ingrid Vollan, Eric Vorenholt, Karoline Viktoria</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item3">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/cronicaas.jpg" alt="">
+                        <ul class="ul-item3">
+                            <li><b>As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-Roupa</b></li>
+                            <li><b>Gênero:</b> Terror</li>
+                            <li><b>Duração:</b> 2h 23min</li>
+                            <li><b>Lançamento:</b> 2005</li>
+                            <li><b>Elenco:</b> Skandar Keynes, Anna Popplewell, Georgie Henley, William Moseley, Will Poulter, Ben Barnes</li>
+                        </ul>
+                    </div>
+               </section>
+    
+               <section class="item1">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/desencantada.jpg" alt="">
+                        <ul class="ul-item1">
+                            <li><b>Desencantada</b></li>
+                            <li><b>Gênero:</b> Comédia, Família, Fantasia
+                            </li>
+                            <li><b>Duração:</b> 2h 00min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li><b>Elenco:</b> Rachel Covey, Patrick Dempsey, James Marsden, Idina Menzel, Maya Rudolph, Gabriella Baldacchino</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item2">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/uma noite no museu.jpg" alt="">
+                        <ul class="ul-item2">
+                            <li><b>Uma Noite no Museu: O Retorno de Kahmunrah</b></li>
+                            <li><b>Gênero:</b> Animação, Comédia, Família, Fantasia
+                            </li>
+                            <li><b>Duração:</b> 1h 17min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li>Elenco:</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item3">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/ouiu.jpg" alt="">
+                        <ul class="ul-item3">
+                            <li><b>L'oubliée d'Amboise</b></li>
+                            <li><b>Gênero:</b> Crime, Cinema TV
+                            </li>
+                            <li><b>Duração:</b> 1h 36min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li><b>Elenco:</b> Philippe Bas, Pauline Bression, Hélene Stadnicki, Agathe de La Boulaye, Édouard Montoute, François-Eric Gendron</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item1">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/tom.jpg" alt="">
+                        <ul class="ul-item1">
+                            <li><b>Tom & Jerry: Terra do Boneco de Neve</b></li>
+                            <li><b>Gênero:</b> Família, Comédia, Animação, Aventura
+                            </li>
+                            <li><b>Duração:</b> 1h 16min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li><b>Elenco</b> Kath Soucie, Kevin Michael Richardson, Laraine Newman, William Hanna, Carlos Alazraqui, Kimberly Brooks</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item2">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/encanto.jpg" alt="">
+                        <ul class="ul-item2">
+                            <li><b>Encanto</b></li>
+                            <li><b>Gênero:</b> Animação, Comédia, Família, Fantasia
+                            </li>
+                            <li><b>Duração:</b> 1h 42min</li>
+                            <li><b>Lançamento:</b> 2021</li>
+                            <li><b>Elenco:</b> Stephanie Beatriz, Wilmer Valderrama, John Leguizamo,Sarah-Nicole Robles, Alan Tudyk, Maluma</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item3">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/stroo.jpg" alt="">
+                        <ul class="ul-item3">
+                            <li><b>Scrooge: Um Conto de Natal</b> </li>
+                            <li><b>Gênero:</b> Animação, Família, Fantasia, Drama</li>
+                            <li><b>Duração:</b> 1h 36min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li><b>Elenco:</b> Luke Evans, Jessie Buckley, Olivia Colman, Jonathan Pryce, Johnny Flyn, James Cosmo</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item1">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/blued.jpg" alt="">
+                        <ul class="ul-item1">
+                            <li><b>A Grande Aventura de Blue na Cidade</b> </li>
+                            <li><b>Gênero:</b> Família, Aventura, Música, Animação
+                            </li>
+                            <li><b>Duração:</b> 1h 14min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li><b>Elenco:</b> Joshua Dela Cruz, Steven Burns, Donovan Patton, Traci Paige Johnson, Amanda Dela Cruz, Jessic Gower</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item2">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/unchar.jpg" alt="">
+                        <ul class="ul-item2">
+                            <li><b>Uncharted: Fora do Mapa</b></li>
+                            <li><b>Gênero:</b> Ação, Aventura
+                            </li>
+                            <li><b>Duração:</b> 1h 56min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li><b>Elenco:</b> Tom Holland, Mark Wahlberg, Sophia Taylor Ali, Tati Gabrielle, Rudy Pankow, Antonio Banderas</li>
+                        </ul>
+                    </div>
+               </section>
+
+               <section class="item3">
+                    <div class="caixa-2">
+                        <img class="img-item" src="./capa de fundo/tadeo.jpg" alt="">
+                        <ul class="ul-item3">
+                            <li><b>As Aventuras de Tadeo e a Tábua de Esmeralda</b></li>
+                            <li><b>Gênero:</b> Animação, Aventura, Comédia, Família, Fantasia
+                            </li>
+                            <li><b>Duração:</b> 1h 29min</li>
+                            <li><b>Lançamento:</b> 2022</li>
+                            <li><b>Elenco:</b> </li>
+                        </ul>
+                    </div>
+               </section> 
+            </div> 
+          </main>
+    
+         <section class="caixa-do-rodape"> 
+            <footer class="rodape">
+                <p class="p-do-footer">Contato <br> silvadesouzanalice92@gmail.com </p>
+                <br>
+                <p class="p-do-footer">Analice Silva </p>
+                <p class="p-do-footer"><a class="a-do-footer" href="https://github.com/ANALYYY" target="_blank">https://github.com/ANALYYY</a><p> 
+                <!--MEU GITHUB AQUI-->
+            </footer>
+        </section>
+    </body>
+    </html>
+    
+    </div>
+   
 </body>
-</html>
+</tml
