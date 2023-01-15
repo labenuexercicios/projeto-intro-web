@@ -283,7 +283,7 @@
     
         .caixa-input {
             /*background-color: red;*/
-            margin-top: 12vh;
+            margin-top: 10vh;
             padding-top: 15px;
         }
     
@@ -322,18 +322,30 @@
             width: 99.4%;
         }
 
+        .h1 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            background-image: linear-gradient(to bottom, #ff6900,  turquoise, #fcb900);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        
+
         .menu-ul {
             /*text-align: center;*/
-            margin: auto;
+            margin: 0;
             height: 0;
             overflow: hidden;
             transition: 0.5s;
             flex-direction: column;
-            align-items: unset;
+            align-items: initial;
             list-style: none;
             padding: 0.4rem;
             align-items: center;
            /*aqui flex-wrap: wrap*/;
+            width: 100px;
         }
 
         .header {
@@ -358,9 +370,17 @@
             font-size: 1rem;
         }
 
-        li {
+        nav > ul > li {
             padding: 5px 0px;
             width: 100%;
+            background-image: linear-gradient(to bottom, #ff6900,  turquoise, #ff6900,  turquoise, #fcb900,#fcb900);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav > ul > li:hover {
+            border-bottom: 3px solid orangered;
         }
     
         .h1 {
@@ -390,23 +410,24 @@
             color: white;
         }
 
-       /*
-        button:focus ~ ul{
-            height: 260px; /*aqui é pra quando o usuário clica aparecer o menu*/
-       /* }*/
+       
+        /*button:focus ~ ul{
+            height: 160px; /*aqui é pra quando o usuário clica aparecer o menu*/
+        /*}*/
 
         .menu-ul.active {
             height: 170px;
+
         }
 
         .caixa-input {
-            padding-top: 0px;
+            padding-top: 6px;
             display: flex;
             justify-content: center;
-            height: 5vh;
+            height: 4vh;
             width: 97vw;
             /*background: red;*/
-            margin-top: 90px;
+            margin-top: 80px;
         }
 
         main {
@@ -426,7 +447,7 @@
         }
 
         .button {
-            height: 4vh;
+            height: 2rem;
             width: 20vw;
         }
 
@@ -488,8 +509,12 @@
 
         .item3:hover {
             border: none;
-            border-radius: 0px;
+            border-radius: 10px;
             opacity: 0.8;
+           /* background-image: linear-gradient(to bottom, #ff6900,  turquoise, #ff6900,  turquoise, #fcb900,#fcb900);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;*/
         }
 
         .img-item {
