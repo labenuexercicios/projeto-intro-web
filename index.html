@@ -5,68 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comidas</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Corinthia&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <script src="./src/index.js" defer></script>
   </head>
   <body>
-    <header id="">
-      <div id="logo">
-        <a href="" target="_self">
-          <h1>Comidas</h1>
-
-          <img src="logo.png" alt=""
-        /></a>
-      </div>
-      <nav>
-        <ul>
-          <input type="text" placeholder="Pesquisar &#128269" id="pesquisa" />
-        </ul>
-      </nav>
-    </header>
-
-    <section>
-      <div id="set">
-        <div class="block">
-          <ul>
-            <li>
-              Tipo :
-              <a href="">Pastel</a>
-            </li>
-            <li></li>
-          </ul>
+    <div id="container">
+      <header>
+        <div id="logo">
+          <a href="" target="_self">
+            <img
+              src="img/logo1.png"
+              alt="logo da página: Dois garfos em formato de x"
+          /></a>
         </div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-      </div>
+        <nav>
+          <input type="text" placeholder="Pesquisar" id="pesquisa" />
+        </nav>
+      </header>
 
-      <div id="adicionar">
-        <input type="button" value="adicionar" />
-      </div>
-    </section>
+      <section class="blur" id="catalogo">
+        <main id="set"></main>
 
-    <footer>
-      <article id="final">
-        <div class="topicos">
-          <h2>Sobre:</h2>
-          Um projeto sobre um catalogo de <br />
-          comida onde se pode adicionar e <br />
-          pesquisar os itens.
-        </div>
-        <div class="topicos">
-          <h2>Explore:</h2>
-          <a href="#logo">inicio</a>
-        </div>
-        <div class="topicos">
-          <h2>Contato:</h2>
-          Gitgub <br />
-          Gmail <br />
-          Linkedin
-        </div>
-      </article>
+        <article id="adicionar">
+          <span>Adicionar</span>
+          <span class="material-symbols-rounded"> add </span>
+        </article>
+      </section>
+      <section id="for-form"></section>
 
-      <article>&copy;ItaloRochaOliveira</article>
-    </footer>
+      <footer>
+        <main id="final">
+          <article class="topicos">
+            <h2>Sobre:</h2>
+            Um projeto sobre um catalogo de comida onde se pode adicionar e
+            pesquisar os itens.
+          </article>
+          <article class="topicos">
+            <h2>Explore:</h2>
+            <a href="" target="_self">inicio</a>
+          </article>
+          <article class="topicos">
+            <h2>Contato:</h2>
+            <a href="https://github.com/ItaloRochaOliveira">Gitgub</a> <br />
+            <a href="mailto:italo.rocha.de.oliveira@gmail.com">Gmail</a> <br />
+            <a href="https://www.linkedin.com/in/italo-rocha-16a8671b6/"
+              >Linkedin</a
+            >
+          </article>
+        </main>
 
-    <script src="index.js"></script>
+        <main>
+          <article>&copy;ItaloRochaOliveira</article>
+        </main>
+      </footer>
+    </div>
   </body>
 </html>

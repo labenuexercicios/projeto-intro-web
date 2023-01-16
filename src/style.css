@@ -1,0 +1,257 @@
+* {
+  width: 0 auto;
+  height: 0 auto;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  background-image: url("/img/background2.png");
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #762e2e;
+
+  padding: 0 3%;
+
+  color: white;
+
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+header img {
+  height: 60px;
+}
+header nav {
+  margin: auto;
+  margin-right: 0;
+}
+#pesquisa {
+  position: relative;
+  width: 36.6vw;
+  min-height: 4vh;
+
+  border-radius: 5px;
+  border: none;
+
+  text-align: center;
+
+  background-image: url(/img/lupa.svg);
+  background-repeat: no-repeat;
+  background-size: 17px;
+  background-position: left;
+}
+
+#catalogo {
+  flex-grow: 1;
+}
+.blur {
+  backdrop-filter: blur(10px);
+  filter: blur(10px);
+}
+
+#set {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2%;
+
+  width: 90%;
+  margin: auto;
+}
+.block {
+  display: flex;
+
+  max-width: 30vw;
+  min-width: 400px;
+  max-height: 60vh;
+  min-height: 200px;
+  margin: auto;
+  margin-top: 10%;
+  background-color: white;
+
+  text-align: justify;
+
+  border: #9e7f7f solid 0.5px;
+  box-shadow: 10px 10px 15px rgb(131, 129, 129);
+  border-radius: 25px;
+}
+.conteudo {
+  margin: 10px;
+}
+#titulo,
+#preco {
+  text-align: center;
+}
+.conteudo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+#adicionar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 16.1vw;
+  min-width: 220px;
+  max-height: 7vh;
+  min-height: 50px;
+  margin: 50px auto 50px auto;
+  border: 0.5px solid rgb(114, 111, 111);
+  border-radius: 25px;
+
+  background: #762e2e;
+  color: white;
+}
+#adicionar {
+  cursor: pointer;
+}
+.material-symbols-rounded {
+  color: #762e2e;
+  background-color: white;
+
+  margin-left: 5px;
+
+  border-radius: 100%;
+}
+#adicionar input:hover {
+  cursor: pointer;
+}
+
+#new-for-form {
+  display: flex;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  animation: new-form;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+
+  transition: 0.5s;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+
+  width: 25.04vw;
+  min-width: 342.18px;
+  min-height: 100%;
+  padding: 10%;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+#form input {
+  min-height: 7vh;
+  width: 100%;
+  margin: 2% 0;
+}
+#exit {
+  height: 31.8px;
+  width: 31.8px;
+  margin-left: 10px;
+  border-radius: 100%;
+  align-self: flex-start;
+}
+#exit:hover {
+  cursor: pointer;
+}
+#inline {
+  display: flex;
+  justify-content: space-around;
+}
+#inline div {
+  display: flex;
+}
+#inline input {
+  width: 20px;
+}
+#inline label {
+  align-self: center;
+  margin-left: 10px;
+}
+
+footer {
+  background: #762e2e;
+  color: white;
+}
+#final {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  height: 150px;
+  margin-left: 10%;
+}
+.topicos {
+  width: 20%;
+  margin: 1%;
+}
+footer main:nth-child(2) {
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  #form {
+    min-width: 300px;
+  }
+}
+@media (max-width: 600px) {
+  #set {
+    width: 100%;
+  }
+  .block {
+    flex-direction: column;
+
+    min-width: 280px;
+    min-height: 400px;
+  }
+
+  .conteudo img {
+    width: 100%;
+    height: 150px;
+    border-radius: 25px;
+  }
+
+  #final {
+    flex-direction: column;
+    height: auto;
+    width: 200px;
+    margin: auto;
+  }
+  .topicos {
+    width: auto;
+    margin: 4%;
+    text-align: start;
+  }
+}
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+  header #logo {
+    width: 200px;
+    margin: auto;
+  }
+  header nav {
+    margin: auto;
+  }
+  #pesquisa {
+    width: 80vw;
+    margin-bottom: 2%;
+  }
+}
