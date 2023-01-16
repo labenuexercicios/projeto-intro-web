@@ -106,6 +106,14 @@ const mapFriendsArray = (obj) => {
   });
 };
 
+const goBack = () => {
+  window.history.back();
+};
+
+const goForward = () => {
+  winddow.history.forward();
+};
+
 const recomended = [
   {
     album: "dont smile at me",

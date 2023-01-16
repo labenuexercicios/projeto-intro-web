@@ -81,10 +81,20 @@
         <section class="right-section">
           <div class="header-section">
             <div class="arrow-header">
-              <span class="material-symbols-outlined">
+              <span
+                id="back-arrow"
+                onclick="goBack()"
+                class="material-symbols-outlined"
+              >
                 arrow_back_ios_new
               </span>
-              <span class="material-symbols-outlined"> arrow_forward_ios </span>
+              <span
+                id="forward-arrow"
+                onclick="goForward()"
+                class="material-symbols-outlined"
+              >
+                arrow_forward_ios
+              </span>
             </div>
             <div class="profile-header">
               <img src="./assets/profile-pic.jpg" />

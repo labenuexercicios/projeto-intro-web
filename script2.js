@@ -164,6 +164,14 @@ const styleContainers = () => {
   }
 };
 
+const goBack = () => {
+  window.history.back();
+};
+
+const goForward = () => {
+  winddow.history.forward();
+};
+
 const searchContainer = document.getElementById("search-results");
 
 const input = document.getElementById("search-input");
@@ -190,7 +198,14 @@ allSectionsDiv.innerHTML = `<h1>Navegar por todas as seções</h1><div class="al
 <div class="section-container" id="c-14"><p>RADAR</p></div>
 <div class="section-container" id="c-15"><p>LGBTQ+</p></div>
 <div class="section-container" id="c-16"><p>Seu astral</p></div>
-<div class="section-container" id="c-17"><p>Relax</p></div></div>
+<div class="section-container" id="c-17"><p>Relax</p></div>
+<div class="section-container" id="c-17"><p>Clássico</p></div>
+<div class="section-container" id="c-17"><p>Instrumental</p></div>
+<div class="section-container" id="c-17"><p>Blues</p></div>
+<div class="section-container" id="c-17"><p>Punk</p></div>
+<div class="section-container" id="c-17"><p>Jazz</p></div>
+<div class="section-container" id="c-17"><p>Afro</p></div>
+</div>
 
 `;
 
