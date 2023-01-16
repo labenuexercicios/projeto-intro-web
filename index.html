@@ -1,108 +1,210 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Document</title>
-   <link rel="stylesheet" href="style.css">
-</head>
- <STYLE>A {text-decoration: none} </STYLE>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codeplayer</title>
+    <link rel="stylesheet" href="./style.css" class="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="./script1.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <main>
+        <aside>
+          <div class="aside-menu">
+            <div class="codeplayer">
+              <span class="material-symbols-outlined"> code </span>
+              <span>Codeplayer</span>
+            </div>
+            <div class="home-menu">
+              <a href="./index.html"
+                ><span class="material-symbols-outlined"> home </span> Início</a
+              >
+            </div>
+            <div class="search-menu">
+              <a href="./search.html"
+                ><span class="material-symbols-outlined"> search </span>
+                Buscar</a
+              >
+            </div>
+            <div class="library-menu">
+              <span class="material-symbols-outlined"> library_music </span>
+              <span>Biblioteca</span>
+            </div>
 
-<header>
-
-     <h1>CARDÁPIO DE DRINKS</h1>
-</header>
-    <main class="container">
-   
-       <nav>
-         <div id="divBusca">
-            <img id="lupa-btn" />
-            <input type="text" id="txtBusca" placeholder="Pesquise aqui"/>
-            <button id="btnBusca">Buscar</button>
+            <div class="create-menu">
+              <span class="material-symbols-outlined"> add_circle </span>
+              <span>Criar playlist</span>
+            </div>
+            <div class="favorite-menu">
+              <span class="material-symbols-outlined"> favorite </span>
+              <span>Músicas curtidas</span>
+            </div>
           </div>
-           </nav>
-            <nav>
-         <section id="secaoProds">
-            <!-- <div class="card">
-            <div class="imagem-produto" id="img-1"></div>
-            
-            <ul class="texto">
-               <a href="https://drinquepedia.com/drinques/historias/284" ><h1 >Pinã colada</h1></a>
-               <li>Preço: 23,00</li>
-               <li>Tem Fruta: Não</li>
-               <li>Ingredientes: Rum, Suco de abacaxi, Leite de coco, Leite condensado, Gelo</li>
-            </ul>
-           
-           </div>
-           <div class="card">
-            <div class="imagem-produto" id="img-2"></div>
-            
-            <ul class="texto">
-               <a href="https://drinquepedia.com/drinques/historias/146" ><h1>Caipirinha</h1>
-               </a>
-               <li>Preço: 12,00</li>
-               <li>Tem Fruta: Sim</li>
-               <li>Ingredientes: Limão, Açucar, Gelo, Cachaça</li>
-            </ul>
-            
+          <div class="aside-playlist">
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+          </div>
+          <div class="install-app">
+            <span class="material-symbols-outlined"> download </span>
+            <span>Instalar aplicativo</span>
+          </div>
+        </aside>
+        <section class="right-section">
+          <div class="header-section">
+            <div class="arrow-header">
+              <span
+                id="back-arrow"
+                onclick="goBack()"
+                class="material-symbols-outlined"
+              >
+                arrow_back_ios_new
+              </span>
+              <span
+                id="forward-arrow"
+                onclick="goForward()"
+                class="material-symbols-outlined"
+              >
+                arrow_forward_ios
+              </span>
             </div>
-            <div class="card">
-            <div class="imagem-produto" id="img-3"></div>
-
-            <ul class="texto">
-               <a href="http://www.italialegal.com.br/conheca-a-historia-do-spritz-o-drink-mais-famoso-da-italia/"  ><h1>Italiana</h1> </a>
-               <li>Preço: 22,00</li>
-               <li>Tem Fruta: Não</li>
-               <li>Ingredientes: Vinho, Gelo, Leite condensado, Vodka</li>
-            </ul>
-            
+            <div class="profile-header">
+              <img src="./assets/profile-pic.jpg" />
+              <span>Natália Perri</span>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
             </div>
-            <div class="card">
-            <div class="imagem-produto" id="img-4"></div>
-            
-            <ul class="texto">
-               <a href="https://www.revistalide.com.br/noticias/gastronomia/cosmopolitan-a-historia-do-jovem-classico-americano"><h1>Cosmopolitan</h1></a>
-               <li>Preço:35,00</li>
-               <li>Tem Fruta: Sim</li>
-               <li>Ingredientes:Vodka, Limão, Suco de cramberry, Licor de laranja, Gelo</li>
-            </ul>
-            
+          </div>
+
+          <section class="lastest-albums">
+            <h1 style="font-size: 32px">Boa tarde</h1>
+            <div class="albums-section-1">
+              <div class="music-section-1">
+                <img src="./assets/folklore.png" />
+                <span>Folklore</span>
+                <div class="play-button">
+                  <span
+                    style="font-size: 34px"
+                    class="material-symbols-outlined"
+                  >
+                    play_arrow
+                  </span>
+                </div>
+              </div>
+              <div class="music-section-1">
+                <img src="./assets/stranger.jpg" />
+                <span>Stranger in the Alps</span>
+                <div class="play-button">
+                  <span
+                    style="font-size: 34px"
+                    class="material-symbols-outlined"
+                  >
+                    play_arrow
+                  </span>
+                </div>
+              </div>
+              <div class="music-section-1">
+                <img src="./assets/kida.png" />
+                <span>Kid A</span>
+                <div class="play-button">
+                  <span
+                    style="font-size: 34px"
+                    class="material-symbols-outlined"
+                  >
+                    play_arrow
+                  </span>
+                </div>
+              </div>
+              <div class="music-section-1">
+                <img src="./assets/immunity.jpg" />
+                <span>Immunity</span>
+                <div class="play-button">
+                  <span
+                    style="font-size: 34px"
+                    class="material-symbols-outlined"
+                  >
+                    play_arrow
+                  </span>
+                </div>
+              </div>
+              <div class="music-section-1">
+                <img src="./assets/minor.jpg" />
+                <span>minor</span>
+                <div class="play-button">
+                  <span
+                    style="font-size: 34px"
+                    class="material-symbols-outlined"
+                  >
+                    play_arrow
+                  </span>
+                </div>
+              </div>
+              <div class="music-section-1">
+                <img src="./assets/five-seconds.png" />
+                <span>five seconds flat</span>
+                <div class="play-button">
+                  <span
+                    style="font-size: 34px"
+                    class="material-symbols-outlined"
+                  >
+                    play_arrow
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="card">
-             <div class="imagem-produto" id="img-5"></div>
-             
-             <ul class="texto">
-               <a href="https://drinquepedia.com/drinques/historias/24" ><h1>Mojito</h1></a>
-               <li>Preço: 15,00</li>
-               <li>Tem Fruta: Sim</li>
-               <li>Ingredientes:Limão, Açucar, Hortelã, Rum branco, Gelo, Água com gás</li>
-             </ul>
-             
+          </section>
+
+          <section class="recomended-today">
+            <div class="recomended-header">
+              <h1 style="font-size: 22px">Recomendado para hoje</h1>
+              <p style="font-size: 14px; color: #b2b2b2">MOSTRAR TUDO</p>
             </div>
-            <div class="card">
-               <div class="imagem-produto" id="img-6"></div>
-               <ul class="texto">
-               <a href="https://saberhortifruti.com.br/bloody-mary-a-lenda-e-o-drink/"><h1>Bloody Mary</h1></a>
-               <li>Preço:26,00</li>
-               <li>Tem Fruta: Não</li>
-               <li>Ingredientes: Vodka, Suco de tomate, Suco de limão, Molho inglês, Tabaco, Pimenta</li>
-               </ul>
-              
-            </div> -->
-         </section>
-       </nav>
-
-
-
-    </main>
-    <footer>
-      <h3>Nome:Lorenna Fernanda Carvalho Borges</h3>
-      <h4>Github:<a href="https://github.com/ lorennaborges22" id="github"   style="text-decoration:none ">https://github.com/lorennaborges22</a></h4>
-
-    </footer>
-    <script src="script.js"></script>
-</body>
-
+            <div id="recomended-container" class="album-section-2"></div>
+          </section>
+          <section class="missed-section">
+            <div class="missed-header">
+              <h1 style="font-size: 22px">Suas músicas estão com saudade</h1>
+              <p style="font-size: 14px; color: #b2b2b2">MOSTRAR TUDO</p>
+            </div>
+            <div id="missed-container" class="album-section-3"></div>
+          </section>
+          <section class="friends-section">
+            <div class="friends-header">
+              <h1 style="font-size: 22px">O que seus amigos estão ouvindo</h1>
+              <p style="font-size: 14px; color: #b2b2b2">MOSTRAR TUDO</p>
+            </div>
+            <div id="friends-container" class="album-section-4"></div>
+          </section>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
 </html>
