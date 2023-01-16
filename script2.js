@@ -116,40 +116,6 @@ const musics = [
   { album: "", artist: "Wet Leg", img: "./assets/wetleg.png" },
 ];
 
-const searchMusic = (event) => {
-  let filteredMusics = [];
-  const search = input.value;
-
-  if (event.key === "Enter") {
-    event.preventDefault();
-    searchContainer.innerHTML = "";
-
-    filteredMusics = musics.filter((music) => {
-      if (
-        music.artist.toLowerCase().includes(search.toLowerCase()) ||
-        music.album.toLowerCase().includes(search.toLowerCase())
-      ) {
-        return music;
-      }
-    });
-    for (let i in filteredMusics) {
-      if (filteredMusics[i].album === "") {
-        console.log(filteredMusics[i]);
-        artistContainer(filteredMusics[i]);
-      } else {
-        console.log(filteredMusics[i]);
-        albumContainer(filteredMusics[i]);
-      }
-    }
-
-    if (filteredMusics.length === 0) {
-      const noResults = document.createElement("h1");
-      noResults.innerText = `Resultado não encontrado`;
-      searchContainer.appendChild(noResults);
-    }
-  }
-};
-
 const styleContainers = () => {
   const sectionContainer = document.querySelectorAll(".section-container");
   for (let i in sectionContainer) {
@@ -176,7 +142,43 @@ const searchContainer = document.getElementById("search-results");
 
 const input = document.getElementById("search-input");
 
-input.addEventListener("keypress", searchMusic);
+input.addEventListener("keypress", function searchMusic(event) {
+  let filteredMusics = [];
+  let search = input.value;
+
+  if (event.key === "Enter") {
+    event.preventDefault();
+    if (search === "") {
+      searchContainer.innerHTML = "";
+      searchContainer.appendChild(allSectionsDiv);
+    } else {
+      searchContainer.innerHTML = "";
+      filteredMusics = musics.filter((music) => {
+        if (
+          music.artist.toLowerCase().includes(search.toLowerCase()) ||
+          music.album.toLowerCase().includes(search.toLowerCase())
+        ) {
+          return music;
+        }
+      });
+      for (let i in filteredMusics) {
+        if (filteredMusics[i].album === "") {
+          console.log(filteredMusics[i]);
+          artistContainer(filteredMusics[i]);
+        } else {
+          console.log(filteredMusics[i]);
+          albumContainer(filteredMusics[i]);
+        }
+      }
+
+      if (filteredMusics.length === 0) {
+        const noResults = document.createElement("h1");
+        noResults.innerText = `Resultado não encontrado`;
+        searchContainer.appendChild(noResults);
+      }
+    }
+  }
+});
 
 const allSectionsDiv = document.createElement("div");
 allSectionsDiv.setAttribute("class", "all-sections-div");
