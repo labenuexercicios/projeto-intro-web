@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    gap: gap;
+    
+}
+
+.menu {
+    grid-template-rows: 1fr;
+    background-color: rgba(60, 186, 208, 0.637);
+}
+
+.container_top {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    height: 45vh;
+    background-color: rgba(60, 186, 208, 0.637)
+}
+
+.icone_interno {
+    height: 40vh;
+    grid-row: 1/2;
+}
+
+.icone_top {
+    height: 20vh;
+}
+
+.text {
+    border: solid rgb(7, 91, 143) 2px;
+    margin: 1vh;
+    padding: 2%;
+    margin: 1rem 2rem;
+      font-size: 1.2rem;
+}
+
+.video_trailer {
+    justify-items: center;
+    justify-content: center;
+    margin: 2%;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-items: center;
+    color: black;
+}
+
+#video_card {
+    grid-column: 1/2;
+    margin: 0 1.5rem;
+    padding: 0.75rem 0;
+}
+
+.indicacao {
+    margin: 0 2rem;
+}
+
+.icone_video{
+    margin-right: 1%;
+    vertical-align: middle;
+    width: 3.5vh;
+}
+
+.container_button {
+    height: 34.3vh;
+    display: grid;
+    color: black;
+   grid-column: 1fr;
+   background-color: rgba(60, 186, 208, 0.637);
+}
+
+/* estilização personagens */
+
+.personagens {
+    text-transform: uppercase;
+    /* margin: 1rem 0.5rem; */
+      font-family:serif
+}
+
+.todos_os_personagens {
+    display: flex;
+    width: 20vw;
+    height: 25vh;
+    margin-left: 0.75rem;
+    margin-top: 0;
+}
+
+.personagem {
+    border: black 2px solid;
+    margin-right: 2vw;
+}
+
+.personagem:hover {
+    transform: scale(1.1);
+    border: 1px white solid;
+}
+
+.personagens {
+    margin: 0.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
