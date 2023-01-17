@@ -1,57 +1,62 @@
-// *****SEMANA 1*****
-//lista de cantores
-//1. Características:
-// nome do artista, nome do album, ano de lançamento do album, é artista nacional?
-//2. Agora, crie três conjuntos de variáveis utilizando as características que você definiu acima. Lembre-se que deve ser o mesmo tipo de item, com três conjuntos de dados diferentes.
-const nomeArtista1 = ('Justin Bieber')
-const nomeAlbum1 = ('Justice')
-const anoLancamentoAlbum1 = 2021
-const artistaNacional1 = false
+/*1. Para o item que você decidiu, pense nas características que são importantes para construí-lo. 
+Vamos usar estas características para definir exemplos destes objetos usando o código.*/
 
-const nomeArtista2 = ('Henrique e Juliano')
-const nomeAlbum2 = ('Manifesto Musical(Ao Vivo)')
-const anoLancamentoAlbum2 = 2022
-const artistaNacional2 = true
+/*2. Agora, crie três conjuntos de variáveis utilizando as características que você definiu acima. 
+Lembre-se que deve ser o mesmo tipo de item, com três conjuntos de dados diferentes. */
 
-const nomeArtista3 = ('Linkin Park')
-const nomeAlbum3 = ('Minutes to Midnight')
-const anoLancamentoAlbum3 = 2017
-const artistaNacional3 = false
+const pizza1 = [
+    nome = "pizza de calabresa",
+    preco =  Number(15.00.toFixed(2)),
+    vegetarino = false,
+]
 
-//3. Faça um cálculo de média, entre os valores numéricos respectivos de cada item. Imprima o valor da média utilizando um console.log. Guarde este valor em uma const;
-const media = (anoLancamentoAlbum1 + anoLancamentoAlbum2 + anoLancamentoAlbum3) / 3
-console.log (`O valor da média dos valores numéricos é ${media};
-`)
+const pizza2 = [
+    nome = "pizza vegetariana",
+    preco = Number(18.00.toFixed(2)),
+    vegetarino = true,
+]
 
-//4. Com um console.log, imprima o resultado de uma operação lógica que checa se todos os valores de variáveis booleanas criadas até aqui são verdadeiras.
-console.log (`
-Todos os valores de variáveis booleanas(artista nacional) criadas até aqui são verdadeiras? 
-${artistaNacional1 && artistaNacional2 && artistaNacional3 === true};
-`)
+const pizza3 = [
+    nome = "pizza de chocolate",
+    preco =  Number(20.00.toFixed(2)),
+    vegetarino = false,
+]
 
-//5. Crie pelo menos mais uma característica para o item que você criou. Esta característica deve ser um array. Mantenha o tipo de dado do array criado sempre o mesmo, isto é, se é um array de strings, só deve receber strings.
-const musicasPreferidasAlbum1 = ["2 Much", "Hold On", "Somebody"]
-const musicasPreferidasAlbum2 = ["Arranhão", "A Maior Saudade", "Evento Cancelado"]
-const musicasPreferidasAlbum3 = ["Leave Out All The Rest", "Bleed It Out", "Shadow Of The Day"]
+console.log(pizza1,pizza2,pizza3)
 
-//6. Exiba um relatório utilizando console.log(), mostrando todos os dados de cada um dos itens criados até aqui
-console.log (`
-Nome do Artista:${nomeArtista1.toUpperCase()};
-Nome do Álbum:${nomeAlbum1};
-Ano de Lançamento do Album: ${anoLancamentoAlbum1};
-Artista é nacional? ${artistaNacional1};
-Músicas Preferidas do Album: ${musicasPreferidasAlbum1}.`)
+/*3. Faça um cálculo de média, entre os valores numéricos respectivos de cada item. 
+Imprima o valor da média utilizando um console.log. Guarde este valor em uma const;*/
 
-console.log (`
-Nome do Artista:${nomeArtista2.toUpperCase()};
-Nome do Álbum:${nomeAlbum2};
-Ano de Lançamento do Album: ${anoLancamentoAlbum2};
-Artista é nacional? ${artistaNacional2};
-Músicas Preferidas do Album: ${musicasPreferidasAlbum2}.`)
+const precoMedio = (pizza1[1]+pizza2[1]+pizza3[1]) / 3
 
-console.log (`
-Nome do Artista:${nomeArtista3.toUpperCase()};
-Nome do Álbum:${nomeAlbum3};
-Ano de Lançamento do Album: ${anoLancamentoAlbum3};
-Artista é nacional? ${artistaNacional3}
-Músicas Preferidas do Album: ${musicasPreferidasAlbum3}.`)
+console.log(`A média dos preços das pizzas é: $ ${precoMedio.toFixed(2)}`)
+
+/*4. Com um console.log, imprima o resultado de uma operação lógica que checa se todos os valores de variáveis booleanas criadas até aqui são verdadeiras. */
+
+const verificaVeg = (pizza1[2] && pizza2[2] && pizza3[2])
+console.log(`Todas as pizzas são vegetarianas? ${verificaVeg}`)
+
+/*5. Crie pelo menos mais uma característica para o item que você criou. Esta característica deve ser um array. 
+Mantenha o tipo de dado do array criado sempre o mesmo, isto é, se é um array de strings, só deve receber strings. */
+
+ingredientesPizza1 = ['cebola',' calabresa',' molho de tomate',' queijo']
+pizza1.push(ingredientesPizza1)
+
+ingredientesPizza2 = ['pimentão',' cebola',' molho de tomate',' queijo']
+pizza2.push(ingredientesPizza2)
+
+ingredientesPizza3 = ['chocolate',' molho de tomate',' queijo',' morango']
+pizza3.push(ingredientesPizza3)
+
+
+
+
+/*6. Exiba um relatório utilizando console.log(), mostrando todos os dados de cada um dos itens criados até aqui
+
+  1. O log deve exibir o dado de nome, título ou afim sempre em LETRAS MAIÚSCULAS, como no exemplo abaixo. */
+
+  console.log(`${pizza1[0].toLocaleUpperCase()}
+  Preço: $ ${pizza1[1].toFixed(2)}
+  Ela é vegetariana?: ${pizza1[2]}
+  Ingredientes: ${pizza1[3]}
+  `)
