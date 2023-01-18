@@ -11,6 +11,7 @@
         flex-direction: column;
         align-items: center;
         max-width: 100vw;
+        min-height: 100vh;
         background-image: url(./190943363-3d-illustration-of-a-halloween-concept-background-of-realistic-horror-house-and-creepy-street-with-m.webp);
     }
     
@@ -161,7 +162,8 @@
     }
 
     .ul-item1{
-        max-width: 200px;
+        max-width: 400px;
+        max-height: 44vh;
     }
 
     .item2 {
@@ -186,7 +188,7 @@
 
     .item3 {
         max-width: 400px;
-        /*max-height: 60vh;*/
+        max-height: 44vh;
     }
 
     .item3:hover {

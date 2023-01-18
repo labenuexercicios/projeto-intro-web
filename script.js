@@ -379,9 +379,9 @@ function voltaFilmes () {
 
 
 
+const acessandoTitulo = document.getElementById('titulo');
 
-
-
+console.log(acessandoTitulo.innerHTML)
 
 
 
