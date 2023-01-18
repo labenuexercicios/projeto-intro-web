@@ -25,8 +25,6 @@ const objReceita3 = {
     imgSrc:"Assets\Frango Grelhado.jpg"
 }
 
-const obj = {}
-
 let objetos = []
 
 objetos.push(objReceita1, objReceita2, objReceita3)
