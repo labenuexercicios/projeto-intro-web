@@ -5,51 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
     <title>Kits Solar</title>
-    <script src="script.js"></script>
 </head>
+<!-- style="background-image: url(/imagens/solar3.jpg);" -->
 <body>
-    <div class="container">
-
-    
+    <div class="container" id="cabeca">
+        
+    <article id="marca">
+        SunClocks
+    </article>
     <header class='fixed' id="fixo">
-        <h1><a href="https://www.souvagalume.com.br/blog/o-que-e-energia-solar-e-como-ela-pode-afetar-a-sua-vida?hs_amp=true&utm_source=google&utm_medium=cpc&utm_content=&utm_campaign=dsa_blog&gclid=EAIaIQobChMI-__UsPma_AIVQ8KRCh1HdgAaEAAYAiAAEgI8mfD_BwE">Sistemas de energia solar</a></h1>
-
-
+        <h1><a href="https://www.souvagalume.com.br/blog/o-que-e-energia-solar-e-como-ela-pode-afetar-a-sua-vida?hs_amp=true&utm_source=google&utm_medium=cpc&utm_content=&utm_campaign=dsa_blog&gclid=EAIaIQobChMI-__UsPma_AIVQ8KRCh1HdgAaEAAYAiAAEgI8mfD_BwE" target="_blank" rel="noopener noreferrer">Oque é Energia Solar?</a></h1>
     </header>
+    <article id="pesquisador">
+        <!-- <form action="https://www.google.com.br/"> -->
+        <form action="">
+            <input  type="text" placeholder=" Pesquise o nome do kit" name="nome" id="nome ">
+            <input type="submit" id="send" value="Enviar">
+            <button id="botao" id="sends" onclick="adicionaroskits(event)">
+                <!-- <img src="/imagens/download.png" alt="pesquisa" id="lupa"> -->
+                Adicionar kit
+            </button>        
+        </form>
 
+    <form id="form">
+        <input type="text" id="campo">
+        <input onclick="confereitens(event)" type="submit" value="pegavalor" id="">
+    </form>
+
+
+    <button id="admin" onclick="setoradmin(event)">
+        <a href="http://127.0.0.1:5500/indexadmin.html" target="_blank" rel="noopener noreferrer">Área do funcionário</a>
+    </button>
+
+    <button id="cliente">
+        <a href="http://127.0.0.1:5500/index.html">Área do cliente</a>  
+    </button>
+
+    </article>
+
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Menu</a>
+        <a href="#">Contact us</a>
+    </div>
+
+
+    </div>
     <main>
-        <div class="container2">
-            <section class="relative" id="relativo">
+        <div class="container2" id="corpo">
+            <!-- <img src="/imagens/solar.jpeg" alt="background" id="fotodefundo"> -->
+            <section class="image" id="jinko">
                 <article>
                     <ul>
                     <h3>Kit 1:</h3>
                     <img src="/imagens/jinko.jpg" alt="img jinko">
-                    <p>Marca do Painel Solar: <b>Jinko</b></p>
+                    <p>
+                        Marca do Painel Solar: 
+                        <b>Jinko</b>
+                    </p>
                     <p>Geração do módulo: <b>450w</b></p>
-                    <p>Obs.: <b>Possuí sistema antifurto</b></p>
+                    <p>Obs.: <b>Possuí sistema anti-furto</b></p>
                     </ul>
                 </article>
             </section>
-            <section class="absolute">
+            <section class="image" id="canadian">
                 <article>
                     <ul>
                     <h3>Kit 2:</h3>
-                    <img src="/imagens/canadian.jpg" alt="img canadian">
+                    <img src="/imagens/canadian.jpg" alt="img canadian" id="imagemcanadian">
                     <p>Marca do Painel Solar: <b>Canadian</b></p>
                     <p>Geração do módulo: <b>560w</b></p>
                     <p>Obs.: </p>
                     </ul>
                 </article>
             </section>
-            <section>
+            <section class="image" id="trina">
                 <article>
                     <ul>
                     <h3>Kit 3:</h3>
                     <img src="/imagens/trina.jpg" alt="img trina">
                     <p>Marca do Painel Solar: <b>Trina</b></p>
                     <p>Geração do módulo: <b>420w</b></p>
-                    <p>Obs.: <b>Possuí sistema antifurto</b></p>
+                    <p>Obs.: <b>Possuí sistema anti-furto</b></p>
                     </ul>
                 </article>
             </section>
@@ -60,10 +100,11 @@
         </div>
     </main>
     <footer>
-        <form action="https://www.google.com.br/">
+           <p>Quem somos nós? - i don't know</p>
+        <!-- <form action="https://www.google.com.br/">
             <input type="text" placeholder="Pesquisar algo" name="pesquisa" id="pesquisador">
             <button type= "submit" > Enviar</button>
-        </form>
+        </form> -->
     </footer>
 </div>
 </body>
