@@ -26,7 +26,7 @@ const diponive4 = true
 
 const pizza5 = "pizza frango com catupiry";
 const preco5 = Number(17.00.toFixed(2));
-const vegetariano5 = true;
+const vegetariano5 = false;
 const diponive5 = true
 
 /*3. Faça um cálculo de média, entre os valores numéricos respectivos de cada item. 
