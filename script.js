@@ -136,7 +136,6 @@ for(obj of arraypraguardaosobjeto){//printa as tudo dos objetos usando for
 
 const alterar = confirm("Deseja alterar o objeto 3, pelo novo objeto que ja temos cadastrado?")//criando 1 interacao com o usuario
 
-//Alterar os objetos
 if(alterar){
     arraypraguardaosobjeto.pop()
     const novoobjeto3 = {
@@ -172,10 +171,15 @@ let objetocomarray = recebearrayeobjeto(arraypraguardaosobjeto, stringaserpassad
 console.log("Imprimindo o objeto:",objetocomarray)
 
 
+// function setoradmin(event){
+// //    const nomedonovoobjeto4 : prompt("Digite o login");
+
+// }
+
 function adicionaroskits(event){
 
     event.preventDefault()
-
+    // let numerodokit = 0
 
     const pegaidcorpo =  document.getElementById("corpo")
     const newelementsection = document.createElement("section")
@@ -244,6 +248,33 @@ function adicionaroskits(event){
 
 
 
+// function consultaitem() {
+//     let valordoidpesq = document.getElementById("pesquisador").innerText
+
+//     confereitens(valordoidpesq.innerText, array)
+
+//     console.log(valordoidpesq.innerText)
+// }
+
+// function separaitens(x, array){
+
+
+
+
+// }
+
+// const objeto = {
+//     nome : "",
+//     geracaodoobjeto : "",
+//     possuisistemaobjeto2 : "",
+//     itensdoobjeto : "",
+// }
+
+// console.log(objeto)
+
+// arraypraguardaosobjeto = []
+// arraypraguardaosobjeto.push(objeto)
+
 const pegaiddoform = document.querySelector("#form")
 const pegaiddocampo = document.querySelector("#campo")
 
@@ -265,3 +296,21 @@ function confereitens(event){
     })
 }
 
+    // for(let x = 0; x < arraypraguardaosobjeto.length; x++){
+    //     if(arraypraguardaosobjeto[x].nomedoobjeto === input){
+    //         console.log(arraypraguardaosobjeto[x].nomedoobjeto)
+    //         console.log(input)
+    //     }
+    // }
+
+    // if(input)
+
+
+
+
+// pegaiddoform.addEventListener("submit", function(event){
+//     event.preventDefault()
+//     const input = campo.value
+
+//     console.log(input)
+// })
