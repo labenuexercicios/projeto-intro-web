@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(175, 175, 175);
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  background: #2a265f;
+  color: rgba(240, 240, 240, 0.733);
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 80px;
+}
+
+footer {
+  background: #081a69;
+  color: rgba(240, 240, 240, 0.733);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 1200px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel-pesquisar {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-pesquisar {
+  padding: 10px;
+  margin: 10px 0;
+  border: 0;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.input-pesquisar:focus {
+  outline: none;
+}
+
+.button-pesquisar {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 10px;
+  border: none;
+  background-color: #2a265f;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.serie {
+  background-color: rgb(230, 230, 230);
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  max-width: 100%;
+  margin: 20px;
+  width: 700px;
+}
+
+.serie h6 {
+  opacity: 0.6;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.serie h4 {
+  letter-spacing: 1px;
+  margin: 10px 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.serie-preview {
+  background-color: #2a265f;
+  color: rgb(167, 167, 167);
+  padding: 30px;
+  max-width: 250px;
+  max-height: 250px;
+  width: auto;
+  height: auto;
+}
+
+.serie-preview img {
+  max-width: 190px;
+  max-height: 190px;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+
+.serie-preview a {
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.serie-info {
+  padding: 30px;
+  position: relative;
+  width: 100%;
+}
