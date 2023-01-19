@@ -242,6 +242,20 @@
         padding: 1%;
     }
 
+    .caixa-pai-2 {
+        display: flex;
+        margin: 0.5rem;
+    }
+
+    .caixa-pai3 {
+        display: flex;
+    }
+
+    .caixa-pai {
+        display: flex;
+        justify-content: center;
+    }
+
     .rodape{
         /*position: fixed;*/
         bottom: 0px;

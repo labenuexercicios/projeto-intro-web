@@ -297,10 +297,14 @@ const filmes =  [
 //aqui é o código onde faço a pesquisa de filmes
 const buscaFilmes = document.getElementById("pai");
 const acessarInput = document.getElementById("input");
+const acessarButton =  document.getElementById("button");
 
-acessarInput.addEventListener("input", () => {
+
+acessarButton.addEventListener("click", (event) => {
     //console.log("funcionou!", input.value);
-
+   
+    event.preventDefault(); 
+//console.log(conteudoFilmes);
     let filtrarFilmes = filmes.filter((pesquisa) => {
         return pesquisa.nome.toLowerCase().includes(input.value.toLowerCase());
     });
@@ -309,74 +313,43 @@ acessarInput.addEventListener("input", () => {
     for (pesquisa of filtrarFilmes) {
         //console.log("laço", pesquisa);
         informacoesFilmes += 
-        /*`
-        <section class="pesquisa">
-            <img src="${pesquisa.img}">
-            <h3>${pesquisa.nome}</h3>
-            <p>${pesquisa.genero}</p>
-            <p>${pesquisa.anoDeLancamento}</p>
-            <p>${pesquisa.duracaoEmMinutos}</p>
-            <p>${pesquisa.elenco}</p>
-        </section>
-        */
-       /*
        `
-       <div class="caixa-pai">
-            <section class="item-pai">
-                <section class="item1">
-                    <div class="caixa-2">
-                        <img src="${pesquisa.img}" class="img-item">
-                        <ul class="ul-item1">
-                            <li>
-                                <b>${pesquisa.nome}</b>
-                            </li>
-                            <li>
-                                <b>${pesquisa.genero}</b>
-                            </li>
-                            <li>
-                                <b>${pesquisa.anoDeLancamento}</b>
-                            </li>
-                            <li>
-                                <b>${pesquisa.duracaoEmMinutos}</b>
-                            </li>
-                            <li>
-                                <b>${pesquisa.elenco}</b>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-            </section>
-       </div>
-       `*/
-
-       `
-     <div class="caixa-pai-2">
-       <section class="item-pai-2">
-           <section class="item1-pai">
-               <div class="caixa-2-pai">
-                 <a href="${pesquisa.linkImage}" target="_blank">
-                    <img class="img-item" src="${pesquisa.img}">
-                 </a> 
-               </div>
-           </section>
-       </section>
-     </div>
-       `
+       <div class="caixa-pai4">    
+            <div class="caixa-pai3">  
+             <div class="caixa-pai-2">
+               <section class="item-pai-2">
+                   <section class="item1-pai">
+                       <div class="caixa-2-pai">
+                         <a href="${pesquisa.linkImage}" target="_blank">
+                            <img class="img-item" src="${pesquisa.img}">
+                         </a> 
+                       </div>
+                   </section>
+               </section>
+             </div>
+            </div>  
+       </div> 
+     `
     }
-    
+
     buscaFilmes.innerHTML += informacoesFilmes;
+    console.log(acessarInput.value)
+
+    //if(acessarInput.value.lenght === 0) {
+    //   return innerHTML = conteudoFilmes;
+    //   }
+   
 })
 
+const conteudoFilmes = buscaFilmes.innerHTML;
 
-function voltaFilmes () {
-    if (input.value == "") {
-        return buscaFilmes;
-    } else {
-        return informacoesFilmes.innerHTML;
-    }
-}
-
-
+    acessarInput.addEventListener("input", (e) => {
+        e.preventDefault();
+        if(acessarInput.value.length === 0) {
+            buscaFilmes.innerHTML = conteudoFilmes;
+           }
+    })
+  
 
 
 const acessandoTitulo = document.getElementById('titulo');
@@ -407,7 +380,7 @@ console.log(acessandoTitulo.innerHTML)
 
 
 
-
+/*
 //aqui eu calculo a média das somas dos ano de lançamento
 const mediaDoObjeto = (filmesMedia) => {
     let mediaSoma = 0;
@@ -423,6 +396,18 @@ const mediaDoObjeto = (filmesMedia) => {
 console.log((mediaDoObjeto(filmes)));
 
 
+*/
+
+/*
+let a = 500000;
+let b = 500000;
+let c = 500000;
+let d = 500000;
+
+let media = a + b + c + d / 4
+
+console.log(media)
+*/
 /*
 const verificando = filmes.filter((item) => {
     return item.ehRemake === true;
