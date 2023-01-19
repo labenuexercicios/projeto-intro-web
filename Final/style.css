@@ -1,0 +1,80 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#basetitulo{
+    background-color: black;
+    padding-bottom: 0,5%;
+    padding-top: 0,5%;
+}
+#titulo{
+    color: white;
+    text-align: center;
+    font-size: 230%;
+   
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: #dedede;
+    }
+
+#pesquisa{
+    margin-top: 1%;
+    text-align: center;
+
+}
+.item{
+    background-color: orange;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin-top: 1%;
+}
+
+
+.nomedapizza{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#base{
+    margin-left: 10%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    padding: 2%;
+
+}
+
+a{
+    color: whitesmoke;
+}
+
+img{
+    border-radius: 15%;
+    display: flex;
+    align-self: center;
+    width: 250px;
+    height: 250px;
+    object-fit: fill;
+    padding: 8px;
+}
+
+.info{
+    font-size: 120%;
+    color: black;
+    background-color: silver;
+
+}
+
+.lista{
+    font-size: 20px;
+}
+
+.grid{
+    display: grid;
+}
