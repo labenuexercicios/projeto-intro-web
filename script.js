@@ -11,25 +11,6 @@ function recebearrayeobjeto(array, string){
     return array2
 
 
-    // console.log(array.nomedoobjeto.indexof(string)
-    // cons
-    // for(let i = 0; i<array.length; i++){
-    //     if(string !== array[i].nomedoobjeto){
-    //         array.splice(i - 1, 1)
-    //         console.log("Posicao do i:", i)
-    //         console.log("Salve!")
-    //     }
-    // }
-    // return array
-
-    // for(let i = 0; i< array.length; i++){
-    //     for(let x = 0; x < array[i].itensdoobjeto.length; x++){
-    //         if(array[i].nomedoobjeto[x] === string){
-    //             console.log("Opa:", array[i].nomedoobjeto[x])
-    //             return array[i].nomedoobjeto[x]
-    //         }
-    //     }
-    // }
 }
 
 function recebeobjeto(objeto){//funcao pra salvar tudo em uma string
@@ -46,7 +27,7 @@ function recebeobjeto(objeto){//funcao pra salvar tudo em uma string
     return  stringnomedoobjeto + stringgeracaodoobejto + stringpossuisistema
 }
 
-//declaracao dos itens
+//Declaracao dos itens
 
 const marcadopainel1 = "jinko"
 const geracaopormes1 = 450
@@ -75,7 +56,8 @@ console.log(verificacaodeseguranca)
 console.log(aumentaletra1,'\n', `Geração: ${geracaopormes1}\n`,`Possui sistema solar? ${possuisistemacontrasurto1}\n`, `Itens do kit: ${itensamaisdokit1}\n\n`,aumentaletra2,'\n', `Geração: ${geracaopormes2}\n`,`Possui sistema solar? ${possuisistemacontrasurto2}\n`, `Itens do kit: ${itensamaisdokit2}\n\n`, aumentaletra3,'\n', `Geração: ${geracaopormes3}\n`,`Possui sistema solar? ${possuisistemacontrasurto3}\n`, `Itens do kit: ${itensamaisdokit3}\n`,)
 
 
-//passando os itens do kit para 1 string só
+//Passando os itens do kit para 1 string só
+
 let novastring1 = ""
 let novastring2 = ""
 let novastring3 = ""
@@ -136,6 +118,7 @@ for(obj of arraypraguardaosobjeto){//printa as tudo dos objetos usando for
 
 const alterar = confirm("Deseja alterar o objeto 3, pelo novo objeto que ja temos cadastrado?")//criando 1 interacao com o usuario
 
+// Alterando o objeto
 if(alterar){
     arraypraguardaosobjeto.pop()
     const novoobjeto3 = {
@@ -171,15 +154,12 @@ let objetocomarray = recebearrayeobjeto(arraypraguardaosobjeto, stringaserpassad
 console.log("Imprimindo o objeto:",objetocomarray)
 
 
-// function setoradmin(event){
-// //    const nomedonovoobjeto4 : prompt("Digite o login");
-
-// }
+// Ajustando o dom:
 
 function adicionaroskits(event){
 
     event.preventDefault()
-    // let numerodokit = 0
+ 
 
     const pegaidcorpo =  document.getElementById("corpo")
     const newelementsection = document.createElement("section")
@@ -248,32 +228,7 @@ function adicionaroskits(event){
 
 
 
-// function consultaitem() {
-//     let valordoidpesq = document.getElementById("pesquisador").innerText
-
-//     confereitens(valordoidpesq.innerText, array)
-
-//     console.log(valordoidpesq.innerText)
-// }
-
-// function separaitens(x, array){
-
-
-
-
-// }
-
-// const objeto = {
-//     nome : "",
-//     geracaodoobjeto : "",
-//     possuisistemaobjeto2 : "",
-//     itensdoobjeto : "",
-// }
-
-// console.log(objeto)
-
-// arraypraguardaosobjeto = []
-// arraypraguardaosobjeto.push(objeto)
+// Fazendo o filtro dos kits
 
 const pegaiddoform = document.querySelector("#form")
 const pegaiddocampo = document.querySelector("#campo")
@@ -296,21 +251,3 @@ function confereitens(event){
     })
 }
 
-    // for(let x = 0; x < arraypraguardaosobjeto.length; x++){
-    //     if(arraypraguardaosobjeto[x].nomedoobjeto === input){
-    //         console.log(arraypraguardaosobjeto[x].nomedoobjeto)
-    //         console.log(input)
-    //     }
-    // }
-
-    // if(input)
-
-
-
-
-// pegaiddoform.addEventListener("submit", function(event){
-//     event.preventDefault()
-//     const input = campo.value
-
-//     console.log(input)
-// })
