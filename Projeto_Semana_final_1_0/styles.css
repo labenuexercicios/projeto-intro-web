@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(196, 196, 196);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+#divBody {
+    display: flex;
+    flex-direction: column;
+    min-width: 220px;
+    width: 100vw;
+    height: 100vh;
+    font-size: calc(0.5657708628005658vw + 0.75em);
+}
+
+/* Cabeçalho com o título do Site*/
+header {
+    position: relative;
+    display: flex;
+    border: 1px solid black;
+    background: linear-gradient(to top, #000000 30%, #800000 70%);
+    color: rgb(196, 196, 196);
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 0, 0), 0 0 0.2em rgb(255, 0, 0);
+    padding-left: calc(0.7874015748031497vw + 20px);
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+}
+
+#divLabenu {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0.5) 70%);
+    position: absolute;
+    font-size: small;
+    width: 56px;
+    top: 6%;
+    right: 30px;
+}
+
+#imgLabenu {
+    width: 40px;
+}
+
+
+/* Corpo Princial com o botão de procurar e o seu "input" */
+main {
+    background-image: linear-gradient(to bottom,
+            rgba(255, 230, 0, 0.9),
+            rgba(0, 0, 255, 0.9),
+            rgba(0, 0, 31, 0.9)), url("./assets/giphy1.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(21, 21, 21);
+    width: cover;
+    height: 75%;
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+.divProcurar {
+    display: flex;
+    margin: 2vw;
+    justify-content: center;
+}
+
+.divProcurar input, button{
+    background-image: linear-gradient(to bottom, #fffbd2, #ffffff, #fff8bc);
+    box-shadow: 0px 0px 7px rgb(5, 0, 47);
+    border: none;
+    height: calc(0.7vw + 2em);
+    padding: 7px;
+    border-radius: 0.9rem;
+    color: black;
+    font-size: calc(0.25vw + 0.9em);
+}
+
+.divProcurar input {
+    box-shadow: 0px 0px 7px rgb(5, 0, 47);
+    outline: 0;
+    margin-right: 0.7vw;
+    width: calc(8.24rem + 6vw);
+}
+
+.divProcurar button:hover {
+    background-image: linear-gradient(to bottom, #dfeb39, #ebff78, #dfeb39c4);  
+    box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+    transition: all 3s;
+}
+
+.divProcurar button:active {
+    background-image: linear-gradient(to bottom, #eb8f39, #ff8178, #eb8f39d0); 
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.contPaises {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    gap: 5vw;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Cards com as informações dos países */
+section {
+    background-color: rgba(2, 42, 221, 0.5);
+    width: 70vw;
+    border: 1px solid rgb(2, 0, 122);
+    border-radius: 2vw;
+    padding: 1vw;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 102, 0), 0 0 0.05em rgb(255, 190, 0);
+    box-shadow: 10px 15px 8px 0px rgba(2, 0, 95, 0.75);
+    transition: background-color 3s;
+    align-items: center;
+}
+
+section a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+section a:hover, a:active > section {
+    transition: background-color 3s;
+    background-color: rgba(255, 0, 0, 0.1);
+    text-decoration: underline;
+}
+
+.bandeira {
+    width: 24vw;
+    height: 15vw;
+    background-image: linear-gradient(to bottom, #fffbd2, #b4b2b2, #fff8bc);
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 0.5vw;
+}
+
+
+
+/* Rodapé do Site */
+footer {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #04004d 0%, #000000 100%);
+    border: 1px solid black;
+    padding-left: calc(0.7875vw + 20px);
+    width: 100%;
+    height: 11%;
+    justify-content: center;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 0, 160), 0 0 0.2em rgb(0, 0, 153);
+}
+
+footer p {
+    height: fit-content;
+}
+
+
+
+/* Parte da responsividade do site em @Media */
+@media screen and (min-width:901px) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;   
+    }
+    .bandeira{
+        margin-left: 3vw;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    section {
+        height: calc(200px + 15vw);
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 20em;
+        justify-items: center;
+    }
+
+    li {
+        margin-bottom: 0;
+    }
+
+    
+    #divLabenu {
+        display:none;
+    }
+    
+    #imgLabenu {
+        display:none;
+    }
+}
