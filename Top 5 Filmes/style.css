@@ -1,0 +1,88 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+#busca {
+    text-align: center;
+    margin: 20px;
+}
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 2vh 1vw;
+    margin-left: 2vw;
+}
+.lista {
+    list-style-type: none;
+    padding: 10px;
+}
+body {
+    background-image: url(./imagens/cinema.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+main{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    min-height: 75vh;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    row-gap: 2vh;
+    margin-bottom: 2vh;
+    width: 40vw;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+}
+
+#section1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(190, 141, 50, 0.75);
+    width: 50vw;
+}
+/* #section1:hover{
+    background-image: url(./imagens/vingadores-ultimato.jpeg);
+} */
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media screen and (min-device-width : 481px) and (max-device-width : 920px)  {
+    #section1 {
+        width: 100vw;
+    }
+}
+@media screen and (min-device-width : 280px) and (max-device-width : 510px){
+    #section1 {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 1fr;
+        width: 100vw;
+        height: 45vh;
+    }
+}
