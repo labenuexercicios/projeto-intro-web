@@ -63,21 +63,20 @@ aside{
 
 
 img{
-    border-radius: 50%;
     display: flex;
     align-self: center;
-    width: 120px;
-    height: 120px;
+    max-width: 200px;
+    height: 200px;
     object-fit: fill;
-    padding: 8px;
+    padding: 5px;
 }
 
 footer{
     display: flex;
     justify-content: center;
-    color: white;
-    background-color: black;
-    height: 8vh;   
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.931);
+    height: 1vh;   
 }
 
 /* #redes { 

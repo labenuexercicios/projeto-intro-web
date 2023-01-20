@@ -1,152 +1,170 @@
-const bebidasComFruta = [] 
-//const somarPrecos = (bebidas[0].preco+bebidas[1].preco+bebidas[2].preco+bebidas[3].preco+bebidas[4].preco+bebidas[5].preco)/6
-const obj1 = {   
-    nome: "Pinã colada",
-    preco: 23,
-    temFruta: false,
-    ingredientes: ["rum", "suco de abacaxi", "leite de coco", "leite condensado", "gelo"],
-    imagem:"https://i.pinimg.com/originals/8e/13/d9/8e13d983b2e4f860207e4ca22d473155.gif",
-    site:"https://drinquepedia.com/drinques/historias/284"
-}
-const obj2 = {
-    nome: "Caipirinha",
-    preco: 12,
-    temFruta: true,
-    ingredientes: ["limão", "açucar", "gelo", "cachaça"],
-    imagem:"https://media4.giphy.com/media/XEezfHTttBmnA0PGHs/200w.gif?cid=82a1493b1xl1cit2qht4ndwi4ebb665wmkpv39kkgljaxxks&rid=200w.gif&ct=g",
-    site:"https://drinquepedia.com/drinques/historias/146"
-}
-const obj3 = {
-    nome: "Italiana",
-    preco: 22,
-    temFruta: false,
-    ingredientes: ["vinho", "gelo", "leite condensado", "vodka"],
-    imagem:"https://c.tenor.com/PJt2lC5nWgcAAAAC/cherry-cocktail.gif",
-    site:"http://www.italialegal.com.br/conheca-a-historia-do-spritz-o-drink-mais-famoso-da-italia/"
-}
-const obj4 = {
-    nome: "Cosmopolitan",
-    preco: 35,
-    temFruta: true,
-    ingredientes: ["vodka", "limão", "suco de cramberry", "licor de laranja", "gelo"],
-    imagem:"https://thumbs.gfycat.com/ElatedAngryAntlion-size_restricted.gif",
-    site:"https://www.revistalide.com.br/noticias/gastronomia/cosmopolitan-a-historia-do-jovem-classico-americano"
-}
-const obj5 = {
-    nome: "Mojito",
-    preco: 15,
-    temFruta: true,
-    ingredientes: ["limão", "açucar", "hortelã", "rum branco", "gelo", "água com gás"],
-    imagem:"https://c.tenor.com/ATv9w8xVipsAAAAC/mojito-bresil.gif",
-    site:"https://drinquepedia.com/drinques/historias/24"
-}
-const obj6 = {
-    nome: "Bloody Marry",
-    preco: 26,
-    temFruta: false,
-    ingredientes: ["vodka", "suco de tomate", "suco de limão", "molho inglês", "tabaco", "pimenta"],
-    imagem:"https://media0.giphy.com/media/3o7qDWGHo2bhut6ReE/200w.gif?cid=82a1493b1tdeclkoarcoejw9c3jl1vdp5we39q6ajpdkdicz&rid=200w.gif&ct=g",
-    site:"https://saberhortifruti.com.br/bloody-mary-a-lenda-e-o-drink/"
-}
-
-let bebidas = []
-bebidas.push(obj1,obj2,obj3,obj4,obj5,obj6)
-//console.log(bebidas)
-
-for (let i =0;i<bebidas.length; i++){
-    if(bebidas[i].temFruta===true){
-        bebidasComFruta.push(bebidas[i])
-    }
-}
-
-for(let i=0;i< bebidas.length;i++){
-    console.log(bebidas[i].ingredientes.toString())  
-}
 
 
-function bebidasRelatorio(objeto){
-    console.log(`Nome:${objeto.nome.toUpperCase()}\nPreço:${objeto.preco}\nTem Fruta?${objeto.temFruta ?"sim":"não"}\nQuais os Ingredientes?${objeto.ingredientes}\n`)
-}
-for (let i=0;i<bebidas.length;i++){
-    bebidasRelatorio(bebidas[i]);
-};
+   const jogo1 = {
+    
+        titulo: "THE LAST OF US: PART II",
+        preco: 29.99,
+        nota: 93,
+        multiplayer: false,
+        duracao: "24h",
+        desenvolvedora: "Naughty Dog",
+        genero: "Ação, Aventura, Terror",
+        capa:"https://www.arkade.com.br/wp-content/uploads/2020/06/the-last-of-us-2-capa.jpg",
+        site: "https://pt.wikipedia.org/wiki/The_Last_of_Us_Part_II"
+    
+    };
+    
+  const  jogo2 = {
+    
+        titulo: "RED DEAD REDEMPTION 2",
+        preco: 39.99,
+        nota: 97,
+        multiplayer: true,
+        duracao: "50h",
+        desenvolvedora: "Rockstar",
+        genero: "Mundo Aberto, Ação, Faroeste",
+        capa:"https://psxbrasil.com.br/wp-content/uploads/2018/08/reddeadredemption2.jpg",
+        site: "https://pt.wikipedia.org/wiki/Red_Dead_Redemption_2"
+    };
+    
+    
+   const jogo3 = {
+        
+        titulo: "NIER",
+        preco: 9.99,
+        nota: 68,
+        multiplayer: false,
+        duracao: "20h",
+        desenvolvedora: "PlatinumGames",
+        genero: "Hack And Slash, RPG, Drama",
+        capa:"https://upload.wikimedia.org/wikipedia/pt/9/96/Nier_capa.jpg",
+        site: "https://pt.wikipedia.org/wiki/Nier_(jogo_eletr%C3%B4nico)"
+    };
+    
+   const jogo4 = {
+    
+        titulo: "MASS EFFECT 2",
+        preco: 19.99,
+        nota: 94,
+        multiplayer: false,
+        duracao: "25h",
+        desenvolvedora: "BioWare",
+        genero: "RPG, Sci-fi, Ação",
+        capa:"https://upload.wikimedia.org/wikipedia/pt/0/05/MassEffect2_cover.PNG",
+        site: "https://pt.wikipedia.org/wiki/Mass_Effect_2"
+    };
+    
+    
+     let jogos=[]
+     jogos.push(jogo1, jogo2, jogo3, jogo4)
+
+     console.log(jogos)
+
+    
+// function buscarJogos(jogos){
+
+//     const nome = prompt("Digite o nome do jogo").toUpperCase()
+
+//     let objeto = jogos.filter(
+//         jogo=>{
 
 
-function buscarBebidas (bebidas){
-    const nome = prompt("Digite o nome do seu drink").toUpperCase()
-    let objeto = bebidas.filter(
-        bebida=>{
-            return bebida.nome.toUpperCase().includes(nome)
-        }
-    )
-    if(objeto.length===0){
-        alert("item não encontrado!")
-    }else{
-        console.log("Achouuu!!!!")
-        return objeto
-    }
-}
-//buscarBebidas(bebidas)
+//             return jogo.titulo.toUpperCase().includes(titulo)
+//         }
+//     )
+//     if(objeto.length===0){
+//         alert("jogo não encontrado!")
+//     }else{
+//         console.log("JOGO ENCONTRADO")
+//         return objeto
+//     }
+// }
 
 
 function criarCard (obj){
-    const card = document.createElement("div")
-    const imgProd = document.createElement("img")
-    const nomeProd = document.createElement("a")
-    const dados = document.createElement("ul")
-    const preco = document.createElement("li")
-    const fruta = document.createElement("li")
-    const ingredientes = document.createElement("li")
 
-    imgProd.src = obj.imagem
-    nomeProd.innerText = obj.nome
-    nomeProd.href = obj.site
-    nomeProd.target = "_blank"
-    preco.innerText = `Preço : R$${obj.preco}`
-    fruta.innerText = `Tem fruta? ${obj.temFruta? "Sim" : "Não"}`
-    ingredientes.innerText = `Ingredientes: ${obj.ingredientes.toString(" ")}`
+    const card = document.createElement("div")
+    const imgJogo = document.createElement("img")
+    const nomeJogo = document.createElement("a")
+    const dados = document.createElement("ul")
+    const duracaoJogo = document.createElement("li")
+    const desenvolvedora = document.createElement("li")
+    const notaJogo = document.createElement("li")
+    const temMultiplayer = document.createElement("li")
+    const genero = document.createElement("li")
+    const precoDoJogo = document.createElement("li")
+
+    imgJogo.src=obj.capa
+    nomeJogo.innerText = obj.titulo
+    nomeJogo.href = obj.site
+    nomeJogo.target = "_blank"
+    duracaoJogo.innerText = `DURAÇÃO: ${obj.duracao}`
+    desenvolvedora.innerText = `DESENVOLVEDORA: ${obj.desenvolvedora}`
+    notaJogo.innerText = `NOTA: ${obj.nota} *Dados do metacritc`
+    temMultiplayer.innerText = `POSSUI MULTIPLAYER? ${obj.multiplayer? "Sim" : "Não"}`
+    genero.innerText = `GENERO: ${obj.genero}` 
+    precoDoJogo.innerText = `PREÇO DO ALUGUEL: R$ ${obj.preco} por mes`
 
     card.className = "card"
     dados.className = "texto"
-     
-    dados.append(nomeProd, preco, fruta, ingredientes)
-    card.append(imgProd, dados)
+
+    dados.append(nomeJogo, duracaoJogo, desenvolvedora, notaJogo, temMultiplayer, genero, precoDoJogo)
+    card.append(imgJogo, dados)
 
     return card
 }
 
-function renderizarProds (list) {
-    const secaoProds = document.getElementById("secaoProds")
-    secaoProds.innerHTML = ""
+function renderizarJogos (list) {
+
+    const secaoJogos = document.getElementById("secaoJogos")
+
+    secaoJogos.innerHTML = ""
     console.log(list)
 
+
     list.forEach(produto => {
-        const cardProdCriado = criarCard(produto)
-        secaoProds.appendChild(cardProdCriado)
+
+        const cardJogoCriado = criarCard(produto)
+        secaoJogos.appendChild(cardJogoCriado)
+
+
     })
+    
 }
 
-renderizarProds(bebidas)
+renderizarJogos(jogos)
 
-function pesquisarBebidas() {
+
+function pesquisarJogos() {
+
     const inputPesquisa = document.getElementById("txtBusca")
+
     const botaoPesquisa = document.getElementById("btnBusca")
 
+
     botaoPesquisa.addEventListener("click", () => {
-        const valor = inputPesquisa.value
-        
-        const filtro = bebidas.filter(produto => produto.nome === valor)
+
+        const valor = inputPesquisa.value.toUpperCase()
+
+        const filtro = jogos.filter(produto => produto.titulo === valor)
+
         console.log(filtro)
-        
-        if(filtro.length) {
-            renderizarProds(filtro)
-        } else {
-            renderizarProds(bebidas)
-            alert("Produto não encontrado")
+
+        if(filtro.length){
+
+            renderizarJogos(filtro)
+    
+        }else {
+
+            renderizarJogos(jogos)
+            alert("Jogo não encontrado")
         }
+    
     })
+
 }
 
-pesquisarBebidas()
+pesquisarJogos()
+
 
 
