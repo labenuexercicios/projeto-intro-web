@@ -20,6 +20,7 @@
 
   article, .d{
     background-color: #a67a53;
+    border-radius: 0.80rem;
     height: 25%;
     width: 30vw;
     margin-top: 30px;
@@ -27,6 +28,15 @@
     padding-left: 1%;
     display: block;
     text-align: center;
+    min-width: fit-content; 
+    /* adiciona as informações dentro dos quadradinhos laranjas */
+  }
+  .c {
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* centraliza os itens */
   }
  
   footer, .e{
