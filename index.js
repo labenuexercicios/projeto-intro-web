@@ -41,7 +41,43 @@ const chemicalCompoundList = [
         solubilidadeEmAgua: true,
         link: "https://pt.wikipedia.org/wiki/%C3%81cido_asc%C3%B3rbico"
 
-    }]
+    },
+    {
+        id: "3",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ethanol_flat_structure.png/1024px-Ethanol_flat_structure.png",
+        nomeCientifico: "Etanol",
+        nomeMaisConhecido: "Álcool etílico",
+        atomosDaFormula: ["Carbono", "Hidrogênio", "Oxigênio"],
+        massaMolar: 46.06,
+        usos: ["Utilizado como combustível para veículos", "matéria prima na indústria de tintas, solventes e vernizes", "emprego de álcool hidratado é na indústria farmacêutica, alcoolquímica e de bebidas"],
+        solubilidadeEmAgua: true,
+        link: "https://pt.wikipedia.org/wiki/Etanol"
+
+    },
+    {
+        id: "4",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Hydrogen-peroxide-2D.png/1024px-Hydrogen-peroxide-2D.png",
+        nomeCientifico: "Peróxido de hidrogênio",
+        nomeMaisConhecido: "Água oxigenada",
+        atomosDaFormula: ["Hidrogênio", "Oxigênio"],
+        massaMolar:34.02,
+        usos: [" Uso medicinal e como clareador da roupa e do cabelo", " como combustível para ajuste e correção nas trajetórias e órbitas de satélites artificiais no espaço", "componente da espuma de borracha orgânica e outras substâncias químicas"],        solubilidadeEmAgua: true,
+        link: "https://pt.wikipedia.org/wiki/Per%C3%B3xido_de_hidrog%C3%AAnio"
+
+    },
+    {
+        id: "5",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Acetone-2D-skeletal.svg/800px-Acetone-2D-skeletal.svg.png",
+        nomeCientifico: "Propanona",
+        nomeMaisConhecido: "Acetona",
+        atomosDaFormula: ["Carbono", "Hidrogênio", "Oxigênio"],
+        massaMolar: 58.08,
+        usos: ["Serve como solvente em esmaltes, tintas, vernizes e supercola", "extração de óleos", "fabricação de fármacos"],
+        solubilidadeEmAgua: true,
+        link: "https://pt.wikipedia.org/wiki/Acetona"
+
+    }
+]
 /* - [*]  Itens listados **utilizando manipulação do DOM** */
 function render(chemicalCompoundList) {
     const cards = document.getElementById("cards")
@@ -51,7 +87,7 @@ function render(chemicalCompoundList) {
         <div id="${chemicalCompound.id}" class = "container">
         <img class= "molecule" src= "${chemicalCompound.image}">
         <ul>
-            <li id ="${chemicalCompound.nomeCientifico}">Nome Cientifico: <a href="${chemicalCompound.link}"> ${chemicalCompound.nomeCientifico}</a></li>
+            <li id ="${chemicalCompound.nomeCientifico}">Nome Científico: <a href="${chemicalCompound.link}"> ${chemicalCompound.nomeCientifico}</a></li>
             <li>Nome mais conhecido: ${chemicalCompound.nomeMaisConhecido}</li>
             <li>Usos: ${chemicalCompound.usos.join(", ")}</li>
             <li>Massa Molar: ${chemicalCompound.massaMolar} g/mol</li>
@@ -99,6 +135,10 @@ function print(array) {
                 console.log(`${property}: ${object[property].join(", ")}`)
             }
 
+            else if ((object[property]) === object["id"] || ((object[property]) === object["image"])) {
+                continue
+            }
+
             else if ((object[property]) === object["link"] || ((object[property]) === object["image"])) {
                 continue
             }
@@ -119,7 +159,7 @@ function displayElement(chemicalCompoundList, searchString) {
     for (i in chemicalCompoundList) {
         if (chemicalCompoundList[i].nomeCientifico.toUpperCase().includes(searchString.toUpperCase())) {
             let item = document.getElementById(chemicalCompoundList[i].id)
-            item.style.display = ""
+            item.style.display = "block"
         }
     }
 }
@@ -130,7 +170,7 @@ function printSearch() {
         container.style.display = "none"
     }
     let item = document.getElementById("search").value
-    if (document.getElementById("search").value.length === 0) {
+    if (document.getElementById("search").value.length ===0) {
         alert("Digite algo no campo de pesquisa")
     }
     else {
