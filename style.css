@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 8vh;
+}
+
+.tituloSite {
+  margin: auto 16px;
+}
+
+main {
+  display: flex;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("./imagens/fundo-da-parede-de-tijolo-branco_1203-2759.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 84vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+  gap: 8px;
+  text-align: center;
+}
+
+#pesquisar {
+  height: 20px;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin: 10px 10px;
+  gap: 8px;
+  font-size: 22px;
+}
+
+section {
+  background-color: grey;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+a {
+  color: white;
+}
+
+a:link {
+  text-decoration: underline;
+  color: white;
+}
+
+aside {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  border-radius: 30%;
+  display: flex;
+  align-self: center;
+  width: 120px;
+  height: 120px;
+  object-fit: fill;
+  padding: 8px;
+}
+
+.albumTexto {
+  margin: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  height: 8vh;
+}
+
+.info {
+  align-self: center;
+}
+
+@media (max-width: 1200px) {
+  main {
+    display: flex;
+    height: 880px;
+    align-items: center;
+  }
+
+  article {
+    flex-direction: column;
+    margin: 5px 5px;
+    gap: 10px;
+    font-size: 22px;
+  }
+
+  aside {
+    flex-direction: column;
+  }
+
+  section {
+    flex-direction: column;
+    width: 100%;
+    height: 280px;
+  }
+
+  nav {
+    flex-direction: column;
+    margin: 8px;
+    gap: 4px;
+    text-align: center;
+  }
+
+  header {
+    flex-direction: column;
+    height: 15vh;
+    align-items: center;
+  }
+}
+
+@media (max-width: 850px) {
+  main {
+    display: flex;
+    height: 880px;
+    align-items: center;
+  }
+
+  article {
+    flex-direction: column;
+    margin: 5px 5px;
+    gap: 10px;
+    font-size: 22px;
+  }
+
+  aside {
+    flex-direction: column;
+  }
+
+  section {
+    flex-direction: column;
+    width: 100%;
+    height: 280px;
+  }
+
+  nav {
+    flex-direction: column;
+    margin: 8px;
+    gap: 4px;
+    text-align: center;
+  }
+
+  header {
+    flex-direction: column;
+    height: 15vh;
+    align-items: center;
+  }
+}
+
+@media (max-width: 650px) {
+  main {
+    display: flex;
+    height: 880px;
+    align-items: center;
+  }
+
+  article {
+    flex-direction: column;
+    margin: 5px 5px;
+    gap: 10px;
+    font-size: 20px;
+  }
+
+  aside {
+    flex-direction: column;
+  }
+
+  section {
+    flex-direction: column;
+    width: 100%;
+    height: 280px;
+  }
+
+  nav {
+    flex-direction: column;
+    margin: 8px;
+    gap: 4px;
+    text-align: center;
+  }
+
+  header {
+    flex-direction: column;
+    height: 15vh;
+    align-items: center;
+  }
+}
+
+@media (max-width: 400px) {
+  main {
+    display: flex;
+    height: 880px;
+    align-items: center;
+  }
+
+  article {
+    flex-direction: column;
+    margin: 5px 5px;
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  aside {
+    flex-direction: column;
+  }
+
+  section {
+    flex-direction: column;
+    width: 100%;
+    height: 280px;
+  }
+
+  nav {
+    flex-direction: column;
+    margin: 8px;
+    gap: 4px;
+    text-align: center;
+  }
+
+  header {
+    flex-direction: column;
+    height: 15vh;
+  }
+}
