@@ -1,7 +1,7 @@
 # Projeto de Introdução  Web
 
-Projeto introdução Web utilizando HTML, CSS e JavaScript. Página com responsividade e manipulação DM para renderização a pesquisa das  tenistas.
-O objetic do proejto foi construir uma página estilizada, com lista e busca .
+Projeto introdução Web utilizando HTML, CSS e JavaScript. Página com responsividade e manipulação DOM para renderizar a pesquisa das  tenistas.
+O objetivo do projeto foi construir uma página estilizada, com lista e busca .
 Minha página teve como tema as quatro melhores tenistas do Brasil que competem na atualidade.
 
 
