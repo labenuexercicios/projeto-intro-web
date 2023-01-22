@@ -5,7 +5,7 @@ O objetivo do projeto foi construir uma página estilizada, com lista e busca .
 Minha página teve como tema as quatro melhores tenistas do Brasil que competem na atualidade.
 
 
-#Imagem do  site
+# Imagem do  site
 
 Imagem do site no formato para desktop
 
