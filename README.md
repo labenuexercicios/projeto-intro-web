@@ -17,7 +17,7 @@ JavaScript
 HTML
 CSS
 
-#  link do site
+#  Link do site
 
 https://francinaldapmfaria.github.io/projeto-intro-web/
 
