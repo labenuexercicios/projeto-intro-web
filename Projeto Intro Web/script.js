@@ -237,7 +237,7 @@ function criarJogos (array){
 
     const jogoRetornado = pesquisa(jogos, textoABuscar);
 
-    if (jogoRetornado.Titulo) {
+    if (jogoRetornado.titulo) {
 
         const secaoJogo = document.getElementById("container-de-jogos");
 
@@ -247,12 +247,12 @@ function criarJogos (array){
                    <video class="video" src="${jogoRetornado.video}"
                <ul>
                    <li id="titulo">
-                   <a href="${jogoRetornado.href}" target="_blank">Título:"${jogoRetornado.Titulo}"</a>
+                   <a href="${jogoRetornado.href}" target="_blank">Título:"${jogoRetornado.titulo}"</a>
                    </li>
-                   <li>Gênero: ${jogoRetornado.Genero}</li>
-                   <li>Preço: ${jogoRetornado.Preco}</li>
-                   <li>Multiplayer: ${jogoRetornado.Multiplayer}</li>
-                   <li>Marcadores: ${jogoRetornado.Marcadores}</li>
+                   <li>Gênero: ${jogoRetornado.genero}</li>
+                   <li>Preço: ${jogoRetornado.preco}</li>
+                   <li>Multiplayer: ${jogoRetornado.multiplayer}</li>
+                   <li>Marcadores: ${jogoRetornado.marcadores}</li>
                </ul>
            </section>`
         
