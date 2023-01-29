@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    /* background-color: azure; */
+}
+
+.menu{
+    color: black;
+    text-align: right;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+#cabeca{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1,10rem);
+    background-color: white;
+    align-items: center;
+    /* height: 2fr; */
+    border-bottom: 1px solid black;
+    padding: 10px;
+    background-color: aliceblue;
+    /* align-items: center; */
+    margin: 0 auto;
+}
+
+#marca{
+    display: grid;
+    /* grid-column: 1/2; */
+    background-color: aqua;
+    /* border-radius: 8px */
+}
+
+#pesquisador{
+    margin-top: 100px;
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    border-radius: 8px;
+    margin: 10px;
+    height: 2rem;
+    width: 30rem;
+    /* height: 30%; */
+    align-items: center;
+    /* height: 80%; */
+    
+}
+
+#fixo{
+    display: grid;
+    grid-column: 4/5;
+    text-align: center;
+    align-items: center;
+    /* border-bottom: 1px solid black; */
+    /* grid-template-columns: repeat(5, 1fr); */
+    /* grid-template-columns: repeat(auto0fill, minmax(17rem,1fr)); */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* position: sticky; */
+    /* top: 0; */
+}
+
+#lupa{
+    
+    display: flex;
+    position: relative;
+    height: 2rem;
+    
+    /* align-items: center; */
+    /* width: 2rem; */
+    /* display: grid;
+    margin-bottom: 5px;
+    align-items: center; */
+}
+
+#botao{
+    /* height: 1fr;
+    display: grid;
+    grid-row: 1/2; */
+    align-items: center;
+}
+
+/* #imagem1{ */
+    /* background: #816c57 */
+    /* opacity: 0.9; */
+/* } */
+
+/* #imagemcanadia{
+    background-color: aliceblue;
+    height: 500px;
+} */
+
+/* #fotodefundo{
+    display: flex;
+    position:static;
+} */
+
+#admin{
+    display: grid;
+    grid-column: 2/3;
+    align-items: center;
+    position: relative;
+    height: 3vh;
+    width: 15vw;
+}
+
+#cliente{
+    display: grid;
+    grid-column: 3/4;
+    align-items: center;
+    position: relative;
+    height: 3vh;
+    width: 15vw;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+}
+section{
+    display: flex;
+    margin-bottom: 5%; 
+    position: static;
+    border: 5px solid black;
+    width: 250px;
+    align-items: center;
+}
+
+
+.footer{
+    text-align: end;
+    background-color: aliceblue;
+    color: white;
+    height: 500px;
+    width: 500px;
+}
+
+
+/* Aplicando flex box */
+
+/* .container2{
+    display: flex;
+}  */
+
+/* Aplicando grid */
+
+.container2{
+    display: grid;
+    grid-template-rows: repeat(3, 23rem);
+    padding: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    grid-template-columns: repeat(4, 17rem);
+    justify-items: center;
+
+}
+
+aside{
+    display: grid;
+    grid-row: 3/3;
+    grid-column: 1;
+    justify-items: stretch;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 800px){
+    .container2{
+        display: flex;
+        flex-direction: column;
+        color: red;
+    }
+    .container{
+        display: grid;
+        grid-column: 1;
+        grid-row: 1;
+        position: static;   
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+    }
+}
