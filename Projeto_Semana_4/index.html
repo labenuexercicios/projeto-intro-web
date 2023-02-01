@@ -1,0 +1,92 @@
+<!-- 1- Crie uma página HTML, e nesta página, dê um título para sua lista de itens; -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="divBody">
+    <!-- 2- Crie um cabeçalho, uma seção principal, e um footer para a página; -->
+    <header>
+        <h1>Países</h1>
+    </header>
+    <!-- 3- Na seção principal. Crie duas divisões. Uma deve possuir um input e um botão. A outra, deve possuir sections para criar os itens da lista; -->
+    <main>
+        <div class="divProcurar">
+            <input>
+            <button>Aqui</button>
+        </div>
+        <div class="contPaises">
+            <!-- 4- Crie uma section para cada item da lista; -->
+            <!-- 5- Para cada um dos três itens criados deve possuir todas as informações do array de objetos. As informações devem estar elencadas como lista não ordenada. Esta tela não precisa interagir com o JavaScript, tendo seus dados escritos diretamente nos elementos. -->
+            <!-- 6- Transforme o nome/título do item em um link para um artigo sobre este item (pode ser do google, de algum blog ou da Wikipédia) -->
+            <section>
+                <img class="bandeiraMedia" src="./assets/640px-Flag_of_the_United_States.svg.webp" alt="USA flag">
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/United_States">País: Estados Unidos da América</a></li>
+                    <li>População : 331893745</li>
+                    <li>Renda per capta : US$ 75180</li>
+                    <li>Salário mínimo anual : US$ 15080</li>
+                    <li>IDH : 0.921</li>
+                    <li>Hemisfério Norte : true</li>
+                    <li>País do ocidente : true</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>País: República Popular da China</li>
+                    <li>População : 1410539758</li>
+                    <li>Renda per capta : US$ 12970</li>
+                    <li>Salário mínimo anual : US$ 2084</li>
+                    <li>IDH : 0.768</li>
+                    <li>Hemisfério Norte : true</li>
+                    <li>País do ocidente : false</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>País: República Federativa do Brasil</li>
+                    <li>População : 217240060</li>
+                    <li>Renda per capta : US$ 8570</li>
+                    <li>Salário mínimo anual : US$ 2923</li>
+                    <li>IDH : 0.754</li>
+                    <li>Hemisfério Norte : false</li>
+                    <li>País do ocidente : true</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>País: Comunidade da Austrália</li>
+                    <li>População : 26008700</li>
+                    <li>Renda per capta : US$ 66408</li>
+                    <li>Salário mínimo anual : US$ 31771</li>
+                    <li>IDH : 0.951</li>
+                    <li>Hemisfério Norte : false</li>
+                    <li>País do ocidente : false</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Fernando</p>
+        <p>ffrobazzi79</p>
+
+    </footer>
+    </div>
+</body>
+</html>
+
+<!-- Recomendamos adicionar imagens a seus itens agora. Ao fazer isso, lembre-se de criar mais uma propriedade String nos seus objetos, para guardar o caminho do link até a imagem.
+
+Se baseando no nosso exemplo de estilização, crie a identidade da sua página seguindo os passos abaixo:
+
+1. Estilize o cabeçalho da sua página com o mesmo título que está no <title>;
+2. Estilize o rodapé para sua página, e nele, coloque suas informações de contato (nome e github);
+3. Estilize a lista criada na semana passada, seguindo o padrão enviado;
+
+Você não precisa seguir exatamente os mesmos tamanhos, fontes e cores da página de exemplo, mas é importante que os elementos estejam presentes (cabeçalho, rodapé, barra de pesquisa etc). -->
