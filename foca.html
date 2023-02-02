@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniMundo - Foca</title>
+    <script src="foca.js" defer></script>
+    <link rel="stylesheet" href="info-individual.css">
+</head>
+
+<body class="container">
+    <header class="cabecalho">
+        <h1><a href="index.html"><img src="./assets/imgs/AniMundo-logos_white - cropped.png" alt="logo" id="logo"></a>
+        </h1>
+    </header>
+    <main>
+        <h2>Informações dos Animais</h2>
+        <div class="barra-de-pesquisa">
+            <input type="text" placeholder="Digite aqui" id="input-usuario">
+            <button type="submit" onclick="acheRetorneAnimalEncontrado(animais)">Pesquisar</button>
+        </div>
+        <ul class="lista-dos-animais">
+            <section class="secao-foca">
+                <a href="https://pt.wikipedia.org/wiki/Foca" target="_blank"><img src="./assets/imgs/foca.png"
+                        alt="imagem-foca" id="img-foca"></a>
+                <ul class="informacoes-foca">
+                    <li><a href="https://pt.wikipedia.org/wiki/Foca" target=”_blank” id="nome-foca"></a></li>
+                    <li id="origem-foca"></li>
+                    <li id="peso-foca"></li>
+                    <li id="cores-foca"></li>
+                </ul>
+            </section>
+        </ul>
+    </main>
+    <footer>
+        <p>Desevolvedor: Adriano Mikio Uge Utsunomiya</p>
+        <span>Minhas redes sociais:
+            <a href="https://linkedin.com/in/adriano-mikio-uge-utsunomiya-668a43149" target="_blank"><img id="icones"
+                    src="./assets/imgs/4362961_linkedin_social media_icon.png" alt="icone-LinkedIn">LinkedIn</a>
+            <a href="https://github.com/adrianomikio" target="_blank"><img id="icones"
+                    src="./assets/imgs/317712_code repository_github_repository_resource_icon.png"
+                    alt="icone-GitHub">GitHub</a>
+        </span>
+    </footer>
+</body>
+
+
+</html>

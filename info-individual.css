@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(48, 96, 96);
+    display: grid;
+}
+
+header {
+    background-color: rgb(64, 96, 128);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    display: grid;
+    align-items: center;
+    width: 100vw;
+}
+
+main {
+    background-color: rgb(64, 128, 96);
+    border-radius: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+}
+
+button {
+    color: black
+}
+
+footer {
+    background-color: rgb(223, 223, 223);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100vw;
+}
+
+@media screen and (min-device-width: 1280px) {
+
+    .container {
+        width: 1280px;
+        grid-template-rows: 6rem 580px 4rem;
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+
+    .cabecalho {
+        grid-row: 1/2;
+        grid-column: 1/4;
+        grid-template-columns: 2rem auto 1fr auto 2rem;
+        grid-template-rows: 1rem 4rem 1rem;
+    }
+
+    h1 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    #logo {
+        height: 8rem;
+        align-self: center;
+    }
+
+    main {
+        color: rgb(223, 223, 223);
+        grid-row: 2/3;
+        grid-column: 1/4;
+        width: 1216px;
+        grid-template-rows: 5rem 420px 5rem;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 2rem 0 2rem;
+        align-self: center;
+        justify-self: center;
+    }
+
+    h2 {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .barra-de-pesquisa {
+        grid-row: 1/2;
+        grid-column: 3/4;
+        align-self: center;
+        justify-self: right;
+        margin-right: 2rem;
+    }
+
+    .lista-dos-animais {
+        grid-row: 2/3;
+        grid-column: 1/4;
+        width: 1142px;
+        display: grid;
+        grid-template-rows: repeat(3, 420px);
+        grid-template-columns: 1fr;
+        row-gap: 32px;
+    }
+
+    .secao-shiba-inu {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        display: grid;
+        grid-template-rows: 420px;
+        grid-template-columns: repeat(2, 420px) 1fr;
+    }
+
+    #img-shiba-inu {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: 360px;
+        margin: 32px;
+    }
+
+    .informacoes-shiba-inu {
+        grid-row: 1/2;
+        grid-column: 2/4;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .informacoes-shiba-inu>li {
+        margin: 1rem 1rem 1rem 0;
+    }
+
+    .secao-arara {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        display: grid;
+        grid-template-rows: 420px;
+        grid-template-columns: repeat(2, 420px) 1fr;
+    }
+
+    #img-arara {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: 360px;
+        margin: 32px;
+    }
+
+    .informacoes-arara-caninde {
+        grid-row: 1/2;
+        grid-column: 2/4;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .informacoes-arara-caninde>li {
+        margin: 1rem 1rem 1rem 0;
+    }
+
+    .secao-foca {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        display: grid;
+        grid-template-rows: 420px;
+        grid-template-columns: repeat(2, 420px) 1fr;
+    }
+
+    #img-foca {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: 360px;
+        margin: 32px;
+    }
+
+    .informacoes-foca {
+        grid-row: 1/2;
+        grid-column: 2/4;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .informacoes-foca>li {
+        margin: 1rem 1rem 1rem 0;
+    }
+
+    footer {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 2rem 1fr 1fr 2rem;
+        align-items: center;
+    }
+
+    footer>p {
+        grid-column: 2/3;
+    }
+
+    footer>span {
+        grid-column: 3/4;
+    }
+
+    #icones {
+        width: 2rem;
+        margin: 0 8px;
+    }
+
+}
+
+@media screen and (max-device-width: 480px) {
+
+    .container {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cabecalho {
+        width: 100vw;
+        margin-bottom: 1rem;
+        height: 4rem;
+    }
+
+    #logo {
+        height: 5rem;
+    }
+
+    main {
+        width: 100%;
+        margin: 1rem 0 1rem 0;
+        padding: 1rem;
+        align-self: center;
+        color: white;
+    }
+
+    h2 {
+        justify-self: center;
+    }
+
+    .barra-de-pesquisa {
+        justify-self: center;
+        margin: 1rem;
+    }
+
+    .lista-dos-animais {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .secao-shiba-inu {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    #img-shiba-inu {
+        width: 73.5vw;
+        margin: 1rem;
+        justify-self: center;
+    }
+
+    .informacoes-shiba-inu {
+        justify-items: left;
+        margin-bottom: 1rem;
+    }
+
+    .secao-arara {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    #img-arara {
+        width: 73.5vw;
+        justify-self: center;
+        margin: 1rem 0 1rem 1rem;
+    }
+
+    .informacoes-arara-caninde {
+        margin-bottom: 1rem;
+    }
+
+    .secao-foca {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    #img-foca {
+        width: 73.5vw;
+        margin: 1rem;
+    }
+
+    .informacoes-foca {
+        margin-bottom: 1rem;
+    }
+
+
+    footer {
+        width: 100vw;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+
+    #icones {
+        width: 1.5rem;
+        margin-right: 8px;
+        align-self: bottom;
+    }
+
+}
