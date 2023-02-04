@@ -1,0 +1,125 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: arial;
+	color: #333333;
+    border: 1px black solid;
+}
+
+.header{
+    background-color:#fefce8;
+    text-align: center;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+
+}
+
+.main{
+    background-color:#fef9c3;
+    height: 70%;
+}
+
+.footer{
+    background-color:#fef08a;
+    height: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao{
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border: 3px solid orange;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#botao-compra{
+    margin-bottom: 5px;
+    border-radius: 6px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.conteudo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 5px;
+}
+
+
+.item-descricao {
+	margin: 5px;
+	background: white;
+    border: solid 1px yellow;
+	text-align: center;
+    align-items: center;
+	font-size: 1.0em;
+    border-radius: 15px;
+    height: 220px;
+    width: 220px; 
+}
+
+.busca{
+    margin: 10px;
+}
+
+.cesta{
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+@media screen and (max-device-width: 800px) and (min-device-width: 400px) {
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+    justify-content: center; 
+}
+.item-descricao{
+    align-items: center;
+    justify-content: center;
+    border: 1px solid yellow;
+    margin: 5px;
+    text-align: center;
+    height: 220px;
+    width: 220px;
+}
+}
+
+@media screen and (max-device-width: 400px) {
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    align-items: center;
+    justify-content: center;    
+    }
+.item-descricao{
+    align-items: center;
+    justify-content: center;
+    border: 1px solid yellow;
+    margin: 5px;
+    text-align: center;
+    height: 220px;
+    width: 220px;
+}
+}
