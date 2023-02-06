@@ -12,12 +12,17 @@ body{
     display: flex;
 }
 
-main{
-    margin-top: 10rem;
+
+#container-pai {
+    display: flex;
+    flex-direction: column;
 }
 
+h1 {
+    margin-bottom: 1rem;
+    margin-left: 5rem;
 
-
+}
 
 
 
@@ -25,7 +30,8 @@ main{
 /* Header */
 
 header{
-    position: relative;
+    display: flex;
+    position:relative;
     border-radius: 7px;
     border-bottom:1px solid black;
     border-right:1px solid black;
@@ -63,20 +69,25 @@ header{
     color: #345059ff;
 }
 .logoNina{
-    width: 8vw;
+    width: 7vw;
     height: 15vh;
     margin: 1rem;
     
 }
 
 /* Main */
+main{
+    display: flex;
+    margin-top: 10rem;
+    height: 100vh;
+}
+
 .pesquisa{
     margin-top:5rem;
     margin-left: 20rem;
     text-align: center;
 }
 input {
-    
     width: 35rem;
     height: 2rem;
     border-radius: 0.313rem;
@@ -84,6 +95,7 @@ input {
     color: #fb8500;
     font-size: 1rem;
     float: left;
+    margin-left: 4rem;
 }
 
 input:focus{
@@ -91,15 +103,24 @@ input:focus{
     border: solid .2rem #fb8500;
 }
 
+#pesquisa{
+    position: absolute;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    outline: none;
+    border-radius: 0.313rem;
+}
+
 .imgLupa {
+    /* position: relative; */
     width: 2rem;
     height: 2rem;
     background-color: #fb8500;
     padding: 5px;
     border-radius: 0.313rem;
     cursor: pointer;
-    transition: .4s;
-    margin-left: .313rem;
+    margin-right: 20rem;
 }
 
 .imgLupa:hover {
@@ -115,19 +136,36 @@ input:focus{
 }
 
 
+.i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 65%;
+    right: 26%;
+    border: 2px solid black;
+    background-color: #fb8500;
+    border-radius: 10px;
+    width: 600px;
+    margin: ;
+}
+
+#imgCao {
+    margin: 10px;
+}
+
 /* footer */
 
 footer{
-    position:absolute;
-    top: 100vh;
     background-color: #ffae1cff;
     color: #023047;
-    height: 50vh;
+    height: 48vh;
     width: 96vw;
-    padding-top: 2.5rem;
     border-top-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
-
+    box-shadow: 5px 5px 5px 5px black;
+    margin-top: 10rem;
 }
 
 .footer-content{
@@ -136,7 +174,6 @@ footer{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    
 }
 
 .footer-content h3 {
