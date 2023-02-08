@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+body{
+    padding: 1rem;
+    background-color: #345059ff;
+    display: flex;
+}
+
+
+#container-pai {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+
+}
+
+
+
+
+/* Header */
+
+header{
+    display: flex;
+    position:relative;
+    border-radius: 7px;
+    border-bottom:1px solid black;
+    border-right:1px solid black;
+    background-color: #023047;
+    display: flex;
+    position: fixed;
+    height: 20vh;
+    width: 96vw;
+}
+
+.creche, .hotel, .loja, .contato, .home {
+    color: #345059ff;
+    background-color: #ffae1cff;
+    border-radius: 7px;
+    margin: 1rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    box-shadow: 2px 3px black;
+    transition: .5s;
+    font-family: 'Jolly Lodger', cursive;
+    
+}
+
+.creche:hover, .hotel:hover, .loja:hover, .contato:hover, .home:hover{
+    background-color: #fb8500;
+    color: #345059ff;
+}
+
+.creche:active, .hotel:active, .loja:active, .contato:active, .home:active{
+    background-color: #ff5100;
+    color: #345059ff;
+}
+.logoNina{
+    width: 7vw;
+    height: 15vh;
+    margin: 1rem;
+    
+}
+
+/* Main */
+main{
+    display: flex;
+    margin-top: 10rem;
+    height: 100vh;
+}
+
+.pesquisa{
+    margin-top:5rem;
+    margin-left: 20rem;
+    text-align: center;
+}
+input {
+    width: 35rem;
+    height: 2rem;
+    border-radius: 0.313rem;
+    background-color: #023047;
+    color: #fb8500;
+    font-size: 1rem;
+    float: left;
+    margin-left: 4rem;
+}
+
+input:focus{
+    background-color: #104d6b;
+    border: solid .2rem #fb8500;
+}
+
+#pesquisa{
+    position: absolute;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    outline: none;
+    border-radius: 0.313rem;
+}
+
+.imgLupa {
+    /* position: relative; */
+    width: 2rem;
+    height: 2rem;
+    background-color: #fb8500;
+    padding: 5px;
+    border-radius: 0.313rem;
+    cursor: pointer;
+    margin-right: 20rem;
+}
+
+.imgLupa:hover {
+    background-color: #ff5100;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.imgLupa:active {
+    background-color: #fb8500;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+
+.i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 65%;
+    right: 26%;
+    border: 2px solid black;
+    background-color: #fb8500;
+    border-radius: 10px;
+    width: 600px;
+    margin: ;
+}
+
+#imgCao {
+    margin: 10px;
+}
+
+/* footer */
+
+footer{
+    background-color: #ffae1cff;
+    color: #023047;
+    height: 48vh;
+    width: 96vw;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    box-shadow: 5px 5px 5px 5px black;
+    margin-top: 10rem;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.9rem;
+    font-family: 'Jolly Lodger', cursive;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    
+}
+
+
+.footer-content p {
+    max-width: 31.25rem;
+    margin: .625rem auto;
+    line-height: 1.75rem;
+    font-size: .938rem;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials a {
+    cursor: pointer;
+    margin: 0 0.625rem;
+    color: #231942;
+    font-size: 1.4rem;
+    transition: .4s;
+}
+
+.socials a:hover {
+    color:#ff5100;
+}
+
+
+
+.footer-bottom p {
+    font-size: 1.2rem;
+    word-spacing: 0.125rem;
+    opacity: .5;
+    padding-bottom: 0.625rem;
+    color: #ffae1cff;
+}
+
+
+
