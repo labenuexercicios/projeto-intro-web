@@ -35,3 +35,9 @@ li {
 footer {
     background-color: rgb(158, 243, 30);
 }
+
+img {
+    width: 300px;
+    height: 200px;
+    border-radius: 100px;
+};

@@ -1,24 +1,24 @@
  
- const jogadorCr7 = {
+ let jogadores = [{
     nome : "Cristiano Ronaldo",
     idade : 37,
     melhorDoMundo : true,
     clubesJogou : ["Sporting", "Manchester", "Real Madrid", "Juventus"]
- }
+ },
 
- const jogadorNey = {
+ {
     nome : "Neymar",
     idade : 30,
     melhorDoMundo : false,
     clubesJogou : ["Santos", "Barcelona", "Psg"]
- }
+ },
 
-const jogadorM = {
+{
     nome : "Messi",
     idade : 35,
     melhorDoMundo : true,
     clubesJogou : ["Barcelona", "Psg"]
-}
+}];
 
 const soma = 37 + 30 + 35 ;
 console.log (`soma dos valores numéricos ${soma}`)
@@ -31,76 +31,67 @@ const media = 34
 // const melhorDoMundo = melhorDoMundoCr7 && melhorDoMundoNey && melhorDoMundoM;
 // console.log(melhorDoMundo);
 
-console.log()
+// console.log()
 
 
-console.log(jogadorCr7)
-console.log(jogadorNey)
-console.log(jogadorM)
+// console.log(jogadorCr7)
+// console.log(jogadorNey)
+// console.log(jogadorM)
 
- const arrayJogadores = []
+//  const arrayJogadores = []
 
  
-if(jogadorCr7.melhorDoMundo === true){
-    arrayJogadores.push(jogadorCr7)
-}if(jogadorNey.melhorDoMundo === true){
-    arrayJogadores.push(jogadorNey)
-}if(jogadorM.melhorDoMundo === true){
-    arrayJogadores.push(jogadorM)    
-}else {
-    alert("O item não foi adicionado")
-}
+// if(jogadorCr7.melhorDoMundo === true){
+//     arrayJogadores.push(jogadorCr7)
+// }if(jogadorNey.melhorDoMundo === true){
+//     arrayJogadores.push(jogadorNey)
+// }if(jogadorM.melhorDoMundo === true){
+//     arrayJogadores.push(jogadorM)    
+// }else {
+//     alert("O item não foi adicionado")
+// }
 
-console.log(arrayJogadores)
+// console.log(arrayJogadores)
 
-const cristianoRonaldo = arrayJogadores[0]
-console.log(cristianoRonaldo)
+// const cristianoRonaldo = arrayJogadores[0]
+// console.log(cristianoRonaldo)
 
-let frase0 = "";
-for( let i = 0; i < cristianoRonaldo.clubesJogou.length; i++ ){
-    console.log(cristianoRonaldo.clubesJogou[i])
-    frase0+=cristianoRonaldo.clubesJogou[i]+",";
-    console.log(frase0)
-}
+// let frase0 = "";
+// for( let i = 0; i < cristianoRonaldo.clubesJogou.length; i++ ){
+//     console.log(cristianoRonaldo.clubesJogou[i])
+//     frase0+=cristianoRonaldo.clubesJogou[i]+",";
+//     console.log(frase0)
+// }
 
-const fraseQuebrada = frase0.split(",")
-console.log(fraseQuebrada)
+// const fraseQuebrada = frase0.split(",")
+// console.log(fraseQuebrada)
 
-jogadorCr7.clubesJogou = `${fraseQuebrada}`
-console.log(jogadorCr7)
+// jogadorCr7.clubesJogou = `${fraseQuebrada}`
+// console.log(jogadorCr7)
 //semana 5
 
-const messi = arrayJogadores[1]
+// const messi = arrayJogadores[1]
 // console.log(messi)
 
-let frase1 = "";
-for( let i = 0; i < messi.clubesJogou.length; i++ ){
-    console.log(messi.clubesJogou[i])
-    frase1+=messi.clubesJogou[i]+",";
-    console.log(frase1)
-}
+// let frase1 = "";
+// for( let i = 0; i < messi.clubesJogou.length; i++ ){
+//     console.log(messi.clubesJogou[i])
+//     frase1+=messi.clubesJogou[i]+",";
+//     console.log(frase1)
+// }
 
-const fraseMessi = frase1.split(",")
-console.log(fraseMessi)
+// const fraseMessi = frase1.split(",")
+// console.log(fraseMessi)
 
-jogadorNey.clubesJogou = `${fraseMessi}`
-console.log(jogadorM)
+// jogadorNey.clubesJogou = `${fraseMessi}`
+// console.log(jogadorM)
 
 
-for(indice of arrayJogadores){
-    for (propriedade in arrayJogadores){
-        console.log(`${propriedade}:${arrayJogadores[propriedade]}`)
+for(jogadores of jogadores){
+    for (propriedade in jogadores){
+        console.log(`${propriedade}:${jogadores[propriedade]}`)}
+console.log("-----------------");
     }
-}
-console.log("-----------------")
 
 //semana 6
-
-const jogadoresNovos = arrayJogadores.map((jogador, index, array)=>{
-    return jogador;
-})
-
-for(jogador of arrayJogadores){
-    funçãoQueRetornaOJogadorTodo(jogador);
-}
 
