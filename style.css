@@ -1,0 +1,217 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  
+    
+
+header{
+    background-color: rgb(217,225,226);
+    width: 100%;
+    height: 130px;
+    border-style: dashed;
+    color:rgb(75,120,137);
+    Font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    font-size: 34px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#divBusca{
+  background-color: rgb(75,120,137);
+  border:1px solid;
+  border-radius: 20px;
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  margin-left: 690px;
+  margin-bottom: 30px;
+  padding: 13px;
+  
+  
+}
+
+#txtBusca{
+  width: 338px;
+  height: 37px;
+  
+
+}
+.nomeBebidas{
+  width: 1000px;
+  background-color: black;
+
+
+}
+
+#github{
+font-size: larger;
+margin-left: 20px;
+}
+
+#btnBusca{
+  width: 93px;
+  height: 39px;
+  
+}
+
+.texto{
+  width: 300px;
+  font-size:x-large;
+  font-family: sans-serif;
+  
+    
+}
+li{
+  list-style: none;
+  display:flex;
+  margin-top: 10px;
+}
+
+a{
+  display: flex;
+  flex-direction: row;
+  color:black;
+  font-size:xx-large;
+
+}
+
+.card{
+    width: 60%;
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    height: 250px;
+    background-color: lightseagreen;
+    border-radius: 15%;
+    border-style:dashed;
+    margin-left: 500px;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+
+   
+}
+
+.container{
+    background-color: rgb(87,87,89);
+    min-height: 77vh;
+    width: 100%;
+    max-width: 1800px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: auto;
+  }
+
+.imagem-produto{
+    height: 200px;
+    width: 200px;
+    margin-top: 25px;
+    margin-left: 30px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+.card > img {
+    height: 200px;
+    width: 200px;
+    margin-top: 25px;
+    margin-left: 30px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+    
+footer{
+    background-color:rgb(75,120,137);
+    color:rgb(85,35,137);
+    width: 100%;
+    height: 90px;
+    Font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    display: flex; 
+    
+}
+
+
+
+
+  
+@media (max-width :320px) {
+  header{
+    width: 313px;
+  }
+  header>h1{
+    
+    font-size: 40px;
+    Font-family: Copperplate, Copperplate Gothic Light, fantasy;
+  }
+
+  .card{
+  display: flex;
+  margin-inline-start: 30px;
+  padding-bottom: 20px;
+  }
+.nomeBebidas{
+  font-size: 17px;
+  
+}
+
+.texto{
+  font-size: 12px;
+}
+
+  #divBusca{
+    margin-inline-start: 3px;
+    width: 280px;
+
+  }
+  #github{
+    font-size: 10px;
+    margin-top: 40px;
+    margin-right:300px
+    
+
+    }
+  .card>img{
+    height: 130px;
+    width: 130px;
+    margin-top: 0.5px;
+    margin-right: 10px;
+  }
+ 
+ h3{
+  padding-top: 10px;
+  padding-left: 20px;
+  margin-inline-end: 30px;
+ }
+
+ h4{
+  font-size: 20px;
+ }
+footer{
+  background-color:rgb(75,120,137);
+  color:rgb(85,35,137);
+  width: 319px;
+  height: 150px;
+  Font-family: Copperplate, Copperplate Gothic Light, fantasy;
+  display: flex; 
+  
+}
+
+}
