@@ -3,22 +3,33 @@
     nome : "Cristiano Ronaldo",
     idade : 37,
     melhorDoMundo : true,
-    clubesJogou : ["Sporting", "Manchester", "Real Madrid", "Juventus"]
+    clubesJogou : ["Sporting", "Manchester", "Real Madrid", "Juventus"],
+    imagem : "./Imagens/Cristiano.jpg"
  },
 
  {
     nome : "Neymar",
     idade : 30,
     melhorDoMundo : false,
-    clubesJogou : ["Santos", "Barcelona", "Psg"]
+    clubesJogou : ["Santos", "Barcelona", "Psg"],
+    imagem : ""
  },
 
 {
     nome : "Messi",
     idade : 35,
     melhorDoMundo : true,
-    clubesJogou : ["Barcelona", "Psg"]
-}];
+    clubesJogou : ["Barcelona", "Psg"],
+    imagem : "./Imagens/Messi.jpg"
+},
+
+{
+    nome : "Erling Haaland",
+    idade : 22,
+    clubesJogou : ["Salzburg, Borussia Dortmund, Manchester City"],
+    imagem : "./Imagens/Haaland.jpg"
+}
+];
 
 const soma = 37 + 30 + 35 ;
 console.log (`soma dos valores numéricos ${soma}`)
@@ -94,4 +105,18 @@ console.log("-----------------");
     }
 
 //semana 6
+
+function devolvendoString (objeto) {
+    return objeto;
+}
+
+console.log(devolvendoString(`O jogador ${jogadores.nome} jogou nos times ${jogadores.clubesJogou} e tem ${jogadores.idade} anos`))
+
+
+function buscar (event) {
+    const valor = document.getElementById("nome")
+     console.log(event.target.value)
+}
+
+
 
