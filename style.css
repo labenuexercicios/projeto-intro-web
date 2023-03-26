@@ -109,7 +109,7 @@ aside{
     position: absolute;
     right:196px;
     text-align: center;
-    bottom: 540px;
+    bottom: 300px;
     height: 155px;
   }
 
@@ -218,7 +218,7 @@ aside{
     }
 
     aside{
-        bottom: 81%;
+        bottom: 75%;
         position: absolute;
         font-size: large;
         height: 170px;
