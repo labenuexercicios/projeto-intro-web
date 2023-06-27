@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades-Quimicas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@500&family=Mukta:wght@500&family=Noto+Serif+NP+Hmong:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- - [ ]  Cabeçalho na página -->
+    <header>
+        <img src="BANNER.png" alt="banner image" id="banner-img">
+    </header>
+    <main>
+        <!-- - [*]  Área principal com barra de pesquisa e botão -->
+        <div class="input">
+            <h1>Busque conhecimento</h1>
+            <label for="search"></label>
+            <input id="search"></input>
+            <button id="searchValidated" onclick="printSearch()"><i class="fa fa-search"></i></button> 
+        </div>
+        <div>
+            <!-- - [*]  Espaço para lista dos itens -->
+            <section id = "cards">
+
+            </section>
+        </div>
+    </main>
+    <!--  - []  Rodapé na página com identificação -->
+    <footer>
+        <p> Site educacional</p>
+    </footer>
+
+</body>
+<script src="index.js"></script>
+
+</html>

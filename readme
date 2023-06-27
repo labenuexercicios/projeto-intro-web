@@ -1,0 +1,32 @@
+ <ul class="container">
+                    <li> <a href="https://pt.wikipedia.org/wiki/Hipoclorito_de_s%C3%B3dio">Nome: Hipoclorito de
+                            sódio</a></li>
+                    <li> Nome mais conhecido: Água Sanitária</li>
+                    <li> Átomos da fórmula: Sódio, Cloro, Oxigênio</li>
+                    <li> MassaMolar: 74.44</li>
+                    <li> Usos: Remoção de manchas de roupas sujas, Desenfetar superfícies, desinfecção da água potável
+                    </li>
+                    <li> Solubilida de em água: true</li>
+                </ul>
+            </section>
+            <section>
+                <ul class="container">
+                    <li><a href="https://pt.wikipedia.org/wiki/%C3%81cido_etanoico">Nome: Ácido acético</a></li>
+                    <li>Nome mais conhecido: Vinagre</li>
+                    <li>Átomos da fórmula: Carbono, Hidrogênio, Oxigênio</li>
+                    <li>MassaMolar: 60.052</li>
+                    <li>Usos: Condimentar saladas, Produção da aspirina, Síntese de perfumes e corantes</li>
+                    <li>Solubilida de em água: true
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul class="container">
+                    <li><a href="https://pt.wikipedia.org/wiki/%C3%81cido_asc%C3%B3rbico">Nome: Ácido ascórbico</a></li>
+                    <li>Nome mais conhecido: Vitamina C</li>
+                    <li>Átomos da fórmula: Carbono, Hidrogênio, Oxigênio</li>
+                    <li>MassaMolar: 176.09</li>
+                    <li>Usos: Suplementação alimentar, Adubo para plantas, Conservação de alimentos industrializados
+                    </li>
+                    <li>Solubilida de em água: true</li>
+                </ul>
