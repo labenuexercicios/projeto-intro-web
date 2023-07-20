@@ -74,7 +74,7 @@
 
 
 console.log('======================================================================');
-console.log('Projeto Labenu Semana 3 e 4');
+console.log('Projeto Labenu Semana 3, 4 e 5');
 console.log('======================================================================');
 
 //criação de objetos e uso do push
@@ -141,4 +141,9 @@ if (prod1.isNew) {
 
 console.log(products);//log de todos os objetos agora presentes em no array de produtos. 
 
-
+for(item of products){//para cada item em propriedade...
+  for (propriedade in item){//para cada propriedade em item...
+      console.log(`${propriedade}: ${item[propriedade]}`)//imprima propriedade e valor do item. 
+  }
+console.log("----------------------");
+}
