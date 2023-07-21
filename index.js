@@ -175,13 +175,13 @@ function printObjectArray(array,string){
     for (propriedade in array){//para cada propriedade em item...for in para interrar no objeto
         console.log(`${propriedade}: ${array[propriedade]}`)//imprima propriedade e valor do item. 
     }
-  console.log("----------------------");
+  
   }
 
-
+  console.log("----------------------");
 }
 
 
 printObjectArray(products,'Taça de vinho')
 
-console.log("----------------------");
+//conclusão da semana 6 do projeto.
