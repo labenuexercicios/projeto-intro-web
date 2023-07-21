@@ -140,10 +140,48 @@ if (prod1.isNew) {
   
 
 console.log(products);//log de todos os objetos agora presentes em no array de produtos. 
-
+// for of utilizado para interear array
 for(item of products){//para cada item em propriedade...
   for (propriedade in item){//para cada propriedade em item...
       console.log(`${propriedade}: ${item[propriedade]}`)//imprima propriedade e valor do item. 
   }
 console.log("----------------------");
 }
+
+console.log("----------------------");
+
+
+function printObject(objeto) {//função que intera no objeto e o imprime em string
+  
+  for (let chave in objeto) {//a variavel criada (chave) vai percorrer o objeto(que sera o parametro passado na chamada da função) s
+     {
+       console.log(`${chave}: ${objeto[chave]}\n`); //log da impressão. 
+    }
+  }
+  
+}
+
+
+printObject(prod1)
+
+
+console.log("----------------------");
+
+
+function printObjectArray(array,string){
+  // /for of utilizado para interear array
+  for(array of products){//para cada item em produtos...
+    if(array.name===string)//verifica se a string passada como paramento está presente no objeto. 
+    for (propriedade in array){//para cada propriedade em item...for in para interrar no objeto
+        console.log(`${propriedade}: ${array[propriedade]}`)//imprima propriedade e valor do item. 
+    }
+  console.log("----------------------");
+  }
+
+
+}
+
+
+printObjectArray(products,'Taça de vinho')
+
+console.log("----------------------");
