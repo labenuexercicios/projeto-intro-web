@@ -1,11 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
 
-body{
+body {
+    background-color: aliceblue;
 
-background-color: rgb(207, 197, 202);
+}
+
+
+header {
+    background-image: linear-gradient(to left, #fa709a 0%, #fee140 100%);
+
+    font-family: Nunito;
+    font-size: larger;
+    padding: 10px;
+    margin: 2px;
+    text-align: center;
+    color: #ad2091;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+main {
+    background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+    border-radius: 5px;
+
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding: 20px;
+    margin: 5px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    line-height: 1.5;
+    box-sizing: border-box 50px;
+    border-radius: 50px;
+    border: solid #0e0909;
+    width: 30%;
+    margin-left: 35%;
+    box-shadow: 0 0 100px #eee;
+
+}
+
+a {
+    text-decoration: none #fee140;
+
+}
+
+
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    text-align: justify;
+}
+
+#pesquisa {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    font-size: medium;
+
+}
+
+#novoItem {
+    /* display: flex; */
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 10px;
+    /* background-color: rgb(207, 222, 226); */
+    color: #0e0909;
+}
+
+button {
+
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .5s;
+    background-size: 200% auto;
+    color: #0e0909;
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    display: block;
+    background-color: #fca165;
+}
+
+footer {
+    background-image: linear-gradient(to left, #fa709a 0%, #fee140 100%);
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+    border-radius: 5px;
+    justify-content: center;
+    font-family: Nunito;
+    font-size: x-small;
+    display: flex;
+
+}
+
+.icon {
+
+    margin-right: 10px;
+
 
 }
